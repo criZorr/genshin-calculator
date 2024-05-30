@@ -1,0 +1,57 @@
+:root {
+  --first-dark-color: #323947;
+  --second-dark-color: #3b4354;
+  --third-dark-color: #51596b;
+
+  --first-light-color: #d3bc8e;
+  --second-light-color: #ece5d7;
+  --third-light-color: #fcfbfa;
+  --third-light-75-color: #fcfbfabf;
+  --first-complementary-color: #a68074;
+
+  --white-color: #fbfbfb;
+  --gray-light-color: #eeeeee;
+  --gray-color: #bbbbbb;
+  --gray-dark-color: #888888;
+  --black-color: #222222;
+
+  --link-color: #41d1c0;
+  --first-text-dark-color: #323947;
+  --second-text-dark-color: #3b4354;
+  --first-text-light-color: #ece5d7;
+  --second-text-light-color: #d3bc8e;
+
+  --gold-dark-color: #976942;
+  --gold-light-color: #d28a4c;
+
+  --purple-dark-color: #695f98;
+  --purple-light-color: #bb83d5;
+
+  --blue-dark-color: #687799;
+  --blue-light-color: #6baacb;
+
+  --green-dark-color: #617b72;
+  --green-light-color: #6cac8b;
+
+  --gray-dark-color: #75777b;
+  --gray-light-color: #a2a0a1;
+
+  --font: "Raleway", sans-serif;
+
+  --max-width: 1024px;
+  --header-height: 3.75rem;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: var(--font);
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
