@@ -55,3 +55,25 @@ html {
 *:before {
   box-sizing: inherit;
 }
+
+/* *************** Background and font color *************** */
+
+.bg-fst {
+  background-color: var(--first-light-color);
+}
+
+.bg-snd {
+  background-color: var(--second-light-color);
+}
+
+.bg-trd {
+  background-color: var(--third-light-color);
+}
+
+.frst-text {
+  color: var(--first-text-dark-color);
+}
+
+.scnd-text {
+  color: var(--second-text-dark-color);
+}
