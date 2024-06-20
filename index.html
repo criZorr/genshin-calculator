@@ -268,26 +268,99 @@
       </div>
       <div class="content-info">
         <div class="content-selected">
-          <label for="selected-items" class="scnd-text"
-            >Selected characters</label
-          >
-          <select
-            class="frst-text"
-            name="selected-items"
-            id="selected-items"
-          ></select>
+          <p class="scnd-text"><b>Selected characters</b></p>
+          <div class="selected-container">
+            <select class="selected-items bg-snd frst-text">
+              <option value="furina">Furina</option>
+              <option value="arlecchino">Arlecchino</option>
+              <option value="clorinde">Clorinde</option>
+            </select>
+            <div class="container-selected-icon">
+              <div class="selected-items-icon"></div>
+            </div>
+          </div>
         </div>
-        <div class="content-results-total">
-          <p class="scnd-text">Total calculation results</p>
+        <div>
+          <p class="scnd-text"><b>Total calculation results</b></p>
+          <section class="card-total bg-snd">
+            <div class="element-header">
+              <h3 class="scnd-text">Total</h3>
+            </div>
+            <div class="element-info">
+              <section class="element-data">
+                <figure class="element-img">
+                  <img src="./assets/item-farming.webp" alt="item" />
+                </figure>
+                <section class="element-props">
+                  <h5 class="frst-text">Item name</h5>
+                  <div class="element-days">
+                    <small class="frst-text">Avg. days farming</small>
+                    <img
+                      class="frst-text faq"
+                      src="./assets/faq.svg"
+                      alt="faq"
+                    />
+                  </div>
+                </section>
+              </section>
+              <section class="element-count">
+                <h5 class="frst-text">00</h5>
+                <small class="frst-text">00</small>
+              </section>
+            </div>
+          </section>
         </div>
-        <div class="content-results-individual">
-          <p class="scnd-text">Individual calculation results</p>
+        <div>
+          <p class="scnd-text"><b>Individual calculation results</b></p>
+          <section class="card-individual bg-snd">
+            <div class="element-header">
+              <h3 class="scnd-text">Individual Total</h3>
+              <section class="buttons-element">
+                <button class="btn-element">
+                  <img class="btn-edit" src="./assets/edit.svg" alt="edit" />
+                </button>
+                <button class="btn-element">
+                  <img
+                    class="btn-delete"
+                    src="./assets/delete.svg"
+                    alt="delete"
+                  />
+                </button>
+              </section>
+            </div>
+            <div class="element-info">
+              <section class="element-data">
+                <figure class="element-img">
+                  <img src="./assets/item-farming.webp" alt="item" />
+                </figure>
+                <section class="element-props">
+                  <h5 class="frst-text">Item name</h5>
+                  <div class="element-days">
+                    <small class="frst-text">Avg. days farming</small>
+                    <img
+                      class="frst-text faq"
+                      src="./assets/faq.svg"
+                      alt="faq"
+                    />
+                  </div>
+                </section>
+              </section>
+              <section class="element-count">
+                <h5 class="frst-text">00</h5>
+                <small class="frst-text">00</small>
+              </section>
+            </div>
+          </section>
         </div>
       </div>
     </main>
-
-    <footer></footer>
-
+    <footer class="footer bg-snd">
+      <small>
+        <a href="https://crizorr.com" target="_blank" rel="noopener"
+          >@criZorr</a
+        ></small
+      >
+    </footer>
     <script src="./index.js"></script>
   </body>
 </html>

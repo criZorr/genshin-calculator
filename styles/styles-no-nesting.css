@@ -79,27 +79,28 @@
   }
 }
 
-/* ***** Content parameters ***** */
+/* ***** Content parameters & Content info ***** */
 @media screen and (min-width: 624px) {
-  .content-parameters {
+  .content-parameters,
+  .content-info {
     width: calc(50% - 0.5rem);
     height: calc(100vh - var(--header-height) - 4rem - 2rem);
   }
 }
 
 @media screen and (min-width: 704px) {
-  .content-parameters {
+  .content-parameters,
+  .content-info {
     width: calc(50% - 1rem);
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .content-parameters {
+  .content-parameters,
+  .content-info {
     height: calc(100vh - 4rem - 4rem - 2rem);
   }
 }
-
-/* ***** Content info ***** */
 
 /* ********** Filters ********** */
 .filter-checkbox:checked + .filter-label {
@@ -154,6 +155,13 @@
   border-radius: 0.25rem 0.25rem 1rem 0;
   width: 5rem;
   height: 5rem;
+}
+
+.card .card-name {
+  max-width: 95%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .card img {
@@ -214,5 +222,32 @@
   .gradiant-right,
   .gradiant-left {
     display: none;
+  }
+}
+
+/* ********** Element info ********** */
+.element-header h3 {
+  max-width: 75%;
+  line-height: 1.5rem;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.element-img img {
+  height: 100%;
+}
+
+.element-props h5 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* ********** Footer ********* */
+@media screen and (min-width: 1024px) {
+  .footer {
+    margin: 0;
   }
 }
