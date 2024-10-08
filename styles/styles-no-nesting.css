@@ -261,7 +261,7 @@
 }
 
 /* ********** Modal ********** */
-
+/* Modal levels */
 .ascension-selector input[type="radio"] {
   display: none;
 }
@@ -271,6 +271,13 @@
   font-size: inherit;
   text-align: center;
   color: var(--second-light-color);
+  cursor: pointer;
+}
+
+/* level form */
+.level-form .btn-modal-lvl {
+  height: 2rem;
+  width: 5rem;
 }
 
 .include-talents input[type="checkbox"] {
@@ -286,4 +293,40 @@
 
 .include-talents label {
   cursor: pointer;
+  font-size: 0.75rem;
+  font-weight: bold;
+  line-height: 0.75rem;
+}
+
+/* Modal talents */
+.talent-img img {
+  width: 100%;
+  height: auto;
+}
+
+.talent-form .btn-modal-tlt {
+  height: 2rem;
+  width: 5rem;
+}
+
+/* Modal Info */
+.info-form .btn-modal-info {
+  height: 2rem;
+  width: 5rem;
+}
+
+/* Custom number list */
+
+/* number picker
+.lvl-list label {
+    font-weight: bold;
+  }
+
+.lvl-list input {
+    display: none;
+  }
+ */
+
+.nmb-list option {
+  font-size: small;
 }

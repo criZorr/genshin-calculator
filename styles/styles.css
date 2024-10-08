@@ -699,20 +699,25 @@ small {
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 1;
-  pointer-events: all;
+  opacity: 0;
+  pointer-events: none;
   background-color: var(--black-alpha-color);
 }
 
-.modal-content {
+.modal-level,
+.modal-talent,
+.modal-info {
   position: relative;
   display: flex;
   justify-content: center;
   gap: 1rem;
   width: 100%;
   padding: 1rem;
+  max-width: 20rem;
+  border-radius: 0.5rem;
 }
 
+/* Modal levels */
 .ascension-selector {
   display: flex;
   justify-content: space-between;
@@ -743,46 +748,17 @@ small {
   align-items: center;
 }
 
-/* number picker
-.lvl-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 3rem;
-  width: 2rem;
-
-  & label {
-    font-weight: bold;
-  }
-
-  overflow-x: scroll;
-  scrollbar-width: none;
-  & input {
-    display: none;
-  }
-} */
-
-.lvl-list {
-  border: none;
-  width: 2rem;
-  font-weight: bold;
-  text-align: center;
-  font-size: 1rem;
-  cursor: pointer;
-  border-top: 0.0625rem solid var(--first-light-color);
-  border-bottom: 0.0625rem solid var(--first-light-color);
-
-  & option {
-    font-size: small;
-  }
-}
-
-/* ghf */
+/* level form */
 .level-form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+
+  & .btn-modal-lvl {
+    height: 2rem;
+    width: 5rem;
+  }
 }
 
 .include-talents {
@@ -816,6 +792,84 @@ small {
   }
 }
 
+/* Modal talents */
+.modal-talent,
+.modal-info {
+  flex-direction: column;
+}
+
+.talent-info {
+  display: flex;
+  gap: 0.25rem;
+  flex-direction: column;
+}
+
+.talent-selector {
+  display: flex;
+  padding: 0.125rem 0.5rem;
+  justify-content: space-between;
+  border-radius: 0.5rem;
+  height: 3.25rem;
+}
+
+.talent-data {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.talent-img {
+  background-color: var(--first-complementary-color);
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  & img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.talent-lvl {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.talent-form {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  & .btn-modal-tlt {
+    height: 2rem;
+    width: 5rem;
+  }
+}
+
+/* Modal Info */
+.modal-info {
+  max-width: 18rem;
+  border-radius: 0.5rem;
+}
+
+.info-title {
+  font-weight: bold;
+}
+
+.info-paragraph {
+  line-height: 1.25;
+}
+
+.info-form {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  & .btn-modal-info {
+    height: 2rem;
+    width: 5rem;
+  }
+}
+
+/* Custom checkbox */
 .custom-checkbox {
   position: absolute;
   right: 0;
@@ -838,10 +892,41 @@ small {
   border-radius: 0.375rem;
 }
 
-/* Form lvl */
-.btn-modal {
-  height: 2rem;
-  width: 5rem;
+/* Custom number list */
+
+/* number picker
+.lvl-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 3rem;
+  width: 2rem;
+
+  & label {
+    font-weight: bold;
+  }
+
+  overflow-x: scroll;
+  scrollbar-width: none;
+  & input {
+    display: none;
+  }
+} */
+
+.nmb-list {
+  border: none;
+  width: 2rem;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1rem;
+  cursor: pointer;
+  border-top: 0.0625rem solid var(--first-light-color);
+  border-bottom: 0.0625rem solid var(--first-light-color);
+  background-color: inherit;
+
+  & option {
+    font-size: small;
+  }
 }
 
 /* Custom buttons */

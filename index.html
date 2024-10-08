@@ -362,7 +362,8 @@
       >
     </footer>
     <article class="modal" id="furina">
-      <div class="modal-content bg-trd">
+      <!-- Level -->
+      <div class="modal-level bg-trd">
         <div class="level-info">
           <div class="ascension-selector">
             <input type="radio" name="ascension-selected" id="ascension-1" />
@@ -401,7 +402,7 @@
               <input type="radio" id="lvl-10" name="frst-lvl" />
               <label for="lvl-10">10</label>
             </div> -->
-            <select class="lvl-list frst-lvl-list frst-text bg-snd">
+            <select class="nmb-list frst-lvl-list frst-text">
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -431,7 +432,7 @@
               <input type="radio" id="lvl-10" name="frst-lvl" />
               <label for="lvl-10">10</label>
             </div> -->
-            <select class="lvl-list scnd-lvl-list frst-text bg-snd">
+            <select class="nmb-list scnd-lvl-list frst-text">
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -454,10 +455,116 @@
               <div></div>
             </span>
           </div>
-          <div class="btn-modal">
+          <div class="btn-modal-lvl">
             <button class="btn-bordered">Cancel</button>
           </div>
-          <div class="btn-modal">
+          <div class="btn-modal-lvl">
+            <button class="btn bg-snd-dark">Save</button>
+          </div>
+        </div>
+      </div>
+      <!-- Talent -->
+      <div class="modal-talent bg-trd">
+        <div class="talent-info">
+          <div class="talent-selector bg-snd">
+            <section class="talent-data">
+              <figure class="talent-img">
+                <img src="./assets/talent.png" alt="talent_1" />
+              </figure>
+              <p class="frst-text compact">Name talent</p>
+            </section>
+            <div class="talent-lvl">
+              <select class="nmb-list frst-lvl-list frst-text">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+              <div class="scnd-text">-></div>
+              <select class="nmb-list scnd-lvl-list frst-text">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+          </div>
+          <div class="talent-selector bg-snd">
+            <section class="talent-data">
+              <figure class="talent-img">
+                <img src="./assets/talent.png" alt="talent_1" />
+              </figure>
+              <p class="frst-text compact">Name talent</p>
+            </section>
+            <div class="talent-lvl">
+              <select class="nmb-list frst-lvl-list frst-text">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+              <div class="scnd-text">-></div>
+              <select class="nmb-list scnd-lvl-list frst-text">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+          </div>
+          <div class="talent-selector bg-snd">
+            <section class="talent-data">
+              <figure class="talent-img">
+                <img src="./assets/talent.png" alt="talent_1" />
+              </figure>
+              <p class="frst-text compact">Name talent</p>
+            </section>
+            <div class="talent-lvl">
+              <select class="nmb-list frst-lvl-list frst-text">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+              <div class="scnd-text">-></div>
+              <select class="nmb-list scnd-lvl-list frst-text">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="talent-form">
+          <div class="btn-modal-tlt">
+            <button class="btn-bordered">Cancel</button>
+          </div>
+          <div class="btn-modal-tlt">
+            <button class="btn bg-snd-dark">Save</button>
+          </div>
+        </div>
+      </div>
+      <!-- Info -->
+      <div class="modal-info bg-trd">
+        <p class="info-title scnd-text">Average days spending resin</p>
+        <p class="info-paragraph frst-text">
+          This is calculated assuming: You spend the daily resin (180). You use
+          solid resin. You use the RNG calculated in the “personal” section. You
+          use the 10% RNG provided by a character’s talent when craft talents
+          (craft in this order: gray -> green -> blue).
+        </p>
+        <div class="info-form">
+          <div class="btn-modal-info">
+            <button class="btn-bordered">Cancel</button>
+          </div>
+          <div class="btn-modal-info">
             <button class="btn bg-snd-dark">Save</button>
           </div>
         </div>
