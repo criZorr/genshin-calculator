@@ -20,6 +20,7 @@
   --gray-color: #bbbbbb;
   --gray-dark-color: #888888;
   --black-color: #222222;
+  --black-alpha-color: #222222bf;
 
   --link-color: #41d1c0;
   --first-text-dark-color: #323947;
@@ -117,22 +118,32 @@ small {
 
 .bg-fst {
   background-color: var(--first-light-color);
+  transition: all 0.5s ease-in;
 }
 
 .bg-snd {
   background-color: var(--second-light-color);
+  transition: all 0.5s ease-in;
 }
 
 .bg-trd {
   background-color: var(--third-light-color);
+  transition: all 0.5s ease-in;
+}
+
+.bg-snd-dark {
+  background-color: var(--first-dark-color);
+  transition: all 0.5s ease-in;
 }
 
 .frst-text {
   color: var(--first-text-dark-color);
+  transition: all 0.5s ease-in;
 }
 
 .scnd-text {
   color: var(--second-text-dark-color);
+  transition: all 0.5s ease-in;
 }
 
 /* ********** Header ********** */
@@ -275,6 +286,11 @@ small {
 .content-info {
   border-radius: 0;
   padding: 0;
+
+  @media screen and (min-width: 624px) {
+    overflow-y: scroll;
+    scrollbar-width: none;
+  }
 }
 
 /* ********** Filters ********** */
@@ -663,7 +679,242 @@ small {
   width: 100%;
   height: 2rem;
 
+  border-bottom: 0.03125rem solid var(--second-light-color);
+
   @media screen and (min-width: 1024px) {
     margin: 0;
+    border-bottom: none;
+  }
+}
+
+/* ********** Modal ********** */
+
+.modal {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  pointer-events: all;
+  background-color: var(--black-alpha-color);
+}
+
+.modal-content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  padding: 1rem;
+}
+
+.ascension-selector {
+  display: flex;
+  justify-content: space-between;
+
+  & input[type="radio"] {
+    display: none;
+  }
+
+  & label {
+    height: 1rem;
+    font-size: inherit;
+    text-align: center;
+    color: var(--second-light-color);
+    cursor: pointer;
+  }
+}
+
+.level-content {
+  width: 10rem;
+  height: 6rem;
+  border-radius: 0.5rem;
+
+  margin-top: 1rem;
+
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+/* number picker
+.lvl-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 3rem;
+  width: 2rem;
+
+  & label {
+    font-weight: bold;
+  }
+
+  overflow-x: scroll;
+  scrollbar-width: none;
+  & input {
+    display: none;
+  }
+} */
+
+.lvl-list {
+  border: none;
+  width: 2rem;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1rem;
+  cursor: pointer;
+  border-top: 0.0625rem solid var(--first-light-color);
+  border-bottom: 0.0625rem solid var(--first-light-color);
+
+  & option {
+    font-size: small;
+  }
+}
+
+/* ghf */
+.level-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.include-talents {
+  display: flex;
+  align-items: center;
+
+  height: 1rem;
+
+  position: relative;
+  width: 7rem;
+
+  font-size: 0.75rem;
+  margin-top: 1rem;
+
+  & input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    margin: 0;
+    right: 0;
+    cursor: pointer;
+    height: 1rem;
+    width: 1rem;
+    z-index: 1000;
+  }
+
+  & label {
+    cursor: pointer;
+    font-size: 0.75rem;
+    font-weight: bold;
+    line-height: 0.75rem;
+  }
+}
+
+.custom-checkbox {
+  position: absolute;
+  right: 0;
+
+  display: inline-block;
+  height: 1rem;
+  width: 1rem;
+  border: 0.0625rem solid var(--first-light-color);
+  border-radius: 0.25rem;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.include-talents input:checked ~ .custom-checkbox div {
+  background-color: var(--first-light-color);
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 0.375rem;
+}
+
+/* Form lvl */
+.btn-modal {
+  height: 2rem;
+  width: 5rem;
+}
+
+/* Custom buttons */
+
+.btn-bordered {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: 0.0625rem solid var(--first-light-color);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1;
+  color: var(--first-light-color);
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.btn {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1;
+  color: var(--first-light-color);
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+/* Dark theme */
+@media screen and (prefers-color-scheme: dark) {
+  .bg-fst {
+    background-color: var(--first-light-color);
+  }
+
+  .bg-snd {
+    background-color: var(--first-dark-color);
+  }
+
+  .bg-trd {
+    background-color: var(--second-dark-color);
+  }
+
+  .bg-snd-dark {
+    background-color: var(--third-light-color);
+  }
+
+  .frst-text {
+    color: var(--first-text-light-color);
+  }
+
+  .scnd-text {
+    color: var(--second-text-light-color);
+  }
+
+  .gradiant-right,
+  .gradiant-left {
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0) 0%,
+      var(--first-dark-color) 100%
+    );
+  }
+
+  .gradiant-left {
+    background: linear-gradient(
+      -90deg,
+      rgba(0, 0, 0, 0) 0%,
+      var(--first-dark-color) 100%
+    );
   }
 }

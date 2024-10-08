@@ -102,6 +102,13 @@
   }
 }
 
+@media screen and (min-width: 624px) {
+  .content-info {
+    overflow-y: scroll;
+    scrollbar-width: none;
+  }
+}
+
 /* ********** Filters ********** */
 .filter-checkbox:checked + .filter-label {
   border: thin solid var(--first-light-color);
@@ -249,5 +256,34 @@
 @media screen and (min-width: 1024px) {
   .footer {
     margin: 0;
+    border-bottom: none;
   }
+}
+
+/* ********** Modal ********** */
+
+.ascension-selector input[type="radio"] {
+  display: none;
+}
+
+.ascension-selector label {
+  height: 1rem;
+  font-size: inherit;
+  text-align: center;
+  color: var(--second-light-color);
+}
+
+.include-talents input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  margin: 0;
+  right: 0;
+  cursor: pointer;
+  height: 1rem;
+  width: 1rem;
+  z-index: 1000;
+}
+
+.include-talents label {
+  cursor: pointer;
 }
