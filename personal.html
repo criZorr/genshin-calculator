@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GI: Level Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link class="my-styles" rel="stylesheet" href="./styles/styles.css" />
+    <meta name="darkreader-lock" />
+  </head>
+  <body class="bg-trd">
+    <header class="header">
+      <nav class="head-container">
+        <a class="menu-btn btn-characters" href="./index.html">
+          <div class="menu-btn-img">
+            <img src="./assets/characters.png" alt="Characters" />
+          </div>
+          <p>Characters</p>
+        </a>
+        <a class="menu-btn btn-talents" href="./talents.html">
+          <div class="menu-btn-img">
+            <img src="./assets/artifacts.png" alt="Characters" />
+          </div>
+          <p>Talents</p>
+        </a>
+        <a class="menu-btn btn-weapons" href="./weapons.html">
+          <div class="menu-btn-img">
+            <img src="./assets/weapons.png" alt="Characters" />
+          </div>
+          <p>Weapons</p>
+        </a>
+        <a class="menu-btn btn-personal active-page" href="./personal.html">
+          <div class="menu-btn-img">
+            <img src="./assets/personal.svg" alt="Characters" />
+          </div>
+          <p>Personal</p>
+        </a>
+      </nav>
+    </header>
+    <main class="container">
+      <div class="content-info">
+        <section class="card-user-info bg-snd">
+          <div class="element-header">
+            <h3 class="frst-text">Personal Information</h3>
+            <section class="buttons-element">
+              <button class="btn-element">
+                <img class="btn-edit" src="./assets/edit.svg" alt="edit" />
+              </button>
+            </section>
+          </div>
+          <div class="user-info">
+            <div class="user-data world-level">
+              <h5>World level:</h5>
+              <p class="h5-regular">8</p>
+            </div>
+            <div class="user-data talent-rng">
+              <div class="header-faq">
+                <h5>Talent RNG:</h5>
+                <img class="frst-text faq" src="./assets/faq.svg" alt="faq" />
+              </div>
+              <p class="h5-regular">12.12%</p>
+            </div>
+            <div class="user-data world-level">
+              <h5>No sé:</h5>
+              <p class="h5-regular">8</p>
+            </div>
+          </div>
+          <div class="element-info">
+            <section class="element-data">
+              <figure class="element-img">
+                <img src="./assets/item-farming.webp" alt="item" />
+              </figure>
+              <section class="element-props">
+                <h5 class="frst-text">Mora</h5>
+                <div class="element-days">
+                  <small class="frst-text">Daily profit:</small>
+                  <img class="frst-text faq" src="./assets/faq.svg" alt="faq" />
+                </div>
+              </section>
+            </section>
+            <section class="element-count">
+              <h5 class="frst-text"></h5>
+              <small class="frst-text">00</small>
+            </section>
+          </div>
+        </section>
+        <section class="card-user-total bg-snd">
+          <div class="element-header">
+            <h3 class="frst-text">Total</h3>
+          </div>
+          <div class="element-info">
+            <section class="element-data">
+              <figure class="element-img">
+                <img src="./assets/item-farming.webp" alt="item" />
+              </figure>
+              <section class="element-props">
+                <h5 class="frst-text">Item name</h5>
+                <div class="element-days">
+                  <small class="frst-text">Avg. days farming</small>
+                  <img class="frst-text faq" src="./assets/faq.svg" alt="faq" />
+                </div>
+              </section>
+            </section>
+            <section class="element-count">
+              <h5 class="frst-text">00</h5>
+              <small class="frst-text">00</small>
+            </section>
+          </div>
+        </section>
+        <div>
+          <p class="scnd-text"><b>Amount owned</b></p>
+          <section class="card-user-amount bg-snd">
+            <div class="element-owned-info">
+              <section class="element-data">
+                <figure class="element-img">
+                  <img src="./assets/item-farming.webp" alt="item" />
+                </figure>
+                <section class="element-props">
+                  <h5 class="frst-text">Item name</h5>
+                  <div class="element-days">
+                    <small class="frst-text">Amount owned:</small>
+                  </div>
+                </section>
+              </section>
+              <section class="element-count">
+                <button class="btn-element-owned">
+                  <img
+                    class="btn-edit-owned"
+                    src="./assets/edit.svg"
+                    alt="edit"
+                  />
+                </button>
+                <small class="frst-text">00</small>
+              </section>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer class="footer bg-snd">
+      <small>
+        <a href="https://crizorr.com" target="_blank" rel="noopener"
+          >@criZorr</a
+        ></small
+      >
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
