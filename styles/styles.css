@@ -640,6 +640,9 @@ small {
 
 .faq {
   height: 0.6875rem;
+  width: 0.6875rem;
+  fill: var(--first-text-dark-color);
+  cursor: pointer;
 }
 
 .header-faq {
@@ -650,6 +653,7 @@ small {
 
 .header-faq .faq {
   height: 0.8125rem;
+  width: 0.8125rem;
 }
 
 /* ********** Edit & Delete Buttons ********* */
@@ -1074,5 +1078,9 @@ small {
       rgba(0, 0, 0, 0) 0%,
       var(--first-dark-color) 100%
     );
+  }
+
+  .faq {
+    fill: var(--first-text-light-color);
   }
 }
