@@ -286,6 +286,7 @@ small {
 /* ***** Content parameters & Content info ***** */
 
 .content-parameters,
+.content-parameters-user,
 .content-info {
   display: flex;
   flex-direction: column;
@@ -306,6 +307,10 @@ small {
   @media screen and (min-width: 1024px) {
     height: calc(100vh - 4rem - 4rem - 2rem);
   }
+}
+
+.content-parameters-user {
+  padding: 0;
 }
 
 .content-info {
