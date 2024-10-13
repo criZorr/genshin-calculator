@@ -16,7 +16,7 @@ export default function getCards(data, $container, path) {
     let cardBg = d.createElement("div");
     cardBg.classList.add("card-bg");
 
-    let p = d.createElement("p");
+    let p = d.createElement("h5");
     p.classList.add("card-name");
     p.innerHTML = name;
 

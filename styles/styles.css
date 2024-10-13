@@ -452,11 +452,6 @@ small {
     border-radius: 0.25rem 0.25rem 1rem 0;
   }
 
-  & p {
-    font-size: small;
-    font-weight: bold;
-  }
-
   & .five {
     background: linear-gradient(
       180deg,
