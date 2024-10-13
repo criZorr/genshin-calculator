@@ -248,6 +248,14 @@
   );
 }
 
+.card .colab {
+  background: linear-gradient(
+    180deg,
+    var(--colab-dark-color) 0%,
+    var(--colab-light-color) 100%
+  );
+}
+
 .card:hover {
   cursor: pointer;
 }

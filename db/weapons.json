@@ -1,0 +1,90 @@
+{
+  "1": {
+    "name": "Dull Blade",
+    "quality": "1-stars",
+    "weapon": "sword",
+    "enemy-material": "Firm Arrowhead",
+    "special-enemy-material": "Heavy Horn",
+    "domain-material": "Tile of Decarabian's Tower"
+  },
+  "2": {
+    "name": "Beginner's Protector",
+    "quality": "1-stars",
+    "weapon": "polearm",
+    "enemy-material": "Divining Scroll",
+    "special-enemy-material": "Chaos Device",
+    "domain-material": "Fetters of the Dandelion Gladiator"
+  },
+  "3": {
+    "name": "Waster Greatsword",
+    "quality": "1-stars",
+    "weapon": "claymore",
+    "enemy-material": "Slime Condensate",
+    "special-enemy-material": "Dead Ley Line Branch",
+    "domain-material": "Boreal Wolf's Milk Tooth"
+  },
+  "4": {
+    "name": "Apprentice's Notes",
+    "quality": "1-stars",
+    "weapon": "catalyst",
+    "enemy-material": "Damaged Mask",
+    "special-enemy-material": "Heavy Horn",
+    "domain-material": "Tile of Decarabian's Tower"
+  },
+  "5": {
+    "name": "Hunter's Bow",
+    "quality": "1-stars",
+    "weapon": "bow",
+    "enemy-material": "Treasure Hoarder Insignia",
+    "special-enemy-material": "Dead Ley Line Branch",
+    "domain-material": "Boreal Wolf's Milk Tooth"
+  },
+  "6": {
+    "name": "Silver Sword",
+    "quality": "2-stars",
+    "weapon": "sword",
+    "enemy-material": "Firm Arrowhead",
+    "special-enemy-material": "Heavy Horn",
+    "domain-material": "Tile of Decarabian's Tower"
+  },
+  "7": {
+    "name": "Iron Point",
+    "quality": "2-stars",
+    "weapon": "polearm",
+    "enemy-material": "Divining Scroll",
+    "special-enemy-material": "Chaos Device",
+    "domain-material": "Fetters of the Dandelion Gladiator"
+  },
+  "8": {
+    "name": "Old Merc's Pal",
+    "quality": "2-stars",
+    "weapon": "claymore",
+    "enemy-material": "Slime Condensate",
+    "special-enemy-material": "Dead Ley Line Branch",
+    "domain-material": "Boreal Wolf's Milk Tooth"
+  },
+  "9": {
+    "name": "Pocket Grimoire",
+    "quality": "2-stars",
+    "weapon": "catalyst",
+    "enemy-material": "Damaged Mask",
+    "special-enemy-material": "Heavy Horn",
+    "domain-material": "Tile of Decarabian's Tower"
+  },
+  "10": {
+    "name": "Seasoned Hunter's Bow",
+    "quality": "2-stars",
+    "weapon": "bow",
+    "enemy-material": "Treasure Hoarder Insignia",
+    "special-enemy-material": "Dead Ley Line Branch",
+    "domain-material": "Boreal Wolf's Milk Tooth"
+  },
+  "11": {
+    "name": "Traveler's Handy Sword",
+    "quality": "3-stars",
+    "weapon": "sword",
+    "enemy-material": "Divining Scroll",
+    "special-enemy-material": "Chaos Device",
+    "domain-material": "Fetters of the Dandelion Gladiator"
+  }
+}

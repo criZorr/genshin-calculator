@@ -43,6 +43,9 @@
   --gray-dark-color: #75777b;
   --gray-light-color: #a2a0a1;
 
+  --colab-dark-color: #74454a;
+  --colab-light-color: #b05b51;
+
   --font: "Raleway", sans-serif;
 
   --max-width: 1024px;
@@ -325,7 +328,8 @@ small {
 
 /* ********** Filters ********** */
 .filter-element,
-.filter-weapon {
+.filter-weapon,
+.filter-quality {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
@@ -360,6 +364,10 @@ small {
 }
 
 .filter-weapon .filter-label {
+  width: 5rem;
+}
+
+.filter-quality .filter-label {
   width: 5rem;
 }
 
@@ -486,6 +494,14 @@ small {
       180deg,
       var(--gray-dark-color) 0%,
       var(--gray-light-color) 100%
+    );
+  }
+
+  & .colab {
+    background: linear-gradient(
+      180deg,
+      var(--colab-dark-color) 0%,
+      var(--colab-light-color) 100%
     );
   }
 
