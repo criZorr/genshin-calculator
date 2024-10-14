@@ -694,5 +694,181 @@
     "enemy-material": "Slime Condensate",
     "special-enemy-material": "Chaos Device",
     "domain-material": "Fetters of the Dandelion Gladiator"
+  },
+  "88": {
+    "name": "Royal Spear",
+    "quality": "4-stars",
+    "weapon": "polearm",
+    "enemy-material": "Recruit's Insignia",
+    "special-enemy-material": "Mist Grass Pollen",
+    "domain-material": "Mist Veiled Lead Elixir"
+  },
+  "89": {
+    "name": "Vortex Vanquisher",
+    "quality": "5-stars",
+    "weapon": "polearm",
+    "enemy-material": "Treasure Hoarder Insignia",
+    "special-enemy-material": "Fragile Bone Shard",
+    "domain-material": "Grain of Aerosiderite"
+  },
+  "90": {
+    "name": "The Unforged",
+    "quality": "5-stars",
+    "weapon": "claymore",
+    "enemy-material": "Treasure Hoarder Insignia",
+    "special-enemy-material": "Mist Grass Pollen",
+    "domain-material": "Mist Veiled Lead Elixir"
+  },
+  "91": {
+    "name": "Memory of Dust",
+    "quality": "5-stars",
+    "weapon": "catalyst",
+    "enemy-material": "Damaged Mask",
+    "special-enemy-material": "Fragile Bone Shard",
+    "domain-material": "Grain of Aerosiderite"
+  },
+  "92": {
+    "name": "Snow-Tombed Starsilver",
+    "quality": "4-stars",
+    "weapon": "claymore",
+    "enemy-material": "Slime Condensate",
+    "special-enemy-material": "Heavy Horn",
+    "domain-material": "Tile of Decarabian's Tower"
+  },
+  "93": {
+    "name": "Frostbearer",
+    "quality": "4-stars",
+    "weapon": "catalyst",
+    "enemy-material": "Whopperflower Nectar",
+    "special-enemy-material": "Chaos Device",
+    "domain-material": "Fetters of the Dandelion Gladiator"
+  },
+  "94": {
+    "name": "Festering Desire",
+    "quality": "4-stars",
+    "weapon": "sword",
+    "enemy-material": "Recruit's Insignia",
+    "special-enemy-material": "Heavy Horn",
+    "domain-material": "Fetters of the Dandelion Gladiator"
+  },
+  "95": {
+    "name": "Dragonspine Spear",
+    "quality": "4-stars",
+    "weapon": "polearm",
+    "enemy-material": "Recruit's Insignia",
+    "special-enemy-material": "Mist Grass Pollen",
+    "domain-material": "Boreal Wolf's Milk Tooth"
+  },
+  "96": {
+    "name": "Summit Shaper",
+    "quality": "5-stars",
+    "weapon": "sword",
+    "enemy-material": "Damaged Mask",
+    "special-enemy-material": "Hunter's Sacrificial Knife",
+    "domain-material": "Luminous Sands from Guyun"
+  },
+  "97": {
+    "name": "Lithic Spear",
+    "quality": "4-stars",
+    "weapon": "polearm",
+    "enemy-material": "Firm Arrowhead",
+    "special-enemy-material": "Fragile Bone Shard",
+    "domain-material": "Grain of Aerosiderite"
+  },
+  "98": {
+    "name": "Lithic Blade",
+    "quality": "4-stars",
+    "weapon": "claymore",
+    "enemy-material": "Firm Arrowhead",
+    "special-enemy-material": "Hunter's Sacrificial Knife",
+    "domain-material": "Luminous Sands from Guyun"
+  },
+  "99": {
+    "name": "Staff of Homa",
+    "quality": "5-stars",
+    "weapon": "polearm",
+    "enemy-material": "Slime Condensate",
+    "special-enemy-material": "Dead Ley Line Branch",
+    "domain-material": "Grain of Aerosiderite"
+  },
+  "100": {
+    "name": "Primordial Jade Cutter",
+    "quality": "5-stars",
+    "weapon": "sword",
+    "enemy-material": "Treasure Hoarder Insignia",
+    "special-enemy-material": "Mist Grass Pollen",
+    "domain-material": "Mist Veiled Lead Elixir"
+  },
+  "101": {
+    "name": "Wine and Song",
+    "quality": "4-stars",
+    "weapon": "catalyst",
+    "enemy-material": "Treasure Hoarder Insignia",
+    "special-enemy-material": "Dead Ley Line Branch",
+    "domain-material": "Boreal Wolf's Milk Tooth"
+  },
+  "102": {
+    "name": "Windblume Ode",
+    "quality": "4-stars",
+    "weapon": "bow",
+    "enemy-material": "Whopperflower Nectar",
+    "special-enemy-material": "Dead Ley Line Branch",
+    "domain-material": "Fetters of the Dandelion Gladiator"
+  },
+  "103": {
+    "name": "The Alley Flash",
+    "quality": "4-stars",
+    "weapon": "sword",
+    "enemy-material": "Divining Scroll",
+    "special-enemy-material": "Heavy Horn",
+    "domain-material": "Tile of Decarabian's Tower"
+  },
+  "104": {
+    "name": "Alley Hunter",
+    "quality": "4-stars",
+    "weapon": "bow",
+    "enemy-material": "Slime Condensate",
+    "special-enemy-material": "Chaos Device",
+    "domain-material": "Fetters of the Dandelion Gladiator"
+  },
+  "105": {
+    "name": "Elegy for the End",
+    "quality": "5-stars",
+    "weapon": "bow",
+    "enemy-material": "Recruit's Insignia",
+    "special-enemy-material": "Heavy Horn",
+    "domain-material": "Boreal Wolf's Milk Tooth"
+  },
+  "106": {
+    "name": "Song of Broken Pines",
+    "quality": "5-stars",
+    "weapon": "claymore",
+    "enemy-material": "Damaged Mask",
+    "special-enemy-material": "Heavy Horn",
+    "domain-material": "Tile of Decarabian's Tower"
+  },
+  "107": {
+    "name": "Mitternachts Waltz",
+    "quality": "4-stars",
+    "weapon": "bow",
+    "enemy-material": "Treasure Hoarder Insignia",
+    "special-enemy-material": "Heavy Horn",
+    "domain-material": "Tile of Decarabian's Tower"
+  },
+  "108": {
+    "name": "Dodoco Tales",
+    "quality": "4-stars",
+    "weapon": "catalyst",
+    "enemy-material": "Damaged Mask",
+    "special-enemy-material": "Dead Ley Line Branch",
+    "domain-material": "Boreal Wolf's Milk Tooth"
+  },
+  "109": {
+    "name": "Freedom-Sworn",
+    "quality": "5-stars",
+    "weapon": "sword",
+    "enemy-material": "Divining Scroll",
+    "special-enemy-material": "Chaos Device",
+    "domain-material": "Fetters of the Dandelion Gladiator"
   }
 }
