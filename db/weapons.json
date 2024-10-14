@@ -176,7 +176,7 @@
     "domain-material": "Tile of Decarabian's Tower"
   },
   "23": {
-    "name": "De­ate Club",
+    "name": "Debate Club",
     "quality": "3-stars",
     "weapon": "claymore",
     "enemy-material": "Damaged Mask",
@@ -270,5 +270,349 @@
     "enemy-material": "Treasure Hoarder Insignia",
     "special-enemy-material": "Mist Grass Pollen",
     "domain-material": "Mist Veiled Lead Elixir"
+  },
+  "35": {
+    "name": "The Flute",
+    "quality": "4-stars",
+    "weapon": "sword",
+    "enemy-material": "Slime Condensate",
+    "special-enemy-material": "Dead Ley Line Branch",
+    "domain-material": "Boreal Wolf's Milk Tooth"
+  },
+  "36": {
+    "name": "The Black Sword",
+    "quality": "4-stars",
+    "weapon": "sword",
+    "enemy-material": "Slime Condensate",
+    "special-enemy-material": "Dead Ley Line Branch",
+    "domain-material": "Boreal Wolf's Milk Tooth"
+  },
+  "37": {
+    "name": "Sword of Descension",
+    "quality": "4-stars",
+    "weapon": "sword",
+    "enemy-material": "Treasure Hoarder Insignia",
+    "special-enemy-material": "Dead Ley Line Branch",
+    "domain-material": "Boreal Wolf's Milk Tooth"
+  },
+  "38": {
+    "name": "Sacrificial Sword",
+    "quality": "4-stars",
+    "weapon": "sword",
+    "enemy-material": "Divining Scroll",
+    "special-enemy-material": "Chaos Device",
+    "domain-material": "Fetters of the Dandelion Gladiator"
+  },
+  "39": {
+    "name": "Royal Longsword",
+    "quality": "4-stars",
+    "weapon": "sword",
+    "enemy-material": "Firm Arrowhead",
+    "special-enemy-material": "Heavy Horn",
+    "domain-material": "Tile of Decarabian's Tower"
+  },
+  "40": {
+    "name": "Prototype Rancour",
+    "quality": "4-stars",
+    "weapon": "sword",
+    "enemy-material": "Recruit's Insignia",
+    "special-enemy-material": "Mist Grass Pollen",
+    "domain-material": "Mist Veiled Lead Elixir"
+  },
+  "41": {
+    "name": "Lion's Roar",
+    "quality": "4-stars",
+    "weapon": "sword",
+    "enemy-material": "Treasure Hoarder Insignia",
+    "special-enemy-material": "Hunter's Sacrificial Knife",
+    "domain-material": "Luminous Sands from Guyun"
+  },
+  "42": {
+    "name": "Iron Sting",
+    "quality": "4-stars",
+    "weapon": "sword",
+    "enemy-material": "Whopperflower Nectar",
+    "special-enemy-material": "Fragile Bone Shard",
+    "domain-material": "Grain of Aerosiderite"
+  },
+  "43": {
+    "name": "Favonius Sword",
+    "quality": "4-stars",
+    "weapon": "sword",
+    "enemy-material": "Firm Arrowhead",
+    "special-enemy-material": "Heavy Horn",
+    "domain-material": "Tile of Decarabian's Tower"
+  },
+  "44": {
+    "name": "Blackcliff Longsword",
+    "quality": "4-stars",
+    "weapon": "sword",
+    "enemy-material": "Firm Arrowhead",
+    "special-enemy-material": "Hunter's Sacrificial Knife",
+    "domain-material": "Luminous Sands from Guyun"
+  },
+  "45": {
+    "name": "Prototype Starglitter",
+    "quality": "4-stars",
+    "weapon": "polearm",
+    "enemy-material": "Damaged Mask",
+    "special-enemy-material": "Fragile Bone Shard",
+    "domain-material": "Grain of Aerosiderite"
+  },
+  "46": {
+    "name": "Favonius Lance",
+    "quality": "4-stars",
+    "weapon": "polearm",
+    "enemy-material": "Slime Condensate",
+    "special-enemy-material": "Chaos Device",
+    "domain-material": "Fetters of the Dandelion Gladiator"
+  },
+  "47": {
+    "name": "Dragon's Bane",
+    "quality": "4-stars",
+    "weapon": "polearm",
+    "enemy-material": "Divining Scroll",
+    "special-enemy-material": "Mist Grass Pollen",
+    "domain-material": "Mist Veiled Lead Elixir"
+  },
+  "48": {
+    "name": "Deathmatch",
+    "quality": "4-stars",
+    "weapon": "polearm",
+    "enemy-material": "Whopperflower Nectar",
+    "special-enemy-material": "Dead Ley Line Branch",
+    "domain-material": "Boreal Wolf's Milk Tooth"
+  },
+  "49": {
+    "name": "Crescent Pike",
+    "quality": "4-stars",
+    "weapon": "polearm",
+    "enemy-material": "Treasure Hoarder Insignia",
+    "special-enemy-material": "Hunter's Sacrificial Knife",
+    "domain-material": "Luminous Sands from Guyun"
+  },
+  "50": {
+    "name": "Blackcliff Pole",
+    "quality": "4-stars",
+    "weapon": "polearm",
+    "enemy-material": "Recruit's Insignia",
+    "special-enemy-material": "Mist Grass Pollen",
+    "domain-material": "Mist Veiled Lead Elixir"
+  },
+  "51": {
+    "name": "Whiteblind",
+    "quality": "4-stars",
+    "weapon": "claymore",
+    "enemy-material": "Treasure Hoarder Insignia",
+    "special-enemy-material": "Hunter's Sacrificial Knife",
+    "domain-material": "Luminous Sands from Guyun"
+  },
+  "52": {
+    "name": "The Bell",
+    "quality": "4-stars",
+    "weapon": "claymore",
+    "enemy-material": "Whopperflower Nectar",
+    "special-enemy-material": "Heavy Horn",
+    "domain-material": "Tile of Decarabian's Tower"
+  },
+  "53": {
+    "name": "Serpent Spine",
+    "quality": "4-stars",
+    "weapon": "claymore",
+    "enemy-material": "Whopperflower Nectar",
+    "special-enemy-material": "Fragile Bone Shard",
+    "domain-material": "Grain of Aerosiderite"
+  },
+  "54": {
+    "name": "Sacrificial Greatsword",
+    "quality": "4-stars",
+    "weapon": "claymore",
+    "enemy-material": "Firm Arrowhead",
+    "special-enemy-material": "Dead Ley Line Branch",
+    "domain-material": "Boreal Wolf's Milk Tooth"
+  },
+  "55": {
+    "name": "Royal Greatsword",
+    "quality": "4-stars",
+    "weapon": "claymore",
+    "enemy-material": "Slime Condensate",
+    "special-enemy-material": "Chaos Device",
+    "domain-material": "Fetters of the Dandelion Gladiator"
+  },
+  "56": {
+    "name": "Rainslasher",
+    "quality": "4-stars",
+    "weapon": "claymore",
+    "enemy-material": "Divining Scroll",
+    "special-enemy-material": "Mist Grass Pollen",
+    "domain-material": "Mist Veiled Lead Elixir"
+  },
+  "57": {
+    "name": "Prototype Archaic",
+    "quality": "4-stars",
+    "weapon": "claymore",
+    "enemy-material": "Damaged Mask",
+    "special-enemy-material": "Fragile Bone Shard",
+    "domain-material": "Grain of Aerosiderite"
+  },
+  "58": {
+    "name": "Favonius Greatsword",
+    "quality": "4-stars",
+    "weapon": "claymore",
+    "enemy-material": "Recruit's Insignia",
+    "special-enemy-material": "Chaos Device",
+    "domain-material": "Fetters of the Dandelion Gladiator"
+  },
+  "59": {
+    "name": "Blackcliff Slasher",
+    "quality": "4-stars",
+    "weapon": "claymore",
+    "enemy-material": "Recruit's Insignia",
+    "special-enemy-material": "Mist Grass Pollen",
+    "domain-material": "Mist Veiled Lead Elixir"
+  },
+  "60": {
+    "name": "The Widsith",
+    "quality": "4-stars",
+    "weapon": "catalyst",
+    "enemy-material": "Damaged Mask",
+    "special-enemy-material": "Dead Ley Line Branch",
+    "domain-material": "Boreal Wolf's Milk Tooth"
+  },
+  "61": {
+    "name": "Solar Pearl",
+    "quality": "4-stars",
+    "weapon": "catalyst",
+    "enemy-material": "Whopperflower Nectar",
+    "special-enemy-material": "Hunter's Sacrificial Knife",
+    "domain-material": "Luminous Sands from Guyun"
+  },
+  "62": {
+    "name": "Sacrificial Fragments",
+    "quality": "4-stars",
+    "weapon": "catalyst",
+    "enemy-material": "Treasure Hoarder Insignia",
+    "special-enemy-material": "Chaos Device",
+    "domain-material": "Fetters of the Dandelion Gladiator"
+  },
+  "63": {
+    "name": "Royal Grimoire",
+    "quality": "4-stars",
+    "weapon": "catalyst",
+    "enemy-material": "Recruit's Insignia",
+    "special-enemy-material": "Heavy Horn",
+    "domain-material": "Tile of Decarabian's Tower"
+  },
+  "64": {
+    "name": "Prototype Amber",
+    "quality": "4-stars",
+    "weapon": "catalyst",
+    "enemy-material": "Firm Arrowhead",
+    "special-enemy-material": "Mist Grass Pollen",
+    "domain-material": "Mist Veiled Lead Elixir"
+  },
+  "65": {
+    "name": "Mappa Mare",
+    "quality": "4-stars",
+    "weapon": "catalyst",
+    "enemy-material": "Slime Condensate",
+    "special-enemy-material": "Fragile Bone Shard",
+    "domain-material": "Grain of Aerosiderite"
+  },
+  "66": {
+    "name": "Favonius Codex",
+    "quality": "4-stars",
+    "weapon": "catalyst",
+    "enemy-material": "Divining Scroll",
+    "special-enemy-material": "Heavy Horn",
+    "domain-material": "Tile of Decarabian's Tower"
+  },
+  "67": {
+    "name": "Eye of Perception",
+    "quality": "4-stars",
+    "weapon": "catalyst",
+    "enemy-material": "Damaged Mask",
+    "special-enemy-material": "Mist Grass Pollen",
+    "domain-material": "Mist Veiled Lead Elixir"
+  },
+  "68": {
+    "name": "Blackcliff Agate",
+    "quality": "4-stars",
+    "weapon": "catalyst",
+    "enemy-material": "Divining Scroll",
+    "special-enemy-material": "Hunter's Sacrificial Knife",
+    "domain-material": "Luminous Sands from Guyun"
+  },
+  "69": {
+    "name": "The Viridescent Hunt",
+    "quality": "4-stars",
+    "weapon": "bow",
+    "enemy-material": "Firm Arrowhead",
+    "special-enemy-material": "Heavy Horn",
+    "domain-material": "Tile of Decarabian's Tower"
+  },
+  "70": {
+    "name": "The Stringless",
+    "quality": "4-stars",
+    "weapon": "bow",
+    "enemy-material": "Firm Arrowhead",
+    "special-enemy-material": "Heavy Horn",
+    "domain-material": "Tile of Decarabian's Tower"
+  },
+  "71": {
+    "name": "Sacrificial Bow",
+    "quality": "4-stars",
+    "weapon": "bow",
+    "enemy-material": "Slime Condensate",
+    "special-enemy-material": "Dead Ley Line Branch",
+    "domain-material": "Boreal Wolf's Milk Tooth"
+  },
+  "72": {
+    "name": "Rust",
+    "quality": "4-stars",
+    "weapon": "bow",
+    "enemy-material": "Damaged Mask",
+    "special-enemy-material": "Hunter's Sacrificial Knife",
+    "domain-material": "Luminous Sands from Guyun"
+  },
+  "73": {
+    "name": "Royal Bow",
+    "quality": "4-stars",
+    "weapon": "bow",
+    "enemy-material": "Divining Scroll",
+    "special-enemy-material": "Chaos Device",
+    "domain-material": "Fetters of the Dandelion Gladiator"
+  },
+  "74": {
+    "name": "Prototype Crescent",
+    "quality": "4-stars",
+    "weapon": "bow",
+    "enemy-material": "Treasure Hoarder Insignia",
+    "special-enemy-material": "Mist Grass Pollen",
+    "domain-material": "Mist Veiled Lead Elixir"
+  },
+  "75": {
+    "name": "Favonius Warbow",
+    "quality": "4-stars",
+    "weapon": "bow",
+    "enemy-material": "Whopperflower Nectar",
+    "special-enemy-material": "Chaos Device",
+    "domain-material": "Fetters of the Dandelion Gladiator"
+  },
+  "76": {
+    "name": "Compound Bow",
+    "quality": "4-stars",
+    "weapon": "bow",
+    "enemy-material": "Recruit's Insignia",
+    "special-enemy-material": "Fragile Bone Shard",
+    "domain-material": "Grain of Aerosiderite"
+  },
+  "77": {
+    "name": "Blackcliff Warbow",
+    "quality": "4-stars",
+    "weapon": "bow",
+    "enemy-material": "Whopperflower Nectar",
+    "special-enemy-material": "Hunter's Sacrificial Knife",
+    "domain-material": "Luminous Sands from Guyun"
   }
 }
