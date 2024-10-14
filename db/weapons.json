@@ -1238,5 +1238,253 @@
     "enemy-material": "Faded Red Satin",
     "special-enemy-material": "A Flower Yet to Bloom",
     "domain-material": "Copper Talisman of the Forest Dew"
+  },
+  "156": {
+    "name": "Fleuve Cendre Ferryman",
+    "quality": "4-stars",
+    "weapon": "sword",
+    "enemy-material": "Transoceanic Pearl",
+    "special-enemy-material": "Drop of Tainted Water",
+    "domain-material": "Fragment of an Ancient Chord"
+  },
+  "157": {
+    "name": "Sacrificial Jade",
+    "quality": "4-stars",
+    "weapon": "catalyst",
+    "enemy-material": "Divining Scroll",
+    "special-enemy-material": "Mist Grass Pollen",
+    "domain-material": "Luminous Sands from Guyun"
+  },
+  "158": {
+    "name": "Ballad of the Fjords",
+    "quality": "4-stars",
+    "weapon": "polearm",
+    "enemy-material": "Whopperflower Nectar",
+    "special-enemy-material": "A Flower Yet to Bloom",
+    "domain-material": "Broken Goblet of the Pristine Sea"
+  },
+  "159": {
+    "name": "Talking Stick",
+    "quality": "4-stars",
+    "weapon": "claymore",
+    "enemy-material": "Slime Condensate",
+    "special-enemy-material": "Desiccated Shell",
+    "domain-material": "Oasis Garden's Reminiscence"
+  },
+  "160": {
+    "name": "Wolf-Fang",
+    "quality": "4-stars",
+    "weapon": "sword",
+    "enemy-material": "Damaged Mask",
+    "special-enemy-material": "Chaos Device",
+    "domain-material": "Tile of Decarabian's Tower"
+  },
+  "162": {
+    "name": "Scion of the Blazing Sun",
+    "quality": "4-stars",
+    "weapon": "bow",
+    "enemy-material": "Fungal Spores",
+    "special-enemy-material": "A Flower Yet to Bloom",
+    "domain-material": "Echo of Scorching Might"
+  },
+  "163": {
+    "name": "Flowing Purity",
+    "quality": "4-stars",
+    "weapon": "catalyst",
+    "enemy-material": "Transoceanic Pearl",
+    "special-enemy-material": "Rift Core",
+    "domain-material": "Dross of Pure Sacred Dewdrop"
+  },
+  "164": {
+    "name": "Rightful Reward",
+    "quality": "4-stars",
+    "weapon": "polearm",
+    "enemy-material": "Meshing Gear",
+    "special-enemy-material": "Rift Core",
+    "domain-material": "Broken Goblet of the Pristine Sea"
+  },
+  "165": {
+    "name": "Tidal Shadow",
+    "quality": "4-stars",
+    "weapon": "claymore",
+    "enemy-material": "Meshing Gear",
+    "special-enemy-material": "Rift Core",
+    "domain-material": "Broken Goblet of the Pristine Sea"
+  },
+  "166": {
+    "name": "Finale of the Deep",
+    "quality": "4-stars",
+    "weapon": "sword",
+    "enemy-material": "Old Handguard",
+    "special-enemy-material": "Drop of Tainted Water",
+    "domain-material": "Dross of Pure Sacred Dewdrop"
+  },
+  "167": {
+    "name": "Song of Stillness",
+    "quality": "4-stars",
+    "weapon": "bow",
+    "enemy-material": "Firm Arrowhead",
+    "special-enemy-material": "Drop of Tainted Water",
+    "domain-material": "Fragment of an Ancient Chord"
+  },
+  "168": {
+    "name": "The First Great Magic",
+    "quality": "5-stars",
+    "weapon": "bow",
+    "enemy-material": "Transoceanic Pearl",
+    "special-enemy-material": "Drop of Tainted Water",
+    "domain-material": "Fragment of an Ancient Chord"
+  },
+  "169": {
+    "name": "Ballad of the Boundless Blue",
+    "quality": "4-stars",
+    "weapon": "catalyst",
+    "enemy-material": "Treasure Hoarder Insignia",
+    "special-enemy-material": "Fragile Bone Shard",
+    "domain-material": "Boreal Wolf's Milk Tooth"
+  },
+  "170": {
+    "name": "Range Gauge",
+    "quality": "4-stars",
+    "weapon": "bow",
+    "enemy-material": "Transoceanic Pearl",
+    "special-enemy-material": "Drop of Tainted Water",
+    "domain-material": "Fragment of an Ancient Chord"
+  },
+  "171": {
+    "name": "Prospector's Drill",
+    "quality": "4-stars",
+    "weapon": "polearm",
+    "enemy-material": "Meshing Gear",
+    "special-enemy-material": "Old Operative's Pocket Watch",
+    "domain-material": "Fragment of an Ancient Chord"
+  },
+  "172": {
+    "name": "Portable Power Saw",
+    "quality": "4-stars",
+    "weapon": "claymore",
+    "enemy-material": "Meshing Gear",
+    "special-enemy-material": "Rift Core",
+    "domain-material": "Broken Goblet of the Pristine Sea"
+  },
+  "173": {
+    "name": "The Dockhand's Assistant",
+    "quality": "4-stars",
+    "weapon": "sword",
+    "enemy-material": "Transoceanic Pearl",
+    "special-enemy-material": "Old Operative's Pocket Watch",
+    "domain-material": "Dross of Pure Sacred Dewdrop"
+  },
+  "174": {
+    "name": "Cashflow Supervision",
+    "quality": "5-stars",
+    "weapon": "catalyst",
+    "enemy-material": "Transoceanic Pearl",
+    "special-enemy-material": "Old Operative's Pocket Watch",
+    "domain-material": "Broken Goblet of the Pristine Sea"
+  },
+  "175": {
+    "name": "Tome of the Eternal Flow",
+    "quality": "5-stars",
+    "weapon": "catalyst",
+    "enemy-material": "Meshing Gear",
+    "special-enemy-material": "Rift Core",
+    "domain-material": "Dross of Pure Sacred Dewdrop"
+  },
+  "176": {
+    "name": "Sword of Narzissenkreuz",
+    "quality": "4-stars",
+    "weapon": "sword",
+    "enemy-material": "Transoceanic Pearl",
+    "special-enemy-material": "Old Operative's Pocket Watch",
+    "domain-material": "Fragment of an Ancient Chord"
+  },
+  "177": {
+    "name": "Splendor of Tranquil Waters",
+    "quality": "5-stars",
+    "weapon": "sword",
+    "enemy-material": "Transoceanic Pearl",
+    "special-enemy-material": "Drop of Tainted Water",
+    "domain-material": "Dross of Pure Sacred Dewdrop"
+  },
+  "178": {
+    "name": "Ultimate Overlord's Mega Magic Sword",
+    "quality": "4-stars",
+    "weapon": "claymore",
+    "enemy-material": "Meshing Gear",
+    "special-enemy-material": "Old Operative's Pocket Watch",
+    "domain-material": "Broken Goblet of the Pristine Sea"
+  },
+  "179": {
+    "name": "Verdict",
+    "quality": "5-stars",
+    "weapon": "claymore",
+    "enemy-material": "Meshing Gear",
+    "special-enemy-material": "Rift Core",
+    "domain-material": "Fragment of an Ancient Chord"
+  },
+  "180": {
+    "name": "Crane's Echoing Call",
+    "quality": "5-stars",
+    "weapon": "catalyst",
+    "enemy-material": "Divining Scroll",
+    "special-enemy-material": "Feathery Fin",
+    "domain-material": "Mist Veiled Lead Elixir"
+  },
+  "182": {
+    "name": "Dialogues of the Desert Sages",
+    "quality": "4-stars",
+    "weapon": "polearm",
+    "enemy-material": "Spectral Husk",
+    "special-enemy-material": "Feathery Fin",
+    "domain-material": "Copper Talisman of the Forest Dew"
+  },
+  "183": {
+    "name": "Uraku Misugiri",
+    "quality": "5-stars",
+    "weapon": "sword",
+    "enemy-material": "Old Handguard",
+    "special-enemy-material": "Chaos Gear",
+    "domain-material": "Coral Branch of a Distant Sea"
+  },
+  "184": {
+    "name": "Crimson Moon's Semblance",
+    "quality": "5-stars",
+    "weapon": "polearm",
+    "enemy-material": "Meshing Gear",
+    "special-enemy-material": "Ruined Hilt",
+    "domain-material": "Broken Goblet of the Pristine Sea"
+  },
+  "185": {
+    "name": "Cloudforged",
+    "quality": "4-stars",
+    "weapon": "bow",
+    "enemy-material": "Recruit's Insignia",
+    "special-enemy-material": "Ruined Hilt",
+    "domain-material": "Grain of Aerosiderite"
+  },
+  "186": {
+    "name": "Silvershower Heartstrings",
+    "quality": "5-stars",
+    "weapon": "bow",
+    "enemy-material": "Transoceanic Pearl",
+    "special-enemy-material": "Feathery Fin",
+    "domain-material": "Dross of Pure Sacred Dewdrop"
+  },
+  "187": {
+    "name": "Absolution",
+    "quality": "5-stars",
+    "weapon": "sword",
+    "enemy-material": "Meshing Gear",
+    "special-enemy-material": "Old Operative's Pocket Watch",
+    "domain-material": "Fragment of an Ancient Chord"
+  },
+  "188": {
+    "name": "Lumidouce Elegy",
+    "quality": "5-stars",
+    "weapon": "polearm",
+    "enemy-material": "Whopperflower Nectar",
+    "special-enemy-material": "Ruined Hilt",
+    "domain-material": "Broken Goblet of the Pristine Sea"
   }
 }
