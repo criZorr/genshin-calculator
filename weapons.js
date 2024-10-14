@@ -37,7 +37,8 @@ const filterAction = (filters, data) => {
       .replaceAll(" ", "_")
       .replaceAll(")", "")
       .replaceAll("(", "")
-      .replaceAll("'", "_");
+      .replaceAll("'", "_")
+      .replaceAll('"', "");
 
     let $card = d.querySelector(`.${name}-card`);
     $card.style.display = "none";

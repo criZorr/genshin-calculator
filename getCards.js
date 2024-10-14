@@ -7,7 +7,8 @@ export default function getCards(data, $container, path) {
         .replaceAll("(", "")
         .replaceAll(")", "")
         .replaceAll(" ", "_")
-        .replaceAll("'", "_");
+        .replaceAll("'", "_")
+        .replaceAll('"', "");
 
     let card = d.createElement("div");
     card.classList.add("card");
@@ -41,7 +42,10 @@ export default function getCards(data, $container, path) {
         break;
     }
 
-    cardBg.innerHTML = `<img src="${path}/${name}.png" alt="${name}" />`;
+    cardBg.innerHTML = `<img src="${path}/${name.replaceAll(
+      '"',
+      "_"
+    )}.png" alt="${name}" />`;
     card.appendChild(cardBg);
     card.appendChild(p);
     $container.appendChild(card);
