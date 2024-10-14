@@ -870,5 +870,205 @@
     "enemy-material": "Divining Scroll",
     "special-enemy-material": "Chaos Device",
     "domain-material": "Fetters of the Dandelion Gladiator"
+  },
+  "110": {
+    "name": "Hakushin Ring",
+    "quality": "4-stars",
+    "weapon": "catalyst",
+    "enemy-material": "Divining Scroll",
+    "special-enemy-material": "Dismal Prism",
+    "domain-material": "Coral Branch of a Distant Sea"
+  },
+  "111": {
+    "name": "Katsuragikiri Nagamasa",
+    "quality": "4-stars",
+    "weapon": "claymore",
+    "enemy-material": "Old Handguard",
+    "special-enemy-material": "Chaos Gear",
+    "domain-material": "Narukami's Wisdom"
+  },
+  "112": {
+    "name": "Kitain Cross Spear",
+    "quality": "4-stars",
+    "weapon": "polearm",
+    "enemy-material": "Treasure Hoarder Insignia",
+    "special-enemy-material": "Chaos Gear",
+    "domain-material": "Mask of the Wicked Lieutenant"
+  },
+  "113": {
+    "name": "Amenoma Kageuchi",
+    "quality": "4-stars",
+    "weapon": "sword",
+    "enemy-material": "Old Handguard",
+    "special-enemy-material": "Chaos Gear",
+    "domain-material": "Coral Branch of a Distant Sea"
+  },
+  "114": {
+    "name": "Hamayumi",
+    "quality": "4-stars",
+    "weapon": "bow",
+    "enemy-material": "Firm Arrowhead",
+    "special-enemy-material": "Dismal Prism",
+    "domain-material": "Narukami's Wisdom"
+  },
+  "115": {
+    "name": "Mistsplitter Reforged",
+    "quality": "5-stars",
+    "weapon": "sword",
+    "enemy-material": "Old Handguard",
+    "special-enemy-material": "Chaos Gear",
+    "domain-material": "Coral Branch of a Distant Sea"
+  },
+  "116": {
+    "name": "Thundering Pulse",
+    "quality": "5-stars",
+    "weapon": "bow",
+    "enemy-material": "Firm Arrowhead",
+    "special-enemy-material": "Dismal Prism",
+    "domain-material": "Narukami's Wisdom"
+  },
+  "117": {
+    "name": "Predator",
+    "quality": "4-stars",
+    "weapon": "bow",
+    "enemy-material": "Firm Arrowhead",
+    "special-enemy-material": "Dismal Prism",
+    "domain-material": "Narukami's Wisdom"
+  },
+  "118": {
+    "name": "Luxurious Sea-Lord",
+    "quality": "4-stars",
+    "weapon": "claymore",
+    "enemy-material": "Slime Condensate",
+    "special-enemy-material": "Fragile Bone Shard",
+    "domain-material": "Grain of Aerosiderite"
+  },
+  "119": {
+    "name": "\"The Catch\"",
+    "quality": "4-stars",
+    "weapon": "polearm",
+    "enemy-material": "Spectral Husk",
+    "special-enemy-material": "Chaos Gear",
+    "domain-material": "Mask of the Wicked Lieutenant"
+  },
+  "120": {
+    "name": "Everlasting Moonglow",
+    "quality": "5-stars",
+    "weapon": "catalyst",
+    "enemy-material": "Spectral Husk",
+    "special-enemy-material": "Dismal Prism",
+    "domain-material": "Coral Branch of a Distant Sea"
+  },
+  "121": {
+    "name": "Engulfing Lightning",
+    "quality": "5-stars",
+    "weapon": "polearm",
+    "enemy-material": "Old Handguard",
+    "special-enemy-material": "Chaos Gear",
+    "domain-material": "Mask of the Wicked Lieutenant"
+  },
+  "122": {
+    "name": "Wavebreaker's Fin",
+    "quality": "4-stars",
+    "weapon": "polearm",
+    "enemy-material": "Old Handguard",
+    "special-enemy-material": "Concealed Claw",
+    "domain-material": "Mask of the Wicked Lieutenant"
+  },
+  "123": {
+    "name": "Mouun's Moon",
+    "quality": "4-stars",
+    "weapon": "bow",
+    "enemy-material": "Spectral Husk",
+    "special-enemy-material": "Dismal Prism",
+    "domain-material": "Narukami's Wisdom"
+  },
+  "124": {
+    "name": "Akuoumaru",
+    "quality": "4-stars",
+    "weapon": "claymore",
+    "enemy-material": "Old Handguard",
+    "special-enemy-material": "Concealed Claw",
+    "domain-material": "Coral Branch of a Distant Sea"
+  },
+  "125": {
+    "name": "Polar Star",
+    "quality": "5-stars",
+    "weapon": "bow",
+    "enemy-material": "Spectral Husk",
+    "special-enemy-material": "Concealed Claw",
+    "domain-material": "Mask of the Wicked Lieutenant"
+  },
+  "126": {
+    "name": "Cinnabar Spindle",
+    "quality": "4-stars",
+    "weapon": "sword",
+    "enemy-material": "Damaged Mask",
+    "special-enemy-material": "Chaos Device",
+    "domain-material": "Tile of Decarabian's Tower"
+  },
+  "127": {
+    "name": "Redhorn Stonethresher",
+    "quality": "5-stars",
+    "weapon": "claymore",
+    "enemy-material": "Old Handguard",
+    "special-enemy-material": "Concealed Claw",
+    "domain-material": "Narukami's Wisdom"
+  },
+  "128": {
+    "name": "Calamity Queller",
+    "quality": "5-stars",
+    "weapon": "polearm",
+    "enemy-material": "Whopperflower Nectar",
+    "special-enemy-material": "Mist Grass Pollen",
+    "domain-material": "Mist Veiled Lead Elixir"
+  },
+  "129": {
+    "name": "Oathsworn Eye",
+    "quality": "4-stars",
+    "weapon": "catalyst",
+    "enemy-material": "Spectral Husk",
+    "special-enemy-material": "Concealed Claw",
+    "domain-material": "Coral Branch of a Distant Sea"
+  },
+  "130": {
+    "name": "Kagura's Verity",
+    "quality": "5-stars",
+    "weapon": "catalyst",
+    "enemy-material": "Spectral Husk",
+    "special-enemy-material": "Concealed Claw",
+    "domain-material": "Mask of the Wicked Lieutenant"
+  },
+  "131": {
+    "name": "Haran Geppaku Futsu",
+    "quality": "5-stars",
+    "weapon": "sword",
+    "enemy-material": "Old Handguard",
+    "special-enemy-material": "Gloomy Statuette",
+    "domain-material": "Narukami's Wisdom"
+  },
+  "132": {
+    "name": "Fading Twilight",
+    "quality": "4-stars",
+    "weapon": "bow",
+    "enemy-material": "Divining Scroll",
+    "special-enemy-material": "Hunter's Sacrificial Knife",
+    "domain-material": "Grain of Aerosiderite"
+  },
+  "133": {
+    "name": "Aqua Simulacra",
+    "quality": "5-stars",
+    "weapon": "bow",
+    "enemy-material": "Spectral Husk",
+    "special-enemy-material": "Gloomy Statuette",
+    "domain-material": "Luminous Sands from Guyun"
+  },
+  "134": {
+    "name": "Kagotsurube Isshin",
+    "quality": "4-stars",
+    "weapon": "sword",
+    "enemy-material": "Spectral Husk",
+    "special-enemy-material": "Gloomy Statuette",
+    "domain-material": "Mask of the Wicked Lieutenant"
   }
 }
