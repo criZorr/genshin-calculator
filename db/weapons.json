@@ -1070,5 +1070,173 @@
     "enemy-material": "Spectral Husk",
     "special-enemy-material": "Gloomy Statuette",
     "domain-material": "Mask of the Wicked Lieutenant"
+  },
+  "135": {
+    "name": "Sapwood Blade",
+    "quality": "4-stars",
+    "weapon": "sword",
+    "enemy-material": "Faded Red Satin",
+    "special-enemy-material": "Chaos Storage",
+    "domain-material": "Copper Talisman of the Forest Dew"
+  },
+  "136": {
+    "name": "Moonpiercer",
+    "quality": "4-stars",
+    "weapon": "polearm",
+    "enemy-material": "Recruit's Insignia",
+    "special-enemy-material": "Chaos Storage",
+    "domain-material": "Oasis Garden's Reminiscence"
+  },
+  "137": {
+    "name": "King's Squire",
+    "quality": "4-stars",
+    "weapon": "bow",
+    "enemy-material": "Firm Arrowhead",
+    "special-enemy-material": "Inactivated Fungal Nucleus",
+    "domain-material": "Echo of Scorching Might"
+  },
+  "138": {
+    "name": "Fruit of Fulfillment",
+    "quality": "4-stars",
+    "weapon": "catalyst",
+    "enemy-material": "Fungal Spores",
+    "special-enemy-material": "Gloomy Statuette",
+    "domain-material": "Oasis Garden's Reminiscence"
+  },
+  "139": {
+    "name": "Forest Regalia",
+    "quality": "4-stars",
+    "weapon": "claymore",
+    "enemy-material": "Faded Red Satin",
+    "special-enemy-material": "Chaos Storage",
+    "domain-material": "Copper Talisman of the Forest Dew"
+  },
+  "140": {
+    "name": "End of the Line",
+    "quality": "4-stars",
+    "weapon": "bow",
+    "enemy-material": "Fungal Spores",
+    "special-enemy-material": "Inactivated Fungal Nucleus",
+    "domain-material": "Echo of Scorching Might"
+  },
+  "141": {
+    "name": "Hunter's Path",
+    "quality": "5-stars",
+    "weapon": "bow",
+    "enemy-material": "Faded Red Satin",
+    "special-enemy-material": "Inactivated Fungal Nucleus",
+    "domain-material": "Echo of Scorching Might"
+  },
+  "142": {
+    "name": "Missive Windspear",
+    "quality": "4-stars",
+    "weapon": "polearm",
+    "enemy-material": "Slime Condensate",
+    "special-enemy-material": "Gloomy Statuette",
+    "domain-material": "Boreal Wolf's Milk Tooth"
+  },
+  "143": {
+    "name": "Wandering Evenstar",
+    "quality": "4-stars",
+    "weapon": "catalyst",
+    "enemy-material": "Fungal Spores",
+    "special-enemy-material": "Inactivated Fungal Nucleus",
+    "domain-material": "Oasis Garden's Reminiscence"
+  },
+  "144": {
+    "name": "Makhaira Aquamarine",
+    "quality": "4-stars",
+    "weapon": "claymore",
+    "enemy-material": "Treasure Hoarder Insignia",
+    "special-enemy-material": "Chaos Storage",
+    "domain-material": "Echo of Scorching Might"
+  },
+  "145": {
+    "name": "Xiphos' Moonlight",
+    "quality": "4-stars",
+    "weapon": "sword",
+    "enemy-material": "Faded Red Satin",
+    "special-enemy-material": "Damaged Prism",
+    "domain-material": "Copper Talisman of the Forest Dew"
+  },
+  "146": {
+    "name": "Staff of the Scarlet Sands",
+    "quality": "5-stars",
+    "weapon": "polearm",
+    "enemy-material": "Fungal Spores",
+    "special-enemy-material": "Chaos Storage",
+    "domain-material": "Oasis Garden's Reminiscence"
+  },
+  "147": {
+    "name": "Key of Khaj-Nisut",
+    "quality": "5-stars",
+    "weapon": "sword",
+    "enemy-material": "Faded Red Satin",
+    "special-enemy-material": "Damaged Prism",
+    "domain-material": "Copper Talisman of the Forest Dew"
+  },
+  "148": {
+    "name": "A Thousand Floating Dreams",
+    "quality": "5-stars",
+    "weapon": "catalyst",
+    "enemy-material": "Fungal Spores",
+    "special-enemy-material": "Damaged Prism",
+    "domain-material": "Oasis Garden's Reminiscence"
+  },
+  "149": {
+    "name": "Toukabou Shigure",
+    "quality": "4-stars",
+    "weapon": "sword",
+    "enemy-material": "Old Handguard",
+    "special-enemy-material": "Damaged Prism",
+    "domain-material": "Narukami's Wisdom"
+  },
+  "150": {
+    "name": "Tulaytullah's Remembrance",
+    "quality": "5-stars",
+    "weapon": "catalyst",
+    "enemy-material": "Fungal Spores",
+    "special-enemy-material": "Inactivated Fungal Nucleus",
+    "domain-material": "Echo of Scorching Might"
+  },
+  "151": {
+    "name": "Light of Foliar Incision",
+    "quality": "5-stars",
+    "weapon": "sword",
+    "enemy-material": "Faded Red Satin",
+    "special-enemy-material": "Desiccated Shell",
+    "domain-material": "Copper Talisman of the Forest Dew"
+  },
+  "152": {
+    "name": "Mailed Flower",
+    "quality": "4-stars",
+    "weapon": "claymore",
+    "enemy-material": "Spectral Husk",
+    "special-enemy-material": "Desiccated Shell",
+    "domain-material": "Fetters of the Dandelion Gladiator"
+  },
+  "153": {
+    "name": "Beacon of the Reed Sea",
+    "quality": "5-stars",
+    "weapon": "claymore",
+    "enemy-material": "Faded Red Satin",
+    "special-enemy-material": "Desiccated Shell",
+    "domain-material": "Echo of Scorching Might"
+  },
+  "154": {
+    "name": "Jadefall's Splendor",
+    "quality": "5-stars",
+    "weapon": "catalyst",
+    "enemy-material": "Fungal Spores",
+    "special-enemy-material": "A Flower Yet to Bloom",
+    "domain-material": "Luminous Sands from Guyun"
+  },
+  "155": {
+    "name": "Ibis Piercer",
+    "quality": "4-stars",
+    "weapon": "bow",
+    "enemy-material": "Faded Red Satin",
+    "special-enemy-material": "A Flower Yet to Bloom",
+    "domain-material": "Copper Talisman of the Forest Dew"
   }
 }
