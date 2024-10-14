@@ -614,5 +614,85 @@
     "enemy-material": "Whopperflower Nectar",
     "special-enemy-material": "Hunter's Sacrificial Knife",
     "domain-material": "Luminous Sands from Guyun"
+  },
+  "78": {
+    "name": "Skyward Blade",
+    "quality": "5-stars",
+    "weapon": "sword",
+    "enemy-material": "Slime Condensate",
+    "special-enemy-material": "Dead Ley Line Branch",
+    "domain-material": "Boreal Wolf's Milk Tooth"
+  },
+  "79": {
+    "name": "Aquila Favonia",
+    "quality": "5-stars",
+    "weapon": "sword",
+    "enemy-material": "Firm Arrowhead",
+    "special-enemy-material": "Heavy Horn",
+    "domain-material": "Tile of Decarabian's Tower"
+  },
+  "80": {
+    "name": "Skyward Spine",
+    "quality": "5-stars",
+    "weapon": "polearm",
+    "enemy-material": "Divining Scroll",
+    "special-enemy-material": "Chaos Device",
+    "domain-material": "Fetters of the Dandelion Gladiator"
+  },
+  "81": {
+    "name": "Primordial Jade Winged-Spear",
+    "quality": "5-stars",
+    "weapon": "polearm",
+    "enemy-material": "Recruit's Insignia",
+    "special-enemy-material": "Hunter's Sacrificial Knife",
+    "domain-material": "Luminous Sands from Guyun"
+  },
+  "82": {
+    "name": "Wolf's Gravestone",
+    "quality": "5-stars",
+    "weapon": "claymore",
+    "enemy-material": "Divining Scroll",
+    "special-enemy-material": "Chaos Device",
+    "domain-material": "Fetters of the Dandelion Gladiator"
+  },
+  "83": {
+    "name": "Skyward Pride",
+    "quality": "5-stars",
+    "weapon": "claymore",
+    "enemy-material": "Slime Condensate",
+    "special-enemy-material": "Dead Ley Line Branch",
+    "domain-material": "Boreal Wolf's Milk Tooth"
+  },
+  "84": {
+    "name": "Skyward Atlas",
+    "quality": "5-stars",
+    "weapon": "catalyst",
+    "enemy-material": "Firm Arrowhead",
+    "special-enemy-material": "Dead Ley Line Branch",
+    "domain-material": "Boreal Wolf's Milk Tooth"
+  },
+  "85": {
+    "name": "Lost Prayer to the Sacred Winds",
+    "quality": "5-stars",
+    "weapon": "catalyst",
+    "enemy-material": "Slime Condensate",
+    "special-enemy-material": "Chaos Device",
+    "domain-material": "Fetters of the Dandelion Gladiator"
+  },
+  "86": {
+    "name": "Skyward Harp",
+    "quality": "5-stars",
+    "weapon": "bow",
+    "enemy-material": "Firm Arrowhead",
+    "special-enemy-material": "Dead Ley Line Branch",
+    "domain-material": "Boreal Wolf's Milk Tooth"
+  },
+  "87": {
+    "name": "Amos' Bow",
+    "quality": "5-stars",
+    "weapon": "bow",
+    "enemy-material": "Slime Condensate",
+    "special-enemy-material": "Chaos Device",
+    "domain-material": "Fetters of the Dandelion Gladiator"
   }
 }
