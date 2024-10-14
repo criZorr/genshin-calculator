@@ -1279,7 +1279,7 @@
     "special-enemy-material": "Chaos Device",
     "domain-material": "Tile of Decarabian's Tower"
   },
-  "162": {
+  "161": {
     "name": "Scion of the Blazing Sun",
     "quality": "4-stars",
     "weapon": "bow",
@@ -1287,7 +1287,7 @@
     "special-enemy-material": "A Flower Yet to Bloom",
     "domain-material": "Echo of Scorching Might"
   },
-  "163": {
+  "162": {
     "name": "Flowing Purity",
     "quality": "4-stars",
     "weapon": "catalyst",
@@ -1295,7 +1295,7 @@
     "special-enemy-material": "Rift Core",
     "domain-material": "Dross of Pure Sacred Dewdrop"
   },
-  "164": {
+  "163": {
     "name": "Rightful Reward",
     "quality": "4-stars",
     "weapon": "polearm",
@@ -1303,7 +1303,7 @@
     "special-enemy-material": "Rift Core",
     "domain-material": "Broken Goblet of the Pristine Sea"
   },
-  "165": {
+  "164": {
     "name": "Tidal Shadow",
     "quality": "4-stars",
     "weapon": "claymore",
@@ -1311,7 +1311,7 @@
     "special-enemy-material": "Rift Core",
     "domain-material": "Broken Goblet of the Pristine Sea"
   },
-  "166": {
+  "165": {
     "name": "Finale of the Deep",
     "quality": "4-stars",
     "weapon": "sword",
@@ -1319,7 +1319,7 @@
     "special-enemy-material": "Drop of Tainted Water",
     "domain-material": "Dross of Pure Sacred Dewdrop"
   },
-  "167": {
+  "166": {
     "name": "Song of Stillness",
     "quality": "4-stars",
     "weapon": "bow",
@@ -1327,7 +1327,7 @@
     "special-enemy-material": "Drop of Tainted Water",
     "domain-material": "Fragment of an Ancient Chord"
   },
-  "168": {
+  "167": {
     "name": "The First Great Magic",
     "quality": "5-stars",
     "weapon": "bow",
@@ -1335,7 +1335,7 @@
     "special-enemy-material": "Drop of Tainted Water",
     "domain-material": "Fragment of an Ancient Chord"
   },
-  "169": {
+  "168": {
     "name": "Ballad of the Boundless Blue",
     "quality": "4-stars",
     "weapon": "catalyst",
@@ -1343,7 +1343,7 @@
     "special-enemy-material": "Fragile Bone Shard",
     "domain-material": "Boreal Wolf's Milk Tooth"
   },
-  "170": {
+  "169": {
     "name": "Range Gauge",
     "quality": "4-stars",
     "weapon": "bow",
@@ -1351,7 +1351,7 @@
     "special-enemy-material": "Drop of Tainted Water",
     "domain-material": "Fragment of an Ancient Chord"
   },
-  "171": {
+  "170": {
     "name": "Prospector's Drill",
     "quality": "4-stars",
     "weapon": "polearm",
@@ -1359,7 +1359,7 @@
     "special-enemy-material": "Old Operative's Pocket Watch",
     "domain-material": "Fragment of an Ancient Chord"
   },
-  "172": {
+  "171": {
     "name": "Portable Power Saw",
     "quality": "4-stars",
     "weapon": "claymore",
@@ -1367,7 +1367,7 @@
     "special-enemy-material": "Rift Core",
     "domain-material": "Broken Goblet of the Pristine Sea"
   },
-  "173": {
+  "172": {
     "name": "The Dockhand's Assistant",
     "quality": "4-stars",
     "weapon": "sword",
@@ -1375,7 +1375,7 @@
     "special-enemy-material": "Old Operative's Pocket Watch",
     "domain-material": "Dross of Pure Sacred Dewdrop"
   },
-  "174": {
+  "173": {
     "name": "Cashflow Supervision",
     "quality": "5-stars",
     "weapon": "catalyst",
@@ -1383,7 +1383,7 @@
     "special-enemy-material": "Old Operative's Pocket Watch",
     "domain-material": "Broken Goblet of the Pristine Sea"
   },
-  "175": {
+  "174": {
     "name": "Tome of the Eternal Flow",
     "quality": "5-stars",
     "weapon": "catalyst",
@@ -1391,7 +1391,7 @@
     "special-enemy-material": "Rift Core",
     "domain-material": "Dross of Pure Sacred Dewdrop"
   },
-  "176": {
+  "175": {
     "name": "Sword of Narzissenkreuz",
     "quality": "4-stars",
     "weapon": "sword",
@@ -1399,7 +1399,7 @@
     "special-enemy-material": "Old Operative's Pocket Watch",
     "domain-material": "Fragment of an Ancient Chord"
   },
-  "177": {
+  "176": {
     "name": "Splendor of Tranquil Waters",
     "quality": "5-stars",
     "weapon": "sword",
@@ -1407,7 +1407,7 @@
     "special-enemy-material": "Drop of Tainted Water",
     "domain-material": "Dross of Pure Sacred Dewdrop"
   },
-  "178": {
+  "177": {
     "name": "Ultimate Overlord's Mega Magic Sword",
     "quality": "4-stars",
     "weapon": "claymore",
@@ -1415,7 +1415,7 @@
     "special-enemy-material": "Old Operative's Pocket Watch",
     "domain-material": "Broken Goblet of the Pristine Sea"
   },
-  "179": {
+  "178": {
     "name": "Verdict",
     "quality": "5-stars",
     "weapon": "claymore",
@@ -1423,7 +1423,7 @@
     "special-enemy-material": "Rift Core",
     "domain-material": "Fragment of an Ancient Chord"
   },
-  "180": {
+  "179": {
     "name": "Crane's Echoing Call",
     "quality": "5-stars",
     "weapon": "catalyst",
@@ -1431,7 +1431,7 @@
     "special-enemy-material": "Feathery Fin",
     "domain-material": "Mist Veiled Lead Elixir"
   },
-  "182": {
+  "180": {
     "name": "Dialogues of the Desert Sages",
     "quality": "4-stars",
     "weapon": "polearm",
@@ -1439,7 +1439,7 @@
     "special-enemy-material": "Feathery Fin",
     "domain-material": "Copper Talisman of the Forest Dew"
   },
-  "183": {
+  "181": {
     "name": "Uraku Misugiri",
     "quality": "5-stars",
     "weapon": "sword",
@@ -1447,7 +1447,7 @@
     "special-enemy-material": "Chaos Gear",
     "domain-material": "Coral Branch of a Distant Sea"
   },
-  "184": {
+  "182": {
     "name": "Crimson Moon's Semblance",
     "quality": "5-stars",
     "weapon": "polearm",
@@ -1455,7 +1455,7 @@
     "special-enemy-material": "Ruined Hilt",
     "domain-material": "Broken Goblet of the Pristine Sea"
   },
-  "185": {
+  "183": {
     "name": "Cloudforged",
     "quality": "4-stars",
     "weapon": "bow",
@@ -1463,7 +1463,7 @@
     "special-enemy-material": "Ruined Hilt",
     "domain-material": "Grain of Aerosiderite"
   },
-  "186": {
+  "184": {
     "name": "Silvershower Heartstrings",
     "quality": "5-stars",
     "weapon": "bow",
@@ -1471,7 +1471,7 @@
     "special-enemy-material": "Feathery Fin",
     "domain-material": "Dross of Pure Sacred Dewdrop"
   },
-  "187": {
+  "185": {
     "name": "Absolution",
     "quality": "5-stars",
     "weapon": "sword",
@@ -1479,12 +1479,100 @@
     "special-enemy-material": "Old Operative's Pocket Watch",
     "domain-material": "Fragment of an Ancient Chord"
   },
-  "188": {
+  "186": {
     "name": "Lumidouce Elegy",
     "quality": "5-stars",
     "weapon": "polearm",
     "enemy-material": "Whopperflower Nectar",
     "special-enemy-material": "Ruined Hilt",
     "domain-material": "Broken Goblet of the Pristine Sea"
+  },
+  "187": {
+    "name": "Chain Breaker",
+    "quality": "4-stars",
+    "weapon": "bow",
+    "enemy-material": "Juvenile Fang",
+    "special-enemy-material": "Feathery Fin",
+    "domain-material": "Night-Wind's Mystic Consideration"
+  },
+  "188": {
+    "name": "Ring of Yaxche",
+    "quality": "4-stars",
+    "weapon": "catalyst",
+    "enemy-material": "Damaged Mask",
+    "special-enemy-material": "Shard of a Shattered Will",
+    "domain-material": "Delirious Decadence of the Sacred Lord"
+  },
+  "189": {
+    "name": "Footprint of the Rainbow",
+    "quality": "4-stars",
+    "weapon": "polearm",
+    "enemy-material": "Sentry's Wooden Whistle",
+    "special-enemy-material": "Axis of the Secret Source",
+    "domain-material": "Delirious Decadence of the Sacred Lord"
+  },
+  "190": {
+    "name": "Earth Shaker",
+    "quality": "4-stars",
+    "weapon": "claymore",
+    "enemy-material": "Sentry's Wooden Whistle",
+    "special-enemy-material": "Ignited Stone",
+    "domain-material": "Blazing Sacrificial Heart's Terror"
+  },
+  "191": {
+    "name": "Flute of Ezpitzal",
+    "quality": "4-stars",
+    "weapon": "sword",
+    "enemy-material": "Juvenile Fang",
+    "special-enemy-material": "Ruined Hilt",
+    "domain-material": "Blazing Sacrificial Heart's Terror"
+  },
+  "192": {
+    "name": "Ash-Graven Drinking Horn",
+    "quality": "4-stars",
+    "weapon": "catalyst",
+    "enemy-material": "Juvenile Fang",
+    "special-enemy-material": "Axis of the Secret Source",
+    "domain-material": "Night-Wind's Mystic Consideration"
+  },
+  "193": {
+    "name": "Surf's Up",
+    "quality": "5-stars",
+    "weapon": "catalyst",
+    "enemy-material": "Juvenile Fang",
+    "special-enemy-material": "Shard of a Shattered Will",
+    "domain-material": "Blazing Sacrificial Heart's Terror"
+  },
+  "194": {
+    "name": "Fang of the Mountain King",
+    "quality": "5-stars",
+    "weapon": "claymore",
+    "enemy-material": "Sentry's Wooden Whistle",
+    "special-enemy-material": "Ignited Stone",
+    "domain-material": "Delirious Decadence of the Sacred Lord"
+  },
+  "195": {
+    "name": "Mountain-Bracing Bolt",
+    "quality": "4-stars",
+    "weapon": "polearm",
+    "enemy-material": "Whopperflower Nectar",
+    "special-enemy-material": "Ignited Stone",
+    "domain-material": "Delirious Decadence of the Sacred Lord"
+  },
+  "196": {
+    "name": "Sturdy Bone",
+    "quality": "4-stars",
+    "weapon": "sword",
+    "enemy-material": "Sentry's Wooden Whistle",
+    "special-enemy-material": "Shard of a Shattered Will",
+    "domain-material": "Blazing Sacrificial Heart's Terror"
+  },
+  "197": {
+    "name": "Peak Patrol Song",
+    "quality": "5-stars",
+    "weapon": "sword",
+    "enemy-material": "Juvenile Fang",
+    "special-enemy-material": "Axis of the Secret Source",
+    "domain-material": "Night-Wind's Mystic Consideration"
   }
 }
