@@ -44,7 +44,7 @@ export default function getCards(data, $container, path) {
 
     cardBg.innerHTML = `<img src="${path}/${name.replaceAll(
       '"',
-      "_"
+      ""
     )}.png" alt="${name}" />`;
     card.appendChild(cardBg);
     card.appendChild(p);
