@@ -86,5 +86,189 @@
     "enemy-material": "Divining Scroll",
     "special-enemy-material": "Chaos Device",
     "domain-material": "Fetters of the Dandelion Gladiator"
+  },
+  "12": {
+    "name": "Skyrider Sword",
+    "quality": "3-stars",
+    "weapon": "sword",
+    "enemy-material": "Recruit's Insignia",
+    "special-enemy-material": "Fragile Bone Shard",
+    "domain-material": "Grain of Aerosiderite"
+  },
+  "13": {
+    "name": "Harbinger of Dawn",
+    "quality": "3-stars",
+    "weapon": "sword",
+    "enemy-material": "Slime Condensate",
+    "special-enemy-material": "Dead Ley Line Branch",
+    "domain-material": "Boreal Wolf's Milk Tooth"
+  },
+  "14": {
+    "name": "Fillet Blade",
+    "quality": "3-stars",
+    "weapon": "sword",
+    "enemy-material": "Treasure Hoarder Insignia",
+    "special-enemy-material": "Mist Grass Pollen",
+    "domain-material": "Mist Veiled Lead Elixir"
+  },
+  "15": {
+    "name": "Dark Iron Sword",
+    "quality": "3-stars",
+    "weapon": "sword",
+    "enemy-material": "Damaged Mask",
+    "special-enemy-material": "Hunter's Sacrificial Knife",
+    "domain-material": "Luminous Sands from Guyun"
+  },
+  "16": {
+    "name": "Cool Steel",
+    "quality": "3-stars",
+    "weapon": "sword",
+    "enemy-material": "Firm Arrowhead",
+    "special-enemy-material": "Heavy Horn",
+    "domain-material": "Tile of Decarabian's Tower"
+  },
+  "17": {
+    "name": "White Tassel",
+    "quality": "3-stars",
+    "weapon": "polearm",
+    "enemy-material": "Recruit's Insignia",
+    "special-enemy-material": "Hunter's Sacrificial Knife",
+    "domain-material": "Luminous Sands from Guyun"
+  },
+  "18": {
+    "name": "Halberd",
+    "quality": "3-stars",
+    "weapon": "polearm",
+    "enemy-material": "Whopperflower Nectar",
+    "special-enemy-material": "Mist Grass Pollen",
+    "domain-material": "Mist Veiled Lead Elixir"
+  },
+  "19": {
+    "name": "Black Tassel",
+    "quality": "3-stars",
+    "weapon": "polearm",
+    "enemy-material": "Firm Arrowhead",
+    "special-enemy-material": "Fragile Bone Shard",
+    "domain-material": "Grain of Aerosiderite"
+  },
+  "20": {
+    "name": "White Iron Greatsword",
+    "quality": "3-stars",
+    "weapon": "claymore",
+    "enemy-material": "Slime Condensate",
+    "special-enemy-material": "Chaos Device",
+    "domain-material": "Fetters of the Dandelion Gladiator"
+  },
+  "21": {
+    "name": "Skyrider Greatsword",
+    "quality": "3-stars",
+    "weapon": "claymore",
+    "enemy-material": "Treasure Hoarder Insignia",
+    "special-enemy-material": "Fragile Bone Shard",
+    "domain-material": "Grain of Aerosiderite"
+  },
+  "22": {
+    "name": "Ferrous Shadow",
+    "quality": "3-stars",
+    "weapon": "claymore",
+    "enemy-material": "Whopperflower Nectar",
+    "special-enemy-material": "Heavy Horn",
+    "domain-material": "Tile of Decarabian's Tower"
+  },
+  "23": {
+    "name": "De­ate Club",
+    "quality": "3-stars",
+    "weapon": "claymore",
+    "enemy-material": "Damaged Mask",
+    "special-enemy-material": "Mist Grass Pollen",
+    "domain-material": "Mist Veiled Lead Elixir"
+  },
+  "24": {
+    "name": "Bloodtainted Greatsword",
+    "quality": "3-stars",
+    "weapon": "claymore",
+    "enemy-material": "Firm Arrowhead",
+    "special-enemy-material": "Dead Ley Line Branch",
+    "domain-material": "Boreal Wolf's Milk Tooth"
+  },
+  "25": {
+    "name": "Twin Nephrite",
+    "quality": "3-stars",
+    "weapon": "catalyst",
+    "enemy-material": "Recruit's Insignia",
+    "special-enemy-material": "Mist Grass Pollen",
+    "domain-material": "Mist Veiled Lead Elixir"
+  },
+  "26": {
+    "name": "Thrilling Tales of Dragon Slayers",
+    "quality": "3-stars",
+    "weapon": "catalyst",
+    "enemy-material": "Divining Scroll",
+    "special-enemy-material": "Dead Ley Line Branch",
+    "domain-material": "Boreal Wolf's Milk Tooth"
+  },
+  "27": {
+    "name": "Otherworldly Story",
+    "quality": "3-stars",
+    "weapon": "catalyst",
+    "enemy-material": "Damaged Mask",
+    "special-enemy-material": "Chaos Device",
+    "domain-material": "Fetters of the Dandelion Gladiator"
+  },
+  "28": {
+    "name": "Magic Guide",
+    "quality": "3-stars",
+    "weapon": "catalyst",
+    "enemy-material": "Slime Condensate",
+    "special-enemy-material": "Heavy Horn",
+    "domain-material": "Tile of Decarabian's Tower"
+  },
+  "29": {
+    "name": "Emerald Orb",
+    "quality": "3-stars",
+    "weapon": "catalyst",
+    "enemy-material": "Treasure Hoarder Insignia",
+    "special-enemy-material": "Hunter's Sacrificial Knife",
+    "domain-material": "Luminous Sands from Guyun"
+  },
+  "30": {
+    "name": "Slingshot",
+    "quality": "3-stars",
+    "weapon": "bow",
+    "enemy-material": "Damaged Mask",
+    "special-enemy-material": "Hunter's Sacrificial Knife",
+    "domain-material": "Luminous Sands from Guyun"
+  },
+  "31": {
+    "name": "Sharpshooter's Oath",
+    "quality": "3-stars",
+    "weapon": "bow",
+    "enemy-material": "Slime Condensate",
+    "special-enemy-material": "Dead Ley Line Branch",
+    "domain-material": "Boreal Wolf's Milk Tooth"
+  },
+  "32": {
+    "name": "Recurve Bow",
+    "quality": "3-stars",
+    "weapon": "bow",
+    "enemy-material": "Divining Scroll",
+    "special-enemy-material": "Chaos Device",
+    "domain-material": "Fetters of the Dandelion Gladiator"
+  },
+  "33": {
+    "name": "Raven Bow",
+    "quality": "3-stars",
+    "weapon": "bow",
+    "enemy-material": "Firm Arrowhead",
+    "special-enemy-material": "Heavy Horn",
+    "domain-material": "Tile of Decarabian's Tower"
+  },
+  "34": {
+    "name": "Messenger",
+    "quality": "3-stars",
+    "weapon": "bow",
+    "enemy-material": "Treasure Hoarder Insignia",
+    "special-enemy-material": "Mist Grass Pollen",
+    "domain-material": "Mist Veiled Lead Elixir"
   }
 }
