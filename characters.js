@@ -14,33 +14,31 @@ let filtered = [],
 let $filters = "filter-checkbox";
 
 const filterAction = (filters, data) => {
-  let names = [];
+  let charactersId = [];
 
   let filtersStr = filters.map((e) => e.toString());
 
   let [elementFilter, weaponFilter, qualityFilter] = filtersStr;
 
   for (let i = Object.keys(data).length; i >= 1; i--) {
-    names.push(data[i].name);
+    charactersId.push(i);
     if (
       elementFilter.includes(data[i].element) &&
       weaponFilter.includes(data[i].weapon) &&
       qualityFilter.includes(data[i].quality.replace("-colab", ""))
     )
-      names = names.filter((e) => e !== data[i].name);
+      charactersId = charactersId.filter((e) => e !== i);
   }
 
-  filtered.forEach((e) => (d.querySelector(e).style.display = "inline-flex"));
+  filtered.forEach((e) => (d.getElementById(e).style.display = "inline-flex"));
 
   filtered = [];
 
-  names.forEach((e) => {
-    let name = e.replaceAll(" ", "_").replaceAll(")", "").replaceAll("(", "");
-
-    let $card = d.querySelector(`.${name}-card`);
+  charactersId.forEach((e) => {
+    let $card = d.getElementById(e);
     $card.style.display = "none";
 
-    filtered.push(`.${name}-card`);
+    filtered.push(e);
   });
 };
 

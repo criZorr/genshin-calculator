@@ -2,17 +2,10 @@ const d = document;
 export default function getCards(data, $container, path) {
   console.log(data);
   for (let i = Object.keys(data).length; i >= 1; i--) {
-    let name = data[i].name,
-      nameModified = name
-        .replaceAll("(", "")
-        .replaceAll(")", "")
-        .replaceAll(" ", "_")
-        .replaceAll("'", "_")
-        .replaceAll('"', "");
+    let name = data[i].name;
 
     let card = d.createElement("div");
     card.classList.add("card");
-    card.classList.add(`${nameModified}-card`);
     card.setAttribute("id", i);
 
     let cardBg = d.createElement("div");
