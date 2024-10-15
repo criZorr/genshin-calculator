@@ -3,7 +3,7 @@ import getCards from "./getCards.js";
 
 const d = document;
 
-const $cardsContainer = d.querySelector(".cards");
+const $cardsContainer = d.querySelector(".cards-container");
 
 let filtered = [],
   filterClasses = ["filter-element", "filter-weapon", "filter-quality"],

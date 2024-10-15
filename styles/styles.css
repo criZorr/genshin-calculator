@@ -382,7 +382,7 @@ small {
 }
 
 /* ********** Cards ********** */
-.cards {
+.cards-container {
   display: flex;
   gap: 0.5rem;
 

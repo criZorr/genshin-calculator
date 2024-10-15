@@ -13,6 +13,7 @@ export default function getCards(data, $container, path) {
     let card = d.createElement("div");
     card.classList.add("card");
     card.classList.add(`${nameModified}-card`);
+    card.setAttribute("id", i);
 
     let cardBg = d.createElement("div");
     cardBg.classList.add("card-bg");

@@ -157,7 +157,7 @@
 
 /* ********** Cards ********** */
 @media screen and (min-width: 624px) {
-  .cards {
+  .cards-container {
     position: static;
 
     flex-wrap: wrap;
@@ -174,13 +174,13 @@
 }
 
 @media screen and (min-width: 704px) {
-  .cards {
+  .cards-container {
     gap: 1rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .cards {
+  .cards-container {
     grid-template-columns: repeat(5, 5rem);
   }
 }
