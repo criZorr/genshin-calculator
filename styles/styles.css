@@ -852,7 +852,8 @@ small {
 }
 
 /* level form */
-.level-form {
+.level-form,
+.weapon-form {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -865,16 +866,9 @@ small {
 }
 
 .weapon-form {
-  display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 1rem;
   padding: 0;
-
-  & .btn-modal-lvl {
-    height: 2rem;
-    width: 5rem;
-  }
 }
 
 .custom-checkbox {

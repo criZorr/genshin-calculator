@@ -316,6 +316,11 @@
   width: 5rem;
 }
 
+.weapon-form .btn-modal-lvl {
+  height: 2rem;
+  width: 5rem;
+}
+
 .custom-checkbox input[type="checkbox"] {
   position: absolute;
   opacity: 0;
@@ -337,12 +342,18 @@
 /* Modal talents */
 .talent-img img {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .talent-form .btn-modal-tlt {
   height: 2rem;
   width: 5rem;
+}
+
+.talent-data p {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 /* Modal Info */
@@ -362,7 +373,3 @@
     display: none;
   }
  */
-
-.nmb-list option {
-  font-size: small;
-}
