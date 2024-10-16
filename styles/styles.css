@@ -792,23 +792,36 @@ small {
   background-color: var(--black-alpha-color);
 }
 
-.modal-level,
-.modal-talent,
+.modal-weapon,
+.modal-character,
 .modal-info {
   position: relative;
   display: flex;
   justify-content: center;
   gap: 1rem;
-  width: 100%;
   padding: 1rem;
-  max-width: 20rem;
+  width: 18rem;
   border-radius: 0.5rem;
+}
+
+/* Modal weapons */
+.level-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+
+  border: 0.125rem solid var(--first-light-color);
+  border-radius: 0.5rem;
+  padding: 1rem 1rem;
 }
 
 /* Modal levels */
 .ascension-selector {
   display: flex;
   justify-content: space-between;
+
+  width: 10rem;
 
   & input[type="radio"] {
     display: none;
@@ -823,12 +836,14 @@ small {
   }
 }
 
+.ascension-selector input:checked + label {
+  color: var(--first-light-color);
+}
+
 .level-content {
   width: 10rem;
-  height: 6rem;
+  height: 5rem;
   border-radius: 0.5rem;
-
-  margin-top: 1rem;
 
   display: flex;
   gap: 1rem;
@@ -839,9 +854,9 @@ small {
 /* level form */
 .level-form {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  padding: 0 1rem;
 
   & .btn-modal-lvl {
     height: 2rem;
@@ -849,17 +864,30 @@ small {
   }
 }
 
-.include-talents {
+.weapon-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 0;
+
+  & .btn-modal-lvl {
+    height: 2rem;
+    width: 5rem;
+  }
+}
+
+.custom-checkbox {
   display: flex;
   align-items: center;
 
   height: 1rem;
 
   position: relative;
-  width: 7rem;
+
+  justify-content: flex-start;
 
   font-size: 0.75rem;
-  margin-top: 1rem;
 
   & input[type="checkbox"] {
     position: absolute;
@@ -881,39 +909,47 @@ small {
 }
 
 /* Modal talents */
-.modal-talent,
+.modal-character,
 .modal-info {
   flex-direction: column;
 }
 
 .talent-info {
   display: flex;
-  gap: 0.25rem;
+  gap: 0.5rem;
   flex-direction: column;
 }
 
 .talent-selector {
   display: flex;
-  padding: 0.125rem 0.5rem;
+  padding: 0 0.5rem;
   justify-content: space-between;
   border-radius: 0.5rem;
-  height: 3.25rem;
+  height: 3.5rem;
 }
 
 .talent-data {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+
+  max-width: 55%;
+
+  & p {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
 }
 
 .talent-img {
   background-color: var(--first-complementary-color);
   border-radius: 50%;
-  width: 2.5rem;
+  min-width: 2.5rem;
   height: 2.5rem;
   & img {
     width: 100%;
-    height: auto;
+    height: 100%;
   }
 }
 
@@ -958,7 +994,7 @@ small {
 }
 
 /* Custom checkbox */
-.custom-checkbox {
+.custom-checkbox-btn {
   position: absolute;
   right: 0;
 
@@ -973,7 +1009,7 @@ small {
   align-items: center;
 }
 
-.include-talents input:checked ~ .custom-checkbox div {
+.custom-checkbox input:checked ~ .custom-checkbox-btn div {
   background-color: var(--first-light-color);
   width: 0.75rem;
   height: 0.75rem;
@@ -1004,17 +1040,18 @@ small {
 .nmb-list {
   border: none;
   width: 2rem;
+  height: 1rem;
+
+  padding: 0;
   font-weight: bold;
   text-align: center;
-  font-size: 1rem;
+  font-size: 0.75rem;
+
   cursor: pointer;
+
   border-top: 0.0625rem solid var(--first-light-color);
   border-bottom: 0.0625rem solid var(--first-light-color);
   background-color: inherit;
-
-  & option {
-    font-size: small;
-  }
 }
 
 /* Custom buttons */

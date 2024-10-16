@@ -1,0 +1,27 @@
+<div class="modal-weapon bg-trd">
+  <div class="level-content bg-snd">
+    <select class="nmb-list frst-lvl-list frst-text">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+    <div class="scnd-text">-&gt;</div>
+    <select class="nmb-list scnd-lvl-list frst-text">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+  </div>
+  <div class="weapon-form">
+    <div class="btn-modal-lvl">
+      <button class="btn-bordered">Cancel</button>
+    </div>
+    <div class="btn-modal-lvl">
+      <button class="btn bg-snd-dark">Save</button>
+    </div>
+  </div>
+</div>
