@@ -211,49 +211,25 @@
 }
 
 .card .five {
-  background: linear-gradient(
-    180deg,
-    var(--gold-dark-color) 0%,
-    var(--gold-light-color) 100%
-  );
+  background: linear-gradient(180deg, var(--gold-dark-color) 0%, var(--gold-light-color) 100%);
 }
 
 .card .four {
-  background: linear-gradient(
-    180deg,
-    var(--purple-dark-color) 0%,
-    var(--purple-light-color) 100%
-  );
+  background: linear-gradient(180deg, var(--purple-dark-color) 0%, var(--purple-light-color) 100%);
 }
 .card .three {
-  background: linear-gradient(
-    180deg,
-    var(--blue-dark-color) 0%,
-    var(--blue-light-color) 100%
-  );
+  background: linear-gradient(180deg, var(--blue-dark-color) 0%, var(--blue-light-color) 100%);
 }
 
 .card .two {
-  background: linear-gradient(
-    180deg,
-    var(--green-dark-color) 0%,
-    var(--green-light-color) 100%
-  );
+  background: linear-gradient(180deg, var(--green-dark-color) 0%, var(--green-light-color) 100%);
 }
 .card .one {
-  background: linear-gradient(
-    180deg,
-    var(--gray-dark-color) 0%,
-    var(--gray-light-color) 100%
-  );
+  background: linear-gradient(180deg, var(--gray-dark-color) 0%, var(--gray-light-color) 100%);
 }
 
 .card .colab {
-  background: linear-gradient(
-    180deg,
-    var(--colab-dark-color) 0%,
-    var(--colab-light-color) 100%
-  );
+  background: linear-gradient(180deg, var(--colab-dark-color) 0%, var(--colab-light-color) 100%);
 }
 
 .card:hover {
@@ -348,6 +324,12 @@
   }
 }
 
+@media screen and (min-width: 624px) {
+  .modal-character {
+    width: 22rem;
+  }
+}
+
 @media screen and (min-width: 704px) {
   .talent-info {
     width: 20rem;
@@ -370,7 +352,7 @@
   overflow: hidden;
 }
 
-@media screen and (min-width: 704px) {
+@media screen and (min-width: 624px) {
   .talent-data {
     max-width: 60%;
   }

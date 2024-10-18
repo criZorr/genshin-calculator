@@ -6,6 +6,7 @@ export default function getCards(data, $container, path) {
 
     let card = d.createElement("div");
     card.classList.add("card");
+    card.setAttribute("_id", i);
     card.setAttribute("id", i);
 
     let cardBg = d.createElement("div");
@@ -14,6 +15,7 @@ export default function getCards(data, $container, path) {
     let p = d.createElement("h5");
     p.classList.add("card-name");
     p.innerHTML = name;
+    p.setAttribute("_id", i);
 
     switch (data[i].quality) {
       case "5-stars":
@@ -36,7 +38,7 @@ export default function getCards(data, $container, path) {
         break;
     }
 
-    cardBg.innerHTML = `<img src="${path}/${name.replaceAll(
+    cardBg.innerHTML = `<img class="character-img" _id="${i}" src="${path}/${name.replaceAll(
       '"',
       ""
     )}.png" alt="${name}" />`;

@@ -453,11 +453,7 @@ small {
   }
 
   & .five {
-    background: linear-gradient(
-      180deg,
-      var(--gold-dark-color) 0%,
-      var(--gold-light-color) 100%
-    );
+    background: linear-gradient(180deg, var(--gold-dark-color) 0%, var(--gold-light-color) 100%);
   }
 
   & .four {
@@ -469,35 +465,19 @@ small {
   }
 
   & .three {
-    background: linear-gradient(
-      180deg,
-      var(--blue-dark-color) 0%,
-      var(--blue-light-color) 100%
-    );
+    background: linear-gradient(180deg, var(--blue-dark-color) 0%, var(--blue-light-color) 100%);
   }
 
   & .two {
-    background: linear-gradient(
-      180deg,
-      var(--green-dark-color) 0%,
-      var(--green-light-color) 100%
-    );
+    background: linear-gradient(180deg, var(--green-dark-color) 0%, var(--green-light-color) 100%);
   }
 
   & .one {
-    background: linear-gradient(
-      180deg,
-      var(--gray-dark-color) 0%,
-      var(--gray-light-color) 100%
-    );
+    background: linear-gradient(180deg, var(--gray-dark-color) 0%, var(--gray-light-color) 100%);
   }
 
   & .colab {
-    background: linear-gradient(
-      180deg,
-      var(--colab-dark-color) 0%,
-      var(--colab-light-color) 100%
-    );
+    background: linear-gradient(180deg, var(--colab-dark-color) 0%, var(--colab-light-color) 100%);
   }
 
   &:hover {
@@ -509,11 +489,7 @@ small {
 .gradiant-right,
 .gradiant-left {
   position: absolute;
-  background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 0) 0%,
-    var(--second-light-color) 100%
-  );
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, var(--second-light-color) 100%);
   width: 1rem;
   height: 6rem;
   right: -1rem;
@@ -525,11 +501,7 @@ small {
 }
 
 .gradiant-left {
-  background: linear-gradient(
-    -90deg,
-    rgba(0, 0, 0, 0) 0%,
-    var(--second-light-color) 100%
-  );
+  background: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, var(--second-light-color) 100%);
 
   left: -1rem;
 }
@@ -777,7 +749,7 @@ small {
 
 /* ********** Modal ********** */
 
-.modal {
+.modal-container {
   position: fixed;
   z-index: 999;
   top: 0;
@@ -787,9 +759,9 @@ small {
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0;
-  pointer-events: none;
   background-color: var(--black-alpha-color);
+
+  display: none;
 }
 
 .modal-weapon,
@@ -923,27 +895,16 @@ small {
 }
 
 .modal-character {
+  @media screen and (min-width: 624px) {
+    width: 22rem;
+  }
+
   @media screen and (min-width: 704px) {
     width: auto;
     flex-direction: unset;
     gap: 2rem;
   }
 }
-
-/* @media screen and (min-width: 704px) {
-  .modal-character {
-    width: auto;
-    flex-direction: unset;
-  }
-
-  .level-form {
-    flex-direction: column;
-    padding: 0;
-    gap: 1rem;
-    justify-content: center;
-    height: 100%;
-  }
-} */
 
 .talent-info {
   display: flex;
@@ -984,7 +945,7 @@ small {
     overflow: hidden;
   }
 
-  @media screen and (min-width: 704px) {
+  @media screen and (min-width: 624px) {
     max-width: 60%;
   }
 }
@@ -1088,6 +1049,7 @@ small {
   border: none;
   width: 2rem;
   height: 1rem;
+  appearance: none;
 
   padding: 0;
   font-weight: bold;
@@ -1160,19 +1122,11 @@ small {
 
   .gradiant-right,
   .gradiant-left {
-    background: linear-gradient(
-      90deg,
-      rgba(0, 0, 0, 0) 0%,
-      var(--first-dark-color) 100%
-    );
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, var(--first-dark-color) 100%);
   }
 
   .gradiant-left {
-    background: linear-gradient(
-      -90deg,
-      rgba(0, 0, 0, 0) 0%,
-      var(--first-dark-color) 100%
-    );
+    background: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, var(--first-dark-color) 100%);
   }
 
   .faq {

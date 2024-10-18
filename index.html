@@ -48,113 +48,43 @@
         <div class="section-element frst-text">
           <h5>Element</h5>
           <div class="filter-element">
-            <input
-              class="filter-checkbox"
-              type="checkbox"
-              name="anemo"
-              id="anemo"
-            />
+            <input class="filter-checkbox" type="checkbox" name="anemo" id="anemo" />
             <label class="filter-label bg-trd" for="anemo"> Anemo </label>
-            <input
-              class="filter-checkbox"
-              type="checkbox"
-              name="cryo"
-              id="cryo"
-            />
+            <input class="filter-checkbox" type="checkbox" name="cryo" id="cryo" />
             <label class="filter-label bg-trd" for="cryo"> Cryo </label>
-            <input
-              class="filter-checkbox"
-              type="checkbox"
-              name="dendro"
-              id="dendro"
-            />
+            <input class="filter-checkbox" type="checkbox" name="dendro" id="dendro" />
             <label class="filter-label bg-trd" for="dendro"> Dendro </label>
-            <input
-              class="filter-checkbox"
-              type="checkbox"
-              name="electro"
-              id="electro"
-            />
+            <input class="filter-checkbox" type="checkbox" name="electro" id="electro" />
             <label class="filter-label bg-trd" for="electro"> Electro </label>
-            <input
-              class="filter-checkbox"
-              type="checkbox"
-              name="geo"
-              id="geo"
-            />
+            <input class="filter-checkbox" type="checkbox" name="geo" id="geo" />
             <label class="filter-label bg-trd" for="geo"> Geo </label>
-            <input
-              class="filter-checkbox"
-              type="checkbox"
-              name="hydro"
-              id="hydro"
-            />
+            <input class="filter-checkbox" type="checkbox" name="hydro" id="hydro" />
             <label class="filter-label bg-trd" for="hydro"> Hydro </label>
-            <input
-              class="filter-checkbox"
-              type="checkbox"
-              name="pyro"
-              id="pyro"
-            />
+            <input class="filter-checkbox" type="checkbox" name="pyro" id="pyro" />
             <label class="filter-label bg-trd" for="pyro"> Pyro </label>
           </div>
         </div>
         <div class="section-weapon frst-text">
           <h5>Weapon</h5>
           <div class="filter-weapon">
-            <input
-              class="filter-checkbox"
-              type="checkbox"
-              name="bow"
-              id="bow"
-            />
+            <input class="filter-checkbox" type="checkbox" name="bow" id="bow" />
             <label class="filter-label bg-trd" for="bow"> Bow </label>
-            <input
-              class="filter-checkbox"
-              type="checkbox"
-              name="catalyst"
-              id="catalyst"
-            />
+            <input class="filter-checkbox" type="checkbox" name="catalyst" id="catalyst" />
             <label class="filter-label bg-trd" for="catalyst"> Catalyst </label>
-            <input
-              class="filter-checkbox"
-              type="checkbox"
-              name="claymore"
-              id="claymore"
-            />
+            <input class="filter-checkbox" type="checkbox" name="claymore" id="claymore" />
             <label class="filter-label bg-trd" for="claymore"> Claymore </label>
-            <input
-              class="filter-checkbox"
-              type="checkbox"
-              name="polearm"
-              id="polearm"
-            />
+            <input class="filter-checkbox" type="checkbox" name="polearm" id="polearm" />
             <label class="filter-label bg-trd" for="polearm"> Polearm </label>
-            <input
-              class="filter-checkbox"
-              type="checkbox"
-              name="sword"
-              id="sword"
-            />
+            <input class="filter-checkbox" type="checkbox" name="sword" id="sword" />
             <label class="filter-label bg-trd" for="sword"> Sword </label>
           </div>
         </div>
         <div class="section-quality frst-text">
           <h5>Quality</h5>
           <div class="filter-quality">
-            <input
-              class="filter-checkbox"
-              type="checkbox"
-              name="5-stars"
-              id="5-stars"
-            />
+            <input class="filter-checkbox" type="checkbox" name="5-stars" id="5-stars" />
             <label class="filter-label bg-trd" for="5-stars"> 5 stars </label>
-            <input
-              class="filter-checkbox"
-              type="checkbox"
-              name="4-stars"
-              id="4-stars"
-            />
+            <input class="filter-checkbox" type="checkbox" name="4-stars" id="4-stars" />
             <label class="filter-label bg-trd" for="4-stars"> 4 stars </label>
           </div>
         </div>
@@ -225,11 +155,7 @@
                   <img class="btn-edit" src="./assets/edit.svg" alt="edit" />
                 </button>
                 <button class="btn-element">
-                  <img
-                    class="btn-delete"
-                    src="./assets/delete.svg"
-                    alt="delete"
-                  />
+                  <img class="btn-delete" src="./assets/delete.svg" alt="delete" />
                 </button>
               </section>
             </div>
@@ -267,13 +193,76 @@
       </div>
     </main>
     <footer class="footer bg-snd">
-      <small>
-        <a href="https://crizorr.com" target="_blank" rel="noopener"
-          >@criZorr</a
-        ></small
-      >
+      <small> <a href="https://crizorr.com" target="_blank" rel="noopener">@criZorr</a></small>
     </footer>
-    <article class="modal"></article>
+    <article class="modal-container">
+      <div class="modal-character bg-trd">
+        <div class="level-container">
+          <div class="custom-checkbox">
+            <label class="scnd-text" for="checkbox-level">Calculate levels</label>
+            <input type="checkbox" name="checkbox-level" id="checkbox-level" />
+            <span class="custom-checkbox-btn bg-snd">
+              <div></div>
+            </span>
+          </div>
+          <div class="level-info">
+            <div class="ascension-selector">
+              <input type="radio" name="ascension-selected" id="ascension-1" />
+              <label for="ascension-1">✦</label>
+              <input type="radio" name="ascension-selected" id="ascension-2" />
+              <label for="ascension-2">✦</label>
+              <input type="radio" name="ascension-selected" id="ascension-3" />
+              <label for="ascension-3">✦</label>
+              <input type="radio" name="ascension-selected" id="ascension-4" />
+              <label for="ascension-4">✦</label>
+              <input type="radio" name="ascension-selected" id="ascension-5" />
+              <label for="ascension-5">✦</label>
+              <input type="radio" name="ascension-selected" id="ascension-6" />
+              <label for="ascension-6">✦</label>
+            </div>
+            <div class="level-content bg-snd">
+              <select class="nmb-list frst-text" id="first-selection">
+                <option value="1">1</option>
+                <option value="2">10</option>
+                <option value="3">20</option>
+                <option value="4">30</option>
+                <option value="5">40</option>
+                <option value="6">50</option>
+                <option value="7">60</option>
+                <option value="8">70</option>
+                <option value="9">80</option>
+              </select>
+              <div class="scnd-text">→</div>
+              <select class="nmb-list frst-text" id="second-selection">
+                <option value="2">10</option>
+                <option value="3">20</option>
+                <option value="4">30</option>
+                <option value="5">40</option>
+                <option value="6">50</option>
+                <option value="7">60</option>
+                <option value="8">70</option>
+                <option value="9">80</option>
+                <option value="10">90</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="talent-container">
+          <h5 class="scnd-text">Calculate talents</h5>
+          <div class="talent-info"></div>
+        </div>
+        <div class="character-form">
+          <div class="level-form">
+            <div class="btn-modal-lvl">
+              <button class="btn-bordered" id="cancel-btn">Cancel</button>
+            </div>
+            <div class="btn-modal-lvl">
+              <button class="btn bg-snd-dark" id="save-btn">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
     <script src="./characters.js" type="module"></script>
     <script src="./index.js"></script>
   </body>
