@@ -795,13 +795,13 @@ small {
 
   width: 10rem;
 
-  & input[type="radio"] {
+  & input[type="checkbox"] {
     display: none;
   }
 
   & label {
     height: 1rem;
-    font-size: inherit;
+    font-size: 1.3rem;
     text-align: center;
     color: var(--second-light-color);
     cursor: pointer;

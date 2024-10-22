@@ -66,23 +66,43 @@ const getChecked = (filterNames) => {
   filterAction(res, charactersData);
 };
 
+const isChecked = (el, info) => {
+  if (el.checked) {
+    info.style.opacity = "1";
+    info.style.pointerEvents = "all";
+    info.style.transition = "all 0.25s ease-in";
+  } else {
+    info.style.opacity = "0.5";
+    info.style.pointerEvents = "none";
+    info.style.transition = "all 0.25s ease-out";
+  }
+};
+
 const getTalents = (characterId) => {
   $modal.style.display = "flex";
 
+  isChecked(d.getElementById("checkbox-level"), d.querySelector(".level-info"));
+
   let $talentContainer = d.querySelector(".talent-info"),
     talents = charactersData[characterId].talents,
-    name = charactersData[characterId].name;
+    name = charactersData[characterId].name,
+    weapon = charactersData[characterId].weapon;
 
   for (let i = 0; i < talents.length; i++) {
     let fragment = d.createElement("div");
     fragment.classList.add("talent-selector-container");
 
-    fragment.innerHTML = `
+    let talentName = talents[i];
+    talentName = talentName.replaceAll(":", "_").replaceAll("/", "_");
+
+    if (i == 0) {
+      fragment.innerHTML = `
               <div class="custom-checkbox">
                 <input
                   type="checkbox"
                   name="checkbox-talent-${i + 1}"
                   id="checkbox-talent-${i + 1}"
+                  checked="true"
                 />
                 <span class="custom-checkbox-btn bg-snd">
                   <div></div>
@@ -91,7 +111,9 @@ const getTalents = (characterId) => {
               <div class="talent-selector bg-snd">
                 <section class="talent-data">
                   <figure class="talent-img">
-                    <img src="./assets/talent.png" alt="${name} talent ${i + 1}" />
+                    <img src="./assets/talents/${weapon}.png" alt="${name} talent ${i + 1}: ${
+        talents[i]
+      }" />
                   </figure>
                   <p class="frst-text compact">${talents[i]}</p>
                 </section>
@@ -122,8 +144,66 @@ const getTalents = (characterId) => {
                 </div>
               </div>
     `;
+    } else {
+      fragment.innerHTML = `
+              <div class="custom-checkbox">
+                <input
+                  type="checkbox"
+                  name="checkbox-talent-${i + 1}"
+                  id="checkbox-talent-${i + 1}"
+                  checked="true"
+                />
+                <span class="custom-checkbox-btn bg-snd">
+                  <div></div>
+                </span>
+              </div>
+              <div class="talent-selector bg-snd">
+                <section class="talent-data">
+                  <figure class="talent-img">
+                    <img src="./assets/talents/${talentName}.png" alt="${name} talent ${i + 1}: ${
+        talents[i]
+      }" />
+                  </figure>
+                  <p class="frst-text compact">${talents[i]}</p>
+                </section>
+                <div class="talent-lvl bg-snd">
+                  <select class="nmb-list frst-text" id="first-selection">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                  </select>
+                  <div class="scnd-text">→</div>
+                  <select class="nmb-list frst-text" id="second-selection">
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  </select>
+                </div>
+              </div>
+    `;
+    }
 
     $talentContainer.appendChild(fragment);
+  }
+
+  let $checkBoxes = d.querySelectorAll(".custom-checkbox input");
+
+  for (let i = 0; i < Object.keys($checkBoxes).length; i++) {
+    $checkBoxes[i].addEventListener("change", (e) =>
+      isChecked(e.target, e.target.parentNode.parentNode.lastElementChild)
+    );
   }
 };
 
