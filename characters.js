@@ -210,7 +210,49 @@ const getTalents = (characterId) => {
 d.addEventListener("change", (e) => {
   let eventId = e.target.id;
 
-  if (eventId === "first-selection") getNumbList(e.target);
+  if (eventId === "first-selection") {
+    getNumbList(e.target);
+    if (e.target.parentElement.parentElement.firstElementChild.className == "ascension-selector") {
+      const $selectors = d.querySelectorAll(".ascension-selector input");
+      let fstValue = Number(e.target.parentElement.querySelector("#second-selection").value) - 1;
+
+      for (let i = 0; i < Object.keys($selectors).length; i++) {
+        if (i < fstValue) $selectors[i].checked = true;
+        if (i >= fstValue) $selectors[i].checked = false;
+      }
+    }
+  }
+
+  if (eventId === "second-selection") {
+    if (e.target.parentElement.parentElement.firstElementChild.className == "ascension-selector") {
+      const $selectors = d.querySelectorAll(".ascension-selector input");
+      let fstValue = Number(e.target.value) - 1;
+
+      for (let i = 0; i < Object.keys($selectors).length; i++) {
+        if (i < fstValue) $selectors[i].checked = true;
+        if (i >= fstValue) $selectors[i].checked = false;
+      }
+    }
+  }
+
+  if (eventId.includes("ascension-")) {
+    const $selectors = d.querySelectorAll(".ascension-selector input"),
+      $fstOption = $selectors[0].parentNode.parentNode.querySelector("#first-selection"),
+      $sndOption = $selectors[0].parentNode.parentNode.querySelector("#second-selection");
+    let numberId = eventId.replaceAll("ascension-", "");
+
+    for (let i = 0; i < Object.keys($selectors).length; i++) {
+      if (i < numberId - 1) $selectors[i].checked = true;
+      if (i >= numberId) $selectors[i].checked = false;
+    }
+
+    let val = Number(numberId) + 1;
+    $sndOption.value = val;
+
+    if ($fstOption.value >= $sndOption.value) $fstOption.value = $sndOption.value - 1;
+
+    getNumbList($fstOption);
+  }
 });
 
 d.addEventListener("click", (e) => {

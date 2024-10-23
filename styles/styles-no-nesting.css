@@ -274,7 +274,7 @@
 
 /* ********** Modal ********** */
 /* Modal levels */
-.ascension-selector input[type="radio"] {
+.ascension-selector input[type="checkbox"] {
   display: none;
 }
 
