@@ -776,6 +776,16 @@ small {
   border-radius: 0.5rem;
 }
 
+.modal-weapon {
+  flex-direction: column;
+
+  @media screen and (min-width: 704px) {
+    width: auto;
+    flex-direction: unset;
+    gap: 2rem;
+  }
+}
+
 /* Modal weapons */
 .level-info {
   display: flex;
@@ -844,20 +854,19 @@ small {
   }
 }
 
-.level-form {
-  @media screen and (min-width: 704px) {
+@media screen and (min-width: 704px) {
+  .level-form,
+  .weapon-form {
     flex-direction: column;
     padding: 0;
     gap: 1rem;
     justify-content: center;
     height: 100%;
   }
-}
 
-.weapon-form {
-  flex-direction: column;
-  gap: 1rem;
-  padding: 0;
+  .weapon-form {
+    height: inherit;
+  }
 }
 
 .custom-checkbox {

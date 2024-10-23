@@ -273,6 +273,15 @@
 }
 
 /* ********** Modal ********** */
+
+@media screen and (min-width: 704px) {
+  .modal-weapon {
+    width: auto;
+    flex-direction: unset;
+    gap: 2rem;
+  }
+}
+
 /* Modal levels */
 .ascension-selector input[type="checkbox"] {
   display: none;
@@ -363,15 +372,3 @@
   height: 2rem;
   width: 5rem;
 }
-
-/* Custom number list */
-
-/* number picker
-.lvl-list label {
-    font-weight: bold;
-  }
-
-.lvl-list input {
-    display: none;
-  }
- */

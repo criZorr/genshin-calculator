@@ -38,7 +38,7 @@ export default function getCards(data, $container, path) {
         break;
     }
 
-    cardBg.innerHTML = `<img class="character-img" _id="${i}" src="${path}/${name.replaceAll(
+    cardBg.innerHTML = `<img class="card-img" _id="${i}" src="${path}/${name.replaceAll(
       '"',
       ""
     )}.png" alt="${name}" />`;

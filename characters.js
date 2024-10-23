@@ -1,6 +1,7 @@
 import getData from "./getData.js";
 import getCards from "./getCards.js";
 import getNumbList from "./getNumbList.js";
+import handleAscension from "./handleAscension.js";
 
 const d = document;
 
@@ -84,9 +85,12 @@ const getTalents = (characterId) => {
   isChecked(d.getElementById("checkbox-level"), d.querySelector(".level-info"));
 
   let $talentContainer = d.querySelector(".talent-info"),
+    $saveBtn = d.getElementById("save-btn"),
     talents = charactersData[characterId].talents,
     name = charactersData[characterId].name,
     weapon = charactersData[characterId].weapon;
+
+  $saveBtn.setAttribute("modal-id", characterId);
 
   for (let i = 0; i < talents.length; i++) {
     let fragment = d.createElement("div");
@@ -205,6 +209,75 @@ const getTalents = (characterId) => {
       isChecked(e.target, e.target.parentNode.parentNode.lastElementChild)
     );
   }
+
+  $saveBtn.addEventListener("click", () => {
+    console.log($saveBtn.attributes["modal-id"].value);
+  });
+};
+
+const drawModal = () => {
+  $modal.innerHTML = `<div class="modal-character bg-trd">
+        <div class="level-container">
+          <div class="custom-checkbox">
+            <label class="scnd-text" for="checkbox-level">Calculate levels</label>
+            <input type="checkbox" name="checkbox-level" id="checkbox-level" checked="true" />
+            <span class="custom-checkbox-btn bg-snd">
+              <div></div>
+            </span>
+          </div>
+          <div class="level-info">
+            <div class="ascension-selector">
+              <input type="checkbox" name="ascension-selected" id="ascension-1" />
+              <label for="ascension-1">✦</label>
+              <input type="checkbox" name="ascension-selected" id="ascension-2" />
+              <label for="ascension-2">✦</label>
+              <input type="checkbox" name="ascension-selected" id="ascension-3" />
+              <label for="ascension-3">✦</label>
+              <input type="checkbox" name="ascension-selected" id="ascension-4" />
+              <label for="ascension-4">✦</label>
+              <input type="checkbox" name="ascension-selected" id="ascension-5" />
+              <label for="ascension-5">✦</label>
+              <input type="checkbox" name="ascension-selected" id="ascension-6" />
+              <label for="ascension-6">✦</label>
+            </div>
+            <div class="level-content bg-snd">
+              <select class="nmb-list frst-text" id="first-selection">
+                <option value="1">1</option>
+                <option value="2">20</option>
+                <option value="3">40</option>
+                <option value="4">50</option>
+                <option value="5">60</option>
+                <option value="6">70</option>
+                <option value="7">80</option>
+              </select>
+              <div class="scnd-text">→</div>
+              <select class="nmb-list frst-text" id="second-selection">
+                <option value="2">20</option>
+                <option value="3">40</option>
+                <option value="4">50</option>
+                <option value="5">60</option>
+                <option value="6">70</option>
+                <option value="7">80</option>
+                <option value="8">90</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="talent-container">
+          <h5 class="scnd-text">Calculate talents</h5>
+          <div class="talent-info"></div>
+        </div>
+        <div class="character-form">
+          <div class="level-form">
+            <div class="btn-modal-lvl">
+              <button class="btn-bordered" id="cancel-btn">Cancel</button>
+            </div>
+            <div class="btn-modal-lvl">
+              <button class="btn bg-snd-dark" id="save-btn">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>`;
 };
 
 d.addEventListener("change", (e) => {
@@ -214,24 +287,18 @@ d.addEventListener("change", (e) => {
     getNumbList(e.target);
     if (e.target.parentElement.parentElement.firstElementChild.className == "ascension-selector") {
       const $selectors = d.querySelectorAll(".ascension-selector input");
-      let fstValue = Number(e.target.parentElement.querySelector("#second-selection").value) - 1;
+      let selected = Number(e.target.parentElement.querySelector("#second-selection").value) - 1;
 
-      for (let i = 0; i < Object.keys($selectors).length; i++) {
-        if (i < fstValue) $selectors[i].checked = true;
-        if (i >= fstValue) $selectors[i].checked = false;
-      }
+      handleAscension(selected, $selectors);
     }
   }
 
   if (eventId === "second-selection") {
     if (e.target.parentElement.parentElement.firstElementChild.className == "ascension-selector") {
       const $selectors = d.querySelectorAll(".ascension-selector input");
-      let fstValue = Number(e.target.value) - 1;
+      let selected = Number(e.target.value) - 1;
 
-      for (let i = 0; i < Object.keys($selectors).length; i++) {
-        if (i < fstValue) $selectors[i].checked = true;
-        if (i >= fstValue) $selectors[i].checked = false;
-      }
+      handleAscension(selected, $selectors);
     }
   }
 
@@ -241,13 +308,9 @@ d.addEventListener("change", (e) => {
       $sndOption = $selectors[0].parentNode.parentNode.querySelector("#second-selection");
     let numberId = eventId.replaceAll("ascension-", "");
 
-    for (let i = 0; i < Object.keys($selectors).length; i++) {
-      if (i < numberId - 1) $selectors[i].checked = true;
-      if (i >= numberId) $selectors[i].checked = false;
-    }
+    handleAscension(numberId, $selectors, 1);
 
-    let val = Number(numberId) + 1;
-    $sndOption.value = val;
+    $sndOption.value = Number(numberId) + 1;
 
     if ($fstOption.value >= $sndOption.value) $fstOption.value = $sndOption.value - 1;
 
@@ -261,14 +324,12 @@ d.addEventListener("click", (e) => {
 
   if (eventClass === $filters) getChecked(filterClasses);
 
-  if (eventClass === "card" || eventClass === "character-img" || eventClass === "card-name") {
+  if (eventClass === "card" || eventClass === "card-img" || eventClass === "card-name") {
+    drawModal();
     getTalents(e.target.attributes._id.value);
   }
 
-  if (eventClass === "modal-container" || eventId === "cancel-btn") {
-    $modal.style.display = "none";
-    d.querySelector(".talent-info").innerHTML = "";
-  }
+  if (eventClass === "modal-container" || eventId === "cancel-btn") $modal.style.display = "none";
 });
 
 let charactersData = await getData("./db/characters.json");
