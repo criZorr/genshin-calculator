@@ -2,6 +2,9 @@ import getData from "./getData.js";
 import getCards from "./getCards.js";
 import getNumbList from "./getNumbList.js";
 import handleAscension from "./handleAscension.js";
+import calculateCharacter from "./calculateCharacter.js";
+import createLocal from "./createLocal.js";
+import drawItems from "./drawItems.js";
 
 const d = document;
 
@@ -79,6 +82,37 @@ const isChecked = (el, info) => {
   }
 };
 
+const createObject = (data, id) => {
+  let obj = {};
+
+  obj["Mora"] = data[0];
+  if (!(data[1][0] === 0)) obj[charactersData[id]["enemy-material"][0]] = data[1][0];
+  if (!(data[1][1] === 0)) obj[charactersData[id]["enemy-material"][1]] = data[1][1];
+  if (!(data[1][2] === 0)) obj[charactersData[id]["enemy-material"][2]] = data[1][2];
+  if (!(data[2][0] === 0)) obj["Wanderer's Advice"] = data[2][0];
+  if (!(data[2][1] === 0)) obj["Adventurer's Experience"] = data[2][1];
+  if (!(data[2][2] === 0)) obj["Hero's Wit"] = data[2][2];
+  if (!(data[3] === 0)) obj[charactersData[id]["specialty-material"]] = data[3];
+  if (!(data[4] === 0)) obj[charactersData[id]["boss-material"]] = data[4];
+  if (!(data[5][0] === 0)) obj[`${charactersData[id].stone} Sliver`] = data[5][0];
+  if (!(data[5][1] === 0)) obj[`${charactersData[id].stone} Fragment`] = data[5][1];
+  if (!(data[5][2] === 0)) obj[`${charactersData[id].stone} Chunk`] = data[5][2];
+  if (!(data[5][3] === 0)) obj[`${charactersData[id].stone} Gemstone`] = data[5][3];
+  if (!(data[6][0] === 0))
+    obj[`Teachings of ${charactersData[id]["domain-material"]}`] = data[6][0];
+  if (!(data[6][1] === 0)) obj[`Guide to ${charactersData[id]["domain-material"]}`] = data[6][1];
+  if (!(data[6][2] === 0))
+    obj[`Philosophies of ${charactersData[id]["domain-material"]}`] = data[6][2];
+  if (!(data[7] === 0)) obj[charactersData[id]["weekly-boss"]] = data[7];
+  if (!(data[8] === 0)) obj["Crown of Insight"] = data[8];
+
+  return obj;
+};
+
+const getItems = () => {
+  drawItems("characterData", charactersData, ".card-individual-container", ".selected-items");
+};
+
 const getTalents = (characterId) => {
   $modal.style.display = "flex";
 
@@ -112,7 +146,7 @@ const getTalents = (characterId) => {
                   <div></div>
                 </span>
               </div>
-              <div class="talent-selector bg-snd">
+              <div class="talent-selector bg-snd" id="talent-${i + 1}">
                 <section class="talent-data">
                   <figure class="talent-img">
                     <img src="./assets/talents/${weapon}.png" alt="${name} talent ${i + 1}: ${
@@ -161,7 +195,7 @@ const getTalents = (characterId) => {
                   <div></div>
                 </span>
               </div>
-              <div class="talent-selector bg-snd">
+              <div class="talent-selector bg-snd" id="talent-${i + 1}">
                 <section class="talent-data">
                   <figure class="talent-img">
                     <img src="./assets/talents/${talentName}.png" alt="${name} talent ${i + 1}: ${
@@ -211,7 +245,51 @@ const getTalents = (characterId) => {
   }
 
   $saveBtn.addEventListener("click", () => {
-    console.log($saveBtn.attributes["modal-id"].value);
+    let numId = Number(characterId);
+
+    let fstTalentValues = [],
+      sndTalentValues = [],
+      levelValues = [],
+      ascension = false;
+
+    for (let i = 1; i <= 3; i++) {
+      if (!(d.getElementById(`talent-${i}`).style.opacity === "0.5")) {
+        fstTalentValues.push(Number(d.querySelector(`#talent-${i} #first-selection`).value));
+        sndTalentValues.push(Number(d.querySelector(`#talent-${i} #second-selection`).value));
+      } else {
+        fstTalentValues.push(0);
+        sndTalentValues.push(0);
+      }
+    }
+
+    let fstLevelValue = Number(d.querySelector("#level-data #first-selection").value),
+      sndLevelValue = Number(d.querySelector("#level-data #second-selection").value);
+
+    if (!(d.getElementById("level-data").style.opacity === "0.5")) {
+      levelValues.push(fstLevelValue);
+      levelValues.push(sndLevelValue);
+    } else {
+      levelValues.push(0);
+      levelValues.push(0);
+    }
+
+    if (sndLevelValue === 8) sndLevelValue = 7;
+
+    if (d.querySelectorAll(".ascension-selector input")[sndLevelValue - 2].checked)
+      ascension = true;
+
+    let calculatedData = calculateCharacter(
+      fstTalentValues,
+      sndTalentValues,
+      levelValues,
+      ascension
+    );
+
+    let characterObject = createObject(calculatedData, numId);
+
+    createLocal("characterData", numId, characterObject);
+    getItems();
+    $modal.style.display = "none";
   });
 };
 
@@ -225,7 +303,7 @@ const drawModal = () => {
               <div></div>
             </span>
           </div>
-          <div class="level-info">
+          <div class="level-info" id="level-data">
             <div class="ascension-selector">
               <input type="checkbox" name="ascension-selected" id="ascension-1" />
               <label for="ascension-1">✦</label>
@@ -281,7 +359,8 @@ const drawModal = () => {
 };
 
 d.addEventListener("change", (e) => {
-  let eventId = e.target.id;
+  let eventId = e.target.id,
+    eventClass = e.target.className;
 
   if (eventId === "first-selection") {
     getNumbList(e.target);
@@ -316,6 +395,8 @@ d.addEventListener("change", (e) => {
 
     getNumbList($fstOption);
   }
+
+  if (eventClass.includes("selected-items")) location.hash = e.target.value;
 });
 
 d.addEventListener("click", (e) => {
@@ -333,6 +414,8 @@ d.addEventListener("click", (e) => {
 });
 
 let charactersData = await getData("./db/characters.json");
+
+!localStorage.getItem("characterData") ? localStorage.setItem("characterData", "{}") : getItems();
 
 getCards(charactersData, $cardsContainer, "./assets/characters");
 getChecked(filterClasses);

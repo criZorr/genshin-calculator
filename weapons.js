@@ -2,6 +2,9 @@ import getData from "./getData.js";
 import getCards from "./getCards.js";
 import getNumbList from "./getNumbList.js";
 import handleAscension from "./handleAscension.js";
+import calculateWeapon from "./calculateWeapon.js";
+import createLocal from "./createLocal.js";
+import drawItems from "./drawItems.js";
 
 const d = document;
 
@@ -58,6 +61,31 @@ const getChecked = (filterNames) => {
   }
 
   filterAction(res, weaponsData);
+};
+
+const createObject = (data, id) => {
+  let obj = {};
+
+  if (!(data[0] === 0)) obj["Mora"] = data[0];
+  if (!(data[1][0] === 0)) obj["Enhancement Ore"] = data[1][0];
+  if (!(data[1][1] === 0)) obj["Fine Enhancement Ore"] = data[1][1];
+  if (!(data[1][2] === 0)) obj["Mystic Enhancement Ore"] = data[1][2];
+  if (!(data[2][0] === 0)) obj[weaponsData[id]["enemy-material"][0]] = data[2][0];
+  if (!(data[2][1] === 0)) obj[weaponsData[id]["enemy-material"][1]] = data[2][1];
+  if (!(data[2][2] === 0)) obj[weaponsData[id]["enemy-material"][2]] = data[2][2];
+  if (!(data[3][0] === 0)) obj[weaponsData[id]["special-enemy-material"][0]] = data[3][0];
+  if (!(data[3][1] === 0)) obj[weaponsData[id]["special-enemy-material"][1]] = data[3][1];
+  if (!(data[3][2] === 0)) obj[weaponsData[id]["special-enemy-material"][2]] = data[3][2];
+  if (!(data[4][0] === 0)) obj[weaponsData[id]["domain-material"][0]] = data[4][0];
+  if (!(data[4][1] === 0)) obj[weaponsData[id]["domain-material"][1]] = data[4][1];
+  if (!(data[4][2] === 0)) obj[weaponsData[id]["domain-material"][2]] = data[4][2];
+  if (!(data[4][3] === 0)) obj[weaponsData[id]["domain-material"][3]] = data[4][3];
+
+  return obj;
+};
+
+const getItems = () => {
+  drawItems("weaponData", weaponsData, ".card-individual-container", ".selected-items");
 };
 
 const getLevels = (weaponId) => {
@@ -120,7 +148,32 @@ const getLevels = (weaponId) => {
   }
 
   $saveBtn.addEventListener("click", () => {
-    console.log($saveBtn.attributes["modal-id"].value);
+    let numId = Number(weaponId);
+
+    let fstLevelValue = Number(d.querySelector("#first-selection").value),
+      sndLevelValue = Number(d.querySelector("#second-selection").value);
+
+    let levelValues = [fstLevelValue, sndLevelValue],
+      ascension = false;
+
+    let quality = weaponsData[numId].quality;
+
+    if (quality === "2-stars" || quality === "1-stars") {
+      if (sndLevelValue === 6) sndLevelValue = 5;
+    }
+
+    if (sndLevelValue === 8) sndLevelValue = 7;
+
+    if (d.querySelectorAll(".ascension-selector input")[sndLevelValue - 2].checked)
+      ascension = true;
+
+    let calculatedData = calculateWeapon(levelValues, ascension, quality);
+
+    let weaponObject = createObject(calculatedData, numId);
+
+    createLocal("weaponData", numId, weaponObject);
+    getItems();
+    $modal.style.display = "none";
   });
 };
 
@@ -155,7 +208,8 @@ const drawModal = () => {
 };
 
 d.addEventListener("change", (e) => {
-  let eventId = e.target.id;
+  let eventId = e.target.id,
+    eventClass = e.target.className;
 
   if (eventId === "first-selection") {
     getNumbList(e.target);
@@ -188,6 +242,8 @@ d.addEventListener("change", (e) => {
 
     getNumbList($fstOption);
   }
+
+  if (eventClass.includes("selected-items")) location.hash = e.target.value;
 });
 
 d.addEventListener("click", (e) => {
@@ -205,6 +261,8 @@ d.addEventListener("click", (e) => {
 });
 
 let weaponsData = await getData("./db/weapons.json");
+
+!localStorage.getItem("weaponData") ? localStorage.setItem("weaponData", "{}") : getItems();
 
 getCards(weaponsData, $cardsContainer, "./assets/weapons");
 getChecked(filterClasses);

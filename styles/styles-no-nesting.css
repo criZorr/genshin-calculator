@@ -131,7 +131,7 @@
 }
 
 @media screen and (min-width: 624px) {
-  .content-info {
+  .items-container {
     overflow-y: scroll;
     scrollbar-width: none;
   }
