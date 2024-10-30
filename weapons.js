@@ -5,6 +5,8 @@ import handleAscension from "./handleAscension.js";
 import calculateWeapon from "./calculateWeapon.js";
 import createLocal from "./createLocal.js";
 import drawItems from "./drawItems.js";
+import drawTotalItems from "./drawTotalItems.js";
+import createTotalLocal from "./createTotalLocal.js";
 
 const d = document;
 
@@ -86,6 +88,10 @@ const createObject = (data, id) => {
 
 const getItems = () => {
   drawItems("weaponData", weaponsData, ".card-individual-container", ".selected-items");
+};
+
+const getTotal = () => {
+  drawTotalItems("weaponTotal", ".total-container", "weaponData");
 };
 
 const getLevels = (weaponId) => {
@@ -173,6 +179,8 @@ const getLevels = (weaponId) => {
 
     createLocal("weaponData", numId, weaponObject);
     getItems();
+    createTotalLocal("weaponTotal", "weaponData");
+    getTotal();
     $modal.style.display = "none";
   });
 };
@@ -263,6 +271,8 @@ d.addEventListener("click", (e) => {
 let weaponsData = await getData("./db/weapons.json");
 
 !localStorage.getItem("weaponData") ? localStorage.setItem("weaponData", "{}") : getItems();
+
+!localStorage.getItem("weaponTotal") ? localStorage.setItem("weaponTotal", "{}") : getTotal();
 
 getCards(weaponsData, $cardsContainer, "./assets/weapons");
 getChecked(filterClasses);

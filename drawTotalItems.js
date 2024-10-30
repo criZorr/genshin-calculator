@@ -1,64 +1,34 @@
 const d = document;
-export default function drawItems(localVariable, data, classContainer, classOptions) {
-  const $container = d.querySelector(classContainer),
-    $optionsContainer = d.querySelector(classOptions);
+export default function drawItems(localVariable, classContainer, allData) {
+  const $container = d.querySelector(classContainer);
   $container.innerHTML = "";
-  $optionsContainer.innerHTML = "";
 
   let $localData = JSON.parse(localStorage.getItem(localVariable)),
     keys = Object.keys($localData);
 
-  let names = keys.map((e) => data[e].name);
-  names = names.sort();
-
-  let keysSorted = names.map((e) => {
-    for (let i = 0; i < names.length; i++) {
-      if (e === data[keys[i]].name) return keys[i];
-    }
-  });
-
-  let optionTotal = d.createElement("option");
-  optionTotal.setAttribute("value", "Total");
-  optionTotal.innerHTML = "Total";
-  $optionsContainer.appendChild(optionTotal);
-
-  for (let i = 0; i < keys.length; i++) {
-    let name = names[i],
-      id = keysSorted[i];
-
-    let objectKeys = Object.keys($localData[id]);
-
-    let HeaderContent = `
+  let HeaderContent = `
             <div class="element-header">
-              <h3 class="frst-text">${name}</h3>
-              <section class="buttons-element">
-                <button class="btn-element">
-                  <img class="btn-edit" src="./assets/edit.svg" alt="edit" />
-                </button>
-                <button class="btn-element">
-                  <img class="btn-delete" src="./assets/delete.svg" alt="delete" />
-                </button>
-              </section>
-            </div>
+                <h3 class="frst-text">Total</h3>
+              </div>
         `;
 
-    let itemsContent = "";
+  let itemsContent = "";
 
-    for (let i = 0; i < objectKeys.length; i++) {
-      let number = $localData[id][objectKeys[i]];
-      number = number.toLocaleString("ru-RU");
+  for (let i = 0; i < keys.length; i++) {
+    let number = $localData[keys[i]];
+    number = number.toLocaleString("ru-RU");
 
-      let tempName = objectKeys[i];
-      tempName = tempName.replaceAll('"', "");
+    let tempName = keys[i];
+    tempName = tempName.replaceAll('"', "");
 
-      let itemContent = `
+    let itemContent = `
     <div class="element-info">
               <section class="element-data">
                 <figure class="element-img">
                   <img src="./assets/materials/${tempName}.png" alt="item" />
                 </figure>
                 <section class="element-props">
-                  <h5 class="frst-text">${objectKeys[i]}</h5>
+                  <h5 class="frst-text">${keys[i]}</h5>
                   <div class="element-days">
                     <small class="frst-text">Avg. days farming</small>
                     <svg
@@ -82,19 +52,23 @@ export default function drawItems(localVariable, data, classContainer, classOpti
               </section>
             </div>
     `;
-      itemsContent += itemContent;
-    }
+    itemsContent += itemContent;
+  }
 
-    let content = HeaderContent + itemsContent;
-    let card = d.createElement("section");
-    card.classList.add("card-individual", "bg-snd");
-    card.id = name;
-    card.innerHTML = content;
+  let content = HeaderContent + itemsContent;
+  let card = d.createElement("section");
+  card.classList.add("card-total", "bg-snd");
+  card.id = "Total";
+  card.innerHTML = content;
+
+  let paragraph = d.createElement("p");
+  paragraph.classList.add("scnd-text");
+  paragraph.innerHTML = `<b>Total calculation results</b>`;
+
+  let $allData = JSON.parse(localStorage.getItem(allData));
+
+  if (Object.keys($allData).length >= 2) {
+    $container.appendChild(paragraph);
     $container.appendChild(card);
-
-    let option = d.createElement("option");
-    option.setAttribute("value", name);
-    option.innerHTML = name;
-    $optionsContainer.appendChild(option);
   }
 }

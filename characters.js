@@ -5,6 +5,8 @@ import handleAscension from "./handleAscension.js";
 import calculateCharacter from "./calculateCharacter.js";
 import createLocal from "./createLocal.js";
 import drawItems from "./drawItems.js";
+import drawTotalItems from "./drawTotalItems.js";
+import createTotalLocal from "./createTotalLocal.js";
 
 const d = document;
 
@@ -111,6 +113,10 @@ const createObject = (data, id) => {
 
 const getItems = () => {
   drawItems("characterData", charactersData, ".card-individual-container", ".selected-items");
+};
+
+const getTotal = () => {
+  drawTotalItems("characterTotal", ".total-container", "characterData");
 };
 
 const getTalents = (characterId) => {
@@ -278,18 +284,22 @@ const getTalents = (characterId) => {
     if (d.querySelectorAll(".ascension-selector input")[sndLevelValue - 2].checked)
       ascension = true;
 
-    let calculatedData = calculateCharacter(
-      fstTalentValues,
-      sndTalentValues,
-      levelValues,
-      ascension
-    );
+    if (!(fstTalentValues.toString() == "0,0,0" && levelValues.toString() == "0,0")) {
+      let calculatedData = calculateCharacter(
+        fstTalentValues,
+        sndTalentValues,
+        levelValues,
+        ascension
+      );
 
-    let characterObject = createObject(calculatedData, numId);
+      let characterObject = createObject(calculatedData, numId);
 
-    createLocal("characterData", numId, characterObject);
-    getItems();
-    $modal.style.display = "none";
+      createLocal("characterData", numId, characterObject);
+      getItems();
+      createTotalLocal("characterTotal", "characterData");
+      getTotal();
+      $modal.style.display = "none";
+    }
   });
 };
 
@@ -416,6 +426,8 @@ d.addEventListener("click", (e) => {
 let charactersData = await getData("./db/characters.json");
 
 !localStorage.getItem("characterData") ? localStorage.setItem("characterData", "{}") : getItems();
+
+!localStorage.getItem("characterTotal") ? localStorage.setItem("characterTotal", "{}") : getTotal();
 
 getCards(charactersData, $cardsContainer, "./assets/characters");
 getChecked(filterClasses);
