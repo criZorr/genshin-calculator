@@ -88,18 +88,18 @@ const createObject = (data, id) => {
   let obj = {};
 
   obj["Mora"] = data[0];
-  if (!(data[1][0] === 0)) obj[charactersData[id]["enemy-material"][0]] = data[1][0];
-  if (!(data[1][1] === 0)) obj[charactersData[id]["enemy-material"][1]] = data[1][1];
-  if (!(data[1][2] === 0)) obj[charactersData[id]["enemy-material"][2]] = data[1][2];
-  if (!(data[2][0] === 0)) obj["Wanderer's Advice"] = data[2][0];
-  if (!(data[2][1] === 0)) obj["Adventurer's Experience"] = data[2][1];
-  if (!(data[2][2] === 0)) obj["Hero's Wit"] = data[2][2];
-  if (!(data[3] === 0)) obj[charactersData[id]["specialty-material"]] = data[3];
-  if (!(data[4] === 0)) obj[charactersData[id]["boss-material"]] = data[4];
-  if (!(data[5][0] === 0)) obj[`${charactersData[id].stone} Sliver`] = data[5][0];
-  if (!(data[5][1] === 0)) obj[`${charactersData[id].stone} Fragment`] = data[5][1];
-  if (!(data[5][2] === 0)) obj[`${charactersData[id].stone} Chunk`] = data[5][2];
-  if (!(data[5][3] === 0)) obj[`${charactersData[id].stone} Gemstone`] = data[5][3];
+  if (!(data[1][0] === 0)) obj["Wanderer's Advice"] = data[1][0];
+  if (!(data[1][1] === 0)) obj["Adventurer's Experience"] = data[1][1];
+  if (!(data[1][2] === 0)) obj["Hero's Wit"] = data[1][2];
+  if (!(data[2] === 0)) obj[charactersData[id]["specialty-material"]] = data[2];
+  if (!(data[3] === 0)) obj[charactersData[id]["boss-material"]] = data[3];
+  if (!(data[4][0] === 0)) obj[`${charactersData[id].stone} Sliver`] = data[4][0];
+  if (!(data[4][1] === 0)) obj[`${charactersData[id].stone} Fragment`] = data[4][1];
+  if (!(data[4][2] === 0)) obj[`${charactersData[id].stone} Chunk`] = data[4][2];
+  if (!(data[4][3] === 0)) obj[`${charactersData[id].stone} Gemstone`] = data[4][3];
+  if (!(data[5][0] === 0)) obj[charactersData[id]["enemy-material"][0]] = data[5][0];
+  if (!(data[5][1] === 0)) obj[charactersData[id]["enemy-material"][1]] = data[5][1];
+  if (!(data[5][2] === 0)) obj[charactersData[id]["enemy-material"][2]] = data[5][2];
   if (!(data[6][0] === 0))
     obj[`Teachings of ${charactersData[id]["domain-material"]}`] = data[6][0];
   if (!(data[6][1] === 0)) obj[`Guide to ${charactersData[id]["domain-material"]}`] = data[6][1];
@@ -415,7 +415,13 @@ d.addEventListener("click", (e) => {
 
   if (eventClass === $filters) getChecked(filterClasses);
 
-  if (eventClass === "card" || eventClass === "card-img" || eventClass === "card-name") {
+  if (
+    eventClass === "card" ||
+    eventClass === "card-img" ||
+    eventClass === "card-name" ||
+    eventClass === "btn-edit" ||
+    eventClass.includes("btn-edit-container")
+  ) {
     drawModal();
     getTalents(e.target.attributes._id.value);
   }

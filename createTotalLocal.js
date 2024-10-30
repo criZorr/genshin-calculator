@@ -19,5 +19,17 @@ export default function createTotalLocal(localVariable, dataVariable) {
 
   let calculated = calculateTotal(...objects);
 
+  let sortedKeys = Object.keys(calculated);
+  sortedKeys = sortedKeys.sort();
+
+  let sortedObject = {};
+  sortedObject["Mora"] = calculated["Mora"];
+
+  sortedKeys.forEach((e) => {
+    if (!(e == "Mora")) {
+      sortedObject[e] = calculated[e];
+    }
+  });
+
   localStorage.setItem(localVariable, JSON.stringify(calculated));
 }

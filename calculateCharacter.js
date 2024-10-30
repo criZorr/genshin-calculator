@@ -158,30 +158,6 @@ export default function calculateCharacter(
     }
   }
 
-  // console.log(
-  //   "Talentos:\n" +
-  //     "Mora: " +
-  //     talentMora +
-  //     "\nEnemigos: " +
-  //     "grises - " +
-  //     fstTalentEnemy +
-  //     " verdes - " +
-  //     sndTalentEnemy +
-  //     " azules - " +
-  //     trdTalentEnemy +
-  //     "\nMateriales de talento: " +
-  //     "grises - " +
-  //     fstTalentBook +
-  //     " verdes - " +
-  //     sndTalentBook +
-  //     " azules - " +
-  //     trdTalentBook +
-  //     "\nJefe semanal: " +
-  //     talentBoss +
-  //     "\nCoronas: " +
-  //     talentCrow
-  // );
-
   let levelMora = 0,
     fstLevelBook = 0,
     sndLevelBook = 0,
@@ -197,19 +173,6 @@ export default function calculateCharacter(
       trdLevelBook += level[i][3];
     }
   }
-
-  // console.log(
-  //   "Nivel:\n" +
-  //     "Mora: " +
-  //     levelMora +
-  //     "\nLibros de experiencia: " +
-  //     "verdes - " +
-  //     fstLevelBook +
-  //     " azules - " +
-  //     sndLevelBook +
-  //     " morados - " +
-  //     trdLevelBook
-  // );
 
   let ascensionMora = 0,
     fstAscensionStone = 0,
@@ -249,32 +212,6 @@ export default function calculateCharacter(
     }
   }
 
-  // console.log(
-  //   "Ascensión:\n" +
-  //     "Mora: " +
-  //     ascensionMora +
-  //     "\nEnemigos: " +
-  //     "grises - " +
-  //     fstAscensionEnemy +
-  //     " verdes - " +
-  //     sndAscensionEnemy +
-  //     " azules - " +
-  //     trdAscensionEnemy +
-  //     "\nPiedras de ascensión: " +
-  //     "verdes - " +
-  //     fstAscensionStone +
-  //     " azules - " +
-  //     sndAscensionStone +
-  //     " morados - " +
-  //     trdAscensionStone +
-  //     " dorados - " +
-  //     fthAscensionStone +
-  //     "\nEspecialidad: " +
-  //     specialty +
-  //     "\nJefe de mundo: " +
-  //     ascensionBoss
-  // );
-
   let totalMora = talentMora + levelMora + ascensionMora,
     totalEnemy = [
       fstTalentEnemy + fstAscensionEnemy,
@@ -287,11 +224,11 @@ export default function calculateCharacter(
 
   return [
     totalMora,
-    totalEnemy,
     totalLevelBook,
     specialty,
     ascensionBoss,
     totalStone,
+    totalEnemy,
     totalTalentBook,
     talentBoss,
     talentCrow,

@@ -260,7 +260,13 @@ d.addEventListener("click", (e) => {
 
   if (eventClass === $filters) getChecked(filterClasses);
 
-  if (eventClass === "card" || eventClass === "card-img" || eventClass === "card-name") {
+  if (
+    eventClass === "card" ||
+    eventClass === "card-img" ||
+    eventClass === "card-name" ||
+    eventClass === "btn-edit" ||
+    eventClass.includes("btn-edit-container")
+  ) {
     drawModal();
     getLevels(e.target.attributes._id.value);
   }

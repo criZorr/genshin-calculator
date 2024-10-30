@@ -32,11 +32,11 @@ export default function drawItems(localVariable, data, classContainer, classOpti
             <div class="element-header">
               <h3 class="frst-text">${name}</h3>
               <section class="buttons-element">
-                <button class="btn-element">
-                  <img class="btn-edit" src="./assets/edit.svg" alt="edit" />
+                <button class="btn-element btn-edit-container" _id="${id}">
+                  <img class="btn-edit" _id="${id}" src="./assets/edit.svg" alt="edit" />
                 </button>
-                <button class="btn-element">
-                  <img class="btn-delete" src="./assets/delete.svg" alt="delete" />
+                <button class="btn-element btn-delete-container" _id="${id}">
+                  <img class="btn-delete" _id="${id}" src="./assets/delete.svg" alt="delete" />
                 </button>
               </section>
             </div>
