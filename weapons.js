@@ -7,6 +7,8 @@ import createLocal from "./createLocal.js";
 import drawItems from "./drawItems.js";
 import drawTotalItems from "./drawTotalItems.js";
 import createTotalLocal from "./createTotalLocal.js";
+import calculateNeeded from "./calculateNeeded.js";
+import deleteLocal from "./deleteLocal.js";
 
 const d = document;
 
@@ -91,7 +93,7 @@ const getItems = () => {
 };
 
 const getTotal = () => {
-  drawTotalItems("weaponTotal", ".total-container", "weaponData");
+  drawTotalItems("neededWeapon", ".total-container", "weaponData");
 };
 
 const getLevels = (weaponId) => {
@@ -180,6 +182,7 @@ const getLevels = (weaponId) => {
     createLocal("weaponData", numId, weaponObject);
     getItems();
     createTotalLocal("weaponTotal", "weaponData");
+    calculateNeeded("userMaterials", "weaponTotal");
     getTotal();
     $modal.style.display = "none";
   });
@@ -213,6 +216,33 @@ const drawModal = () => {
           </div>
         </div>
       </div>`;
+};
+
+const deleteConfirmation = (id, name) => {
+  $modal.innerHTML = `
+    <div class="modal-info bg-trd">
+      <p class="info-title scnd-text">Do you want to delete ${name}?</p>
+      <div class="info-form">
+        <div class="btn-modal-info">
+          <button class="btn-bordered" id="cancel-btn">Cancel</button>
+        </div>
+        <div class="btn-modal-info">
+          <button class="btn bg-snd-dark" id="confirm-btn" _id="${id}">Delete</button>
+        </div>
+      </div>
+    </div>
+  `;
+  $modal.style.display = "flex";
+
+  let $confimButton = d.getElementById("confirm-btn");
+  $confimButton.addEventListener("click", (e) => {
+    deleteLocal("weaponData", e.target.attributes._id.value, "userMaterials");
+    getItems();
+    createTotalLocal("weaponTotal", "weaponData");
+    calculateNeeded("userMaterials", "weaponTotal");
+    getTotal();
+    $modal.style.display = "none";
+  });
 };
 
 d.addEventListener("change", (e) => {
@@ -271,6 +301,13 @@ d.addEventListener("click", (e) => {
     getLevels(e.target.attributes._id.value);
   }
 
+  if (eventClass === "btn-delete" || eventClass.includes("btn-delete-container")) {
+    deleteConfirmation(
+      e.target.attributes._id.value,
+      weaponsData[e.target.attributes._id.value].name
+    );
+  }
+
   if (eventClass === "modal-container" || eventId === "cancel-btn") $modal.style.display = "none";
 });
 
@@ -278,7 +315,13 @@ let weaponsData = await getData("./db/weapons.json");
 
 !localStorage.getItem("weaponData") ? localStorage.setItem("weaponData", "{}") : getItems();
 
-!localStorage.getItem("weaponTotal") ? localStorage.setItem("weaponTotal", "{}") : getTotal();
+!localStorage.getItem("weaponTotal")
+  ? localStorage.setItem("weaponTotal", "{}")
+  : Object.keys(JSON.parse(localStorage.getItem("weaponTotal"))).length == 0
+  ? undefined
+  : getTotal();
+
+if (!localStorage.getItem("userMaterials")) localStorage.setItem("userMaterials", "{}");
 
 getCards(weaponsData, $cardsContainer, "./assets/weapons");
 getChecked(filterClasses);

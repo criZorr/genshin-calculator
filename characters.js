@@ -7,6 +7,8 @@ import createLocal from "./createLocal.js";
 import drawItems from "./drawItems.js";
 import drawTotalItems from "./drawTotalItems.js";
 import createTotalLocal from "./createTotalLocal.js";
+import calculateNeeded from "./calculateNeeded.js";
+import deleteLocal from "./deleteLocal.js";
 
 const d = document;
 
@@ -116,7 +118,7 @@ const getItems = () => {
 };
 
 const getTotal = () => {
-  drawTotalItems("characterTotal", ".total-container", "characterData");
+  drawTotalItems("neededCharacter", ".total-container", "characterData");
 };
 
 const getTalents = (characterId) => {
@@ -297,6 +299,7 @@ const getTalents = (characterId) => {
       createLocal("characterData", numId, characterObject);
       getItems();
       createTotalLocal("characterTotal", "characterData");
+      calculateNeeded("userMaterials", "characterTotal");
       getTotal();
       $modal.style.display = "none";
     }
@@ -368,6 +371,33 @@ const drawModal = () => {
       </div>`;
 };
 
+const deleteConfirmation = (id, name) => {
+  $modal.innerHTML = `
+    <div class="modal-info bg-trd">
+      <p class="info-title scnd-text">Do you want to delete ${name}?</p>
+      <div class="info-form">
+        <div class="btn-modal-info">
+          <button class="btn-bordered" id="cancel-btn">Cancel</button>
+        </div>
+        <div class="btn-modal-info">
+          <button class="btn bg-snd-dark" id="confirm-btn" _id="${id}">Delete</button>
+        </div>
+      </div>
+    </div>
+  `;
+  $modal.style.display = "flex";
+
+  let $confimButton = d.getElementById("confirm-btn");
+  $confimButton.addEventListener("click", (e) => {
+    deleteLocal("characterData", e.target.attributes._id.value, "userMaterials");
+    getItems();
+    createTotalLocal("characterTotal", "characterData");
+    calculateNeeded("userMaterials", "characterTotal");
+    getTotal();
+    $modal.style.display = "none";
+  });
+};
+
 d.addEventListener("change", (e) => {
   let eventId = e.target.id,
     eventClass = e.target.className;
@@ -426,6 +456,13 @@ d.addEventListener("click", (e) => {
     getTalents(e.target.attributes._id.value);
   }
 
+  if (eventClass === "btn-delete" || eventClass.includes("btn-delete-container")) {
+    deleteConfirmation(
+      e.target.attributes._id.value,
+      charactersData[e.target.attributes._id.value].name
+    );
+  }
+
   if (eventClass === "modal-container" || eventId === "cancel-btn") $modal.style.display = "none";
 });
 
@@ -433,7 +470,13 @@ let charactersData = await getData("./db/characters.json");
 
 !localStorage.getItem("characterData") ? localStorage.setItem("characterData", "{}") : getItems();
 
-!localStorage.getItem("characterTotal") ? localStorage.setItem("characterTotal", "{}") : getTotal();
+!localStorage.getItem("characterTotal")
+  ? localStorage.setItem("characterTotal", "{}")
+  : Object.keys(JSON.parse(localStorage.getItem("characterTotal"))).length == 0
+  ? undefined
+  : getTotal();
+
+if (!localStorage.getItem("userMaterials")) localStorage.setItem("userMaterials", "{}");
 
 getCards(charactersData, $cardsContainer, "./assets/characters");
 getChecked(filterClasses);

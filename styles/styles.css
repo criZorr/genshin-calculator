@@ -998,6 +998,7 @@ small {
 }
 
 .info-title {
+  line-height: 1.25;
   font-weight: bold;
 }
 
