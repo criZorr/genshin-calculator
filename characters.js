@@ -469,6 +469,12 @@ let charactersData = await getData("./db/characters.json");
 
 !localStorage.getItem("characterData") ? localStorage.setItem("characterData", "{}") : getItems();
 
+if (!localStorage.getItem("userInfo"))
+  localStorage.setItem(
+    "userInfo",
+    '{"World":9,"dropWeeklyBoss":3,"craftingTalents":1,"craftingWeapons":1,"craftingMaterials":1,"talentDrop":3,"weaponDrop":3,"talentResin":1,"weaponResin":1,"talentRNG":1,"weaponRNG":1,"Mora":0}'
+  );
+
 !localStorage.getItem("characterTotal")
   ? localStorage.setItem("characterTotal", "{}")
   : Object.keys(JSON.parse(localStorage.getItem("characterTotal"))).length == 0
