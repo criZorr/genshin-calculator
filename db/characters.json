@@ -1501,5 +1501,35 @@
     "weekly-boss": "Mirror of Mushin",
     "domain-material": "Kindling",
     "talents": ["Ehecatl's Roar", "Yohual's Scratch", "Ocelotlicue Point!"]
+  },
+  "94": {
+    "name": "Ororon",
+    "birthday": "14-10",
+    "region": "Natlan",
+    "quality": "4-stars",
+    "element": "electro",
+    "stone": "Vajrada Amethyst",
+    "weapon": "bow",
+    "specialty-material": "Glowing Hornshroom",
+    "enemy-material": ["Juvenile Fang", "Seasoned Fang", "Tyrant's Fang"],
+    "boss-material": "Mark of the Binding Blessing",
+    "weekly-boss": "Lightless Silk String",
+    "domain-material": "Kindling",
+    "talents": ["Spiritvessel Snapshot", "Night's Sling", "Dark Voices Echo"]
+  },
+  "95": {
+    "name": "Chasca",
+    "birthday": "10-12",
+    "region": "Natlan",
+    "quality": "5-stars",
+    "element": "anemo",
+    "stone": "Vayuda Turquoise",
+    "weapon": "bow",
+    "specialty-material": "Withering Purpurbloom",
+    "enemy-material": ["Juvenile Fang", "Seasoned Fang", "Tyrant's Fang"],
+    "boss-material": "Ensnaring Gaze",
+    "weekly-boss": "Silken Feather",
+    "domain-material": "Conflict",
+    "talents": ["Phantom Feather Flurry", "Spirit Reins, Shadow Hunt", "Soul Reaper's Fatal Round"]
   }
 }

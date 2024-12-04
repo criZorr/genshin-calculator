@@ -1,14 +1,14 @@
-import getData from "./getData.js";
-import getCards from "./getCards.js";
-import getNumbList from "./getNumbList.js";
-import handleAscension from "./handleAscension.js";
-import calculateCharacter from "./calculateCharacter.js";
-import createLocal from "./createLocal.js";
-import drawItems from "./drawItems.js";
-import drawTotalItems from "./drawTotalItems.js";
-import createTotalLocal from "./createTotalLocal.js";
-import calculateNeeded from "./calculateNeeded.js";
-import deleteLocal from "./deleteLocal.js";
+import getData from "./helpers/getData.js";
+import getCards from "./components/getCards.js";
+import getNumbList from "./helpers/getNumbList.js";
+import handleAscension from "./helpers/handleAscension.js";
+import calculateCharacter from "./components/calculateCharacter.js";
+import createLocal from "./helpers/createLocal.js";
+import drawItems from "./components/drawItems.js";
+import drawTotalItems from "./components/drawTotalItems.js";
+import createTotalLocal from "./helpers/createTotalLocal.js";
+import calculateNeeded from "./components/calculateNeeded.js";
+import deleteLocal from "./helpers/deleteLocal.js";
 
 const d = document;
 
@@ -118,6 +118,7 @@ const getItems = () => {
 };
 
 const getTotal = () => {
+  calculateNeeded("userMaterials", "characterTotal");
   drawTotalItems("neededCharacter", ".total-container", "characterData");
 };
 
@@ -299,7 +300,6 @@ const getTalents = (characterId) => {
       createLocal("characterData", numId, characterObject);
       getItems();
       createTotalLocal("characterTotal", "characterData");
-      calculateNeeded("userMaterials", "characterTotal");
       getTotal();
       $modal.style.display = "none";
     }
@@ -392,7 +392,6 @@ const deleteConfirmation = (id, name) => {
     deleteLocal("characterData", e.target.attributes._id.value, "userMaterials");
     getItems();
     createTotalLocal("characterTotal", "characterData");
-    calculateNeeded("userMaterials", "characterTotal");
     getTotal();
     $modal.style.display = "none";
   });

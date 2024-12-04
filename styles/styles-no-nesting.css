@@ -35,13 +35,17 @@
 
 @media screen and (min-width: 1024px) {
   .menu-btn .menu-btn-img {
-    width: auto;
-    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 4rem;
+    height: 80%;
   }
 
   .menu-btn .menu-btn-img img {
     margin-top: 0;
-    height: 2rem;
+    height: 3rem;
     width: auto;
   }
 }
@@ -113,6 +117,8 @@
   .content-info {
     width: calc(50% - 0.5rem);
     height: calc(100vh - var(--header-height) - 4rem - 2rem);
+    overflow-y: scroll;
+    scrollbar-width: none;
   }
 }
 
@@ -371,4 +377,15 @@
 .info-form .btn-modal-info {
   height: 2rem;
   width: 5rem;
+}
+
+/* User Info */
+
+.user-parameter-header h5 {
+  max-width: 85%;
+}
+
+.info-options option {
+  background-color: inherit;
+  color: inherit;
 }

@@ -1,14 +1,14 @@
-import getData from "./getData.js";
-import getCards from "./getCards.js";
-import getNumbList from "./getNumbList.js";
-import handleAscension from "./handleAscension.js";
-import calculateWeapon from "./calculateWeapon.js";
-import createLocal from "./createLocal.js";
-import drawItems from "./drawItems.js";
-import drawTotalItems from "./drawTotalItems.js";
-import createTotalLocal from "./createTotalLocal.js";
-import calculateNeeded from "./calculateNeeded.js";
-import deleteLocal from "./deleteLocal.js";
+import getData from "./helpers/getData.js";
+import getCards from "./components/getCards.js";
+import getNumbList from "./helpers/getNumbList.js";
+import handleAscension from "./helpers/handleAscension.js";
+import calculateWeapon from "./components/calculateWeapon.js";
+import createLocal from "./helpers/createLocal.js";
+import drawItems from "./components/drawItems.js";
+import drawTotalItems from "./components/drawTotalItems.js";
+import createTotalLocal from "./helpers/createTotalLocal.js";
+import calculateNeeded from "./components/calculateNeeded.js";
+import deleteLocal from "./helpers/deleteLocal.js";
 
 const d = document;
 
@@ -93,6 +93,7 @@ const getItems = () => {
 };
 
 const getTotal = () => {
+  calculateNeeded("userMaterials", "weaponTotal");
   drawTotalItems("neededWeapon", ".total-container", "weaponData");
 };
 
@@ -182,7 +183,6 @@ const getLevels = (weaponId) => {
     createLocal("weaponData", numId, weaponObject);
     getItems();
     createTotalLocal("weaponTotal", "weaponData");
-    calculateNeeded("userMaterials", "weaponTotal");
     getTotal();
     $modal.style.display = "none";
   });
@@ -239,7 +239,6 @@ const deleteConfirmation = (id, name) => {
     deleteLocal("weaponData", e.target.attributes._id.value, "userMaterials");
     getItems();
     createTotalLocal("weaponTotal", "weaponData");
-    calculateNeeded("userMaterials", "weaponTotal");
     getTotal();
     $modal.style.display = "none";
   });
