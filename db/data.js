@@ -397,6 +397,7 @@ export default function calculateData(parameter = "stones") {
     "The Meaning of Aeons",
     "Mirror of Mushin",
     "Daka's Bell",
+    "Puppet Strings",
     "Worldspan Fern",
     "Primordial Greenbloom",
     "Everamber",
