@@ -2778,6 +2778,23 @@
     ]
   },
   "195": {
+    "name": "Fruitful Hook",
+    "quality": "4-stars",
+    "weapon": "claymore",
+    "enemy-material": ["Juvenile Fang", "Seasoned Fang", "Tyrant's Fang"],
+    "special-enemy-material": [
+      "Axis of the Secret Source",
+      "Sheath of the Secret Source",
+      "Heart of the Secret Source"
+    ],
+    "domain-material": [
+      "Night-Wind's Mystic Consideration",
+      "Night-Wind's Mystic Premonition",
+      "Night-Wind's Mystic Augury",
+      "Night-Wind's Mystic Revelation"
+    ]
+  },
+  "196": {
     "name": "Mountain-Bracing Bolt",
     "quality": "4-stars",
     "weapon": "polearm",
@@ -2790,7 +2807,7 @@
       "Delirious Divinity of the Sacred Lord"
     ]
   },
-  "196": {
+  "197": {
     "name": "Sturdy Bone",
     "quality": "4-stars",
     "weapon": "sword",
@@ -2811,7 +2828,7 @@
       "Blazing Sacrificial Heart's Splendor"
     ]
   },
-  "197": {
+  "198": {
     "name": "Peak Patrol Song",
     "quality": "5-stars",
     "weapon": "sword",
@@ -2828,7 +2845,7 @@
       "Night-Wind's Mystic Revelation"
     ]
   },
-  "198": {
+  "199": {
     "name": "Waveriding Whirl",
     "quality": "4-stars",
     "weapon": "catalyst",
@@ -2845,7 +2862,7 @@
       "Blazing Sacrificial Heart's Splendor"
     ]
   },
-  "199": {
+  "200": {
     "name": "Flower-Wreathed Feathers",
     "quality": "4-stars",
     "weapon": "bow",
@@ -2862,7 +2879,7 @@
       "Night-Wind's Mystic Revelation"
     ]
   },
-  "200": {
+  "201": {
     "name": "Calamity of Eshu",
     "quality": "4-stars",
     "weapon": "sword",
@@ -2879,7 +2896,7 @@
       "Delirious Divinity of the Sacred Lord"
     ]
   },
-  "201": {
+  "202": {
     "name": "Astral Vulture's Crimson Plumage",
     "quality": "5-stars",
     "weapon": "bow",
