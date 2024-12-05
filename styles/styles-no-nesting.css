@@ -250,6 +250,29 @@
   }
 }
 
+/* ********** Content results ********** */
+
+/* ********** Card Total & Individual********** */
+
+@media screen and (min-width: 624px) {
+  .card-total-personal {
+    max-height: none !important;
+  }
+  .card-total-personal .buttons-element {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 624px) {
+  .card-user-amount {
+    max-height: none !important;
+  }
+  .card-user-amount .btn-expand-container,
+  .card-user-amount .btn-collapse-container {
+    display: none;
+  }
+}
+
 /* ********** Element info ********** */
 .element-header h3 {
   max-width: 75%;

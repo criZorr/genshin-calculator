@@ -1,6 +1,7 @@
 import drawTotalItems from "./components/drawTotalItems.js";
 import calculateNeeded from "./components/calculateNeeded.js";
 import toggleSize from "./components/toggleSize.js";
+import calculateData from "./db/data.js";
 
 const d = document;
 
@@ -20,6 +21,8 @@ const svg = `
                       />
                     </svg>
 `;
+
+const all = calculateData("all");
 
 const getTotal = () => {
   calculateNeeded("userMaterials", "total");
@@ -275,38 +278,39 @@ const drawUserMaterial = () => {
     </div>
   `;
 
-  let localUserMaterials = JSON.parse(localStorage.getItem("userMaterials")),
-    keys = Object.keys(localUserMaterials);
+  let localUserMaterials = JSON.parse(localStorage.getItem("userMaterials"));
 
-  for (let i = 0; i < keys.length; i++) {
-    if (localUserMaterials[keys[i]] > 0) {
-      let number = localUserMaterials[keys[i]];
-      number = number.toLocaleString("ru-RU");
+  all.forEach((el) => {
+    if (localUserMaterials[el]) {
+      if (localUserMaterials[el] > 0) {
+        let number = localUserMaterials[el];
+        number = number.toLocaleString("ru-RU");
 
-      let fragment = d.createElement("div");
-      fragment.classList.add("element-owned-info");
-      fragment.innerHTML = `
+        let fragment = d.createElement("div");
+        fragment.classList.add("element-owned-info");
+        fragment.innerHTML = `
       <section class="element-data">
         <figure class="element-img">
-          <img src="./assets/materials/${keys[i]}.png" alt="${keys[i]}" />
+          <img src="./assets/materials/${el.replaceAll('"', "")}.png" alt="${el}" />
         </figure>
         <section class="element-props">
-          <h5 class="frst-text">${keys[i]}</h5>
+          <h5 class="frst-text">${el}</h5>
           <div class="element-days">
             <small class="frst-text">Amount owned:</small>
           </div>
         </section>
       </section>
       <section class="element-count">
-        <button class="btn-element-owned" _id="${keys[i]}">
-          <img class="btn-edit-owned" src="./assets/edit.svg" alt="edit"  _id="${keys[i]}"/>
+        <button class="btn-element-owned" _id="${el}">
+          <img class="btn-edit-owned" src="./assets/edit.svg" alt="edit"  _id="${el}"/>
         </button>
         <small class="frst-text">${number}</small>
       </section>
     `;
-      $container.appendChild(fragment);
+        $container.appendChild(fragment);
+      }
     }
-  }
+  });
 
   let fragment = d.createElement("div");
   fragment.classList.add("element-owned-info");
@@ -512,41 +516,56 @@ const drawModalPossible = () => {
 
   $modal.innerHTML = `
     <div class="modal-item-container">
-    <div class="modal-item-holder bg-trd"></div>
+    <div class="modal-item-holder bg-trd">
+      <div class="selected-container">
+        <select class="selected-items bg-snd frst-text"></select>
+        <div class="container-selected-icon">
+          <div class="selected-items-icon"></div>
+        </div>
+      </div>
+    <div class="items-container-user"></div>
+    </div>
     </div>
     `;
 
-  const $container = d.querySelector(".modal-item-holder");
+  const $container = d.querySelector(".items-container-user"),
+    $options = d.querySelector(".selected-items");
 
-  for (let i = 0; i < keys.length; i++) {
-    let number = localUserMaterials[keys[i]];
-    number = number.toLocaleString("ru-RU");
+  all.forEach((el) => {
+    if (localUserMaterials[el] >= 0) {
+      let number = localUserMaterials[el];
+      number = number.toLocaleString("ru-RU");
 
-    let fragment = d.createElement("div");
-    fragment.classList.add("element-owned-info");
-    fragment.innerHTML = `
+      let fragment = d.createElement("div");
+      fragment.classList.add("element-owned-info");
+      fragment.id = el;
+      fragment.innerHTML = `
     
       <section class="element-data">
         <figure class="element-img">
-          <img src="./assets/materials/${keys[i]}.png" alt="${keys[i]}" />
+          <img src="./assets/materials/${el.replaceAll('"', "")}.png" alt="${el}" />
         </figure>
         <section class="element-props">
-          <h5 class="frst-text">${keys[i]}</h5>
+          <h5 class="frst-text">${el}</h5>
           <div class="element-days">
             <small class="frst-text">Amount owned:</small>
           </div>
         </section>
       </section>
       <section class="element-count">
-        <button class="btn-element-owned" _id="${keys[i]}">
-          <img class="btn-edit-owned" src="./assets/edit.svg" alt="edit"  _id="${keys[i]}"/>
+        <button class="btn-element-owned" _id="${el}">
+          <img class="btn-edit-owned" src="./assets/edit.svg" alt="edit"  _id="${el}"/>
         </button>
         <small class="frst-text">${number}</small>
       </section>
-
     `;
-    $container.appendChild(fragment);
-  }
+      $container.appendChild(fragment);
+
+      let option = d.createElement("option");
+      option.innerHTML = el;
+      $options.appendChild(option);
+    }
+  });
 };
 
 if (!localStorage.getItem("userMaterials")) localStorage.setItem("userMaterials", "{}");
@@ -612,4 +631,8 @@ d.addEventListener("click", (e) => {
   }
 
   toggleSize(eventClass, e.target);
+});
+
+d.addEventListener("change", (e) => {
+  if (e.target.className.includes("selected-items")) location.hash = e.target.value;
 });

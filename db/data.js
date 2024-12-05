@@ -1,33 +1,33 @@
-export default function calculateData(parameter = "stones") {
+export default function calculateData(parameter) {
   const stones = [
-    "Prithiva Topaz Sliver",
-    "Prithiva Topaz Fragment",
-    "Prithiva Topaz Chunk",
-    "Prithiva Topaz Gemstone",
-    "Vayuda Turquoise Sliver",
-    "Vayuda Turquoise Fragment",
-    "Vayuda Turquoise Chunk",
-    "Vayuda Turquoise Gemstone",
     "Agnidus Agate Sliver",
     "Agnidus Agate Fragment",
     "Agnidus Agate Chunk",
     "Agnidus Agate Gemstone",
-    "Vajrada Amethyst Sliver",
-    "Vajrada Amethyst Fragment",
-    "Vajrada Amethyst Chunk",
-    "Vajrada Amethyst Gemstone",
-    "Nagadus Emerald Sliver",
-    "Nagadus Emerald Fragment",
-    "Nagadus Emerald Chunk",
-    "Nagadus Emerald Gemstone",
     "Varunada Lazurite Sliver",
     "Varunada Lazurite Fragment",
     "Varunada Lazurite Chunk",
     "Varunada Lazurite Gemstone",
+    "Nagadus Emerald Sliver",
+    "Nagadus Emerald Fragment",
+    "Nagadus Emerald Chunk",
+    "Nagadus Emerald Gemstone",
+    "Vajrada Amethyst Sliver",
+    "Vajrada Amethyst Fragment",
+    "Vajrada Amethyst Chunk",
+    "Vajrada Amethyst Gemstone",
+    "Vayuda Turquoise Sliver",
+    "Vayuda Turquoise Fragment",
+    "Vayuda Turquoise Chunk",
+    "Vayuda Turquoise Gemstone",
     "Shivada Jade Sliver",
     "Shivada Jade Fragment",
     "Shivada Jade Chunk",
     "Shivada Jade Gemstone",
+    "Prithiva Topaz Sliver",
+    "Prithiva Topaz Fragment",
+    "Prithiva Topaz Chunk",
+    "Prithiva Topaz Gemstone",
   ];
 
   const weaponMaterials = [
@@ -202,12 +202,12 @@ export default function calculateData(parameter = "stones") {
     "Transoceanic Pearl",
     "Transoceanic Chunk",
     "Xenochromatic Crystal",
-    "Sentry's Wooden Whistle",
-    "Warrior's Metal Whistle",
-    "Saurian-Crowned Warrior's Golden Whistle",
     "Juvenile Fang",
     "Seasoned Fang",
     "Tyrant's Fang",
+    "Sentry's Wooden Whistle",
+    "Warrior's Metal Whistle",
+    "Saurian-Crowned Warrior's Golden Whistle",
   ];
 
   const eliteEnemies = [
@@ -286,93 +286,93 @@ export default function calculateData(parameter = "stones") {
   ];
 
   const specialty = {
+    Wolfhook: 35,
+    Valberry: 21,
+    Cecilia: 37,
+    "Windwheel Aster": 73,
+    "Philanemo Mushroom": 53,
+    "Small Lamp Grass": 77,
+    "Calla Lily": 53,
+    "Dandelion Seed": 56,
+    "Jueyun Chili": 53,
+    "Noctilucous Jade": 55,
+    "Silk Flower": 17,
+    "Glaze Lily": 50,
+    Qingxin: 175,
+    Starconch: 80,
+    Violetgrass: 237,
+    "Cor Lapis": 169,
+    "Clearwater Jade": 67,
+    Onikabuto: 79,
+    "Sakura Bloom": 75,
+    "Crystal Marrow": 66,
+    Dendrobium: 55,
+    "Naku Weed": 132,
+    "Sea Ganoderma": 159,
+    "Sango Pearl": 44,
+    "Amakumo Fruit": 95,
+    "Fluorescent Fungus": 71,
+    "Rukkhashava Mushrooms": 77,
+    Padisarah: 68,
+    "Nilotpala Lotus": 79,
+    "Kalpalata Lotus": 66,
+    "Henna Berry": 101,
+    "Sand Grease Pupa": 74,
+    "Mourning Flower": 81,
+    Trishiraite: 66,
+    Scarab: 78,
+    "Beryl Conch": 105,
+    "Romaritime Flower": 120,
+    "Lumidouce Bell": 30,
+    "Rainbow Rose": 81,
+    Lumitoile: 78,
+    "Lakelight Lily": 79,
+    "Subdetection Unit": 72,
+    "Spring of the First Dewdrop": 74,
+    "Sprayfeather Gill": 83,
+    "Brilliant Chrysanthemum": 91,
+    "Quenepa Berry": 43,
+    "Saurian Claw Succulent": 90,
     "Glowing Hornshroom": 72,
     "Withering Purpurbloom": 80,
-    "Saurian Claw Succulent": 90,
-    "Quenepa Berry": 43,
-    "Brilliant Chrysanthemum": 91,
-    "Sprayfeather Gill": 83,
-    "Clearwater Jade": 67,
-    "Spring of the First Dewdrop": 74,
-    "Lakelight Lily": 79,
-    Lumitoile: 78,
-    "Subdetection Unit": 72,
-    "Beryl Conch": 105,
-    "Lumidouce Bell": 30,
-    "Romaritime Flower": 120,
-    "Rainbow Rose": 81,
-    Trishiraite: 66,
-    "Mourning Flower": 81,
-    "Sand Grease Pupa": 74,
-    "Henna Berry": 101,
-    Scarab: 78,
-    "Kalpalata Lotus": 66,
-    Padisarah: 68,
-    "Rukkhashava Mushrooms": 77,
-    "Nilotpala Lotus": 79,
-    "Naku Weed": 132,
-    Onikabuto: 79,
-    "Windwheel Aster": 73,
-    "Silk Flower": 17,
-    Wolfhook: 35,
-    Dendrobium: 55,
-    "Dandelion Seed": 56,
-    Valberry: 21,
-    "Sakura Bloom": 75,
-    "Jueyun Chili": 53,
-    "Cor Lapis": 169,
-    Violetgrass: 237,
-    "Glaze Lily": 50,
-    "Sango Pearl": 44,
-    Qingxin: 175,
-    "Sea Ganoderma": 159,
-    "Crystal Marrow": 66,
-    Starconch: 80,
-    "Philanemo Mushroom": 53,
-    "Fluorescent Fungus": 71,
-    "Small Lamp Grass": 77,
-    "Amakumo Fruit": 95,
-    "Noctilucous Jade": 55,
-    Cecilia: 37,
-    "Calla Lily": 53,
   };
 
   const boss = [
-    '"Tourbillon Device"',
+    "Hurricane Seed",
+    "Lightning Prism",
+    "Hoarfrost Core",
+    "Basalt Pillar",
+    "Everflame Seed",
+    "Cleansing Heart",
+    "Juvenile Jade",
+    "Crystalline Bloom",
+    "Marionette Core",
+    "Smoldering Pearl",
+    "Perpetual Heart",
+    "Storm Beads",
+    "Dew of Repudiation",
+    "Riftborn Regalia",
+    "Dragonheir's False Fin",
+    "Runic Fang",
+    "Majestic Hooked Beak",
+    "Thunderclap Fruitcore",
+    "Light Guiding Tetrahedron",
+    "Perpetual Caliber",
+    "Quelled Creeper",
+    "Pseudo-Stamens",
+    "Evergloom Ring",
+    "Emperor's Resolution",
     "Artificed Spare Clockwork Component — Coppelia",
     "Artificed Spare Clockwork Component — Coppelius",
-    "Basalt Pillar",
-    "Cleansing Heart",
-    "Cloudseam Scale",
-    "Crystalline Bloom",
-    "Dew of Repudiation",
-    "Dragonheir's False Fin",
-    "Emperor's Resolution",
-    "Ensnaring Gaze",
-    "Everflame Seed",
-    "Evergloom Ring",
     "Fontemer Unihorn",
+    '"Tourbillon Device"',
+    "Water That Failed To Transcend",
+    "Cloudseam Scale",
     "Fragment of a Golden Melody",
-    "Gold-Inscribed Secret Source Core",
-    "Hoarfrost Core",
-    "Hurricane Seed",
-    "Juvenile Jade",
-    "Light Guiding Tetrahedron",
-    "Lightning Prism",
-    "Majestic Hooked Beak",
-    "Marionette Core",
     "Mark of the Binding Blessing",
     "Overripe Flamegranate",
-    "Perpetual Caliber",
-    "Perpetual Heart",
-    "Pseudo-Stamens",
-    "Quelled Creeper",
-    "Riftborn Regalia",
-    "Runic Fang",
-    "Smoldering Pearl",
-    "Storm Beads",
-    "Thunderclap Fruitcore",
-    "Water That Failed To Transcend",
+    "Gold-Inscribed Secret Source Core",
+    "Ensnaring Gaze",
   ];
 
   const weekBoss = [
@@ -394,10 +394,9 @@ export default function calculateData(parameter = "stones") {
     "Mudra of the Malefic General",
     "Tears of the Calamitous God",
     "The Meaning of Aeons",
-    "The Meaning of Aeons",
+    "Puppet Strings",
     "Mirror of Mushin",
     "Daka's Bell",
-    "Puppet Strings",
     "Worldspan Fern",
     "Primordial Greenbloom",
     "Everamber",
@@ -591,6 +590,57 @@ export default function calculateData(parameter = "stones") {
   if (parameter === "weekBoss") data = weekBoss;
   if (parameter === "commonEnemiesData") data = commonEnemiesData;
   if (parameter === "eliteEnemiesData") data = eliteEnemiesData;
+  if (parameter === "all") {
+    let all = [
+      "Mora",
+      "Hero's Wit",
+      "Adventurer's Experience",
+      "Wanderer's Advice",
+      "Mystic Enhancement Ore",
+      "Fine Enhancement Ore",
+      "Enhancement Ore",
+    ];
+
+    for (let i = 2; i < eliteEnemies.length; i += 3) {
+      all.push(eliteEnemies[i]);
+      all.push(eliteEnemies[i - 1]);
+      all.push(eliteEnemies[i - 2]);
+    }
+
+    for (let i = 2; i < commonEnemies.length; i += 3) {
+      all.push(commonEnemies[i]);
+      all.push(commonEnemies[i - 1]);
+      all.push(commonEnemies[i - 2]);
+    }
+
+    all = [...all, ...weekBoss, ...boss];
+
+    for (let i = 3; i < stones.length; i += 4) {
+      all.push(stones[i]);
+      all.push(stones[i - 1]);
+      all.push(stones[i - 2]);
+      all.push(stones[i - 3]);
+    }
+
+    for (let i = 2; i < talentMaterials.length; i += 3) {
+      all.push(talentMaterials[i]);
+      all.push(talentMaterials[i - 1]);
+      all.push(talentMaterials[i - 2]);
+    }
+
+    for (let i = 3; i < weaponMaterials.length; i += 4) {
+      all.push(weaponMaterials[i]);
+      all.push(weaponMaterials[i - 1]);
+      all.push(weaponMaterials[i - 2]);
+      all.push(weaponMaterials[i - 3]);
+    }
+
+    let specialtyKeys = Object.keys(specialty);
+
+    all = [...all, ...specialtyKeys];
+
+    data = all;
+  }
 
   return data;
 }

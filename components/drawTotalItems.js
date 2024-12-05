@@ -40,7 +40,8 @@ const specialty = calculateData("specialty"),
   eliteEnemies = calculateData("eliteEnemiesData"),
   stones = calculateData("stones"),
   talents = calculateData("talentMaterials"),
-  weaponMaterial = calculateData("weaponMaterials");
+  weaponMaterial = calculateData("weaponMaterials"),
+  all = calculateData("all");
 
 let specialtyKeys = Object.keys(specialty);
 let enemiesKeys = [];
@@ -183,136 +184,133 @@ export default function drawTotalItems(localVariable, classContainer, secondClas
 
   let itemsContent = "";
 
-  for (let i = 0; i < keys.length; i++) {
-    let number = $localData[keys[i]];
-    let stringNumber = number.toLocaleString("ru-RU");
+  all.forEach((el) => {
+    if ($localData[el]) {
+      let number = $localData[el];
+      let stringNumber = number.toLocaleString("ru-RU");
 
-    let tempName = keys[i];
-    tempName = tempName.replaceAll('"', "");
+      let tempName = el;
+      tempName = tempName.replaceAll('"', "");
 
-    let avgFarming = "",
-      label = "",
-      faq = "";
+      let avgFarming = "",
+        label = "",
+        faq = "";
 
-    if (specialtyKeys.includes(keys[i])) {
-      avgFarming = number / specialty[keys[i]];
-      avgFarming = Math.ceil(avgFarming);
-      label = "Avg. days collecting local specialty";
-      faq = `In the game there are ${specialty[keys[i]]} of this specialty.`;
-    }
-
-    if (boss.includes(keys[i])) {
-      avgFarming = number / dropBoss;
-      avgFarming = Math.ceil(avgFarming);
-      label = "Approx. times to defeat boss";
-      faq = `This calculation depends of your World Level. (You can change it in "personal" section).`;
-    }
-
-    if (weekBoss.includes(keys[i])) {
-      avgFarming = number / dropWeeklyBoss;
-      avgFarming = Math.ceil(avgFarming);
-      label = "Approx. times to defeat weekly boss";
-      faq = `This calculation depends on the domain level you choose. (You can change it in "personal" section).`;
-    }
-
-    if (keys[i] === "Mora") {
-      avgFarming = number / leyMora;
-      let a = Math.ceil(avgFarming);
-      avgFarming = `${Math.ceil(a / 9)} (${a})`;
-      label = "Approx. days doing ley lines (times)";
-      faq = "Just spending all your 180 daily resin in ley lines";
-    }
-
-    if (keys[i] === "Crown of Insight") {
-      avgFarming = number;
-      label = "Approx. times to purchase it in the shop (1 per month)";
-      faq = "You can purchase one Crown of Insight every month";
-    }
-
-    if (
-      keys[i] === "Wanderer's Advice" ||
-      keys[i] === "Adventurer's Experience" ||
-      keys[i] === "Hero's Wit"
-    ) {
-      let $rawInfo = JSON.parse(localStorage.getItem("rawMaterials"));
-      avgFarming = $rawInfo[keys[i]] / leyBook;
-      let a = Math.ceil(avgFarming);
-      avgFarming = `${Math.ceil(a / 9)} (${a})`;
-      label = "Approx. days just doing ley lines (times)";
-      faq = "Just spending all your 180 daily resin in ley lines";
-    }
-
-    if (
-      keys[i] === "Enhancement Ore" ||
-      keys[i] === "Fine Enhancement Ore" ||
-      keys[i] === "Mystic Enhancement Ore"
-    ) {
-      let $rawInfo = JSON.parse(localStorage.getItem("rawMaterials"));
-      avgFarming = Math.ceil($rawInfo[keys[i]] / 3);
-      label = "Approx. 3 star weapons to delete";
-      faq = "You can obtain 3 Enhancement Ore when you delete a 3 star weapon";
-    }
-
-    if (enemiesKeys.includes(keys[i])) {
-      let data = [];
-      for (let k = 0; k < Object.keys(enemies).length; k++) {
-        if (enemies[k][0].includes(keys[i])) data = [...enemies[k][1]];
+      if (specialtyKeys.includes(el)) {
+        avgFarming = number / specialty[el];
+        avgFarming = Math.ceil(avgFarming);
+        label = "Avg. days collecting local specialty";
+        faq = `In the game there are ${specialty[el]} of this specialty.`;
       }
 
-      let $rawInfo = JSON.parse(localStorage.getItem("rawMaterials"));
-
-      avgFarming = $rawInfo[keys[i]][craftingMaterials] / data[worldLevel];
-      avgFarming = `${Math.ceil(avgFarming)} (${Math.ceil(avgFarming / data[10])})`;
-      label = "Approx. times to defeat the enemies (days)";
-      faq = `This calculation depends on your World Level and the talent bonus to craft materials. (You can change them in "personal" section).`;
-    }
-
-    if (eliteEnemiesKeys.includes(keys[i])) {
-      let data = [];
-      for (let k = 0; k < Object.keys(eliteEnemies).length; k++) {
-        if (eliteEnemies[k][0].includes(keys[i])) data = [...eliteEnemies[k][1]];
+      if (boss.includes(el)) {
+        avgFarming = number / dropBoss;
+        avgFarming = Math.ceil(avgFarming);
+        label = "Approx. times to defeat boss";
+        faq = `This calculation depends of your World Level. (You can change it in "personal" section).`;
       }
 
-      let $rawInfo = JSON.parse(localStorage.getItem("rawMaterials"));
+      if (weekBoss.includes(el)) {
+        avgFarming = number / dropWeeklyBoss;
+        avgFarming = Math.ceil(avgFarming);
+        label = "Approx. times to defeat weekly boss";
+        faq = `This calculation depends on the domain level you choose. (You can change it in "personal" section).`;
+      }
 
-      avgFarming = $rawInfo[keys[i]][craftingMaterials] / data[worldLevel];
-      avgFarming = `${Math.ceil(avgFarming)} (${Math.ceil(avgFarming / data[10])})`;
-      label = "Approx. times to defeat the enemies (days)";
-      faq = `This calculation depends on your World Level and the talent bonus to craft materials. (You can change them in "personal" section).`;
-    }
+      if (el === "Mora") {
+        avgFarming = number / leyMora;
+        let a = Math.ceil(avgFarming);
+        avgFarming = `${Math.ceil(a / 9)} (${a})`;
+        label = "Approx. days doing ley lines (times)";
+        faq = "Just spending all your 180 daily resin in ley lines";
+      }
 
-    if (stones.includes(keys[i])) {
-      let $rawInfo = JSON.parse(localStorage.getItem("rawMaterials"));
-      avgFarming = $rawInfo[keys[i]][0] / stoneDrop;
-      avgFarming = Math.ceil(avgFarming);
-      label = "Approx. times to defeat a boss";
-      faq = `This calculation depends on your World Level . (You can change it in "personal" section).`;
-    }
+      if (el === "Crown of Insight") {
+        avgFarming = number;
+        label = "Approx. times to purchase it in the shop (1 per month)";
+        faq = "You can purchase one Crown of Insight every month";
+      }
 
-    if (talents.includes(keys[i])) {
-      let $rawInfo = JSON.parse(localStorage.getItem("rawMaterials"));
-      avgFarming = $rawInfo[keys[i]][craftingTalents] / talentDrop[$userInfo["talentRNG"]];
-      avgFarming = Math.ceil(avgFarming);
-      label = "Approx. times to do the domain";
-      faq = `This calculation depends on the domain level you choose and the talent bonus to craft talent materials. (You can change them in "personal" section).`;
-    }
+      if (el === "Wanderer's Advice" || el === "Adventurer's Experience" || el === "Hero's Wit") {
+        let $rawInfo = JSON.parse(localStorage.getItem("rawMaterials"));
+        avgFarming = $rawInfo[el] / leyBook;
+        let a = Math.ceil(avgFarming);
+        avgFarming = `${Math.ceil(a / 9)} (${a})`;
+        label = "Approx. days just doing ley lines (times)";
+        faq = "Just spending all your 180 daily resin in ley lines";
+      }
 
-    if (weaponMaterial.includes(keys[i])) {
-      let $rawInfo = JSON.parse(localStorage.getItem("rawMaterials"));
-      avgFarming = $rawInfo[keys[i]][craftingWeapons] / weaponDrop[$userInfo["weaponRNG"]];
-      avgFarming = Math.ceil(avgFarming);
-      label = "Approx. times to do the domain";
-      faq = `This calculation depends on the domain level you choose and the talent bonus to craft weapon materials. (You can change them in "personal" section).`;
-    }
+      if (
+        el === "Enhancement Ore" ||
+        el === "Fine Enhancement Ore" ||
+        el === "Mystic Enhancement Ore"
+      ) {
+        let $rawInfo = JSON.parse(localStorage.getItem("rawMaterials"));
+        avgFarming = Math.ceil($rawInfo[el] / 3);
+        label = "Approx. 3 star weapons to delete";
+        faq = "You can obtain 3 Enhancement Ore when you delete a 3 star weapon";
+      }
 
-    let itemContent = `
+      if (enemiesKeys.includes(el)) {
+        let data = [];
+        for (let k = 0; k < Object.keys(enemies).length; k++) {
+          if (enemies[k][0].includes(el)) data = [...enemies[k][1]];
+        }
+
+        let $rawInfo = JSON.parse(localStorage.getItem("rawMaterials"));
+
+        avgFarming = $rawInfo[el][craftingMaterials] / data[worldLevel];
+        avgFarming = `${Math.ceil(avgFarming)} (${Math.ceil(avgFarming / data[10])})`;
+        label = "Approx. times to defeat the enemies (days)";
+        faq = `This calculation depends on your World Level and the talent bonus to craft materials. (You can change them in "personal" section).`;
+      }
+
+      if (eliteEnemiesKeys.includes(el)) {
+        let data = [];
+        for (let k = 0; k < Object.keys(eliteEnemies).length; k++) {
+          if (eliteEnemies[k][0].includes(el)) data = [...eliteEnemies[k][1]];
+        }
+
+        let $rawInfo = JSON.parse(localStorage.getItem("rawMaterials"));
+
+        avgFarming = $rawInfo[el][craftingMaterials] / data[worldLevel];
+        avgFarming = `${Math.ceil(avgFarming)} (${Math.ceil(avgFarming / data[10])})`;
+        label = "Approx. times to defeat the enemies (days)";
+        faq = `This calculation depends on your World Level and the talent bonus to craft materials. (You can change them in "personal" section).`;
+      }
+
+      if (stones.includes(el)) {
+        let $rawInfo = JSON.parse(localStorage.getItem("rawMaterials"));
+        avgFarming = $rawInfo[el][0] / stoneDrop;
+        avgFarming = Math.ceil(avgFarming);
+        label = "Approx. times to defeat a boss";
+        faq = `This calculation depends on your World Level . (You can change it in "personal" section).`;
+      }
+
+      if (talents.includes(el)) {
+        let $rawInfo = JSON.parse(localStorage.getItem("rawMaterials"));
+        avgFarming = $rawInfo[el][craftingTalents] / talentDrop[$userInfo["talentRNG"]];
+        avgFarming = Math.ceil(avgFarming);
+        label = "Approx. times to do the domain";
+        faq = `This calculation depends on the domain level you choose and the talent bonus to craft talent materials. (You can change them in "personal" section).`;
+      }
+
+      if (weaponMaterial.includes(el)) {
+        let $rawInfo = JSON.parse(localStorage.getItem("rawMaterials"));
+        avgFarming = $rawInfo[el][craftingWeapons] / weaponDrop[$userInfo["weaponRNG"]];
+        avgFarming = Math.ceil(avgFarming);
+        label = "Approx. times to do the domain";
+        faq = `This calculation depends on the domain level you choose and the talent bonus to craft weapon materials. (You can change them in "personal" section).`;
+      }
+
+      let itemContent = `
     <div class="element-info">
               <section class="element-data">
                 <figure class="element-img">
                   <img src="./assets/materials/${tempName}.png" alt="item" />
                 </figure>
                 <section class="element-props">
-                  <h5 class="frst-text">${keys[i]}</h5>
+                  <h5 class="frst-text">${el}</h5>
                   <div class="element-days">
                     <small class="frst-text description-txt">${label}</small>
                     <div class="faq-container">
@@ -329,17 +327,17 @@ export default function drawTotalItems(localVariable, classContainer, secondClas
             </div>
     `;
 
-    itemsContent += itemContent;
+      itemsContent += itemContent;
 
-    if (keys[i] === "Mora") {
-      itemContent = `
+      if (el === "Mora") {
+        itemContent = `
     <div class="element-info">
               <section class="element-data">
                 <figure class="element-img">
                   <img src="./assets/materials/${tempName}.png" alt="item" />
                 </figure>
                 <section class="element-props">
-                  <h5 class="frst-text">${keys[i]}</h5>
+                  <h5 class="frst-text">${el}</h5>
                   <div class="element-days">
                     <small class="frst-text description-txt">Approx. days earning mora while spending resin</small>
                     <div class="faq-container">
@@ -355,9 +353,10 @@ export default function drawTotalItems(localVariable, classContainer, secondClas
               </section>
             </div>
     `;
-      itemsContent += itemContent;
+        itemsContent += itemContent;
+      }
     }
-  }
+  });
 
   let content = HeaderContent + itemsContent;
   let card = d.createElement("section");

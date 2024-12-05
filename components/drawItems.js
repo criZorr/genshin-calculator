@@ -27,7 +27,8 @@ let dropWeeklyBoss = 0;
 
 const specialty = calculateData("specialty"),
   boss = calculateData("boss"),
-  weekBoss = calculateData("weekBoss");
+  weekBoss = calculateData("weekBoss"),
+  all = calculateData("all");
 
 let specialtyKeys = Object.keys(specialty);
 
@@ -140,60 +141,61 @@ export default function drawItems(localVariable, data, classContainer, classOpti
 
     let itemsContent = "";
 
-    for (let i = 0; i < objectKeys.length; i++) {
-      let number = $localData[id][objectKeys[i]];
-      number = number.toLocaleString("ru-RU");
+    all.forEach((el) => {
+      if ($localData[id][el]) {
+        let number = $localData[id][el];
+        number = number.toLocaleString("ru-RU");
 
-      let tempName = objectKeys[i];
-      tempName = tempName.replaceAll('"', "");
+        let tempName = el;
+        tempName = tempName.replaceAll('"', "");
 
-      let avgFarming = "",
-        label = "Look at Total section",
-        faq = "Go to Total section to see full calculation";
+        let avgFarming = "",
+          label = "Look at Total section",
+          faq = "Go to Total section to see full calculation";
 
-      if (specialtyKeys.includes(objectKeys[i])) {
-        avgFarming = number / specialty[objectKeys[i]];
-        avgFarming = Math.ceil(avgFarming);
-        label = "Avg. days collecting local specialty";
-        faq = `In the game there are ${specialty[objectKeys[i]]} of this specialty.`;
-      }
+        if (specialtyKeys.includes(el)) {
+          avgFarming = number / specialty[el];
+          avgFarming = Math.ceil(avgFarming);
+          label = "Avg. days collecting local specialty";
+          faq = `In the game there are ${specialty[el]} of this specialty.`;
+        }
 
-      if (boss.includes(objectKeys[i])) {
-        avgFarming = number / dropBoss;
-        avgFarming = Math.ceil(avgFarming);
-        label = "Approx. times to defeat boss";
-        faq = `This calculation depends of your World Level. (You can change it in "personal" section).`;
-      }
+        if (boss.includes(el)) {
+          avgFarming = number / dropBoss;
+          avgFarming = Math.ceil(avgFarming);
+          label = "Approx. times to defeat boss";
+          faq = `This calculation depends of your World Level. (You can change it in "personal" section).`;
+        }
 
-      if (weekBoss.includes(objectKeys[i])) {
-        avgFarming = number / dropWeeklyBoss;
-        avgFarming = Math.ceil(avgFarming);
-        label = "Approx. times to defeat weekly boss";
-        faq = `This calculation depends on the domain level you choose. (You can change it in "personal" section).`;
-      }
+        if (weekBoss.includes(el)) {
+          avgFarming = number / dropWeeklyBoss;
+          avgFarming = Math.ceil(avgFarming);
+          label = "Approx. times to defeat weekly boss";
+          faq = `This calculation depends on the domain level you choose. (You can change it in "personal" section).`;
+        }
 
-      if (objectKeys[i] === "Mora") {
-        avgFarming = $localData[id][objectKeys[i]] / leyMora;
-        let a = Math.ceil(avgFarming);
-        avgFarming = `${Math.ceil(a / 9)} (${a})`;
-        label = "Approx. days doing ley lines (times)";
-        faq = "Just spending all your 180 daily resin in ley lines";
-      }
+        if (el === "Mora") {
+          avgFarming = $localData[id][el] / leyMora;
+          let a = Math.ceil(avgFarming);
+          avgFarming = `${Math.ceil(a / 9)} (${a})`;
+          label = "Approx. days doing ley lines (times)";
+          faq = "Just spending all your 180 daily resin in ley lines";
+        }
 
-      if (objectKeys[i] === "Crown of Insight") {
-        avgFarming = number;
-        label = "Approx. times to purchase it in the shop (1 per month)";
-        faq = "You can purchase one Crown of Insight every month";
-      }
+        if (el === "Crown of Insight") {
+          avgFarming = number;
+          label = "Approx. times to purchase it in the shop (1 per month)";
+          faq = "You can purchase one Crown of Insight every month";
+        }
 
-      let itemContent = `
+        let itemContent = `
     <div class="element-info">
               <section class="element-data">
                 <figure class="element-img">
                   <img src="./assets/materials/${tempName}.png" alt="item" />
                 </figure>
                 <section class="element-props">
-                  <h5 class="frst-text">${objectKeys[i]}</h5>
+                  <h5 class="frst-text">${el}</h5>
                   <div class="element-days">
                     <small class="frst-text description-txt">${label}</small>
                     <div class="faq-container">
@@ -209,8 +211,9 @@ export default function drawItems(localVariable, data, classContainer, classOpti
               </section>
             </div>
     `;
-      itemsContent += itemContent;
-    }
+        itemsContent += itemContent;
+      }
+    });
 
     let content = HeaderContent + itemsContent;
     let card = d.createElement("section");
