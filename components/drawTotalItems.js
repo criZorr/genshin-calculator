@@ -168,12 +168,11 @@ export default function drawTotalItems(localVariable, classContainer, secondClas
   const $container = d.querySelector(classContainer);
   $container.innerHTML = "";
 
-  let $localData = JSON.parse(localStorage.getItem(localVariable)),
-    keys = Object.keys($localData);
+  let $localData = JSON.parse(localStorage.getItem(localVariable));
 
   let HeaderContent = `
     <div class="element-header">
-      <h3 class="frst-text">Total</h3>
+      <h3 class="frst-text">Remaining and Calcs</h3>
       <section class="buttons-element">
         <button class="btn-element btn-expand-container">
           <img class="btn-expand" src="./assets/expand.svg" alt="expand Total card"/>
@@ -366,7 +365,7 @@ export default function drawTotalItems(localVariable, classContainer, secondClas
 
   let paragraph = d.createElement("p");
   paragraph.classList.add("scnd-text");
-  paragraph.innerHTML = `<b>Total calculation results</b>`;
+  paragraph.innerHTML = `<b>Remaining and Calculation Results</b>`;
 
   $container.appendChild(paragraph);
   $container.appendChild(card);

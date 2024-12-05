@@ -324,10 +324,6 @@ small {
 .content-info {
   border-radius: 0;
   padding: 0;
-  @media screen and (min-width: 624px) {
-    overflow-y: scroll;
-    scrollbar-width: none;
-  }
 }
 
 .items-container {
@@ -588,6 +584,14 @@ small {
   grid-template-columns: 1fr 1fr;
   row-gap: 0.5rem;
   column-gap: 1.5rem;
+}
+
+@media screen and (min-width: 624px) {
+  .content-info > .total-container,
+  .content-info > .excess-container {
+    overflow-y: scroll;
+    scrollbar-width: none;
+  }
 }
 
 /* ********** Element info ********** */

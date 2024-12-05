@@ -10,6 +10,7 @@ import createTotalLocal from "./helpers/createTotalLocal.js";
 import calculateNeeded from "./components/calculateNeeded.js";
 import deleteLocal from "./helpers/deleteLocal.js";
 import toggleSize from "./components/toggleSize.js";
+import drawTotalExcess from "./components/drawTotalExcess.js";
 
 const d = document;
 
@@ -96,6 +97,7 @@ const getItems = () => {
 const getTotal = () => {
   calculateNeeded("userMaterials", "weaponTotal");
   drawTotalItems("neededWeapon", ".total-container");
+  drawTotalExcess("weaponTotal", ".excess-container");
 };
 
 const getLevels = (weaponId) => {

@@ -2,6 +2,7 @@ import drawTotalItems from "./components/drawTotalItems.js";
 import calculateNeeded from "./components/calculateNeeded.js";
 import toggleSize from "./components/toggleSize.js";
 import calculateData from "./db/data.js";
+import drawTotalExcess from "./components/drawTotalExcess.js";
 
 const d = document;
 
@@ -27,6 +28,7 @@ const all = calculateData("all");
 const getTotal = () => {
   calculateNeeded("userMaterials", "total");
   drawTotalItems("neededTotal", ".total-container", "-personal");
+  drawTotalExcess("total", ".excess-container", "-personal");
 };
 
 const calculateTotal = (...objects) => {
