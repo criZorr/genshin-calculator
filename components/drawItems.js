@@ -125,6 +125,9 @@ export default function drawItems(localVariable, data, classContainer, classOpti
             <div class="element-header">
               <h3 class="frst-text">${name}</h3>
               <section class="buttons-element">
+              <button class="btn-element btn-expand-container">
+                  <img class="btn-expand" src="./assets/expand.svg" alt="expand ${name} card"/>
+                </button>
                 <button class="btn-element btn-edit-container" _id="${id}">
                   <img class="btn-edit" _id="${id}" src="./assets/edit.svg" alt="edit" />
                 </button>

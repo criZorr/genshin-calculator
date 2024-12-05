@@ -9,6 +9,7 @@ import drawTotalItems from "./components/drawTotalItems.js";
 import createTotalLocal from "./helpers/createTotalLocal.js";
 import calculateNeeded from "./components/calculateNeeded.js";
 import deleteLocal from "./helpers/deleteLocal.js";
+import toggleSize from "./components/toggleSize.js";
 
 const d = document;
 
@@ -119,7 +120,7 @@ const getItems = () => {
 
 const getTotal = () => {
   calculateNeeded("userMaterials", "characterTotal");
-  drawTotalItems("neededCharacter", ".total-container", "characterData");
+  drawTotalItems("neededCharacter", ".total-container");
 };
 
 const getTalents = (characterId) => {
@@ -463,6 +464,8 @@ d.addEventListener("click", (e) => {
   }
 
   if (eventClass === "modal-container" || eventId === "cancel-btn") $modal.style.display = "none";
+
+  toggleSize(eventClass, e.target);
 });
 
 let charactersData = await getData("./db/characters.json");

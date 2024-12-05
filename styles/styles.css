@@ -532,6 +532,7 @@ small {
 /* ********** Card Total & Individual********** */
 
 .card-total,
+.card-total-personal,
 .card-individual,
 .card-user-info,
 .card-user-total,
@@ -542,6 +543,30 @@ small {
   padding: 1rem;
   border-radius: 0.5rem;
   gap: 1rem;
+}
+
+.card-individual,
+.card-total,
+.card-total-personal {
+  max-height: 16rem;
+  overflow-y: hidden;
+}
+
+.card-user-amount {
+  max-height: 16rem;
+  overflow-y: hidden;
+}
+
+.card-total-personal,
+.card-user-amount {
+  @media screen and (min-width: 624px) {
+    max-height: none;
+    /* overflow-y: hidden; */
+
+    & .btn-collapse-container {
+      display: none;
+    }
+  }
 }
 
 .card-user-info,
@@ -703,6 +728,18 @@ small {
 
 .btn-delete {
   height: 0.75rem;
+}
+
+.btn-expand {
+  width: 1rem;
+}
+
+.btn-collapse {
+  width: 0.85rem;
+}
+
+.btn-plus {
+  width: 0.75rem;
 }
 
 /* ********** Selected Items ********* */

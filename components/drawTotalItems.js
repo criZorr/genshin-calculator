@@ -162,7 +162,7 @@ const getCalculations = () => {
   }
 };
 
-export default function drawTotalItems(localVariable, classContainer, allData) {
+export default function drawTotalItems(localVariable, classContainer, secondClass = "") {
   getCalculations();
   const $container = d.querySelector(classContainer);
   $container.innerHTML = "";
@@ -171,10 +171,15 @@ export default function drawTotalItems(localVariable, classContainer, allData) {
     keys = Object.keys($localData);
 
   let HeaderContent = `
-            <div class="element-header">
-                <h3 class="frst-text">Total</h3>
-              </div>
-        `;
+    <div class="element-header">
+      <h3 class="frst-text">Total</h3>
+      <section class="buttons-element">
+        <button class="btn-element btn-expand-container">
+          <img class="btn-expand" src="./assets/expand.svg" alt="expand Total card"/>
+        </button>
+      </section>
+    </div>
+  `;
 
   let itemsContent = "";
 
@@ -356,7 +361,7 @@ export default function drawTotalItems(localVariable, classContainer, allData) {
 
   let content = HeaderContent + itemsContent;
   let card = d.createElement("section");
-  card.classList.add("card-total", "bg-snd");
+  card.classList.add(`card-total${secondClass}`, "bg-snd");
   card.id = "Total";
   card.innerHTML = content;
 

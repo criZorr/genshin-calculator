@@ -9,6 +9,7 @@ import drawTotalItems from "./components/drawTotalItems.js";
 import createTotalLocal from "./helpers/createTotalLocal.js";
 import calculateNeeded from "./components/calculateNeeded.js";
 import deleteLocal from "./helpers/deleteLocal.js";
+import toggleSize from "./components/toggleSize.js";
 
 const d = document;
 
@@ -94,7 +95,7 @@ const getItems = () => {
 
 const getTotal = () => {
   calculateNeeded("userMaterials", "weaponTotal");
-  drawTotalItems("neededWeapon", ".total-container", "weaponData");
+  drawTotalItems("neededWeapon", ".total-container");
 };
 
 const getLevels = (weaponId) => {
@@ -308,6 +309,8 @@ d.addEventListener("click", (e) => {
   }
 
   if (eventClass === "modal-container" || eventId === "cancel-btn") $modal.style.display = "none";
+
+  toggleSize(eventClass, e.target);
 });
 
 let weaponsData = await getData("./db/weapons.json");

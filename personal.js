@@ -1,5 +1,6 @@
 import drawTotalItems from "./components/drawTotalItems.js";
 import calculateNeeded from "./components/calculateNeeded.js";
+import toggleSize from "./components/toggleSize.js";
 
 const d = document;
 
@@ -22,7 +23,7 @@ const svg = `
 
 const getTotal = () => {
   calculateNeeded("userMaterials", "total");
-  drawTotalItems("neededTotal", ".total-container", "weaponData");
+  drawTotalItems("neededTotal", ".total-container", "-personal");
 };
 
 const calculateTotal = (...objects) => {
@@ -260,6 +261,19 @@ const drawUserData = () => {
 const drawUserMaterial = () => {
   const $container = d.querySelector(".card-user-amount");
   $container.innerHTML = "";
+  $container.innerHTML = `
+  <div class="element-header">
+      <h3 class="frst-text">Owned Materials</h3>
+      <section class="buttons-element">
+        <button class="btn-element btn-expand-container">
+          <img class="btn-expand" src="./assets/expand.svg" alt="expand Total card"/>
+        </button>
+        <button class="btn-element btn-plus-container">
+          <img class="btn-plus" src="./assets/plus.svg" alt="Add material"/>
+        </button>
+      </section>
+    </div>
+  `;
 
   let localUserMaterials = JSON.parse(localStorage.getItem("userMaterials")),
     keys = Object.keys(localUserMaterials);
@@ -587,8 +601,15 @@ d.addEventListener("click", (e) => {
 
   if (eventClass === "modal-container" || eventId === "cancel-btn") $modal.style.display = "none";
 
-  if (eventClass === "add-item" || eventClass === "add-item-figure") {
+  if (
+    eventClass === "add-item" ||
+    eventClass === "add-item-figure" ||
+    eventClass === "btn-plus" ||
+    eventClass.includes("btn-plus-container")
+  ) {
     drawModalPossible();
     $modal.style.display = "flex";
   }
+
+  toggleSize(eventClass, e.target);
 });
