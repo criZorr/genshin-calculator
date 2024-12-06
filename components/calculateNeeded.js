@@ -9,18 +9,29 @@ const craftMaterialsThree = [
   ...calculateData("eliteEnemies"),
 ];
 
-const maxMaterials = ["Gemstone", "Philosophies"];
+const maxMaterials = ["Hero's Wit", "Mystic Enhancement Ore"];
 
 export default function calculateNeeded(userLocal, variable) {
-  for (let i = 31; i <= craftMaterialsFour.length; i += 4) {
+  for (let i = 3; i <= craftMaterialsFour.length; i += 4) {
     maxMaterials.push(craftMaterialsFour[i]);
   }
 
-  for (let i = 56; i <= craftMaterialsThree.length; i += 3) {
+  for (let i = 2; i <= craftMaterialsThree.length; i += 3) {
     maxMaterials.push(craftMaterialsThree[i]);
   }
 
-  let craftMaterials = [...craftMaterialsFour, ...craftMaterialsThree];
+  let craftMaterials = [
+    ...craftMaterialsFour,
+    ...craftMaterialsThree,
+    ...[
+      "Wanderer's Advice",
+      "Adventurer's Experience",
+      "Hero's Wit",
+      "Enhancement Ore",
+      "Fine Enhancement Ore",
+      "Mystic Enhancement Ore",
+    ],
+  ];
 
   let $userData = JSON.parse(localStorage.getItem(userLocal)),
     $data = JSON.parse(localStorage.getItem(variable));
@@ -43,17 +54,25 @@ export default function calculateNeeded(userLocal, variable) {
       }
       if (calc < 0) {
         let calculate = true;
-        maxMaterials.forEach((f) => {
-          if (e.includes(f)) calculate = false;
-        });
+        if (maxMaterials.includes(e)) calculate = false;
 
         if (calculate) {
           calc = -1 * calc;
-          calc = Math.floor(calc / 3);
 
-          for (let i = 0; i < craftMaterials.length; i++) {
-            if (e === craftMaterials[i]) tempObj[craftMaterials[i + 1]] = calc;
+          if (
+            e === "Wanderer's Advice" ||
+            e === "Enhancement Ore" ||
+            e === "Mystic Enhancement Ore"
+          ) {
+            calc = Math.floor(calc / 5);
+          } else if (e === "Adventurer's Experience") {
+            calc = Math.floor(calc / 4);
+          } else {
+            calc = Math.floor(calc / 3);
           }
+
+          let position = craftMaterials.indexOf(e);
+          if (position >= 0) tempObj[craftMaterials[position + 1]] = calc;
         }
       }
     }
