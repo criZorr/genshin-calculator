@@ -642,5 +642,34 @@ export default function calculateData(parameter) {
     data = all;
   }
 
+  if (parameter === "all-normal") {
+    let all = [
+      "Mora",
+      "Wanderer's Advice",
+      "Adventurer's Experience",
+      "Hero's Wit",
+      "Enhancement Ore",
+      "Fine Enhancement Ore",
+      "Mystic Enhancement Ore",
+    ];
+
+    all = [
+      ...eliteEnemies,
+      ...commonEnemies,
+      ...all,
+      ...weekBoss,
+      ...boss,
+      ...stones,
+      ...talentMaterials,
+      ...weaponMaterials,
+    ];
+
+    let specialtyKeys = Object.keys(specialty);
+
+    all = [...all, ...specialtyKeys];
+
+    data = all;
+  }
+
   return data;
 }

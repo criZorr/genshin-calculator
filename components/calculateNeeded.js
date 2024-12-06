@@ -9,6 +9,8 @@ const craftMaterialsThree = [
   ...calculateData("eliteEnemies"),
 ];
 
+const all = calculateData("all-normal");
+
 const maxMaterials = ["Hero's Wit", "Mystic Enhancement Ore"];
 
 export default function calculateNeeded(userLocal, variable) {
@@ -39,20 +41,18 @@ export default function calculateNeeded(userLocal, variable) {
   let newUserData = {};
   let neededData = {};
 
-  let datakeys = Object.keys($data);
-
   let tempObj = {};
 
-  datakeys.forEach((e) => {
+  all.forEach((e) => {
     if (!$userData.hasOwnProperty(e)) {
       newUserData[e] = 0;
       neededData[e] = $data[e];
     } else {
-      let calc = $data[e] - ($userData[e] + (tempObj[e] || 0));
+      let calc = ($data[e] || 0) - (($userData[e] || 0) + (tempObj[e] || 0));
       if (calc > 0) {
         neededData[e] = calc;
       }
-      if (calc < 0) {
+      if (calc < 0 && craftMaterials.includes(e)) {
         let calculate = true;
         if (maxMaterials.includes(e)) calculate = false;
 
