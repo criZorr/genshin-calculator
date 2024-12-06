@@ -127,18 +127,18 @@ export default function calculateNeeded(userLocal, variable) {
   }
 
   let bookSum =
-    neededData["Wanderer's Advice"] +
-    neededData["Adventurer's Experience"] * 5 +
-    neededData["Hero's Wit"] * 20;
+    (neededData["Wanderer's Advice"] || 0) +
+    (neededData["Adventurer's Experience"] || 0) * 5 +
+    (neededData["Hero's Wit"] || 0) * 20;
 
   object["Wanderer's Advice"] = bookSum;
   object["Adventurer's Experience"] = bookSum;
   object["Hero's Wit"] = bookSum;
 
   let oreSum =
-    neededData["Enhancement Ore"] +
-    neededData["Fine Enhancement Ore"] * 5 +
-    neededData["Mystic Enhancement Ore"] * 25;
+    (neededData["Enhancement Ore"] || 0) +
+    (neededData["Fine Enhancement Ore"] || 0) * 5 +
+    (neededData["Mystic Enhancement Ore"] || 0) * 25;
 
   object["Enhancement Ore"] = oreSum;
   object["Fine Enhancement Ore"] = oreSum;
