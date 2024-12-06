@@ -513,8 +513,7 @@ const drawModalInfo = (id, name) => {
 };
 
 const drawModalPossible = () => {
-  let localUserMaterials = JSON.parse(localStorage.getItem("userMaterials")),
-    keys = Object.keys(localUserMaterials);
+  let localUserMaterials = JSON.parse(localStorage.getItem("userMaterials"));
 
   $modal.innerHTML = `
     <div class="modal-item-container">
@@ -534,15 +533,16 @@ const drawModalPossible = () => {
     $options = d.querySelector(".selected-items");
 
   all.forEach((el) => {
+    let number = 0;
     if (localUserMaterials[el] >= 0) {
-      let number = localUserMaterials[el];
-      number = number.toLocaleString("ru-RU");
+      number = localUserMaterials[el];
+    }
+    number = number.toLocaleString("ru-RU");
 
-      let fragment = d.createElement("div");
-      fragment.classList.add("element-owned-info");
-      fragment.id = el;
-      fragment.innerHTML = `
-    
+    let fragment = d.createElement("div");
+    fragment.classList.add("element-owned-info");
+    fragment.id = el;
+    fragment.innerHTML = `
       <section class="element-data">
         <figure class="element-img">
           <img src="./assets/materials/${el.replaceAll('"', "")}.png" alt="${el}" />
@@ -561,12 +561,15 @@ const drawModalPossible = () => {
         <small class="frst-text">${number}</small>
       </section>
     `;
-      $container.appendChild(fragment);
+    $container.appendChild(fragment);
+  });
 
-      let option = d.createElement("option");
-      option.innerHTML = el;
-      $options.appendChild(option);
-    }
+  let sorted = calculateData("all").sort();
+
+  sorted.forEach((el) => {
+    let option = d.createElement("option");
+    option.innerHTML = el;
+    $options.appendChild(option);
   });
 };
 
