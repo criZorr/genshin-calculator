@@ -133,10 +133,10 @@ export default function calculateNeeded(userLocal, variable) {
       raw += neededData[craftMaterialsFour[i + 3]] * 27;
 
     if (raw > 0) {
-      let gold = Math.ceil(neededData[craftMaterialsFour[i + 3]] * (27 / 1.331)),
-        purple = Math.ceil(neededData[craftMaterialsFour[i + 2]] * (9 / 1.21)),
-        blue = Math.ceil(neededData[craftMaterialsFour[i + 1]] * (3 / 1.1));
-      raw10 = Math.ceil(neededData[craftMaterialsFour[i]] + gold + purple + blue);
+      let gold = Math.ceil((neededData[craftMaterialsFour[i + 3]] || 0) * (27 / 1.331)),
+        purple = Math.ceil((neededData[craftMaterialsFour[i + 2]] || 0) * (9 / 1.21)),
+        blue = Math.ceil((neededData[craftMaterialsFour[i + 1]] || 0) * (3 / 1.1));
+      raw10 = Math.ceil((neededData[craftMaterialsFour[i]] || 0) + gold + purple + blue);
 
       object[craftMaterialsFour[i]] = [raw, raw10];
       object[craftMaterialsFour[i + 1]] = [raw, raw10];
