@@ -348,7 +348,7 @@ export default function drawTotalItems(localVariable, classContainer, secondClas
 
   if (itemsContent == "") {
     itemsContent = `
-      <img src="../assets/nothing.png" alt="nothing here!" class="nothing-here">
+      <img src="./assets/nothing.png" alt="nothing here!" class="nothing-here">
     `;
   }
 

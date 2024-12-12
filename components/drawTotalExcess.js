@@ -74,7 +74,7 @@ export default function drawTotalExcess(localVariable, classContainer, secondCla
 
   if (itemsContent == "") {
     itemsContent = `
-      <img src="../assets/nothing.png" alt="nothing here!" class="nothing-here">
+      <img src="./assets/nothing.png" alt="nothing here!" class="nothing-here">
     `;
   }
 
