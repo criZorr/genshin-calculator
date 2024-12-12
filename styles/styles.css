@@ -595,7 +595,7 @@ small {
 
   .content-info > .total-container {
     max-height: calc(50% - 0.5rem);
-    min-height: 9rem;
+    min-height: 8.5rem;
   }
 
   .content-info > .excess-container {
@@ -603,7 +603,7 @@ small {
   }
 
   .card-total-personal {
-    max-height: calc(100% - 1.5rem);
+    max-height: calc(100% - 1.5rem) !important;
   }
 
   .card-total-personal .buttons-element {
@@ -612,7 +612,7 @@ small {
 }
 
 .nothing-here {
-  height: 2.5rem;
+  height: 2rem;
   width: auto;
   margin: auto;
 }
