@@ -170,17 +170,6 @@ export default function drawTotalItems(localVariable, classContainer, secondClas
 
   let $localData = JSON.parse(localStorage.getItem(localVariable));
 
-  let HeaderContent = `
-    <div class="element-header">
-      <h3 class="frst-text">Remaining and Calcs</h3>
-      <section class="buttons-element">
-        <button class="btn-element btn-expand-container">
-          <img class="btn-expand" src="./assets/expand.svg" alt="expand Total card"/>
-        </button>
-      </section>
-    </div>
-  `;
-
   let itemsContent = "";
 
   all.forEach((el) => {
@@ -357,16 +346,11 @@ export default function drawTotalItems(localVariable, classContainer, secondClas
     }
   });
 
-  let content = HeaderContent + itemsContent;
-  let card = d.createElement("section");
-  card.classList.add(`card-total${secondClass}`, "bg-snd");
-  card.id = "Total";
-  card.innerHTML = content;
+  if (itemsContent == "") {
+    itemsContent = `
+      <img src="../assets/nothing.png" alt="nothing here!" class="nothing-here">
+    `;
+  }
 
-  let paragraph = d.createElement("p");
-  paragraph.classList.add("scnd-text");
-  paragraph.innerHTML = `<b>Remaining and Calculation Results</b>`;
-
-  $container.appendChild(paragraph);
-  $container.appendChild(card);
+  $container.innerHTML = itemsContent;
 }

@@ -120,8 +120,6 @@ export default function drawItems(localVariable, data, classContainer, classOpti
     let name = names[i],
       id = keysSorted[i];
 
-    let objectKeys = Object.keys($localData[id]);
-
     let HeaderContent = `
             <div class="element-header">
               <h3 class="frst-text">${name}</h3>
@@ -138,6 +136,9 @@ export default function drawItems(localVariable, data, classContainer, classOpti
               </section>
             </div>
         `;
+
+    let itemsContainer = d.createElement("div");
+    itemsContainer.classList.add("calcs-container");
 
     let itemsContent = "";
 
@@ -215,11 +216,13 @@ export default function drawItems(localVariable, data, classContainer, classOpti
       }
     });
 
-    let content = HeaderContent + itemsContent;
+    itemsContainer.innerHTML = itemsContent;
+
     let card = d.createElement("section");
     card.classList.add("card-individual", "bg-snd");
     card.id = name;
-    card.innerHTML = content;
+    card.innerHTML = HeaderContent;
+    card.appendChild(itemsContainer);
     $container.appendChild(card);
 
     let option = d.createElement("option");

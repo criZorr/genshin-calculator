@@ -121,8 +121,8 @@ const getItems = () => {
 
 const getTotal = () => {
   calculateNeeded("userMaterials", "characterTotal");
-  drawTotalItems("neededCharacter", ".total-container");
-  drawTotalExcess("characterTotal", ".excess-container");
+  drawTotalItems("neededCharacter", ".elements-container");
+  drawTotalExcess("characterTotal", ".extra-container");
 };
 
 const getTalents = (characterId) => {

@@ -1,7 +1,8 @@
 export default function toggleSize(clase, target) {
   if (clase === "btn-expand") {
     let container = target.parentElement.parentElement.parentElement.parentElement,
-      firstContainer = target.parentElement;
+      firstContainer = target.parentElement,
+      elements = container.children[1];
 
     container.style.maxHeight = "none";
 
@@ -13,11 +14,14 @@ export default function toggleSize(clase, target) {
 
     target.alt = target.alt.replaceAll("expand", "collapse");
     target.src = "./assets/collapse.svg";
+
+    elements.style.overflowY = "hidden";
   }
 
   if (clase.includes("btn-expand-container")) {
     let container = target.parentElement.parentElement.parentElement,
-      children = target.children[0];
+      children = target.children[0],
+      elements = container.children[1];
 
     container.style.maxHeight = "none";
 
@@ -29,11 +33,14 @@ export default function toggleSize(clase, target) {
 
     children.alt = children.alt.replaceAll("expand", "collapse");
     children.src = "./assets/collapse.svg";
+
+    elements.style.overflowY = "hidden";
   }
 
   if (clase === "btn-collapse") {
     let container = target.parentElement.parentElement.parentElement.parentElement,
-      firstContainer = target.parentElement;
+      firstContainer = target.parentElement,
+      elements = container.children[1];
 
     container.style.maxHeight = "16rem";
 
@@ -45,11 +52,14 @@ export default function toggleSize(clase, target) {
 
     target.alt = target.alt.replaceAll("collapse", "expand");
     target.src = "./assets/expand.svg";
+
+    elements.style.overflowY = "scroll";
   }
 
   if (clase.includes("btn-collapse-container")) {
     let container = target.parentElement.parentElement.parentElement,
-      children = target.children[0];
+      children = target.children[0],
+      elements = container.children[1];
 
     container.style.maxHeight = "16rem";
 
@@ -61,5 +71,7 @@ export default function toggleSize(clase, target) {
 
     children.alt = children.alt.replaceAll("collapse", "expand");
     children.src = "./assets/expand.svg";
+
+    elements.style.overflowY = "scroll";
   }
 }

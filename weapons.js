@@ -96,8 +96,8 @@ const getItems = () => {
 
 const getTotal = () => {
   calculateNeeded("userMaterials", "weaponTotal");
-  drawTotalItems("neededWeapon", ".total-container");
-  drawTotalExcess("weaponTotal", ".excess-container");
+  drawTotalItems("neededWeapon", ".elements-container");
+  drawTotalExcess("weaponTotal", ".extra-container");
 };
 
 const getLevels = (weaponId) => {

@@ -253,20 +253,11 @@
 /* ********** Card Total & Individual********** */
 
 @media screen and (min-width: 624px) {
-  .card-total-personal {
+  .user-materials-container {
     max-height: none !important;
   }
-  .card-total-personal .buttons-element {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 624px) {
-  .card-user-amount {
-    max-height: none !important;
-  }
-  .card-user-amount .btn-expand-container,
-  .card-user-amount .btn-collapse-container {
+  .user-materials-container .btn-expand-container,
+  .user-materials-container .btn-collapse-container {
     display: none;
   }
 }

@@ -27,8 +27,8 @@ const all = calculateData("all");
 
 const getTotal = () => {
   calculateNeeded("userMaterials", "total");
-  drawTotalItems("neededTotal", ".total-container", "-personal");
-  drawTotalExcess("total", ".excess-container", "-personal");
+  drawTotalItems("neededTotal", ".elements-container", "-personal");
+  drawTotalExcess("total", ".extra-container", "-personal");
 };
 
 const calculateTotal = (...objects) => {
@@ -237,48 +237,27 @@ const drawUserData = () => {
       </div>
     </p>
   </div>
-  `;
 
-  let number = userInfo["Mora"];
-  number = number.toLocaleString("ru-RU");
-
-  $containerProfit.innerHTML = `
-  <section class="element-data">
-              <figure class="element-img">
-                <img src="./assets/materials/Mora.png" alt="Mora" />
-              </figure>
-              <section class="element-props">
-                <h5 class="frst-text">Mora</h5>
-                <div class="element-days">
-                  <small class="frst-text">Daily profit:</small>
-                </div>
-              </section>
-            </section>
-            <section class="element-count">
-              <button class="btn-element-profit" _id="Mora">
-                <img class="btn-edit-profit" src="./assets/edit.svg" alt="edit" _id="Mora" />
-              </button>
-              <small class="frst-text">${number}</small>
-            </section>
+  <div class="user-data">
+    <div class="user-parameter-header">
+      <h5>Mora Daily Profit</h5>
+      <button class="btn-element-profit" _id="Mora" _name="Mora Daily Profit">
+        <img class="btn-edit-profit" src="./assets/edit.svg" alt="edit"  _id="Mora" _name="Mora Daily Profit"/>
+      </button>
+    </div>
+    <p class="h5-regular">${userInfo["Mora"]} 
+      <div class="faq-container">
+        ${svg}          
+        <span class="tooltip">As you spend resin you earn Mora. E.g., doing domains, killing a boss</span>
+      </div>
+    </p>
+  </div>
   `;
 };
 
 const drawUserMaterial = () => {
   const $container = d.querySelector(".card-user-amount");
   $container.innerHTML = "";
-  $container.innerHTML = `
-  <div class="element-header">
-      <h3 class="frst-text">Owned Materials</h3>
-      <section class="buttons-element">
-        <button class="btn-element btn-expand-container">
-          <img class="btn-expand" src="./assets/expand.svg" alt="expand Total card"/>
-        </button>
-        <button class="btn-element btn-plus-container">
-          <img class="btn-plus" src="./assets/plus.svg" alt="Add material"/>
-        </button>
-      </section>
-    </div>
-  `;
 
   let localUserMaterials = JSON.parse(localStorage.getItem("userMaterials"));
 

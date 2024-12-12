@@ -25,17 +25,6 @@ export default function drawTotalExcess(localVariable, classContainer, secondCla
   let $localData = JSON.parse(localStorage.getItem(localVariable)),
     $userData = JSON.parse(localStorage.getItem("userMaterials"));
 
-  let HeaderContent = `
-    <div class="element-header">
-      <h3 class="frst-text">Nedeed and Excess</h3>
-      <section class="buttons-element">
-        <button class="btn-element btn-expand-container">
-          <img class="btn-expand" src="./assets/expand.svg" alt="expand Total card"/>
-        </button>
-      </section>
-    </div>
-  `;
-
   let itemsContent = "";
 
   all.forEach((el) => {
@@ -83,16 +72,11 @@ export default function drawTotalExcess(localVariable, classContainer, secondCla
     }
   });
 
-  let content = HeaderContent + itemsContent;
-  let card = d.createElement("section");
-  card.classList.add(`card-total${secondClass}`, "bg-snd");
-  card.id = "Excess";
-  card.innerHTML = content;
+  if (itemsContent == "") {
+    itemsContent = `
+      <img src="../assets/nothing.png" alt="nothing here!" class="nothing-here">
+    `;
+  }
 
-  let paragraph = d.createElement("p");
-  paragraph.classList.add("scnd-text");
-  paragraph.innerHTML = `<b>Needed and Excess results</b>`;
-
-  $container.appendChild(paragraph);
-  $container.appendChild(card);
+  $container.innerHTML = itemsContent;
 }
