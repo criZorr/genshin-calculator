@@ -179,8 +179,8 @@ export default function drawItems(localVariable, data, classContainer, classOpti
           avgFarming = $localData[id][el] / leyMora;
           let a = Math.ceil(avgFarming);
           avgFarming = `${Math.ceil(a / 9)} (${a})`;
-          label = "Approx. days doing ley lines (times)";
-          faq = "Just spending all your 180 daily resin in ley lines";
+          label = "Approx. days doing Ley Lines (times)";
+          faq = "Only spending all your 180 daily resin in Ley Lines";
         }
 
         if (el === "Crown of Insight") {

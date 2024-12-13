@@ -540,12 +540,15 @@ small {
 .card-individual,
 .card-user-info,
 .card-user-total {
-  margin-top: 0.5rem;
   display: flex;
   flex-direction: column;
   padding: 1rem;
   border-radius: 0.5rem;
   gap: 1rem;
+}
+
+.card-individual {
+  margin-top: 0.5rem;
 }
 
 .elements-container,
@@ -594,8 +597,8 @@ small {
   }
 
   .content-info > .total-container {
-    max-height: calc(50% - 0.5rem);
-    min-height: 8.5rem;
+    max-height: 50%;
+    min-height: 7rem;
   }
 
   .content-info > .excess-container {
@@ -603,7 +606,7 @@ small {
   }
 
   .card-total-personal {
-    max-height: calc(100% - 1.5rem) !important;
+    max-height: 100% !important;
   }
 
   .card-total-personal .buttons-element {

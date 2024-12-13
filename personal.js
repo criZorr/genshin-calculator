@@ -158,7 +158,7 @@ const drawUserData = () => {
     <p class="h5-regular">${optionsDomains[userInfo["talentDrop"]]}
           <div class="faq-container">
             ${svg}          
-            <span class="tooltip">This changes the Talent Materials Domains drops</span>
+            <span class="tooltip">This changes the Domains Talent Materials drops</span>
           </div>
         </p>
   </div>
@@ -173,7 +173,7 @@ const drawUserData = () => {
     <p class="h5-regular">${optionsDomains[userInfo["weaponDrop"]]}
           <div class="faq-container">
             ${svg}          
-            <span class="tooltip">This changes the Weapon Materials Domains drops</span>
+            <span class="tooltip">This changes the Domains Weapon Materials drops</span>
           </div>
         </p>
   </div>
@@ -188,7 +188,7 @@ const drawUserData = () => {
     <p class="h5-regular">${resinType[userInfo["talentResin"]]}
           <div class="faq-container">
             ${svg}          
-            <span class="tooltip">This will change how many times you should do a Talent Materials Domain</span>
+            <span class="tooltip">This will change how many times you should do a Domain Talent Materials</span>
           </div>
         </p>
   </div>
@@ -203,7 +203,7 @@ const drawUserData = () => {
     <p class="h5-regular">${resinType[userInfo["weaponResin"]]}
           <div class="faq-container">
             ${svg}          
-            <span class="tooltip">This will change how many times you should do a Weapon Materials Domain</span>
+            <span class="tooltip">This will change how many times you should do a Domain Weapon Materials</span>
           </div>
         </p>
   </div>
