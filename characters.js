@@ -104,13 +104,31 @@ const createObject = (data, id) => {
   if (!(data[5][0] === 0)) obj[charactersData[id]["enemy-material"][0]] = data[5][0];
   if (!(data[5][1] === 0)) obj[charactersData[id]["enemy-material"][1]] = data[5][1];
   if (!(data[5][2] === 0)) obj[charactersData[id]["enemy-material"][2]] = data[5][2];
-  if (!(data[6][0] === 0))
-    obj[`Teachings of ${charactersData[id]["domain-material"]}`] = data[6][0];
-  if (!(data[6][1] === 0)) obj[`Guide to ${charactersData[id]["domain-material"]}`] = data[6][1];
-  if (!(data[6][2] === 0))
-    obj[`Philosophies of ${charactersData[id]["domain-material"]}`] = data[6][2];
   if (!(data[7] === 0)) obj[charactersData[id]["weekly-boss"]] = data[7];
   if (!(data[8] === 0)) obj["Crown of Insight"] = data[8];
+
+  if (charactersData[id]["name"].includes("Traveler")) {
+    if (!(data[6][0] === 0))
+      obj[`Teachings of ${charactersData[id]["domain-material"][0]}`] = data[6][0];
+    if (!(data[6][1][0] === 0))
+      obj[`Guide to ${charactersData[id]["domain-material"][1]}`] = data[6][1][0];
+    if (!(data[6][1][1] === 0))
+      obj[`Guide to ${charactersData[id]["domain-material"][2]}`] = data[6][1][1];
+    if (!(data[6][1][2] === 0))
+      obj[`Guide to ${charactersData[id]["domain-material"][0]}`] = data[6][1][2];
+    if (!(data[6][2][0] === 0))
+      obj[`Philosophies of ${charactersData[id]["domain-material"][2]}`] = data[6][2][0];
+    if (!(data[6][2][1] === 0))
+      obj[`Philosophies of ${charactersData[id]["domain-material"][0]}`] = data[6][2][1];
+    if (!(data[6][2][2] === 0))
+      obj[`Philosophies of ${charactersData[id]["domain-material"][1]}`] = data[6][2][2];
+  } else {
+    if (!(data[6][0] === 0))
+      obj[`Teachings of ${charactersData[id]["domain-material"]}`] = data[6][0];
+    if (!(data[6][1] === 0)) obj[`Guide to ${charactersData[id]["domain-material"]}`] = data[6][1];
+    if (!(data[6][2] === 0))
+      obj[`Philosophies of ${charactersData[id]["domain-material"]}`] = data[6][2];
+  }
 
   return obj;
 };
@@ -295,7 +313,8 @@ const getTalents = (characterId) => {
         fstTalentValues,
         sndTalentValues,
         levelValues,
-        ascension
+        ascension,
+        name
       );
 
       let characterObject = createObject(calculatedData, numId);

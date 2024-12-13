@@ -123,7 +123,8 @@ export default function calculateCharacter(
   fstTalentValues,
   sndTalentValues,
   levelValues,
-  ascensionBool
+  ascensionBool,
+  name
 ) {
   let talentMora = 0,
     fstTalentEnemy = 0,
@@ -134,6 +135,13 @@ export default function calculateCharacter(
     trdTalentBook = 0,
     talentBoss = 0,
     talentCrow = 0;
+
+  let one = 0,
+    two = 0,
+    three = 0,
+    four = 0,
+    five = 0,
+    six = 0;
 
   for (let i = 0; i < fstTalentValues.length; i++) {
     if (!(fstTalentValues[i] === 0)) {
@@ -154,8 +162,29 @@ export default function calculateCharacter(
         if (bookType === 1) fstTalentBook += bookAmount;
         if (bookType === 2) sndTalentBook += bookAmount;
         if (bookType === 3) trdTalentBook += bookAmount;
+
+        if (name.includes("Traveler")) {
+          if (bookType === 2) {
+            if (j === 3) one += bookAmount;
+            if (j === 4) two += bookAmount;
+            if (j === 5) three += bookAmount;
+            if (j === 6) one += bookAmount;
+          }
+
+          if (bookType === 3) {
+            if (j === 7) four += bookAmount;
+            if (j === 8) five += bookAmount;
+            if (j === 9) six += bookAmount;
+            if (j === 10) four += bookAmount;
+          }
+        }
       }
     }
+  }
+
+  if (name.includes("Traveler")) {
+    sndTalentBook = [one, two, three];
+    trdTalentBook = [four, five, six];
   }
 
   let levelMora = 0,
@@ -221,7 +250,6 @@ export default function calculateCharacter(
     totalStone = [fstAscensionStone, sndAscensionStone, trdAscensionStone, fthAscensionStone],
     totalTalentBook = [fstTalentBook, sndTalentBook, trdTalentBook],
     totalLevelBook = [fstLevelBook, sndLevelBook, trdLevelBook];
-
   return [
     totalMora,
     totalLevelBook,

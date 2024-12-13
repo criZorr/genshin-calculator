@@ -599,6 +599,7 @@ export default function calculateData(parameter) {
       "Mystic Enhancement Ore",
       "Fine Enhancement Ore",
       "Enhancement Ore",
+      "Crown of Insight",
     ];
 
     for (let i = 2; i < eliteEnemies.length; i += 3) {
@@ -651,6 +652,7 @@ export default function calculateData(parameter) {
       "Enhancement Ore",
       "Fine Enhancement Ore",
       "Mystic Enhancement Ore",
+      "Crown of Insight",
     ];
 
     all = [
