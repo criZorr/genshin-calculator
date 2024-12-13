@@ -144,7 +144,8 @@ const getTotal = () => {
 };
 
 const getTalents = (characterId) => {
-  $modal.style.display = "flex";
+  $modal.style.visibility = "visible";
+  $modal.style.opacity = "1";
 
   isChecked(d.getElementById("checkbox-level"), d.querySelector(".level-info"));
 
@@ -323,7 +324,8 @@ const getTalents = (characterId) => {
       getItems();
       createTotalLocal("characterTotal", "characterData");
       getTotal();
-      $modal.style.display = "none";
+      $modal.style.visibility = "hidden";
+      $modal.style.opacity = "0";
     }
   });
 };
@@ -407,7 +409,8 @@ const deleteConfirmation = (id, name) => {
       </div>
     </div>
   `;
-  $modal.style.display = "flex";
+  $modal.style.visibility = "visible";
+  $modal.style.opacity = "1";
 
   let $confimButton = d.getElementById("confirm-btn");
   $confimButton.addEventListener("click", (e) => {
@@ -415,7 +418,8 @@ const deleteConfirmation = (id, name) => {
     getItems();
     createTotalLocal("characterTotal", "characterData");
     getTotal();
-    $modal.style.display = "none";
+    $modal.style.visibility = "hidden";
+    $modal.style.opacity = "0";
   });
 };
 
@@ -484,7 +488,10 @@ d.addEventListener("click", (e) => {
     );
   }
 
-  if (eventClass === "modal-container" || eventId === "cancel-btn") $modal.style.display = "none";
+  if (eventClass === "modal-container" || eventId === "cancel-btn") {
+    $modal.style.visibility = "hidden";
+    $modal.style.opacity = "0";
+  }
 
   toggleSize(eventClass, e.target);
 });

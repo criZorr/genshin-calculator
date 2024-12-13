@@ -101,7 +101,8 @@ const getTotal = () => {
 };
 
 const getLevels = (weaponId) => {
-  $modal.style.display = "flex";
+  $modal.style.visibility = "visible";
+  $modal.style.opacity = "1";
 
   let $labels = d.querySelectorAll(".ascension-selector label"),
     $levelContainer = d.querySelector(".level-content"),
@@ -187,7 +188,8 @@ const getLevels = (weaponId) => {
     getItems();
     createTotalLocal("weaponTotal", "weaponData");
     getTotal();
-    $modal.style.display = "none";
+    $modal.style.visibility = "hidden";
+    $modal.style.opacity = "0";
   });
 };
 
@@ -235,7 +237,8 @@ const deleteConfirmation = (id, name) => {
       </div>
     </div>
   `;
-  $modal.style.display = "flex";
+  $modal.style.visibility = "visible";
+  $modal.style.opacity = "1";
 
   let $confimButton = d.getElementById("confirm-btn");
   $confimButton.addEventListener("click", (e) => {
@@ -243,7 +246,8 @@ const deleteConfirmation = (id, name) => {
     getItems();
     createTotalLocal("weaponTotal", "weaponData");
     getTotal();
-    $modal.style.display = "none";
+    $modal.style.visibility = "hidden";
+    $modal.style.opacity = "0";
   });
 };
 
@@ -310,7 +314,10 @@ d.addEventListener("click", (e) => {
     );
   }
 
-  if (eventClass === "modal-container" || eventId === "cancel-btn") $modal.style.display = "none";
+  if (eventClass === "modal-container" || eventId === "cancel-btn") {
+    $modal.style.visibility = "hidden";
+    $modal.style.opacity = "0";
+  }
 
   toggleSize(eventClass, e.target);
 });

@@ -346,7 +346,8 @@ const drawModalProfit = (id) => {
     ) {
       $userInfo[id] = Number(d.querySelector("#number-picker").value);
       localStorage.setItem("userInfo", JSON.stringify($userInfo));
-      $modal.style.display = "none";
+      $modal.style.visibility = "hidden";
+      $modal.style.opacity = "0";
       $modal.innerHTML = "";
       drawUserMaterial();
       calcTotalMaterials();
@@ -393,7 +394,8 @@ const drawModalElement = (id) => {
     ) {
       $userMaterials[id] = Number(d.querySelector("#number-picker").value);
       localStorage.setItem("userMaterials", JSON.stringify($userMaterials));
-      $modal.style.display = "none";
+      $modal.style.visibility = "hidden";
+      $modal.style.opacity = "0";
       $modal.innerHTML = "";
       drawUserMaterial();
       calcTotalMaterials();
@@ -482,7 +484,8 @@ const drawModalInfo = (id, name) => {
     let value = d.querySelector(".info-options").value;
     $userInfo[id] = Number(value);
     localStorage.setItem("userInfo", JSON.stringify($userInfo));
-    $modal.style.display = "none";
+    $modal.style.visibility = "hidden";
+    $modal.style.opacity = "0";
     $modal.innerHTML = "";
     drawUserMaterial();
     calcTotalMaterials();
@@ -589,20 +592,26 @@ d.addEventListener("click", (e) => {
 
   if (eventClass === "btn-element-owned" || eventClass === "btn-edit-owned") {
     drawModalElement(e.target.attributes["_id"].value);
-    $modal.style.display = "flex";
+    $modal.style.visibility = "visible";
+    $modal.style.opacity = "1";
   }
 
   if (eventClass === "btn-element-profit" || eventClass === "btn-edit-profit") {
     drawModalProfit(e.target.attributes["_id"].value);
-    $modal.style.display = "flex";
+    $modal.style.visibility = "visible";
+    $modal.style.opacity = "1";
   }
 
   if (eventClass === "btn-element-info" || eventClass === "btn-edit-info") {
     drawModalInfo(e.target.attributes["_id"].value, e.target.attributes["_name"].value);
-    $modal.style.display = "flex";
+    $modal.style.visibility = "visible";
+    $modal.style.opacity = "1";
   }
 
-  if (eventClass === "modal-container" || eventId === "cancel-btn") $modal.style.display = "none";
+  if (eventClass === "modal-container" || eventId === "cancel-btn") {
+    $modal.style.visibility = "hidden";
+    $modal.style.opacity = "0";
+  }
 
   if (
     eventClass === "add-item" ||
@@ -611,7 +620,8 @@ d.addEventListener("click", (e) => {
     eventClass.includes("btn-plus-container")
   ) {
     drawModalPossible();
-    $modal.style.display = "flex";
+    $modal.style.visibility = "visible";
+    $modal.style.opacity = "1";
   }
 
   toggleSize(eventClass, e.target);
