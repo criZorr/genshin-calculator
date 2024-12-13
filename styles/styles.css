@@ -858,7 +858,8 @@ small {
 
 /* ********** Modal ********** */
 
-.modal-container {
+.modal-container,
+.modal-container-materials {
   position: fixed;
   z-index: 999;
   top: 0;

@@ -6,7 +6,8 @@ import drawTotalExcess from "./components/drawTotalExcess.js";
 
 const d = document;
 
-const $modal = d.querySelector(".modal-container");
+const $modal = d.querySelector(".modal-container"),
+  $modalMaterials = d.querySelector(".modal-container-materials");
 
 const svg = `
 <svg
@@ -24,6 +25,9 @@ const svg = `
 `;
 
 const all = calculateData("all");
+let sorted = calculateData("all").sort(),
+  $itemsContainer = d.querySelector(".items-container-user"),
+  options = "";
 
 const getTotal = () => {
   calculateNeeded("userMaterials", "total");
@@ -64,8 +68,7 @@ const calcTotalMaterials = () => {
 const drawUserData = () => {
   const userInfo = JSON.parse(localStorage.getItem("userInfo"));
 
-  const $container = d.querySelector(".user-info"),
-    $containerProfit = d.querySelector(".element-info");
+  const $container = d.querySelector(".user-info");
 
   let optionsDomains = ["I", "II", "III", "IV"],
     optionsBonus = ["No", "10% talent", "25% talent"],
@@ -266,8 +269,8 @@ const drawUserMaterial = () => {
       if (localUserMaterials[el] > 0) {
         let number = localUserMaterials[el];
         number = number.toLocaleString("ru-RU");
-
-        let fragment = d.createElement("div");
+        let fragment = d.createElement("div"),
+          fixedName = el.replaceAll('"', "ç");
         fragment.classList.add("element-owned-info");
         fragment.innerHTML = `
       <section class="element-data">
@@ -282,8 +285,8 @@ const drawUserMaterial = () => {
         </section>
       </section>
       <section class="element-count">
-        <button class="btn-element-owned" _id="${el}">
-          <img class="btn-edit-owned" src="./assets/edit.svg" alt="edit"  _id="${el}"/>
+        <button class="btn-element-owned" _id="${fixedName}">
+          <img class="btn-edit-owned" src="./assets/edit.svg" alt="edit"  _id="${fixedName}"/>
         </button>
         <small class="frst-text">${number}</small>
       </section>
@@ -353,6 +356,7 @@ const drawModalProfit = (id) => {
       calcTotalMaterials();
       getTotal();
       drawUserData();
+      drawModalPossible();
     } else {
       alert("Set a number");
     }
@@ -362,15 +366,18 @@ const drawModalProfit = (id) => {
 const drawModalElement = (id) => {
   const $userMaterials = JSON.parse(localStorage.getItem("userMaterials"));
 
-  let number = $userMaterials[id];
+  let ogName = id.replaceAll("ç", '"'),
+    fixedName = id.replaceAll("ç", "");
+
+  let number = $userMaterials[ogName];
 
   $modal.innerHTML = `
   <div class="modal-info bg-trd">
   <div class="edit-owned-header">
   <figure class="element-img">
-          <img src="./assets/materials/${id}.png" alt="${id}" />
+          <img src="./assets/materials/${fixedName}.png" alt="${ogName}" />
         </figure>
-      <p class="info-title scnd-text">${id}</p>
+      <p class="info-title scnd-text">${ogName}</p>
   </div>
   <div class="number-pick-container">
   <input type="number" id="number-picker" name="number-picker" min="0" class="number-picker frst-text" step="1" pattern="\d*" value="${number}">
@@ -390,17 +397,22 @@ const drawModalElement = (id) => {
   $saveBtn.addEventListener("click", (e) => {
     if (
       Number(d.querySelector("#number-picker").value) ||
-      d.querySelector("#number-picker").value == 0
+      Number(d.querySelector("#number-picker").value) >= 0
     ) {
-      $userMaterials[id] = Number(d.querySelector("#number-picker").value);
-      localStorage.setItem("userMaterials", JSON.stringify($userMaterials));
-      $modal.style.visibility = "hidden";
-      $modal.style.opacity = "0";
-      $modal.innerHTML = "";
-      drawUserMaterial();
-      calcTotalMaterials();
-      getTotal();
-      drawUserData();
+      if (Number(d.querySelector("#number-picker").value) >= 0) {
+        $userMaterials[ogName] = Number(d.querySelector("#number-picker").value);
+        localStorage.setItem("userMaterials", JSON.stringify($userMaterials));
+        $modal.style.visibility = "hidden";
+        $modal.style.opacity = "0";
+        $modal.innerHTML = "";
+        drawUserMaterial();
+        calcTotalMaterials();
+        getTotal();
+        drawUserData();
+        drawModalPossible();
+      } else {
+        alert("Set a positive number");
+      }
     } else {
       alert("Set a number");
     }
@@ -491,43 +503,39 @@ const drawModalInfo = (id, name) => {
     calcTotalMaterials();
     getTotal();
     drawUserData();
+    drawModalPossible();
   });
 };
 
 const drawModalPossible = () => {
   let localUserMaterials = JSON.parse(localStorage.getItem("userMaterials"));
 
-  $modal.innerHTML = `
-    <div class="modal-item-container">
-    <div class="modal-item-holder bg-trd">
-      <div class="selected-container">
-        <select class="selected-items bg-snd frst-text"></select>
-        <div class="container-selected-icon">
-          <div class="selected-items-icon"></div>
-        </div>
-      </div>
-    <div class="items-container-user"></div>
-    </div>
-    </div>
-    `;
-
-  const $container = d.querySelector(".items-container-user"),
-    $options = d.querySelector(".selected-items");
-
   all.forEach((el) => {
     let number = 0;
-    if (localUserMaterials[el] >= 0) {
-      number = localUserMaterials[el];
-    }
+    if (localUserMaterials[el] >= 0) number = localUserMaterials[el];
+
     number = number.toLocaleString("ru-RU");
 
-    let fragment = d.createElement("div");
+    let label = d.querySelector(`[_name="${el.replaceAll('"', "")}"]`);
+    label.innerHTML = number;
+  });
+};
+
+const getListElements = () => {
+  sorted.forEach((el) => {
+    options += `<option>${el}</option>`;
+  });
+
+  all.forEach((el) => {
+    let fragment = d.createElement("div"),
+      tempName = el.replaceAll('"', ""),
+      fixedName = el.replaceAll('"', "ç");
     fragment.classList.add("element-owned-info");
     fragment.id = el;
     fragment.innerHTML = `
       <section class="element-data">
         <figure class="element-img">
-          <img src="./assets/materials/${el.replaceAll('"', "")}.png" alt="${el}" />
+          <img src="./assets/materials/${tempName}.png" alt="${el}" />
         </figure>
         <section class="element-props">
           <h5 class="frst-text">${el}</h5>
@@ -537,22 +545,18 @@ const drawModalPossible = () => {
         </section>
       </section>
       <section class="element-count">
-        <button class="btn-element-owned" _id="${el}">
-          <img class="btn-edit-owned" src="./assets/edit.svg" alt="edit"  _id="${el}"/>
+        <button class="btn-element-owned" _id="${fixedName}">
+          <img class="btn-edit-owned" src="./assets/edit.svg" alt="edit" _id="${fixedName}"/>
         </button>
-        <small class="frst-text">${number}</small>
+        <small class="frst-text" _name="${tempName}"></small>
       </section>
-    `;
-    $container.appendChild(fragment);
+  `;
+
+    $itemsContainer.appendChild(fragment);
   });
 
-  let sorted = calculateData("all").sort();
-
-  sorted.forEach((el) => {
-    let option = d.createElement("option");
-    option.innerHTML = el;
-    $options.appendChild(option);
-  });
+  let $optionsContainer = d.querySelector(".selected-items");
+  $optionsContainer.innerHTML = options;
 };
 
 if (!localStorage.getItem("userMaterials")) localStorage.setItem("userMaterials", "{}");
@@ -585,6 +589,7 @@ drawUserMaterial();
 calcTotalMaterials();
 getTotal();
 drawUserData();
+getListElements();
 
 d.addEventListener("click", (e) => {
   let eventId = e.target.id,
@@ -619,6 +624,11 @@ d.addEventListener("click", (e) => {
     $modal.style.opacity = "0";
   }
 
+  if (eventClass === "modal-container-materials") {
+    $modalMaterials.style.visibility = "hidden";
+    $modalMaterials.style.opacity = "0";
+  }
+
   if (
     eventClass === "add-item" ||
     eventClass === "add-item-figure" ||
@@ -626,8 +636,8 @@ d.addEventListener("click", (e) => {
     eventClass.includes("btn-plus-container")
   ) {
     drawModalPossible();
-    $modal.style.visibility = "visible";
-    $modal.style.opacity = "1";
+    $modalMaterials.style.visibility = "visible";
+    $modalMaterials.style.opacity = "1";
   }
 
   toggleSize(eventClass, e.target);
