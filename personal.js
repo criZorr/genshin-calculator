@@ -590,6 +590,12 @@ d.addEventListener("click", (e) => {
   let eventId = e.target.id,
     eventClass = e.target.className;
 
+  try {
+    eventClass.includes("something");
+  } catch (err) {
+    eventClass = "none";
+  }
+
   if (eventClass === "btn-element-owned" || eventClass === "btn-edit-owned") {
     drawModalElement(e.target.attributes["_id"].value);
     $modal.style.visibility = "visible";

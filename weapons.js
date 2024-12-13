@@ -294,6 +294,12 @@ d.addEventListener("click", (e) => {
   let eventClass = e.target.className,
     eventId = e.target.id;
 
+  try {
+    eventClass.includes("something");
+  } catch (err) {
+    eventClass = "none";
+  }
+
   if (eventClass === $filters) getChecked(filterClasses);
 
   if (
