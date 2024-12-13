@@ -1206,14 +1206,14 @@ small {
 /* Tooltip */
 
 .faq-container {
-  position: relative;
   display: inline-flex;
   align-items: start;
 }
 
 .tooltip {
-  display: none;
-  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
   background-color: rgba(0, 0, 0, 0.85);
   line-height: 1rem;
   z-index: 500;
@@ -1222,26 +1222,36 @@ small {
   font-size: 0.8125rem;
   padding: 0.25rem 0.5rem;
   border-radius: 0.5rem;
+  width: 60vw;
+  left: 20vw;
+  bottom: calc(var(--header-height) + 1rem);
+  transition: all 0.25s ease-in;
 
-  left: -3.65rem;
-  bottom: 1.5rem;
+  @media screen and (min-width: 624px) {
+    width: 30vw;
+    left: 35vw;
+    bottom: calc(var(--header-height) + 1.5rem);
+  }
 
-  width: 8rem;
+  @media screen and (min-width: 1024px) {
+    width: 20vw;
+    left: 40vw;
+    bottom: auto;
+    top: var(--header-height);
+  }
 }
 
 .faq-container:hover .tooltip {
-  display: inline-block;
-}
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(-1rem);
 
-.tooltip::after {
-  content: "";
-  display: block;
-  border-top: 0.5rem solid rgba(0, 0, 0, 0.85);
-  border-left: 0.5rem solid transparent;
-  border-right: 0.5rem solid transparent;
-  position: absolute;
-  bottom: -0.5rem;
-  left: calc(50% - 0.5rem);
+  @media screen and (min-width: 624px) {
+    transform: translateY(-1rem);
+  }
+  @media screen and (min-width: 1024px) {
+    transform: translateY(1rem);
+  }
 }
 
 .description-txt {
