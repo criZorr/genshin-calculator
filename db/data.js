@@ -373,6 +373,7 @@ export default function calculateData(parameter) {
     "Overripe Flamegranate",
     "Gold-Inscribed Secret Source Core",
     "Ensnaring Gaze",
+    "Talisman of the Enigmatic Land",
   ];
 
   const weekBoss = [
@@ -406,7 +407,12 @@ export default function calculateData(parameter) {
     "Fading Candle",
     "Silken Feather",
     "Denial and Judgment",
+    "Eroded Horn",
+    "Eroded Sunfire",
+    "Eroded Scale-Feather",
   ];
+
+  const special = ["The Cornerstone of Stars and Flames"];
 
   const commonEnemiesData = {
     0: [
@@ -590,6 +596,7 @@ export default function calculateData(parameter) {
   if (parameter === "weekBoss") data = weekBoss;
   if (parameter === "commonEnemiesData") data = commonEnemiesData;
   if (parameter === "eliteEnemiesData") data = eliteEnemiesData;
+  if (parameter === "special") data = special;
   if (parameter === "all") {
     let all = [
       "Mora",
@@ -614,7 +621,7 @@ export default function calculateData(parameter) {
       all.push(commonEnemies[i - 2]);
     }
 
-    all = [...all, ...weekBoss, ...boss];
+    all = [...all, ...weekBoss, ...special, ...boss];
 
     for (let i = 3; i < stones.length; i += 4) {
       all.push(stones[i]);
@@ -660,6 +667,7 @@ export default function calculateData(parameter) {
       ...commonEnemies,
       ...all,
       ...weekBoss,
+      ...special,
       ...boss,
       ...stones,
       ...talentMaterials,

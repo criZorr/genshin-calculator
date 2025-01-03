@@ -1531,5 +1531,54 @@
     "weekly-boss": "Silken Feather",
     "domain-material": "Conflict",
     "talents": ["Phantom Feather Flurry", "Spirit Reins, Shadow Hunt", "Soul Reaper's Fatal Round"]
+  },
+  "96": {
+    "name": "Traveler (Pyro)",
+    "birthday": "",
+    "region": "Natlan",
+    "quality": "5-stars",
+    "element": "pyro",
+    "stone": "Brilliant Diamond",
+    "weapon": "sword",
+    "specialty-material": "Windwheel Aster",
+    "enemy-material": ["Damaged Mask", "Stained Mask", "Ominous Mask"],
+    "boss-material": "",
+    "weekly-boss": "The Cornerstone of Stars and Flames",
+    "domain-material": ["Contention", "Kindling", "Conflict"],
+    "talents": ["Foreign Blaze", "Flowfire Blade", "Plains Scorcher"]
+  },
+  "97": {
+    "name": "Mavuika",
+    "birthday": "28-08",
+    "region": "Natlan",
+    "quality": "5-stars",
+    "element": "pyro",
+    "stone": "Agnidus Agate",
+    "weapon": "claymore",
+    "specialty-material": "Withering Purpurbloom",
+    "enemy-material": [
+      "Sentry's Wooden Whistle",
+      "Warrior's Metal Whistle",
+      "Saurian-Crowned Warrior's Golden Whistle"
+    ],
+    "boss-material": "Gold-Inscribed Secret Source Core",
+    "weekly-boss": "Eroded Horn",
+    "domain-material": "Contention",
+    "talents": ["Flames Weave Life", "The Named Moment", "Hour of Burning Skies"]
+  },
+  "98": {
+    "name": "Citlali",
+    "birthday": "20-01",
+    "region": "Natlan",
+    "quality": "5-stars",
+    "element": "cryo",
+    "stone": "Shivada Jade",
+    "weapon": "catalyst",
+    "specialty-material": "Quenepa Berry",
+    "enemy-material": ["Juvenile Fang", "Seasoned Fang", "Tyrant's Fang"],
+    "boss-material": "Talisman of the Enigmatic Land",
+    "weekly-boss": "Denial and Judgment",
+    "domain-material": "Kindling",
+    "talents": ["Shadow-Stealing Spirit Vessel", "Dawnfrost Darkstar", "Edict of Entwined Splendor"]
   }
 }

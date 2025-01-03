@@ -2912,5 +2912,43 @@
       "Night-Wind's Mystic Augury",
       "Night-Wind's Mystic Revelation"
     ]
+  },
+  "203": {
+    "name": "A Thousand Blazing Suns",
+    "quality": "5-stars",
+    "weapon": "claymore",
+    "enemy-material": ["Juvenile Fang", "Seasoned Fang", "Tyrant's Fang"],
+    "special-enemy-material": [
+      "Axis of the Secret Source",
+      "Sheath of the Secret Source",
+      "Heart of the Secret Source"
+    ],
+    "domain-material": [
+      "Blazing Sacrificial Heart's Terror",
+      "Blazing Sacrificial Heart's Hesitance",
+      "Blazing Sacrificial Heart's Resolve",
+      "Blazing Sacrificial Heart's Splendor"
+    ]
+  },
+  "204": {
+    "name": "Starcaller's Watch",
+    "quality": "5-stars",
+    "weapon": "catalyst",
+    "enemy-material": [
+      "Sentry's Wooden Whistle",
+      "Warrior's Metal Whistle",
+      "Saurian-Crowned Warrior's Golden Whistle"
+    ],
+    "special-enemy-material": [
+      "Shard of a Shattered Will",
+      "Locus of a Clear Will",
+      "Sigil of a Striding Will"
+    ],
+    "domain-material": [
+      "Delirious Decadence of the Sacred Lord",
+      "Delirious Desolation of the Sacred Lord",
+      "Delirious Demeanor of the Sacred Lord",
+      "Delirious Divinity of the Sacred Lord"
+    ]
   }
 }

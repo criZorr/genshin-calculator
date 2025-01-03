@@ -36,6 +36,7 @@ let dropWeeklyBoss = 0,
 const specialty = calculateData("specialty"),
   boss = calculateData("boss"),
   weekBoss = calculateData("weekBoss"),
+  special = calculateData("special"),
   enemies = calculateData("commonEnemiesData"),
   eliteEnemies = calculateData("eliteEnemiesData"),
   stones = calculateData("stones"),
@@ -203,6 +204,13 @@ export default function drawTotalItems(localVariable, classContainer, secondClas
         avgFarming = Math.ceil(avgFarming);
         label = "Approx. times to defeat weekly boss";
         faq = `This calculation depends on the domain level you choose. (You can change it in "personal" section).`;
+      }
+
+      if (special.includes(el)) {
+        avgFarming = number;
+        avgFarming = Math.ceil(avgFarming);
+        label = "Approx. times to complete Natlan quests";
+        faq = `Natlan Quests give you this material when you complete them.`;
       }
 
       if (el === "Mora") {

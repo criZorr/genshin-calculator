@@ -147,8 +147,13 @@ export default function calculateCharacter(
     if (!(fstTalentValues[i] === 0)) {
       for (let j = fstTalentValues[i] + 1; j <= sndTalentValues[i]; j++) {
         talentMora += talents[j].mora;
-        talentBoss += talents[j].boss;
         talentCrow += talents[j].crown;
+
+        if (name.includes("Traveler (Pyro)")) {
+          if (talents[j].boss > 0) talentBoss += 1;
+        } else {
+          talentBoss += talents[j].boss;
+        }
 
         let enemyType = talents[j].enemy[0],
           enemyAmount = talents[j].enemy[1],
