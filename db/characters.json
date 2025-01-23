@@ -1580,5 +1580,20 @@
     "weekly-boss": "Denial and Judgment",
     "domain-material": "Kindling",
     "talents": ["Shadow-Stealing Spirit Vessel", "Dawnfrost Darkstar", "Edict of Entwined Splendor"]
+  },
+  "99": {
+    "name": "Lan Yan",
+    "birthday": "06-01",
+    "region": "Liyue",
+    "quality": "4-stars",
+    "element": "anemo",
+    "stone": "Vayuda Turquoise",
+    "weapon": "catalyst",
+    "specialty-material": "Clearwater Jade",
+    "enemy-material": ["Whopperflower Nectar", "Shimmering Nectar", "Energy Nectar"],
+    "boss-material": "Gold-Inscribed Secret Source Core",
+    "weekly-boss": "Eroded Sunfire",
+    "domain-material": "Diligence",
+    "talents": ["Black Pheasant Strides on Water", "Swallow-Wisp Pinion Dance", "Lustrous Moonrise"]
   }
 }
