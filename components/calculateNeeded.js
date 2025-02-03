@@ -1,13 +1,21 @@
 import calculateData from "../db/data.js";
 import calculateTotal from "../helpers/calculateTotal.js";
 
-const craftMaterialsFour = [...calculateData("stones"), ...calculateData("weaponMaterials")];
+const weaponMaterials = calculateData("weaponMaterials"),
+  stoneMaterials = calculateData("stones"),
+  talentMaterials = calculateData("talentMaterials"),
+  enemiesMaterials = [...calculateData("commonEnemies"), ...calculateData("eliteEnemies")],
+  expMaterials = [
+    "Wanderer's Advice",
+    "Adventurer's Experience",
+    "Hero's Wit",
+    "Enhancement Ore",
+    "Fine Enhancement Ore",
+    "Mystic Enhancement Ore",
+  ];
 
-const craftMaterialsThree = [
-  ...calculateData("talentMaterials"),
-  ...calculateData("commonEnemies"),
-  ...calculateData("eliteEnemies"),
-];
+let craftMaterialsFour = [...stoneMaterials, ...weaponMaterials],
+  craftMaterialsThree = [...talentMaterials, ...enemiesMaterials];
 
 const all = calculateData("all-normal");
 
@@ -22,21 +30,15 @@ export default function calculateNeeded(userLocal, variable) {
     maxMaterials.push(craftMaterialsThree[i]);
   }
 
-  let craftMaterials = [
-    ...craftMaterialsFour,
-    ...craftMaterialsThree,
-    ...[
-      "Wanderer's Advice",
-      "Adventurer's Experience",
-      "Hero's Wit",
-      "Enhancement Ore",
-      "Fine Enhancement Ore",
-      "Mystic Enhancement Ore",
-    ],
-  ];
+  let craftMaterials = [...craftMaterialsFour, ...craftMaterialsThree, ...expMaterials];
 
   let $userData = JSON.parse(localStorage.getItem(userLocal)),
-    $data = JSON.parse(localStorage.getItem(variable));
+    $data = JSON.parse(localStorage.getItem(variable)),
+    $activeTalent = JSON.parse(localStorage.getItem("userInfo"));
+
+  let talentCrafting = $activeTalent["craftingTalents"],
+    weaponCrafting = $activeTalent["craftingWeapons"],
+    materialCrafting = $activeTalent["craftingMaterials"];
 
   let newUserData = {};
   let neededData = {};
@@ -52,23 +54,79 @@ export default function calculateNeeded(userLocal, variable) {
       if (calc > 0) {
         neededData[e] = calc;
       }
-      if (calc < 0 && craftMaterials.includes(e)) {
+
+      if (calc < 0 && enemiesMaterials.includes(e)) {
         let calculate = true;
         if (maxMaterials.includes(e)) calculate = false;
 
         if (calculate) {
           calc = -1 * calc;
 
-          if (
-            e === "Wanderer's Advice" ||
-            e === "Enhancement Ore" ||
-            e === "Mystic Enhancement Ore"
-          ) {
-            calc = Math.floor(calc / 5);
-          } else if (e === "Adventurer's Experience") {
+          if (materialCrafting === 0) calc = Math.floor(calc / 3);
+          if (materialCrafting === 1) calc = Math.floor(1.1 * (calc / 3));
+          if (materialCrafting === 2) calc = Math.floor((4 / 3) * (calc / 3));
+
+          let position = craftMaterials.indexOf(e);
+          if (position >= 0) tempObj[craftMaterials[position + 1]] = calc;
+        }
+      }
+
+      if (calc < 0 && talentMaterials.includes(e)) {
+        let calculate = true;
+        if (maxMaterials.includes(e)) calculate = false;
+
+        if (calculate) {
+          calc = -1 * calc;
+
+          if (talentCrafting === 0) calc = Math.floor(calc / 3);
+          if (talentCrafting === 1) calc = Math.floor(1.1 * (calc / 3));
+          if (talentCrafting === 2) calc = Math.floor((4 / 3) * (calc / 3));
+
+          let position = craftMaterials.indexOf(e);
+          if (position >= 0) tempObj[craftMaterials[position + 1]] = calc;
+        }
+      }
+
+      if (calc < 0 && weaponMaterials.includes(e)) {
+        let calculate = true;
+        if (maxMaterials.includes(e)) calculate = false;
+
+        if (calculate) {
+          calc = -1 * calc;
+
+          if (weaponCrafting === 0) calc = Math.floor(calc / 3);
+          if (weaponCrafting === 1) calc = Math.floor(1.1 * (calc / 3));
+          if (weaponCrafting === 2) calc = Math.floor((4 / 3) * (calc / 3));
+
+          let position = craftMaterials.indexOf(e);
+          if (position >= 0) tempObj[craftMaterials[position + 1]] = calc;
+        }
+      }
+
+      if (calc < 0 && stoneMaterials.includes(e)) {
+        let calculate = true;
+        if (maxMaterials.includes(e)) calculate = false;
+
+        if (calculate) {
+          calc = -1 * calc;
+          calc = Math.floor(calc / 3);
+
+          let position = craftMaterials.indexOf(e);
+          if (position >= 0) tempObj[craftMaterials[position + 1]] = calc;
+        }
+      }
+
+      if (calc < 0 && expMaterials.includes(e)) {
+        let calculate = true;
+        if (maxMaterials.includes(e)) calculate = false;
+
+        if (calculate) {
+          calc = -1 * calc;
+
+          if (e === "Adventurer's Experience") {
             calc = Math.floor(calc / 4);
           } else {
-            calc = Math.floor(calc / 3);
+            calc = Math.floor(calc / 5);
           }
 
           let position = craftMaterials.indexOf(e);
@@ -84,7 +142,6 @@ export default function calculateNeeded(userLocal, variable) {
     localStorage.setItem("neededCharacter", JSON.stringify(neededData));
 
   if (variable === "weaponTotal") localStorage.setItem("neededWeapon", JSON.stringify(neededData));
-
   if (variable === "total") localStorage.setItem("neededTotal", JSON.stringify(neededData));
 
   let totalUserData = calculateTotal($userData, newUserData);
@@ -106,13 +163,17 @@ export default function calculateNeeded(userLocal, variable) {
       raw += neededData[craftMaterialsThree[i + 2]] * 9;
 
     if (raw > 0) {
-      let gold = Math.ceil((neededData[craftMaterialsThree[i + 2]] || 0) * (9 / 1.21)),
-        purple = Math.ceil((neededData[craftMaterialsThree[i + 1]] || 0) * (3 / 1.1));
-      raw10 = Math.ceil((neededData[craftMaterialsThree[i]] || 0) + gold + purple);
+      let gold10 = Math.ceil((neededData[craftMaterialsThree[i + 2]] || 0) * (9 / 1.21)),
+        purple10 = Math.ceil((neededData[craftMaterialsThree[i + 1]] || 0) * (3 / 1.1)),
+        gold25 = Math.ceil((neededData[craftMaterialsThree[i + 2]] || 0) * (9 / (16 / 9))),
+        purple25 = Math.ceil((neededData[craftMaterialsThree[i + 1]] || 0) * (3 / (4 / 3)));
 
-      object[craftMaterialsThree[i]] = [raw, raw10];
-      object[craftMaterialsThree[i + 1]] = [raw, raw10];
-      object[craftMaterialsThree[i + 2]] = [raw, raw10];
+      raw10 = Math.ceil((neededData[craftMaterialsThree[i]] || 0) + gold10 + purple10);
+      raw25 = Math.ceil((neededData[craftMaterialsThree[i]] || 0) + gold25 + purple25);
+
+      object[craftMaterialsThree[i]] = [raw, raw10, raw25];
+      object[craftMaterialsThree[i + 1]] = [raw, raw10, raw25];
+      object[craftMaterialsThree[i + 2]] = [raw, raw10, raw25];
     }
   }
 
@@ -133,15 +194,20 @@ export default function calculateNeeded(userLocal, variable) {
       raw += neededData[craftMaterialsFour[i + 3]] * 27;
 
     if (raw > 0) {
-      let gold = Math.ceil((neededData[craftMaterialsFour[i + 3]] || 0) * (27 / 1.331)),
-        purple = Math.ceil((neededData[craftMaterialsFour[i + 2]] || 0) * (9 / 1.21)),
-        blue = Math.ceil((neededData[craftMaterialsFour[i + 1]] || 0) * (3 / 1.1));
-      raw10 = Math.ceil((neededData[craftMaterialsFour[i]] || 0) + gold + purple + blue);
+      let gold10 = Math.ceil((neededData[craftMaterialsFour[i + 3]] || 0) * (27 / 1.331)),
+        purple10 = Math.ceil((neededData[craftMaterialsFour[i + 2]] || 0) * (9 / 1.21)),
+        blue10 = Math.ceil((neededData[craftMaterialsFour[i + 1]] || 0) * (3 / 1.1)),
+        gold25 = Math.ceil((neededData[craftMaterialsFour[i + 3]] || 0) * (27 / (64 / 27))),
+        purple25 = Math.ceil((neededData[craftMaterialsFour[i + 2]] || 0) * (9 / (16 / 9))),
+        blue25 = Math.ceil((neededData[craftMaterialsFour[i + 1]] || 0) * (3 / (4 / 3)));
 
-      object[craftMaterialsFour[i]] = [raw, raw10];
-      object[craftMaterialsFour[i + 1]] = [raw, raw10];
-      object[craftMaterialsFour[i + 2]] = [raw, raw10];
-      object[craftMaterialsFour[i + 3]] = [raw, raw10];
+      raw10 = Math.ceil((neededData[craftMaterialsFour[i]] || 0) + gold10 + purple10 + blue10);
+      raw25 = Math.ceil((neededData[craftMaterialsFour[i]] || 0) + gold25 + purple25 + blue25);
+
+      object[craftMaterialsFour[i]] = [raw, raw10, raw25];
+      object[craftMaterialsFour[i + 1]] = [raw, raw10, raw25];
+      object[craftMaterialsFour[i + 2]] = [raw, raw10, raw25];
+      object[craftMaterialsFour[i + 3]] = [raw, raw10, raw25];
     }
   }
 
@@ -164,6 +230,5 @@ export default function calculateNeeded(userLocal, variable) {
   object["Mystic Enhancement Ore"] = oreSum;
 
   localStorage.setItem("rawMaterials", JSON.stringify(object));
-
   localStorage.setItem(userLocal, JSON.stringify(totalUserData));
 }
