@@ -180,7 +180,7 @@ const getTalents = (characterId) => {
               <div class="talent-selector bg-snd" id="talent-${i + 1}">
                 <section class="talent-data">
                   <figure class="talent-img">
-                    <img src="./assets/talents/${weapon}.png" alt="${name} talent ${i + 1}: ${
+                    <img src="./assets/talents/${weapon}.webp" alt="${name} talent ${i + 1}: ${
         talents[i]
       }" />
                   </figure>
@@ -229,7 +229,7 @@ const getTalents = (characterId) => {
               <div class="talent-selector bg-snd" id="talent-${i + 1}">
                 <section class="talent-data">
                   <figure class="talent-img">
-                    <img src="./assets/talents/${talentName}.png" alt="${name} talent ${i + 1}: ${
+                    <img src="./assets/talents/${talentName}.webp" alt="${name} talent ${i + 1}: ${
         talents[i]
       }" />
                   </figure>

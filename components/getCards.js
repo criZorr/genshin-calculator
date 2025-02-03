@@ -40,7 +40,7 @@ export default function getCards(data, $container, path) {
     cardBg.innerHTML = `<img class="card-img" _id="${i}" src="${path}/${name.replaceAll(
       '"',
       ""
-    )}.png" alt="${name}" />`;
+    )}.webp" alt="${name}" />`;
     card.appendChild(cardBg);
     card.appendChild(p);
     $container.appendChild(card);

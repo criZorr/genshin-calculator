@@ -201,7 +201,7 @@ export default function drawItems(localVariable, data, classContainer, classOpti
     <div class="element-info">
               <section class="element-data">
                 <figure class="element-img">
-                  <img src="./assets/materials/${tempName}.png" alt="item" />
+                  <img src="./assets/materials/${tempName}.webp" alt="item" />
                 </figure>
                 <section class="element-props">
                   <h5 class="frst-text">${el}</h5>

@@ -275,7 +275,7 @@ const drawUserMaterial = () => {
         fragment.innerHTML = `
       <section class="element-data">
         <figure class="element-img">
-          <img src="./assets/materials/${el.replaceAll('"', "")}.png" alt="${el}" />
+          <img src="./assets/materials/${el.replaceAll('"', "")}.webp" alt="${el}" />
         </figure>
         <section class="element-props">
           <h5 class="frst-text">${el}</h5>
@@ -301,7 +301,7 @@ const drawUserMaterial = () => {
   fragment.innerHTML = `
       <section class="element-data">
         <figure class="element-img add-item-figure">
-          <img src="./assets/add.png" alt="Add item" class="add-item"/>
+          <img src="./assets/add.webp" alt="Add item" class="add-item"/>
         </figure>
         <section class="element-props">
           <h5 class="frst-text">Add item</h5>
@@ -323,7 +323,7 @@ const drawModalProfit = (id) => {
   <div class="modal-info bg-trd">
   <div class="edit-owned-header">
   <figure class="element-img">
-          <img src="./assets/materials/${id}.png" alt="${id}" />
+          <img src="./assets/materials/${id}.webp" alt="${id}" />
         </figure>
       <p class="info-title scnd-text">${id}</p>
   </div>
@@ -375,7 +375,7 @@ const drawModalElement = (id) => {
   <div class="modal-info bg-trd">
   <div class="edit-owned-header">
   <figure class="element-img">
-          <img src="./assets/materials/${fixedName}.png" alt="${ogName}" />
+          <img src="./assets/materials/${fixedName}.webp" alt="${ogName}" />
         </figure>
       <p class="info-title scnd-text">${ogName}</p>
   </div>
@@ -471,7 +471,7 @@ const drawModalInfo = (id, name) => {
   <div class="modal-info bg-trd">
   <div class="edit-owned-header">
   <figure class="element-img">
-          <img src="./assets/materials/${name}.png" alt="${name}" />
+          <img src="./assets/materials/${name}.webp" alt="${name}" />
         </figure>
       <p class="info-title scnd-text">${name}</p>
   </div>
@@ -535,7 +535,7 @@ const getListElements = () => {
     fragment.innerHTML = `
       <section class="element-data">
         <figure class="element-img">
-          <img src="./assets/materials/${tempName}.png" alt="${el}" />
+          <img src="./assets/materials/${tempName}.webp" alt="${el}" />
         </figure>
         <section class="element-props">
           <h5 class="frst-text">${el}</h5>

@@ -303,7 +303,7 @@ export default function drawTotalItems(localVariable, classContainer, secondClas
     <div class="element-info">
               <section class="element-data">
                 <figure class="element-img">
-                  <img src="./assets/materials/${tempName}.png" alt="item" />
+                  <img src="./assets/materials/${tempName}.webp" alt="item" />
                 </figure>
                 <section class="element-props">
                   <h5 class="frst-text">${el}</h5>
@@ -330,7 +330,7 @@ export default function drawTotalItems(localVariable, classContainer, secondClas
     <div class="element-info">
               <section class="element-data">
                 <figure class="element-img">
-                  <img src="./assets/materials/${tempName}.png" alt="item" />
+                  <img src="./assets/materials/${tempName}.webp" alt="item" />
                 </figure>
                 <section class="element-props">
                   <h5 class="frst-text">${el}</h5>
@@ -356,7 +356,7 @@ export default function drawTotalItems(localVariable, classContainer, secondClas
 
   if (itemsContent == "") {
     itemsContent = `
-      <img src="./assets/nothing.png" alt="nothing here!" class="nothing-here">
+      <img src="./assets/nothing.webp" alt="nothing here!" class="nothing-here">
     `;
   }
 
