@@ -58,6 +58,7 @@ html {
   font-family: var(--font);
   scroll-behavior: smooth;
   scrollbar-width: none;
+  scrollbar-color: var(--first-light-color) rgba(0, 0, 0, 0);
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -401,7 +402,6 @@ small {
   position: relative;
   @media screen and (min-width: 624px) {
     overflow-y: scroll;
-
     scrollbar-width: none;
   }
 }
@@ -626,6 +626,13 @@ small {
 .card-user-amount {
   overflow-y: scroll;
   scrollbar-width: none;
+
+  @media screen and (min-width: 1024px) {
+    padding-right: 1rem;
+    width: calc(100% + 1rem);
+    overflow-y: scroll;
+    scrollbar-width: thin;
+  }
 }
 
 /* ********** Element info ********** */
