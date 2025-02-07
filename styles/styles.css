@@ -249,17 +249,13 @@ small {
   }
 }
 
-.active-page {
-  & .menu-btn-img {
-    background-color: var(--second-dark-color);
-    border-radius: 0.75rem;
-  }
+.active-page .menu-btn-img {
+  background-color: var(--second-dark-color);
+  border-radius: 0.75rem;
+}
 
-  &:hover {
-    & .menu-btn-img {
-      background-color: transparent;
-    }
-  }
+.active-page:hover .menu-btn-img {
+  background-color: transparent;
 }
 
 /* ********** Container ********** */

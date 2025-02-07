@@ -10,12 +10,9 @@
     top: 0;
     height: 4rem;
   }
-}
 
-@media screen and (min-width: 1024px) {
   .head-container {
     justify-content: space-evenly;
-
     padding: 0;
     margin-left: auto;
     margin-right: auto;
@@ -58,34 +55,10 @@
 @media screen and (min-width: 1024px) {
   .menu-btn {
     flex-direction: row;
-
     padding: 0 0.5rem;
     gap: 0.5rem;
-
     font-size: 1rem;
   }
-}
-
-.active-page {
-  & .menu-btn-img {
-    background-color: var(--second-dark-color);
-    border-radius: 0.75rem;
-  }
-
-  &:hover {
-    & .menu-btn-img {
-      background-color: transparent;
-    }
-  }
-}
-
-.active-page .menu-btn-img {
-  background-color: var(--second-dark-color);
-  border-radius: 0.75rem;
-}
-
-.active-page:hover .menu-btn-img {
-  background-color: transparent;
 }
 
 /* ********** Container ********** */
@@ -114,6 +87,7 @@
 /* ***** Content parameters & Content info ***** */
 @media screen and (min-width: 624px) {
   .content-parameters,
+  .content-parameters-user,
   .content-info {
     width: calc(50% - 0.5rem);
     height: calc(100vh - var(--header-height) - 4rem - 2rem);
@@ -122,6 +96,7 @@
 
 @media screen and (min-width: 704px) {
   .content-parameters,
+  .content-parameters-user,
   .content-info {
     width: calc(50% - 1rem);
   }
@@ -129,6 +104,7 @@
 
 @media screen and (min-width: 1024px) {
   .content-parameters,
+  .content-parameters-user,
   .content-info {
     height: calc(100vh - 4rem - 4rem - 2rem);
   }
@@ -163,16 +139,11 @@
 @media screen and (min-width: 624px) {
   .cards-container {
     position: static;
-
     flex-wrap: wrap;
-
     row-gap: 1rem;
-
     width: 100%;
-
     padding-right: 0;
     padding-left: 0;
-
     overflow-x: hidden;
   }
 }
@@ -190,12 +161,6 @@
 }
 
 /* ***** Card ***** */
-.card .card-bg {
-  border-radius: 0.25rem 0.25rem 1rem 0;
-  width: 5rem;
-  height: 5rem;
-}
-
 .card .card-name {
   max-width: 95%;
   text-overflow: ellipsis;
@@ -203,15 +168,16 @@
   overflow: hidden;
 }
 
+.card .card-bg {
+  border-radius: 0.25rem 0.25rem 1rem 0;
+  width: 5rem;
+  height: 5rem;
+}
+
 .card img {
   width: 5rem;
   height: auto;
   border-radius: 0.25rem 0.25rem 1rem 0;
-}
-
-.card p {
-  font-size: small;
-  font-weight: bold;
 }
 
 .card .five {
@@ -221,6 +187,7 @@
 .card .four {
   background: linear-gradient(180deg, var(--purple-dark-color) 0%, var(--purple-light-color) 100%);
 }
+
 .card .three {
   background: linear-gradient(180deg, var(--blue-dark-color) 0%, var(--blue-light-color) 100%);
 }
@@ -228,6 +195,7 @@
 .card .two {
   background: linear-gradient(180deg, var(--green-dark-color) 0%, var(--green-light-color) 100%);
 }
+
 .card .one {
   background: linear-gradient(180deg, var(--gray-dark-color) 0%, var(--gray-light-color) 100%);
 }
@@ -253,20 +221,29 @@
 /* ********** Card Total & Individual********** */
 
 @media screen and (min-width: 624px) {
-  .user-materials-container {
-    max-height: none !important;
-  }
   .user-materials-container .btn-expand-container,
   .user-materials-container .btn-collapse-container {
     display: none;
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .elements-container,
+  .extra-container,
+  .calcs-container,
+  .card-user-amount {
+    padding-right: 1rem;
+    width: calc(100% + 1rem);
+    overflow-y: scroll;
+    scrollbar-width: thin;
+  }
+}
+
 /* ********** Element info ********** */
+
 .element-header h3 {
   max-width: 75%;
   line-height: 1.5rem;
-
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -291,7 +268,6 @@
 }
 
 /* ********** Modal ********** */
-
 @media screen and (min-width: 704px) {
   .modal-weapon {
     width: auto;
@@ -307,18 +283,14 @@
 
 .ascension-selector label {
   height: 1rem;
-  font-size: inherit;
+  font-size: 1.3rem;
   text-align: center;
   color: var(--second-light-color);
   cursor: pointer;
 }
 
 /* level form */
-.level-form .btn-modal-lvl {
-  height: 2rem;
-  width: 5rem;
-}
-
+.level-form .btn-modal-lvl,
 .weapon-form .btn-modal-lvl {
   height: 2rem;
   width: 5rem;
@@ -342,6 +314,15 @@
 }
 
 /* Modal talents */
+@media screen and (min-width: 624px) {
+  .modal-character {
+    width: 22rem;
+  }
+
+  .talent-data {
+    max-width: 60%;
+  }
+}
 
 @media screen and (min-width: 704px) {
   .modal-character {
@@ -349,18 +330,16 @@
     flex-direction: unset;
     gap: 2rem;
   }
-}
 
-@media screen and (min-width: 624px) {
-  .modal-character {
-    width: 22rem;
-  }
-}
-
-@media screen and (min-width: 704px) {
   .talent-info {
     width: 20rem;
   }
+}
+
+.talent-data p {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .talent-img img {
@@ -371,18 +350,6 @@
 .talent-form .btn-modal-tlt {
   height: 2rem;
   width: 5rem;
-}
-
-.talent-data p {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-@media screen and (min-width: 624px) {
-  .talent-data {
-    max-width: 60%;
-  }
 }
 
 /* Modal Info */
@@ -400,4 +367,30 @@
 .info-options option {
   background-color: inherit;
   color: inherit;
+}
+
+/* Tooltip */
+@media screen and (min-width: 624px) {
+  .tooltip {
+    width: 30vw;
+    left: 35vw;
+    bottom: calc(var(--header-height) + 1.5rem);
+  }
+
+  .faq-container:hover .tooltip {
+    transform: translateY(-1rem);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .tooltip {
+    width: 20vw;
+    left: 40vw;
+    bottom: auto;
+    top: var(--header-height);
+  }
+
+  .faq-container:hover .tooltip {
+    transform: translateY(1rem);
+  }
 }
