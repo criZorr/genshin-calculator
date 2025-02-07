@@ -332,6 +332,7 @@ d.addEventListener("click", (e) => {
   if (eventClass === "modal-container" || eventId === "cancel-btn") {
     $modal.style.visibility = "hidden";
     $modal.style.opacity = "0";
+    saveFlag = false;
   }
 
   toggleSize(eventClass, e.target);
