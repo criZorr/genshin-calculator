@@ -24,6 +24,9 @@ const svg = `
                     </svg>
 `;
 
+let saveFlag = false;
+let containerFlag = false;
+
 const all = calculateData("all");
 let sorted = calculateData("all").sort(),
   $itemsContainer = d.querySelector(".items-container-user"),
@@ -342,6 +345,8 @@ const drawModalProfit = (id) => {
 
   const $saveBtn = d.getElementById("confirm-btn");
 
+  saveFlag = true;
+
   $saveBtn.addEventListener("click", (e) => {
     if (
       Number(d.querySelector("#number-picker").value) ||
@@ -352,6 +357,7 @@ const drawModalProfit = (id) => {
       $modal.style.visibility = "hidden";
       $modal.style.opacity = "0";
       $modal.innerHTML = "";
+      saveFlag = false;
       drawUserMaterial();
       calcTotalMaterials();
       getTotal();
@@ -394,6 +400,8 @@ const drawModalElement = (id) => {
 
   const $saveBtn = d.getElementById("confirm-btn");
 
+  saveFlag = true;
+
   $saveBtn.addEventListener("click", (e) => {
     if (
       Number(d.querySelector("#number-picker").value) ||
@@ -405,6 +413,7 @@ const drawModalElement = (id) => {
         $modal.style.visibility = "hidden";
         $modal.style.opacity = "0";
         $modal.innerHTML = "";
+        saveFlag = false;
         drawUserMaterial();
         calcTotalMaterials();
         getTotal();
@@ -492,6 +501,8 @@ const drawModalInfo = (id, name) => {
 
   const $saveBtn = d.getElementById("confirm-btn");
 
+  saveFlag = true;
+
   $saveBtn.addEventListener("click", (e) => {
     let value = d.querySelector(".info-options").value;
     $userInfo[id] = Number(value);
@@ -499,6 +510,7 @@ const drawModalInfo = (id, name) => {
     $modal.style.visibility = "hidden";
     $modal.style.opacity = "0";
     $modal.innerHTML = "";
+    saveFlag = false;
     drawUserMaterial();
     calcTotalMaterials();
     getTotal();
@@ -622,11 +634,13 @@ d.addEventListener("click", (e) => {
   if (eventClass === "modal-container" || eventId === "cancel-btn") {
     $modal.style.visibility = "hidden";
     $modal.style.opacity = "0";
+    saveFlag = false;
   }
 
   if (eventClass === "modal-container-materials") {
     $modalMaterials.style.visibility = "hidden";
     $modalMaterials.style.opacity = "0";
+    containerFlag = false;
   }
 
   if (
@@ -638,6 +652,7 @@ d.addEventListener("click", (e) => {
     drawModalPossible();
     $modalMaterials.style.visibility = "visible";
     $modalMaterials.style.opacity = "1";
+    containerFlag = true;
   }
 
   toggleSize(eventClass, e.target);
@@ -645,4 +660,16 @@ d.addEventListener("click", (e) => {
 
 d.addEventListener("change", (e) => {
   if (e.target.className.includes("selected-items")) location.hash = e.target.value;
+});
+
+d.addEventListener("keydown", (e) => {
+  if (e.key == "Enter" && saveFlag) {
+    d.getElementById("confirm-btn").click();
+  }
+  if (e.key == "Escape" && saveFlag) {
+    d.querySelector(".modal-container").click();
+  }
+  if (e.key == "Escape" && containerFlag) {
+    d.querySelector(".modal-container-materials").click();
+  }
 });
