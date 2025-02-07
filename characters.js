@@ -25,6 +25,9 @@ let filtered = [],
 
 let $filters = "filter-checkbox";
 
+let saveFlag = false;
+let confirmFlag = false;
+
 const filterAction = (filters, data) => {
   let charactersId = [];
 
@@ -275,6 +278,8 @@ const getTalents = (characterId) => {
     );
   }
 
+  saveFlag = true;
+
   $saveBtn.addEventListener("click", () => {
     let numId = Number(characterId);
 
@@ -326,6 +331,7 @@ const getTalents = (characterId) => {
       getTotal();
       $modal.style.visibility = "hidden";
       $modal.style.opacity = "0";
+      saveFlag = false;
     }
   });
 };
@@ -412,6 +418,8 @@ const deleteConfirmation = (id, name) => {
   $modal.style.visibility = "visible";
   $modal.style.opacity = "1";
 
+  confirmFlag = true;
+
   let $confimButton = d.getElementById("confirm-btn");
   $confimButton.addEventListener("click", (e) => {
     deleteLocal("characterData", e.target.attributes._id.value, "userMaterials");
@@ -420,6 +428,7 @@ const deleteConfirmation = (id, name) => {
     getTotal();
     $modal.style.visibility = "hidden";
     $modal.style.opacity = "0";
+    confirmFlag = false;
   });
 };
 
@@ -497,9 +506,25 @@ d.addEventListener("click", (e) => {
   if (eventClass === "modal-container" || eventId === "cancel-btn") {
     $modal.style.visibility = "hidden";
     $modal.style.opacity = "0";
+    saveFlag = false;
   }
 
   toggleSize(eventClass, e.target);
+});
+
+d.addEventListener("keydown", (e) => {
+  if (e.key == "Enter" && saveFlag) {
+    d.getElementById("save-btn").click();
+  }
+  if (e.key == "Enter" && confirmFlag) {
+    d.getElementById("confirm-btn").click();
+  }
+  if (e.key == "Escape" && saveFlag) {
+    d.querySelector(".modal-container").click();
+  }
+  if (e.key == "Escape" && confirmFlag) {
+    d.querySelector(".modal-container").click();
+  }
 });
 
 let charactersData = await getData("./db/characters.json");

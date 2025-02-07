@@ -24,6 +24,9 @@ let filtered = [],
 
 let $filters = "filter-checkbox";
 
+let saveFlag = false;
+let confirmFlag = false;
+
 const filterAction = (filters, data) => {
   let charactersId = [];
 
@@ -160,6 +163,8 @@ const getLevels = (weaponId) => {
             </select>`;
   }
 
+  saveFlag = true;
+
   $saveBtn.addEventListener("click", () => {
     let numId = Number(weaponId);
 
@@ -190,6 +195,7 @@ const getLevels = (weaponId) => {
     getTotal();
     $modal.style.visibility = "hidden";
     $modal.style.opacity = "0";
+    saveFlag = false;
   });
 };
 
@@ -240,6 +246,8 @@ const deleteConfirmation = (id, name) => {
   $modal.style.visibility = "visible";
   $modal.style.opacity = "1";
 
+  confirmFlag = true;
+
   let $confimButton = d.getElementById("confirm-btn");
   $confimButton.addEventListener("click", (e) => {
     deleteLocal("weaponData", e.target.attributes._id.value, "userMaterials");
@@ -248,6 +256,7 @@ const deleteConfirmation = (id, name) => {
     getTotal();
     $modal.style.visibility = "hidden";
     $modal.style.opacity = "0";
+    confirmFlag = false;
   });
 };
 
@@ -326,6 +335,21 @@ d.addEventListener("click", (e) => {
   }
 
   toggleSize(eventClass, e.target);
+});
+
+d.addEventListener("keydown", (e) => {
+  if (e.key == "Enter" && saveFlag) {
+    d.getElementById("save-btn").click();
+  }
+  if (e.key == "Enter" && confirmFlag) {
+    d.getElementById("confirm-btn").click();
+  }
+  if (e.key == "Escape" && saveFlag) {
+    d.querySelector(".modal-container").click();
+  }
+  if (e.key == "Escape" && confirmFlag) {
+    d.querySelector(".modal-container").click();
+  }
 });
 
 let weaponsData = await getData("./db/weapons.json");
