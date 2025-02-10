@@ -3,7 +3,7 @@
   "name": "Genshin Calculator",
   "short_name": "Genshin Calculator",
   "description": "This is a Genshin Impact Calculator to know how many materials, resin and time you should spend to level up characters and weapons",
-  "start_url": "/",
+  "start_url": "./?utm_source=web_app_manifest",
   "background_color": "#3b4354",
   "theme_color": "#323947",
   "orientation": "portrait",
