@@ -37,6 +37,7 @@
       name="twitter:description"
       content="This is a Genshin Impact Calculator to know how many materials, resin and time you should spend to level up characters and weapons."
     />
+    <link rel="manifest" href="./manifest.json" />
   </head>
   <body class="bg-trd">
     <header class="header">
@@ -172,5 +173,8 @@
     <article class="modal-container"></article>
     <script src="./characters.js" type="module"></script>
     <script src="./index.js"></script>
+    <script>
+      if ("serviceWorker" in navigator) navigator.serviceWorker.register("./sw.js", { scope: "/" });
+    </script>
   </body>
 </html>
