@@ -8,22 +8,23 @@
   "theme_color": "#323947",
   "orientation": "portrait",
   "display": "standalone",
+  "scope": "./",
   "icons": [
     {
-      "src": "assets/favicon.png",
+      "src": "./assets/favicon.png",
       "sizes": "180x180",
       "type": "image/png"
     }
   ],
   "screenshots": [
     {
-      "src": "assets/hero-image.png",
+      "src": "./assets/hero-image.png",
       "sizes": "1083x812",
       "type": "image/png",
       "form_factor": "wide"
     },
     {
-      "src": "assets/hero-image.png",
+      "src": "./assets/hero-image.png",
       "sizes": "1083x812",
       "type": "image/png",
       "purpose": "any"
