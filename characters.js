@@ -169,102 +169,100 @@ const getTalents = (characterId) => {
 
     if (i == 0) {
       fragment.innerHTML = `
-              <div class="custom-checkbox">
-                <input
-                  type="checkbox"
-                  name="checkbox-talent-${i + 1}"
-                  id="checkbox-talent-${i + 1}"
-                  checked="true"
-                />
-                <span class="custom-checkbox-btn bg-snd">
-                  <div></div>
-                </span>
-              </div>
-              <div class="talent-selector bg-snd" id="talent-${i + 1}">
-                <section class="talent-data">
-                  <figure class="talent-img">
-                    <img src="./assets/talents/${weapon}.webp" alt="${name} talent ${i + 1}: ${
-        talents[i]
-      }" />
-                  </figure>
-                  <p class="frst-text compact">${talents[i]}</p>
-                </section>
-                <div class="talent-lvl bg-snd">
-                  <select class="nmb-list frst-text" id="first-selection">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                  </select>
-                  <div class="scnd-text">→</div>
-                  <select class="nmb-list frst-text" id="second-selection">
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                  <option value="6">6</option>
-                  <option value="7">7</option>
-                  <option value="8">8</option>
-                  <option value="9">9</option>
-                  <option value="10">10</option>
-                  </select>
-                </div>
-              </div>
-    `;
+        <div class="custom-checkbox">
+          <input
+            type="checkbox"
+            name="checkbox-talent-${i + 1}" 
+            id="checkbox-talent-${i + 1}" 
+            checked="true"
+          />
+          <span class="custom-checkbox-btn bg-snd">
+            <div></div>
+          </span>
+        </div>
+        <div class="talent-selector bg-snd" id="talent-${i + 1}">
+          <section class="talent-data">
+            <figure class="talent-img">
+              <img src="./assets/talents/${weapon}.webp"
+                alt="${name} talent ${i + 1}: ${talents[i]}"
+              />
+            </figure>
+            <p class="frst-text compact">${talents[i]}</p>
+          </section>
+          <div class="talent-lvl bg-snd">
+            <select class="nmb-list frst-text" id="first-selection">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+            </select>
+            <div class="scnd-text">→</div>
+            <select class="nmb-list frst-text" id="second-selection">
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+        </div>`;
     } else {
       fragment.innerHTML = `
-              <div class="custom-checkbox">
-                <input
-                  type="checkbox"
-                  name="checkbox-talent-${i + 1}"
-                  id="checkbox-talent-${i + 1}"
-                  checked="true"
-                />
-                <span class="custom-checkbox-btn bg-snd">
-                  <div></div>
-                </span>
-              </div>
-              <div class="talent-selector bg-snd" id="talent-${i + 1}">
-                <section class="talent-data">
-                  <figure class="talent-img">
-                    <img src="./assets/talents/${talentName}.webp" alt="${name} talent ${i + 1}: ${
-        talents[i]
-      }" />
-                  </figure>
-                  <p class="frst-text compact">${talents[i]}</p>
-                </section>
-                <div class="talent-lvl bg-snd">
-                  <select class="nmb-list frst-text" id="first-selection">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                  </select>
-                  <div class="scnd-text">→</div>
-                  <select class="nmb-list frst-text" id="second-selection">
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                  <option value="6">6</option>
-                  <option value="7">7</option>
-                  <option value="8">8</option>
-                  <option value="9">9</option>
-                  <option value="10">10</option>
-                  </select>
-                </div>
-              </div>
-    `;
+        <div class="custom-checkbox">
+          <input
+            type="checkbox"
+            name="checkbox-talent-${i + 1}"
+            id="checkbox-talent-${i + 1}"
+            checked="true"
+          />
+          <span class="custom-checkbox-btn bg-snd">
+            <div></div>
+          </span>
+        </div>
+        <div class="talent-selector bg-snd" id="talent-${i + 1}">
+          <section class="talent-data">
+            <figure class="talent-img">
+              <img src="./assets/talents/${talentName}.webp" alt="${name}
+                talent ${i + 1}: ${talents[i]}"
+              />
+            </figure>
+            <p class="frst-text compact">${talents[i]}</p>
+          </section>
+          <div class="talent-lvl bg-snd">
+            <select class="nmb-list frst-text" id="first-selection">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+            </select>
+            <div class="scnd-text">→</div>
+            <select class="nmb-list frst-text" id="second-selection">
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+        </div>`;
     }
 
     $talentContainer.appendChild(fragment);
@@ -337,68 +335,69 @@ const getTalents = (characterId) => {
 };
 
 const drawModal = () => {
-  $modal.innerHTML = `<div class="modal-character bg-trd">
-        <div class="level-container">
-          <div class="custom-checkbox">
-            <label class="scnd-text" for="checkbox-level">Calculate levels</label>
-            <input type="checkbox" name="checkbox-level" id="checkbox-level" checked="true" />
-            <span class="custom-checkbox-btn bg-snd">
-              <div></div>
-            </span>
-          </div>
-          <div class="level-info" id="level-data">
-            <div class="ascension-selector">
-              <input type="checkbox" name="ascension-selected" id="ascension-1" />
-              <label for="ascension-1">✦</label>
-              <input type="checkbox" name="ascension-selected" id="ascension-2" />
-              <label for="ascension-2">✦</label>
-              <input type="checkbox" name="ascension-selected" id="ascension-3" />
-              <label for="ascension-3">✦</label>
-              <input type="checkbox" name="ascension-selected" id="ascension-4" />
-              <label for="ascension-4">✦</label>
-              <input type="checkbox" name="ascension-selected" id="ascension-5" />
-              <label for="ascension-5">✦</label>
-              <input type="checkbox" name="ascension-selected" id="ascension-6" />
-              <label for="ascension-6">✦</label>
-            </div>
-            <div class="level-content bg-snd">
-              <select class="nmb-list frst-text" id="first-selection">
-                <option value="1">1</option>
-                <option value="2">20</option>
-                <option value="3">40</option>
-                <option value="4">50</option>
-                <option value="5">60</option>
-                <option value="6">70</option>
-                <option value="7">80</option>
-              </select>
-              <div class="scnd-text">→</div>
-              <select class="nmb-list frst-text" id="second-selection">
-                <option value="2">20</option>
-                <option value="3">40</option>
-                <option value="4">50</option>
-                <option value="5">60</option>
-                <option value="6">70</option>
-                <option value="7">80</option>
-                <option value="8">90</option>
-              </select>
-            </div>
-          </div>
+  $modal.innerHTML = `
+    <div class="modal-character bg-trd">
+      <div class="level-container">
+        <div class="custom-checkbox">
+          <label class="scnd-text" for="checkbox-level">Calculate levels</label>
+          <input type="checkbox" name="checkbox-level" id="checkbox-level" checked="true" />
+          <span class="custom-checkbox-btn bg-snd">
+            <div></div>
+          </span>
         </div>
-        <div class="talent-container">
-          <h5 class="scnd-text">Calculate talents</h5>
-          <div class="talent-info"></div>
-        </div>
-        <div class="character-form">
-          <div class="level-form">
-            <div class="btn-modal-lvl">
-              <button class="btn-bordered" id="cancel-btn">Cancel</button>
-            </div>
-            <div class="btn-modal-lvl">
-              <button class="btn bg-snd-dark" id="save-btn">Save</button>
-            </div>
+        <div class="level-info" id="level-data">
+          <div class="ascension-selector">
+            <input type="checkbox" name="ascension-selected" id="ascension-1" />
+            <label for="ascension-1">✦</label>
+            <input type="checkbox" name="ascension-selected" id="ascension-2" />
+            <label for="ascension-2">✦</label>
+            <input type="checkbox" name="ascension-selected" id="ascension-3" />
+            <label for="ascension-3">✦</label>
+            <input type="checkbox" name="ascension-selected" id="ascension-4" />
+            <label for="ascension-4">✦</label>
+            <input type="checkbox" name="ascension-selected" id="ascension-5" />
+            <label for="ascension-5">✦</label>
+            <input type="checkbox" name="ascension-selected" id="ascension-6" />
+            <label for="ascension-6">✦</label>
+          </div>
+          <div class="level-content bg-snd">
+            <select class="nmb-list frst-text" id="first-selection">
+              <option value="1">1</option>
+              <option value="2">20</option>
+              <option value="3">40</option>
+              <option value="4">50</option>
+              <option value="5">60</option>
+              <option value="6">70</option>
+              <option value="7">80</option>
+            </select>
+            <div class="scnd-text">→</div>
+            <select class="nmb-list frst-text" id="second-selection">
+              <option value="2">20</option>
+              <option value="3">40</option>
+              <option value="4">50</option>
+              <option value="5">60</option>
+              <option value="6">70</option>
+              <option value="7">80</option>
+              <option value="8">90</option>
+            </select>
           </div>
         </div>
-      </div>`;
+      </div>
+      <div class="talent-container">
+        <h5 class="scnd-text">Calculate talents</h5>
+        <div class="talent-info"></div>
+      </div>
+      <div class="character-form">
+        <div class="level-form">
+          <div class="btn-modal-lvl">
+            <button class="btn-bordered" id="cancel-btn">Cancel</button>
+          </div>
+          <div class="btn-modal-lvl">
+            <button class="btn bg-snd-dark" id="save-btn">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>`;
 };
 
 const deleteConfirmation = (id, name) => {

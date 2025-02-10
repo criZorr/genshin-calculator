@@ -10,19 +10,9 @@ const $modal = d.querySelector(".modal-container"),
   $modalMaterials = d.querySelector(".modal-container-materials");
 
 const svg = `
-<svg
-                      class="frst-text faq"
-                      alt="faq"
-                      width="11"
-                      height="11"
-                      viewBox="0 0 11 11"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M5.49998 0.458328C4.50283 0.458328 3.52808 0.754017 2.69898 1.308C1.86988 1.86199 1.22368 2.64939 0.842089 3.57063C0.460497 4.49188 0.360656 5.50559 0.555189 6.48357C0.749723 7.46156 1.2299 8.3599 1.93499 9.06499C2.64008 9.77008 3.53841 10.2503 4.5164 10.4448C5.49439 10.6393 6.5081 10.5395 7.42934 10.1579C8.35059 9.77629 9.13799 9.13009 9.69198 8.30099C10.246 7.4719 10.5416 6.49714 10.5416 5.49999C10.5401 4.16335 10.0084 2.88189 9.06324 1.93674C8.11808 0.991586 6.83663 0.459905 5.49998 0.458328ZM5.49998 9.62499C4.68413 9.62499 3.88661 9.38307 3.20825 8.92981C2.5299 8.47655 2.00119 7.83231 1.68898 7.07856C1.37677 6.32482 1.29508 5.49542 1.45424 4.69525C1.61341 3.89508 2.00627 3.16007 2.58317 2.58318C3.16006 2.00629 3.89506 1.61342 4.69523 1.45426C5.49541 1.29509 6.32481 1.37678 7.07855 1.68899C7.8323 2.0012 8.47653 2.52991 8.92979 3.20827C9.38306 3.88662 9.62498 4.68415 9.62498 5.49999C9.62365 6.5936 9.18862 7.64204 8.41532 8.41534C7.64203 9.18863 6.59359 9.62366 5.49998 9.62499ZM5.95832 7.56249V8.47916H5.04165V7.56249H5.95832ZM7.33332 4.35416C7.33381 4.62904 7.27224 4.90048 7.1532 5.14824C7.03416 5.396 6.86072 5.61369 6.64582 5.78508C6.29866 6.05409 6.06392 6.44256 5.98719 6.87499H5.05586C5.09638 6.52163 5.20725 6.17996 5.38193 5.87013C5.5566 5.5603 5.79154 5.28858 6.0729 5.07099C6.18581 4.98063 6.27574 4.86483 6.33533 4.73306C6.39493 4.60129 6.4225 4.45728 6.4158 4.31282C6.40909 4.16835 6.3683 4.02752 6.29676 3.90184C6.22521 3.77616 6.12494 3.66918 6.00415 3.58966C5.86952 3.50166 5.71461 3.44957 5.55416 3.43834C5.39371 3.42711 5.23306 3.45711 5.08748 3.52549C4.9322 3.59992 4.80188 3.71787 4.71237 3.86498C4.62287 4.01209 4.57803 4.18204 4.58332 4.35416C4.58332 4.47572 4.53503 4.5923 4.44907 4.67825C4.36312 4.76421 4.24654 4.81249 4.12498 4.81249C4.00342 4.81249 3.88685 4.76421 3.80089 4.67825C3.71494 4.5923 3.66665 4.47572 3.66665 4.35416C3.65983 4.0019 3.75702 3.65545 3.94607 3.35814C4.13512 3.06083 4.40763 2.82586 4.72952 2.68262C5.01486 2.5551 5.32771 2.50148 5.63923 2.52672C5.95074 2.55195 6.25089 2.65522 6.51198 2.82699C6.76427 2.99401 6.9713 3.22087 7.11462 3.48734C7.25793 3.7538 7.33306 4.0516 7.33332 4.35416Z"
-                      />
-                    </svg>
-`;
+<svg class="frst-text faq" alt="faq" width="11" height="11" viewBox="0 0 11 11" xmlns="http://www.w3.org/2000/svg">
+  <path d="M5.49998 0.458328C4.50283 0.458328 3.52808 0.754017 2.69898 1.308C1.86988 1.86199 1.22368 2.64939 0.842089 3.57063C0.460497 4.49188 0.360656 5.50559 0.555189 6.48357C0.749723 7.46156 1.2299 8.3599 1.93499 9.06499C2.64008 9.77008 3.53841 10.2503 4.5164 10.4448C5.49439 10.6393 6.5081 10.5395 7.42934 10.1579C8.35059 9.77629 9.13799 9.13009 9.69198 8.30099C10.246 7.4719 10.5416 6.49714 10.5416 5.49999C10.5401 4.16335 10.0084 2.88189 9.06324 1.93674C8.11808 0.991586 6.83663 0.459905 5.49998 0.458328ZM5.49998 9.62499C4.68413 9.62499 3.88661 9.38307 3.20825 8.92981C2.5299 8.47655 2.00119 7.83231 1.68898 7.07856C1.37677 6.32482 1.29508 5.49542 1.45424 4.69525C1.61341 3.89508 2.00627 3.16007 2.58317 2.58318C3.16006 2.00629 3.89506 1.61342 4.69523 1.45426C5.49541 1.29509 6.32481 1.37678 7.07855 1.68899C7.8323 2.0012 8.47653 2.52991 8.92979 3.20827C9.38306 3.88662 9.62498 4.68415 9.62498 5.49999C9.62365 6.5936 9.18862 7.64204 8.41532 8.41534C7.64203 9.18863 6.59359 9.62366 5.49998 9.62499ZM5.95832 7.56249V8.47916H5.04165V7.56249H5.95832ZM7.33332 4.35416C7.33381 4.62904 7.27224 4.90048 7.1532 5.14824C7.03416 5.396 6.86072 5.61369 6.64582 5.78508C6.29866 6.05409 6.06392 6.44256 5.98719 6.87499H5.05586C5.09638 6.52163 5.20725 6.17996 5.38193 5.87013C5.5566 5.5603 5.79154 5.28858 6.0729 5.07099C6.18581 4.98063 6.27574 4.86483 6.33533 4.73306C6.39493 4.60129 6.4225 4.45728 6.4158 4.31282C6.40909 4.16835 6.3683 4.02752 6.29676 3.90184C6.22521 3.77616 6.12494 3.66918 6.00415 3.58966C5.86952 3.50166 5.71461 3.44957 5.55416 3.43834C5.39371 3.42711 5.23306 3.45711 5.08748 3.52549C4.9322 3.59992 4.80188 3.71787 4.71237 3.86498C4.62287 4.01209 4.57803 4.18204 4.58332 4.35416C4.58332 4.47572 4.53503 4.5923 4.44907 4.67825C4.36312 4.76421 4.24654 4.81249 4.12498 4.81249C4.00342 4.81249 3.88685 4.76421 3.80089 4.67825C3.71494 4.5923 3.66665 4.47572 3.66665 4.35416C3.65983 4.0019 3.75702 3.65545 3.94607 3.35814C4.13512 3.06083 4.40763 2.82586 4.72952 2.68262C5.01486 2.5551 5.32771 2.50148 5.63923 2.52672C5.95074 2.55195 6.25089 2.65522 6.51198 2.82699C6.76427 2.99401 6.9713 3.22087 7.11462 3.48734C7.25793 3.7538 7.33306 4.0516 7.33332 4.35416Z"/>
+</svg>`;
 
 let saveFlag = false;
 let containerFlag = false;
@@ -79,186 +69,185 @@ const drawUserData = () => {
     rng = ["Without RNG", "With RNG"];
 
   $container.innerHTML = `
-  <div class="user-data">
-    <div class="user-parameter-header">
+    <div class="user-data">
+      <div class="user-parameter-header">
         <h5>World Level</h5>
         <button class="btn-element-info" _id="World" _name="World Level">
           <img class="btn-edit-info" src="./assets/edit.svg" alt="edit"  _id="World" _name="World Level"/>
         </button>
-    </div>
-    <p class="h5-regular">${userInfo["World"]}
+      </div>
+      <p class="h5-regular">${userInfo["World"]}
         <div class="faq-container">
           ${svg}          
           <span class="tooltip">This changes the Boss, Enemies and Ley Lines drops</span>
         </div>
-        </p>
-  </div>
+      </p>
+    </div>
 
-  <div class="user-data">
-    <div class="user-parameter-header">
+    <div class="user-data">
+      <div class="user-parameter-header">
         <h5>Talents Bonus Crafting</h5>
         <button class="btn-element-info" _id="craftingTalents" _name="Talents Bonus Crafting">
           <img class="btn-edit-info" src="./assets/edit.svg" alt="edit"  _id="craftingTalents" _name="Talents Bonus Crafting"/>
         </button>
+      </div>
+      <p class="h5-regular">${optionsBonus[userInfo["craftingTalents"]]}
+        <div class="faq-container">
+          ${svg}          
+          <span class="tooltip">There are some talents which increase the chance to get more talent materials</span>
+        </div>
+      </p>
     </div>
-    <p class="h5-regular">${optionsBonus[userInfo["craftingTalents"]]}
-          <div class="faq-container">
-            ${svg}          
-            <span class="tooltip">There are some talents which increase the chance to get more talent materials</span>
-          </div>
-        </p>
-  </div>
 
-  <div class="user-data">
-    <div class="user-parameter-header">
+    <div class="user-data">
+      <div class="user-parameter-header">
         <h5>Weapon Bonus Crafting</h5>
         <button class="btn-element-info" _id="craftingWeapons" _name="Weapon Bonus Crafting">
           <img class="btn-edit-info" src="./assets/edit.svg" alt="edit"  _id="craftingWeapons" _name="Weapon Bonus Crafting"/>
         </button>
+      </div>
+      <p class="h5-regular">${optionsBonus[userInfo["craftingWeapons"]]}
+        <div class="faq-container">
+          ${svg}          
+          <span class="tooltip">There are some talents which increase the chance to get more weapon materials</span>
+        </div>
+      </p>
     </div>
-    <p class="h5-regular">${optionsBonus[userInfo["craftingWeapons"]]}
-          <div class="faq-container">
-            ${svg}          
-            <span class="tooltip">There are some talents which increase the chance to get more weapon materials</span>
-          </div>
-        </p>
-  </div>
   
-  <div class="user-data">
-    <div class="user-parameter-header">
+    <div class="user-data">
+      <div class="user-parameter-header">
         <h5>Materials Bonus Crafting</h5>
         <button class="btn-element-info" _id="craftingMaterials" _name="Materials Bonus Crafting">
           <img class="btn-edit-info" src="./assets/edit.svg" alt="edit"  _id="craftingMaterials" _name="Materials Bonus Crafting"/>
         </button>
+      </div>
+      <p class="h5-regular">${optionsBonus[userInfo["craftingMaterials"]]}
+        <div class="faq-container">
+          ${svg}          
+          <span class="tooltip">There are some talents which increase the chance to get more enemy materials</span>
+        </div>
+      </p>
     </div>
-    <p class="h5-regular">${optionsBonus[userInfo["craftingMaterials"]]}
-          <div class="faq-container">
-            ${svg}          
-            <span class="tooltip">There are some talents which increase the chance to get more enemy materials</span>
-          </div>
-        </p>
-  </div>
 
-  <div class="user-data">
-    <div class="user-parameter-header">
+    <div class="user-data">
+      <div class="user-parameter-header">
         <h5>Boss Domain</h5>
         <button class="btn-element-info" _id="dropWeeklyBoss" _name="Boss Domain">
           <img class="btn-edit-info" src="./assets/edit.svg" alt="edit"  _id="dropWeeklyBoss" _name="Boss Domain"/>
         </button>
+      </div>
+      <p class="h5-regular">${optionsDomains[userInfo["dropWeeklyBoss"]]}
+        <div class="faq-container">
+          ${svg}          
+          <span class="tooltip">This changes the Weekly Boos drops</span>
+        </div>
+      </p>
     </div>
-    <p class="h5-regular">${optionsDomains[userInfo["dropWeeklyBoss"]]}
-          <div class="faq-container">
-            ${svg}          
-            <span class="tooltip">This changes the Weekly Boos drops</span>
-          </div>
-        </p>
-  </div>
 
-  <div class="user-data">
-    <div class="user-parameter-header">
+    <div class="user-data">
+      <div class="user-parameter-header">
         <h5>Talent Domains</h5>
         <button class="btn-element-info" _id="talentDrop" _name="Talent Domains">
           <img class="btn-edit-info" src="./assets/edit.svg" alt="edit"  _id="talentDrop" _name="Talent Domains"/>
         </button>
+      </div>
+      <p class="h5-regular">${optionsDomains[userInfo["talentDrop"]]}
+        <div class="faq-container">
+          ${svg}          
+          <span class="tooltip">This changes the Domains Talent Materials drops</span>
+        </div>
+      </p>
     </div>
-    <p class="h5-regular">${optionsDomains[userInfo["talentDrop"]]}
-          <div class="faq-container">
-            ${svg}          
-            <span class="tooltip">This changes the Domains Talent Materials drops</span>
-          </div>
-        </p>
-  </div>
 
-  <div class="user-data">
-    <div class="user-parameter-header">
+    <div class="user-data">
+      <div class="user-parameter-header">
         <h5>Weapon Domains</h5>
         <button class="btn-element-info" _id="weaponDrop" _name="Weapon Domains">
           <img class="btn-edit-info" src="./assets/edit.svg" alt="edit"  _id="weaponDrop" _name="Weapon Domains"/>
         </button>
+      </div>
+      <p class="h5-regular">${optionsDomains[userInfo["weaponDrop"]]}
+        <div class="faq-container">
+          ${svg}          
+          <span class="tooltip">This changes the Domains Weapon Materials drops</span>
+        </div>
+      </p>
     </div>
-    <p class="h5-regular">${optionsDomains[userInfo["weaponDrop"]]}
-          <div class="faq-container">
-            ${svg}          
-            <span class="tooltip">This changes the Domains Weapon Materials drops</span>
-          </div>
-        </p>
-  </div>
 
-  <div class="user-data">
-    <div class="user-parameter-header">
+    <div class="user-data">
+      <div class="user-parameter-header">
         <h5>Talent Domains Resin</h5>
         <button class="btn-element-info" _id="talentResin" _name="Talent Domains Resin">
           <img class="btn-edit-info" src="./assets/edit.svg" alt="edit"  _id="talentResin" _name="Talent Domains Resin"/>
         </button>
+      </div>
+      <p class="h5-regular">${resinType[userInfo["talentResin"]]}
+        <div class="faq-container">
+          ${svg}          
+          <span class="tooltip">This will change how many times you should do a Domain Talent Materials</span>
+        </div>
+      </p>
     </div>
-    <p class="h5-regular">${resinType[userInfo["talentResin"]]}
-          <div class="faq-container">
-            ${svg}          
-            <span class="tooltip">This will change how many times you should do a Domain Talent Materials</span>
-          </div>
-        </p>
-  </div>
 
-  <div class="user-data">
-    <div class="user-parameter-header">
+    <div class="user-data">
+      <div class="user-parameter-header">
         <h5>Weapon Domains Resin</h5>
         <button class="btn-element-info" _id="weaponResin" _name="Weapon Domains Resin">
           <img class="btn-edit-info" src="./assets/edit.svg" alt="edit"  _id="weaponResin" _name="Weapon Domains Resin"/>
         </button>
+      </div>
+      <p class="h5-regular">${resinType[userInfo["weaponResin"]]}
+        <div class="faq-container">
+          ${svg}          
+          <span class="tooltip">This will change how many times you should do a Domain Weapon Materials</span>
+        </div>
+      </p>
     </div>
-    <p class="h5-regular">${resinType[userInfo["weaponResin"]]}
-          <div class="faq-container">
-            ${svg}          
-            <span class="tooltip">This will change how many times you should do a Domain Weapon Materials</span>
-          </div>
-        </p>
-  </div>
 
-  <div class="user-data">
-    <div class="user-parameter-header">
+    <div class="user-data">
+      <div class="user-parameter-header">
         <h5>Talent Calculations</h5>
         <button class="btn-element-info" _id="talentRNG" _name="Talent Calculations">
           <img class="btn-edit-info" src="./assets/edit.svg" alt="edit"  _id="talentRNG" _name="Talent Calculations"/>
         </button>
-    </div>
-    <p class="h5-regular">${rng[userInfo["talentRNG"]]}
-          <div class="faq-container">
-            ${svg}          
-            <span class="tooltip">Talent Materials Domains drops has RNG. This will change the approximation of how many times you should do the domain</span>
-          </div>
-        </p>
-  </div>
-
-  <div class="user-data">
-    <div class="user-parameter-header">
-      <h5>Weapon Calculations</h5>
-      <button class="btn-element-info" _id="weaponRNG" _name="Weapon Calculations">
-        <img class="btn-edit-info" src="./assets/edit.svg" alt="edit"  _id="weaponRNG" _name="Weapon Calculations"/>
-      </button>
-    </div>
-    <p class="h5-regular">${rng[userInfo["weaponRNG"]]} 
-      <div class="faq-container">
-        ${svg}          
-        <span class="tooltip">Weapon Materials Domains drops has RNG. This will change the approximation of how many times you should do the domain</span>
       </div>
-    </p>
-  </div>
-
-  <div class="user-data">
-    <div class="user-parameter-header">
-      <h5>Mora Daily Profit</h5>
-      <button class="btn-element-profit" _id="Mora" _name="Mora Daily Profit">
-        <img class="btn-edit-profit" src="./assets/edit.svg" alt="edit"  _id="Mora" _name="Mora Daily Profit"/>
-      </button>
+      <p class="h5-regular">${rng[userInfo["talentRNG"]]}
+        <div class="faq-container">
+          ${svg}          
+          <span class="tooltip">Talent Materials Domains drops has RNG. This will change the approximation of how many times you should do the domain</span>
+        </div>
+      </p>
     </div>
-    <p class="h5-regular">${userInfo["Mora"]} 
-      <div class="faq-container">
-        ${svg}          
-        <span class="tooltip">As you spend resin you earn Mora. E.g., doing domains, killing a boss</span>
+
+    <div class="user-data">
+      <div class="user-parameter-header">
+        <h5>Weapon Calculations</h5>
+        <button class="btn-element-info" _id="weaponRNG" _name="Weapon Calculations">
+          <img class="btn-edit-info" src="./assets/edit.svg" alt="edit"  _id="weaponRNG" _name="Weapon Calculations"/>
+        </button>
       </div>
-    </p>
-  </div>
-  `;
+      <p class="h5-regular">${rng[userInfo["weaponRNG"]]} 
+        <div class="faq-container">
+          ${svg}          
+          <span class="tooltip">Weapon Materials Domains drops has RNG. This will change the approximation of how many times you should do the domain</span>
+        </div>
+      </p>
+    </div>
+
+    <div class="user-data">
+      <div class="user-parameter-header">
+        <h5>Mora Daily Profit</h5>
+        <button class="btn-element-profit" _id="Mora" _name="Mora Daily Profit">
+          <img class="btn-edit-profit" src="./assets/edit.svg" alt="edit"  _id="Mora" _name="Mora Daily Profit"/>
+        </button>
+      </div>
+      <p class="h5-regular">${userInfo["Mora"]} 
+        <div class="faq-container">
+          ${svg}          
+          <span class="tooltip">As you spend resin you earn Mora. E.g., doing domains, killing a boss</span>
+        </div>
+      </p>
+    </div>`;
 };
 
 const drawUserMaterial = () => {
@@ -276,24 +265,23 @@ const drawUserMaterial = () => {
           fixedName = el.replaceAll('"', "ç");
         fragment.classList.add("element-owned-info");
         fragment.innerHTML = `
-      <section class="element-data">
-        <figure class="element-img">
-          <img src="./assets/materials/${el.replaceAll('"', "")}.webp" alt="${el}" />
-        </figure>
-        <section class="element-props">
-          <h5 class="frst-text">${el}</h5>
-          <div class="element-days">
-            <small class="frst-text">Amount owned:</small>
-          </div>
-        </section>
-      </section>
-      <section class="element-count">
-        <button class="btn-element-owned" _id="${fixedName}">
-          <img class="btn-edit-owned" src="./assets/edit.svg" alt="edit"  _id="${fixedName}"/>
-        </button>
-        <small class="frst-text">${number}</small>
-      </section>
-    `;
+          <section class="element-data">
+            <figure class="element-img">
+              <img src="./assets/materials/${el.replaceAll('"', "")}.webp" alt="${el}" />
+            </figure>
+            <section class="element-props">
+              <h5 class="frst-text">${el}</h5>
+              <div class="element-days">
+                <small class="frst-text">Amount owned:</small>
+              </div>
+            </section>
+          </section>
+          <section class="element-count">
+            <button class="btn-element-owned" _id="${fixedName}">
+              <img class="btn-edit-owned" src="./assets/edit.svg" alt="edit"  _id="${fixedName}"/>
+            </button>
+            <small class="frst-text">${number}</small>
+          </section>`;
         $container.appendChild(fragment);
       }
     }
@@ -302,18 +290,17 @@ const drawUserMaterial = () => {
   let fragment = d.createElement("div");
   fragment.classList.add("element-owned-info");
   fragment.innerHTML = `
-      <section class="element-data">
-        <figure class="element-img add-item-figure">
-          <img src="./assets/add.webp" alt="Add item" class="add-item"/>
-        </figure>
-        <section class="element-props">
-          <h5 class="frst-text">Add item</h5>
-          <div class="element-days">
-            <small class="frst-text">Press the icon.</small>
-          </div>
-        </section>
+    <section class="element-data">
+      <figure class="element-img add-item-figure">
+        <img src="./assets/add.webp" alt="Add item" class="add-item"/>
+      </figure>
+      <section class="element-props">
+        <h5 class="frst-text">Add item</h5>
+        <div class="element-days">
+          <small class="frst-text">Press the icon.</small>
+        </div>
       </section>
-    `;
+    </section>`;
   $container.appendChild(fragment);
 };
 
@@ -323,16 +310,16 @@ const drawModalProfit = (id) => {
   let number = $userInfo[id];
 
   $modal.innerHTML = `
-  <div class="modal-info bg-trd">
-  <div class="edit-owned-header">
-  <figure class="element-img">
+    <div class="modal-info bg-trd">
+      <div class="edit-owned-header">
+        <figure class="element-img">
           <img src="./assets/materials/${id}.webp" alt="${id}" />
         </figure>
-      <p class="info-title scnd-text">${id}</p>
-  </div>
-  <div class="number-pick-container">
-  <input type="number" id="number-picker" name="number-picker" min="0" class="number-picker frst-text" step="1" pattern="\d*" value="${number}">
-  </div>
+        <p class="info-title scnd-text">${id}</p>
+      </div>
+      <div class="number-pick-container">
+        <input type="number" id="number-picker" name="number-picker" min="0" class="number-picker frst-text" step="1" pattern="\d*" value="${number}">
+      </div>
       <div class="info-form">
         <div class="btn-modal-info">
           <button class="btn-bordered" id="cancel-btn">Cancel</button>
@@ -378,16 +365,16 @@ const drawModalElement = (id) => {
   let number = $userMaterials[ogName];
 
   $modal.innerHTML = `
-  <div class="modal-info bg-trd">
-  <div class="edit-owned-header">
-  <figure class="element-img">
+    <div class="modal-info bg-trd">
+      <div class="edit-owned-header">
+        <figure class="element-img">
           <img src="./assets/materials/${fixedName}.webp" alt="${ogName}" />
         </figure>
-      <p class="info-title scnd-text">${ogName}</p>
-  </div>
-  <div class="number-pick-container">
-  <input type="number" id="number-picker" name="number-picker" min="0" class="number-picker frst-text" step="1" pattern="\d*" value="${number}">
-  </div>
+        <p class="info-title scnd-text">${ogName}</p>
+      </div>
+      <div class="number-pick-container">
+        <input type="number" id="number-picker" name="number-picker" min="0" class="number-picker frst-text" step="1" pattern="\d*" value="${number}">
+      </div>
       <div class="info-form">
         <div class="btn-modal-info">
           <button class="btn-bordered" id="cancel-btn">Cancel</button>
@@ -435,60 +422,55 @@ const drawModalInfo = (id, name) => {
 
   if (id === "World")
     options = `
-    <option value="0">0</option>
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-    <option value="5">5</option>
-    <option value="6">6</option>
-    <option value="7">7</option>
-    <option value="8">8</option>
-    <option value="9">9</option>
-    `;
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>`;
 
   if (id === "dropWeeklyBoss" || id === "talentDrop" || id === "weaponDrop")
     options = `
-    <option value="0">I</option>
-    <option value="1">II</option>
-    <option value="2">III</option>
-    <option value="3">IV</option>
-    `;
+      <option value="0">I</option>
+      <option value="1">II</option>
+      <option value="2">III</option>
+      <option value="3">IV</option>`;
 
   if (id === "craftingTalents" || id === "craftingWeapons" || id === "craftingMaterials")
     options = `
-    <option value="0">No</option>
-    <option value="1">10% talent</option>
-    <option value="2">25% talent</option>
-    `;
+      <option value="0">No</option>
+      <option value="1">10% talent</option>
+      <option value="2">25% talent</option>`;
 
   if (id === "talentResin" || id === "weaponResin") {
     options = `
-    <option value="0">Original</option>
-    <option value="1">Condensed</option>
-    `;
+      <option value="0">Original</option>
+      <option value="1">Condensed</option>`;
   }
 
   if (id === "talentRNG" || id === "weaponRNG") {
     options = `
-    <option value="0">Without RNG</option>
-    <option value="1">With RNG</option>
-    `;
+      <option value="0">Without RNG</option>
+      <option value="1">With RNG</option>`;
   }
 
   $modal.innerHTML = `
-  <div class="modal-info bg-trd">
-  <div class="edit-owned-header">
-  <figure class="element-img">
+    <div class="modal-info bg-trd">
+      <div class="edit-owned-header">
+        <figure class="element-img">
           <img src="./assets/materials/${name}.webp" alt="${name}" />
         </figure>
-      <p class="info-title scnd-text">${name}</p>
-  </div>
-  <div class="number-pick-container">
-  <select class="info-options frst-text bg-trd">
-    ${options}
-  </select>
-  </div>
+        <p class="info-title scnd-text">${name}</p>
+      </div>
+      <div class="number-pick-container">
+        <select class="info-options frst-text bg-trd">
+          ${options}
+        </select>
+      </div>
       <div class="info-form">
         <div class="btn-modal-info">
           <button class="btn-bordered" id="cancel-btn">Cancel</button>
@@ -561,8 +543,7 @@ const getListElements = () => {
           <img class="btn-edit-owned" src="./assets/edit.svg" alt="edit" _id="${fixedName}"/>
         </button>
         <small class="frst-text" _name="${tempName}"></small>
-      </section>
-  `;
+      </section>`;
 
     $itemsContainer.appendChild(fragment);
   });

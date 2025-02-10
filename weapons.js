@@ -120,21 +120,22 @@ const getLevels = (weaponId) => {
     $labels[0].parentNode.style.justifyContent = "center";
     $labels[0].parentNode.style.gap = "1rem";
 
-    $levelContainer.innerHTML = `<select class="nmb-list frst-text" id="first-selection">
-              <option value="1">1</option>
-              <option value="2">20</option>
-              <option value="3">40</option>
-              <option value="4">50</option>
-              <option value="5">60</option>
-            </select>
-            <div class="scnd-text">→</div>
-            <select class="nmb-list frst-text" id="second-selection">
-              <option value="2">20</option>
-              <option value="3">40</option>
-              <option value="4">50</option>
-              <option value="5">60</option>
-              <option value="6">70</option>
-            </select>`;
+    $levelContainer.innerHTML = `
+      <select class="nmb-list frst-text" id="first-selection">
+        <option value="1">1</option>
+        <option value="2">20</option>
+        <option value="3">40</option>
+        <option value="4">50</option>
+        <option value="5">60</option>
+      </select>
+      <div class="scnd-text">→</div>
+      <select class="nmb-list frst-text" id="second-selection">
+        <option value="2">20</option>
+        <option value="3">40</option>
+        <option value="4">50</option>
+        <option value="5">60</option>
+        <option value="6">70</option>
+      </select>`;
   } else {
     $labels[5].style.display = "block";
     $labels[4].style.display = "block";
@@ -142,25 +143,26 @@ const getLevels = (weaponId) => {
     $labels[0].parentNode.style.justifyContent = "space-between";
     $labels[0].parentNode.style.gap = "0";
 
-    $levelContainer.innerHTML = `<select class="nmb-list frst-text" id="first-selection">
-              <option value="1">1</option>
-              <option value="2">20</option>
-              <option value="3">40</option>
-              <option value="4">50</option>
-              <option value="5">60</option>
-              <option value="6">70</option>
-              <option value="7">80</option>
-            </select>
-            <div class="scnd-text">→</div>
-            <select class="nmb-list frst-text" id="second-selection">
-              <option value="2">20</option>
-              <option value="3">40</option>
-              <option value="4">50</option>
-              <option value="5">60</option>
-              <option value="6">70</option>
-              <option value="7">80</option>
-              <option value="8">90</option>
-            </select>`;
+    $levelContainer.innerHTML = `
+      <select class="nmb-list frst-text" id="first-selection">
+        <option value="1">1</option>
+        <option value="2">20</option>
+        <option value="3">40</option>
+        <option value="4">50</option>
+        <option value="5">60</option>
+        <option value="6">70</option>
+        <option value="7">80</option>
+      </select>
+      <div class="scnd-text">→</div>
+      <select class="nmb-list frst-text" id="second-selection">
+        <option value="2">20</option>
+        <option value="3">40</option>
+        <option value="4">50</option>
+        <option value="5">60</option>
+        <option value="6">70</option>
+        <option value="7">80</option>
+        <option value="8">90</option>
+      </select>`;
   }
 
   saveFlag = true;
@@ -200,33 +202,34 @@ const getLevels = (weaponId) => {
 };
 
 const drawModal = () => {
-  $modal.innerHTML = `<div class="modal-weapon bg-trd">
-        <div class="level-info">
-          <div class="ascension-selector">
-            <input type="checkbox" name="ascension-selected" id="ascension-1" />
-            <label for="ascension-1">✦</label>
-            <input type="checkbox" name="ascension-selected" id="ascension-2" />
-            <label for="ascension-2">✦</label>
-            <input type="checkbox" name="ascension-selected" id="ascension-3" />
-            <label for="ascension-3">✦</label>
-            <input type="checkbox" name="ascension-selected" id="ascension-4" />
-            <label for="ascension-4">✦</label>
-            <input type="checkbox" name="ascension-selected" id="ascension-5" />
-            <label for="ascension-5">✦</label>
-            <input type="checkbox" name="ascension-selected" id="ascension-6" />
-            <label for="ascension-6">✦</label>
-          </div>
-          <div class="level-content bg-snd"></div>
+  $modal.innerHTML = `
+    <div class="modal-weapon bg-trd">
+      <div class="level-info">
+        <div class="ascension-selector">
+          <input type="checkbox" name="ascension-selected" id="ascension-1" />
+          <label for="ascension-1">✦</label>
+          <input type="checkbox" name="ascension-selected" id="ascension-2" />
+          <label for="ascension-2">✦</label>
+          <input type="checkbox" name="ascension-selected" id="ascension-3" />
+          <label for="ascension-3">✦</label>
+          <input type="checkbox" name="ascension-selected" id="ascension-4" />
+          <label for="ascension-4">✦</label>
+          <input type="checkbox" name="ascension-selected" id="ascension-5" />
+          <label for="ascension-5">✦</label>
+          <input type="checkbox" name="ascension-selected" id="ascension-6" />
+          <label for="ascension-6">✦</label>
         </div>
-        <div class="weapon-form">
-          <div class="btn-modal-lvl">
-            <button class="btn-bordered" id="cancel-btn">Cancel</button>
-          </div>
-          <div class="btn-modal-lvl">
-            <button class="btn bg-snd-dark" id="save-btn">Save</button>
-          </div>
+        <div class="level-content bg-snd"></div>
+      </div>
+      <div class="weapon-form">
+        <div class="btn-modal-lvl">
+          <button class="btn-bordered" id="cancel-btn">Cancel</button>
         </div>
-      </div>`;
+        <div class="btn-modal-lvl">
+          <button class="btn bg-snd-dark" id="save-btn">Save</button>
+        </div>
+      </div>
+    </div>`;
 };
 
 const deleteConfirmation = (id, name) => {
@@ -241,8 +244,7 @@ const deleteConfirmation = (id, name) => {
           <button class="btn bg-snd-dark" id="confirm-btn" _id="${id}">Delete</button>
         </div>
       </div>
-    </div>
-  `;
+    </div>`;
   $modal.style.visibility = "visible";
   $modal.style.opacity = "1";
 

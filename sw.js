@@ -14,6 +14,15 @@ const CACHE_NAME = "v1_cache_genshin_calculator",
     "./weapons.js",
   ];
 
+// self.addEventListener("install", (e) => {
+//   e.waitUntil(
+//     (async () => {
+//       const cache = await caches.open(CACHE_NAME);
+//       await cache.addAll(urlsToCache);
+//     })()
+//   );
+// });
+
 self.addEventListener("install", (e) => {
   e.waitUntil(
     caches
@@ -21,11 +30,13 @@ self.addEventListener("install", (e) => {
       .then((cache) => {
         return cache.addAll(urlsToCache).then(() => self.skipWaiting());
       })
-      .catch((err) => console.log("Fail to cache regist", err))
+      .catch((err) => console.log("Falló registro de cache", err))
   );
 });
 
 self.addEventListener("activate", (e) => {
+  const cacheWhitelist = [CACHE_NAME];
+
   e.waitUntil(
     caches
       .keys()
