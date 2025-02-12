@@ -1,0 +1,36 @@
+.bg-fst {
+  background-color: var(--first-light-color);
+}
+
+.bg-snd {
+  background-color: var(--first-dark-color);
+}
+
+.bg-trd {
+  background-color: var(--second-dark-color);
+}
+
+.bg-snd-dark {
+  background-color: var(--third-light-color);
+}
+
+.frst-text {
+  color: var(--first-text-light-color);
+}
+
+.scnd-text {
+  color: var(--second-text-light-color);
+}
+
+.gradiant-right,
+.gradiant-left {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, var(--first-dark-color) 100%);
+}
+
+.gradiant-left {
+  background: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, var(--first-dark-color) 100%);
+}
+
+.faq {
+  fill: var(--first-text-light-color);
+}

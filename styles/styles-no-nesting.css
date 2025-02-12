@@ -293,7 +293,8 @@
 }
 
 /* level form */
-.custom-checkbox input[type="checkbox"] {
+.custom-checkbox input[type="checkbox"],
+.custom-checkbox input[type="radio"] {
   position: absolute;
   opacity: 0;
   margin: 0;
@@ -379,4 +380,13 @@
   .faq-container:hover .tooltip {
     transform: translateY(1rem);
   }
+}
+
+/* Setting section */
+
+.simple-form .custom-checkbox {
+  width: calc(33.3333333333%);
+}
+.simple-form label {
+  font-size: 1rem;
 }

@@ -1,4 +1,9 @@
-const d = document;
+const d = document,
+  $importFile = d.getElementById("import"),
+  $exportBtn = d.getElementById("export-btn"),
+  $importBtn = d.getElementById("import-btn");
+
+let theme = localStorage.getItem("theme");
 
 const exportFile = () => {
   const data = {};
@@ -75,11 +80,44 @@ const handleFile = (input) => {
   }
 };
 
-const $importFile = d.getElementById("import");
 $importFile.addEventListener("change", () => handleFile($importFile));
-
-const $exportBtn = d.getElementById("export-btn");
 $exportBtn.addEventListener("click", exportFile);
-
-const $importBtn = d.getElementById("import-btn");
 $importBtn.addEventListener("click", () => $importFile.click());
+
+if (theme === "auto") d.querySelector("#radio-auto").checked = "true";
+if (theme === "light") d.querySelector("#radio-light").checked = "true";
+if (theme === "dark") d.querySelector("#radio-dark").checked = "true";
+
+d.addEventListener("change", (e) => {
+  let $id = e.target.id;
+
+  if ($id === "radio-light") {
+    if (d.querySelector(".dark-theme")) d.querySelector(".dark-theme").remove();
+    if (d.querySelector(".auto-theme")) d.querySelector(".auto-theme").remove();
+    localStorage.setItem("theme", "light");
+  }
+
+  if ($id === "radio-auto") {
+    let theme = d.createElement("link");
+    theme.href = "./styles/auto-theme.css";
+    theme.classList.add("auto-theme");
+    theme.rel = "stylesheet";
+
+    if (d.querySelector(".dark-theme")) d.querySelector(".dark-theme").remove();
+    localStorage.setItem("theme", "auto");
+
+    d.head.appendChild(theme);
+  }
+
+  if ($id === "radio-dark") {
+    let theme = d.createElement("link");
+    theme.href = "./styles/dark-theme.css";
+    theme.classList.add("dark-theme");
+    theme.rel = "stylesheet";
+
+    if (d.querySelector(".auto-theme")) d.querySelector(".auto-theme").remove();
+    localStorage.setItem("theme", "dark");
+
+    d.head.appendChild(theme);
+  }
+});
