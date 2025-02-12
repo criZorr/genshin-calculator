@@ -92,8 +92,8 @@ d.addEventListener("change", (e) => {
   let $id = e.target.id;
 
   if ($id === "radio-light") {
-    if (d.querySelector(".dark-theme")) d.querySelector(".dark-theme").remove();
     if (d.querySelector(".auto-theme")) d.querySelector(".auto-theme").remove();
+    if (d.querySelector(".dark-theme")) d.querySelector(".dark-theme").remove();
     localStorage.setItem("theme", "light");
   }
 

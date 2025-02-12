@@ -64,6 +64,7 @@ html {
   scrollbar-width: none;
   scrollbar-color: var(--first-light-color) rgba(0, 0, 0, 0);
   -webkit-tap-highlight-color: transparent;
+  background-color: var(--second-dark-color);
 }
 
 *,
