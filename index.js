@@ -42,4 +42,14 @@
 
     d.head.appendChild($supportNoNesting);
   }
+
+  window.addEventListener("load", () => {
+    d.querySelector("body").style.visibility = "visible";
+  });
+
+  // d.onreadystatechange = function () {
+  //   if (d.readyState == "complete") {
+  //     d.querySelector("body").style.visibility = "visible";
+  //   }
+  // };
 })();
