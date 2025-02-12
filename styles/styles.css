@@ -1398,3 +1398,52 @@ small {
   visibility: hidden;
   opacity: 0;
 }
+
+/* *********** Loader *********** */
+.loader-container {
+  visibility: visible;
+  position: absolute;
+  top: calc(50vh - 1.5625rem);
+  left: calc(50vw - 1.5625rem);
+  transform: scale(1.5);
+}
+
+.loader-container img {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.55rem;
+  width: 2rem;
+  height: auto;
+}
+
+/* Thanks for the loader, css-loaders.com */
+
+.loader {
+  width: 3.125rem;
+  aspect-ratio: 1;
+  box-shadow: 0 0 0 0.1875rem var(--first-light-color) inset;
+  border-radius: 50%;
+  position: relative;
+  animation: l11 7s infinite;
+}
+.loader:before,
+.loader:after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 0.1875rem);
+  left: calc(50% - 0.78125rem);
+  box-shadow: inherit;
+  width: 1.5625rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  transform-origin: 50% -1.75rem;
+  animation: l11 1.5s infinite;
+}
+.loader:after {
+  animation-delay: -0.75s;
+}
+@keyframes l11 {
+  100% {
+    transform: rotate(360deg);
+  }
+}
