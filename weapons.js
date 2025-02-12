@@ -222,10 +222,10 @@ const drawModal = () => {
         <div class="level-content bg-snd"></div>
       </div>
       <div class="weapon-form">
-        <div class="btn-modal-lvl">
+        <div class="btn-modal">
           <button class="btn-bordered" id="cancel-btn">Cancel</button>
         </div>
-        <div class="btn-modal-lvl">
+        <div class="btn-modal">
           <button class="btn bg-snd-dark" id="save-btn">Save</button>
         </div>
       </div>
@@ -237,10 +237,10 @@ const deleteConfirmation = (id, name) => {
     <div class="modal-info bg-trd">
       <p class="info-title scnd-text">Do you want to delete ${name}?</p>
       <div class="info-form">
-        <div class="btn-modal-info">
+        <div class="btn-modal">
           <button class="btn-bordered" id="cancel-btn">Cancel</button>
         </div>
-        <div class="btn-modal-info">
+        <div class="btn-modal">
           <button class="btn bg-snd-dark" id="confirm-btn" _id="${id}">Delete</button>
         </div>
       </div>

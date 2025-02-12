@@ -321,10 +321,10 @@ const drawModalProfit = (id) => {
         <input type="number" id="number-picker" name="number-picker" min="0" class="number-picker frst-text" step="1" pattern="\d*" value="${number}">
       </div>
       <div class="info-form">
-        <div class="btn-modal-info">
+        <div class="btn-modal">
           <button class="btn-bordered" id="cancel-btn">Cancel</button>
         </div>
-        <div class="btn-modal-info">
+        <div class="btn-modal">
           <button class="btn bg-snd-dark" id="confirm-btn" _id="">Save</button>
         </div>
       </div>
@@ -376,10 +376,10 @@ const drawModalElement = (id) => {
         <input type="number" id="number-picker" name="number-picker" min="0" class="number-picker frst-text" step="1" pattern="\d*" value="${number}">
       </div>
       <div class="info-form">
-        <div class="btn-modal-info">
+        <div class="btn-modal">
           <button class="btn-bordered" id="cancel-btn">Cancel</button>
         </div>
-        <div class="btn-modal-info">
+        <div class="btn-modal">
           <button class="btn bg-snd-dark" id="confirm-btn" _id="">Save</button>
         </div>
       </div>
@@ -472,10 +472,10 @@ const drawModalInfo = (id, name) => {
         </select>
       </div>
       <div class="info-form">
-        <div class="btn-modal-info">
+        <div class="btn-modal">
           <button class="btn-bordered" id="cancel-btn">Cancel</button>
         </div>
-        <div class="btn-modal-info">
+        <div class="btn-modal">
           <button class="btn bg-snd-dark" id="confirm-btn" _id="">Save</button>
         </div>
       </div>
