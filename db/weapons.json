@@ -2950,5 +2950,31 @@
       "Delirious Demeanor of the Sacred Lord",
       "Delirious Divinity of the Sacred Lord"
     ]
+  },
+  "205": {
+    "name": "Sunny Morning Sleep-In",
+    "quality": "5-stars",
+    "weapon": "catalyst",
+    "enemy-material": ["Spectral Husk", "Spectral Heart", "Spectral Nucleus"],
+    "special-enemy-material": ["Ignited Stone", "Ignited Seed of Life", "Ignited Seeing Eye"],
+    "domain-material": [
+      "Narukami's Wisdom",
+      "Narukami's Joy",
+      "Narukami's Affection",
+      "Narukami's Valor"
+    ]
+  },
+  "206": {
+    "name": "Tamayuratei no Ohanashi",
+    "quality": "4-stars",
+    "weapon": "polearm",
+    "enemy-material": ["Old Handguard", "Kageuchi Handguard", "Famed Handguard"],
+    "special-enemy-material": ["Refractive Bud", "Bewildering Broadleaf", "Illusory Leafcoil"],
+    "domain-material": [
+      "Mask of the Wicked Lieutenant",
+      "Mask of the Tiger's Bite",
+      "Mask of the One-Horned",
+      "Mask of the Kijin"
+    ]
   }
 }

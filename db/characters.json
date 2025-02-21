@@ -1595,5 +1595,24 @@
     "weekly-boss": "Eroded Sunfire",
     "domain-material": "Diligence",
     "talents": ["Black Pheasant Strides on Water", "Swallow-Wisp Pinion Dance", "Lustrous Moonrise"]
+  },
+  "100": {
+    "name": "Yumemizuki Mizuki",
+    "birthday": "16-03",
+    "region": "Inazuma",
+    "quality": "5-stars",
+    "element": "anemo",
+    "stone": "Vayuda Turquoise",
+    "weapon": "catalyst",
+    "specialty-material": "Sea Ganoderma",
+    "enemy-material": ["Old Handguard", "Kageuchi Handguard", "Famed Handguard"],
+    "boss-material": "Talisman of the Enigmatic Land",
+    "weekly-boss": "Fading Candle",
+    "domain-material": "Transience",
+    "talents": [
+      "Pure Heart, Pure Dreams",
+      "Aisa Utamakura Pilgrimage",
+      "Anraku Secret Spring Therapy"
+    ]
   }
 }
