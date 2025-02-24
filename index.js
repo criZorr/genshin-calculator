@@ -32,6 +32,6 @@
       d.querySelector(".loader-container").style.visibility = "hidden";
       d.querySelector(".loader-container").style.display = "none";
       d.querySelector("body").style.visibility = "visible";
-    }, 300);
+    }, 500);
   });
 })();
