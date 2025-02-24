@@ -207,6 +207,17 @@
   background: linear-gradient(180deg, var(--colab-dark-color) 0%, var(--colab-light-color) 100%);
 }
 
+.card .birth {
+  background: linear-gradient(
+    135deg,
+    #b5b5dd 0%,
+    #c5e9f0 25%,
+    #f7f4c8 50%,
+    #f7cabc 75%,
+    #e8acca 100%
+  );
+}
+
 .card:hover {
   cursor: pointer;
 }

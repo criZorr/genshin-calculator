@@ -521,6 +521,17 @@ small {
     background: linear-gradient(180deg, var(--colab-dark-color) 0%, var(--colab-light-color) 100%);
   }
 
+  & .birth {
+    background: linear-gradient(
+      135deg,
+      #b5b5dd 0%,
+      #c5e9f0 25%,
+      #f7f4c8 50%,
+      #f7cabc 75%,
+      #e8acca 100%
+    );
+  }
+
   &:hover {
     cursor: pointer;
   }
@@ -1397,6 +1408,11 @@ small {
   display: none;
   visibility: hidden;
   opacity: 0;
+}
+
+/* ********** Confetti Card ********** */
+.confeti {
+  position: absolute;
 }
 
 /* *********** Loader *********** */
