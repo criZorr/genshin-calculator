@@ -21,7 +21,11 @@ export default function getCards(data, $container, path) {
     today += "-";
     today += String(date.getMonth() + 1).padStart(2, "0");
 
-    if (today === data[i].birthday) {
+    let birthday = data[i].birthday;
+
+    if (birthday === "29-02") birthday = "28-02";
+
+    if (today === birthday) {
       cardBg.classList.add("birth");
       cardBg.style.position = "relative";
       cardBg.innerHTML = `
