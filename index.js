@@ -28,10 +28,11 @@
   }
 
   window.addEventListener("load", () => {
+    d.querySelector("body").classList.add("bg-trd");
     setTimeout(() => {
       d.querySelector(".loader-container").style.visibility = "hidden";
       d.querySelector(".loader-container").style.display = "none";
-      d.querySelector("body").style.visibility = "visible";
+      d.querySelector("main").style.visibility = "visible";
     }, 500);
   });
 })();
