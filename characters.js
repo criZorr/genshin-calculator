@@ -92,7 +92,10 @@ const isChecked = (el, info) => {
 };
 
 const createObject = (data, id) => {
-  let obj = {};
+  let obj = {},
+    enemyFst = data[5][0] + data[6][0],
+    enemySnd = data[5][1] + data[6][1],
+    enemyTrd = data[5][2] + data[6][2];
 
   obj["Mora"] = data[0];
   if (!(data[1][0] === 0)) obj["Wanderer's Advice"] = data[1][0];
@@ -104,33 +107,38 @@ const createObject = (data, id) => {
   if (!(data[4][1] === 0)) obj[`${charactersData[id].stone} Fragment`] = data[4][1];
   if (!(data[4][2] === 0)) obj[`${charactersData[id].stone} Chunk`] = data[4][2];
   if (!(data[4][3] === 0)) obj[`${charactersData[id].stone} Gemstone`] = data[4][3];
-  if (!(data[5][0] === 0)) obj[charactersData[id]["enemy-material"][0]] = data[5][0];
-  if (!(data[5][1] === 0)) obj[charactersData[id]["enemy-material"][1]] = data[5][1];
-  if (!(data[5][2] === 0)) obj[charactersData[id]["enemy-material"][2]] = data[5][2];
-  if (!(data[7] === 0)) obj[charactersData[id]["weekly-boss"]] = data[7];
-  if (!(data[8] === 0)) obj["Crown of Insight"] = data[8];
-
+  if (!(data[8] === 0)) obj[charactersData[id]["weekly-boss"]] = data[8];
+  if (!(data[9] === 0)) obj["Crown of Insight"] = data[9];
   if (charactersData[id]["name"].includes("Traveler")) {
-    if (!(data[6][0] === 0))
-      obj[`Teachings of ${charactersData[id]["domain-material"][0]}`] = data[6][0];
-    if (!(data[6][1][0] === 0))
-      obj[`Guide to ${charactersData[id]["domain-material"][1]}`] = data[6][1][0];
-    if (!(data[6][1][1] === 0))
-      obj[`Guide to ${charactersData[id]["domain-material"][2]}`] = data[6][1][1];
-    if (!(data[6][1][2] === 0))
-      obj[`Guide to ${charactersData[id]["domain-material"][0]}`] = data[6][1][2];
-    if (!(data[6][2][0] === 0))
-      obj[`Philosophies of ${charactersData[id]["domain-material"][2]}`] = data[6][2][0];
-    if (!(data[6][2][1] === 0))
-      obj[`Philosophies of ${charactersData[id]["domain-material"][0]}`] = data[6][2][1];
-    if (!(data[6][2][2] === 0))
-      obj[`Philosophies of ${charactersData[id]["domain-material"][1]}`] = data[6][2][2];
+    if (!(data[5][0] === 0)) obj[charactersData[id]["enemy-material"][0]] = data[5][0];
+    if (!(data[5][1] === 0)) obj[charactersData[id]["enemy-material"][1]] = data[5][1];
+    if (!(data[5][2] === 0)) obj[charactersData[id]["enemy-material"][2]] = data[5][2];
+    if (!(data[6][0] === 0)) obj[charactersData[id]["second-enemy"][0]] = data[6][0];
+    if (!(data[6][1] === 0)) obj[charactersData[id]["second-enemy"][1]] = data[6][1];
+    if (!(data[6][2] === 0)) obj[charactersData[id]["second-enemy"][2]] = data[6][2];
+    if (!(data[7][0] === 0))
+      obj[`Teachings of ${charactersData[id]["domain-material"][0]}`] = data[7][0];
+    if (!(data[7][1][0] === 0))
+      obj[`Guide to ${charactersData[id]["domain-material"][1]}`] = data[7][1][0];
+    if (!(data[7][1][1] === 0))
+      obj[`Guide to ${charactersData[id]["domain-material"][2]}`] = data[7][1][1];
+    if (!(data[7][1][2] === 0))
+      obj[`Guide to ${charactersData[id]["domain-material"][0]}`] = data[7][1][2];
+    if (!(data[7][2][0] === 0))
+      obj[`Philosophies of ${charactersData[id]["domain-material"][2]}`] = data[7][2][0];
+    if (!(data[7][2][1] === 0))
+      obj[`Philosophies of ${charactersData[id]["domain-material"][0]}`] = data[7][2][1];
+    if (!(data[7][2][2] === 0))
+      obj[`Philosophies of ${charactersData[id]["domain-material"][1]}`] = data[7][2][2];
   } else {
-    if (!(data[6][0] === 0))
-      obj[`Teachings of ${charactersData[id]["domain-material"]}`] = data[6][0];
-    if (!(data[6][1] === 0)) obj[`Guide to ${charactersData[id]["domain-material"]}`] = data[6][1];
-    if (!(data[6][2] === 0))
-      obj[`Philosophies of ${charactersData[id]["domain-material"]}`] = data[6][2];
+    if (!(enemyFst === 0)) obj[charactersData[id]["enemy-material"][0]] = enemyFst;
+    if (!(enemySnd === 0)) obj[charactersData[id]["enemy-material"][1]] = enemySnd;
+    if (!(enemyTrd === 0)) obj[charactersData[id]["enemy-material"][2]] = enemyTrd;
+    if (!(data[7][0] === 0))
+      obj[`Teachings of ${charactersData[id]["domain-material"]}`] = data[7][0];
+    if (!(data[7][1] === 0)) obj[`Guide to ${charactersData[id]["domain-material"]}`] = data[7][1];
+    if (!(data[7][2] === 0))
+      obj[`Philosophies of ${charactersData[id]["domain-material"]}`] = data[7][2];
   }
 
   return obj;

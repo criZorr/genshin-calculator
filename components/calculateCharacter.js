@@ -247,11 +247,8 @@ export default function calculateCharacter(
   }
 
   let totalMora = talentMora + levelMora + ascensionMora,
-    totalEnemy = [
-      fstTalentEnemy + fstAscensionEnemy,
-      sndTalentEnemy + sndAscensionEnemy,
-      trdTalentEnemy + trdAscensionEnemy,
-    ],
+    totalTalentEnemy = [fstTalentEnemy, sndTalentEnemy, trdTalentEnemy],
+    totalAscensionEnemy = [fstAscensionEnemy, sndAscensionEnemy, trdAscensionEnemy],
     totalStone = [fstAscensionStone, sndAscensionStone, trdAscensionStone, fthAscensionStone],
     totalTalentBook = [fstTalentBook, sndTalentBook, trdTalentBook],
     totalLevelBook = [fstLevelBook, sndLevelBook, trdLevelBook];
@@ -261,7 +258,8 @@ export default function calculateCharacter(
     specialty,
     ascensionBoss,
     totalStone,
-    totalEnemy,
+    totalAscensionEnemy,
+    totalTalentEnemy,
     totalTalentBook,
     talentBoss,
     talentCrow,
