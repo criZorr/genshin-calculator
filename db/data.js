@@ -338,7 +338,7 @@ export default function calculateData(parameter) {
     "Saurian Claw Succulent": 90,
     "Glowing Hornshroom": 72,
     "Withering Purpurbloom": 80,
-    "Skysplit Gembloom": 49,
+    "Skysplit Gembloom": 75,
     Dracolite: 62,
   };
 
