@@ -283,6 +283,9 @@ export default function calculateData(parameter) {
     "Refractive Bud",
     "Bewildering Broadleaf",
     "Illusory Leafcoil",
+    "Cold-Cracked Shellshard",
+    "Warm Back-Shell",
+    "Blazing Prismshell",
   ];
 
   const specialty = {
@@ -335,6 +338,8 @@ export default function calculateData(parameter) {
     "Saurian Claw Succulent": 90,
     "Glowing Hornshroom": 72,
     "Withering Purpurbloom": 80,
+    "Skysplit Gembloom": 49,
+    Dracolite: 62,
   };
 
   const boss = [
@@ -374,6 +379,7 @@ export default function calculateData(parameter) {
     "Gold-Inscribed Secret Source Core",
     "Ensnaring Gaze",
     "Talisman of the Enigmatic Land",
+    "Sparkless Statue Core",
   ];
 
   const weekBoss = [
@@ -469,7 +475,7 @@ export default function calculateData(parameter) {
     ],
     13: [
       ["Juvenile Fang", "Seasoned Fang", "Tyrant's Fang"],
-      [0.4338, 0.4623, 0.5053, 1.0082, 1.1107, 1.6155, 1.7859, 1.888, 1.9223, 1.9906, 717],
+      [0.4338, 0.4623, 0.5053, 1.0082, 1.1107, 1.6155, 1.7859, 1.888, 1.9223, 1.9906, 911],
     ],
     14: [
       [
@@ -477,7 +483,7 @@ export default function calculateData(parameter) {
         "Warrior's Metal Whistle",
         "Saurian-Crowned Warrior's Golden Whistle",
       ],
-      [0.6445, 0.687, 0.7508, 1.5043, 1.6575, 2.4132, 2.6684, 2.8207, 2.8722, 2.9745, 326],
+      [0.6445, 0.687, 0.7508, 1.5043, 1.6575, 2.4132, 2.6684, 2.8207, 2.8722, 2.9745, 366],
     ],
   };
 
@@ -568,19 +574,23 @@ export default function calculateData(parameter) {
     ],
     20: [
       ["Shard of a Shattered Will", "Locus of a Clear Will", "Sigil of a Striding Will"],
-      [2.6854, 2.8623, 3.1282, 6.2671, 6.9053, 10.0566, 11.1191, 11.7559, 11.9687, 12.3939, 22],
+      [2.6854, 2.8623, 3.1282, 6.2671, 6.9053, 10.0566, 11.1191, 11.7559, 11.9687, 12.3939, 24],
     ],
     21: [
       ["Ignited Stone", "Ignited Seed of Life", "Ignited Seeing Eye"],
-      [2.6854, 2.8623, 3.1282, 6.2671, 6.9053, 10.0566, 11.1191, 11.7559, 11.9687, 12.3939, 14],
+      [2.6854, 2.8623, 3.1282, 6.2671, 6.9053, 10.0566, 11.1191, 11.7559, 11.9687, 12.3939, 15],
     ],
     22: [
       ["Axis of the Secret Source", "Sheath of the Secret Source", "Heart of the Secret Source"],
-      [2.6854, 2.8623, 3.1282, 6.2671, 6.9053, 10.0566, 11.1191, 11.7559, 11.9687, 12.3939, 16],
+      [2.6854, 2.8623, 3.1282, 6.2671, 6.9053, 10.0566, 11.1191, 11.7559, 11.9687, 12.3939, 31],
     ],
     23: [
       ["Refractive Bud", "Bewildering Broadleaf", "Illusory Leafcoil"],
-      [2.6854, 2.8623, 3.1282, 6.2671, 6.9053, 10.0566, 11.1191, 11.7559, 11.9687, 12.3939, 43],
+      [2.6854, 2.8623, 3.1282, 6.2671, 6.9053, 10.0566, 11.1191, 11.7559, 11.9687, 12.3939, 49],
+    ],
+    24: [
+      ["Cold-Cracked Shellshard", "Warm Back-Shell", "Blazing Prismshell"],
+      [2.6854, 2.8623, 3.1282, 6.2671, 6.9053, 10.0566, 11.1191, 11.7559, 11.9687, 12.3939, 11],
     ],
   };
 

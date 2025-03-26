@@ -2976,5 +2976,18 @@
       "Mask of the One-Horned",
       "Mask of the Kijin"
     ]
+  },
+  "207": {
+    "name": "Vivid Notions",
+    "quality": "5-stars",
+    "weapon": "catalyst",
+    "enemy-material": ["Juvenile Fang", "Seasoned Fang", "Tyrant's Fang"],
+    "special-enemy-material": ["Cold-Cracked Shellshard", "Warm Back-Shell", "Blazing Prismshell"],
+    "domain-material": [
+      "Delirious Decadence of the Sacred Lord",
+      "Delirious Desolation of the Sacred Lord",
+      "Delirious Demeanor of the Sacred Lord",
+      "Delirious Divinity of the Sacred Lord"
+    ]
   }
 }

@@ -1624,5 +1624,39 @@
       "Aisa Utamakura Pilgrimage",
       "Anraku Secret Spring Therapy"
     ]
+  },
+  "101": {
+    "name": "Iansan",
+    "birthday": "08-08",
+    "region": "Natlan",
+    "quality": "4-stars",
+    "element": "electro",
+    "stone": "Vajrada Amethyst",
+    "weapon": "polearm",
+    "specialty-material": "Dracolite",
+    "enemy-material": [
+      "Sentry's Wooden Whistle",
+      "Warrior's Metal Whistle",
+      "Saurian-Crowned Warrior's Golden Whistle"
+    ],
+    "boss-material": "Ensnaring Gaze",
+    "weekly-boss": "Denial and Judgment",
+    "domain-material": "Contention",
+    "talents": ["Weighted Spike", "Thunderbolt Rush", "The Three Principles of Power"]
+  },
+  "102": {
+    "name": "Varesa",
+    "birthday": "15-11",
+    "region": "Natlan",
+    "quality": "5-stars",
+    "element": "electro",
+    "stone": "Vajrada Amethyst",
+    "weapon": "catalyst",
+    "specialty-material": "Skysplit Gembloom",
+    "enemy-material": ["Juvenile Fang", "Seasoned Fang", "Tyrant's Fang"],
+    "boss-material": "Sparkless Statue Core",
+    "weekly-boss": "Eroded Scale-Feather",
+    "domain-material": "Conflict",
+    "talents": ["By the Horns", "Riding the Night-Rainbow", "Guardian Vent!"]
   }
 }
