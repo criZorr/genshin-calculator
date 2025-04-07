@@ -289,7 +289,7 @@ small {
 
   @media screen and (min-width: 1024px) {
     padding: 2rem 0;
-    height: calc(100vh - 4rem - 4rem - 2rem);
+    min-height: calc(100vh - 4rem - 2rem);
   }
 }
 
