@@ -55,6 +55,7 @@ const calcTotalMaterials = () => {
   let calculated = calculateTotal(localCharacter, localWeapon);
 
   localStorage.setItem("total", JSON.stringify(calculated));
+  getTotal();
 };
 
 const drawUserData = () => {
@@ -301,6 +302,7 @@ const drawUserMaterial = () => {
       </section>
     </section>`;
   $container.appendChild(fragment);
+  calcTotalMaterials();
 };
 
 const drawModalProfit = (id) => {
@@ -345,8 +347,6 @@ const drawModalProfit = (id) => {
       $modal.innerHTML = "";
       saveFlag = false;
       drawUserMaterial();
-      calcTotalMaterials();
-      getTotal();
       drawUserData();
       drawModalPossible();
     } else {
@@ -401,8 +401,6 @@ const drawModalElement = (id) => {
         $modal.innerHTML = "";
         saveFlag = false;
         drawUserMaterial();
-        calcTotalMaterials();
-        getTotal();
         drawUserData();
         drawModalPossible();
       } else {
@@ -493,8 +491,6 @@ const drawModalInfo = (id, name) => {
     $modal.innerHTML = "";
     saveFlag = false;
     drawUserMaterial();
-    calcTotalMaterials();
-    getTotal();
     drawUserData();
     drawModalPossible();
   });
@@ -584,8 +580,6 @@ if (!localStorage.getItem("userInfo"))
   : getTotal();
 
 drawUserMaterial();
-calcTotalMaterials();
-getTotal();
 drawUserData();
 
 window.addEventListener("load", getListElements);
