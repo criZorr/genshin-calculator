@@ -18,8 +18,7 @@ let saveFlag = false;
 let containerFlag = false;
 
 const all = calculateData("all");
-let sorted = calculateData("all").sort(),
-  $itemsContainer = d.querySelector(".items-container-user"),
+let $itemsContainer = d.querySelector(".items-container-user"),
   options = "";
 
 const getTotal = () => {
@@ -516,10 +515,6 @@ const drawModalPossible = () => {
 };
 
 const getListElements = () => {
-  sorted.forEach((el) => {
-    options += `<option>${el}</option>`;
-  });
-
   all.forEach((el) => {
     let fragment = d.createElement("div"),
       tempName = el.replaceAll('"', ""),
@@ -548,8 +543,18 @@ const getListElements = () => {
     $itemsContainer.appendChild(fragment);
   });
 
+  let sorted = calculateData("all").sort();
+  sorted.forEach((el) => {
+    options += `<option>${el}</option>`;
+  });
+
   let $optionsContainer = d.querySelector(".selected-items");
   $optionsContainer.innerHTML = options;
+
+  setTimeout(() => {
+    d.querySelector(".btn-plus-container").style.visibility = "visible";
+    d.querySelector(".add-item-figure").style.visibility = "visible";
+  }, 500);
 };
 
 if (!localStorage.getItem("userMaterials")) localStorage.setItem("userMaterials", "{}");
@@ -582,7 +587,8 @@ drawUserMaterial();
 calcTotalMaterials();
 getTotal();
 drawUserData();
-getListElements();
+
+window.addEventListener("load", getListElements);
 
 d.addEventListener("click", (e) => {
   let eventId = e.target.id,

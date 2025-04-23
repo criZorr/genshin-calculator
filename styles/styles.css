@@ -1432,6 +1432,11 @@ small {
   height: auto;
 }
 
+.btn-plus-container,
+.add-item-figure {
+  visibility: hidden;
+}
+
 /* Thanks for the loader, css-loaders.com */
 
 .loader {
