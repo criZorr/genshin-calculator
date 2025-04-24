@@ -24,8 +24,8 @@ let $itemsContainer = d.querySelector(".items-container-user"),
 
 const getTotal = () => {
   calculateNeeded("userMaterials", "total");
-  drawTotalItems("neededTotal", ".elements-container", "-personal");
-  drawTotalExcess("total", ".extra-container", "-personal");
+  drawTotalItems("neededTotal", ".elements-container");
+  drawTotalExcess("total", ".extra-container");
 };
 
 const calculateTotal = (...objects) => {

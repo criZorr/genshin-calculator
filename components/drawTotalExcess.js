@@ -3,6 +3,16 @@ import calculateData from "../db/data.js";
 const d = document;
 const all = calculateData("all");
 
+const weaponMaterials = calculateData("weaponMaterials"),
+  stoneMaterials = calculateData("stones"),
+  talentMaterials = calculateData("talentMaterials"),
+  enemiesMaterials = [...calculateData("commonEnemies"), ...calculateData("eliteEnemies")];
+
+let craftMaterialsFour = [...stoneMaterials, ...weaponMaterials],
+  craftMaterialsThree = [...talentMaterials, ...enemiesMaterials];
+
+const maxMaterials = ["Hero's Wit", "Mystic Enhancement Ore"];
+
 const svg = `
 <svg
                       class="frst-text faq"
@@ -18,7 +28,14 @@ const svg = `
                     </svg>
 `;
 
-export default function drawTotalExcess(localVariable, classContainer, secondClass = "") {
+export default function drawTotalExcess(localVariable, classContainer) {
+  for (let i = 3; i <= craftMaterialsFour.length; i += 4) {
+    maxMaterials.push(craftMaterialsFour[i]);
+  }
+  for (let i = 2; i <= craftMaterialsThree.length; i += 3) {
+    maxMaterials.push(craftMaterialsThree[i]);
+  }
+
   const $container = d.querySelector(classContainer);
   $container.innerHTML = "";
 
@@ -29,44 +46,48 @@ export default function drawTotalExcess(localVariable, classContainer, secondCla
 
   all.forEach((el) => {
     if ($localData[el]) {
-      let operation = $localData[el] - $userData[el];
+      let operation = $localData[el] - $userData[el],
+        tocraft = 0;
 
       let stringNumber = $localData[el].toLocaleString("ru-RU");
 
       let tempName = el;
       tempName = tempName.replaceAll('"', "");
 
-      if (operation < 0) {
+      if (operation < 0 && !maxMaterials.includes(el)) {
         operation = -1 * operation;
+        tocraft = Math.floor(operation / 3);
       } else {
         operation = 0;
       }
 
-      let excess = operation.toLocaleString("ru-RU");
+      let excess = operation.toLocaleString("ru-RU"),
+        craftable = tocraft.toLocaleString("ru-RU");
 
       let itemContent = `
-    <div class="element-info">
-              <section class="element-data">
-                <figure class="element-img">
-                  <img src="./assets/materials/${tempName}.webp" alt="item" />
-                </figure>
-                <section class="element-props">
-                  <h5 class="frst-text">${el}</h5>
-                  <div class="element-days">
-                    <small class="frst-text description-txt">Excess amount</small>
-                    <div class="faq-container">
-                    ${svg}
-                    <span class="tooltip">The excess is the materials you don't need</span>
-                    </div>
-                  </div>
-                </section>
-              </section>
-              <section class="element-count">
-                <h5 class="frst-text">${stringNumber}</h5>
-                <small class="frst-text">${excess}</small>
-              </section>
-            </div>
-    `;
+        <div class="element-info">
+          <section class="element-data">
+            <figure class="element-img">
+              <img src="./assets/materials/${tempName}.webp" alt="item" />
+            </figure>
+            <section class="element-props">
+              <h5 class="frst-text">${el}</h5>
+              <div class="element-days">
+                <small class="frst-text description-txt">Excess amount${
+                  tocraft > 0 ? " (to craft)" : ""
+                }</small>
+                <div class="faq-container">
+                  ${svg}
+                  <span class="tooltip">The excess is the materials you can use to craft tier-up materials <b>(tier-up quantity)</b></span>
+                </div>
+              </div>
+            </section>
+          </section>
+          <section class="element-count">
+            <h5 class="frst-text">${stringNumber}</h5>
+            <small class="frst-text">${excess}${tocraft > 0 ? " (" + craftable + ")" : ""}</small>
+          </section>
+        </div>`;
 
       itemsContent += itemContent;
     }

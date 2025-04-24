@@ -164,7 +164,7 @@ const getCalculations = () => {
   }
 };
 
-export default function drawTotalItems(localVariable, classContainer, secondClass = "") {
+export default function drawTotalItems(localVariable, classContainer) {
   getCalculations();
   const $container = d.querySelector(classContainer);
   $container.innerHTML = "";
