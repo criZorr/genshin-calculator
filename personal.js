@@ -16,11 +16,115 @@ const svg = `
 
 let saveFlag = false,
   containerFlag = false,
-  show = false;
+  show = false,
+  filtered = [],
+  filterClasses = ["filter-items"],
+  items = ["exp", "elite", "common", "weekly", "world", "stones", "talent", "weapon", "speciality"],
+  $filters = "filter-checkbox";
 
-const all = calculateData("all");
-let $itemsContainer = d.querySelector(".items-container-user"),
-  options = "";
+const all = calculateData("all"),
+  eliteEnemies = calculateData("eliteEnemies").length,
+  commonEnemies = calculateData("commonEnemies").length,
+  weekBoss = calculateData("weekBoss").length + 1,
+  boss = calculateData("boss").length,
+  stones = calculateData("stones").length,
+  talentMaterials = calculateData("talentMaterials").length,
+  weaponMaterials = calculateData("weaponMaterials").length,
+  specialty = Object.keys(calculateData("specialty")).length;
+
+let $itemsContainer = d.querySelector(".items-container-user");
+
+const filterAction = (filters) => {
+  let itemsId = [];
+
+  for (let i = 0; i < all.length; i++) {
+    itemsId.push(i);
+  }
+
+  let sum = 8;
+
+  if (filters.includes("exp")) {
+    for (let i = 0; i < 8; i++) {
+      itemsId = itemsId.filter((e) => e !== i);
+    }
+  }
+
+  if (filters.includes("elite")) {
+    for (let i = 0; i < eliteEnemies; i++) {
+      itemsId = itemsId.filter((e) => e !== i + sum);
+    }
+  }
+  sum += eliteEnemies;
+
+  if (filters.includes("common")) {
+    for (let i = 0; i < commonEnemies; i++) {
+      itemsId = itemsId.filter((e) => e !== i + sum);
+    }
+  }
+  sum += commonEnemies;
+
+  if (filters.includes("weekly")) {
+    for (let i = 0; i < weekBoss; i++) {
+      itemsId = itemsId.filter((e) => e !== i + sum);
+    }
+  }
+  sum += weekBoss;
+
+  if (filters.includes("world")) {
+    for (let i = 0; i < boss; i++) {
+      itemsId = itemsId.filter((e) => e !== i + sum);
+    }
+  }
+  sum += boss;
+
+  if (filters.includes("stones")) {
+    for (let i = 0; i < stones; i++) {
+      itemsId = itemsId.filter((e) => e !== i + sum);
+    }
+  }
+  sum += stones;
+
+  if (filters.includes("talent")) {
+    for (let i = 0; i < talentMaterials; i++) {
+      itemsId = itemsId.filter((e) => e !== i + sum);
+    }
+  }
+  sum += talentMaterials;
+
+  if (filters.includes("weapon")) {
+    for (let i = 0; i < weaponMaterials; i++) {
+      itemsId = itemsId.filter((e) => e !== i + sum);
+    }
+  }
+  sum += weaponMaterials;
+
+  if (filters.includes("speciality")) {
+    for (let i = 0; i < specialty; i++) {
+      itemsId = itemsId.filter((e) => e !== i + sum);
+    }
+  }
+
+  filtered.forEach((e) => (d.getElementById(e).style.display = "flex"));
+
+  filtered = [];
+
+  itemsId.forEach((e) => {
+    let $card = d.getElementById(e);
+    $card.style.display = "none";
+
+    filtered.push(e);
+  });
+};
+
+const getChecked = (filterNames) => {
+  let $checkbox = document.querySelectorAll(`.${filterNames} input[type=checkbox]:checked`),
+    filters = [...$checkbox].map((e) => e.id),
+    res = [];
+
+  filters.length == 0 ? (res = items) : (res = filters);
+
+  filterAction(res);
+};
 
 const getTotal = () => {
   calculateNeeded("userMaterials", "total");
@@ -513,19 +617,19 @@ const drawModalPossible = () => {
 };
 
 const getListElements = () => {
-  all.forEach((el) => {
+  for (let i = 0; i < all.length; i++) {
     let fragment = d.createElement("div"),
-      tempName = el.replaceAll('"', ""),
-      fixedName = el.replaceAll('"', "ç");
+      tempName = all[i].replaceAll('"', ""),
+      fixedName = all[i].replaceAll('"', "ç");
     fragment.classList.add("element-owned-info");
-    fragment.id = el;
+    fragment.id = i;
     fragment.innerHTML = `
       <section class="element-data">
         <figure class="element-img">
-          <img src="./assets/materials/${tempName}.webp" alt="${el}" />
+          <img src="./assets/materials/${tempName}.webp" alt="${all[i]}" />
         </figure>
         <section class="element-props">
-          <h5 class="frst-text">${el}</h5>
+          <h5 class="frst-text">${all[i]}</h5>
           <div class="element-days">
             <small class="frst-text">Amount owned:</small>
           </div>
@@ -536,18 +640,10 @@ const getListElements = () => {
           <img class="btn-edit-owned" src="./assets/edit.svg" alt="edit" _id="${fixedName}"/>
         </button>
         <small class="frst-text" _name="${tempName}"></small>
-      </section>`;
-
+      </section>
+    `;
     $itemsContainer.appendChild(fragment);
-  });
-
-  let sorted = calculateData("all").sort();
-  sorted.forEach((el) => {
-    options += `<option>${el}</option>`;
-  });
-
-  let $optionsContainer = d.querySelector(".selected-items");
-  $optionsContainer.innerHTML = options;
+  }
 
   setTimeout(() => {
     d.querySelector(".btn-plus-container").style.visibility = "visible";
@@ -597,6 +693,8 @@ d.addEventListener("click", (e) => {
     eventClass = "none";
   }
 
+  if (eventClass === $filters) getChecked(filterClasses);
+
   if (eventClass === "btn-element-owned" || eventClass === "btn-edit-owned") {
     drawModalElement(e.target.attributes["_id"].value);
     $modal.style.visibility = "visible";
@@ -633,6 +731,7 @@ d.addEventListener("click", (e) => {
     eventClass === "btn-plus" ||
     eventClass.includes("btn-plus-container")
   ) {
+    getChecked(filterClasses);
     drawModalPossible();
     $modalMaterials.style.visibility = "visible";
     $modalMaterials.style.opacity = "1";

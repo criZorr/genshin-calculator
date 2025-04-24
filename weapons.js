@@ -20,9 +20,8 @@ const $cardsContainer = d.querySelector(".cards-container"),
 let filtered = [],
   filterClasses = ["filter-weapon", "filter-quality"],
   weapons = ["bow", "catalyst", "claymore", "polearm", "sword"],
-  qualities = ["5-stars", "4-stars", "3-stars", "2-stars", "1-stars"];
-
-let $filters = "filter-checkbox";
+  qualities = ["5-stars", "4-stars", "3-stars", "2-stars", "1-stars"],
+  $filters = "filter-checkbox";
 
 let saveFlag = false;
 let confirmFlag = false;

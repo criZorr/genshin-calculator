@@ -371,7 +371,8 @@ small {
 /* ********** Filters ********** */
 .filter-element,
 .filter-weapon,
-.filter-quality {
+.filter-quality,
+.filter-items {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
@@ -405,12 +406,14 @@ small {
   }
 }
 
-.filter-weapon .filter-label {
+.filter-weapon .filter-label,
+.filter-quality .filter-label {
   width: 5rem;
 }
 
-.filter-quality .filter-label {
-  width: 5rem;
+.filter-items .filter-label {
+  width: auto;
+  padding: 0 1rem;
 }
 
 /* ********** Section items ********** */
@@ -1113,6 +1116,11 @@ small {
 .modal-item-holder {
   max-width: 18rem;
   border-radius: 0.5rem;
+}
+
+.modal-item-holder {
+  max-width: clamp(18rem, 8rem + 50vw, 40rem);
+  width: clamp(18rem, 8rem + 50vw, 40rem);
 }
 
 .info-title {
