@@ -249,9 +249,9 @@ export default function calculateWeapon(levelValues, ascensionBool, quality) {
 
   for (let i = fstLevelValue + 1; i <= sndLevelValue; i++) {
     levelMora += levelInfo[i][0];
-    fstLevelCrystal += levelInfo[i][1];
+    fstLevelCrystal += levelInfo[i][3];
     sndLevelCrystal += levelInfo[i][2];
-    trdLevelCrystal += levelInfo[i][3];
+    trdLevelCrystal += levelInfo[i][1];
   }
 
   let ascensionMora = 0,
