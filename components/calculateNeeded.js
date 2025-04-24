@@ -30,7 +30,7 @@ export default function calculateNeeded(userLocal, variable) {
     maxMaterials.push(craftMaterialsThree[i]);
   }
 
-  let craftMaterials = [...craftMaterialsFour, ...craftMaterialsThree, ...expMaterials];
+  let craftMaterials = [...craftMaterialsFour, ...craftMaterialsThree];
 
   let $userData = JSON.parse(localStorage.getItem(userLocal)),
     $data = JSON.parse(localStorage.getItem(variable)),
@@ -46,97 +46,109 @@ export default function calculateNeeded(userLocal, variable) {
   let tempObj = {};
 
   all.forEach((e) => {
-    if (!$userData.hasOwnProperty(e)) {
-      newUserData[e] = 0;
-      neededData[e] = $data[e];
-    } else {
-      let calc = ($data[e] || 0) - (($userData[e] || 0) + (tempObj[e] || 0));
-      if (calc > 0) {
-        neededData[e] = calc;
-      }
-
-      if (calc < 0 && enemiesMaterials.includes(e)) {
-        let calculate = true;
-        if (maxMaterials.includes(e)) calculate = false;
-
-        if (calculate) {
-          calc = -1 * calc;
-
-          if (materialCrafting === 0) calc = Math.floor(calc / 3);
-          if (materialCrafting === 1) calc = Math.floor(1.1 * (calc / 3));
-          if (materialCrafting === 2) calc = Math.floor((4 / 3) * (calc / 3));
-
-          let position = craftMaterials.indexOf(e);
-          if (position >= 0) tempObj[craftMaterials[position + 1]] = calc;
+    if (!expMaterials.includes(e)) {
+      if (!$userData.hasOwnProperty(e)) {
+        newUserData[e] = 0;
+        neededData[e] = $data[e];
+      } else {
+        let calc = ($data[e] || 0) - (($userData[e] || 0) + (tempObj[e] || 0));
+        if (calc > 0) {
+          neededData[e] = calc;
         }
-      }
 
-      if (calc < 0 && talentMaterials.includes(e)) {
-        let calculate = true;
-        if (maxMaterials.includes(e)) calculate = false;
+        if (calc < 0 && enemiesMaterials.includes(e)) {
+          let calculate = true;
+          if (maxMaterials.includes(e)) calculate = false;
 
-        if (calculate) {
-          calc = -1 * calc;
+          if (calculate) {
+            calc = -1 * calc;
 
-          if (talentCrafting === 0) calc = Math.floor(calc / 3);
-          if (talentCrafting === 1) calc = Math.floor(1.1 * (calc / 3));
-          if (talentCrafting === 2) calc = Math.floor((4 / 3) * (calc / 3));
+            if (materialCrafting === 0) calc = Math.floor(calc / 3);
+            if (materialCrafting === 1) calc = Math.floor(1.1 * (calc / 3));
+            if (materialCrafting === 2) calc = Math.floor((4 / 3) * (calc / 3));
 
-          let position = craftMaterials.indexOf(e);
-          if (position >= 0) tempObj[craftMaterials[position + 1]] = calc;
-        }
-      }
-
-      if (calc < 0 && weaponMaterials.includes(e)) {
-        let calculate = true;
-        if (maxMaterials.includes(e)) calculate = false;
-
-        if (calculate) {
-          calc = -1 * calc;
-
-          if (weaponCrafting === 0) calc = Math.floor(calc / 3);
-          if (weaponCrafting === 1) calc = Math.floor(1.1 * (calc / 3));
-          if (weaponCrafting === 2) calc = Math.floor((4 / 3) * (calc / 3));
-
-          let position = craftMaterials.indexOf(e);
-          if (position >= 0) tempObj[craftMaterials[position + 1]] = calc;
-        }
-      }
-
-      if (calc < 0 && stoneMaterials.includes(e)) {
-        let calculate = true;
-        if (maxMaterials.includes(e)) calculate = false;
-
-        if (calculate) {
-          calc = -1 * calc;
-          calc = Math.floor(calc / 3);
-
-          let position = craftMaterials.indexOf(e);
-          if (position >= 0) tempObj[craftMaterials[position + 1]] = calc;
-        }
-      }
-
-      if (calc < 0 && expMaterials.includes(e)) {
-        let calculate = true;
-        if (maxMaterials.includes(e)) calculate = false;
-
-        if (calculate) {
-          calc = -1 * calc;
-
-          if (e === "Adventurer's Experience") {
-            calc = Math.floor(calc / 4);
-          } else {
-            calc = Math.floor(calc / 5);
+            let position = craftMaterials.indexOf(e);
+            if (position >= 0) tempObj[craftMaterials[position + 1]] = calc;
           }
+        }
 
-          let position = craftMaterials.indexOf(e);
-          if (position >= 0) tempObj[craftMaterials[position + 1]] = calc;
+        if (calc < 0 && talentMaterials.includes(e)) {
+          let calculate = true;
+          if (maxMaterials.includes(e)) calculate = false;
+
+          if (calculate) {
+            calc = -1 * calc;
+
+            if (talentCrafting === 0) calc = Math.floor(calc / 3);
+            if (talentCrafting === 1) calc = Math.floor(1.1 * (calc / 3));
+            if (talentCrafting === 2) calc = Math.floor((4 / 3) * (calc / 3));
+
+            let position = craftMaterials.indexOf(e);
+            if (position >= 0) tempObj[craftMaterials[position + 1]] = calc;
+          }
+        }
+
+        if (calc < 0 && weaponMaterials.includes(e)) {
+          let calculate = true;
+          if (maxMaterials.includes(e)) calculate = false;
+
+          if (calculate) {
+            calc = -1 * calc;
+
+            if (weaponCrafting === 0) calc = Math.floor(calc / 3);
+            if (weaponCrafting === 1) calc = Math.floor(1.1 * (calc / 3));
+            if (weaponCrafting === 2) calc = Math.floor((4 / 3) * (calc / 3));
+
+            let position = craftMaterials.indexOf(e);
+            if (position >= 0) tempObj[craftMaterials[position + 1]] = calc;
+          }
+        }
+
+        if (calc < 0 && stoneMaterials.includes(e)) {
+          let calculate = true;
+          if (maxMaterials.includes(e)) calculate = false;
+
+          if (calculate) {
+            calc = -1 * calc;
+            calc = Math.floor(calc / 3);
+
+            let position = craftMaterials.indexOf(e);
+            if (position >= 0) tempObj[craftMaterials[position + 1]] = calc;
+          }
         }
       }
     }
   });
-
   tempObj = {};
+
+  expMaterials.forEach((e) => {
+    if (!$userData.hasOwnProperty(e)) newUserData[e] = 0;
+  });
+
+  let fstBook = ($data["Wanderer's Advice"] || 0) - ($userData["Wanderer's Advice"] || 0),
+    sndBook = ($data["Adventurer's Experience"] || 0) - ($userData["Adventurer's Experience"] || 0),
+    trdBook = ($data["Hero's Wit"] || 0) - ($userData["Hero's Wit"] || 0),
+    totalBook = fstBook + 5 * sndBook + 20 * trdBook;
+
+  if (totalBook > 0) {
+    if (Math.floor(totalBook / 20) > 0) neededData["Hero's Wit"] = Math.floor(totalBook / 20);
+    if (Math.floor((totalBook % 20) / 5) > 0)
+      neededData["Adventurer's Experience"] = Math.floor((totalBook % 20) / 5);
+    if ((totalBook % 20) % 5 > 0) neededData["Wanderer's Advice"] = (totalBook % 20) % 5;
+  }
+
+  let fstOre = ($data["Enhancement Ore"] || 0) - ($userData["Enhancement Ore"] || 0),
+    sndOre = ($data["Fine Enhancement Ore"] || 0) - ($userData["Fine Enhancement Ore"] || 0),
+    trdOre = ($data["Mystic Enhancement Ore"] || 0) - ($userData["Mystic Enhancement Ore"] || 0),
+    totalOre = fstOre + 5 * sndOre + 25 * trdOre;
+
+  if (totalOre > 0) {
+    if (Math.floor(totalOre / 25) > 0)
+      neededData["Mystic Enhancement Ore"] = Math.floor(totalOre / 25);
+    if (Math.floor((totalOre % 25) / 5) > 0)
+      neededData["Fine Enhancement Ore"] = Math.floor((totalOre % 25) / 5);
+    if ((totalOre % 25) % 5 > 0) neededData["Enhancement Ore"] = (totalOre % 25) % 5;
+  }
 
   if (variable === "characterTotal")
     localStorage.setItem("neededCharacter", JSON.stringify(neededData));
