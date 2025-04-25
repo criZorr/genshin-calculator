@@ -104,7 +104,7 @@ const filterAction = (filters) => {
     }
   }
 
-  filtered.forEach((e) => (d.getElementById(e).style.display = "flex"));
+  filtered.forEach((e) => (d.getElementById(e).style.display = "inline-flex"));
 
   filtered = [];
 
@@ -419,7 +419,7 @@ const drawModalProfit = (id) => {
   $modal.innerHTML = `
     <div class="modal-info bg-trd">
       <div class="edit-owned-header">
-        <figure class="element-img">
+        <figure>
           <img src="./assets/materials/${id}.webp" alt="${id}" />
         </figure>
         <p class="info-title scnd-text">${id}</p>
@@ -472,7 +472,7 @@ const drawModalElement = (id) => {
   $modal.innerHTML = `
     <div class="modal-info bg-trd">
       <div class="edit-owned-header">
-        <figure class="element-img">
+        <figure>
           <img src="./assets/materials/${fixedName}.webp" alt="${ogName}" />
         </figure>
         <p class="info-title scnd-text">${ogName}</p>
@@ -564,7 +564,7 @@ const drawModalInfo = (id, name) => {
   $modal.innerHTML = `
     <div class="modal-info bg-trd">
       <div class="edit-owned-header">
-        <figure class="element-img">
+        <figure>
           <img src="./assets/materials/${name}.webp" alt="${name}" />
         </figure>
         <p class="info-title scnd-text">${name}</p>
@@ -621,26 +621,16 @@ const getListElements = () => {
     let fragment = d.createElement("div"),
       tempName = all[i].replaceAll('"', ""),
       fixedName = all[i].replaceAll('"', "ç");
-    fragment.classList.add("element-owned-info");
+    fragment.classList.add("items-card");
     fragment.id = i;
     fragment.innerHTML = `
-      <section class="element-data">
-        <figure class="element-img">
-          <img src="./assets/materials/${tempName}.webp" alt="${all[i]}" />
-        </figure>
-        <section class="element-props">
-          <h5 class="frst-text">${all[i]}</h5>
-          <div class="element-days">
-            <small class="frst-text">Amount owned:</small>
-          </div>
-        </section>
-      </section>
-      <section class="element-count">
-        <button class="btn-element-owned" _id="${fixedName}">
-          <img class="btn-edit-owned" src="./assets/edit.svg" alt="edit" _id="${fixedName}"/>
-        </button>
-        <small class="frst-text" _name="${tempName}"></small>
-      </section>
+      <div class="item-bg">
+        <img src="./assets/materials/${tempName}.webp" alt="${all[i]}" />
+      </div>
+      <h5 _name="${tempName}" class="card-name"></h5>
+      <button class="btn-element-owned" _id="${fixedName}">
+        <img class="btn-edit-owned" src="./assets/edit.svg" alt="edit" _id="${fixedName}"/>
+      </button>
     `;
     $itemsContainer.appendChild(fragment);
   }

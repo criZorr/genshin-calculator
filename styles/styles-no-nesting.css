@@ -222,6 +222,32 @@
   cursor: pointer;
 }
 
+.items-card .card-name {
+  max-width: 95%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.items-card .item-bg {
+  border-radius: 0.25rem 0.25rem 1rem 0;
+  width: 4rem;
+  height: 4rem;
+  background-color: var(--first-light-color);
+}
+
+.items-card .item-bg img {
+  width: 4rem;
+  height: auto;
+  border-radius: 0.25rem 0.25rem 1rem 0;
+}
+
+.items-card button {
+  position: absolute;
+  top: 0rem;
+  right: 0rem;
+}
+
 /* ***** Gradiant ***** */
 @media screen and (min-width: 624px) {
   .gradiant-right,
@@ -354,6 +380,19 @@
 .talent-img img {
   width: 100%;
   height: 100%;
+}
+
+/* Modal Edit Quantity */
+.edit-owned-header figure {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 2rem;
+  background-color: var(--first-light-color);
+}
+
+.edit-owned-header img {
+  height: 4rem;
+  width: auto;
 }
 
 /* User Info */
