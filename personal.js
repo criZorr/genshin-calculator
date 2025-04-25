@@ -623,8 +623,96 @@ const getListElements = () => {
       fixedName = all[i].replaceAll('"', "ç");
     fragment.classList.add("items-card");
     fragment.id = i;
+    let rarity = "",
+      rarityCases = 1,
+      fstCounter = 0,
+      sndCounter = 8;
+
+    if (i === 0 || i === 2 || i === 4) rarityCases = 3;
+
+    if (i === 1) rarityCases = 4;
+
+    if (i === 3 || i === 5) rarityCases = 2;
+
+    if (i === 7) rarityCases = 5;
+
+    sndCounter += eliteEnemies;
+    if (i >= 8 && i < sndCounter) {
+      rarityCases = 2;
+      let calc = (i - 8) % 3;
+      if (calc == 0) rarityCases = 4;
+      if (calc == 1) rarityCases = 3;
+    }
+    fstCounter = sndCounter;
+
+    sndCounter += commonEnemies;
+    if (i >= fstCounter && i < sndCounter) {
+      rarityCases = 1;
+      let calc = (i - fstCounter) % 3;
+      if (calc == 0) rarityCases = 3;
+      if (calc == 1) rarityCases = 2;
+    }
+    fstCounter = sndCounter;
+
+    sndCounter += weekBoss;
+    if (i >= fstCounter && i < sndCounter) rarityCases = 5;
+    fstCounter = sndCounter;
+
+    sndCounter += boss;
+    if (i >= fstCounter && i < sndCounter) rarityCases = 4;
+    fstCounter = sndCounter;
+
+    sndCounter += stones;
+    if (i >= fstCounter && i < sndCounter) {
+      rarityCases = 2;
+      let calc = (i - fstCounter) % 4;
+      if (calc == 0) rarityCases = 5;
+      if (calc == 1) rarityCases = 4;
+      if (calc == 2) rarityCases = 3;
+    }
+    fstCounter = sndCounter;
+
+    sndCounter += talentMaterials;
+    if (i >= fstCounter && i < sndCounter) {
+      rarityCases = 2;
+      let calc = (i - fstCounter) % 3;
+      if (calc == 0) rarityCases = 4;
+      if (calc == 1) rarityCases = 3;
+    }
+    fstCounter = sndCounter;
+
+    sndCounter += weaponMaterials;
+    if (i >= fstCounter && i < sndCounter) {
+      rarityCases = 2;
+      let calc = (i - fstCounter) % 4;
+      if (calc == 0) rarityCases = 5;
+      if (calc == 1) rarityCases = 4;
+      if (calc == 2) rarityCases = 3;
+    }
+    fstCounter = sndCounter;
+
+    switch (rarityCases) {
+      case 1:
+        rarity = "one";
+        break;
+      case 2:
+        rarity = "two";
+        break;
+      case 3:
+        rarity = "three";
+        break;
+      case 4:
+        rarity = "four";
+        break;
+      case 5:
+        rarity = "five";
+        break;
+      default:
+        break;
+    }
+
     fragment.innerHTML = `
-      <div class="item-bg">
+      <div class="item-bg ${rarity}">
         <img src="./assets/materials/${tempName}.webp" alt="${all[i]}" />
       </div>
       <h5 _name="${tempName}" class="card-name"></h5>

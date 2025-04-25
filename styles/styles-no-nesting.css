@@ -184,41 +184,6 @@
   border-radius: 0.25rem 0.25rem 1rem 0;
 }
 
-.card .five {
-  background: linear-gradient(180deg, var(--gold-dark-color) 0%, var(--gold-light-color) 100%);
-}
-
-.card .four {
-  background: linear-gradient(180deg, var(--purple-dark-color) 0%, var(--purple-light-color) 100%);
-}
-
-.card .three {
-  background: linear-gradient(180deg, var(--blue-dark-color) 0%, var(--blue-light-color) 100%);
-}
-
-.card .two {
-  background: linear-gradient(180deg, var(--green-dark-color) 0%, var(--green-light-color) 100%);
-}
-
-.card .one {
-  background: linear-gradient(180deg, var(--gray-dark-color) 0%, var(--gray-light-color) 100%);
-}
-
-.card .colab {
-  background: linear-gradient(180deg, var(--colab-dark-color) 0%, var(--colab-light-color) 100%);
-}
-
-.card .birth {
-  background: linear-gradient(
-    135deg,
-    #b5b5dd 0%,
-    #c5e9f0 25%,
-    #f7f4c8 50%,
-    #f7cabc 75%,
-    #e8acca 100%
-  );
-}
-
 .card:hover {
   cursor: pointer;
 }
@@ -234,7 +199,6 @@
   border-radius: 0.25rem 0.25rem 1rem 0;
   width: 4rem;
   height: 4rem;
-  background-color: var(--first-light-color);
 }
 
 .items-card .item-bg img {

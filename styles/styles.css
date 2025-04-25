@@ -496,45 +496,6 @@ small {
     border-radius: 0.25rem 0.25rem 1rem 0;
   }
 
-  & .five {
-    background: linear-gradient(180deg, var(--gold-dark-color) 0%, var(--gold-light-color) 100%);
-  }
-
-  & .four {
-    background: linear-gradient(
-      180deg,
-      var(--purple-dark-color) 0%,
-      var(--purple-light-color) 100%
-    );
-  }
-
-  & .three {
-    background: linear-gradient(180deg, var(--blue-dark-color) 0%, var(--blue-light-color) 100%);
-  }
-
-  & .two {
-    background: linear-gradient(180deg, var(--green-dark-color) 0%, var(--green-light-color) 100%);
-  }
-
-  & .one {
-    background: linear-gradient(180deg, var(--gray-dark-color) 0%, var(--gray-light-color) 100%);
-  }
-
-  & .colab {
-    background: linear-gradient(180deg, var(--colab-dark-color) 0%, var(--colab-light-color) 100%);
-  }
-
-  & .birth {
-    background: linear-gradient(
-      135deg,
-      #b5b5dd 0%,
-      #c5e9f0 25%,
-      #f7f4c8 50%,
-      #f7cabc 75%,
-      #e8acca 100%
-    );
-  }
-
   &:hover {
     cursor: pointer;
   }
@@ -562,7 +523,6 @@ small {
     border-radius: 0.25rem 0.25rem 1rem 0;
     width: 4rem;
     height: 4rem;
-    background-color: var(--first-light-color);
   }
 
   & .item-bg img {
@@ -576,6 +536,41 @@ small {
     top: 0rem;
     right: 0rem;
   }
+}
+
+.five {
+  background: linear-gradient(180deg, var(--gold-dark-color) 0%, var(--gold-light-color) 100%);
+}
+
+.four {
+  background: linear-gradient(180deg, var(--purple-dark-color) 0%, var(--purple-light-color) 100%);
+}
+
+.three {
+  background: linear-gradient(180deg, var(--blue-dark-color) 0%, var(--blue-light-color) 100%);
+}
+
+.two {
+  background: linear-gradient(180deg, var(--green-dark-color) 0%, var(--green-light-color) 100%);
+}
+
+.one {
+  background: linear-gradient(180deg, var(--gray-dark-color) 0%, var(--gray-light-color) 100%);
+}
+
+.colab {
+  background: linear-gradient(180deg, var(--colab-dark-color) 0%, var(--colab-light-color) 100%);
+}
+
+.birth {
+  background: linear-gradient(
+    135deg,
+    #b5b5dd 0%,
+    #c5e9f0 25%,
+    #f7f4c8 50%,
+    #f7cabc 75%,
+    #e8acca 100%
+  );
 }
 
 /* ***** Gradiant ***** */
