@@ -29,7 +29,7 @@ export default function getCards(data, $container, path) {
       cardBg.classList.add("birth");
       cardBg.style.position = "relative";
       cardBg.innerHTML = `
-        <img class="confeti" src="./assets/birthday-12378_128.gif"/>
+        <img class="confeti" src="./assets/birthday.gif"/>
         <img
           class="card-img"
           _id="${i}" src="${path}/${name.replaceAll('"', "")}.webp"
