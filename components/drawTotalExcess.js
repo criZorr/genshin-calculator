@@ -52,7 +52,7 @@ export default function drawTotalExcess(localVariable, classContainer) {
       let stringNumber = $localData[el].toLocaleString("ru-RU");
 
       let tempName = el;
-      tempName = tempName.replaceAll('"', "");
+      tempName = tempName.replaceAll('"', "").replaceAll(':', "_");
 
       if (operation < 0 && !maxMaterials.includes(el)) {
         operation = -1 * operation;

@@ -2989,5 +2989,28 @@
       "Delirious Demeanor of the Sacred Lord",
       "Delirious Divinity of the Sacred Lord"
     ]
+  },
+  "208":{
+    "name": "Symphonist of Scents",
+    "quality": "5-stars",
+    "weapon": "polearm",
+    "enemy-material": ["Transoceanic Pearl", "Transoceanic Chunk", "Xenochromatic Crystal"],
+    "special-enemy-material": ["Drop of Tainted Water","Scoop of Tainted Water","Newborn Tainted Hydro Phantasm"],
+    "domain-material": [
+      "Dross of Pure Sacred Dewdrop","Sublimation of Pure Sacred Dewdrop","Spring of Pure Sacred Dewdrop","Essence of Pure Sacred Dewdrop"
+    ]
+  },
+  "209":{
+    "name": "Sequence of Solitude",
+    "quality": "4-stars",
+    "weapon": "bow",
+    "enemy-material": ["Meshing Gear", "Mechanical Spur Gear", "Artificed Dynamic Gear"],
+    "special-enemy-material": ["Cold-Cracked Shellshard", "Warm Back-Shell", "Blazing Prismshell"],
+    "domain-material": [
+      "Fragment of an Ancient Chord",
+      "Chapter of an Ancient Chord",
+      "Movement of an Ancient Chord",
+      "Echo of an Ancient Chord"
+    ]
   }
 }

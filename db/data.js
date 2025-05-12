@@ -380,6 +380,7 @@ export default function calculateData(parameter) {
     "Ensnaring Gaze",
     "Talisman of the Enigmatic Land",
     "Sparkless Statue Core",
+    "Secret Source Airflow Accumulator"
   ];
 
   const weekBoss = [
@@ -416,6 +417,9 @@ export default function calculateData(parameter) {
     "Eroded Horn",
     "Eroded Sunfire",
     "Eroded Scale-Feather",
+    "Ascended Sample: Knight",
+    "Ascended Sample: Rook",
+    "Ascended Sample: Queen"
   ];
 
   const special = ["The Cornerstone of Stars and Flames"];

@@ -179,7 +179,7 @@ export default function drawTotalItems(localVariable, classContainer) {
       let stringNumber = number.toLocaleString("ru-RU");
 
       let tempName = el;
-      tempName = tempName.replaceAll('"', "");
+      tempName = tempName.replaceAll('"', "").replaceAll(':', "_");      
 
       let avgFarming = "",
         label = "",

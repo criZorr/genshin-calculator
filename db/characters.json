@@ -1658,5 +1658,35 @@
     "weekly-boss": "Eroded Scale-Feather",
     "domain-material": "Conflict",
     "talents": ["By the Horns", "Riding the Night-Rainbow", "Guardian Vent!"]
+  },
+  "103": {
+    "name": "Ifa",
+    "birthday": "23-03",
+    "region": "Natlan",
+    "quality": "4-stars",
+    "element": "anemo",
+    "stone": "Vayuda Turquoise",
+    "weapon": "catalyst",
+    "specialty-material": "Saurian Claw Succulent",
+    "enemy-material": ["Juvenile Fang", "Seasoned Fang", "Tyrant's Fang"],
+    "boss-material": "Sparkless Statue Core",
+    "weekly-boss": "Ascended Sample: Rook",
+    "domain-material": "Conflict",
+    "talents": ["Rite of Dispelling Winds", "Airborne Disease Prevention", "Compound Sedation Field"]
+  },
+  "104": {
+    "name": "Escoffier",
+    "birthday": "08-06",
+    "region": "Fontaine",
+    "quality": "5-stars",
+    "element": "cryo",
+    "stone": "Shivada Jade",
+    "weapon": "polearm",
+    "specialty-material": "Beryl Conch",
+    "enemy-material": ["Meshing Gear", "Mechanical Spur Gear", "Artificed Dynamic Gear"],
+    "boss-material": "Secret Source Airflow Accumulator",
+    "weekly-boss": "Eroded Horn",
+    "domain-material": "Justice",
+    "talents": ["Kitchen Skills", "Low-Temperature Cooking", "Scoring Cuts"]
   }
 }

@@ -367,12 +367,13 @@ const drawUserMaterial = () => {
         let number = localUserMaterials[el];
         number = number.toLocaleString("ru-RU");
         let fragment = d.createElement("div"),
-          fixedName = el.replaceAll('"', "ç");
+          fixedName = el.replaceAll('"', "ç"),
+          imgName = el.replaceAll('"',"").replaceAll(":","_");
         fragment.classList.add("element-owned-info");
         fragment.innerHTML = `
           <section class="element-data">
             <figure class="element-img">
-              <img src="./assets/materials/${el.replaceAll('"', "")}.webp" alt="${el}" />
+              <img src="./assets/materials/${imgName}.webp" alt="${imgName}" />
             </figure>
             <section class="element-props">
               <h5 class="frst-text">${el}</h5>
@@ -465,7 +466,7 @@ const drawModalElement = (id) => {
   const $userMaterials = JSON.parse(localStorage.getItem("userMaterials"));
 
   let ogName = id.replaceAll("ç", '"'),
-    fixedName = id.replaceAll("ç", "");
+    fixedName = id.replaceAll("ç", "").replaceAll(":","_");
 
   let number = $userMaterials[ogName];
 
@@ -611,7 +612,7 @@ const drawModalPossible = () => {
 
     number = number.toLocaleString("ru-RU");
 
-    let label = d.querySelector(`[_name="${el.replaceAll('"', "")}"]`);
+    let label = d.querySelector(`[_name="${el.replaceAll('"', "").replaceAll(":","_")}"]`);
     label.innerHTML = number;
   });
 };
@@ -619,7 +620,7 @@ const drawModalPossible = () => {
 const getListElements = () => {
   for (let i = 0; i < all.length; i++) {
     let fragment = d.createElement("div"),
-      tempName = all[i].replaceAll('"', ""),
+      tempName = all[i].replaceAll('"', "").replaceAll(":", "_"),
       fixedName = all[i].replaceAll('"', "ç");
     fragment.classList.add("items-card");
     fragment.id = i;
