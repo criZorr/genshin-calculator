@@ -8,7 +8,11 @@
     "stone": "Vayuda Turquoise",
     "weapon": "bow",
     "specialty-material": "Cecilia",
-    "enemy-material": ["Slime Condensate", "Slime Secretions", "Slime Concentrate"],
+    "enemy-material": [
+      "Slime Condensate",
+      "Slime Secretions",
+      "Slime Concentrate"
+    ],
     "boss-material": "Hurricane Seed",
     "weekly-boss": "Tail of Boreas",
     "domain-material": "Ballad",
@@ -27,7 +31,11 @@
     "boss-material": "Cleansing Heart",
     "weekly-boss": "Tail of Boreas",
     "domain-material": "Gold",
-    "talents": ["Guhua Style", "Guhua Sword: Fatal Rainscreen", "Guhua Sword: Raincutter"]
+    "talents": [
+      "Guhua Style",
+      "Guhua Sword: Fatal Rainscreen",
+      "Guhua Sword: Raincutter"
+    ]
   },
   "3": {
     "name": "Xiangling",
@@ -38,7 +46,11 @@
     "stone": "Agnidus Agate",
     "weapon": "polearm",
     "specialty-material": "Jueyun Chili",
-    "enemy-material": ["Slime Condensate", "Slime Secretions", "Slime Concentrate"],
+    "enemy-material": [
+      "Slime Condensate",
+      "Slime Secretions",
+      "Slime Concentrate"
+    ],
     "boss-material": "Everflame Seed",
     "weekly-boss": "Dvalin's Claw",
     "domain-material": "Diligence",
@@ -53,7 +65,11 @@
     "stone": "Vayuda Turquoise",
     "weapon": "catalyst",
     "specialty-material": "Windwheel Aster",
-    "enemy-material": ["Whopperflower Nectar", "Shimmering Nectar", "Energy Nectar"],
+    "enemy-material": [
+      "Whopperflower Nectar",
+      "Shimmering Nectar",
+      "Energy Nectar"
+    ],
     "boss-material": "Hurricane Seed",
     "weekly-boss": "Spirit Locket of Boreas",
     "domain-material": "Freedom",
@@ -102,7 +118,11 @@
     "stone": "Prithiva Topaz",
     "weapon": "catalyst",
     "specialty-material": "Glaze Lily",
-    "enemy-material": ["Recruit's Insignia", "Sergeant's Insignia", "Lieutenant's Insignia"],
+    "enemy-material": [
+      "Recruit's Insignia",
+      "Sergeant's Insignia",
+      "Lieutenant's Insignia"
+    ],
     "boss-material": "Basalt Pillar",
     "weekly-boss": "Spirit Locket of Boreas",
     "domain-material": "Prosperity",
@@ -117,7 +137,11 @@
     "stone": "Vajrada Amethyst",
     "weapon": "catalyst",
     "specialty-material": "Valberry",
-    "enemy-material": ["Slime Condensate", "Slime Secretions", "Slime Concentrate"],
+    "enemy-material": [
+      "Slime Condensate",
+      "Slime Secretions",
+      "Slime Concentrate"
+    ],
     "boss-material": "Lightning Prism",
     "weekly-boss": "Dvalin's Claw",
     "domain-material": "Ballad",
@@ -151,7 +175,11 @@
     "stone": "Vajrada Amethyst",
     "weapon": "bow",
     "specialty-material": "Small Lamp Grass",
-    "enemy-material": ["Firm Arrowhead", "Sharp Arrowhead", "Weathered Arrowhead"],
+    "enemy-material": [
+      "Firm Arrowhead",
+      "Sharp Arrowhead",
+      "Weathered Arrowhead"
+    ],
     "boss-material": "Lightning Prism",
     "weekly-boss": "Spirit Locket of Boreas",
     "domain-material": "Ballad",
@@ -223,7 +251,11 @@
     "stone": "Varunada Lazurite",
     "weapon": "catalyst",
     "specialty-material": "Philanemo Mushroom",
-    "enemy-material": ["Divining Scroll", "Sealed Scroll", "Forbidden Curse Scroll"],
+    "enemy-material": [
+      "Divining Scroll",
+      "Sealed Scroll",
+      "Forbidden Curse Scroll"
+    ],
     "boss-material": "Cleansing Heart",
     "weekly-boss": "Ring of Boreas",
     "domain-material": "Freedom",
@@ -238,7 +270,11 @@
     "stone": "Agnidus Agate",
     "weapon": "bow",
     "specialty-material": "Small Lamp Grass",
-    "enemy-material": ["Firm Arrowhead", "Sharp Arrowhead", "Weathered Arrowhead"],
+    "enemy-material": [
+      "Firm Arrowhead",
+      "Sharp Arrowhead",
+      "Weathered Arrowhead"
+    ],
     "boss-material": "Everflame Seed",
     "weekly-boss": "Dvalin's Sigh",
     "domain-material": "Freedom",
@@ -254,7 +290,11 @@
     "weapon": "sword",
     "specialty-material": "Windwheel Aster",
     "enemy-material": ["Damaged Mask", "Stained Mask", "Ominous Mask"],
-    "second-enemy": ["Divining Scroll", "Sealed Scroll", "Forbidden Curse Scroll"],
+    "second-enemy": [
+      "Divining Scroll",
+      "Sealed Scroll",
+      "Forbidden Curse Scroll"
+    ],
     "boss-material": "",
     "weekly-boss": "Dvalin's Sigh",
     "domain-material": ["Freedom", "Resistance", "Ballad"],
@@ -270,7 +310,11 @@
     "weapon": "sword",
     "specialty-material": "Windwheel Aster",
     "enemy-material": ["Damaged Mask", "Stained Mask", "Ominous Mask"],
-    "second-enemy": ["Divining Scroll", "Sealed Scroll", "Forbidden Curse Scroll"],
+    "second-enemy": [
+      "Divining Scroll",
+      "Sealed Scroll",
+      "Forbidden Curse Scroll"
+    ],
     "boss-material": "",
     "weekly-boss": "Tail of Boreas",
     "domain-material": ["Prosperity", "Diligence", "Gold"],
@@ -285,7 +329,11 @@
     "stone": "Shivada Jade",
     "weapon": "sword",
     "specialty-material": "Violetgrass",
-    "enemy-material": ["Divining Scroll", "Sealed Scroll", "Forbidden Curse Scroll"],
+    "enemy-material": [
+      "Divining Scroll",
+      "Sealed Scroll",
+      "Forbidden Curse Scroll"
+    ],
     "boss-material": "Hoarfrost Core",
     "weekly-boss": "Tail of Boreas",
     "domain-material": "Prosperity",
@@ -304,11 +352,19 @@
     "stone": "Varunada Lazurite",
     "weapon": "catalyst",
     "specialty-material": "Philanemo Mushroom",
-    "enemy-material": ["Whopperflower Nectar", "Shimmering Nectar", "Energy Nectar"],
+    "enemy-material": [
+      "Whopperflower Nectar",
+      "Shimmering Nectar",
+      "Energy Nectar"
+    ],
     "boss-material": "Cleansing Heart",
     "weekly-boss": "Ring of Boreas",
     "domain-material": "Resistance",
-    "talents": ["Ripple of Fate", "Mirror Reflection of Doom", "Stellaris Phantasm"]
+    "talents": [
+      "Ripple of Fate",
+      "Mirror Reflection of Doom",
+      "Stellaris Phantasm"
+    ]
   },
   "20": {
     "name": "Keqing",
@@ -319,7 +375,11 @@
     "stone": "Vajrada Amethyst",
     "weapon": "sword",
     "specialty-material": "Cor Lapis",
-    "enemy-material": ["Whopperflower Nectar", "Shimmering Nectar", "Energy Nectar"],
+    "enemy-material": [
+      "Whopperflower Nectar",
+      "Shimmering Nectar",
+      "Energy Nectar"
+    ],
     "boss-material": "Lightning Prism",
     "weekly-boss": "Ring of Boreas",
     "domain-material": "Prosperity",
@@ -349,7 +409,11 @@
     "stone": "Agnidus Agate",
     "weapon": "claymore",
     "specialty-material": "Small Lamp Grass",
-    "enemy-material": ["Recruit's Insignia", "Sergeant's Insignia", "Lieutenant's Insignia"],
+    "enemy-material": [
+      "Recruit's Insignia",
+      "Sergeant's Insignia",
+      "Lieutenant's Insignia"
+    ],
     "boss-material": "Everflame Seed",
     "weekly-boss": "Dvalin's Plume",
     "domain-material": "Resistance",
@@ -364,7 +428,11 @@
     "stone": "Agnidus Agate",
     "weapon": "catalyst",
     "specialty-material": "Philanemo Mushroom",
-    "enemy-material": ["Divining Scroll", "Sealed Scroll", "Forbidden Curse Scroll"],
+    "enemy-material": [
+      "Divining Scroll",
+      "Sealed Scroll",
+      "Forbidden Curse Scroll"
+    ],
     "boss-material": "Everflame Seed",
     "weekly-boss": "Ring of Boreas",
     "domain-material": "Freedom",
@@ -379,7 +447,11 @@
     "stone": "Shivada Jade",
     "weapon": "bow",
     "specialty-material": "Calla Lily",
-    "enemy-material": ["Firm Arrowhead", "Sharp Arrowhead", "Weathered Arrowhead"],
+    "enemy-material": [
+      "Firm Arrowhead",
+      "Sharp Arrowhead",
+      "Weathered Arrowhead"
+    ],
     "boss-material": "Hoarfrost Core",
     "weekly-boss": "Shard of a Foul Legacy",
     "domain-material": "Freedom",
@@ -394,11 +466,19 @@
     "stone": "Varunada Lazurite",
     "weapon": "bow",
     "specialty-material": "Starconch",
-    "enemy-material": ["Recruit's Insignia", "Sergeant's Insignia", "Lieutenant's Insignia"],
+    "enemy-material": [
+      "Recruit's Insignia",
+      "Sergeant's Insignia",
+      "Lieutenant's Insignia"
+    ],
     "boss-material": "Cleansing Heart",
     "weekly-boss": "Shard of a Foul Legacy",
     "domain-material": "Freedom",
-    "talents": ["Cutting Torrent", "Foul Legacy: Raging Tide", "Havoc: Obliteration"]
+    "talents": [
+      "Cutting Torrent",
+      "Foul Legacy: Raging Tide",
+      "Havoc: Obliteration"
+    ]
   },
   "26": {
     "name": "Xinyan",
@@ -428,7 +508,11 @@
     "stone": "Prithiva Topaz",
     "weapon": "polearm",
     "specialty-material": "Cor Lapis",
-    "enemy-material": ["Slime Condensate", "Slime Secretions", "Slime Concentrate"],
+    "enemy-material": [
+      "Slime Condensate",
+      "Slime Secretions",
+      "Slime Concentrate"
+    ],
     "boss-material": "Basalt Pillar",
     "weekly-boss": "Tusk of Monoceros Caeli",
     "domain-material": "Gold",
@@ -443,7 +527,11 @@
     "stone": "Prithiva Topaz",
     "weapon": "sword",
     "specialty-material": "Cecilia",
-    "enemy-material": ["Divining Scroll", "Sealed Scroll", "Forbidden Curse Scroll"],
+    "enemy-material": [
+      "Divining Scroll",
+      "Sealed Scroll",
+      "Forbidden Curse Scroll"
+    ],
     "boss-material": "Basalt Pillar",
     "weekly-boss": "Tusk of Monoceros Caeli",
     "domain-material": "Ballad",
@@ -462,7 +550,11 @@
     "stone": "Shivada Jade",
     "weapon": "bow",
     "specialty-material": "Qingxin",
-    "enemy-material": ["Whopperflower Nectar", "Shimmering Nectar", "Energy Nectar"],
+    "enemy-material": [
+      "Whopperflower Nectar",
+      "Shimmering Nectar",
+      "Energy Nectar"
+    ],
     "boss-material": "Hoarfrost Core",
     "weekly-boss": "Shadow of the Warrior",
     "domain-material": "Diligence",
@@ -477,11 +569,19 @@
     "stone": "Vayuda Turquoise",
     "weapon": "polearm",
     "specialty-material": "Qingxin",
-    "enemy-material": ["Slime Condensate", "Slime Secretions", "Slime Concentrate"],
+    "enemy-material": [
+      "Slime Condensate",
+      "Slime Secretions",
+      "Slime Concentrate"
+    ],
     "boss-material": "Juvenile Jade",
     "weekly-boss": "Shadow of the Warrior",
     "domain-material": "Prosperity",
-    "talents": ["Whirlwind Thrust", "Lemniscatic Wind Cycling", "Bane of All Evil"]
+    "talents": [
+      "Whirlwind Thrust",
+      "Lemniscatic Wind Cycling",
+      "Bane of All Evil"
+    ]
   },
   "31": {
     "name": "Hu Tao",
@@ -492,11 +592,19 @@
     "stone": "Agnidus Agate",
     "weapon": "polearm",
     "specialty-material": "Silk Flower",
-    "enemy-material": ["Whopperflower Nectar", "Shimmering Nectar", "Energy Nectar"],
+    "enemy-material": [
+      "Whopperflower Nectar",
+      "Shimmering Nectar",
+      "Energy Nectar"
+    ],
     "boss-material": "Juvenile Jade",
     "weekly-boss": "Shard of a Foul Legacy",
     "domain-material": "Diligence",
-    "talents": ["Secret Spear of Wangsheng", "Guide to Afterlife", "Spirit Soother"]
+    "talents": [
+      "Secret Spear of Wangsheng",
+      "Guide to Afterlife",
+      "Spirit Soother"
+    ]
   },
   "32": {
     "name": "Rosaria",
@@ -507,11 +615,19 @@
     "stone": "Shivada Jade",
     "weapon": "polearm",
     "specialty-material": "Valberry",
-    "enemy-material": ["Recruit's Insignia", "Sergeant's Insignia", "Lieutenant's Insignia"],
+    "enemy-material": [
+      "Recruit's Insignia",
+      "Sergeant's Insignia",
+      "Lieutenant's Insignia"
+    ],
     "boss-material": "Hoarfrost Core",
     "weekly-boss": "Shadow of the Warrior",
     "domain-material": "Ballad",
-    "talents": ["Spear of the Church", "Ravaging Confession", "Rites of Termination"]
+    "talents": [
+      "Spear of the Church",
+      "Ravaging Confession",
+      "Rites of Termination"
+    ]
   },
   "33": {
     "name": "Yanfei",
@@ -545,7 +661,11 @@
     "boss-material": "Crystalline Bloom",
     "weekly-boss": "Dragon Lord's Crown",
     "domain-material": "Resistance",
-    "talents": ["Favonius Bladework - Edel", "Icetide Vortex", "Glacial Illumination"]
+    "talents": [
+      "Favonius Bladework - Edel",
+      "Icetide Vortex",
+      "Glacial Illumination"
+    ]
   },
   "35": {
     "name": "Kaedehara Kazuha",
@@ -591,11 +711,19 @@
     "stone": "Shivada Jade",
     "weapon": "sword",
     "specialty-material": "Sakura Bloom",
-    "enemy-material": ["Old Handguard", "Kageuchi Handguard", "Famed Handguard"],
+    "enemy-material": [
+      "Old Handguard",
+      "Kageuchi Handguard",
+      "Famed Handguard"
+    ],
     "boss-material": "Perpetual Heart",
     "weekly-boss": "Bloodjade Branch",
     "domain-material": "Elegance",
-    "talents": ["Kamisato Art: Kabuki", "Kamisato Art: Hyouka", "Kamisato Art: Soumetsu"]
+    "talents": [
+      "Kamisato Art: Kabuki",
+      "Kamisato Art: Hyouka",
+      "Kamisato Art: Soumetsu"
+    ]
   },
   "38": {
     "name": "Sayu",
@@ -606,11 +734,19 @@
     "stone": "Vayuda Turquoise",
     "weapon": "claymore",
     "specialty-material": "Crystal Marrow",
-    "enemy-material": ["Whopperflower Nectar", "Shimmering Nectar", "Energy Nectar"],
+    "enemy-material": [
+      "Whopperflower Nectar",
+      "Shimmering Nectar",
+      "Energy Nectar"
+    ],
     "boss-material": "Marionette Core",
     "weekly-boss": "Gilded Scale",
     "domain-material": "Light",
-    "talents": ["Shuumatsuban Ninja Blade", "Yoohoo Art: Fuuin Dash", "Yoohoo Art: Mujina Flurry"]
+    "talents": [
+      "Shuumatsuban Ninja Blade",
+      "Yoohoo Art: Fuuin Dash",
+      "Yoohoo Art: Mujina Flurry"
+    ]
   },
   "39": {
     "name": "Yoimiya",
@@ -621,7 +757,11 @@
     "stone": "Agnidus Agate",
     "weapon": "bow",
     "specialty-material": "Naku Weed",
-    "enemy-material": ["Divining Scroll", "Sealed Scroll", "Forbidden Curse Scroll"],
+    "enemy-material": [
+      "Divining Scroll",
+      "Sealed Scroll",
+      "Forbidden Curse Scroll"
+    ],
     "boss-material": "Smoldering Pearl",
     "weekly-boss": "Dragon Lord's Crown",
     "domain-material": "Transience",
@@ -640,7 +780,11 @@
     "boss-material": "Storm Beads",
     "weekly-boss": "Ashen Heart",
     "domain-material": "Elegance",
-    "talents": ["Tengu Bowmanship", "Tengu Stormcall", "Subjugation: Koukou Sendou"]
+    "talents": [
+      "Tengu Bowmanship",
+      "Tengu Stormcall",
+      "Subjugation: Koukou Sendou"
+    ]
   },
   "41": {
     "name": "Aloy",
@@ -666,11 +810,19 @@
     "stone": "Vajrada Amethyst",
     "weapon": "polearm",
     "specialty-material": "Amakumo Fruit",
-    "enemy-material": ["Old Handguard", "Kageuchi Handguard", "Famed Handguard"],
+    "enemy-material": [
+      "Old Handguard",
+      "Kageuchi Handguard",
+      "Famed Handguard"
+    ],
     "boss-material": "Storm Beads",
     "weekly-boss": "Molten Moment",
     "domain-material": "Light",
-    "talents": ["Origin", "Transcendence: Baleful Omen", "Secret Art: Musou Shinsetsu"]
+    "talents": [
+      "Origin",
+      "Transcendence: Baleful Omen",
+      "Secret Art: Musou Shinsetsu"
+    ]
   },
   "43": {
     "name": "Sangonomiya Kokomi",
@@ -734,7 +886,11 @@
     "stone": "Prithiva Topaz",
     "weapon": "claymore",
     "specialty-material": "Onikabuto",
-    "enemy-material": ["Slime Condensate", "Slime Secretions", "Slime Concentrate"],
+    "enemy-material": [
+      "Slime Condensate",
+      "Slime Secretions",
+      "Slime Concentrate"
+    ],
     "boss-material": "Riftborn Regalia",
     "weekly-boss": "Ashen Heart",
     "domain-material": "Elegance",
@@ -757,7 +913,11 @@
     "boss-material": "Riftborn Regalia",
     "weekly-boss": "Ashen Heart",
     "domain-material": "Diligence",
-    "talents": ["Cloud-Grazing Strike", "Opening Flourish", "Cliffbreaker's Banner"]
+    "talents": [
+      "Cloud-Grazing Strike",
+      "Opening Flourish",
+      "Cliffbreaker's Banner"
+    ]
   },
   "48": {
     "name": "Shenhe",
@@ -768,11 +928,19 @@
     "stone": "Shivada Jade",
     "weapon": "polearm",
     "specialty-material": "Qingxin",
-    "enemy-material": ["Whopperflower Nectar", "Shimmering Nectar", "Energy Nectar"],
+    "enemy-material": [
+      "Whopperflower Nectar",
+      "Shimmering Nectar",
+      "Energy Nectar"
+    ],
     "boss-material": "Dragonheir's False Fin",
     "weekly-boss": "Hellfire Butterfly",
     "domain-material": "Prosperity",
-    "talents": ["Dawnstar Piercer", "Spring Spirit Summoning", "Divine Maiden's Deliverance"]
+    "talents": [
+      "Dawnstar Piercer",
+      "Spring Spirit Summoning",
+      "Divine Maiden's Deliverance"
+    ]
   },
   "49": {
     "name": "Yae Miko",
@@ -783,7 +951,11 @@
     "stone": "Vajrada Amethyst",
     "weapon": "catalyst",
     "specialty-material": "Sea Ganoderma",
-    "enemy-material": ["Old Handguard", "Kageuchi Handguard", "Famed Handguard"],
+    "enemy-material": [
+      "Old Handguard",
+      "Kageuchi Handguard",
+      "Famed Handguard"
+    ],
     "boss-material": "Dragonheir's False Fin",
     "weekly-boss": "The Meaning of Aeons",
     "domain-material": "Light",
@@ -802,11 +974,19 @@
     "stone": "Varunada Lazurite",
     "weapon": "sword",
     "specialty-material": "Sakura Bloom",
-    "enemy-material": ["Old Handguard", "Kageuchi Handguard", "Famed Handguard"],
+    "enemy-material": [
+      "Old Handguard",
+      "Kageuchi Handguard",
+      "Famed Handguard"
+    ],
     "boss-material": "Dew of Repudiation",
     "weekly-boss": "Mudra of the Malefic General",
     "domain-material": "Elegance",
-    "talents": ["Kamisato Art: Marobashi", "Kamisato Art: Kyouka", "Kamisato Art: Suiyuu"]
+    "talents": [
+      "Kamisato Art: Marobashi",
+      "Kamisato Art: Kyouka",
+      "Kamisato Art: Suiyuu"
+    ]
   },
   "51": {
     "name": "Yelan",
@@ -817,7 +997,11 @@
     "stone": "Varunada Lazurite",
     "weapon": "bow",
     "specialty-material": "Starconch",
-    "enemy-material": ["Recruit's Insignia", "Sergeant's Insignia", "Lieutenant's Insignia"],
+    "enemy-material": [
+      "Recruit's Insignia",
+      "Sergeant's Insignia",
+      "Lieutenant's Insignia"
+    ],
     "boss-material": "Runic Fang",
     "weekly-boss": "Gilded Scale",
     "domain-material": "Prosperity",
@@ -836,7 +1020,11 @@
     "boss-material": "Runic Fang",
     "weekly-boss": "Tears of the Calamitous God",
     "domain-material": "Elegance",
-    "talents": ["Shinobu's Shadowsword", "Sanctifying Ring", "Gyoei Narukami Kariyama Rite"]
+    "talents": [
+      "Shinobu's Shadowsword",
+      "Sanctifying Ring",
+      "Gyoei Narukami Kariyama Rite"
+    ]
   },
   "53": {
     "name": "Shikanoin Heizou",
@@ -855,7 +1043,11 @@
     "boss-material": "Runic Fang",
     "weekly-boss": "The Meaning of Aeons",
     "domain-material": "Transience",
-    "talents": ["Fudou Style Martial Arts", "Heartstopper Strike", "Windmuster Kick"]
+    "talents": [
+      "Fudou Style Martial Arts",
+      "Heartstopper Strike",
+      "Windmuster Kick"
+    ]
   },
   "54": {
     "name": "Traveler (Dendro)",
@@ -867,11 +1059,19 @@
     "weapon": "sword",
     "specialty-material": "Windwheel Aster",
     "enemy-material": ["Damaged Mask", "Stained Mask", "Ominous Mask"],
-    "second-enemy": ["Fungal Spores", "Luminescent Pollen", "Crystalline Cyst Dust"],
+    "second-enemy": [
+      "Fungal Spores",
+      "Luminescent Pollen",
+      "Crystalline Cyst Dust"
+    ],
     "boss-material": "",
     "weekly-boss": "Mudra of the Malefic General",
     "domain-material": ["Admonition", "Ingenuity", "Praxis"],
-    "talents": ["Foreign Fieldcleaver", "Razorgrass Blade", "Surgent Manifestation"]
+    "talents": [
+      "Foreign Fieldcleaver",
+      "Razorgrass Blade",
+      "Surgent Manifestation"
+    ]
   },
   "55": {
     "name": "Collei",
@@ -882,7 +1082,11 @@
     "stone": "Nagadus Emerald",
     "weapon": "bow",
     "specialty-material": "Rukkhashava Mushrooms",
-    "enemy-material": ["Firm Arrowhead", "Sharp Arrowhead", "Weathered Arrowhead"],
+    "enemy-material": [
+      "Firm Arrowhead",
+      "Sharp Arrowhead",
+      "Weathered Arrowhead"
+    ],
     "boss-material": "Majestic Hooked Beak",
     "weekly-boss": "Tears of the Calamitous God",
     "domain-material": "Praxis",
@@ -897,11 +1101,19 @@
     "stone": "Nagadus Emerald",
     "weapon": "bow",
     "specialty-material": "Nilotpala Lotus",
-    "enemy-material": ["Fungal Spores", "Luminescent Pollen", "Crystalline Cyst Dust"],
+    "enemy-material": [
+      "Fungal Spores",
+      "Luminescent Pollen",
+      "Crystalline Cyst Dust"
+    ],
     "boss-material": "Majestic Hooked Beak",
     "weekly-boss": "The Meaning of Aeons",
     "domain-material": "Admonition",
-    "talents": ["Khanda Barrier-Buster", "Vijnana-Phala Mine", "Fashioner's Tanglevine Shaft"]
+    "talents": [
+      "Khanda Barrier-Buster",
+      "Vijnana-Phala Mine",
+      "Fashioner's Tanglevine Shaft"
+    ]
   },
   "57": {
     "name": "Dori",
@@ -912,7 +1124,11 @@
     "stone": "Vajrada Amethyst",
     "weapon": "claymore",
     "specialty-material": "Kalpalata Lotus",
-    "enemy-material": ["Faded Red Satin", "Trimmed Red Silk", "Rich Red Brocade"],
+    "enemy-material": [
+      "Faded Red Satin",
+      "Trimmed Red Silk",
+      "Rich Red Brocade"
+    ],
     "boss-material": "Thunderclap Fruitcore",
     "weekly-boss": "Bloodjade Branch",
     "domain-material": "Ingenuity",
@@ -931,7 +1147,11 @@
     "stone": "Varunada Lazurite",
     "weapon": "polearm",
     "specialty-material": "Henna Berry",
-    "enemy-material": ["Faded Red Satin", "Trimmed Red Silk", "Rich Red Brocade"],
+    "enemy-material": [
+      "Faded Red Satin",
+      "Trimmed Red Silk",
+      "Rich Red Brocade"
+    ],
     "boss-material": "Light Guiding Tetrahedron",
     "weekly-boss": "Tears of the Calamitous God",
     "domain-material": "Admonition",
@@ -950,7 +1170,11 @@
     "stone": "Vajrada Amethyst",
     "weapon": "polearm",
     "specialty-material": "Scarab",
-    "enemy-material": ["Divining Scroll", "Sealed Scroll", "Forbidden Curse Scroll"],
+    "enemy-material": [
+      "Divining Scroll",
+      "Sealed Scroll",
+      "Forbidden Curse Scroll"
+    ],
     "boss-material": "Thunderclap Fruitcore",
     "weekly-boss": "Mudra of the Malefic General",
     "domain-material": "Admonition",
@@ -969,7 +1193,11 @@
     "stone": "Varunada Lazurite",
     "weapon": "sword",
     "specialty-material": "Padisarah",
-    "enemy-material": ["Fungal Spores", "Luminescent Pollen", "Crystalline Cyst Dust"],
+    "enemy-material": [
+      "Fungal Spores",
+      "Luminescent Pollen",
+      "Crystalline Cyst Dust"
+    ],
     "boss-material": "Perpetual Caliber",
     "weekly-boss": "Tears of the Calamitous God",
     "domain-material": "Praxis",
@@ -988,7 +1216,11 @@
     "stone": "Nagadus Emerald",
     "weapon": "catalyst",
     "specialty-material": "Kalpalata Lotus",
-    "enemy-material": ["Fungal Spores", "Luminescent Pollen", "Crystalline Cyst Dust"],
+    "enemy-material": [
+      "Fungal Spores",
+      "Luminescent Pollen",
+      "Crystalline Cyst Dust"
+    ],
     "boss-material": "Quelled Creeper",
     "weekly-boss": "Puppet Strings",
     "domain-material": "Ingenuity",
@@ -1003,7 +1235,11 @@
     "stone": "Shivada Jade",
     "weapon": "sword",
     "specialty-material": "Nilotpala Lotus",
-    "enemy-material": ["Divining Scroll", "Sealed Scroll", "Forbidden Curse Scroll"],
+    "enemy-material": [
+      "Divining Scroll",
+      "Sealed Scroll",
+      "Forbidden Curse Scroll"
+    ],
     "boss-material": "Perpetual Caliber",
     "weekly-boss": "Mirror of Mushin",
     "domain-material": "Ingenuity",
@@ -1022,11 +1258,19 @@
     "stone": "Vayuda Turquoise",
     "weapon": "bow",
     "specialty-material": " Henna Berry",
-    "enemy-material": ["Faded Red Satin", "Trimmed Red Silk", "Rich Red Brocade"],
+    "enemy-material": [
+      "Faded Red Satin",
+      "Trimmed Red Silk",
+      "Rich Red Brocade"
+    ],
     "boss-material": "Light Guiding Tetrahedron",
     "weekly-boss": "Puppet Strings",
     "domain-material": "Admonition",
-    "talents": ["Parthian Shot", "Wind Realm of Nasamjnin", "The Wind's Secret Ways"]
+    "talents": [
+      "Parthian Shot",
+      "Wind Realm of Nasamjnin",
+      "The Wind's Secret Ways"
+    ]
   },
   "64": {
     "name": "Wanderer",
@@ -1037,11 +1281,19 @@
     "stone": "Vayuda Turquoise",
     "weapon": "catalyst",
     "specialty-material": "Rukkhashava Mushrooms",
-    "enemy-material": ["Old Handguard", "Kageuchi Handguard", "Famed Handguard"],
+    "enemy-material": [
+      "Old Handguard",
+      "Kageuchi Handguard",
+      "Famed Handguard"
+    ],
     "boss-material": "Perpetual Caliber",
     "weekly-boss": "Daka's Bell",
     "domain-material": "Praxis",
-    "talents": ["Yuuban Meigen", "Hanega: Song of the Wind", "Kyougen: Five Ceremonial Plays"]
+    "talents": [
+      "Yuuban Meigen",
+      "Hanega: Song of the Wind",
+      "Kyougen: Five Ceremonial Plays"
+    ]
   },
   "65": {
     "name": "Yaoyao",
@@ -1052,11 +1304,19 @@
     "stone": "Nagadus Emerald",
     "weapon": "polearm",
     "specialty-material": "Jueyun Chili",
-    "enemy-material": ["Slime Condensate", "Slime Secretions", "Slime Concentrate"],
+    "enemy-material": [
+      "Slime Condensate",
+      "Slime Secretions",
+      "Slime Concentrate"
+    ],
     "boss-material": "Quelled Creeper",
     "weekly-boss": "Daka's Bell",
     "domain-material": "Diligence",
-    "talents": ["Toss 'N' Turn Spear", "Raphanus Sky Cluster", "Moonjade Descent"]
+    "talents": [
+      "Toss 'N' Turn Spear",
+      "Raphanus Sky Cluster",
+      "Moonjade Descent"
+    ]
   },
   "66": {
     "name": "Alhaitham",
@@ -1067,7 +1327,11 @@
     "stone": "Nagadus Emerald",
     "weapon": "sword",
     "specialty-material": "Sand Grease Pupa",
-    "enemy-material": ["Faded Red Satin", "Trimmed Red Silk", "Rich Red Brocade"],
+    "enemy-material": [
+      "Faded Red Satin",
+      "Trimmed Red Silk",
+      "Rich Red Brocade"
+    ],
     "boss-material": "Pseudo-Stamens",
     "weekly-boss": "Mirror of Mushin",
     "domain-material": "Ingenuity",
@@ -1086,7 +1350,11 @@
     "stone": "Agnidus Agate",
     "weapon": "claymore",
     "specialty-material": "Sand Grease Pupa",
-    "enemy-material": ["Faded Red Satin", "Trimmed Red Silk", "Rich Red Brocade"],
+    "enemy-material": [
+      "Faded Red Satin",
+      "Trimmed Red Silk",
+      "Rich Red Brocade"
+    ],
     "boss-material": "Light Guiding Tetrahedron",
     "weekly-boss": "Puppet Strings",
     "domain-material": "Praxis",
@@ -1101,11 +1369,19 @@
     "stone": "Shivada Jade",
     "weapon": "polearm",
     "specialty-material": "Wolfhook",
-    "enemy-material": ["Recruit's Insignia", "Sergeant's Insignia", "Lieutenant's Insignia"],
+    "enemy-material": [
+      "Recruit's Insignia",
+      "Sergeant's Insignia",
+      "Lieutenant's Insignia"
+    ],
     "boss-material": "Pseudo-Stamens",
     "weekly-boss": "Mirror of Mushin",
     "domain-material": "Ballad",
-    "talents": ["Spear of Favonius - Arrow's Passage", "Starfrost Swirl", "Skyfeather Song"]
+    "talents": [
+      "Spear of Favonius - Arrow's Passage",
+      "Starfrost Swirl",
+      "Skyfeather Song"
+    ]
   },
   "69": {
     "name": "Kaveh",
@@ -1116,7 +1392,11 @@
     "stone": "Nagadus Emerald",
     "weapon": "claymore",
     "specialty-material": "Mourning Flower",
-    "enemy-material": ["Fungal Spores", "Luminescent Pollen", "Crystalline Cyst Dust"],
+    "enemy-material": [
+      "Fungal Spores",
+      "Luminescent Pollen",
+      "Crystalline Cyst Dust"
+    ],
     "boss-material": "Quelled Creeper",
     "weekly-boss": "Primordial Greenbloom",
     "domain-material": "Ingenuity",
@@ -1131,11 +1411,19 @@
     "stone": "Nagadus Emerald",
     "weapon": "catalyst",
     "specialty-material": "Violetgrass",
-    "enemy-material": ["Fungal Spores", "Luminescent Pollen", "Crystalline Cyst Dust"],
+    "enemy-material": [
+      "Fungal Spores",
+      "Luminescent Pollen",
+      "Crystalline Cyst Dust"
+    ],
     "boss-material": "Evergloom Ring",
     "weekly-boss": "Worldspan Fern",
     "domain-material": "Gold",
-    "talents": ["The Classics of Acupuncture", "Universal Diagnosis", "Holistic Revivification"]
+    "talents": [
+      "The Classics of Acupuncture",
+      "Universal Diagnosis",
+      "Holistic Revivification"
+    ]
   },
   "71": {
     "name": "Kirara",
@@ -1162,7 +1450,11 @@
     "weapon": "sword",
     "specialty-material": "Windwheel Aster",
     "enemy-material": ["Damaged Mask", "Stained Mask", "Ominous Mask"],
-    "second-enemy": ["Transoceanic Pearl", "Transoceanic Chunk", "Xenochromatic Crystal"],
+    "second-enemy": [
+      "Transoceanic Pearl",
+      "Transoceanic Chunk",
+      "Xenochromatic Crystal"
+    ],
     "boss-material": "",
     "weekly-boss": "Worldspan Fern",
     "domain-material": ["Equity", "Justice", "Order"],
@@ -1177,11 +1469,19 @@
     "stone": "Vayuda Turquoise",
     "weapon": "sword",
     "specialty-material": "Lumidouce Bell",
-    "enemy-material": ["Meshing Gear", "Mechanical Spur Gear", "Artificed Dynamic Gear"],
+    "enemy-material": [
+      "Meshing Gear",
+      "Mechanical Spur Gear",
+      "Artificed Dynamic Gear"
+    ],
     "boss-material": "Artificed Spare Clockwork Component — Coppelia",
     "weekly-boss": "Everamber",
     "domain-material": "Order",
-    "talents": ["Rapid Ritesword", "Enigmatic Feint", "Magic Trick: Astonishing Shift"]
+    "talents": [
+      "Rapid Ritesword",
+      "Enigmatic Feint",
+      "Magic Trick: Astonishing Shift"
+    ]
   },
   "74": {
     "name": "Lyney",
@@ -1192,11 +1492,19 @@
     "stone": "Agnidus Agate",
     "weapon": "bow",
     "specialty-material": "Rainbow Rose",
-    "enemy-material": ["Recruit's Insignia", "Sergeant's Insignia", "Lieutenant's Insignia"],
+    "enemy-material": [
+      "Recruit's Insignia",
+      "Sergeant's Insignia",
+      "Lieutenant's Insignia"
+    ],
     "boss-material": "Emperor's Resolution",
     "weekly-boss": "Primordial Greenbloom",
     "domain-material": "Equity",
-    "talents": ["Card Force Translocation", "Bewildering Lights", "Wondrous Trick: Miracle Parade"]
+    "talents": [
+      "Card Force Translocation",
+      "Bewildering Lights",
+      "Wondrous Trick: Miracle Parade"
+    ]
   },
   "75": {
     "name": "Freminet",
@@ -1207,7 +1515,11 @@
     "stone": "Shivada Jade",
     "weapon": "claymore",
     "specialty-material": "Romaritime Flower",
-    "enemy-material": ["Transoceanic Pearl", "Transoceanic Chunk", "Xenochromatic Crystal"],
+    "enemy-material": [
+      "Transoceanic Pearl",
+      "Transoceanic Chunk",
+      "Xenochromatic Crystal"
+    ],
     "boss-material": "Artificed Spare Clockwork Component — Coppelius",
     "weekly-boss": "Worldspan Fern",
     "domain-material": "Justice",
@@ -1222,11 +1534,19 @@
     "stone": "Varunada Lazurite",
     "weapon": "catalyst",
     "specialty-material": "Lumitoile",
-    "enemy-material": ["Transoceanic Pearl", "Transoceanic Chunk", "Xenochromatic Crystal"],
+    "enemy-material": [
+      "Transoceanic Pearl",
+      "Transoceanic Chunk",
+      "Xenochromatic Crystal"
+    ],
     "boss-material": "Fontemer Unihorn",
     "weekly-boss": "Everamber",
     "domain-material": "Equity",
-    "talents": ["As Water Seeks Equilibrium", "O Tears, I Shall Repay", "O Tides, I Have Returned"]
+    "talents": [
+      "As Water Seeks Equilibrium",
+      "O Tears, I Shall Repay",
+      "O Tides, I Have Returned"
+    ]
   },
   "77": {
     "name": "Wriothesley",
@@ -1237,7 +1557,11 @@
     "stone": "Shivada Jade",
     "weapon": "catalyst",
     "specialty-material": "Subdetection Unit",
-    "enemy-material": ["Meshing Gear", "Mechanical Spur Gear", "Artificed Dynamic Gear"],
+    "enemy-material": [
+      "Meshing Gear",
+      "Mechanical Spur Gear",
+      "Artificed Dynamic Gear"
+    ],
     "boss-material": "\"Tourbillon Device\"",
     "weekly-boss": "Primordial Greenbloom",
     "domain-material": "Order",
@@ -1252,7 +1576,11 @@
     "stone": "Shivada Jade",
     "weapon": "catalyst",
     "specialty-material": "Beryl Conch",
-    "enemy-material": ["Meshing Gear", "Mechanical Spur Gear", "Artificed Dynamic Gear"],
+    "enemy-material": [
+      "Meshing Gear",
+      "Mechanical Spur Gear",
+      "Artificed Dynamic Gear"
+    ],
     "boss-material": "\"Tourbillon Device\"",
     "weekly-boss": "Lightless Silk String",
     "domain-material": "Justice",
@@ -1271,11 +1599,19 @@
     "stone": "Varunada Lazurite",
     "weapon": "sword",
     "specialty-material": "Lakelight Lily",
-    "enemy-material": ["Whopperflower Nectar", "Shimmering Nectar", "Energy Nectar"],
+    "enemy-material": [
+      "Whopperflower Nectar",
+      "Shimmering Nectar",
+      "Energy Nectar"
+    ],
     "boss-material": "Water That Failed To Transcend",
     "weekly-boss": "Lightless Mass",
     "domain-material": "Justice",
-    "talents": ["Soloist's Solicitation", "Salon Solitaire", "Let the People Rejoice"]
+    "talents": [
+      "Soloist's Solicitation",
+      "Salon Solitaire",
+      "Let the People Rejoice"
+    ]
   },
   "80": {
     "name": "Navia",
@@ -1286,11 +1622,19 @@
     "stone": "Prithiva Topaz",
     "weapon": "claymore",
     "specialty-material": "Spring of the First Dewdrop",
-    "enemy-material": ["Transoceanic Pearl", "Transoceanic Chunk", "Xenochromatic Crystal"],
+    "enemy-material": [
+      "Transoceanic Pearl",
+      "Transoceanic Chunk",
+      "Xenochromatic Crystal"
+    ],
     "boss-material": "Artificed Spare Clockwork Component — Coppelius",
     "weekly-boss": "Lightless Silk String",
     "domain-material": "Equity",
-    "talents": ["Blunt Refusal", "Ceremonial Crystalshot", "As the Sunlit Sky's Singing Salute"]
+    "talents": [
+      "Blunt Refusal",
+      "Ceremonial Crystalshot",
+      "As the Sunlit Sky's Singing Salute"
+    ]
   },
   "81": {
     "name": "Chevreuse",
@@ -1301,7 +1645,11 @@
     "stone": "Agnidus Agate",
     "weapon": "polearm",
     "specialty-material": "Lumidouce Bell",
-    "enemy-material": ["Meshing Gear", "Mechanical Spur Gear", "Artificed Dynamic Gear"],
+    "enemy-material": [
+      "Meshing Gear",
+      "Mechanical Spur Gear",
+      "Artificed Dynamic Gear"
+    ],
     "boss-material": "Fontemer Unihorn",
     "weekly-boss": "Lightless Eye of the Maelstrom",
     "domain-material": "Order",
@@ -1320,7 +1668,11 @@
     "stone": "Agnidus Agate",
     "weapon": "claymore",
     "specialty-material": "Starconch",
-    "enemy-material": ["Slime Condensate", "Slime Secretions", "Slime Concentrate"],
+    "enemy-material": [
+      "Slime Condensate",
+      "Slime Secretions",
+      "Slime Concentrate"
+    ],
     "boss-material": "Emperor's Resolution",
     "weekly-boss": "Lightless Mass",
     "domain-material": "Prosperity",
@@ -1335,11 +1687,19 @@
     "stone": "Vayuda Turquoise",
     "weapon": "catalyst",
     "specialty-material": "Clearwater Jade",
-    "enemy-material": ["Divining Scroll", "Sealed Scroll", "Forbidden Curse Scroll"],
+    "enemy-material": [
+      "Divining Scroll",
+      "Sealed Scroll",
+      "Forbidden Curse Scroll"
+    ],
     "boss-material": "Cloudseam Scale",
     "weekly-boss": "Lightless Eye of the Maelstrom",
     "domain-material": "Gold",
-    "talents": ["Word of Wind and Flower", "White Clouds at Dawn", "Stars Gather at Dusk"]
+    "talents": [
+      "Word of Wind and Flower",
+      "White Clouds at Dawn",
+      "Stars Gather at Dusk"
+    ]
   },
   "84": {
     "name": "Chiori",
@@ -1365,7 +1725,11 @@
     "stone": "Agnidus Agate",
     "weapon": "polearm",
     "specialty-material": "Rainbow Rose",
-    "enemy-material": ["Recruit's Insignia", "Sergeant's Insignia", "Lieutenant's Insignia"],
+    "enemy-material": [
+      "Recruit's Insignia",
+      "Sergeant's Insignia",
+      "Lieutenant's Insignia"
+    ],
     "boss-material": "Fragment of a Golden Melody",
     "weekly-boss": "Fading Candle",
     "domain-material": "Order",
@@ -1380,7 +1744,11 @@
     "stone": "Vajrada Amethyst",
     "weapon": "bow",
     "specialty-material": "Trishiraite",
-    "enemy-material": ["Faded Red Satin", "Trimmed Red Silk", "Rich Red Brocade"],
+    "enemy-material": [
+      "Faded Red Satin",
+      "Trimmed Red Silk",
+      "Rich Red Brocade"
+    ],
     "boss-material": "Cloudseam Scale",
     "weekly-boss": "Daka's Bell",
     "domain-material": "Praxis",
@@ -1399,7 +1767,11 @@
     "stone": "Vajrada Amethyst",
     "weapon": "sword",
     "specialty-material": "Lumitoile",
-    "enemy-material": ["Transoceanic Pearl", "Transoceanic Chunk", "Xenochromatic Crystal"],
+    "enemy-material": [
+      "Transoceanic Pearl",
+      "Transoceanic Chunk",
+      "Xenochromatic Crystal"
+    ],
     "boss-material": "Fontemer Unihorn",
     "weekly-boss": "Everamber",
     "domain-material": "Justice",
@@ -1414,11 +1786,19 @@
     "stone": "Varunada Lazurite",
     "weapon": "bow",
     "specialty-material": "Romaritime Flower",
-    "enemy-material": ["Transoceanic Pearl", "Transoceanic Chunk", "Xenochromatic Crystal"],
+    "enemy-material": [
+      "Transoceanic Pearl",
+      "Transoceanic Chunk",
+      "Xenochromatic Crystal"
+    ],
     "boss-material": "Water That Failed To Transcend",
     "weekly-boss": "Lightless Eye of the Maelstrom",
     "domain-material": "Equity",
-    "talents": ["Targeted Treatment", "Rebound Hydrotherapy", "Super Saturated Syringing"]
+    "talents": [
+      "Targeted Treatment",
+      "Rebound Hydrotherapy",
+      "Super Saturated Syringing"
+    ]
   },
   "89": {
     "name": "Emilie",
@@ -1429,11 +1809,19 @@
     "stone": "Nagadus Emerald",
     "weapon": "polearm",
     "specialty-material": "Lakelight Lily",
-    "enemy-material": ["Meshing Gear", "Mechanical Spur Gear", "Artificed Dynamic Gear"],
+    "enemy-material": [
+      "Meshing Gear",
+      "Mechanical Spur Gear",
+      "Artificed Dynamic Gear"
+    ],
     "boss-material": "Fragment of a Golden Melody",
     "weekly-boss": "Silken Feather",
     "domain-material": "Order",
-    "talents": ["Shadow-Hunting Spear (Custom)", "Fragrance Extraction", "Aromatic Explication"]
+    "talents": [
+      "Shadow-Hunting Spear (Custom)",
+      "Fragrance Extraction",
+      "Aromatic Explication"
+    ]
   },
   "90": {
     "name": "Kachina",
@@ -1486,7 +1874,11 @@
     "boss-material": "Overripe Flamegranate",
     "weekly-boss": "Denial and Judgment",
     "domain-material": "Kindling",
-    "talents": ["Nightsun Style", "Canopy Hunter: Riding High", "Hail to the Almighty Dragonlord"]
+    "talents": [
+      "Nightsun Style",
+      "Canopy Hunter: Riding High",
+      "Hail to the Almighty Dragonlord"
+    ]
   },
   "93": {
     "name": "Xilonen",
@@ -1535,7 +1927,11 @@
     "boss-material": "Ensnaring Gaze",
     "weekly-boss": "Silken Feather",
     "domain-material": "Conflict",
-    "talents": ["Phantom Feather Flurry", "Spirit Reins, Shadow Hunt", "Soul Reaper's Fatal Round"]
+    "talents": [
+      "Phantom Feather Flurry",
+      "Spirit Reins, Shadow Hunt",
+      "Soul Reaper's Fatal Round"
+    ]
   },
   "96": {
     "name": "Traveler (Pyro)",
@@ -1574,7 +1970,11 @@
     "boss-material": "Gold-Inscribed Secret Source Core",
     "weekly-boss": "Eroded Horn",
     "domain-material": "Contention",
-    "talents": ["Flames Weave Life", "The Named Moment", "Hour of Burning Skies"]
+    "talents": [
+      "Flames Weave Life",
+      "The Named Moment",
+      "Hour of Burning Skies"
+    ]
   },
   "98": {
     "name": "Citlali",
@@ -1589,7 +1989,11 @@
     "boss-material": "Talisman of the Enigmatic Land",
     "weekly-boss": "Denial and Judgment",
     "domain-material": "Kindling",
-    "talents": ["Shadow-Stealing Spirit Vessel", "Dawnfrost Darkstar", "Edict of Entwined Splendor"]
+    "talents": [
+      "Shadow-Stealing Spirit Vessel",
+      "Dawnfrost Darkstar",
+      "Edict of Entwined Splendor"
+    ]
   },
   "99": {
     "name": "Lan Yan",
@@ -1600,11 +2004,19 @@
     "stone": "Vayuda Turquoise",
     "weapon": "catalyst",
     "specialty-material": "Clearwater Jade",
-    "enemy-material": ["Whopperflower Nectar", "Shimmering Nectar", "Energy Nectar"],
+    "enemy-material": [
+      "Whopperflower Nectar",
+      "Shimmering Nectar",
+      "Energy Nectar"
+    ],
     "boss-material": "Gold-Inscribed Secret Source Core",
     "weekly-boss": "Eroded Sunfire",
     "domain-material": "Diligence",
-    "talents": ["Black Pheasant Strides on Water", "Swallow-Wisp Pinion Dance", "Lustrous Moonrise"]
+    "talents": [
+      "Black Pheasant Strides on Water",
+      "Swallow-Wisp Pinion Dance",
+      "Lustrous Moonrise"
+    ]
   },
   "100": {
     "name": "Yumemizuki Mizuki",
@@ -1615,7 +2027,11 @@
     "stone": "Vayuda Turquoise",
     "weapon": "catalyst",
     "specialty-material": "Sea Ganoderma",
-    "enemy-material": ["Old Handguard", "Kageuchi Handguard", "Famed Handguard"],
+    "enemy-material": [
+      "Old Handguard",
+      "Kageuchi Handguard",
+      "Famed Handguard"
+    ],
     "boss-material": "Talisman of the Enigmatic Land",
     "weekly-boss": "Fading Candle",
     "domain-material": "Transience",
@@ -1642,7 +2058,11 @@
     "boss-material": "Ensnaring Gaze",
     "weekly-boss": "Denial and Judgment",
     "domain-material": "Contention",
-    "talents": ["Weighted Spike", "Thunderbolt Rush", "The Three Principles of Power"]
+    "talents": [
+      "Weighted Spike",
+      "Thunderbolt Rush",
+      "The Three Principles of Power"
+    ]
   },
   "102": {
     "name": "Varesa",
@@ -1672,7 +2092,11 @@
     "boss-material": "Sparkless Statue Core",
     "weekly-boss": "Ascended Sample: Rook",
     "domain-material": "Conflict",
-    "talents": ["Rite of Dispelling Winds", "Airborne Disease Prevention", "Compound Sedation Field"]
+    "talents": [
+      "Rite of Dispelling Winds",
+      "Airborne Disease Prevention",
+      "Compound Sedation Field"
+    ]
   },
   "104": {
     "name": "Escoffier",
@@ -1683,10 +2107,56 @@
     "stone": "Shivada Jade",
     "weapon": "polearm",
     "specialty-material": "Beryl Conch",
-    "enemy-material": ["Meshing Gear", "Mechanical Spur Gear", "Artificed Dynamic Gear"],
+    "enemy-material": [
+      "Meshing Gear",
+      "Mechanical Spur Gear",
+      "Artificed Dynamic Gear"
+    ],
     "boss-material": "Secret Source Airflow Accumulator",
     "weekly-boss": "Eroded Horn",
     "domain-material": "Justice",
     "talents": ["Kitchen Skills", "Low-Temperature Cooking", "Scoring Cuts"]
+  },
+  "105": {
+    "name": "Dahlia",
+    "birthday": "18-06",
+    "region": "Mondstadt",
+    "quality": "4-stars",
+    "element": "hydro",
+    "stone": "Varunada Lazurite",
+    "weapon": "sword",
+    "specialty-material": "Calla Lily",
+    "enemy-material": [
+      "Firm Arrowhead",
+      "Sharp Arrowhead",
+      "Weathered Arrowhead"
+    ],
+    "boss-material": "Secret Source Airflow Accumulator",
+    "weekly-boss": "Eroded Scale-Feather",
+    "domain-material": "Ballad",
+    "talents": [
+      "Favonius Bladework - Ritual",
+      "Immersive Ordinance",
+      "Radiant Psalter"
+    ]
+  },
+  "106": {
+    "name": "Skirk",
+    "birthday": "05-11",
+    "region": "",
+    "quality": "5-stars",
+    "element": "cryo",
+    "stone": "Shivada Jade",
+    "weapon": "sword",
+    "specialty-material": "Skysplit Gembloom",
+    "enemy-material": [
+      "Meshing Gear",
+      "Mechanical Spur Gear",
+      "Artificed Dynamic Gear"
+    ],
+    "boss-material": "Ensnaring Gaze",
+    "weekly-boss": "Ascended Sample: Knight",
+    "domain-material": "Contention",
+    "talents": ["Havoc: Sunder", "Havoc: Warp", "Havoc: Ruin"]
   }
 }

@@ -3,8 +3,16 @@
     "name": "Dull Blade",
     "quality": "1-stars",
     "weapon": "sword",
-    "enemy-material": ["Firm Arrowhead", "Sharp Arrowhead", "Weathered Arrowhead"],
-    "special-enemy-material": ["Heavy Horn", "Black Bronze Horn", "Black Crystal Horn"],
+    "enemy-material": [
+      "Firm Arrowhead",
+      "Sharp Arrowhead",
+      "Weathered Arrowhead"
+    ],
+    "special-enemy-material": [
+      "Heavy Horn",
+      "Black Bronze Horn",
+      "Black Crystal Horn"
+    ],
     "domain-material": [
       "Tile of Decarabian's Tower",
       "Debris of Decarabian's City",
@@ -16,7 +24,11 @@
     "name": "Beginner's Protector",
     "quality": "1-stars",
     "weapon": "polearm",
-    "enemy-material": ["Divining Scroll", "Sealed Scroll", "Forbidden Curse Scroll"],
+    "enemy-material": [
+      "Divining Scroll",
+      "Sealed Scroll",
+      "Forbidden Curse Scroll"
+    ],
     "special-enemy-material": ["Chaos Device", "Chaos Circuit", "Chaos Core"],
     "domain-material": [
       "Fetters of the Dandelion Gladiator",
@@ -29,8 +41,16 @@
     "name": "Waster Greatsword",
     "quality": "1-stars",
     "weapon": "claymore",
-    "enemy-material": ["Slime Condensate", "Slime Secretions", "Slime Concentrate"],
-    "special-enemy-material": ["Dead Ley Line Branch", "Dead Ley Line Leaves", "Ley Line Sprout"],
+    "enemy-material": [
+      "Slime Condensate",
+      "Slime Secretions",
+      "Slime Concentrate"
+    ],
+    "special-enemy-material": [
+      "Dead Ley Line Branch",
+      "Dead Ley Line Leaves",
+      "Ley Line Sprout"
+    ],
     "domain-material": [
       "Boreal Wolf's Milk Tooth",
       "Boreal Wolf's Cracked Tooth",
@@ -43,7 +63,11 @@
     "quality": "1-stars",
     "weapon": "catalyst",
     "enemy-material": ["Damaged Mask", "Stained Mask", "Ominous Mask"],
-    "special-enemy-material": ["Heavy Horn", "Black Bronze Horn", "Black Crystal Horn"],
+    "special-enemy-material": [
+      "Heavy Horn",
+      "Black Bronze Horn",
+      "Black Crystal Horn"
+    ],
     "domain-material": [
       "Tile of Decarabian's Tower",
       "Debris of Decarabian's City",
@@ -60,7 +84,11 @@
       "Silver Raven Insignia",
       "Golden Raven Insignia"
     ],
-    "special-enemy-material": ["Dead Ley Line Branch", "Dead Ley Line Leaves", "Ley Line Sprout"],
+    "special-enemy-material": [
+      "Dead Ley Line Branch",
+      "Dead Ley Line Leaves",
+      "Ley Line Sprout"
+    ],
     "domain-material": [
       "Boreal Wolf's Milk Tooth",
       "Boreal Wolf's Cracked Tooth",
@@ -72,8 +100,16 @@
     "name": "Silver Sword",
     "quality": "2-stars",
     "weapon": "sword",
-    "enemy-material": ["Firm Arrowhead", "Sharp Arrowhead", "Weathered Arrowhead"],
-    "special-enemy-material": ["Heavy Horn", "Black Bronze Horn", "Black Crystal Horn"],
+    "enemy-material": [
+      "Firm Arrowhead",
+      "Sharp Arrowhead",
+      "Weathered Arrowhead"
+    ],
+    "special-enemy-material": [
+      "Heavy Horn",
+      "Black Bronze Horn",
+      "Black Crystal Horn"
+    ],
     "domain-material": [
       "Tile of Decarabian's Tower",
       "Debris of Decarabian's City",
@@ -85,7 +121,11 @@
     "name": "Iron Point",
     "quality": "2-stars",
     "weapon": "polearm",
-    "enemy-material": ["Divining Scroll", "Sealed Scroll", "Forbidden Curse Scroll"],
+    "enemy-material": [
+      "Divining Scroll",
+      "Sealed Scroll",
+      "Forbidden Curse Scroll"
+    ],
     "special-enemy-material": ["Chaos Device", "Chaos Circuit", "Chaos Core"],
     "domain-material": [
       "Fetters of the Dandelion Gladiator",
@@ -98,8 +138,16 @@
     "name": "Old Merc's Pal",
     "quality": "2-stars",
     "weapon": "claymore",
-    "enemy-material": ["Slime Condensate", "Slime Secretions", "Slime Concentrate"],
-    "special-enemy-material": ["Dead Ley Line Branch", "Dead Ley Line Leaves", "Ley Line Sprout"],
+    "enemy-material": [
+      "Slime Condensate",
+      "Slime Secretions",
+      "Slime Concentrate"
+    ],
+    "special-enemy-material": [
+      "Dead Ley Line Branch",
+      "Dead Ley Line Leaves",
+      "Ley Line Sprout"
+    ],
     "domain-material": [
       "Boreal Wolf's Milk Tooth",
       "Boreal Wolf's Cracked Tooth",
@@ -112,7 +160,11 @@
     "quality": "2-stars",
     "weapon": "catalyst",
     "enemy-material": ["Damaged Mask", "Stained Mask", "Ominous Mask"],
-    "special-enemy-material": ["Heavy Horn", "Black Bronze Horn", "Black Crystal Horn"],
+    "special-enemy-material": [
+      "Heavy Horn",
+      "Black Bronze Horn",
+      "Black Crystal Horn"
+    ],
     "domain-material": [
       "Tile of Decarabian's Tower",
       "Debris of Decarabian's City",
@@ -129,7 +181,11 @@
       "Silver Raven Insignia",
       "Golden Raven Insignia"
     ],
-    "special-enemy-material": ["Dead Ley Line Branch", "Dead Ley Line Leaves", "Ley Line Sprout"],
+    "special-enemy-material": [
+      "Dead Ley Line Branch",
+      "Dead Ley Line Leaves",
+      "Ley Line Sprout"
+    ],
     "domain-material": [
       "Boreal Wolf's Milk Tooth",
       "Boreal Wolf's Cracked Tooth",
@@ -141,7 +197,11 @@
     "name": "Traveler's Handy Sword",
     "quality": "3-stars",
     "weapon": "sword",
-    "enemy-material": ["Divining Scroll", "Sealed Scroll", "Forbidden Curse Scroll"],
+    "enemy-material": [
+      "Divining Scroll",
+      "Sealed Scroll",
+      "Forbidden Curse Scroll"
+    ],
     "special-enemy-material": ["Chaos Device", "Chaos Circuit", "Chaos Core"],
     "domain-material": [
       "Fetters of the Dandelion Gladiator",
@@ -154,8 +214,16 @@
     "name": "Skyrider Sword",
     "quality": "3-stars",
     "weapon": "sword",
-    "enemy-material": ["Recruit's Insignia", "Sergeant's Insignia", "Lieutenant's Insignia"],
-    "special-enemy-material": ["Fragile Bone Shard", "Sturdy Bone Shard", "Fossilized Bone Shard"],
+    "enemy-material": [
+      "Recruit's Insignia",
+      "Sergeant's Insignia",
+      "Lieutenant's Insignia"
+    ],
+    "special-enemy-material": [
+      "Fragile Bone Shard",
+      "Sturdy Bone Shard",
+      "Fossilized Bone Shard"
+    ],
     "domain-material": [
       "Grain of Aerosiderite",
       "Piece of Aerosiderite",
@@ -167,8 +235,16 @@
     "name": "Harbinger of Dawn",
     "quality": "3-stars",
     "weapon": "sword",
-    "enemy-material": ["Slime Condensate", "Slime Secretions", "Slime Concentrate"],
-    "special-enemy-material": ["Dead Ley Line Branch", "Dead Ley Line Leaves", "Ley Line Sprout"],
+    "enemy-material": [
+      "Slime Condensate",
+      "Slime Secretions",
+      "Slime Concentrate"
+    ],
+    "special-enemy-material": [
+      "Dead Ley Line Branch",
+      "Dead Ley Line Leaves",
+      "Ley Line Sprout"
+    ],
     "domain-material": [
       "Boreal Wolf's Milk Tooth",
       "Boreal Wolf's Cracked Tooth",
@@ -185,7 +261,11 @@
       "Silver Raven Insignia",
       "Golden Raven Insignia"
     ],
-    "special-enemy-material": ["Mist Grass Pollen", "Mist Grass", "Mist Grass Wick"],
+    "special-enemy-material": [
+      "Mist Grass Pollen",
+      "Mist Grass",
+      "Mist Grass Wick"
+    ],
     "domain-material": [
       "Mist Veiled Lead Elixir",
       "Mist Veiled Mercury Elixir",
@@ -214,8 +294,16 @@
     "name": "Cool Steel",
     "quality": "3-stars",
     "weapon": "sword",
-    "enemy-material": ["Firm Arrowhead", "Sharp Arrowhead", "Weathered Arrowhead"],
-    "special-enemy-material": ["Heavy Horn", "Black Bronze Horn", "Black Crystal Horn"],
+    "enemy-material": [
+      "Firm Arrowhead",
+      "Sharp Arrowhead",
+      "Weathered Arrowhead"
+    ],
+    "special-enemy-material": [
+      "Heavy Horn",
+      "Black Bronze Horn",
+      "Black Crystal Horn"
+    ],
     "domain-material": [
       "Tile of Decarabian's Tower",
       "Debris of Decarabian's City",
@@ -227,7 +315,11 @@
     "name": "White Tassel",
     "quality": "3-stars",
     "weapon": "polearm",
-    "enemy-material": ["Recruit's Insignia", "Sergeant's Insignia", "Lieutenant's Insignia"],
+    "enemy-material": [
+      "Recruit's Insignia",
+      "Sergeant's Insignia",
+      "Lieutenant's Insignia"
+    ],
     "special-enemy-material": [
       "Hunter's Sacrificial Knife",
       "Agent's Sacrificial Knife",
@@ -244,8 +336,16 @@
     "name": "Halberd",
     "quality": "3-stars",
     "weapon": "polearm",
-    "enemy-material": ["Whopperflower Nectar", "Shimmering Nectar", "Energy Nectar"],
-    "special-enemy-material": ["Mist Grass Pollen", "Mist Grass", "Mist Grass Wick"],
+    "enemy-material": [
+      "Whopperflower Nectar",
+      "Shimmering Nectar",
+      "Energy Nectar"
+    ],
+    "special-enemy-material": [
+      "Mist Grass Pollen",
+      "Mist Grass",
+      "Mist Grass Wick"
+    ],
     "domain-material": [
       "Mist Veiled Lead Elixir",
       "Mist Veiled Mercury Elixir",
@@ -257,8 +357,16 @@
     "name": "Black Tassel",
     "quality": "3-stars",
     "weapon": "polearm",
-    "enemy-material": ["Firm Arrowhead", "Sharp Arrowhead", "Weathered Arrowhead"],
-    "special-enemy-material": ["Fragile Bone Shard", "Sturdy Bone Shard", "Fossilized Bone Shard"],
+    "enemy-material": [
+      "Firm Arrowhead",
+      "Sharp Arrowhead",
+      "Weathered Arrowhead"
+    ],
+    "special-enemy-material": [
+      "Fragile Bone Shard",
+      "Sturdy Bone Shard",
+      "Fossilized Bone Shard"
+    ],
     "domain-material": [
       "Grain of Aerosiderite",
       "Piece of Aerosiderite",
@@ -270,7 +378,11 @@
     "name": "White Iron Greatsword",
     "quality": "3-stars",
     "weapon": "claymore",
-    "enemy-material": ["Slime Condensate", "Slime Secretions", "Slime Concentrate"],
+    "enemy-material": [
+      "Slime Condensate",
+      "Slime Secretions",
+      "Slime Concentrate"
+    ],
     "special-enemy-material": ["Chaos Device", "Chaos Circuit", "Chaos Core"],
     "domain-material": [
       "Fetters of the Dandelion Gladiator",
@@ -288,7 +400,11 @@
       "Silver Raven Insignia",
       "Golden Raven Insignia"
     ],
-    "special-enemy-material": ["Fragile Bone Shard", "Sturdy Bone Shard", "Fossilized Bone Shard"],
+    "special-enemy-material": [
+      "Fragile Bone Shard",
+      "Sturdy Bone Shard",
+      "Fossilized Bone Shard"
+    ],
     "domain-material": [
       "Grain of Aerosiderite",
       "Piece of Aerosiderite",
@@ -300,8 +416,16 @@
     "name": "Ferrous Shadow",
     "quality": "3-stars",
     "weapon": "claymore",
-    "enemy-material": ["Whopperflower Nectar", "Shimmering Nectar", "Energy Nectar"],
-    "special-enemy-material": ["Heavy Horn", "Black Bronze Horn", "Black Crystal Horn"],
+    "enemy-material": [
+      "Whopperflower Nectar",
+      "Shimmering Nectar",
+      "Energy Nectar"
+    ],
+    "special-enemy-material": [
+      "Heavy Horn",
+      "Black Bronze Horn",
+      "Black Crystal Horn"
+    ],
     "domain-material": [
       "Tile of Decarabian's Tower",
       "Debris of Decarabian's City",
@@ -314,7 +438,11 @@
     "quality": "3-stars",
     "weapon": "claymore",
     "enemy-material": ["Damaged Mask", "Stained Mask", "Ominous Mask"],
-    "special-enemy-material": ["Mist Grass Pollen", "Mist Grass", "Mist Grass Wick"],
+    "special-enemy-material": [
+      "Mist Grass Pollen",
+      "Mist Grass",
+      "Mist Grass Wick"
+    ],
     "domain-material": [
       "Mist Veiled Lead Elixir",
       "Mist Veiled Mercury Elixir",
@@ -326,8 +454,16 @@
     "name": "Bloodtainted Greatsword",
     "quality": "3-stars",
     "weapon": "claymore",
-    "enemy-material": ["Firm Arrowhead", "Sharp Arrowhead", "Weathered Arrowhead"],
-    "special-enemy-material": ["Dead Ley Line Branch", "Dead Ley Line Leaves", "Ley Line Sprout"],
+    "enemy-material": [
+      "Firm Arrowhead",
+      "Sharp Arrowhead",
+      "Weathered Arrowhead"
+    ],
+    "special-enemy-material": [
+      "Dead Ley Line Branch",
+      "Dead Ley Line Leaves",
+      "Ley Line Sprout"
+    ],
     "domain-material": [
       "Boreal Wolf's Milk Tooth",
       "Boreal Wolf's Cracked Tooth",
@@ -339,8 +475,16 @@
     "name": "Twin Nephrite",
     "quality": "3-stars",
     "weapon": "catalyst",
-    "enemy-material": ["Recruit's Insignia", "Sergeant's Insignia", "Lieutenant's Insignia"],
-    "special-enemy-material": ["Mist Grass Pollen", "Mist Grass", "Mist Grass Wick"],
+    "enemy-material": [
+      "Recruit's Insignia",
+      "Sergeant's Insignia",
+      "Lieutenant's Insignia"
+    ],
+    "special-enemy-material": [
+      "Mist Grass Pollen",
+      "Mist Grass",
+      "Mist Grass Wick"
+    ],
     "domain-material": [
       "Mist Veiled Lead Elixir",
       "Mist Veiled Mercury Elixir",
@@ -352,8 +496,16 @@
     "name": "Thrilling Tales of Dragon Slayers",
     "quality": "3-stars",
     "weapon": "catalyst",
-    "enemy-material": ["Divining Scroll", "Sealed Scroll", "Forbidden Curse Scroll"],
-    "special-enemy-material": ["Dead Ley Line Branch", "Dead Ley Line Leaves", "Ley Line Sprout"],
+    "enemy-material": [
+      "Divining Scroll",
+      "Sealed Scroll",
+      "Forbidden Curse Scroll"
+    ],
+    "special-enemy-material": [
+      "Dead Ley Line Branch",
+      "Dead Ley Line Leaves",
+      "Ley Line Sprout"
+    ],
     "domain-material": [
       "Boreal Wolf's Milk Tooth",
       "Boreal Wolf's Cracked Tooth",
@@ -378,8 +530,16 @@
     "name": "Magic Guide",
     "quality": "3-stars",
     "weapon": "catalyst",
-    "enemy-material": ["Slime Condensate", "Slime Secretions", "Slime Concentrate"],
-    "special-enemy-material": ["Heavy Horn", "Black Bronze Horn", "Black Crystal Horn"],
+    "enemy-material": [
+      "Slime Condensate",
+      "Slime Secretions",
+      "Slime Concentrate"
+    ],
+    "special-enemy-material": [
+      "Heavy Horn",
+      "Black Bronze Horn",
+      "Black Crystal Horn"
+    ],
     "domain-material": [
       "Tile of Decarabian's Tower",
       "Debris of Decarabian's City",
@@ -429,8 +589,16 @@
     "name": "Sharpshooter's Oath",
     "quality": "3-stars",
     "weapon": "bow",
-    "enemy-material": ["Slime Condensate", "Slime Secretions", "Slime Concentrate"],
-    "special-enemy-material": ["Dead Ley Line Branch", "Dead Ley Line Leaves", "Ley Line Sprout"],
+    "enemy-material": [
+      "Slime Condensate",
+      "Slime Secretions",
+      "Slime Concentrate"
+    ],
+    "special-enemy-material": [
+      "Dead Ley Line Branch",
+      "Dead Ley Line Leaves",
+      "Ley Line Sprout"
+    ],
     "domain-material": [
       "Boreal Wolf's Milk Tooth",
       "Boreal Wolf's Cracked Tooth",
@@ -442,7 +610,11 @@
     "name": "Recurve Bow",
     "quality": "3-stars",
     "weapon": "bow",
-    "enemy-material": ["Divining Scroll", "Sealed Scroll", "Forbidden Curse Scroll"],
+    "enemy-material": [
+      "Divining Scroll",
+      "Sealed Scroll",
+      "Forbidden Curse Scroll"
+    ],
     "special-enemy-material": ["Chaos Device", "Chaos Circuit", "Chaos Core"],
     "domain-material": [
       "Fetters of the Dandelion Gladiator",
@@ -455,8 +627,16 @@
     "name": "Raven Bow",
     "quality": "3-stars",
     "weapon": "bow",
-    "enemy-material": ["Firm Arrowhead", "Sharp Arrowhead", "Weathered Arrowhead"],
-    "special-enemy-material": ["Heavy Horn", "Black Bronze Horn", "Black Crystal Horn"],
+    "enemy-material": [
+      "Firm Arrowhead",
+      "Sharp Arrowhead",
+      "Weathered Arrowhead"
+    ],
+    "special-enemy-material": [
+      "Heavy Horn",
+      "Black Bronze Horn",
+      "Black Crystal Horn"
+    ],
     "domain-material": [
       "Tile of Decarabian's Tower",
       "Debris of Decarabian's City",
@@ -473,7 +653,11 @@
       "Silver Raven Insignia",
       "Golden Raven Insignia"
     ],
-    "special-enemy-material": ["Mist Grass Pollen", "Mist Grass", "Mist Grass Wick"],
+    "special-enemy-material": [
+      "Mist Grass Pollen",
+      "Mist Grass",
+      "Mist Grass Wick"
+    ],
     "domain-material": [
       "Mist Veiled Lead Elixir",
       "Mist Veiled Mercury Elixir",
@@ -485,8 +669,16 @@
     "name": "The Flute",
     "quality": "4-stars",
     "weapon": "sword",
-    "enemy-material": ["Slime Condensate", "Slime Secretions", "Slime Concentrate"],
-    "special-enemy-material": ["Dead Ley Line Branch", "Dead Ley Line Leaves", "Ley Line Sprout"],
+    "enemy-material": [
+      "Slime Condensate",
+      "Slime Secretions",
+      "Slime Concentrate"
+    ],
+    "special-enemy-material": [
+      "Dead Ley Line Branch",
+      "Dead Ley Line Leaves",
+      "Ley Line Sprout"
+    ],
     "domain-material": [
       "Boreal Wolf's Milk Tooth",
       "Boreal Wolf's Cracked Tooth",
@@ -498,8 +690,16 @@
     "name": "The Black Sword",
     "quality": "4-stars",
     "weapon": "sword",
-    "enemy-material": ["Slime Condensate", "Slime Secretions", "Slime Concentrate"],
-    "special-enemy-material": ["Dead Ley Line Branch", "Dead Ley Line Leaves", "Ley Line Sprout"],
+    "enemy-material": [
+      "Slime Condensate",
+      "Slime Secretions",
+      "Slime Concentrate"
+    ],
+    "special-enemy-material": [
+      "Dead Ley Line Branch",
+      "Dead Ley Line Leaves",
+      "Ley Line Sprout"
+    ],
     "domain-material": [
       "Boreal Wolf's Milk Tooth",
       "Boreal Wolf's Cracked Tooth",
@@ -516,7 +716,11 @@
       "Silver Raven Insignia",
       "Golden Raven Insignia"
     ],
-    "special-enemy-material": ["Dead Ley Line Branch", "Dead Ley Line Leaves", "Ley Line Sprout"],
+    "special-enemy-material": [
+      "Dead Ley Line Branch",
+      "Dead Ley Line Leaves",
+      "Ley Line Sprout"
+    ],
     "domain-material": [
       "Boreal Wolf's Milk Tooth",
       "Boreal Wolf's Cracked Tooth",
@@ -528,7 +732,11 @@
     "name": "Sacrificial Sword",
     "quality": "4-stars",
     "weapon": "sword",
-    "enemy-material": ["Divining Scroll", "Sealed Scroll", "Forbidden Curse Scroll"],
+    "enemy-material": [
+      "Divining Scroll",
+      "Sealed Scroll",
+      "Forbidden Curse Scroll"
+    ],
     "special-enemy-material": ["Chaos Device", "Chaos Circuit", "Chaos Core"],
     "domain-material": [
       "Fetters of the Dandelion Gladiator",
@@ -541,8 +749,16 @@
     "name": "Royal Longsword",
     "quality": "4-stars",
     "weapon": "sword",
-    "enemy-material": ["Firm Arrowhead", "Sharp Arrowhead", "Weathered Arrowhead"],
-    "special-enemy-material": ["Heavy Horn", "Black Bronze Horn", "Black Crystal Horn"],
+    "enemy-material": [
+      "Firm Arrowhead",
+      "Sharp Arrowhead",
+      "Weathered Arrowhead"
+    ],
+    "special-enemy-material": [
+      "Heavy Horn",
+      "Black Bronze Horn",
+      "Black Crystal Horn"
+    ],
     "domain-material": [
       "Tile of Decarabian's Tower",
       "Debris of Decarabian's City",
@@ -554,8 +770,16 @@
     "name": "Prototype Rancour",
     "quality": "4-stars",
     "weapon": "sword",
-    "enemy-material": ["Recruit's Insignia", "Sergeant's Insignia", "Lieutenant's Insignia"],
-    "special-enemy-material": ["Mist Grass Pollen", "Mist Grass", "Mist Grass Wick"],
+    "enemy-material": [
+      "Recruit's Insignia",
+      "Sergeant's Insignia",
+      "Lieutenant's Insignia"
+    ],
+    "special-enemy-material": [
+      "Mist Grass Pollen",
+      "Mist Grass",
+      "Mist Grass Wick"
+    ],
     "domain-material": [
       "Mist Veiled Lead Elixir",
       "Mist Veiled Mercury Elixir",
@@ -588,8 +812,16 @@
     "name": "Iron Sting",
     "quality": "4-stars",
     "weapon": "sword",
-    "enemy-material": ["Whopperflower Nectar", "Shimmering Nectar", "Energy Nectar"],
-    "special-enemy-material": ["Fragile Bone Shard", "Sturdy Bone Shard", "Fossilized Bone Shard"],
+    "enemy-material": [
+      "Whopperflower Nectar",
+      "Shimmering Nectar",
+      "Energy Nectar"
+    ],
+    "special-enemy-material": [
+      "Fragile Bone Shard",
+      "Sturdy Bone Shard",
+      "Fossilized Bone Shard"
+    ],
     "domain-material": [
       "Grain of Aerosiderite",
       "Piece of Aerosiderite",
@@ -601,8 +833,16 @@
     "name": "Favonius Sword",
     "quality": "4-stars",
     "weapon": "sword",
-    "enemy-material": ["Firm Arrowhead", "Sharp Arrowhead", "Weathered Arrowhead"],
-    "special-enemy-material": ["Heavy Horn", "Black Bronze Horn", "Black Crystal Horn"],
+    "enemy-material": [
+      "Firm Arrowhead",
+      "Sharp Arrowhead",
+      "Weathered Arrowhead"
+    ],
+    "special-enemy-material": [
+      "Heavy Horn",
+      "Black Bronze Horn",
+      "Black Crystal Horn"
+    ],
     "domain-material": [
       "Tile of Decarabian's Tower",
       "Debris of Decarabian's City",
@@ -614,7 +854,11 @@
     "name": "Blackcliff Longsword",
     "quality": "4-stars",
     "weapon": "sword",
-    "enemy-material": ["Firm Arrowhead", "Sharp Arrowhead", "Weathered Arrowhead"],
+    "enemy-material": [
+      "Firm Arrowhead",
+      "Sharp Arrowhead",
+      "Weathered Arrowhead"
+    ],
     "special-enemy-material": [
       "Hunter's Sacrificial Knife",
       "Agent's Sacrificial Knife",
@@ -632,7 +876,11 @@
     "quality": "4-stars",
     "weapon": "polearm",
     "enemy-material": ["Damaged Mask", "Stained Mask", "Ominous Mask"],
-    "special-enemy-material": ["Fragile Bone Shard", "Sturdy Bone Shard", "Fossilized Bone Shard"],
+    "special-enemy-material": [
+      "Fragile Bone Shard",
+      "Sturdy Bone Shard",
+      "Fossilized Bone Shard"
+    ],
     "domain-material": [
       "Grain of Aerosiderite",
       "Piece of Aerosiderite",
@@ -644,7 +892,11 @@
     "name": "Favonius Lance",
     "quality": "4-stars",
     "weapon": "polearm",
-    "enemy-material": ["Slime Condensate", "Slime Secretions", "Slime Concentrate"],
+    "enemy-material": [
+      "Slime Condensate",
+      "Slime Secretions",
+      "Slime Concentrate"
+    ],
     "special-enemy-material": ["Chaos Device", "Chaos Circuit", "Chaos Core"],
     "domain-material": [
       "Fetters of the Dandelion Gladiator",
@@ -657,8 +909,16 @@
     "name": "Dragon's Bane",
     "quality": "4-stars",
     "weapon": "polearm",
-    "enemy-material": ["Divining Scroll", "Sealed Scroll", "Forbidden Curse Scroll"],
-    "special-enemy-material": ["Mist Grass Pollen", "Mist Grass", "Mist Grass Wick"],
+    "enemy-material": [
+      "Divining Scroll",
+      "Sealed Scroll",
+      "Forbidden Curse Scroll"
+    ],
+    "special-enemy-material": [
+      "Mist Grass Pollen",
+      "Mist Grass",
+      "Mist Grass Wick"
+    ],
     "domain-material": [
       "Mist Veiled Lead Elixir",
       "Mist Veiled Mercury Elixir",
@@ -670,8 +930,16 @@
     "name": "Deathmatch",
     "quality": "4-stars",
     "weapon": "polearm",
-    "enemy-material": ["Whopperflower Nectar", "Shimmering Nectar", "Energy Nectar"],
-    "special-enemy-material": ["Dead Ley Line Branch", "Dead Ley Line Leaves", "Ley Line Sprout"],
+    "enemy-material": [
+      "Whopperflower Nectar",
+      "Shimmering Nectar",
+      "Energy Nectar"
+    ],
+    "special-enemy-material": [
+      "Dead Ley Line Branch",
+      "Dead Ley Line Leaves",
+      "Ley Line Sprout"
+    ],
     "domain-material": [
       "Boreal Wolf's Milk Tooth",
       "Boreal Wolf's Cracked Tooth",
@@ -704,8 +972,16 @@
     "name": "Blackcliff Pole",
     "quality": "4-stars",
     "weapon": "polearm",
-    "enemy-material": ["Recruit's Insignia", "Sergeant's Insignia", "Lieutenant's Insignia"],
-    "special-enemy-material": ["Mist Grass Pollen", "Mist Grass", "Mist Grass Wick"],
+    "enemy-material": [
+      "Recruit's Insignia",
+      "Sergeant's Insignia",
+      "Lieutenant's Insignia"
+    ],
+    "special-enemy-material": [
+      "Mist Grass Pollen",
+      "Mist Grass",
+      "Mist Grass Wick"
+    ],
     "domain-material": [
       "Mist Veiled Lead Elixir",
       "Mist Veiled Mercury Elixir",
@@ -738,8 +1014,16 @@
     "name": "The Bell",
     "quality": "4-stars",
     "weapon": "claymore",
-    "enemy-material": ["Whopperflower Nectar", "Shimmering Nectar", "Energy Nectar"],
-    "special-enemy-material": ["Heavy Horn", "Black Bronze Horn", "Black Crystal Horn"],
+    "enemy-material": [
+      "Whopperflower Nectar",
+      "Shimmering Nectar",
+      "Energy Nectar"
+    ],
+    "special-enemy-material": [
+      "Heavy Horn",
+      "Black Bronze Horn",
+      "Black Crystal Horn"
+    ],
     "domain-material": [
       "Tile of Decarabian's Tower",
       "Debris of Decarabian's City",
@@ -751,8 +1035,16 @@
     "name": "Serpent Spine",
     "quality": "4-stars",
     "weapon": "claymore",
-    "enemy-material": ["Whopperflower Nectar", "Shimmering Nectar", "Energy Nectar"],
-    "special-enemy-material": ["Fragile Bone Shard", "Sturdy Bone Shard", "Fossilized Bone Shard"],
+    "enemy-material": [
+      "Whopperflower Nectar",
+      "Shimmering Nectar",
+      "Energy Nectar"
+    ],
+    "special-enemy-material": [
+      "Fragile Bone Shard",
+      "Sturdy Bone Shard",
+      "Fossilized Bone Shard"
+    ],
     "domain-material": [
       "Grain of Aerosiderite",
       "Piece of Aerosiderite",
@@ -764,8 +1056,16 @@
     "name": "Sacrificial Greatsword",
     "quality": "4-stars",
     "weapon": "claymore",
-    "enemy-material": ["Firm Arrowhead", "Sharp Arrowhead", "Weathered Arrowhead"],
-    "special-enemy-material": ["Dead Ley Line Branch", "Dead Ley Line Leaves", "Ley Line Sprout"],
+    "enemy-material": [
+      "Firm Arrowhead",
+      "Sharp Arrowhead",
+      "Weathered Arrowhead"
+    ],
+    "special-enemy-material": [
+      "Dead Ley Line Branch",
+      "Dead Ley Line Leaves",
+      "Ley Line Sprout"
+    ],
     "domain-material": [
       "Boreal Wolf's Milk Tooth",
       "Boreal Wolf's Cracked Tooth",
@@ -777,7 +1077,11 @@
     "name": "Royal Greatsword",
     "quality": "4-stars",
     "weapon": "claymore",
-    "enemy-material": ["Slime Condensate", "Slime Secretions", "Slime Concentrate"],
+    "enemy-material": [
+      "Slime Condensate",
+      "Slime Secretions",
+      "Slime Concentrate"
+    ],
     "special-enemy-material": ["Chaos Device", "Chaos Circuit", "Chaos Core"],
     "domain-material": [
       "Fetters of the Dandelion Gladiator",
@@ -790,8 +1094,16 @@
     "name": "Rainslasher",
     "quality": "4-stars",
     "weapon": "claymore",
-    "enemy-material": ["Divining Scroll", "Sealed Scroll", "Forbidden Curse Scroll"],
-    "special-enemy-material": ["Mist Grass Pollen", "Mist Grass", "Mist Grass Wick"],
+    "enemy-material": [
+      "Divining Scroll",
+      "Sealed Scroll",
+      "Forbidden Curse Scroll"
+    ],
+    "special-enemy-material": [
+      "Mist Grass Pollen",
+      "Mist Grass",
+      "Mist Grass Wick"
+    ],
     "domain-material": [
       "Mist Veiled Lead Elixir",
       "Mist Veiled Mercury Elixir",
@@ -804,7 +1116,11 @@
     "quality": "4-stars",
     "weapon": "claymore",
     "enemy-material": ["Damaged Mask", "Stained Mask", "Ominous Mask"],
-    "special-enemy-material": ["Fragile Bone Shard", "Sturdy Bone Shard", "Fossilized Bone Shard"],
+    "special-enemy-material": [
+      "Fragile Bone Shard",
+      "Sturdy Bone Shard",
+      "Fossilized Bone Shard"
+    ],
     "domain-material": [
       "Grain of Aerosiderite",
       "Piece of Aerosiderite",
@@ -816,7 +1132,11 @@
     "name": "Favonius Greatsword",
     "quality": "4-stars",
     "weapon": "claymore",
-    "enemy-material": ["Recruit's Insignia", "Sergeant's Insignia", "Lieutenant's Insignia"],
+    "enemy-material": [
+      "Recruit's Insignia",
+      "Sergeant's Insignia",
+      "Lieutenant's Insignia"
+    ],
     "special-enemy-material": ["Chaos Device", "Chaos Circuit", "Chaos Core"],
     "domain-material": [
       "Fetters of the Dandelion Gladiator",
@@ -829,8 +1149,16 @@
     "name": "Blackcliff Slasher",
     "quality": "4-stars",
     "weapon": "claymore",
-    "enemy-material": ["Recruit's Insignia", "Sergeant's Insignia", "Lieutenant's Insignia"],
-    "special-enemy-material": ["Mist Grass Pollen", "Mist Grass", "Mist Grass Wick"],
+    "enemy-material": [
+      "Recruit's Insignia",
+      "Sergeant's Insignia",
+      "Lieutenant's Insignia"
+    ],
+    "special-enemy-material": [
+      "Mist Grass Pollen",
+      "Mist Grass",
+      "Mist Grass Wick"
+    ],
     "domain-material": [
       "Mist Veiled Lead Elixir",
       "Mist Veiled Mercury Elixir",
@@ -843,7 +1171,11 @@
     "quality": "4-stars",
     "weapon": "catalyst",
     "enemy-material": ["Damaged Mask", "Stained Mask", "Ominous Mask"],
-    "special-enemy-material": ["Dead Ley Line Branch", "Dead Ley Line Leaves", "Ley Line Sprout"],
+    "special-enemy-material": [
+      "Dead Ley Line Branch",
+      "Dead Ley Line Leaves",
+      "Ley Line Sprout"
+    ],
     "domain-material": [
       "Boreal Wolf's Milk Tooth",
       "Boreal Wolf's Cracked Tooth",
@@ -855,7 +1187,11 @@
     "name": "Solar Pearl",
     "quality": "4-stars",
     "weapon": "catalyst",
-    "enemy-material": ["Whopperflower Nectar", "Shimmering Nectar", "Energy Nectar"],
+    "enemy-material": [
+      "Whopperflower Nectar",
+      "Shimmering Nectar",
+      "Energy Nectar"
+    ],
     "special-enemy-material": [
       "Hunter's Sacrificial Knife",
       "Agent's Sacrificial Knife",
@@ -889,8 +1225,16 @@
     "name": "Royal Grimoire",
     "quality": "4-stars",
     "weapon": "catalyst",
-    "enemy-material": ["Recruit's Insignia", "Sergeant's Insignia", "Lieutenant's Insignia"],
-    "special-enemy-material": ["Heavy Horn", "Black Bronze Horn", "Black Crystal Horn"],
+    "enemy-material": [
+      "Recruit's Insignia",
+      "Sergeant's Insignia",
+      "Lieutenant's Insignia"
+    ],
+    "special-enemy-material": [
+      "Heavy Horn",
+      "Black Bronze Horn",
+      "Black Crystal Horn"
+    ],
     "domain-material": [
       "Tile of Decarabian's Tower",
       "Debris of Decarabian's City",
@@ -902,8 +1246,16 @@
     "name": "Prototype Amber",
     "quality": "4-stars",
     "weapon": "catalyst",
-    "enemy-material": ["Firm Arrowhead", "Sharp Arrowhead", "Weathered Arrowhead"],
-    "special-enemy-material": ["Mist Grass Pollen", "Mist Grass", "Mist Grass Wick"],
+    "enemy-material": [
+      "Firm Arrowhead",
+      "Sharp Arrowhead",
+      "Weathered Arrowhead"
+    ],
+    "special-enemy-material": [
+      "Mist Grass Pollen",
+      "Mist Grass",
+      "Mist Grass Wick"
+    ],
     "domain-material": [
       "Mist Veiled Lead Elixir",
       "Mist Veiled Mercury Elixir",
@@ -915,8 +1267,16 @@
     "name": "Mappa Mare",
     "quality": "4-stars",
     "weapon": "catalyst",
-    "enemy-material": ["Slime Condensate", "Slime Secretions", "Slime Concentrate"],
-    "special-enemy-material": ["Fragile Bone Shard", "Sturdy Bone Shard", "Fossilized Bone Shard"],
+    "enemy-material": [
+      "Slime Condensate",
+      "Slime Secretions",
+      "Slime Concentrate"
+    ],
+    "special-enemy-material": [
+      "Fragile Bone Shard",
+      "Sturdy Bone Shard",
+      "Fossilized Bone Shard"
+    ],
     "domain-material": [
       "Grain of Aerosiderite",
       "Piece of Aerosiderite",
@@ -928,8 +1288,16 @@
     "name": "Favonius Codex",
     "quality": "4-stars",
     "weapon": "catalyst",
-    "enemy-material": ["Divining Scroll", "Sealed Scroll", "Forbidden Curse Scroll"],
-    "special-enemy-material": ["Heavy Horn", "Black Bronze Horn", "Black Crystal Horn"],
+    "enemy-material": [
+      "Divining Scroll",
+      "Sealed Scroll",
+      "Forbidden Curse Scroll"
+    ],
+    "special-enemy-material": [
+      "Heavy Horn",
+      "Black Bronze Horn",
+      "Black Crystal Horn"
+    ],
     "domain-material": [
       "Tile of Decarabian's Tower",
       "Debris of Decarabian's City",
@@ -942,7 +1310,11 @@
     "quality": "4-stars",
     "weapon": "catalyst",
     "enemy-material": ["Damaged Mask", "Stained Mask", "Ominous Mask"],
-    "special-enemy-material": ["Mist Grass Pollen", "Mist Grass", "Mist Grass Wick"],
+    "special-enemy-material": [
+      "Mist Grass Pollen",
+      "Mist Grass",
+      "Mist Grass Wick"
+    ],
     "domain-material": [
       "Mist Veiled Lead Elixir",
       "Mist Veiled Mercury Elixir",
@@ -954,7 +1326,11 @@
     "name": "Blackcliff Agate",
     "quality": "4-stars",
     "weapon": "catalyst",
-    "enemy-material": ["Divining Scroll", "Sealed Scroll", "Forbidden Curse Scroll"],
+    "enemy-material": [
+      "Divining Scroll",
+      "Sealed Scroll",
+      "Forbidden Curse Scroll"
+    ],
     "special-enemy-material": [
       "Hunter's Sacrificial Knife",
       "Agent's Sacrificial Knife",
@@ -971,8 +1347,16 @@
     "name": "The Viridescent Hunt",
     "quality": "4-stars",
     "weapon": "bow",
-    "enemy-material": ["Firm Arrowhead", "Sharp Arrowhead", "Weathered Arrowhead"],
-    "special-enemy-material": ["Heavy Horn", "Black Bronze Horn", "Black Crystal Horn"],
+    "enemy-material": [
+      "Firm Arrowhead",
+      "Sharp Arrowhead",
+      "Weathered Arrowhead"
+    ],
+    "special-enemy-material": [
+      "Heavy Horn",
+      "Black Bronze Horn",
+      "Black Crystal Horn"
+    ],
     "domain-material": [
       "Tile of Decarabian's Tower",
       "Debris of Decarabian's City",
@@ -984,8 +1368,16 @@
     "name": "The Stringless",
     "quality": "4-stars",
     "weapon": "bow",
-    "enemy-material": ["Firm Arrowhead", "Sharp Arrowhead", "Weathered Arrowhead"],
-    "special-enemy-material": ["Heavy Horn", "Black Bronze Horn", "Black Crystal Horn"],
+    "enemy-material": [
+      "Firm Arrowhead",
+      "Sharp Arrowhead",
+      "Weathered Arrowhead"
+    ],
+    "special-enemy-material": [
+      "Heavy Horn",
+      "Black Bronze Horn",
+      "Black Crystal Horn"
+    ],
     "domain-material": [
       "Tile of Decarabian's Tower",
       "Debris of Decarabian's City",
@@ -997,8 +1389,16 @@
     "name": "Sacrificial Bow",
     "quality": "4-stars",
     "weapon": "bow",
-    "enemy-material": ["Slime Condensate", "Slime Secretions", "Slime Concentrate"],
-    "special-enemy-material": ["Dead Ley Line Branch", "Dead Ley Line Leaves", "Ley Line Sprout"],
+    "enemy-material": [
+      "Slime Condensate",
+      "Slime Secretions",
+      "Slime Concentrate"
+    ],
+    "special-enemy-material": [
+      "Dead Ley Line Branch",
+      "Dead Ley Line Leaves",
+      "Ley Line Sprout"
+    ],
     "domain-material": [
       "Boreal Wolf's Milk Tooth",
       "Boreal Wolf's Cracked Tooth",
@@ -1027,7 +1427,11 @@
     "name": "Royal Bow",
     "quality": "4-stars",
     "weapon": "bow",
-    "enemy-material": ["Divining Scroll", "Sealed Scroll", "Forbidden Curse Scroll"],
+    "enemy-material": [
+      "Divining Scroll",
+      "Sealed Scroll",
+      "Forbidden Curse Scroll"
+    ],
     "special-enemy-material": ["Chaos Device", "Chaos Circuit", "Chaos Core"],
     "domain-material": [
       "Fetters of the Dandelion Gladiator",
@@ -1045,7 +1449,11 @@
       "Silver Raven Insignia",
       "Golden Raven Insignia"
     ],
-    "special-enemy-material": ["Mist Grass Pollen", "Mist Grass", "Mist Grass Wick"],
+    "special-enemy-material": [
+      "Mist Grass Pollen",
+      "Mist Grass",
+      "Mist Grass Wick"
+    ],
     "domain-material": [
       "Mist Veiled Lead Elixir",
       "Mist Veiled Mercury Elixir",
@@ -1057,7 +1465,11 @@
     "name": "Favonius Warbow",
     "quality": "4-stars",
     "weapon": "bow",
-    "enemy-material": ["Whopperflower Nectar", "Shimmering Nectar", "Energy Nectar"],
+    "enemy-material": [
+      "Whopperflower Nectar",
+      "Shimmering Nectar",
+      "Energy Nectar"
+    ],
     "special-enemy-material": ["Chaos Device", "Chaos Circuit", "Chaos Core"],
     "domain-material": [
       "Fetters of the Dandelion Gladiator",
@@ -1070,8 +1482,16 @@
     "name": "Compound Bow",
     "quality": "4-stars",
     "weapon": "bow",
-    "enemy-material": ["Recruit's Insignia", "Sergeant's Insignia", "Lieutenant's Insignia"],
-    "special-enemy-material": ["Fragile Bone Shard", "Sturdy Bone Shard", "Fossilized Bone Shard"],
+    "enemy-material": [
+      "Recruit's Insignia",
+      "Sergeant's Insignia",
+      "Lieutenant's Insignia"
+    ],
+    "special-enemy-material": [
+      "Fragile Bone Shard",
+      "Sturdy Bone Shard",
+      "Fossilized Bone Shard"
+    ],
     "domain-material": [
       "Grain of Aerosiderite",
       "Piece of Aerosiderite",
@@ -1083,7 +1503,11 @@
     "name": "Blackcliff Warbow",
     "quality": "4-stars",
     "weapon": "bow",
-    "enemy-material": ["Whopperflower Nectar", "Shimmering Nectar", "Energy Nectar"],
+    "enemy-material": [
+      "Whopperflower Nectar",
+      "Shimmering Nectar",
+      "Energy Nectar"
+    ],
     "special-enemy-material": [
       "Hunter's Sacrificial Knife",
       "Agent's Sacrificial Knife",
@@ -1100,8 +1524,16 @@
     "name": "Skyward Blade",
     "quality": "5-stars",
     "weapon": "sword",
-    "enemy-material": ["Slime Condensate", "Slime Secretions", "Slime Concentrate"],
-    "special-enemy-material": ["Dead Ley Line Branch", "Dead Ley Line Leaves", "Ley Line Sprout"],
+    "enemy-material": [
+      "Slime Condensate",
+      "Slime Secretions",
+      "Slime Concentrate"
+    ],
+    "special-enemy-material": [
+      "Dead Ley Line Branch",
+      "Dead Ley Line Leaves",
+      "Ley Line Sprout"
+    ],
     "domain-material": [
       "Boreal Wolf's Milk Tooth",
       "Boreal Wolf's Cracked Tooth",
@@ -1113,8 +1545,16 @@
     "name": "Aquila Favonia",
     "quality": "5-stars",
     "weapon": "sword",
-    "enemy-material": ["Firm Arrowhead", "Sharp Arrowhead", "Weathered Arrowhead"],
-    "special-enemy-material": ["Heavy Horn", "Black Bronze Horn", "Black Crystal Horn"],
+    "enemy-material": [
+      "Firm Arrowhead",
+      "Sharp Arrowhead",
+      "Weathered Arrowhead"
+    ],
+    "special-enemy-material": [
+      "Heavy Horn",
+      "Black Bronze Horn",
+      "Black Crystal Horn"
+    ],
     "domain-material": [
       "Tile of Decarabian's Tower",
       "Debris of Decarabian's City",
@@ -1126,7 +1566,11 @@
     "name": "Skyward Spine",
     "quality": "5-stars",
     "weapon": "polearm",
-    "enemy-material": ["Divining Scroll", "Sealed Scroll", "Forbidden Curse Scroll"],
+    "enemy-material": [
+      "Divining Scroll",
+      "Sealed Scroll",
+      "Forbidden Curse Scroll"
+    ],
     "special-enemy-material": ["Chaos Device", "Chaos Circuit", "Chaos Core"],
     "domain-material": [
       "Fetters of the Dandelion Gladiator",
@@ -1139,7 +1583,11 @@
     "name": "Primordial Jade Winged-Spear",
     "quality": "5-stars",
     "weapon": "polearm",
-    "enemy-material": ["Recruit's Insignia", "Sergeant's Insignia", "Lieutenant's Insignia"],
+    "enemy-material": [
+      "Recruit's Insignia",
+      "Sergeant's Insignia",
+      "Lieutenant's Insignia"
+    ],
     "special-enemy-material": [
       "Hunter's Sacrificial Knife",
       "Agent's Sacrificial Knife",
@@ -1156,7 +1604,11 @@
     "name": "Wolf's Gravestone",
     "quality": "5-stars",
     "weapon": "claymore",
-    "enemy-material": ["Divining Scroll", "Sealed Scroll", "Forbidden Curse Scroll"],
+    "enemy-material": [
+      "Divining Scroll",
+      "Sealed Scroll",
+      "Forbidden Curse Scroll"
+    ],
     "special-enemy-material": ["Chaos Device", "Chaos Circuit", "Chaos Core"],
     "domain-material": [
       "Fetters of the Dandelion Gladiator",
@@ -1169,8 +1621,16 @@
     "name": "Skyward Pride",
     "quality": "5-stars",
     "weapon": "claymore",
-    "enemy-material": ["Slime Condensate", "Slime Secretions", "Slime Concentrate"],
-    "special-enemy-material": ["Dead Ley Line Branch", "Dead Ley Line Leaves", "Ley Line Sprout"],
+    "enemy-material": [
+      "Slime Condensate",
+      "Slime Secretions",
+      "Slime Concentrate"
+    ],
+    "special-enemy-material": [
+      "Dead Ley Line Branch",
+      "Dead Ley Line Leaves",
+      "Ley Line Sprout"
+    ],
     "domain-material": [
       "Boreal Wolf's Milk Tooth",
       "Boreal Wolf's Cracked Tooth",
@@ -1182,8 +1642,16 @@
     "name": "Skyward Atlas",
     "quality": "5-stars",
     "weapon": "catalyst",
-    "enemy-material": ["Firm Arrowhead", "Sharp Arrowhead", "Weathered Arrowhead"],
-    "special-enemy-material": ["Dead Ley Line Branch", "Dead Ley Line Leaves", "Ley Line Sprout"],
+    "enemy-material": [
+      "Firm Arrowhead",
+      "Sharp Arrowhead",
+      "Weathered Arrowhead"
+    ],
+    "special-enemy-material": [
+      "Dead Ley Line Branch",
+      "Dead Ley Line Leaves",
+      "Ley Line Sprout"
+    ],
     "domain-material": [
       "Boreal Wolf's Milk Tooth",
       "Boreal Wolf's Cracked Tooth",
@@ -1195,7 +1663,11 @@
     "name": "Lost Prayer to the Sacred Winds",
     "quality": "5-stars",
     "weapon": "catalyst",
-    "enemy-material": ["Slime Condensate", "Slime Secretions", "Slime Concentrate"],
+    "enemy-material": [
+      "Slime Condensate",
+      "Slime Secretions",
+      "Slime Concentrate"
+    ],
     "special-enemy-material": ["Chaos Device", "Chaos Circuit", "Chaos Core"],
     "domain-material": [
       "Fetters of the Dandelion Gladiator",
@@ -1208,8 +1680,16 @@
     "name": "Skyward Harp",
     "quality": "5-stars",
     "weapon": "bow",
-    "enemy-material": ["Firm Arrowhead", "Sharp Arrowhead", "Weathered Arrowhead"],
-    "special-enemy-material": ["Dead Ley Line Branch", "Dead Ley Line Leaves", "Ley Line Sprout"],
+    "enemy-material": [
+      "Firm Arrowhead",
+      "Sharp Arrowhead",
+      "Weathered Arrowhead"
+    ],
+    "special-enemy-material": [
+      "Dead Ley Line Branch",
+      "Dead Ley Line Leaves",
+      "Ley Line Sprout"
+    ],
     "domain-material": [
       "Boreal Wolf's Milk Tooth",
       "Boreal Wolf's Cracked Tooth",
@@ -1221,7 +1701,11 @@
     "name": "Amos' Bow",
     "quality": "5-stars",
     "weapon": "bow",
-    "enemy-material": ["Slime Condensate", "Slime Secretions", "Slime Concentrate"],
+    "enemy-material": [
+      "Slime Condensate",
+      "Slime Secretions",
+      "Slime Concentrate"
+    ],
     "special-enemy-material": ["Chaos Device", "Chaos Circuit", "Chaos Core"],
     "domain-material": [
       "Fetters of the Dandelion Gladiator",
@@ -1234,8 +1718,16 @@
     "name": "Royal Spear",
     "quality": "4-stars",
     "weapon": "polearm",
-    "enemy-material": ["Recruit's Insignia", "Sergeant's Insignia", "Lieutenant's Insignia"],
-    "special-enemy-material": ["Mist Grass Pollen", "Mist Grass", "Mist Grass Wick"],
+    "enemy-material": [
+      "Recruit's Insignia",
+      "Sergeant's Insignia",
+      "Lieutenant's Insignia"
+    ],
+    "special-enemy-material": [
+      "Mist Grass Pollen",
+      "Mist Grass",
+      "Mist Grass Wick"
+    ],
     "domain-material": [
       "Mist Veiled Lead Elixir",
       "Mist Veiled Mercury Elixir",
@@ -1252,7 +1744,11 @@
       "Silver Raven Insignia",
       "Golden Raven Insignia"
     ],
-    "special-enemy-material": ["Fragile Bone Shard", "Sturdy Bone Shard", "Fossilized Bone Shard"],
+    "special-enemy-material": [
+      "Fragile Bone Shard",
+      "Sturdy Bone Shard",
+      "Fossilized Bone Shard"
+    ],
     "domain-material": [
       "Grain of Aerosiderite",
       "Piece of Aerosiderite",
@@ -1269,7 +1765,11 @@
       "Silver Raven Insignia",
       "Golden Raven Insignia"
     ],
-    "special-enemy-material": ["Mist Grass Pollen", "Mist Grass", "Mist Grass Wick"],
+    "special-enemy-material": [
+      "Mist Grass Pollen",
+      "Mist Grass",
+      "Mist Grass Wick"
+    ],
     "domain-material": [
       "Mist Veiled Lead Elixir",
       "Mist Veiled Mercury Elixir",
@@ -1282,7 +1782,11 @@
     "quality": "5-stars",
     "weapon": "catalyst",
     "enemy-material": ["Damaged Mask", "Stained Mask", "Ominous Mask"],
-    "special-enemy-material": ["Fragile Bone Shard", "Sturdy Bone Shard", "Fossilized Bone Shard"],
+    "special-enemy-material": [
+      "Fragile Bone Shard",
+      "Sturdy Bone Shard",
+      "Fossilized Bone Shard"
+    ],
     "domain-material": [
       "Grain of Aerosiderite",
       "Piece of Aerosiderite",
@@ -1294,8 +1798,16 @@
     "name": "Snow-Tombed Starsilver",
     "quality": "4-stars",
     "weapon": "claymore",
-    "enemy-material": ["Slime Condensate", "Slime Secretions", "Slime Concentrate"],
-    "special-enemy-material": ["Heavy Horn", "Black Bronze Horn", "Black Crystal Horn"],
+    "enemy-material": [
+      "Slime Condensate",
+      "Slime Secretions",
+      "Slime Concentrate"
+    ],
+    "special-enemy-material": [
+      "Heavy Horn",
+      "Black Bronze Horn",
+      "Black Crystal Horn"
+    ],
     "domain-material": [
       "Tile of Decarabian's Tower",
       "Debris of Decarabian's City",
@@ -1307,7 +1819,11 @@
     "name": "Frostbearer",
     "quality": "4-stars",
     "weapon": "catalyst",
-    "enemy-material": ["Whopperflower Nectar", "Shimmering Nectar", "Energy Nectar"],
+    "enemy-material": [
+      "Whopperflower Nectar",
+      "Shimmering Nectar",
+      "Energy Nectar"
+    ],
     "special-enemy-material": ["Chaos Device", "Chaos Circuit", "Chaos Core"],
     "domain-material": [
       "Fetters of the Dandelion Gladiator",
@@ -1320,8 +1836,16 @@
     "name": "Festering Desire",
     "quality": "4-stars",
     "weapon": "sword",
-    "enemy-material": ["Recruit's Insignia", "Sergeant's Insignia", "Lieutenant's Insignia"],
-    "special-enemy-material": ["Heavy Horn", "Black Bronze Horn", "Black Crystal Horn"],
+    "enemy-material": [
+      "Recruit's Insignia",
+      "Sergeant's Insignia",
+      "Lieutenant's Insignia"
+    ],
+    "special-enemy-material": [
+      "Heavy Horn",
+      "Black Bronze Horn",
+      "Black Crystal Horn"
+    ],
     "domain-material": [
       "Fetters of the Dandelion Gladiator",
       "Chains of the Dandelion Gladiator",
@@ -1333,8 +1857,16 @@
     "name": "Dragonspine Spear",
     "quality": "4-stars",
     "weapon": "polearm",
-    "enemy-material": ["Recruit's Insignia", "Sergeant's Insignia", "Lieutenant's Insignia"],
-    "special-enemy-material": ["Mist Grass Pollen", "Mist Grass", "Mist Grass Wick"],
+    "enemy-material": [
+      "Recruit's Insignia",
+      "Sergeant's Insignia",
+      "Lieutenant's Insignia"
+    ],
+    "special-enemy-material": [
+      "Mist Grass Pollen",
+      "Mist Grass",
+      "Mist Grass Wick"
+    ],
     "domain-material": [
       "Boreal Wolf's Milk Tooth",
       "Boreal Wolf's Cracked Tooth",
@@ -1363,8 +1895,16 @@
     "name": "Lithic Spear",
     "quality": "4-stars",
     "weapon": "polearm",
-    "enemy-material": ["Firm Arrowhead", "Sharp Arrowhead", "Weathered Arrowhead"],
-    "special-enemy-material": ["Fragile Bone Shard", "Sturdy Bone Shard", "Fossilized Bone Shard"],
+    "enemy-material": [
+      "Firm Arrowhead",
+      "Sharp Arrowhead",
+      "Weathered Arrowhead"
+    ],
+    "special-enemy-material": [
+      "Fragile Bone Shard",
+      "Sturdy Bone Shard",
+      "Fossilized Bone Shard"
+    ],
     "domain-material": [
       "Grain of Aerosiderite",
       "Piece of Aerosiderite",
@@ -1376,7 +1916,11 @@
     "name": "Lithic Blade",
     "quality": "4-stars",
     "weapon": "claymore",
-    "enemy-material": ["Firm Arrowhead", "Sharp Arrowhead", "Weathered Arrowhead"],
+    "enemy-material": [
+      "Firm Arrowhead",
+      "Sharp Arrowhead",
+      "Weathered Arrowhead"
+    ],
     "special-enemy-material": [
       "Hunter's Sacrificial Knife",
       "Agent's Sacrificial Knife",
@@ -1393,8 +1937,16 @@
     "name": "Staff of Homa",
     "quality": "5-stars",
     "weapon": "polearm",
-    "enemy-material": ["Slime Condensate", "Slime Secretions", "Slime Concentrate"],
-    "special-enemy-material": ["Dead Ley Line Branch", "Dead Ley Line Leaves", "Ley Line Sprout"],
+    "enemy-material": [
+      "Slime Condensate",
+      "Slime Secretions",
+      "Slime Concentrate"
+    ],
+    "special-enemy-material": [
+      "Dead Ley Line Branch",
+      "Dead Ley Line Leaves",
+      "Ley Line Sprout"
+    ],
     "domain-material": [
       "Grain of Aerosiderite",
       "Piece of Aerosiderite",
@@ -1411,7 +1963,11 @@
       "Silver Raven Insignia",
       "Golden Raven Insignia"
     ],
-    "special-enemy-material": ["Mist Grass Pollen", "Mist Grass", "Mist Grass Wick"],
+    "special-enemy-material": [
+      "Mist Grass Pollen",
+      "Mist Grass",
+      "Mist Grass Wick"
+    ],
     "domain-material": [
       "Mist Veiled Lead Elixir",
       "Mist Veiled Mercury Elixir",
@@ -1428,7 +1984,11 @@
       "Silver Raven Insignia",
       "Golden Raven Insignia"
     ],
-    "special-enemy-material": ["Dead Ley Line Branch", "Dead Ley Line Leaves", "Ley Line Sprout"],
+    "special-enemy-material": [
+      "Dead Ley Line Branch",
+      "Dead Ley Line Leaves",
+      "Ley Line Sprout"
+    ],
     "domain-material": [
       "Boreal Wolf's Milk Tooth",
       "Boreal Wolf's Cracked Tooth",
@@ -1440,8 +2000,16 @@
     "name": "Windblume Ode",
     "quality": "4-stars",
     "weapon": "bow",
-    "enemy-material": ["Whopperflower Nectar", "Shimmering Nectar", "Energy Nectar"],
-    "special-enemy-material": ["Dead Ley Line Branch", "Dead Ley Line Leaves", "Ley Line Sprout"],
+    "enemy-material": [
+      "Whopperflower Nectar",
+      "Shimmering Nectar",
+      "Energy Nectar"
+    ],
+    "special-enemy-material": [
+      "Dead Ley Line Branch",
+      "Dead Ley Line Leaves",
+      "Ley Line Sprout"
+    ],
     "domain-material": [
       "Fetters of the Dandelion Gladiator",
       "Chains of the Dandelion Gladiator",
@@ -1453,8 +2021,16 @@
     "name": "The Alley Flash",
     "quality": "4-stars",
     "weapon": "sword",
-    "enemy-material": ["Divining Scroll", "Sealed Scroll", "Forbidden Curse Scroll"],
-    "special-enemy-material": ["Heavy Horn", "Black Bronze Horn", "Black Crystal Horn"],
+    "enemy-material": [
+      "Divining Scroll",
+      "Sealed Scroll",
+      "Forbidden Curse Scroll"
+    ],
+    "special-enemy-material": [
+      "Heavy Horn",
+      "Black Bronze Horn",
+      "Black Crystal Horn"
+    ],
     "domain-material": [
       "Tile of Decarabian's Tower",
       "Debris of Decarabian's City",
@@ -1466,7 +2042,11 @@
     "name": "Alley Hunter",
     "quality": "4-stars",
     "weapon": "bow",
-    "enemy-material": ["Slime Condensate", "Slime Secretions", "Slime Concentrate"],
+    "enemy-material": [
+      "Slime Condensate",
+      "Slime Secretions",
+      "Slime Concentrate"
+    ],
     "special-enemy-material": ["Chaos Device", "Chaos Circuit", "Chaos Core"],
     "domain-material": [
       "Fetters of the Dandelion Gladiator",
@@ -1479,8 +2059,16 @@
     "name": "Elegy for the End",
     "quality": "5-stars",
     "weapon": "bow",
-    "enemy-material": ["Recruit's Insignia", "Sergeant's Insignia", "Lieutenant's Insignia"],
-    "special-enemy-material": ["Heavy Horn", "Black Bronze Horn", "Black Crystal Horn"],
+    "enemy-material": [
+      "Recruit's Insignia",
+      "Sergeant's Insignia",
+      "Lieutenant's Insignia"
+    ],
+    "special-enemy-material": [
+      "Heavy Horn",
+      "Black Bronze Horn",
+      "Black Crystal Horn"
+    ],
     "domain-material": [
       "Boreal Wolf's Milk Tooth",
       "Boreal Wolf's Cracked Tooth",
@@ -1493,7 +2081,11 @@
     "quality": "5-stars",
     "weapon": "claymore",
     "enemy-material": ["Damaged Mask", "Stained Mask", "Ominous Mask"],
-    "special-enemy-material": ["Heavy Horn", "Black Bronze Horn", "Black Crystal Horn"],
+    "special-enemy-material": [
+      "Heavy Horn",
+      "Black Bronze Horn",
+      "Black Crystal Horn"
+    ],
     "domain-material": [
       "Tile of Decarabian's Tower",
       "Debris of Decarabian's City",
@@ -1510,7 +2102,11 @@
       "Silver Raven Insignia",
       "Golden Raven Insignia"
     ],
-    "special-enemy-material": ["Heavy Horn", "Black Bronze Horn", "Black Crystal Horn"],
+    "special-enemy-material": [
+      "Heavy Horn",
+      "Black Bronze Horn",
+      "Black Crystal Horn"
+    ],
     "domain-material": [
       "Tile of Decarabian's Tower",
       "Debris of Decarabian's City",
@@ -1523,7 +2119,11 @@
     "quality": "4-stars",
     "weapon": "catalyst",
     "enemy-material": ["Damaged Mask", "Stained Mask", "Ominous Mask"],
-    "special-enemy-material": ["Dead Ley Line Branch", "Dead Ley Line Leaves", "Ley Line Sprout"],
+    "special-enemy-material": [
+      "Dead Ley Line Branch",
+      "Dead Ley Line Leaves",
+      "Ley Line Sprout"
+    ],
     "domain-material": [
       "Boreal Wolf's Milk Tooth",
       "Boreal Wolf's Cracked Tooth",
@@ -1535,7 +2135,11 @@
     "name": "Freedom-Sworn",
     "quality": "5-stars",
     "weapon": "sword",
-    "enemy-material": ["Divining Scroll", "Sealed Scroll", "Forbidden Curse Scroll"],
+    "enemy-material": [
+      "Divining Scroll",
+      "Sealed Scroll",
+      "Forbidden Curse Scroll"
+    ],
     "special-enemy-material": ["Chaos Device", "Chaos Circuit", "Chaos Core"],
     "domain-material": [
       "Fetters of the Dandelion Gladiator",
@@ -1548,8 +2152,16 @@
     "name": "Hakushin Ring",
     "quality": "4-stars",
     "weapon": "catalyst",
-    "enemy-material": ["Divining Scroll", "Sealed Scroll", "Forbidden Curse Scroll"],
-    "special-enemy-material": ["Dismal Prism", "Crystal Prism", "Polarizing Prism"],
+    "enemy-material": [
+      "Divining Scroll",
+      "Sealed Scroll",
+      "Forbidden Curse Scroll"
+    ],
+    "special-enemy-material": [
+      "Dismal Prism",
+      "Crystal Prism",
+      "Polarizing Prism"
+    ],
     "domain-material": [
       "Coral Branch of a Distant Sea",
       "Jeweled Branch of a Distant Sea",
@@ -1561,7 +2173,11 @@
     "name": "Katsuragikiri Nagamasa",
     "quality": "4-stars",
     "weapon": "claymore",
-    "enemy-material": ["Old Handguard", "Kageuchi Handguard", "Famed Handguard"],
+    "enemy-material": [
+      "Old Handguard",
+      "Kageuchi Handguard",
+      "Famed Handguard"
+    ],
     "special-enemy-material": ["Chaos Gear", "Chaos Axis", "Chaos Oculus"],
     "domain-material": [
       "Narukami's Wisdom",
@@ -1591,7 +2207,11 @@
     "name": "Amenoma Kageuchi",
     "quality": "4-stars",
     "weapon": "sword",
-    "enemy-material": ["Old Handguard", "Kageuchi Handguard", "Famed Handguard"],
+    "enemy-material": [
+      "Old Handguard",
+      "Kageuchi Handguard",
+      "Famed Handguard"
+    ],
     "special-enemy-material": ["Chaos Gear", "Chaos Axis", "Chaos Oculus"],
     "domain-material": [
       "Coral Branch of a Distant Sea",
@@ -1604,8 +2224,16 @@
     "name": "Hamayumi",
     "quality": "4-stars",
     "weapon": "bow",
-    "enemy-material": ["Firm Arrowhead", "Sharp Arrowhead", "Weathered Arrowhead"],
-    "special-enemy-material": ["Dismal Prism", "Crystal Prism", "Polarizing Prism"],
+    "enemy-material": [
+      "Firm Arrowhead",
+      "Sharp Arrowhead",
+      "Weathered Arrowhead"
+    ],
+    "special-enemy-material": [
+      "Dismal Prism",
+      "Crystal Prism",
+      "Polarizing Prism"
+    ],
     "domain-material": [
       "Narukami's Wisdom",
       "Narukami's Joy",
@@ -1617,7 +2245,11 @@
     "name": "Mistsplitter Reforged",
     "quality": "5-stars",
     "weapon": "sword",
-    "enemy-material": ["Old Handguard", "Kageuchi Handguard", "Famed Handguard"],
+    "enemy-material": [
+      "Old Handguard",
+      "Kageuchi Handguard",
+      "Famed Handguard"
+    ],
     "special-enemy-material": ["Chaos Gear", "Chaos Axis", "Chaos Oculus"],
     "domain-material": [
       "Coral Branch of a Distant Sea",
@@ -1630,8 +2262,16 @@
     "name": "Thundering Pulse",
     "quality": "5-stars",
     "weapon": "bow",
-    "enemy-material": ["Firm Arrowhead", "Sharp Arrowhead", "Weathered Arrowhead"],
-    "special-enemy-material": ["Dismal Prism", "Crystal Prism", "Polarizing Prism"],
+    "enemy-material": [
+      "Firm Arrowhead",
+      "Sharp Arrowhead",
+      "Weathered Arrowhead"
+    ],
+    "special-enemy-material": [
+      "Dismal Prism",
+      "Crystal Prism",
+      "Polarizing Prism"
+    ],
     "domain-material": [
       "Narukami's Wisdom",
       "Narukami's Joy",
@@ -1643,8 +2283,16 @@
     "name": "Predator",
     "quality": "4-stars",
     "weapon": "bow",
-    "enemy-material": ["Firm Arrowhead", "Sharp Arrowhead", "Weathered Arrowhead"],
-    "special-enemy-material": ["Dismal Prism", "Crystal Prism", "Polarizing Prism"],
+    "enemy-material": [
+      "Firm Arrowhead",
+      "Sharp Arrowhead",
+      "Weathered Arrowhead"
+    ],
+    "special-enemy-material": [
+      "Dismal Prism",
+      "Crystal Prism",
+      "Polarizing Prism"
+    ],
     "domain-material": [
       "Narukami's Wisdom",
       "Narukami's Joy",
@@ -1656,8 +2304,16 @@
     "name": "Luxurious Sea-Lord",
     "quality": "4-stars",
     "weapon": "claymore",
-    "enemy-material": ["Slime Condensate", "Slime Secretions", "Slime Concentrate"],
-    "special-enemy-material": ["Fragile Bone Shard", "Sturdy Bone Shard", "Fossilized Bone Shard"],
+    "enemy-material": [
+      "Slime Condensate",
+      "Slime Secretions",
+      "Slime Concentrate"
+    ],
+    "special-enemy-material": [
+      "Fragile Bone Shard",
+      "Sturdy Bone Shard",
+      "Fossilized Bone Shard"
+    ],
     "domain-material": [
       "Grain of Aerosiderite",
       "Piece of Aerosiderite",
@@ -1683,7 +2339,11 @@
     "quality": "5-stars",
     "weapon": "catalyst",
     "enemy-material": ["Spectral Husk", "Spectral Heart", "Spectral Nucleus"],
-    "special-enemy-material": ["Dismal Prism", "Crystal Prism", "Polarizing Prism"],
+    "special-enemy-material": [
+      "Dismal Prism",
+      "Crystal Prism",
+      "Polarizing Prism"
+    ],
     "domain-material": [
       "Coral Branch of a Distant Sea",
       "Jeweled Branch of a Distant Sea",
@@ -1695,7 +2355,11 @@
     "name": "Engulfing Lightning",
     "quality": "5-stars",
     "weapon": "polearm",
-    "enemy-material": ["Old Handguard", "Kageuchi Handguard", "Famed Handguard"],
+    "enemy-material": [
+      "Old Handguard",
+      "Kageuchi Handguard",
+      "Famed Handguard"
+    ],
     "special-enemy-material": ["Chaos Gear", "Chaos Axis", "Chaos Oculus"],
     "domain-material": [
       "Mask of the Wicked Lieutenant",
@@ -1708,8 +2372,16 @@
     "name": "Wavebreaker's Fin",
     "quality": "4-stars",
     "weapon": "polearm",
-    "enemy-material": ["Old Handguard", "Kageuchi Handguard", "Famed Handguard"],
-    "special-enemy-material": ["Concealed Claw", "Concealed Unguis", "Concealed Talon"],
+    "enemy-material": [
+      "Old Handguard",
+      "Kageuchi Handguard",
+      "Famed Handguard"
+    ],
+    "special-enemy-material": [
+      "Concealed Claw",
+      "Concealed Unguis",
+      "Concealed Talon"
+    ],
     "domain-material": [
       "Mask of the Wicked Lieutenant",
       "Mask of the Tiger's Bite",
@@ -1722,7 +2394,11 @@
     "quality": "4-stars",
     "weapon": "bow",
     "enemy-material": ["Spectral Husk", "Spectral Heart", "Spectral Nucleus"],
-    "special-enemy-material": ["Dismal Prism", "Crystal Prism", "Polarizing Prism"],
+    "special-enemy-material": [
+      "Dismal Prism",
+      "Crystal Prism",
+      "Polarizing Prism"
+    ],
     "domain-material": [
       "Narukami's Wisdom",
       "Narukami's Joy",
@@ -1734,8 +2410,16 @@
     "name": "Akuoumaru",
     "quality": "4-stars",
     "weapon": "claymore",
-    "enemy-material": ["Old Handguard", "Kageuchi Handguard", "Famed Handguard"],
-    "special-enemy-material": ["Concealed Claw", "Concealed Unguis", "Concealed Talon"],
+    "enemy-material": [
+      "Old Handguard",
+      "Kageuchi Handguard",
+      "Famed Handguard"
+    ],
+    "special-enemy-material": [
+      "Concealed Claw",
+      "Concealed Unguis",
+      "Concealed Talon"
+    ],
     "domain-material": [
       "Coral Branch of a Distant Sea",
       "Jeweled Branch of a Distant Sea",
@@ -1748,7 +2432,11 @@
     "quality": "5-stars",
     "weapon": "bow",
     "enemy-material": ["Spectral Husk", "Spectral Heart", "Spectral Nucleus"],
-    "special-enemy-material": ["Concealed Claw", "Concealed Unguis", "Concealed Talon"],
+    "special-enemy-material": [
+      "Concealed Claw",
+      "Concealed Unguis",
+      "Concealed Talon"
+    ],
     "domain-material": [
       "Mask of the Wicked Lieutenant",
       "Mask of the Tiger's Bite",
@@ -1773,8 +2461,16 @@
     "name": "Redhorn Stonethresher",
     "quality": "5-stars",
     "weapon": "claymore",
-    "enemy-material": ["Old Handguard", "Kageuchi Handguard", "Famed Handguard"],
-    "special-enemy-material": ["Concealed Claw", "Concealed Unguis", "Concealed Talon"],
+    "enemy-material": [
+      "Old Handguard",
+      "Kageuchi Handguard",
+      "Famed Handguard"
+    ],
+    "special-enemy-material": [
+      "Concealed Claw",
+      "Concealed Unguis",
+      "Concealed Talon"
+    ],
     "domain-material": [
       "Narukami's Wisdom",
       "Narukami's Joy",
@@ -1786,8 +2482,16 @@
     "name": "Calamity Queller",
     "quality": "5-stars",
     "weapon": "polearm",
-    "enemy-material": ["Whopperflower Nectar", "Shimmering Nectar", "Energy Nectar"],
-    "special-enemy-material": ["Mist Grass Pollen", "Mist Grass", "Mist Grass Wick"],
+    "enemy-material": [
+      "Whopperflower Nectar",
+      "Shimmering Nectar",
+      "Energy Nectar"
+    ],
+    "special-enemy-material": [
+      "Mist Grass Pollen",
+      "Mist Grass",
+      "Mist Grass Wick"
+    ],
     "domain-material": [
       "Mist Veiled Lead Elixir",
       "Mist Veiled Mercury Elixir",
@@ -1800,7 +2504,11 @@
     "quality": "4-stars",
     "weapon": "catalyst",
     "enemy-material": ["Spectral Husk", "Spectral Heart", "Spectral Nucleus"],
-    "special-enemy-material": ["Concealed Claw", "Concealed Unguis", "Concealed Talon"],
+    "special-enemy-material": [
+      "Concealed Claw",
+      "Concealed Unguis",
+      "Concealed Talon"
+    ],
     "domain-material": [
       "Coral Branch of a Distant Sea",
       "Jeweled Branch of a Distant Sea",
@@ -1813,7 +2521,11 @@
     "quality": "5-stars",
     "weapon": "catalyst",
     "enemy-material": ["Spectral Husk", "Spectral Heart", "Spectral Nucleus"],
-    "special-enemy-material": ["Concealed Claw", "Concealed Unguis", "Concealed Talon"],
+    "special-enemy-material": [
+      "Concealed Claw",
+      "Concealed Unguis",
+      "Concealed Talon"
+    ],
     "domain-material": [
       "Mask of the Wicked Lieutenant",
       "Mask of the Tiger's Bite",
@@ -1825,8 +2537,16 @@
     "name": "Haran Geppaku Futsu",
     "quality": "5-stars",
     "weapon": "sword",
-    "enemy-material": ["Old Handguard", "Kageuchi Handguard", "Famed Handguard"],
-    "special-enemy-material": ["Gloomy Statuette", "Dark Statuette", "Deathly Statuette"],
+    "enemy-material": [
+      "Old Handguard",
+      "Kageuchi Handguard",
+      "Famed Handguard"
+    ],
+    "special-enemy-material": [
+      "Gloomy Statuette",
+      "Dark Statuette",
+      "Deathly Statuette"
+    ],
     "domain-material": [
       "Narukami's Wisdom",
       "Narukami's Joy",
@@ -1838,7 +2558,11 @@
     "name": "Fading Twilight",
     "quality": "4-stars",
     "weapon": "bow",
-    "enemy-material": ["Divining Scroll", "Sealed Scroll", "Forbidden Curse Scroll"],
+    "enemy-material": [
+      "Divining Scroll",
+      "Sealed Scroll",
+      "Forbidden Curse Scroll"
+    ],
     "special-enemy-material": [
       "Hunter's Sacrificial Knife",
       "Agent's Sacrificial Knife",
@@ -1856,7 +2580,11 @@
     "quality": "5-stars",
     "weapon": "bow",
     "enemy-material": ["Spectral Husk", "Spectral Heart", "Spectral Nucleus"],
-    "special-enemy-material": ["Gloomy Statuette", "Dark Statuette", "Deathly Statuette"],
+    "special-enemy-material": [
+      "Gloomy Statuette",
+      "Dark Statuette",
+      "Deathly Statuette"
+    ],
     "domain-material": [
       "Luminous Sands from Guyun",
       "Lustrous Stone from Guyun",
@@ -1869,7 +2597,11 @@
     "quality": "4-stars",
     "weapon": "sword",
     "enemy-material": ["Spectral Husk", "Spectral Heart", "Spectral Nucleus"],
-    "special-enemy-material": ["Gloomy Statuette", "Dark Statuette", "Deathly Statuette"],
+    "special-enemy-material": [
+      "Gloomy Statuette",
+      "Dark Statuette",
+      "Deathly Statuette"
+    ],
     "domain-material": [
       "Mask of the Wicked Lieutenant",
       "Mask of the Tiger's Bite",
@@ -1881,7 +2613,11 @@
     "name": "Sapwood Blade",
     "quality": "4-stars",
     "weapon": "sword",
-    "enemy-material": ["Faded Red Satin", "Trimmed Red Silk", "Rich Red Brocade"],
+    "enemy-material": [
+      "Faded Red Satin",
+      "Trimmed Red Silk",
+      "Rich Red Brocade"
+    ],
     "special-enemy-material": ["Chaos Storage", "Chaos Module", "Chaos Bolt"],
     "domain-material": [
       "Copper Talisman of the Forest Dew",
@@ -1894,7 +2630,11 @@
     "name": "Moonpiercer",
     "quality": "4-stars",
     "weapon": "polearm",
-    "enemy-material": ["Recruit's Insignia", "Sergeant's Insignia", "Lieutenant's Insignia"],
+    "enemy-material": [
+      "Recruit's Insignia",
+      "Sergeant's Insignia",
+      "Lieutenant's Insignia"
+    ],
     "special-enemy-material": ["Chaos Storage", "Chaos Module", "Chaos Bolt"],
     "domain-material": [
       "Oasis Garden's Reminiscence",
@@ -1907,7 +2647,11 @@
     "name": "King's Squire",
     "quality": "4-stars",
     "weapon": "bow",
-    "enemy-material": ["Firm Arrowhead", "Sharp Arrowhead", "Weathered Arrowhead"],
+    "enemy-material": [
+      "Firm Arrowhead",
+      "Sharp Arrowhead",
+      "Weathered Arrowhead"
+    ],
     "special-enemy-material": [
       "Inactivated Fungal Nucleus",
       "Dormant Fungal Nucleus",
@@ -1924,8 +2668,16 @@
     "name": "Fruit of Fulfillment",
     "quality": "4-stars",
     "weapon": "catalyst",
-    "enemy-material": ["Fungal Spores", "Luminescent Pollen", "Crystalline Cyst Dust"],
-    "special-enemy-material": ["Gloomy Statuette", "Dark Statuette", "Deathly Statuette"],
+    "enemy-material": [
+      "Fungal Spores",
+      "Luminescent Pollen",
+      "Crystalline Cyst Dust"
+    ],
+    "special-enemy-material": [
+      "Gloomy Statuette",
+      "Dark Statuette",
+      "Deathly Statuette"
+    ],
     "domain-material": [
       "Oasis Garden's Reminiscence",
       "Oasis Garden's Kindness",
@@ -1937,7 +2689,11 @@
     "name": "Forest Regalia",
     "quality": "4-stars",
     "weapon": "claymore",
-    "enemy-material": ["Faded Red Satin", "Trimmed Red Silk", "Rich Red Brocade"],
+    "enemy-material": [
+      "Faded Red Satin",
+      "Trimmed Red Silk",
+      "Rich Red Brocade"
+    ],
     "special-enemy-material": ["Chaos Storage", "Chaos Module", "Chaos Bolt"],
     "domain-material": [
       "Copper Talisman of the Forest Dew",
@@ -1950,7 +2706,11 @@
     "name": "End of the Line",
     "quality": "4-stars",
     "weapon": "bow",
-    "enemy-material": ["Fungal Spores", "Luminescent Pollen", "Crystalline Cyst Dust"],
+    "enemy-material": [
+      "Fungal Spores",
+      "Luminescent Pollen",
+      "Crystalline Cyst Dust"
+    ],
     "special-enemy-material": [
       "Inactivated Fungal Nucleus",
       "Dormant Fungal Nucleus",
@@ -1967,7 +2727,11 @@
     "name": "Hunter's Path",
     "quality": "5-stars",
     "weapon": "bow",
-    "enemy-material": ["Faded Red Satin", "Trimmed Red Silk", "Rich Red Brocade"],
+    "enemy-material": [
+      "Faded Red Satin",
+      "Trimmed Red Silk",
+      "Rich Red Brocade"
+    ],
     "special-enemy-material": [
       "Inactivated Fungal Nucleus",
       "Dormant Fungal Nucleus",
@@ -1984,8 +2748,16 @@
     "name": "Missive Windspear",
     "quality": "4-stars",
     "weapon": "polearm",
-    "enemy-material": ["Slime Condensate", "Slime Secretions", "Slime Concentrate"],
-    "special-enemy-material": ["Gloomy Statuette", "Dark Statuette", "Deathly Statuette"],
+    "enemy-material": [
+      "Slime Condensate",
+      "Slime Secretions",
+      "Slime Concentrate"
+    ],
+    "special-enemy-material": [
+      "Gloomy Statuette",
+      "Dark Statuette",
+      "Deathly Statuette"
+    ],
     "domain-material": [
       "Boreal Wolf's Milk Tooth",
       "Boreal Wolf's Cracked Tooth",
@@ -1997,7 +2769,11 @@
     "name": "Wandering Evenstar",
     "quality": "4-stars",
     "weapon": "catalyst",
-    "enemy-material": ["Fungal Spores", "Luminescent Pollen", "Crystalline Cyst Dust"],
+    "enemy-material": [
+      "Fungal Spores",
+      "Luminescent Pollen",
+      "Crystalline Cyst Dust"
+    ],
     "special-enemy-material": [
       "Inactivated Fungal Nucleus",
       "Dormant Fungal Nucleus",
@@ -2031,8 +2807,16 @@
     "name": "Xiphos' Moonlight",
     "quality": "4-stars",
     "weapon": "sword",
-    "enemy-material": ["Faded Red Satin", "Trimmed Red Silk", "Rich Red Brocade"],
-    "special-enemy-material": ["Damaged Prism", "Turbid Prism", "Radiant Prism"],
+    "enemy-material": [
+      "Faded Red Satin",
+      "Trimmed Red Silk",
+      "Rich Red Brocade"
+    ],
+    "special-enemy-material": [
+      "Damaged Prism",
+      "Turbid Prism",
+      "Radiant Prism"
+    ],
     "domain-material": [
       "Copper Talisman of the Forest Dew",
       "Iron Talisman of the Forest Dew",
@@ -2044,7 +2828,11 @@
     "name": "Staff of the Scarlet Sands",
     "quality": "5-stars",
     "weapon": "polearm",
-    "enemy-material": ["Fungal Spores", "Luminescent Pollen", "Crystalline Cyst Dust"],
+    "enemy-material": [
+      "Fungal Spores",
+      "Luminescent Pollen",
+      "Crystalline Cyst Dust"
+    ],
     "special-enemy-material": ["Chaos Storage", "Chaos Module", "Chaos Bolt"],
     "domain-material": [
       "Oasis Garden's Reminiscence",
@@ -2057,8 +2845,16 @@
     "name": "Key of Khaj-Nisut",
     "quality": "5-stars",
     "weapon": "sword",
-    "enemy-material": ["Faded Red Satin", "Trimmed Red Silk", "Rich Red Brocade"],
-    "special-enemy-material": ["Damaged Prism", "Turbid Prism", "Radiant Prism"],
+    "enemy-material": [
+      "Faded Red Satin",
+      "Trimmed Red Silk",
+      "Rich Red Brocade"
+    ],
+    "special-enemy-material": [
+      "Damaged Prism",
+      "Turbid Prism",
+      "Radiant Prism"
+    ],
     "domain-material": [
       "Copper Talisman of the Forest Dew",
       "Iron Talisman of the Forest Dew",
@@ -2070,8 +2866,16 @@
     "name": "A Thousand Floating Dreams",
     "quality": "5-stars",
     "weapon": "catalyst",
-    "enemy-material": ["Fungal Spores", "Luminescent Pollen", "Crystalline Cyst Dust"],
-    "special-enemy-material": ["Damaged Prism", "Turbid Prism", "Radiant Prism"],
+    "enemy-material": [
+      "Fungal Spores",
+      "Luminescent Pollen",
+      "Crystalline Cyst Dust"
+    ],
+    "special-enemy-material": [
+      "Damaged Prism",
+      "Turbid Prism",
+      "Radiant Prism"
+    ],
     "domain-material": [
       "Oasis Garden's Reminiscence",
       "Oasis Garden's Kindness",
@@ -2083,8 +2887,16 @@
     "name": "Toukabou Shigure",
     "quality": "4-stars",
     "weapon": "sword",
-    "enemy-material": ["Old Handguard", "Kageuchi Handguard", "Famed Handguard"],
-    "special-enemy-material": ["Damaged Prism", "Turbid Prism", "Radiant Prism"],
+    "enemy-material": [
+      "Old Handguard",
+      "Kageuchi Handguard",
+      "Famed Handguard"
+    ],
+    "special-enemy-material": [
+      "Damaged Prism",
+      "Turbid Prism",
+      "Radiant Prism"
+    ],
     "domain-material": [
       "Narukami's Wisdom",
       "Narukami's Joy",
@@ -2096,7 +2908,11 @@
     "name": "Tulaytullah's Remembrance",
     "quality": "5-stars",
     "weapon": "catalyst",
-    "enemy-material": ["Fungal Spores", "Luminescent Pollen", "Crystalline Cyst Dust"],
+    "enemy-material": [
+      "Fungal Spores",
+      "Luminescent Pollen",
+      "Crystalline Cyst Dust"
+    ],
     "special-enemy-material": [
       "Inactivated Fungal Nucleus",
       "Dormant Fungal Nucleus",
@@ -2113,8 +2929,16 @@
     "name": "Light of Foliar Incision",
     "quality": "5-stars",
     "weapon": "sword",
-    "enemy-material": ["Faded Red Satin", "Trimmed Red Silk", "Rich Red Brocade"],
-    "special-enemy-material": ["Desiccated Shell", "Sturdy Shell", "Marked Shell"],
+    "enemy-material": [
+      "Faded Red Satin",
+      "Trimmed Red Silk",
+      "Rich Red Brocade"
+    ],
+    "special-enemy-material": [
+      "Desiccated Shell",
+      "Sturdy Shell",
+      "Marked Shell"
+    ],
     "domain-material": [
       "Copper Talisman of the Forest Dew",
       "Iron Talisman of the Forest Dew",
@@ -2127,7 +2951,11 @@
     "quality": "4-stars",
     "weapon": "claymore",
     "enemy-material": ["Spectral Husk", "Spectral Heart", "Spectral Nucleus"],
-    "special-enemy-material": ["Desiccated Shell", "Sturdy Shell", "Marked Shell"],
+    "special-enemy-material": [
+      "Desiccated Shell",
+      "Sturdy Shell",
+      "Marked Shell"
+    ],
     "domain-material": [
       "Fetters of the Dandelion Gladiator",
       "Chains of the Dandelion Gladiator",
@@ -2139,8 +2967,16 @@
     "name": "Beacon of the Reed Sea",
     "quality": "5-stars",
     "weapon": "claymore",
-    "enemy-material": ["Faded Red Satin", "Trimmed Red Silk", "Rich Red Brocade"],
-    "special-enemy-material": ["Desiccated Shell", "Sturdy Shell", "Marked Shell"],
+    "enemy-material": [
+      "Faded Red Satin",
+      "Trimmed Red Silk",
+      "Rich Red Brocade"
+    ],
+    "special-enemy-material": [
+      "Desiccated Shell",
+      "Sturdy Shell",
+      "Marked Shell"
+    ],
     "domain-material": [
       "Echo of Scorching Might",
       "Remnant Glow of Scorching Might",
@@ -2152,7 +2988,11 @@
     "name": "Jadefall's Splendor",
     "quality": "5-stars",
     "weapon": "catalyst",
-    "enemy-material": ["Fungal Spores", "Luminescent Pollen", "Crystalline Cyst Dust"],
+    "enemy-material": [
+      "Fungal Spores",
+      "Luminescent Pollen",
+      "Crystalline Cyst Dust"
+    ],
     "special-enemy-material": [
       "A Flower Yet to Bloom",
       "Treasured Flower",
@@ -2169,7 +3009,11 @@
     "name": "Ibis Piercer",
     "quality": "4-stars",
     "weapon": "bow",
-    "enemy-material": ["Faded Red Satin", "Trimmed Red Silk", "Rich Red Brocade"],
+    "enemy-material": [
+      "Faded Red Satin",
+      "Trimmed Red Silk",
+      "Rich Red Brocade"
+    ],
     "special-enemy-material": [
       "A Flower Yet to Bloom",
       "Treasured Flower",
@@ -2186,7 +3030,11 @@
     "name": "Fleuve Cendre Ferryman",
     "quality": "4-stars",
     "weapon": "sword",
-    "enemy-material": ["Transoceanic Pearl", "Transoceanic Chunk", "Xenochromatic Crystal"],
+    "enemy-material": [
+      "Transoceanic Pearl",
+      "Transoceanic Chunk",
+      "Xenochromatic Crystal"
+    ],
     "special-enemy-material": [
       "Drop of Tainted Water",
       "Scoop of Tainted Water",
@@ -2203,8 +3051,16 @@
     "name": "Sacrificial Jade",
     "quality": "4-stars",
     "weapon": "catalyst",
-    "enemy-material": ["Divining Scroll", "Sealed Scroll", "Forbidden Curse Scroll"],
-    "special-enemy-material": ["Mist Grass Pollen", "Mist Grass", "Mist Grass Wick"],
+    "enemy-material": [
+      "Divining Scroll",
+      "Sealed Scroll",
+      "Forbidden Curse Scroll"
+    ],
+    "special-enemy-material": [
+      "Mist Grass Pollen",
+      "Mist Grass",
+      "Mist Grass Wick"
+    ],
     "domain-material": [
       "Luminous Sands from Guyun",
       "Lustrous Stone from Guyun",
@@ -2216,7 +3072,11 @@
     "name": "Ballad of the Fjords",
     "quality": "4-stars",
     "weapon": "polearm",
-    "enemy-material": ["Whopperflower Nectar", "Shimmering Nectar", "Energy Nectar"],
+    "enemy-material": [
+      "Whopperflower Nectar",
+      "Shimmering Nectar",
+      "Energy Nectar"
+    ],
     "special-enemy-material": [
       "A Flower Yet to Bloom",
       "Treasured Flower",
@@ -2233,8 +3093,16 @@
     "name": "Talking Stick",
     "quality": "4-stars",
     "weapon": "claymore",
-    "enemy-material": ["Slime Condensate", "Slime Secretions", "Slime Concentrate"],
-    "special-enemy-material": ["Desiccated Shell", "Sturdy Shell", "Marked Shell"],
+    "enemy-material": [
+      "Slime Condensate",
+      "Slime Secretions",
+      "Slime Concentrate"
+    ],
+    "special-enemy-material": [
+      "Desiccated Shell",
+      "Sturdy Shell",
+      "Marked Shell"
+    ],
     "domain-material": [
       "Oasis Garden's Reminiscence",
       "Oasis Garden's Kindness",
@@ -2259,7 +3127,11 @@
     "name": "Scion of the Blazing Sun",
     "quality": "4-stars",
     "weapon": "bow",
-    "enemy-material": ["Fungal Spores", "Luminescent Pollen", "Crystalline Cyst Dust"],
+    "enemy-material": [
+      "Fungal Spores",
+      "Luminescent Pollen",
+      "Crystalline Cyst Dust"
+    ],
     "special-enemy-material": [
       "A Flower Yet to Bloom",
       "Treasured Flower",
@@ -2276,8 +3148,16 @@
     "name": "Flowing Purity",
     "quality": "4-stars",
     "weapon": "catalyst",
-    "enemy-material": ["Transoceanic Pearl", "Transoceanic Chunk", "Xenochromatic Crystal"],
-    "special-enemy-material": ["Rift Core", "Foreign Synapse", "Alien Life Core"],
+    "enemy-material": [
+      "Transoceanic Pearl",
+      "Transoceanic Chunk",
+      "Xenochromatic Crystal"
+    ],
+    "special-enemy-material": [
+      "Rift Core",
+      "Foreign Synapse",
+      "Alien Life Core"
+    ],
     "domain-material": [
       "Dross of Pure Sacred Dewdrop",
       "Sublimation of Pure Sacred Dewdrop",
@@ -2289,8 +3169,16 @@
     "name": "Rightful Reward",
     "quality": "4-stars",
     "weapon": "polearm",
-    "enemy-material": ["Meshing Gear", "Mechanical Spur Gear", "Artificed Dynamic Gear"],
-    "special-enemy-material": ["Rift Core", "Foreign Synapse", "Alien Life Core"],
+    "enemy-material": [
+      "Meshing Gear",
+      "Mechanical Spur Gear",
+      "Artificed Dynamic Gear"
+    ],
+    "special-enemy-material": [
+      "Rift Core",
+      "Foreign Synapse",
+      "Alien Life Core"
+    ],
     "domain-material": [
       "Broken Goblet of the Pristine Sea",
       "Wine Goblet of the Pristine Sea",
@@ -2302,8 +3190,16 @@
     "name": "Tidal Shadow",
     "quality": "4-stars",
     "weapon": "claymore",
-    "enemy-material": ["Meshing Gear", "Mechanical Spur Gear", "Artificed Dynamic Gear"],
-    "special-enemy-material": ["Rift Core", "Foreign Synapse", "Alien Life Core"],
+    "enemy-material": [
+      "Meshing Gear",
+      "Mechanical Spur Gear",
+      "Artificed Dynamic Gear"
+    ],
+    "special-enemy-material": [
+      "Rift Core",
+      "Foreign Synapse",
+      "Alien Life Core"
+    ],
     "domain-material": [
       "Broken Goblet of the Pristine Sea",
       "Wine Goblet of the Pristine Sea",
@@ -2315,7 +3211,11 @@
     "name": "Finale of the Deep",
     "quality": "4-stars",
     "weapon": "sword",
-    "enemy-material": ["Old Handguard", "Kageuchi Handguard", "Famed Handguard"],
+    "enemy-material": [
+      "Old Handguard",
+      "Kageuchi Handguard",
+      "Famed Handguard"
+    ],
     "special-enemy-material": [
       "Drop of Tainted Water",
       "Scoop of Tainted Water",
@@ -2332,7 +3232,11 @@
     "name": "Song of Stillness",
     "quality": "4-stars",
     "weapon": "bow",
-    "enemy-material": ["Firm Arrowhead", "Sharp Arrowhead", "Weathered Arrowhead"],
+    "enemy-material": [
+      "Firm Arrowhead",
+      "Sharp Arrowhead",
+      "Weathered Arrowhead"
+    ],
     "special-enemy-material": [
       "Drop of Tainted Water",
       "Scoop of Tainted Water",
@@ -2349,7 +3253,11 @@
     "name": "The First Great Magic",
     "quality": "5-stars",
     "weapon": "bow",
-    "enemy-material": ["Transoceanic Pearl", "Transoceanic Chunk", "Xenochromatic Crystal"],
+    "enemy-material": [
+      "Transoceanic Pearl",
+      "Transoceanic Chunk",
+      "Xenochromatic Crystal"
+    ],
     "special-enemy-material": [
       "Drop of Tainted Water",
       "Scoop of Tainted Water",
@@ -2371,7 +3279,11 @@
       "Silver Raven Insignia",
       "Golden Raven Insignia"
     ],
-    "special-enemy-material": ["Fragile Bone Shard", "Sturdy Bone Shard", "Fossilized Bone Shard"],
+    "special-enemy-material": [
+      "Fragile Bone Shard",
+      "Sturdy Bone Shard",
+      "Fossilized Bone Shard"
+    ],
     "domain-material": [
       "Boreal Wolf's Milk Tooth",
       "Boreal Wolf's Cracked Tooth",
@@ -2383,7 +3295,11 @@
     "name": "Range Gauge",
     "quality": "4-stars",
     "weapon": "bow",
-    "enemy-material": ["Transoceanic Pearl", "Transoceanic Chunk", "Xenochromatic Crystal"],
+    "enemy-material": [
+      "Transoceanic Pearl",
+      "Transoceanic Chunk",
+      "Xenochromatic Crystal"
+    ],
     "special-enemy-material": [
       "Drop of Tainted Water",
       "Scoop of Tainted Water",
@@ -2400,7 +3316,11 @@
     "name": "Prospector's Drill",
     "quality": "4-stars",
     "weapon": "polearm",
-    "enemy-material": ["Meshing Gear", "Mechanical Spur Gear", "Artificed Dynamic Gear"],
+    "enemy-material": [
+      "Meshing Gear",
+      "Mechanical Spur Gear",
+      "Artificed Dynamic Gear"
+    ],
     "special-enemy-material": [
       "Old Operative's Pocket Watch",
       "Operative's Standard Pocket Watch",
@@ -2417,8 +3337,16 @@
     "name": "Portable Power Saw",
     "quality": "4-stars",
     "weapon": "claymore",
-    "enemy-material": ["Meshing Gear", "Mechanical Spur Gear", "Artificed Dynamic Gear"],
-    "special-enemy-material": ["Rift Core", "Foreign Synapse", "Alien Life Core"],
+    "enemy-material": [
+      "Meshing Gear",
+      "Mechanical Spur Gear",
+      "Artificed Dynamic Gear"
+    ],
+    "special-enemy-material": [
+      "Rift Core",
+      "Foreign Synapse",
+      "Alien Life Core"
+    ],
     "domain-material": [
       "Broken Goblet of the Pristine Sea",
       "Wine Goblet of the Pristine Sea",
@@ -2430,7 +3358,11 @@
     "name": "The Dockhand's Assistant",
     "quality": "4-stars",
     "weapon": "sword",
-    "enemy-material": ["Transoceanic Pearl", "Transoceanic Chunk", "Xenochromatic Crystal"],
+    "enemy-material": [
+      "Transoceanic Pearl",
+      "Transoceanic Chunk",
+      "Xenochromatic Crystal"
+    ],
     "special-enemy-material": [
       "Old Operative's Pocket Watch",
       "Operative's Standard Pocket Watch",
@@ -2447,7 +3379,11 @@
     "name": "Cashflow Supervision",
     "quality": "5-stars",
     "weapon": "catalyst",
-    "enemy-material": ["Transoceanic Pearl", "Transoceanic Chunk", "Xenochromatic Crystal"],
+    "enemy-material": [
+      "Transoceanic Pearl",
+      "Transoceanic Chunk",
+      "Xenochromatic Crystal"
+    ],
     "special-enemy-material": [
       "Old Operative's Pocket Watch",
       "Operative's Standard Pocket Watch",
@@ -2464,8 +3400,16 @@
     "name": "Tome of the Eternal Flow",
     "quality": "5-stars",
     "weapon": "catalyst",
-    "enemy-material": ["Meshing Gear", "Mechanical Spur Gear", "Artificed Dynamic Gear"],
-    "special-enemy-material": ["Rift Core", "Foreign Synapse", "Alien Life Core"],
+    "enemy-material": [
+      "Meshing Gear",
+      "Mechanical Spur Gear",
+      "Artificed Dynamic Gear"
+    ],
+    "special-enemy-material": [
+      "Rift Core",
+      "Foreign Synapse",
+      "Alien Life Core"
+    ],
     "domain-material": [
       "Dross of Pure Sacred Dewdrop",
       "Sublimation of Pure Sacred Dewdrop",
@@ -2477,7 +3421,11 @@
     "name": "Sword of Narzissenkreuz",
     "quality": "4-stars",
     "weapon": "sword",
-    "enemy-material": ["Transoceanic Pearl", "Transoceanic Chunk", "Xenochromatic Crystal"],
+    "enemy-material": [
+      "Transoceanic Pearl",
+      "Transoceanic Chunk",
+      "Xenochromatic Crystal"
+    ],
     "special-enemy-material": [
       "Old Operative's Pocket Watch",
       "Operative's Standard Pocket Watch",
@@ -2494,7 +3442,11 @@
     "name": "Splendor of Tranquil Waters",
     "quality": "5-stars",
     "weapon": "sword",
-    "enemy-material": ["Transoceanic Pearl", "Transoceanic Chunk", "Xenochromatic Crystal"],
+    "enemy-material": [
+      "Transoceanic Pearl",
+      "Transoceanic Chunk",
+      "Xenochromatic Crystal"
+    ],
     "special-enemy-material": [
       "Drop of Tainted Water",
       "Scoop of Tainted Water",
@@ -2511,7 +3463,11 @@
     "name": "Ultimate Overlord's Mega Magic Sword",
     "quality": "4-stars",
     "weapon": "claymore",
-    "enemy-material": ["Meshing Gear", "Mechanical Spur Gear", "Artificed Dynamic Gear"],
+    "enemy-material": [
+      "Meshing Gear",
+      "Mechanical Spur Gear",
+      "Artificed Dynamic Gear"
+    ],
     "special-enemy-material": [
       "Old Operative's Pocket Watch",
       "Operative's Standard Pocket Watch",
@@ -2528,8 +3484,16 @@
     "name": "Verdict",
     "quality": "5-stars",
     "weapon": "claymore",
-    "enemy-material": ["Meshing Gear", "Mechanical Spur Gear", "Artificed Dynamic Gear"],
-    "special-enemy-material": ["Rift Core", "Foreign Synapse", "Alien Life Core"],
+    "enemy-material": [
+      "Meshing Gear",
+      "Mechanical Spur Gear",
+      "Artificed Dynamic Gear"
+    ],
+    "special-enemy-material": [
+      "Rift Core",
+      "Foreign Synapse",
+      "Alien Life Core"
+    ],
     "domain-material": [
       "Fragment of an Ancient Chord",
       "Chapter of an Ancient Chord",
@@ -2541,7 +3505,11 @@
     "name": "Crane's Echoing Call",
     "quality": "5-stars",
     "weapon": "catalyst",
-    "enemy-material": ["Divining Scroll", "Sealed Scroll", "Forbidden Curse Scroll"],
+    "enemy-material": [
+      "Divining Scroll",
+      "Sealed Scroll",
+      "Forbidden Curse Scroll"
+    ],
     "special-enemy-material": ["Feathery Fin", "Lunar Fin", "Chasmlight Fin"],
     "domain-material": [
       "Mist Veiled Lead Elixir",
@@ -2567,7 +3535,11 @@
     "name": "Uraku Misugiri",
     "quality": "5-stars",
     "weapon": "sword",
-    "enemy-material": ["Old Handguard", "Kageuchi Handguard", "Famed Handguard"],
+    "enemy-material": [
+      "Old Handguard",
+      "Kageuchi Handguard",
+      "Famed Handguard"
+    ],
     "special-enemy-material": ["Chaos Gear", "Chaos Axis", "Chaos Oculus"],
     "domain-material": [
       "Coral Branch of a Distant Sea",
@@ -2580,8 +3552,16 @@
     "name": "Crimson Moon's Semblance",
     "quality": "5-stars",
     "weapon": "polearm",
-    "enemy-material": ["Meshing Gear", "Mechanical Spur Gear", "Artificed Dynamic Gear"],
-    "special-enemy-material": ["Ruined Hilt", "Splintered Hilt", "Still-Smoldering Hilt"],
+    "enemy-material": [
+      "Meshing Gear",
+      "Mechanical Spur Gear",
+      "Artificed Dynamic Gear"
+    ],
+    "special-enemy-material": [
+      "Ruined Hilt",
+      "Splintered Hilt",
+      "Still-Smoldering Hilt"
+    ],
     "domain-material": [
       "Broken Goblet of the Pristine Sea",
       "Wine Goblet of the Pristine Sea",
@@ -2593,8 +3573,16 @@
     "name": "Cloudforged",
     "quality": "4-stars",
     "weapon": "bow",
-    "enemy-material": ["Recruit's Insignia", "Sergeant's Insignia", "Lieutenant's Insignia"],
-    "special-enemy-material": ["Ruined Hilt", "Splintered Hilt", "Still-Smoldering Hilt"],
+    "enemy-material": [
+      "Recruit's Insignia",
+      "Sergeant's Insignia",
+      "Lieutenant's Insignia"
+    ],
+    "special-enemy-material": [
+      "Ruined Hilt",
+      "Splintered Hilt",
+      "Still-Smoldering Hilt"
+    ],
     "domain-material": [
       "Grain of Aerosiderite",
       "Piece of Aerosiderite",
@@ -2606,7 +3594,11 @@
     "name": "Silvershower Heartstrings",
     "quality": "5-stars",
     "weapon": "bow",
-    "enemy-material": ["Transoceanic Pearl", "Transoceanic Chunk", "Xenochromatic Crystal"],
+    "enemy-material": [
+      "Transoceanic Pearl",
+      "Transoceanic Chunk",
+      "Xenochromatic Crystal"
+    ],
     "special-enemy-material": ["Feathery Fin", "Lunar Fin", "Chasmlight Fin"],
     "domain-material": [
       "Dross of Pure Sacred Dewdrop",
@@ -2619,7 +3611,11 @@
     "name": "Absolution",
     "quality": "5-stars",
     "weapon": "sword",
-    "enemy-material": ["Meshing Gear", "Mechanical Spur Gear", "Artificed Dynamic Gear"],
+    "enemy-material": [
+      "Meshing Gear",
+      "Mechanical Spur Gear",
+      "Artificed Dynamic Gear"
+    ],
     "special-enemy-material": [
       "Old Operative's Pocket Watch",
       "Operative's Standard Pocket Watch",
@@ -2636,8 +3632,16 @@
     "name": "Lumidouce Elegy",
     "quality": "5-stars",
     "weapon": "polearm",
-    "enemy-material": ["Whopperflower Nectar", "Shimmering Nectar", "Energy Nectar"],
-    "special-enemy-material": ["Ruined Hilt", "Splintered Hilt", "Still-Smoldering Hilt"],
+    "enemy-material": [
+      "Whopperflower Nectar",
+      "Shimmering Nectar",
+      "Energy Nectar"
+    ],
+    "special-enemy-material": [
+      "Ruined Hilt",
+      "Splintered Hilt",
+      "Still-Smoldering Hilt"
+    ],
     "domain-material": [
       "Broken Goblet of the Pristine Sea",
       "Wine Goblet of the Pristine Sea",
@@ -2705,7 +3709,11 @@
       "Warrior's Metal Whistle",
       "Saurian-Crowned Warrior's Golden Whistle"
     ],
-    "special-enemy-material": ["Ignited Stone", "Ignited Seed of Life", "Ignited Seeing Eye"],
+    "special-enemy-material": [
+      "Ignited Stone",
+      "Ignited Seed of Life",
+      "Ignited Seeing Eye"
+    ],
     "domain-material": [
       "Blazing Sacrificial Heart's Terror",
       "Blazing Sacrificial Heart's Hesitance",
@@ -2718,7 +3726,11 @@
     "quality": "4-stars",
     "weapon": "sword",
     "enemy-material": ["Juvenile Fang", "Seasoned Fang", "Tyrant's Fang"],
-    "special-enemy-material": ["Ruined Hilt", "Splintered Hilt", "Still-Smoldering Hilt"],
+    "special-enemy-material": [
+      "Ruined Hilt",
+      "Splintered Hilt",
+      "Still-Smoldering Hilt"
+    ],
     "domain-material": [
       "Blazing Sacrificial Heart's Terror",
       "Blazing Sacrificial Heart's Hesitance",
@@ -2769,7 +3781,11 @@
       "Warrior's Metal Whistle",
       "Saurian-Crowned Warrior's Golden Whistle"
     ],
-    "special-enemy-material": ["Ignited Stone", "Ignited Seed of Life", "Ignited Seeing Eye"],
+    "special-enemy-material": [
+      "Ignited Stone",
+      "Ignited Seed of Life",
+      "Ignited Seeing Eye"
+    ],
     "domain-material": [
       "Delirious Decadence of the Sacred Lord",
       "Delirious Desolation of the Sacred Lord",
@@ -2798,8 +3814,16 @@
     "name": "Mountain-Bracing Bolt",
     "quality": "4-stars",
     "weapon": "polearm",
-    "enemy-material": ["Whopperflower Nectar", "Shimmering Nectar", "Energy Nectar"],
-    "special-enemy-material": ["Ignited Stone", "Ignited Seed of Life", "Ignited Seeing Eye"],
+    "enemy-material": [
+      "Whopperflower Nectar",
+      "Shimmering Nectar",
+      "Energy Nectar"
+    ],
+    "special-enemy-material": [
+      "Ignited Stone",
+      "Ignited Seed of Life",
+      "Ignited Seeing Eye"
+    ],
     "domain-material": [
       "Delirious Decadence of the Sacred Lord",
       "Delirious Desolation of the Sacred Lord",
@@ -2871,7 +3895,11 @@
       "Warrior's Metal Whistle",
       "Saurian-Crowned Warrior's Golden Whistle"
     ],
-    "special-enemy-material": ["Ignited Stone", "Ignited Seed of Life", "Ignited Seeing Eye"],
+    "special-enemy-material": [
+      "Ignited Stone",
+      "Ignited Seed of Life",
+      "Ignited Seeing Eye"
+    ],
     "domain-material": [
       "Night-Wind's Mystic Consideration",
       "Night-Wind's Mystic Premonition",
@@ -2888,7 +3916,11 @@
       "Warrior's Metal Whistle",
       "Saurian-Crowned Warrior's Golden Whistle"
     ],
-    "special-enemy-material": ["Refractive Bud", "Bewildering Broadleaf", "Illusory Leafcoil"],
+    "special-enemy-material": [
+      "Refractive Bud",
+      "Bewildering Broadleaf",
+      "Illusory Leafcoil"
+    ],
     "domain-material": [
       "Delirious Decadence of the Sacred Lord",
       "Delirious Desolation of the Sacred Lord",
@@ -2905,7 +3937,11 @@
       "Warrior's Metal Whistle",
       "Saurian-Crowned Warrior's Golden Whistle"
     ],
-    "special-enemy-material": ["Refractive Bud", "Bewildering Broadleaf", "Illusory Leafcoil"],
+    "special-enemy-material": [
+      "Refractive Bud",
+      "Bewildering Broadleaf",
+      "Illusory Leafcoil"
+    ],
     "domain-material": [
       "Night-Wind's Mystic Consideration",
       "Night-Wind's Mystic Premonition",
@@ -2956,7 +3992,11 @@
     "quality": "5-stars",
     "weapon": "catalyst",
     "enemy-material": ["Spectral Husk", "Spectral Heart", "Spectral Nucleus"],
-    "special-enemy-material": ["Ignited Stone", "Ignited Seed of Life", "Ignited Seeing Eye"],
+    "special-enemy-material": [
+      "Ignited Stone",
+      "Ignited Seed of Life",
+      "Ignited Seeing Eye"
+    ],
     "domain-material": [
       "Narukami's Wisdom",
       "Narukami's Joy",
@@ -2968,8 +4008,16 @@
     "name": "Tamayuratei no Ohanashi",
     "quality": "4-stars",
     "weapon": "polearm",
-    "enemy-material": ["Old Handguard", "Kageuchi Handguard", "Famed Handguard"],
-    "special-enemy-material": ["Refractive Bud", "Bewildering Broadleaf", "Illusory Leafcoil"],
+    "enemy-material": [
+      "Old Handguard",
+      "Kageuchi Handguard",
+      "Famed Handguard"
+    ],
+    "special-enemy-material": [
+      "Refractive Bud",
+      "Bewildering Broadleaf",
+      "Illusory Leafcoil"
+    ],
     "domain-material": [
       "Mask of the Wicked Lieutenant",
       "Mask of the Tiger's Bite",
@@ -2982,7 +4030,11 @@
     "quality": "5-stars",
     "weapon": "catalyst",
     "enemy-material": ["Juvenile Fang", "Seasoned Fang", "Tyrant's Fang"],
-    "special-enemy-material": ["Cold-Cracked Shellshard", "Warm Back-Shell", "Blazing Prismshell"],
+    "special-enemy-material": [
+      "Cold-Cracked Shellshard",
+      "Warm Back-Shell",
+      "Blazing Prismshell"
+    ],
     "domain-material": [
       "Delirious Decadence of the Sacred Lord",
       "Delirious Desolation of the Sacred Lord",
@@ -2990,27 +4042,67 @@
       "Delirious Divinity of the Sacred Lord"
     ]
   },
-  "208":{
+  "208": {
     "name": "Symphonist of Scents",
     "quality": "5-stars",
     "weapon": "polearm",
-    "enemy-material": ["Transoceanic Pearl", "Transoceanic Chunk", "Xenochromatic Crystal"],
-    "special-enemy-material": ["Drop of Tainted Water","Scoop of Tainted Water","Newborn Tainted Hydro Phantasm"],
+    "enemy-material": [
+      "Transoceanic Pearl",
+      "Transoceanic Chunk",
+      "Xenochromatic Crystal"
+    ],
+    "special-enemy-material": [
+      "Drop of Tainted Water",
+      "Scoop of Tainted Water",
+      "Newborn Tainted Hydro Phantasm"
+    ],
     "domain-material": [
-      "Dross of Pure Sacred Dewdrop","Sublimation of Pure Sacred Dewdrop","Spring of Pure Sacred Dewdrop","Essence of Pure Sacred Dewdrop"
+      "Dross of Pure Sacred Dewdrop",
+      "Sublimation of Pure Sacred Dewdrop",
+      "Spring of Pure Sacred Dewdrop",
+      "Essence of Pure Sacred Dewdrop"
     ]
   },
-  "209":{
+  "209": {
     "name": "Sequence of Solitude",
     "quality": "4-stars",
     "weapon": "bow",
-    "enemy-material": ["Meshing Gear", "Mechanical Spur Gear", "Artificed Dynamic Gear"],
-    "special-enemy-material": ["Cold-Cracked Shellshard", "Warm Back-Shell", "Blazing Prismshell"],
+    "enemy-material": [
+      "Meshing Gear",
+      "Mechanical Spur Gear",
+      "Artificed Dynamic Gear"
+    ],
+    "special-enemy-material": [
+      "Cold-Cracked Shellshard",
+      "Warm Back-Shell",
+      "Blazing Prismshell"
+    ],
     "domain-material": [
       "Fragment of an Ancient Chord",
       "Chapter of an Ancient Chord",
       "Movement of an Ancient Chord",
       "Echo of an Ancient Chord"
+    ]
+  },
+  "210": {
+    "name": "Azurelight",
+    "quality": "5-stars",
+    "weapon": "sword",
+    "enemy-material": [
+      "Sentry's Wooden Whistle",
+      "Warrior's Metal Whistle",
+      "Saurian-Crowned Warrior's Golden Whistle"
+    ],
+    "special-enemy-material": [
+      "Refractive Bud",
+      "Bewildering Broadleaf",
+      "Illusory Leafcoil"
+    ],
+    "domain-material": [
+      "Night-Wind's Mystic Consideration",
+      "Night-Wind's Mystic Premonition",
+      "Night-Wind's Mystic Augury",
+      "Night-Wind's Mystic Revelation"
     ]
   }
 }
