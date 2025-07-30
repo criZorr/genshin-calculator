@@ -274,7 +274,7 @@ small {
   margin-right: auto;
   padding: 1rem;
 
-  min-height: calc(100vh - var(--header-height) - 2rem);
+  min-height: calc(100dvh - var(--header-height) - 2rem);
 
   @media screen and (min-width: 624px) {
     flex-direction: row;
@@ -289,7 +289,7 @@ small {
 
   @media screen and (min-width: 1024px) {
     padding: 2rem 0;
-    min-height: calc(100vh - 4rem - 2rem);
+    min-height: calc(100dvh - 4rem - 2rem);
   }
 
   transition: all 0.5s ease-in;
@@ -309,7 +309,7 @@ small {
 
   @media screen and (min-width: 624px) {
     width: calc(50% - 0.5rem);
-    height: calc(100vh - var(--header-height) - 4rem - 2rem);
+    height: calc(100dvh - var(--header-height) - 4rem - 2rem);
   }
 
   @media screen and (min-width: 704px) {
@@ -317,7 +317,7 @@ small {
   }
 
   @media screen and (min-width: 1024px) {
-    height: calc(100vh - 4rem - 4rem - 2rem);
+    height: calc(100dvh - 4rem - 4rem - 2rem);
   }
 }
 
@@ -439,7 +439,7 @@ small {
 
   left: -1rem;
 
-  width: calc(100vw - 2rem);
+  width: calc(100dvw - 2rem);
 
   padding-right: 1rem;
   padding-left: 1rem;
@@ -539,27 +539,51 @@ small {
 }
 
 .five {
-  background: linear-gradient(180deg, var(--gold-dark-color) 0%, var(--gold-light-color) 100%);
+  background: linear-gradient(
+    180deg,
+    var(--gold-dark-color) 0%,
+    var(--gold-light-color) 100%
+  );
 }
 
 .four {
-  background: linear-gradient(180deg, var(--purple-dark-color) 0%, var(--purple-light-color) 100%);
+  background: linear-gradient(
+    180deg,
+    var(--purple-dark-color) 0%,
+    var(--purple-light-color) 100%
+  );
 }
 
 .three {
-  background: linear-gradient(180deg, var(--blue-dark-color) 0%, var(--blue-light-color) 100%);
+  background: linear-gradient(
+    180deg,
+    var(--blue-dark-color) 0%,
+    var(--blue-light-color) 100%
+  );
 }
 
 .two {
-  background: linear-gradient(180deg, var(--green-dark-color) 0%, var(--green-light-color) 100%);
+  background: linear-gradient(
+    180deg,
+    var(--green-dark-color) 0%,
+    var(--green-light-color) 100%
+  );
 }
 
 .one {
-  background: linear-gradient(180deg, var(--gray-dark-color) 0%, var(--gray-light-color) 100%);
+  background: linear-gradient(
+    180deg,
+    var(--gray-dark-color) 0%,
+    var(--gray-light-color) 100%
+  );
 }
 
 .colab {
-  background: linear-gradient(180deg, var(--colab-dark-color) 0%, var(--colab-light-color) 100%);
+  background: linear-gradient(
+    180deg,
+    var(--colab-dark-color) 0%,
+    var(--colab-light-color) 100%
+  );
 }
 
 .birth {
@@ -577,7 +601,11 @@ small {
 .gradiant-right,
 .gradiant-left {
   position: absolute;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, var(--second-light-color) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 0%,
+    var(--second-light-color) 100%
+  );
   width: 1rem;
   height: 6rem;
   right: -1rem;
@@ -589,7 +617,11 @@ small {
 }
 
 .gradiant-left {
-  background: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, var(--second-light-color) 100%);
+  background: linear-gradient(
+    -90deg,
+    rgba(0, 0, 0, 0) 0%,
+    var(--second-light-color) 100%
+  );
 
   left: -1rem;
 }
@@ -1152,8 +1184,8 @@ small {
 }
 
 .modal-item-holder {
-  max-width: clamp(18rem, 11.8636rem + 30.6818vw, 31.5rem);
-  width: clamp(18rem, 11.8636rem + 30.6818vw, 31.5rem);
+  max-width: clamp(18rem, 11.8636rem + 30.6818dvw, 31.5rem);
+  width: clamp(18rem, 11.8636rem + 30.6818dvw, 31.5rem);
 }
 
 .info-title {
@@ -1218,7 +1250,7 @@ small {
 }
 
 .modal-item-holder {
-  max-height: 75vh;
+  max-height: 75dvh;
 }
 
 .items-container-user {
@@ -1286,20 +1318,20 @@ small {
   font-size: 0.8125rem;
   padding: 0.25rem 0.5rem;
   border-radius: 0.5rem;
-  width: 60vw;
-  left: 20vw;
+  width: 60dvw;
+  left: 20dvw;
   bottom: calc(var(--header-height) + 1rem);
   transition: all 0.25s ease-in;
 
   @media screen and (min-width: 624px) {
-    width: 30vw;
-    left: 35vw;
+    width: 30dvw;
+    left: 35dvw;
     bottom: calc(var(--header-height) + 1.5rem);
   }
 
   @media screen and (min-width: 1024px) {
-    width: 20vw;
-    left: 40vw;
+    width: 20dvw;
+    left: 40dvw;
     bottom: auto;
     top: var(--header-height);
   }
@@ -1476,8 +1508,8 @@ small {
 .loader-container {
   visibility: visible;
   position: absolute;
-  top: calc(50vh - 1.5625rem);
-  left: calc(50vw - 1.5625rem);
+  top: calc(50dvh - 1.5625rem);
+  left: calc(50dvw - 1.5625rem);
   transform: scale(1.5);
 }
 

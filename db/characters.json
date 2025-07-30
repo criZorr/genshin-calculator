@@ -2158,5 +2158,28 @@
     "weekly-boss": "Ascended Sample: Knight",
     "domain-material": "Contention",
     "talents": ["Havoc: Sunder", "Havoc: Warp", "Havoc: Ruin"]
+  },
+  "107": {
+    "name": "Ineffa",
+    "birthday": "02-04",
+    "region": "Nod-Krai",
+    "quality": "5-stars",
+    "element": "electro",
+    "stone": "Vajrada Amethyst",
+    "weapon": "polearm",
+    "specialty-material": "Glowing Hornshroom",
+    "enemy-material": [
+      "Sentry's Wooden Whistle",
+      "Warrior's Metal Whistle",
+      "Saurian-Crowned Warrior's Golden Whistle"
+    ],
+    "boss-material": "Secret Source Airflow Accumulator",
+    "weekly-boss": "Eroded Sunfire",
+    "domain-material": "Conflict",
+    "talents": [
+      "Cyclonic Duster",
+      "Cleaning Mode: Carrier Frequency",
+      "Supreme Instruction: Cyclonic Exterminator"
+    ]
   }
 }

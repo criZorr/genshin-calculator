@@ -4104,5 +4104,44 @@
       "Night-Wind's Mystic Augury",
       "Night-Wind's Mystic Revelation"
     ]
+  },
+
+  "211": {
+    "name": "Flame-Forged Insight",
+    "quality": "4-stars",
+    "weapon": "sword",
+    "enemy-material": [
+      "Transoceanic Pearl",
+      "Transoceanic Chunk",
+      "Xenochromatic Crystal"
+    ],
+    "special-enemy-material": [
+      "Cold-Cracked Shellshard",
+      "Warm Back-Shell",
+      "Blazing Prismshell"
+    ],
+    "domain-material": [
+      "Delirious Decadence of the Sacred Lord",
+      "Delirious Desolation of the Sacred Lord",
+      "Delirious Demeanor of the Sacred Lord",
+      "Delirious Divinity of the Sacred Lord"
+    ]
+  },
+  "212": {
+    "name": "Fractured Halo",
+    "quality": "5-stars",
+    "weapon": "polearm",
+    "enemy-material": ["Juvenile Fang", "Seasoned Fang", "Tyrant's Fang"],
+    "special-enemy-material": [
+      "Cold-Cracked Shellshard",
+      "Warm Back-Shell",
+      "Blazing Prismshell"
+    ],
+    "domain-material": [
+      "Blazing Sacrificial Heart's Terror",
+      "Blazing Sacrificial Heart's Hesitance",
+      "Blazing Sacrificial Heart's Resolve",
+      "Blazing Sacrificial Heart's Splendor"
+    ]
   }
 }

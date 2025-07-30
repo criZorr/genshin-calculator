@@ -80,7 +80,7 @@
 @media screen and (min-width: 1024px) {
   .container {
     padding: 2rem 0;
-    height: calc(100vh - 4rem - 4rem - 2rem);
+    height: calc(100dvh - 4rem - 4rem - 2rem);
   }
 }
 
@@ -90,7 +90,7 @@
   .content-parameters-user,
   .content-info {
     width: calc(50% - 0.5rem);
-    height: calc(100vh - var(--header-height) - 4rem - 2rem);
+    height: calc(100dvh - var(--header-height) - 4rem - 2rem);
   }
   .content-settings {
     flex-direction: row;
@@ -109,7 +109,7 @@
   .content-parameters,
   .content-parameters-user,
   .content-info {
-    height: calc(100vh - 4rem - 4rem - 2rem);
+    height: calc(100dvh - 4rem - 4rem - 2rem);
   }
 }
 
@@ -374,8 +374,8 @@
 /* Tooltip */
 @media screen and (min-width: 624px) {
   .tooltip {
-    width: 30vw;
-    left: 35vw;
+    width: 30dvw;
+    left: 35dvw;
     bottom: calc(var(--header-height) + 1.5rem);
   }
 
@@ -386,8 +386,8 @@
 
 @media screen and (min-width: 1024px) {
   .tooltip {
-    width: 20vw;
-    left: 40vw;
+    width: 20dvw;
+    left: 40dvw;
     bottom: auto;
     top: var(--header-height);
   }
