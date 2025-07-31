@@ -1342,9 +1342,6 @@ small {
   opacity: 1;
   transform: translateY(-1rem);
 
-  @media screen and (min-width: 624px) {
-    transform: translateY(-1rem);
-  }
   @media screen and (min-width: 1024px) {
     transform: translateY(1rem);
   }
@@ -1502,6 +1499,58 @@ small {
 /* ********** Confetti Card ********** */
 .confeti {
   position: absolute;
+}
+
+/* *********** Notification *********** */
+.notification-container {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  bottom: calc(var(--header-height) + 1.5rem);
+  width: 100dvw;
+
+  display: flex;
+  justify-content: center;
+
+  transition: all 0.25s ease-in;
+
+  @media screen and (min-width: 624px) {
+    bottom: calc(var(--header-height) + 1.5rem);
+  }
+
+  @media screen and (min-width: 1024px) {
+    bottom: auto;
+    top: var(--header-height);
+  }
+}
+
+.notification {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  height: 4rem;
+  padding: 0 1rem;
+
+  background-color: var(--third-dark-color);
+  border-radius: 0.5rem;
+  font-weight: bold;
+  color: var(--first-light-color);
+
+  & img {
+    height: 90%;
+    width: auto;
+  }
+}
+
+.transition {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(-1rem);
+
+  @media screen and (min-width: 1024px) {
+    transform: translateY(1rem);
+  }
 }
 
 /* *********** Loader *********** */
