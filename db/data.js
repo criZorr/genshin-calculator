@@ -103,6 +103,18 @@ export default function calculateData(parameter) {
     "Night-Wind's Mystic Premonition",
     "Night-Wind's Mystic Augury",
     "Night-Wind's Mystic Revelation",
+    "Artful Device Fragment",
+    "Artful Device Replica",
+    "Artful Device Inheritance",
+    "Artful Device Wish",
+    "Ember of Long Night Flint",
+    "Afterglow of Long Night Flint",
+    "Flare of Long Night Flint",
+    "Blaze of Long Night Flint",
+    "Sundered Glory of the Far-North Scions",
+    "Unyielding Delusion of the Far-North Scions",
+    "Oblation of the Far-North Scions",
+    "Aureate Radiance of the Far-North Scions",
   ];
 
   const talentMaterials = [
@@ -160,6 +172,15 @@ export default function calculateData(parameter) {
     "Teachings of Conflict",
     "Guide to Conflict",
     "Philosophies of Conflict",
+    "Teachings of Moonlight",
+    "Guide to Moonlight",
+    "Philosophies of Moonlight",
+    "Teachings of Elysium",
+    "Guide to Elysium",
+    "Philosophies of Elysium",
+    "Teachings of Vagrancy",
+    "Guide to Vagrancy",
+    "Philosophies of Vagrancy",
   ];
 
   const commonEnemies = [
@@ -208,6 +229,12 @@ export default function calculateData(parameter) {
     "Sentry's Wooden Whistle",
     "Warrior's Metal Whistle",
     "Saurian-Crowned Warrior's Golden Whistle",
+    "Broken Drive Shaft",
+    "Reinforced Drive Shaft",
+    "Precision Drive Shaft",
+    "Tattered Warrant",
+    "Immaculate Warrant",
+    "Frost-Etched Warrant",
   ];
 
   const eliteEnemies = [
@@ -286,6 +313,15 @@ export default function calculateData(parameter) {
     "Cold-Cracked Shellshard",
     "Warm Back-Shell",
     "Blazing Prismshell",
+    "Frostnight's Glimmer",
+    "Frostnight's Glow",
+    "Frostnight's Glory",
+    "Lightless Bone",
+    "Glowing Remains",
+    "Radiant Exoskeleton",
+    "Mistshroud Manifestation",
+    "Mistshroud Plate",
+    "Mistshroud Helmet",
   ];
 
   const specialty = {
@@ -340,6 +376,9 @@ export default function calculateData(parameter) {
     "Withering Purpurbloom": 80,
     "Skysplit Gembloom": 75,
     Dracolite: 62,
+    "Portable Bearing": 72,
+    "Frostlamp Flower": 70,
+    "Moonfall Silver": 71,
   };
 
   const boss = [
@@ -381,6 +420,8 @@ export default function calculateData(parameter) {
     "Talisman of the Enigmatic Land",
     "Sparkless Statue Core",
     "Secret Source Airflow Accumulator",
+    "Precision Kuuvahki Stamping Die",
+    "Lightbearing Scale-Feather",
   ];
 
   const weekBoss = [
@@ -536,6 +577,20 @@ export default function calculateData(parameter) {
       [
         0.6445, 0.687, 0.7508, 1.5043, 1.6575, 2.4132, 2.6684, 2.8207, 2.8722,
         2.9745, 366,
+      ],
+    ],
+    15: [
+      ["Broken Drive Shaft", "Reinforced Drive Shaft", "Precision Drive Shaft"],
+      [
+        0.6445, 0.687, 0.7508, 1.5043, 1.6575, 2.4132, 2.6684, 2.8207, 2.8722,
+        2.9745, 47,
+      ],
+    ],
+    16: [
+      ["Tattered Warrant", "Immaculate Warrant", "Frost-Etched Warrant"],
+      [
+        0.5371, 0.5724, 0.6256, 1.2535, 1.3811, 2.0104, 2.2235, 2.3509, 2.3933,
+        2.4782, 88,
       ],
     ],
   };
@@ -742,6 +797,27 @@ export default function calculateData(parameter) {
       [
         2.6854, 2.8623, 3.1282, 6.2671, 6.9053, 10.0566, 11.1191, 11.7559,
         11.9687, 12.3939, 11,
+      ],
+    ],
+    25: [
+      ["Frostnight's Glimmer", "Frostnight's Glow", "Frostnight's Glory"],
+      [
+        2.6854, 2.8623, 3.1282, 6.2671, 6.9053, 10.0566, 11.1191, 11.7559,
+        11.9687, 12.3939, 16,
+      ],
+    ],
+    26: [
+      ["Lightless Bone", "Glowing Remains", "Radiant Exoskeleton"],
+      [
+        2.6854, 2.8623, 3.1282, 6.2671, 6.9053, 10.0566, 11.1191, 11.7559,
+        11.9687, 12.3939, 23,
+      ],
+    ],
+    27: [
+      ["Cold-Cracked Shellshard", "Warm Back-Shell", "Blazing Prismshell"],
+      [
+        2.6854, 2.8623, 3.1282, 6.2671, 6.9053, 10.0566, 11.1191, 11.7559,
+        11.9687, 12.3939, 31,
       ],
     ],
   };

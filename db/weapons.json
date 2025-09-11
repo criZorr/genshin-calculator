@@ -4143,5 +4143,131 @@
       "Blazing Sacrificial Heart's Resolve",
       "Blazing Sacrificial Heart's Splendor"
     ]
+  },
+  "213": {
+    "name": "Snare Hook",
+    "quality": "4-stars",
+    "weapon": "bow",
+    "enemy-material": [
+      "Firm Arrowhead",
+      "Sharp Arrowhead",
+      "Weathered Arrowhead"
+    ],
+    "special-enemy-material": [
+      "Mistshroud Manifestation",
+      "Mistshroud Plate",
+      "Mistshroud Helmet"
+    ],
+    "domain-material": [
+      "Ember of Long Night Flint",
+      "Afterglow of Long Night Flint",
+      "Flare of Long Night Flint",
+      "Blaze of Long Night Flint"
+    ]
+  },
+  "214": {
+    "name": "Blackmarrow Lantern",
+    "quality": "4-stars",
+    "weapon": "catalyst",
+    "enemy-material": [
+      "Tattered Warrant",
+      "Immaculate Warrant",
+      "Frost-Etched Warrant"
+    ],
+    "special-enemy-material": [
+      "Frostnight's Glimmer",
+      "Frostnight's Glow",
+      "Frostnight's Glory"
+    ],
+    "domain-material": [
+      "Artful Device Fragment",
+      "Artful Device Replica",
+      "Artful Device Inheritance",
+      "Artful Device Wish"
+    ]
+  },
+  "215": {
+    "name": "Master Key",
+    "quality": "4-stars",
+    "weapon": "claymore",
+    "enemy-material": [
+      "Broken Drive Shaft",
+      "Reinforced Drive Shaft",
+      "Precision Drive Shaft"
+    ],
+    "special-enemy-material": [
+      "Lightless Bone",
+      "Glowing Remains",
+      "Radiant Exoskeleton"
+    ],
+    "domain-material": [
+      "Sundered Glory of the Far-North Scions",
+      "Unyielding Delusion of the Far-North Scions",
+      "Oblation of the Far-North Scions",
+      "Aureate Radiance of the Far-North Scions"
+    ]
+  },
+  "216": {
+    "name": "Prospector's Shovel",
+    "quality": "4-stars",
+    "weapon": "polearm",
+    "enemy-material": [
+      "Broken Drive Shaft",
+      "Reinforced Drive Shaft",
+      "Precision Drive Shaft"
+    ],
+    "special-enemy-material": [
+      "Mistshroud Manifestation",
+      "Mistshroud Plate",
+      "Mistshroud Helmet"
+    ],
+    "domain-material": [
+      "Ember of Long Night Flint",
+      "Afterglow of Long Night Flint",
+      "Flare of Long Night Flint",
+      "Blaze of Long Night Flint"
+    ]
+  },
+  "217": {
+    "name": "Serenity's Call",
+    "quality": "4-stars",
+    "weapon": "sword",
+    "enemy-material": [
+      "Tattered Warrant",
+      "Immaculate Warrant",
+      "Frost-Etched Warrant"
+    ],
+    "special-enemy-material": [
+      "Frostnight's Glimmer",
+      "Frostnight's Glow",
+      "Frostnight's Glory"
+    ],
+    "domain-material": [
+      "Artful Device Fragment",
+      "Artful Device Replica",
+      "Artful Device Inheritance",
+      "Artful Device Wish"
+    ]
+  },
+  "218": {
+    "name": "Nightweaver's Looking Glass",
+    "quality": "5-stars",
+    "weapon": "catalyst",
+    "enemy-material": [
+      "Broken Drive Shaft",
+      "Reinforced Drive Shaft",
+      "Precision Drive Shaft"
+    ],
+    "special-enemy-material": [
+      "Frostnight's Glimmer",
+      "Frostnight's Glow",
+      "Frostnight's Glory"
+    ],
+    "domain-material": [
+      "Artful Device Fragment",
+      "Artful Device Replica",
+      "Artful Device Inheritance",
+      "Artful Device Wish"
+    ]
   }
 }

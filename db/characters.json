@@ -2181,5 +2181,51 @@
       "Cleaning Mode: Carrier Frequency",
       "Supreme Instruction: Cyclonic Exterminator"
     ]
+  },
+  "108": {
+    "name": "Aino",
+    "birthday": "21-09",
+    "region": "Nod-Krai",
+    "quality": "4-stars",
+    "element": "hydro",
+    "stone": "Varunada Lazurite",
+    "weapon": "claymore",
+    "specialty-material": "Portable Bearing",
+    "enemy-material": [
+      "Broken Drive Shaft",
+      "Reinforced Drive Shaft",
+      "Precision Drive Shaft"
+    ],
+    "boss-material": "Precision Kuuvahki Stamping Die",
+    "weekly-boss": "Silken Feather",
+    "domain-material": "Elysium",
+    "talents": [
+      "Bish-Bash-Bosh Repair",
+      "Musecatcher",
+      "Precision Hydronic Cooler"
+    ]
+  },
+  "109": {
+    "name": "Lauma",
+    "birthday": "01-03",
+    "region": "Nod-Krai",
+    "quality": "5-stars",
+    "element": "dendro",
+    "stone": "Nagadus Emerald",
+    "weapon": "catalyst",
+    "specialty-material": "Moonfall Silver",
+    "enemy-material": [
+      "Tattered Warrant",
+      "Immaculate Warrant",
+      "Frost-Etched Warrant"
+    ],
+    "boss-material": "Lightbearing Scale-Feather",
+    "weekly-boss": "Eroded Scale-Feather",
+    "domain-material": "Moonlight",
+    "talents": [
+      "Peregrination of Linnunrata",
+      "Runo: Dawnless Rest of Karsikko",
+      "Runo: All Hearts Become the Beating Moon"
+    ]
   }
 }
