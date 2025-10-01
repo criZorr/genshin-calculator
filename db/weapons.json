@@ -4269,5 +4269,68 @@
       "Artful Device Inheritance",
       "Artful Device Wish"
     ]
+  },
+  "219": {
+    "name": "Moonweaver's Dawn",
+    "quality": "4-stars",
+    "weapon": "sword",
+    "enemy-material": [
+      "Broken Drive Shaft",
+      "Reinforced Drive Shaft",
+      "Precision Drive Shaft"
+    ],
+    "special-enemy-material": [
+      "Lightless Bone",
+      "Glowing Remains",
+      "Radiant Exoskeleton"
+    ],
+    "domain-material": [
+      "Sundered Glory of the Far-North Scions",
+      "Unyielding Delusion of the Far-North Scions",
+      "Oblation of the Far-North Scions",
+      "Aureate Radiance of the Far-North Scions"
+    ]
+  },
+  "220": {
+    "name": "Etherlight Spindlelute",
+    "quality": "4-stars",
+    "weapon": "catalyst",
+    "enemy-material": [
+      "Tattered Warrant",
+      "Immaculate Warrant",
+      "Frost-Etched Warrant"
+    ],
+    "special-enemy-material": [
+      "Lightless Bone",
+      "Glowing Remains",
+      "Radiant Exoskeleton"
+    ],
+    "domain-material": [
+      "Sundered Glory of the Far-North Scions",
+      "Unyielding Delusion of the Far-North Scions",
+      "Oblation of the Far-North Scions",
+      "Aureate Radiance of the Far-North Scions"
+    ]
+  },
+  "221": {
+    "name": "Bloodsoaked Ruins",
+    "quality": "5-stars",
+    "weapon": "polearm",
+    "enemy-material": [
+      "Tattered Warrant",
+      "Immaculate Warrant",
+      "Frost-Etched Warrant"
+    ],
+    "special-enemy-material": [
+      "Mistshroud Manifestation",
+      "Mistshroud Plate",
+      "Mistshroud Helmet"
+    ],
+    "domain-material": [
+      "Ember of Long Night Flint",
+      "Afterglow of Long Night Flint",
+      "Flare of Long Night Flint",
+      "Blaze of Long Night Flint"
+    ]
   }
 }

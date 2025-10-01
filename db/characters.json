@@ -2227,5 +2227,28 @@
       "Runo: Dawnless Rest of Karsikko",
       "Runo: All Hearts Become the Beating Moon"
     ]
+  },
+  "110": {
+    "name": "Flins",
+    "birthday": "31-10",
+    "region": "Nod-Krai",
+    "quality": "5-stars",
+    "element": "electro",
+    "stone": "Vajrada Amethyst",
+    "weapon": "polearm",
+    "specialty-material": "Frostlamp Flower",
+    "enemy-material": [
+      "Broken Drive Shaft",
+      "Reinforced Drive Shaft",
+      "Precision Drive Shaft"
+    ],
+    "boss-material": "Precision Kuuvahki Stamping Die",
+    "weekly-boss": "Ascended Sample: Queen",
+    "domain-material": "Vagrancy",
+    "talents": [
+      "Pocztowy Demonspear",
+      "Ancient Rite: Arcane Light",
+      "Ancient Ritual: Cometh the Night"
+    ]
   }
 }

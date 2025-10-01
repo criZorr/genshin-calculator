@@ -58,8 +58,6 @@ export default function calculateNeeded(userLocal, variable) {
         let calc = ($data[e] || 0) - (($userData[e] || 0) + (tempObj[e] || 0)),
           calcRaw = ($data[e] || 0) - (($userData[e] || 0) + (tempRaw[e] || 0));
 
-        console.log(e, calc, calcRaw);
-
         if (calc > 0) {
           neededData[e] = calc;
           calcRaw < 0
