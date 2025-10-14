@@ -233,11 +233,11 @@ const drawUserData = () => {
     <div class="user-data">
       <div class="user-parameter-header">
         <h5>Resin Amount to Use</h5>
-        <button class="btn-element-info" _id="Resin" _name="Resin Amount to Use">
-          <img class="btn-edit-info" src="./assets/edit.svg" alt="edit"  _id="Resin" _name="Resin Amount to Use"/>
+        <button class="btn-element-info" _id="resin" _name="Resin Amount to Use">
+          <img class="btn-edit-info" src="./assets/edit.svg" alt="edit"  _id="resin" _name="Resin Amount to Use"/>
         </button>
       </div>
-      <p class="h5-regular">${resinType[userInfo["Resin"]]}
+      <p class="h5-regular">${resinType[userInfo["resin"]]}
         <div class="faq-container">
           ${svg}          
           <span class="tooltip">This will change how many times you should do a Domain</span>
@@ -535,7 +535,7 @@ const drawModalInfo = (id, name) => {
       <option value="1">10% talent</option>
       <option value="2">25% talent</option>`;
 
-  if (id === "Resin") {
+  if (id === "resin") {
     options = `
       <option value="0">20 resin</option>
       <option value="1">40 resin</option>
@@ -547,6 +547,8 @@ const drawModalInfo = (id, name) => {
       <option value="0">Without RNG</option>
       <option value="1">With RNG</option>`;
   }
+
+  console.log(id);
 
   $modal.innerHTML = `
     <div class="modal-info bg-trd">
@@ -637,7 +639,7 @@ if (!localStorage.getItem("userMaterials"))
 if (!localStorage.getItem("userInfo"))
   localStorage.setItem(
     "userInfo",
-    '{"World":9,"dropWeeklyBoss":3,"craftingTalents":1,"craftingWeapons":1,"craftingMaterials":1,"talentDrop":3,"weaponDrop":3,"talentResin":1,"weaponResin":1,"talentRNG":1,"weaponRNG":1,"Mora":0}'
+    '{"World":9,"crafting":1,"levelDomains":3,"resin":1,"RNG":1,"Mora":1000}'
   );
 
 !localStorage.getItem("total")

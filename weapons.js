@@ -35,7 +35,10 @@ const filterAction = (filters, data) => {
 
   for (let i = Object.keys(data).length; i >= 1; i--) {
     charactersId.push(i);
-    if (weaponFilter.includes(data[i].weapon) && qualityFilter.includes(data[i].quality))
+    if (
+      weaponFilter.includes(data[i].weapon) &&
+      qualityFilter.includes(data[i].quality)
+    )
       charactersId = charactersId.filter((e) => e !== i);
   }
 
@@ -52,7 +55,9 @@ const filterAction = (filters, data) => {
 };
 
 const getCheckNames = (className) => {
-  let $checkbox = document.querySelectorAll(`.${className} input[type=checkbox]:checked`);
+  let $checkbox = document.querySelectorAll(
+    `.${className} input[type=checkbox]:checked`
+  );
   return [...$checkbox].map((e) => e.id);
 };
 
@@ -78,22 +83,37 @@ const createObject = (data, id) => {
   if (!(data[1][0] === 0)) obj["Enhancement Ore"] = data[1][0];
   if (!(data[1][1] === 0)) obj["Fine Enhancement Ore"] = data[1][1];
   if (!(data[1][2] === 0)) obj["Mystic Enhancement Ore"] = data[1][2];
-  if (!(data[2][0] === 0)) obj[weaponsData[id]["enemy-material"][0]] = data[2][0];
-  if (!(data[2][1] === 0)) obj[weaponsData[id]["enemy-material"][1]] = data[2][1];
-  if (!(data[2][2] === 0)) obj[weaponsData[id]["enemy-material"][2]] = data[2][2];
-  if (!(data[3][0] === 0)) obj[weaponsData[id]["special-enemy-material"][0]] = data[3][0];
-  if (!(data[3][1] === 0)) obj[weaponsData[id]["special-enemy-material"][1]] = data[3][1];
-  if (!(data[3][2] === 0)) obj[weaponsData[id]["special-enemy-material"][2]] = data[3][2];
-  if (!(data[4][0] === 0)) obj[weaponsData[id]["domain-material"][0]] = data[4][0];
-  if (!(data[4][1] === 0)) obj[weaponsData[id]["domain-material"][1]] = data[4][1];
-  if (!(data[4][2] === 0)) obj[weaponsData[id]["domain-material"][2]] = data[4][2];
-  if (!(data[4][3] === 0)) obj[weaponsData[id]["domain-material"][3]] = data[4][3];
+  if (!(data[2][0] === 0))
+    obj[weaponsData[id]["enemy-material"][0]] = data[2][0];
+  if (!(data[2][1] === 0))
+    obj[weaponsData[id]["enemy-material"][1]] = data[2][1];
+  if (!(data[2][2] === 0))
+    obj[weaponsData[id]["enemy-material"][2]] = data[2][2];
+  if (!(data[3][0] === 0))
+    obj[weaponsData[id]["special-enemy-material"][0]] = data[3][0];
+  if (!(data[3][1] === 0))
+    obj[weaponsData[id]["special-enemy-material"][1]] = data[3][1];
+  if (!(data[3][2] === 0))
+    obj[weaponsData[id]["special-enemy-material"][2]] = data[3][2];
+  if (!(data[4][0] === 0))
+    obj[weaponsData[id]["domain-material"][0]] = data[4][0];
+  if (!(data[4][1] === 0))
+    obj[weaponsData[id]["domain-material"][1]] = data[4][1];
+  if (!(data[4][2] === 0))
+    obj[weaponsData[id]["domain-material"][2]] = data[4][2];
+  if (!(data[4][3] === 0))
+    obj[weaponsData[id]["domain-material"][3]] = data[4][3];
 
   return obj;
 };
 
 const getItems = () => {
-  drawItems("weaponData", weaponsData, ".card-individual-container", ".selected-items");
+  drawItems(
+    "weaponData",
+    weaponsData,
+    ".card-individual-container",
+    ".selected-items"
+  );
 };
 
 const getTotal = () => {
@@ -112,7 +132,10 @@ const getLevels = (weaponId) => {
 
   $saveBtn.setAttribute("modal-id", weaponId);
 
-  if (weaponsData[weaponId].quality == "2-stars" || weaponsData[weaponId].quality == "1-stars") {
+  if (
+    weaponsData[weaponId].quality == "2-stars" ||
+    weaponsData[weaponId].quality == "1-stars"
+  ) {
     $labels[5].style.display = "none";
     $labels[4].style.display = "none";
 
@@ -183,7 +206,9 @@ const getLevels = (weaponId) => {
 
     if (sndLevelValue === 8) sndLevelValue = 7;
 
-    if (d.querySelectorAll(".ascension-selector input")[sndLevelValue - 2].checked)
+    if (
+      d.querySelectorAll(".ascension-selector input")[sndLevelValue - 2].checked
+    )
       ascension = true;
 
     let calculatedData = calculateWeapon(levelValues, ascension, quality);
@@ -269,7 +294,9 @@ d.addEventListener("change", (e) => {
     getNumbList(e.target);
 
     const $selectors = d.querySelectorAll(".ascension-selector input");
-    let selected = Number(e.target.parentElement.querySelector("#second-selection").value) - 1;
+    let selected =
+      Number(e.target.parentElement.querySelector("#second-selection").value) -
+      1;
 
     handleAscension(selected, $selectors);
   }
@@ -283,8 +310,10 @@ d.addEventListener("change", (e) => {
 
   if (eventId.includes("ascension-")) {
     const $selectors = d.querySelectorAll(".ascension-selector input"),
-      $fstOption = $selectors[0].parentNode.parentNode.querySelector("#first-selection"),
-      $sndOption = $selectors[0].parentNode.parentNode.querySelector("#second-selection");
+      $fstOption =
+        $selectors[0].parentNode.parentNode.querySelector("#first-selection"),
+      $sndOption =
+        $selectors[0].parentNode.parentNode.querySelector("#second-selection");
     let numberId = eventId.replaceAll("ascension-", "");
 
     handleAscension(numberId, $selectors, 1);
@@ -292,7 +321,8 @@ d.addEventListener("change", (e) => {
     let val = Number(numberId) + 1;
     $sndOption.value = val;
 
-    if ($fstOption.value >= $sndOption.value) $fstOption.value = $sndOption.value - 1;
+    if ($fstOption.value >= $sndOption.value)
+      $fstOption.value = $sndOption.value - 1;
 
     getNumbList($fstOption);
   }
@@ -323,7 +353,10 @@ d.addEventListener("click", (e) => {
     getLevels(e.target.attributes._id.value);
   }
 
-  if (eventClass === "btn-delete" || eventClass.includes("btn-delete-container")) {
+  if (
+    eventClass === "btn-delete" ||
+    eventClass.includes("btn-delete-container")
+  ) {
     deleteConfirmation(
       e.target.attributes._id.value,
       weaponsData[e.target.attributes._id.value].name
@@ -356,12 +389,14 @@ d.addEventListener("keydown", (e) => {
 
 let weaponsData = await getData("./db/weapons.json");
 
-!localStorage.getItem("weaponData") ? localStorage.setItem("weaponData", "{}") : getItems();
+!localStorage.getItem("weaponData")
+  ? localStorage.setItem("weaponData", "{}")
+  : getItems();
 
 if (!localStorage.getItem("userInfo"))
   localStorage.setItem(
     "userInfo",
-    '{"World":9,"dropWeeklyBoss":3,"craftingTalents":1,"craftingWeapons":1,"craftingMaterials":1,"talentDrop":3,"weaponDrop":3,"talentResin":1,"weaponResin":1,"talentRNG":1,"weaponRNG":1,"Mora":0}'
+    '{"World":9,"crafting":1,"levelDomains":3,"resin":1,"RNG":1,"Mora":1000}'
   );
 
 !localStorage.getItem("weaponTotal")
@@ -370,7 +405,8 @@ if (!localStorage.getItem("userInfo"))
   ? undefined
   : getTotal();
 
-if (!localStorage.getItem("userMaterials")) localStorage.setItem("userMaterials", "{}");
+if (!localStorage.getItem("userMaterials"))
+  localStorage.setItem("userMaterials", "{}");
 
 getCards(weaponsData, $cardsContainer, "./assets/weapons");
 getChecked(filterClasses);

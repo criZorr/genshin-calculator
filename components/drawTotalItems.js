@@ -65,8 +65,8 @@ const getCalculations = () => {
   crafting = $userInfo["crafting"];
   dailyMora = $userInfo["Mora"];
   domainLevel = $userInfo["levelDomains"];
-  talentResin = $userInfo["Resin"];
-  weaponResin = $userInfo["Resin"];
+  talentResin = $userInfo["resin"];
+  weaponResin = $userInfo["resin"];
 
   switch (worldLevel) {
     case 0:
