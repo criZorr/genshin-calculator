@@ -661,7 +661,6 @@ small {
 
 .elements-container,
 .extra-container,
-.card-user-amount,
 .calcs-container {
   display: flex;
   flex-direction: column;
@@ -1253,7 +1252,8 @@ small {
   max-height: 75dvh;
 }
 
-.items-container-user {
+.items-container-user,
+.card-user-amount {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

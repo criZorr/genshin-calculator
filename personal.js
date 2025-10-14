@@ -19,7 +19,17 @@ let saveFlag = false,
   show = false,
   filtered = [],
   filterClasses = ["filter-items"],
-  items = ["exp", "elite", "common", "weekly", "world", "stones", "talent", "weapon", "speciality"],
+  items = [
+    "exp",
+    "elite",
+    "common",
+    "weekly",
+    "world",
+    "stones",
+    "talent",
+    "weapon",
+    "speciality",
+  ],
   $filters = "filter-checkbox";
 
 const all = calculateData("all"),
@@ -117,7 +127,9 @@ const filterAction = (filters) => {
 };
 
 const getChecked = (filterNames) => {
-  let $checkbox = document.querySelectorAll(`.${filterNames} input[type=checkbox]:checked`),
+  let $checkbox = document.querySelectorAll(
+      `.${filterNames} input[type=checkbox]:checked`
+    ),
     filters = [...$checkbox].map((e) => e.id),
     res = [];
 
@@ -355,61 +367,123 @@ const drawUserData = () => {
     </div>`;
 };
 
+const getRarity = (i) => {
+  let rarityCases = 1,
+    fstCounter = 0,
+    sndCounter = 8;
+
+  if (i === 0 || i === 2 || i === 4) rarityCases = 3;
+
+  if (i === 1) rarityCases = 4;
+
+  if (i === 3 || i === 5) rarityCases = 2;
+
+  if (i === 7) rarityCases = 5;
+
+  sndCounter += eliteEnemies;
+  if (i >= 8 && i < sndCounter) {
+    rarityCases = 2;
+    let calc = (i - 8) % 3;
+    if (calc == 0) rarityCases = 4;
+    if (calc == 1) rarityCases = 3;
+  }
+  fstCounter = sndCounter;
+
+  sndCounter += commonEnemies;
+  if (i >= fstCounter && i < sndCounter) {
+    rarityCases = 1;
+    let calc = (i - fstCounter) % 3;
+    if (calc == 0) rarityCases = 3;
+    if (calc == 1) rarityCases = 2;
+  }
+  fstCounter = sndCounter;
+
+  sndCounter += weekBoss;
+  if (i >= fstCounter && i < sndCounter) rarityCases = 5;
+  fstCounter = sndCounter;
+
+  sndCounter += boss;
+  if (i >= fstCounter && i < sndCounter) rarityCases = 4;
+  fstCounter = sndCounter;
+
+  sndCounter += stones;
+  if (i >= fstCounter && i < sndCounter) {
+    rarityCases = 2;
+    let calc = (i - fstCounter) % 4;
+    if (calc == 0) rarityCases = 5;
+    if (calc == 1) rarityCases = 4;
+    if (calc == 2) rarityCases = 3;
+  }
+  fstCounter = sndCounter;
+
+  sndCounter += talentMaterials;
+  if (i >= fstCounter && i < sndCounter) {
+    rarityCases = 2;
+    let calc = (i - fstCounter) % 3;
+    if (calc == 0) rarityCases = 4;
+    if (calc == 1) rarityCases = 3;
+  }
+  fstCounter = sndCounter;
+
+  sndCounter += weaponMaterials;
+  if (i >= fstCounter && i < sndCounter) {
+    rarityCases = 2;
+    let calc = (i - fstCounter) % 4;
+    if (calc == 0) rarityCases = 5;
+    if (calc == 1) rarityCases = 4;
+    if (calc == 2) rarityCases = 3;
+  }
+  fstCounter = sndCounter;
+
+  switch (rarityCases) {
+    case 1:
+      return "one";
+    case 2:
+      return "two";
+    case 3:
+      return "three";
+    case 4:
+      return "four";
+    case 5:
+      return "five";
+    default:
+      break;
+  }
+};
+
 const drawUserMaterial = () => {
   const $container = d.querySelector(".card-user-amount");
   $container.innerHTML = "";
 
   let localUserMaterials = JSON.parse(localStorage.getItem("userMaterials"));
 
-  all.forEach((el) => {
-    if (localUserMaterials[el]) {
-      if (localUserMaterials[el] > 0) {
-        let number = localUserMaterials[el];
+  for (let i = 0; i < all.length; i++) {
+    if (localUserMaterials[all[i]]) {
+      if (localUserMaterials[all[i]] > 0) {
+        let number = localUserMaterials[all[i]];
         number = number.toLocaleString("ru-RU");
         let fragment = d.createElement("div"),
-          fixedName = el.replaceAll('"', "ç"),
-          imgName = el.replaceAll('"',"").replaceAll(":","_");
-        fragment.classList.add("element-owned-info");
+          fixedName = all[i].replaceAll('"', "ç"),
+          imgName = all[i].replaceAll('"', "").replaceAll(":", "_");
+        fragment.classList.add("items-card");
+
+        let rarity = getRarity(i);
+
         fragment.innerHTML = `
-          <section class="element-data">
-            <figure class="element-img">
-              <img src="./assets/materials/${imgName}.webp" alt="${imgName}" />
-            </figure>
-            <section class="element-props">
-              <h5 class="frst-text">${el}</h5>
-              <div class="element-days">
-                <small class="frst-text">Amount owned:</small>
-              </div>
-            </section>
-          </section>
-          <section class="element-count">
-            <button class="btn-element-owned" _id="${fixedName}">
-              <img class="btn-edit-owned" src="./assets/edit.svg" alt="edit"  _id="${fixedName}"/>
-            </button>
-            <small class="frst-text">${number}</small>
-          </section>`;
+          <div class="item-bg ${rarity}">
+            <img src="./assets/materials/${imgName}.webp" alt="${all[i]}" />
+          </div>
+          <h5 class="card-name">${number}</h5>
+          <button class="btn-element-owned" _id="${fixedName}">
+            <img class="btn-edit-owned" src="./assets/edit.svg" alt="edit" _id="${fixedName}"/>
+          </button>
+        `;
+
         $container.appendChild(fragment);
       }
     }
-  });
-
-  let fragment = d.createElement("div");
-  fragment.classList.add("element-owned-info");
-  fragment.innerHTML = `
-    <section class="element-data">
-      <figure class="element-img add-item-figure">
-        <img src="./assets/add.webp" alt="Add item" class="add-item"/>
-      </figure>
-      <section class="element-props">
-        <h5 class="frst-text">Add item</h5>
-        <div class="element-days">
-          <small class="frst-text">Press the icon.</small>
-        </div>
-      </section>
-    </section>`;
-  $container.appendChild(fragment);
+  }
   calcTotalMaterials();
-  if (show === true) d.querySelector(".add-item-figure").style.visibility = "visible";
 };
 
 const drawModalProfit = (id) => {
@@ -466,7 +540,7 @@ const drawModalElement = (id) => {
   const $userMaterials = JSON.parse(localStorage.getItem("userMaterials"));
 
   let ogName = id.replaceAll("ç", '"'),
-    fixedName = id.replaceAll("ç", "").replaceAll(":","_");
+    fixedName = id.replaceAll("ç", "").replaceAll(":", "_");
 
   let number = $userMaterials[ogName];
 
@@ -501,7 +575,9 @@ const drawModalElement = (id) => {
       Number(d.querySelector("#number-picker").value) >= 0
     ) {
       if (Number(d.querySelector("#number-picker").value) >= 0) {
-        $userMaterials[ogName] = Number(d.querySelector("#number-picker").value);
+        $userMaterials[ogName] = Number(
+          d.querySelector("#number-picker").value
+        );
         localStorage.setItem("userMaterials", JSON.stringify($userMaterials));
         $modal.style.visibility = "hidden";
         $modal.style.opacity = "0";
@@ -544,7 +620,11 @@ const drawModalInfo = (id, name) => {
       <option value="2">III</option>
       <option value="3">IV</option>`;
 
-  if (id === "craftingTalents" || id === "craftingWeapons" || id === "craftingMaterials")
+  if (
+    id === "craftingTalents" ||
+    id === "craftingWeapons" ||
+    id === "craftingMaterials"
+  )
     options = `
       <option value="0">No</option>
       <option value="1">10% talent</option>
@@ -612,7 +692,9 @@ const drawModalPossible = () => {
 
     number = number.toLocaleString("ru-RU");
 
-    let label = d.querySelector(`[_name="${el.replaceAll('"', "").replaceAll(":","_")}"]`);
+    let label = d.querySelector(
+      `[_name="${el.replaceAll('"', "").replaceAll(":", "_")}"]`
+    );
     label.innerHTML = number;
   });
 };
@@ -624,93 +706,7 @@ const getListElements = () => {
       fixedName = all[i].replaceAll('"', "ç");
     fragment.classList.add("items-card");
     fragment.id = i;
-    let rarity = "",
-      rarityCases = 1,
-      fstCounter = 0,
-      sndCounter = 8;
-
-    if (i === 0 || i === 2 || i === 4) rarityCases = 3;
-
-    if (i === 1) rarityCases = 4;
-
-    if (i === 3 || i === 5) rarityCases = 2;
-
-    if (i === 7) rarityCases = 5;
-
-    sndCounter += eliteEnemies;
-    if (i >= 8 && i < sndCounter) {
-      rarityCases = 2;
-      let calc = (i - 8) % 3;
-      if (calc == 0) rarityCases = 4;
-      if (calc == 1) rarityCases = 3;
-    }
-    fstCounter = sndCounter;
-
-    sndCounter += commonEnemies;
-    if (i >= fstCounter && i < sndCounter) {
-      rarityCases = 1;
-      let calc = (i - fstCounter) % 3;
-      if (calc == 0) rarityCases = 3;
-      if (calc == 1) rarityCases = 2;
-    }
-    fstCounter = sndCounter;
-
-    sndCounter += weekBoss;
-    if (i >= fstCounter && i < sndCounter) rarityCases = 5;
-    fstCounter = sndCounter;
-
-    sndCounter += boss;
-    if (i >= fstCounter && i < sndCounter) rarityCases = 4;
-    fstCounter = sndCounter;
-
-    sndCounter += stones;
-    if (i >= fstCounter && i < sndCounter) {
-      rarityCases = 2;
-      let calc = (i - fstCounter) % 4;
-      if (calc == 0) rarityCases = 5;
-      if (calc == 1) rarityCases = 4;
-      if (calc == 2) rarityCases = 3;
-    }
-    fstCounter = sndCounter;
-
-    sndCounter += talentMaterials;
-    if (i >= fstCounter && i < sndCounter) {
-      rarityCases = 2;
-      let calc = (i - fstCounter) % 3;
-      if (calc == 0) rarityCases = 4;
-      if (calc == 1) rarityCases = 3;
-    }
-    fstCounter = sndCounter;
-
-    sndCounter += weaponMaterials;
-    if (i >= fstCounter && i < sndCounter) {
-      rarityCases = 2;
-      let calc = (i - fstCounter) % 4;
-      if (calc == 0) rarityCases = 5;
-      if (calc == 1) rarityCases = 4;
-      if (calc == 2) rarityCases = 3;
-    }
-    fstCounter = sndCounter;
-
-    switch (rarityCases) {
-      case 1:
-        rarity = "one";
-        break;
-      case 2:
-        rarity = "two";
-        break;
-      case 3:
-        rarity = "three";
-        break;
-      case 4:
-        rarity = "four";
-        break;
-      case 5:
-        rarity = "five";
-        break;
-      default:
-        break;
-    }
+    let rarity = getRarity(i);
 
     fragment.innerHTML = `
       <div class="item-bg ${rarity}">
@@ -726,12 +722,12 @@ const getListElements = () => {
 
   setTimeout(() => {
     d.querySelector(".btn-plus-container").style.visibility = "visible";
-    d.querySelector(".add-item-figure").style.visibility = "visible";
     show = true;
   }, 500);
 };
 
-if (!localStorage.getItem("userMaterials")) localStorage.setItem("userMaterials", "{}");
+if (!localStorage.getItem("userMaterials"))
+  localStorage.setItem("userMaterials", "{}");
 
 if (!localStorage.getItem("userInfo"))
   localStorage.setItem(
@@ -787,7 +783,10 @@ d.addEventListener("click", (e) => {
   }
 
   if (eventClass === "btn-element-info" || eventClass === "btn-edit-info") {
-    drawModalInfo(e.target.attributes["_id"].value, e.target.attributes["_name"].value);
+    drawModalInfo(
+      e.target.attributes["_id"].value,
+      e.target.attributes["_name"].value
+    );
     $modal.style.visibility = "visible";
     $modal.style.opacity = "1";
   }
@@ -804,12 +803,7 @@ d.addEventListener("click", (e) => {
     containerFlag = false;
   }
 
-  if (
-    eventClass === "add-item" ||
-    eventClass === "add-item-figure" ||
-    eventClass === "btn-plus" ||
-    eventClass.includes("btn-plus-container")
-  ) {
+  if (eventClass === "btn-plus" || eventClass.includes("btn-plus-container")) {
     getChecked(filterClasses);
     drawModalPossible();
     $modalMaterials.style.visibility = "visible";
@@ -821,7 +815,8 @@ d.addEventListener("click", (e) => {
 });
 
 d.addEventListener("change", (e) => {
-  if (e.target.className.includes("selected-items")) location.hash = e.target.value;
+  if (e.target.className.includes("selected-items"))
+    location.hash = e.target.value;
 });
 
 d.addEventListener("keydown", (e) => {
