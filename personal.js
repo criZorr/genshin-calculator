@@ -16,7 +16,6 @@ const svg = `
 
 let saveFlag = false,
   containerFlag = false,
-  show = false,
   filtered = [],
   filterClasses = ["filter-items"],
   items = [
@@ -182,7 +181,7 @@ const drawUserData = () => {
 
   let optionsDomains = ["I", "II", "III", "IV"],
     optionsBonus = ["No", "10% talent", "25% talent"],
-    resinType = ["Original", "Condensed"],
+    resinType = ["20 resin", "40 resin", "60 resin"],
     rng = ["Without RNG", "With RNG"];
 
   $container.innerHTML = `
@@ -203,12 +202,12 @@ const drawUserData = () => {
 
     <div class="user-data">
       <div class="user-parameter-header">
-        <h5>Talents Bonus Crafting</h5>
-        <button class="btn-element-info" _id="craftingTalents" _name="Talents Bonus Crafting">
-          <img class="btn-edit-info" src="./assets/edit.svg" alt="edit"  _id="craftingTalents" _name="Talents Bonus Crafting"/>
+        <h5>Bonus Crafting</h5>
+        <button class="btn-element-info" _id="crafting" _name="Bonus Crafting">
+          <img class="btn-edit-info" src="./assets/edit.svg" alt="edit"  _id="crafting" _name="Bonus Crafting"/>
         </button>
       </div>
-      <p class="h5-regular">${optionsBonus[userInfo["craftingTalents"]]}
+      <p class="h5-regular">${optionsBonus[userInfo["crafting"]]}
         <div class="faq-container">
           ${svg}          
           <span class="tooltip">There are some talents which increase the chance to get more talent materials</span>
@@ -218,135 +217,45 @@ const drawUserData = () => {
 
     <div class="user-data">
       <div class="user-parameter-header">
-        <h5>Weapon Bonus Crafting</h5>
-        <button class="btn-element-info" _id="craftingWeapons" _name="Weapon Bonus Crafting">
-          <img class="btn-edit-info" src="./assets/edit.svg" alt="edit"  _id="craftingWeapons" _name="Weapon Bonus Crafting"/>
+        <h5>Level Domains</h5>
+        <button class="btn-element-info" _id="levelDomains" _name="Level Domains">
+          <img class="btn-edit-info" src="./assets/edit.svg" alt="edit"  _id="levelDomains" _name="Level Domains"/>
         </button>
       </div>
-      <p class="h5-regular">${optionsBonus[userInfo["craftingWeapons"]]}
+      <p class="h5-regular">${optionsDomains[userInfo["levelDomains"]]}
         <div class="faq-container">
           ${svg}          
-          <span class="tooltip">There are some talents which increase the chance to get more weapon materials</span>
-        </div>
-      </p>
-    </div>
-  
-    <div class="user-data">
-      <div class="user-parameter-header">
-        <h5>Materials Bonus Crafting</h5>
-        <button class="btn-element-info" _id="craftingMaterials" _name="Materials Bonus Crafting">
-          <img class="btn-edit-info" src="./assets/edit.svg" alt="edit"  _id="craftingMaterials" _name="Materials Bonus Crafting"/>
-        </button>
-      </div>
-      <p class="h5-regular">${optionsBonus[userInfo["craftingMaterials"]]}
-        <div class="faq-container">
-          ${svg}          
-          <span class="tooltip">There are some talents which increase the chance to get more enemy materials</span>
+          <span class="tooltip">This changes domains drops</span>
         </div>
       </p>
     </div>
 
     <div class="user-data">
       <div class="user-parameter-header">
-        <h5>Boss Domain</h5>
-        <button class="btn-element-info" _id="dropWeeklyBoss" _name="Boss Domain">
-          <img class="btn-edit-info" src="./assets/edit.svg" alt="edit"  _id="dropWeeklyBoss" _name="Boss Domain"/>
+        <h5>Resin Amount to Use</h5>
+        <button class="btn-element-info" _id="Resin" _name="Resin Amount to Use">
+          <img class="btn-edit-info" src="./assets/edit.svg" alt="edit"  _id="Resin" _name="Resin Amount to Use"/>
         </button>
       </div>
-      <p class="h5-regular">${optionsDomains[userInfo["dropWeeklyBoss"]]}
+      <p class="h5-regular">${resinType[userInfo["Resin"]]}
         <div class="faq-container">
           ${svg}          
-          <span class="tooltip">This changes the Weekly Boos drops</span>
+          <span class="tooltip">This will change how many times you should do a Domain</span>
         </div>
       </p>
     </div>
 
     <div class="user-data">
       <div class="user-parameter-header">
-        <h5>Talent Domains</h5>
-        <button class="btn-element-info" _id="talentDrop" _name="Talent Domains">
-          <img class="btn-edit-info" src="./assets/edit.svg" alt="edit"  _id="talentDrop" _name="Talent Domains"/>
+        <h5>Calculations</h5>
+        <button class="btn-element-info" _id="RNG" _name="Calculations">
+          <img class="btn-edit-info" src="./assets/edit.svg" alt="edit"  _id="RNG" _name="Calculations"/>
         </button>
       </div>
-      <p class="h5-regular">${optionsDomains[userInfo["talentDrop"]]}
+      <p class="h5-regular">${rng[userInfo["RNG"]]}
         <div class="faq-container">
           ${svg}          
-          <span class="tooltip">This changes the Domains Talent Materials drops</span>
-        </div>
-      </p>
-    </div>
-
-    <div class="user-data">
-      <div class="user-parameter-header">
-        <h5>Weapon Domains</h5>
-        <button class="btn-element-info" _id="weaponDrop" _name="Weapon Domains">
-          <img class="btn-edit-info" src="./assets/edit.svg" alt="edit"  _id="weaponDrop" _name="Weapon Domains"/>
-        </button>
-      </div>
-      <p class="h5-regular">${optionsDomains[userInfo["weaponDrop"]]}
-        <div class="faq-container">
-          ${svg}          
-          <span class="tooltip">This changes the Domains Weapon Materials drops</span>
-        </div>
-      </p>
-    </div>
-
-    <div class="user-data">
-      <div class="user-parameter-header">
-        <h5>Talent Domains Resin</h5>
-        <button class="btn-element-info" _id="talentResin" _name="Talent Domains Resin">
-          <img class="btn-edit-info" src="./assets/edit.svg" alt="edit"  _id="talentResin" _name="Talent Domains Resin"/>
-        </button>
-      </div>
-      <p class="h5-regular">${resinType[userInfo["talentResin"]]}
-        <div class="faq-container">
-          ${svg}          
-          <span class="tooltip">This will change how many times you should do a Domain Talent Materials</span>
-        </div>
-      </p>
-    </div>
-
-    <div class="user-data">
-      <div class="user-parameter-header">
-        <h5>Weapon Domains Resin</h5>
-        <button class="btn-element-info" _id="weaponResin" _name="Weapon Domains Resin">
-          <img class="btn-edit-info" src="./assets/edit.svg" alt="edit"  _id="weaponResin" _name="Weapon Domains Resin"/>
-        </button>
-      </div>
-      <p class="h5-regular">${resinType[userInfo["weaponResin"]]}
-        <div class="faq-container">
-          ${svg}          
-          <span class="tooltip">This will change how many times you should do a Domain Weapon Materials</span>
-        </div>
-      </p>
-    </div>
-
-    <div class="user-data">
-      <div class="user-parameter-header">
-        <h5>Talent Calculations</h5>
-        <button class="btn-element-info" _id="talentRNG" _name="Talent Calculations">
-          <img class="btn-edit-info" src="./assets/edit.svg" alt="edit"  _id="talentRNG" _name="Talent Calculations"/>
-        </button>
-      </div>
-      <p class="h5-regular">${rng[userInfo["talentRNG"]]}
-        <div class="faq-container">
-          ${svg}          
-          <span class="tooltip">Talent Materials Domains drops has RNG. This will change the approximation of how many times you should do the domain</span>
-        </div>
-      </p>
-    </div>
-
-    <div class="user-data">
-      <div class="user-parameter-header">
-        <h5>Weapon Calculations</h5>
-        <button class="btn-element-info" _id="weaponRNG" _name="Weapon Calculations">
-          <img class="btn-edit-info" src="./assets/edit.svg" alt="edit"  _id="weaponRNG" _name="Weapon Calculations"/>
-        </button>
-      </div>
-      <p class="h5-regular">${rng[userInfo["weaponRNG"]]} 
-        <div class="faq-container">
-          ${svg}          
-          <span class="tooltip">Weapon Materials Domains drops has RNG. This will change the approximation of how many times you should do the domain</span>
+          <span class="tooltip">Materials Domains drops has RNG. This will change the approximation of how many times you should do the domain</span>
         </div>
       </p>
     </div>
@@ -613,30 +522,27 @@ const drawModalInfo = (id, name) => {
       <option value="8">8</option>
       <option value="9">9</option>`;
 
-  if (id === "dropWeeklyBoss" || id === "talentDrop" || id === "weaponDrop")
+  if (id === "levelDomains")
     options = `
       <option value="0">I</option>
       <option value="1">II</option>
       <option value="2">III</option>
       <option value="3">IV</option>`;
 
-  if (
-    id === "craftingTalents" ||
-    id === "craftingWeapons" ||
-    id === "craftingMaterials"
-  )
+  if (id === "crafting")
     options = `
       <option value="0">No</option>
       <option value="1">10% talent</option>
       <option value="2">25% talent</option>`;
 
-  if (id === "talentResin" || id === "weaponResin") {
+  if (id === "Resin") {
     options = `
-      <option value="0">Original</option>
-      <option value="1">Condensed</option>`;
+      <option value="0">20 resin</option>
+      <option value="1">40 resin</option>
+      <option value="2">60 resin</option>`;
   }
 
-  if (id === "talentRNG" || id === "weaponRNG") {
+  if (id === "RNG") {
     options = `
       <option value="0">Without RNG</option>
       <option value="1">With RNG</option>`;
@@ -722,7 +628,6 @@ const getListElements = () => {
 
   setTimeout(() => {
     d.querySelector(".btn-plus-container").style.visibility = "visible";
-    show = true;
   }, 500);
 };
 

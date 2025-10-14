@@ -37,11 +37,7 @@ export default function calculateNeeded(userLocal, variable) {
 
   let $userData = JSON.parse(localStorage.getItem(userLocal)),
     $data = JSON.parse(localStorage.getItem(variable)),
-    $activeTalent = JSON.parse(localStorage.getItem("userInfo"));
-
-  let talentCrafting = $activeTalent["craftingTalents"],
-    weaponCrafting = $activeTalent["craftingWeapons"],
-    materialCrafting = $activeTalent["craftingMaterials"];
+    crafting = JSON.parse(localStorage.getItem("userInfo"))["crafting"];
 
   let newUserData = {},
     neededData = {},
@@ -72,9 +68,9 @@ export default function calculateNeeded(userLocal, variable) {
           if (calculate) {
             calc *= -1;
 
-            if (materialCrafting === 0) calc = Math.floor(calc / 3);
-            if (materialCrafting === 1) calc = Math.floor(1.1 * (calc / 3));
-            if (materialCrafting === 2) calc = Math.floor((4 / 3) * (calc / 3));
+            if (crafting === 0) calc = Math.floor(calc / 3);
+            if (crafting === 1) calc = Math.floor(1.1 * (calc / 3));
+            if (crafting === 2) calc = Math.floor((4 / 3) * (calc / 3));
 
             let position = craftMaterials.indexOf(e);
             if (position >= 0) tempObj[craftMaterials[position + 1]] = calc;
@@ -88,9 +84,9 @@ export default function calculateNeeded(userLocal, variable) {
           if (calculate) {
             calc *= -1;
 
-            if (talentCrafting === 0) calc = Math.floor(calc / 3);
-            if (talentCrafting === 1) calc = Math.floor(1.1 * (calc / 3));
-            if (talentCrafting === 2) calc = Math.floor((4 / 3) * (calc / 3));
+            if (crafting === 0) calc = Math.floor(calc / 3);
+            if (crafting === 1) calc = Math.floor(1.1 * (calc / 3));
+            if (crafting === 2) calc = Math.floor((4 / 3) * (calc / 3));
 
             let position = craftMaterials.indexOf(e);
             if (position >= 0) tempObj[craftMaterials[position + 1]] = calc;
@@ -105,9 +101,9 @@ export default function calculateNeeded(userLocal, variable) {
           if (calculate) {
             calcRaw *= -1;
 
-            if (talentCrafting === 0) calcRaw = calcRaw / 3;
-            if (talentCrafting === 1) calcRaw = 1.1 * (calcRaw / 3);
-            if (talentCrafting === 2) calcRaw = (4 / 3) * (calcRaw / 3);
+            if (crafting === 0) calcRaw = calcRaw / 3;
+            if (crafting === 1) calcRaw = 1.1 * (calcRaw / 3);
+            if (crafting === 2) calcRaw = (4 / 3) * (calcRaw / 3);
 
             let position = craftMaterials.indexOf(e);
             if (position >= 0) tempRaw[craftMaterials[position + 1]] = calcRaw;
@@ -121,9 +117,9 @@ export default function calculateNeeded(userLocal, variable) {
           if (calculate) {
             calc *= -1;
 
-            if (weaponCrafting === 0) calc = Math.floor(calc / 3);
-            if (weaponCrafting === 1) calc = Math.floor(1.1 * (calc / 3));
-            if (weaponCrafting === 2) calc = Math.floor((4 / 3) * (calc / 3));
+            if (crafting === 0) calc = Math.floor(calc / 3);
+            if (crafting === 1) calc = Math.floor(1.1 * (calc / 3));
+            if (crafting === 2) calc = Math.floor((4 / 3) * (calc / 3));
 
             let position = craftMaterials.indexOf(e);
             if (position >= 0) tempObj[craftMaterials[position + 1]] = calc;
@@ -138,9 +134,9 @@ export default function calculateNeeded(userLocal, variable) {
           if (calculate) {
             calcRaw *= -1;
 
-            if (materialCrafting === 0) calcRaw = calcRaw / 3;
-            if (materialCrafting === 1) calcRaw = 1.1 * (calcRaw / 3);
-            if (materialCrafting === 2) calcRaw = (4 / 3) * (calcRaw / 3);
+            if (crafting === 0) calcRaw = calcRaw / 3;
+            if (crafting === 1) calcRaw = 1.1 * (calcRaw / 3);
+            if (crafting === 2) calcRaw = (4 / 3) * (calcRaw / 3);
 
             let position = craftMaterials.indexOf(e);
             if (position >= 0) tempRaw[craftMaterials[position + 1]] = calcRaw;

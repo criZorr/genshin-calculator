@@ -19,10 +19,11 @@ const svg = `
 
 let $userInfo = "";
 let worldLevel = "",
-  craftingTalents = "",
-  craftingWeapons = "",
-  craftingMaterials = "",
-  dailyMora = "";
+  crafting = "",
+  domainLevel = "",
+  dailyMora = "",
+  talentResin = "",
+  weaponResin = "";
 
 let dropBoss = 1.6185,
   leyMora = 12000,
@@ -61,12 +62,19 @@ for (let i = 0; i < Object.keys(eliteEnemies).length; i++) {
 const getCalculations = () => {
   $userInfo = JSON.parse(localStorage.getItem("userInfo"));
   worldLevel = $userInfo["World"];
-  craftingTalents = $userInfo["craftingTalents"];
-  craftingWeapons = $userInfo["craftingWeapons"];
-  craftingMaterials = $userInfo["craftingMaterials"];
+  crafting = $userInfo["crafting"];
   dailyMora = $userInfo["Mora"];
+  domainLevel = $userInfo["levelDomains"];
+  talentResin = $userInfo["Resin"];
+  weaponResin = $userInfo["Resin"];
 
   switch (worldLevel) {
+    case 0:
+      dropBoss = 1.7037;
+      leyMora = 20000;
+      leyBook = 35;
+      stoneDrop = 2.1057;
+      break;
     case 1:
       dropBoss = 1.7037;
       leyMora = 20000;
@@ -125,7 +133,7 @@ const getCalculations = () => {
       break;
   }
 
-  switch ($userInfo["dropWeeklyBoss"]) {
+  switch (domainLevel) {
     case 1:
       dropWeeklyBoss = 1;
       break;
@@ -139,28 +147,42 @@ const getCalculations = () => {
       break;
   }
 
-  if ($userInfo["talentResin"] === 1) {
-    talentDrop = [6, 6.4];
-    if ($userInfo["talentDrop"] === 1) talentDrop = [10, 11];
-    if ($userInfo["talentDrop"] === 2) talentDrop = [14, 15.6];
-    if ($userInfo["talentDrop"] === 3) talentDrop = [16, 20.24];
-  } else {
+  if (talentResin === 0) {
     talentDrop = [3, 3.2];
-    if ($userInfo["talentDrop"] === 1) talentDrop = [5, 5.5];
-    if ($userInfo["talentDrop"] === 2) talentDrop = [7, 7.8];
-    if ($userInfo["talentDrop"] === 3) talentDrop = [8, 10.12];
+    if (domainLevel === 1) talentDrop = [5, 5.5];
+    if (domainLevel === 2) talentDrop = [7, 7.8];
+    if (domainLevel === 3) talentDrop = [8, 10.12];
+  }
+  if (talentResin === 1) {
+    talentDrop = [6, 6.4];
+    if (domainLevel === 1) talentDrop = [10, 11];
+    if (domainLevel === 2) talentDrop = [14, 15.6];
+    if (domainLevel === 3) talentDrop = [16, 20.24];
+  }
+  if (talentResin === 2) {
+    talentDrop = [9, 9.6];
+    if (domainLevel === 1) talentDrop = [15, 16.5];
+    if (domainLevel === 2) talentDrop = [21, 23.4];
+    if (domainLevel === 3) talentDrop = [24, 30.36];
   }
 
-  if ($userInfo["weaponResin"] === 1) {
-    weaponDrop = [8, 9.4];
-    if ($userInfo["weaponDrop"] === 1) weaponDrop = [16, 17.4];
-    if ($userInfo["weaponDrop"] === 2) weaponDrop = [16, 25.4];
-    if ($userInfo["weaponDrop"] === 3) weaponDrop = [16, 33.416];
-  } else {
+  if (weaponResin === 0) {
     weaponDrop = [4, 4.7];
-    if ($userInfo["weaponDrop"] === 1) weaponDrop = [8, 8.7];
-    if ($userInfo["weaponDrop"] === 2) weaponDrop = [8, 12.7];
-    if ($userInfo["weaponDrop"] === 3) weaponDrop = [8, 16.708];
+    if (domainLevel === 1) weaponDrop = [8, 8.7];
+    if (domainLevel === 2) weaponDrop = [8, 12.7];
+    if (domainLevel === 3) weaponDrop = [8, 16.708];
+  }
+  if (weaponResin === 1) {
+    weaponDrop = [8, 9.4];
+    if (domainLevel === 1) weaponDrop = [16, 17.4];
+    if (domainLevel === 2) weaponDrop = [16, 25.4];
+    if (domainLevel === 3) weaponDrop = [16, 33.416];
+  }
+  if (weaponResin === 2) {
+    weaponDrop = [12, 14.1];
+    if (domainLevel === 1) weaponDrop = [24, 26.1];
+    if (domainLevel === 2) weaponDrop = [24, 38.1];
+    if (domainLevel === 3) weaponDrop = [24, 50.124];
   }
 };
 
@@ -179,7 +201,7 @@ export default function drawTotalItems(localVariable, classContainer) {
       let stringNumber = number.toLocaleString("ru-RU");
 
       let tempName = el;
-      tempName = tempName.replaceAll('"', "").replaceAll(':', "_");      
+      tempName = tempName.replaceAll('"', "").replaceAll(":", "_");
 
       let avgFarming = "",
         label = "",
@@ -227,7 +249,11 @@ export default function drawTotalItems(localVariable, classContainer) {
         faq = "You can purchase one Crown of Insight every month";
       }
 
-      if (el === "Wanderer's Advice" || el === "Adventurer's Experience" || el === "Hero's Wit") {
+      if (
+        el === "Wanderer's Advice" ||
+        el === "Adventurer's Experience" ||
+        el === "Hero's Wit"
+      ) {
         let $rawInfo = JSON.parse(localStorage.getItem("rawMaterials"));
         avgFarming = $rawInfo[el] / leyBook;
         let a = Math.ceil(avgFarming);
@@ -244,7 +270,8 @@ export default function drawTotalItems(localVariable, classContainer) {
         let $rawInfo = JSON.parse(localStorage.getItem("rawMaterials"));
         avgFarming = Math.ceil($rawInfo[el] / 3);
         label = "Approx. 3 star weapons to delete";
-        faq = "You can obtain 3 Enhancement Ore when you delete a 3 star weapon";
+        faq =
+          "You can obtain 3 Enhancement Ore when you delete a 3 star weapon";
       }
 
       if (enemiesKeys.includes(el)) {
@@ -255,8 +282,10 @@ export default function drawTotalItems(localVariable, classContainer) {
 
         let $rawInfo = JSON.parse(localStorage.getItem("rawMaterials"));
 
-        avgFarming = $rawInfo[el][craftingMaterials] / data[worldLevel];
-        avgFarming = `${Math.ceil(avgFarming)} (${Math.ceil(avgFarming / data[10])})`;
+        avgFarming = $rawInfo[el][crafting] / data[worldLevel];
+        avgFarming = `${Math.ceil(avgFarming)} (${Math.ceil(
+          avgFarming / data[10]
+        )})`;
         label = "Approx. times to defeat the enemies (days)";
         faq = `This calculation depends on your World Level and the talent bonus to craft materials. (You can change them in "personal" section).`;
       }
@@ -269,8 +298,10 @@ export default function drawTotalItems(localVariable, classContainer) {
 
         let $rawInfo = JSON.parse(localStorage.getItem("rawMaterials"));
 
-        avgFarming = $rawInfo[el][craftingMaterials] / data[worldLevel];
-        avgFarming = `${Math.ceil(avgFarming)} (${Math.ceil(avgFarming / data[10])})`;
+        avgFarming = $rawInfo[el][crafting] / data[worldLevel];
+        avgFarming = `${Math.ceil(avgFarming)} (${Math.ceil(
+          avgFarming / data[10]
+        )})`;
         label = "Approx. times to defeat the enemies (days)";
         faq = `This calculation depends on your World Level and the talent bonus to craft materials. (You can change them in "personal" section).`;
       }
@@ -285,7 +316,7 @@ export default function drawTotalItems(localVariable, classContainer) {
 
       if (talents.includes(el)) {
         let $rawInfo = JSON.parse(localStorage.getItem("rawMaterials"));
-        avgFarming = $rawInfo[el][craftingTalents] / talentDrop[$userInfo["talentRNG"]];
+        avgFarming = $rawInfo[el][crafting] / talentDrop[$userInfo["RNG"]];
         avgFarming = Math.ceil(avgFarming);
         label = "Approx. times to do the domain";
         faq = `This calculation depends on the domain level you choose and the talent bonus to craft talent materials. (You can change them in "personal" section).`;
@@ -293,7 +324,7 @@ export default function drawTotalItems(localVariable, classContainer) {
 
       if (weaponMaterial.includes(el)) {
         let $rawInfo = JSON.parse(localStorage.getItem("rawMaterials"));
-        avgFarming = $rawInfo[el][craftingWeapons] / weaponDrop[$userInfo["weaponRNG"]];
+        avgFarming = $rawInfo[el][crafting] / weaponDrop[$userInfo["RNG"]];
         avgFarming = Math.ceil(avgFarming);
         label = "Approx. times to do the domain";
         faq = `This calculation depends on the domain level you choose and the talent bonus to craft weapon materials. (You can change them in "personal" section).`;
@@ -345,7 +376,9 @@ export default function drawTotalItems(localVariable, classContainer) {
               </section>
               <section class="element-count">
                 <h5 class="frst-text">${stringNumber}</h5>
-                <small class="frst-text">${Math.ceil(number / dailyMora)}</small>
+                <small class="frst-text">${Math.ceil(
+                  number / dailyMora
+                )}</small>
               </section>
             </div>
     `;
