@@ -504,6 +504,8 @@ const drawModalElement = (id) => {
   });
 };
 
+d.addEventListener("click", (e) => console.log(e));
+
 const drawModalInfo = (id, name) => {
   const $userInfo = JSON.parse(localStorage.getItem("userInfo"));
 
@@ -570,6 +572,11 @@ const drawModalInfo = (id, name) => {
         </div>
       </div>
     </div>`;
+
+  d.querySelectorAll(".info-options option")[$userInfo[id]].setAttribute(
+    "selected",
+    "selected"
+  );
 
   const $saveBtn = d.getElementById("confirm-btn");
 
