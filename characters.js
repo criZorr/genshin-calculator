@@ -695,6 +695,17 @@ if (!localStorage.getItem("userInfo"))
     '{"World":9,"crafting":1,"levelDomains":3,"resin":1,"RNG":1,"Mora":1000}'
   );
 
+if (localStorage.getItem("userInfo")) {
+  if (JSON.parse(localStorage.getItem("userInfo"))["talentRNG"]) {
+    console.log("old");
+    localStorage.removeItem("userInfo");
+    localStorage.setItem(
+      "userInfo",
+      '{"World":9,"crafting":1,"levelDomains":3,"resin":1,"RNG":1,"Mora":${JSON.parse(localStorage.getItem("userInfo"))["Mora"]}}'
+    );
+  }
+}
+
 !localStorage.getItem("characterTotal")
   ? localStorage.setItem("characterTotal", "{}")
   : Object.keys(JSON.parse(localStorage.getItem("characterTotal"))).length == 0
