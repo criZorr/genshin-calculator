@@ -405,7 +405,9 @@ if (localStorage.getItem("userInfo")) {
     localStorage.removeItem("userInfo");
     localStorage.setItem(
       "userInfo",
-      '{"World":9,"crafting":1,"levelDomains":3,"resin":1,"RNG":1,"Mora":${JSON.parse(localStorage.getItem("userInfo"))["Mora"]}}'
+      `{"World":9,"crafting":1,"levelDomains":3,"resin":1,"RNG":1,"Mora": ${
+        JSON.parse(localStorage.getItem("userInfo"))["Mora"]
+      }}`
     );
   }
 }

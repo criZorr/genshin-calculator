@@ -646,12 +646,21 @@ if (!localStorage.getItem("userInfo"))
   );
 
 if (localStorage.getItem("userInfo")) {
-  if (JSON.parse(localStorage.getItem("userInfo"))["talentRNG"]) {
+  let flag = false;
+  try {
+    JSON.parse(localStorage.getItem("userInfo"))["talentRNG"];
+    flag = true;
+  } catch (error) {
+    flag = false;
+  }
+  if (flag) {
     console.log("old");
     localStorage.removeItem("userInfo");
     localStorage.setItem(
       "userInfo",
-      '{"World":9,"crafting":1,"levelDomains":3,"resin":1,"RNG":1,"Mora":${JSON.parse(localStorage.getItem("userInfo"))["Mora"]}}'
+      `{"World":9,"crafting":1,"levelDomains":3,"resin":1,"RNG":1,"Mora": ${
+        JSON.parse(localStorage.getItem("userInfo"))["Mora"]
+      }}`
     );
   }
 }
