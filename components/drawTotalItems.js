@@ -238,8 +238,8 @@ export default function drawTotalItems(localVariable, classContainer) {
       if (el === "Mora") {
         avgFarming = number / leyMora;
         let a = Math.ceil(avgFarming);
-        avgFarming = `${Math.ceil(a / 9)} (${a})`;
-        label = "Approx. days doing Ley Lines (times)";
+        avgFarming = `${a} (${Math.ceil(a / 9)})`;
+        label = "Approx. times to do Ley Lines (days)";
         faq = "Only spending all your 180 daily resin in Ley Lines";
       }
 
@@ -257,8 +257,8 @@ export default function drawTotalItems(localVariable, classContainer) {
         let $rawInfo = JSON.parse(localStorage.getItem("rawMaterials"));
         avgFarming = $rawInfo[el] / leyBook;
         let a = Math.ceil(avgFarming);
-        avgFarming = `${Math.ceil(a / 9)} (${a})`;
-        label = "Approx. days just doing Ley Lines (times)";
+        avgFarming = `${a} (${Math.ceil(a / 9)})`;
+        label = "Approx. times to do Ley Lines (days)";
         faq = "Only spending all your 180 daily resin in Ley Lines";
       }
 

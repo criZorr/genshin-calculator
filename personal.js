@@ -548,8 +548,6 @@ const drawModalInfo = (id, name) => {
       <option value="1">With RNG</option>`;
   }
 
-  console.log(id);
-
   $modal.innerHTML = `
     <div class="modal-info bg-trd">
       <div class="edit-owned-header">
