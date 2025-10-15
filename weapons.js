@@ -76,7 +76,7 @@ const getChecked = (filterNames) => {
   filterAction(res, weaponsData);
 };
 
-const createObject = (data, id) => {
+const createObject = (data, id, savedData) => {
   let obj = {};
 
   if (!(data[0] === 0)) obj["Mora"] = data[0];
@@ -103,6 +103,8 @@ const createObject = (data, id) => {
     obj[weaponsData[id]["domain-material"][2]] = data[4][2];
   if (!(data[4][3] === 0))
     obj[weaponsData[id]["domain-material"][3]] = data[4][3];
+
+  obj["savedData"] = savedData;
 
   return obj;
 };
@@ -187,6 +189,36 @@ const getLevels = (weaponId) => {
       </select>`;
   }
 
+  let data = "";
+  try {
+    data = JSON.parse(localStorage.getItem("weaponData"))[weaponId][
+      "savedData"
+    ];
+  } catch (error) {
+    data = undefined;
+  }
+
+  if (data) {
+    let fstList = d.getElementById("first-selection"),
+      sndList = d.getElementById("second-selection");
+
+    let star = data[1];
+
+    if (data[1] === 8) star = 7;
+    d.querySelectorAll(".ascension-selector label")[star - 2].click();
+    if (!data[2])
+      d.querySelectorAll(".ascension-selector label")[star - 2].click();
+
+    fstList
+      .querySelectorAll("option")
+      [data[0] - 1].setAttribute("selected", "selected");
+
+    getNumbList(fstList);
+
+    sndList
+      .querySelectorAll("option")
+      [data[1] - 2].setAttribute("selected", "selected");
+  }
   saveFlag = true;
 
   $saveBtn.addEventListener("click", () => {
@@ -213,7 +245,8 @@ const getLevels = (weaponId) => {
 
     let calculatedData = calculateWeapon(levelValues, ascension, quality);
 
-    let weaponObject = createObject(calculatedData, numId);
+    let savedData = [...levelValues, ascension],
+      weaponObject = createObject(calculatedData, numId, savedData);
 
     createLocal("weaponData", numId, weaponObject);
     getItems();

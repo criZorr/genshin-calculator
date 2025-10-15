@@ -333,6 +333,7 @@ const getTalents = (characterId) => {
       fstList[i]
         .querySelectorAll("option")
         [value].setAttribute("selected", "selected");
+      getNumbList(fstList[i]);
     }
 
     for (let i = 1; i < sndList.length; i++) {
@@ -345,10 +346,6 @@ const getTalents = (characterId) => {
     if (!data[1][0]) d.getElementById("checkbox-talent-1").click();
     if (!data[1][1]) d.getElementById("checkbox-talent-2").click();
     if (!data[1][2]) d.getElementById("checkbox-talent-3").click();
-
-    getNumbList(fstList[1]);
-    getNumbList(fstList[2]);
-    getNumbList(fstList[3]);
   }
 
   saveFlag = true;
@@ -518,19 +515,18 @@ const drawModal = (id) => {
 
   if (data) {
     if (!data[0][0]) d.getElementById("checkbox-level").click();
+    let star = data[0][2];
+    if (data[0][2] === 8) star = 7;
+
+    d.querySelectorAll(".ascension-selector label")[star - 2].click();
+
+    if (!data[0][3])
+      d.querySelectorAll(".ascension-selector label")[star - 2].click();
 
     d.querySelectorAll("#first-selection option")[data[0][1] - 1].setAttribute(
       "selected",
       "selected"
     );
-
-    let star = data[0][2];
-
-    if (data[0][2] === 8) star = 7;
-    d.querySelectorAll(".ascension-selector label")[star - 2].click();
-    if (!data[0][3])
-      d.querySelectorAll(".ascension-selector label")[star - 2].click();
-
     d.querySelectorAll("#second-selection option")[data[0][2] - 2].setAttribute(
       "selected",
       "selected"
