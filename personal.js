@@ -504,8 +504,6 @@ const drawModalElement = (id) => {
   });
 };
 
-d.addEventListener("click", (e) => console.log(e));
-
 const drawModalInfo = (id, name) => {
   const $userInfo = JSON.parse(localStorage.getItem("userInfo"));
 

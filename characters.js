@@ -93,7 +93,7 @@ const isChecked = (el, info) => {
   }
 };
 
-const createObject = (data, id) => {
+const createObject = (data, id, savedData) => {
   let obj = {},
     enemyFst = data[5][0] + data[6][0],
     enemySnd = data[5][1] + data[6][1],
@@ -164,6 +164,8 @@ const createObject = (data, id) => {
       obj[`Philosophies of ${charactersData[id]["domain-material"]}`] =
         data[7][2];
   }
+
+  obj["savedData"] = savedData;
 
   return obj;
 };
@@ -313,6 +315,42 @@ const getTalents = (characterId) => {
     );
   }
 
+  let data = "";
+  try {
+    data = JSON.parse(localStorage.getItem("characterData"))[characterId][
+      "savedData"
+    ];
+  } catch (error) {
+    data = undefined;
+  }
+
+  if (data) {
+    let fstList = d.querySelectorAll("#first-selection"),
+      sndList = d.querySelectorAll("#second-selection");
+
+    for (let i = 1; i < fstList.length; i++) {
+      let value = data[2][i - 1] - 1;
+      fstList[i]
+        .querySelectorAll("option")
+        [value].setAttribute("selected", "selected");
+    }
+
+    for (let i = 1; i < sndList.length; i++) {
+      let value = data[3][i - 1] - 2;
+      sndList[i]
+        .querySelectorAll("option")
+        [value].setAttribute("selected", "selected");
+    }
+
+    if (!data[1][0]) d.getElementById("checkbox-talent-1").click();
+    if (!data[1][1]) d.getElementById("checkbox-talent-2").click();
+    if (!data[1][2]) d.getElementById("checkbox-talent-3").click();
+
+    getNumbList(fstList[1]);
+    getNumbList(fstList[2]);
+    getNumbList(fstList[3]);
+  }
+
   saveFlag = true;
 
   $saveBtn.addEventListener("click", () => {
@@ -321,10 +359,22 @@ const getTalents = (characterId) => {
     let fstTalentValues = [],
       sndTalentValues = [],
       levelValues = [],
-      ascension = false;
+      ascension = false,
+      fstStorageTalent = [],
+      sndStorageTalent = [],
+      levelVisible = true,
+      talentVisible = [];
 
     for (let i = 1; i <= 3; i++) {
+      fstStorageTalent.push(
+        Number(d.querySelector(`#talent-${i} #first-selection`).value)
+      );
+      sndStorageTalent.push(
+        Number(d.querySelector(`#talent-${i} #second-selection`).value)
+      );
+
       if (!(d.getElementById(`talent-${i}`).style.opacity === "0.5")) {
+        talentVisible.push(true);
         fstTalentValues.push(
           Number(d.querySelector(`#talent-${i} #first-selection`).value)
         );
@@ -332,6 +382,7 @@ const getTalents = (characterId) => {
           Number(d.querySelector(`#talent-${i} #second-selection`).value)
         );
       } else {
+        talentVisible.push(false);
         fstTalentValues.push(0);
         sndTalentValues.push(0);
       }
@@ -342,12 +393,14 @@ const getTalents = (characterId) => {
       ),
       sndLevelValue = Number(
         d.querySelector("#level-data #second-selection").value
-      );
+      ),
+      sndLevelOg = sndLevelValue;
 
     if (!(d.getElementById("level-data").style.opacity === "0.5")) {
       levelValues.push(fstLevelValue);
       levelValues.push(sndLevelValue);
     } else {
+      levelVisible = false;
       levelValues.push(0);
       levelValues.push(0);
     }
@@ -372,7 +425,13 @@ const getTalents = (characterId) => {
         name
       );
 
-      let characterObject = createObject(calculatedData, numId);
+      let savedData = [
+          [levelVisible, fstLevelValue, sndLevelOg, ascension],
+          talentVisible,
+          fstStorageTalent,
+          sndStorageTalent,
+        ],
+        characterObject = createObject(calculatedData, numId, savedData);
 
       createLocal("characterData", numId, characterObject);
       getItems();
@@ -385,7 +444,7 @@ const getTalents = (characterId) => {
   });
 };
 
-const drawModal = () => {
+const drawModal = (id) => {
   $modal.innerHTML = `
     <div class="modal-character bg-trd">
       <div class="level-container">
@@ -449,6 +508,34 @@ const drawModal = () => {
         </div>
       </div>
     </div>`;
+
+  let data = "";
+  try {
+    data = JSON.parse(localStorage.getItem("characterData"))[id]["savedData"];
+  } catch (error) {
+    data = undefined;
+  }
+
+  if (data) {
+    if (!data[0][0]) d.getElementById("checkbox-level").click();
+
+    d.querySelectorAll("#first-selection option")[data[0][1] - 1].setAttribute(
+      "selected",
+      "selected"
+    );
+
+    let star = data[0][2];
+
+    if (data[0][2] === 8) star = 7;
+    d.querySelectorAll(".ascension-selector label")[star - 2].click();
+    if (!data[0][3])
+      d.querySelectorAll(".ascension-selector label")[star - 2].click();
+
+    d.querySelectorAll("#second-selection option")[data[0][2] - 2].setAttribute(
+      "selected",
+      "selected"
+    );
+  }
 };
 
 const deleteConfirmation = (id, name) => {
@@ -558,7 +645,7 @@ d.addEventListener("click", (e) => {
     eventClass === "btn-edit" ||
     eventClass.includes("btn-edit-container")
   ) {
-    drawModal();
+    drawModal(e.target.attributes._id.value);
     getTalents(e.target.attributes._id.value);
   }
 
