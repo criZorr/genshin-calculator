@@ -696,7 +696,14 @@ if (!localStorage.getItem("userInfo"))
   );
 
 if (localStorage.getItem("userInfo")) {
-  if (JSON.parse(localStorage.getItem("userInfo"))["talentRNG"]) {
+  let flag = false;
+  try {
+    JSON.parse(localStorage.getItem("userInfo"))["talentRNG"];
+    flag = true;
+  } catch (error) {
+    flag = false;
+  }
+  if (flag) {
     console.log("old");
     localStorage.removeItem("userInfo");
     localStorage.setItem(
