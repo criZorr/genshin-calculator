@@ -436,7 +436,7 @@ let erraser = true,
   mora = 0;
 
 try {
-  JSON.parse(localStorage.getItem("userInfo"))["talentRNG"];
+  erraser = localStorage.getItem("userInfo")["talentRNG"];
 } catch (error) {
   erraser = false;
 }
