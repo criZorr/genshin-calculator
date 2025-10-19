@@ -78,7 +78,7 @@ const getCalculations = () => {
       break;
   }
 
-  switch ($userInfo["dropWeeklyBoss"]) {
+  switch ($userInfo["levelDomains"]) {
     case 1:
       dropWeeklyBoss = 1;
       break;
@@ -93,7 +93,12 @@ const getCalculations = () => {
   }
 };
 
-export default function drawItems(localVariable, data, classContainer, classOptions) {
+export default function drawItems(
+  localVariable,
+  data,
+  classContainer,
+  classOptions
+) {
   getCalculations();
   const $container = d.querySelector(classContainer),
     $optionsContainer = d.querySelector(classOptions);
@@ -149,7 +154,7 @@ export default function drawItems(localVariable, data, classContainer, classOpti
         number = number.toLocaleString("ru-RU");
 
         let tempName = el;
-        tempName = tempName.replaceAll('"', "").replaceAll(':', "_");
+        tempName = tempName.replaceAll('"', "").replaceAll(":", "_");
 
         let avgFarming = "",
           label = "Look at Total section",
