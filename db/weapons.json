@@ -4109,7 +4109,7 @@
   "211": {
     "name": "Flame-Forged Insight",
     "quality": "4-stars",
-    "weapon": "sword",
+    "weapon": "claymore",
     "enemy-material": [
       "Transoceanic Pearl",
       "Transoceanic Chunk",
@@ -4331,6 +4331,69 @@
       "Afterglow of Long Night Flint",
       "Flare of Long Night Flint",
       "Blaze of Long Night Flint"
+    ]
+  },
+  "222": {
+    "name": "Dawning Frost",
+    "quality": "4-stars",
+    "weapon": "catalyst",
+    "enemy-material": [
+      "Tattered Warrant",
+      "Immaculate Warrant",
+      "Frost-Etched Warrant"
+    ],
+    "special-enemy-material": [
+      "Frostnight's Glimmer",
+      "Frostnight's Glow",
+      "Frostnight's Glory"
+    ],
+    "domain-material": [
+      "Artful Device Fragment",
+      "Artful Device Replica",
+      "Artful Device Inheritance",
+      "Artful Device Wish"
+    ]
+  },
+  "223": {
+    "name": "Sacrificer's Staff",
+    "quality": "4-stars",
+    "weapon": "polearm",
+    "enemy-material": [
+      "Broken Drive Shaft",
+      "Reinforced Drive Shaft",
+      "Precision Drive Shaft"
+    ],
+    "special-enemy-material": [
+      "Mistshroud Manifestation",
+      "Mistshroud Plate",
+      "Mistshroud Helmet"
+    ],
+    "domain-material": [
+      "Ember of Long Night Flint",
+      "Afterglow of Long Night Flint",
+      "Flare of Long Night Flint",
+      "Blaze of Long Night Flint"
+    ]
+  },
+  "224": {
+    "name": "Reliquary of Truth",
+    "quality": "5-stars",
+    "weapon": "catalyst",
+    "enemy-material": [
+      "Fungal Spores",
+      "Luminescent Pollen",
+      "Crystalline Cyst Dust"
+    ],
+    "special-enemy-material": [
+      "Lightless Bone",
+      "Glowing Remains",
+      "Radiant Exoskeleton"
+    ],
+    "domain-material": [
+      "Oasis Garden's Reminiscence",
+      "Oasis Garden's Kindness",
+      "Oasis Garden's Mourning",
+      "Oasis Garden's Truth"
     ]
   }
 }

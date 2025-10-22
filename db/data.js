@@ -422,6 +422,7 @@ export default function calculateData(parameter) {
     "Secret Source Airflow Accumulator",
     "Precision Kuuvahki Stamping Die",
     "Lightbearing Scale-Feather",
+    "Radiant Antler",
   ];
 
   const weekBoss = [
