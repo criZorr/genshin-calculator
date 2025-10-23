@@ -50,6 +50,7 @@ export default function calculateNeeded(userLocal, variable) {
       if (!$userData.hasOwnProperty(e)) {
         newUserData[e] = 0;
         neededData[e] = $data[e];
+        neededRaw[e] = $data[e];
       } else {
         let calc = ($data[e] || 0) - (($userData[e] || 0) + (tempObj[e] || 0)),
           calcRaw = ($data[e] || 0) - (($userData[e] || 0) + (tempRaw[e] || 0));
@@ -212,7 +213,6 @@ export default function calculateNeeded(userLocal, variable) {
 
   let totalUserData = calculateTotal($userData, newUserData);
 
-  //
   let object = {};
 
   for (let i = 0; i < craftMaterialsThree.length; i += 3) {

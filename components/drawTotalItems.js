@@ -282,6 +282,10 @@ export default function drawTotalItems(localVariable, classContainer) {
 
         let $rawInfo = JSON.parse(localStorage.getItem("rawMaterials"));
 
+        console.log($rawInfo[el]);
+        console.log($rawInfo[el]);
+        console.log($rawInfo[el][crafting]);
+
         avgFarming = $rawInfo[el][crafting] / data[worldLevel];
         avgFarming = `${Math.ceil(avgFarming)} (${Math.ceil(
           avgFarming / data[10]
