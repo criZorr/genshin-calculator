@@ -2273,5 +2273,51 @@
       "Senet Strategy: Dance of a Thousand Nights",
       "Sacred Vow: True Eye's Phantasm"
     ]
+  },
+  "112": {
+    "name": "Jahoda",
+    "birthday": "05-01",
+    "region": "Nod-Krai",
+    "quality": "4-stars",
+    "element": "anemo",
+    "stone": "Vayuda Turquoise",
+    "weapon": "bow",
+    "specialty-material": "Portable Bearing",
+    "enemy-material": [
+      "Broken Drive Shaft",
+      "Reinforced Drive Shaft",
+      "Precision Drive Shaft"
+    ],
+    "boss-material": "Lightbearing Scale-Feather",
+    "weekly-boss": "Ascended Sample: Knight",
+    "domain-material": "Vagrancy",
+    "talents": [
+      "Strike While the Arrow's Hot",
+      "Savvy Strategy: Splitting the Spoils",
+      "Hidden Aces: Seven Tools of the Hunter"
+    ]
+  },
+  "113": {
+    "name": "Durin",
+    "birthday": "14-03",
+    "region": "Mondstadt",
+    "quality": "5-stars",
+    "element": "pyro",
+    "stone": "Agnidus Agate",
+    "weapon": "sword",
+    "specialty-material": "Frostlamp Flower",
+    "enemy-material": [
+      "Tattered Warrant",
+      "Immaculate Warrant",
+      "Frost-Etched Warrant"
+    ],
+    "boss-material": "Cyclic Military Kuuvahki Core",
+    "weekly-boss": "Eroded Sunfire",
+    "domain-material": "Ballad",
+    "talents": [
+      "Radiant Wingslash",
+      "Binary Form: Convergence and Division",
+      "Principle of Purity: As the Light Shifts"
+    ]
   }
 }

@@ -4395,5 +4395,68 @@
       "Oasis Garden's Mourning",
       "Oasis Garden's Truth"
     ]
+  },
+  "225": {
+    "name": "The Daybreak Chronicles",
+    "quality": "5-stars",
+    "weapon": "bow",
+    "enemy-material": [
+      "Treasure Hoarder Insignia",
+      "Silver Raven Insignia",
+      "Golden Raven Insignia"
+    ],
+    "special-enemy-material": [
+      "Heavy Horn",
+      "Black Bronze Horn",
+      "Black Crystal Horn"
+    ],
+    "domain-material": [
+      "Fetters of the Dandelion Gladiator",
+      "Chains of the Dandelion Gladiator",
+      "Shackles of the Dandelion Gladiator",
+      "Dream of the Dandelion Gladiator"
+    ]
+  },
+  "226": {
+    "name": "Athame Artis",
+    "quality": "5-stars",
+    "weapon": "sword",
+    "enemy-material": [
+      "Broken Drive Shaft",
+      "Reinforced Drive Shaft",
+      "Precision Drive Shaft"
+    ],
+    "special-enemy-material": [
+      "Frostnight's Glimmer",
+      "Frostnight's Glow",
+      "Frostnight's Glory"
+    ],
+    "domain-material": [
+      "Tile of Decarabian's Tower",
+      "Debris of Decarabian's City",
+      "Fragment of Decarabian's Epic",
+      "Scattered Piece of Decarabian's Dream"
+    ]
+  },
+  "227": {
+    "name": "Rainbow Serpent's Rain Bow",
+    "quality": "4-stars",
+    "weapon": "bow",
+    "enemy-material": [
+      "Tattered Warrant",
+      "Immaculate Warrant",
+      "Frost-Etched Warrant"
+    ],
+    "special-enemy-material": [
+      "Refractive Bud",
+      "Bewildering Broadleaf",
+      "Illusory Leafcoil"
+    ],
+    "domain-material": [
+      "Night-Wind's Mystic Consideration",
+      "Night-Wind's Mystic Premonition",
+      "Night-Wind's Mystic Augury",
+      "Night-Wind's Mystic Revelation"
+    ]
   }
 }

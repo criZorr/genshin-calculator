@@ -423,6 +423,7 @@ export default function calculateData(parameter) {
     "Precision Kuuvahki Stamping Die",
     "Lightbearing Scale-Feather",
     "Radiant Antler",
+    "Cyclic Military Kuuvahki Core",
   ];
 
   const weekBoss = [
