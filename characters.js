@@ -115,6 +115,7 @@ const createObject = (data, id, savedData) => {
     obj[`${charactersData[id].stone} Gemstone`] = data[4][3];
   if (!(data[8] === 0)) obj[charactersData[id]["weekly-boss"]] = data[8];
   if (!(data[9] === 0)) obj["Crown of Insight"] = data[9];
+  // Traveler exception
   if (charactersData[id]["name"].includes("Traveler")) {
     if (!(data[5][0] === 0))
       obj[charactersData[id]["enemy-material"][0]] = data[5][0];
@@ -128,6 +129,7 @@ const createObject = (data, id, savedData) => {
       obj[charactersData[id]["second-enemy"][1]] = data[6][1];
     if (!(data[6][2] === 0))
       obj[charactersData[id]["second-enemy"][2]] = data[6][2];
+
     if (!(data[7][0] === 0))
       obj[`Teachings of ${charactersData[id]["domain-material"][0]}`] =
         data[7][0];
@@ -149,6 +151,39 @@ const createObject = (data, id, savedData) => {
     if (!(data[7][2][2] === 0))
       obj[`Philosophies of ${charactersData[id]["domain-material"][1]}`] =
         data[7][2][2];
+    // Traveler geo exception
+    if (!(data[10][0] === 0))
+      obj[charactersData[id]["third-enemy"][0]] = data[10][0];
+    if (!(data[10][1] === 0))
+      obj[charactersData[id]["third-enemy"][1]] = data[10][1];
+    if (!(data[10][2] === 0))
+      obj[charactersData[id]["third-enemy"][2]] = data[10][2];
+    if (!(data[11][0] === 0))
+      obj[`Teachings of ${charactersData[id]["second-domain-material"][0]}`] =
+        data[11][0];
+    if (!(data[11][1][0] === 0))
+      obj[`Guide to ${charactersData[id]["second-domain-material"][1]}`] =
+        data[11][1][0];
+    if (!(data[11][1][1] === 0))
+      obj[`Guide to ${charactersData[id]["second-domain-material"][2]}`] =
+        data[11][1][1];
+    if (!(data[11][1][2] === 0))
+      obj[`Guide to ${charactersData[id]["second-domain-material"][0]}`] =
+        data[11][1][2];
+    if (!(data[11][2][0] === 0))
+      obj[
+        `Philosophies of ${charactersData[id]["second-domain-material"][2]}`
+      ] = data[11][2][0];
+    if (!(data[11][2][1] === 0))
+      obj[
+        `Philosophies of ${charactersData[id]["second-domain-material"][0]}`
+      ] = data[11][2][1];
+    if (!(data[11][2][2] === 0))
+      obj[
+        `Philosophies of ${charactersData[id]["second-domain-material"][1]}`
+      ] = data[11][2][2];
+    if (!(data[12] === 0))
+      obj[charactersData[id]["second-weekly-boss"]] = data[12];
   } else {
     if (!(enemyFst === 0))
       obj[charactersData[id]["enemy-material"][0]] = enemyFst;

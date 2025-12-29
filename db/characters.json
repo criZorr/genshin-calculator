@@ -311,13 +311,20 @@
     "specialty-material": "Windwheel Aster",
     "enemy-material": ["Damaged Mask", "Stained Mask", "Ominous Mask"],
     "second-enemy": [
+      "Firm Arrowhead",
+      "Sharp Arrowhead",
+      "Weathered Arrowhead"
+    ],
+    "third-enemy": [
       "Divining Scroll",
       "Sealed Scroll",
       "Forbidden Curse Scroll"
     ],
     "boss-material": "",
     "weekly-boss": "Tail of Boreas",
+    "second-weekly-boss": "Dvalin's Sigh",
     "domain-material": ["Prosperity", "Diligence", "Gold"],
+    "second-domain-material": ["Freedom", "Resistance", "Ballad"],
     "talents": ["Foreign Rockblade", "Starfell Sword", "Wake of Earth"]
   },
   "18": {
