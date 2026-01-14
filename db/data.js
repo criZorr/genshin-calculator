@@ -322,6 +322,9 @@ export default function calculateData(parameter) {
     "Mistshroud Manifestation",
     "Mistshroud Plate",
     "Mistshroud Helmet",
+    "Fractured Eye of the Deep Shadow",
+    "Aberrant Core of the Deep Shadow",
+    "Hooked Beak of the Deep Shadow",
   ];
 
   const specialty = {
@@ -379,6 +382,8 @@ export default function calculateData(parameter) {
     "Portable Bearing": 72,
     "Frostlamp Flower": 70,
     "Moonfall Silver": 71,
+    "Winter Icelea": 69,
+    "Pine Amber": 72,
   };
 
   const boss = [
@@ -424,6 +429,7 @@ export default function calculateData(parameter) {
     "Lightbearing Scale-Feather",
     "Radiant Antler",
     "Cyclic Military Kuuvahki Core",
+    "Remnant of the Dreadwing",
   ];
 
   const weekBoss = [
@@ -463,6 +469,9 @@ export default function calculateData(parameter) {
     "Ascended Sample: Knight",
     "Ascended Sample: Rook",
     "Ascended Sample: Queen",
+    "Mask of the Virtuous Doctor",
+    "Madman's Restraint",
+    "Elixir of the Heretic",
   ];
 
   const special = ["The Cornerstone of Stars and Flames"];
@@ -816,7 +825,18 @@ export default function calculateData(parameter) {
       ],
     ],
     27: [
-      ["Cold-Cracked Shellshard", "Warm Back-Shell", "Blazing Prismshell"],
+      ["Mistshroud Manifestation", "Mistshroud Plate", "Mistshroud Helmet"],
+      [
+        2.6854, 2.8623, 3.1282, 6.2671, 6.9053, 10.0566, 11.1191, 11.7559,
+        11.9687, 12.3939, 31,
+      ],
+    ],
+    28: [
+      [
+        "Fractured Eye of the Deep Shadow",
+        "Aberrant Core of the Deep Shadow",
+        "Hooked Beak of the Deep Shadow",
+      ],
       [
         2.6854, 2.8623, 3.1282, 6.2671, 6.9053, 10.0566, 11.1191, 11.7559,
         11.9687, 12.3939, 31,

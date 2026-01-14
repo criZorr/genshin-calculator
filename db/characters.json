@@ -2326,5 +2326,70 @@
       "Binary Form: Convergence and Division",
       "Principle of Purity: As the Light Shifts"
     ]
+  },
+  "114": {
+    "name": "Columbina",
+    "birthday": "14-01",
+    "region": "Nod-Krai",
+    "quality": "5-stars",
+    "element": "hydro",
+    "stone": "Varunada Lazurite",
+    "weapon": "catalyst",
+    "specialty-material": "Winter Icelea",
+    "enemy-material": [
+      "Slime Condensate",
+      "Slime Secretions",
+      "Slime Concentrate"
+    ],
+    "boss-material": "Radiant Antler",
+    "weekly-boss": "Mask of the Virtuous Doctor",
+    "domain-material": "Moonlight",
+    "talents": ["Moondew Cascade", "Eternal Tides", "Moonlit Melancholy"]
+  },
+  "115": {
+    "name": "Illuga",
+    "birthday": "23-12",
+    "region": "Nod-Krai",
+    "quality": "4-stars",
+    "element": "geo",
+    "stone": "Prithiva Topaz",
+    "weapon": "polearm",
+    "specialty-material": "Pine Amber",
+    "enemy-material": [
+      "Broken Drive Shaft",
+      "Reinforced Drive Shaft",
+      "Precision Drive Shaft"
+    ],
+    "boss-material": "Cyclic Military Kuuvahki Core",
+    "weekly-boss": "Eroded Horn",
+    "domain-material": "Elysium",
+    "talents": [
+      "Oathkeeper's Spear",
+      "Dawnbearing Songbird",
+      "Shadowless Reflection"
+    ]
+  },
+  "116": {
+    "name": "Zibai",
+    "birthday": "",
+    "region": "Liyue",
+    "quality": "5-stars",
+    "element": "geo",
+    "stone": "Prithiva Topaz",
+    "weapon": "sword",
+    "specialty-material": "Glaze Lily",
+    "enemy-material": [
+      "Tattered Warrant",
+      "Immaculate Warrant",
+      "Frost-Etched Warrant"
+    ],
+    "boss-material": "Remnant of the Dreadwing",
+    "weekly-boss": "Ascended Sample: Queen",
+    "domain-material": "Gold",
+    "talents": [
+      "Golden Blade's Petaled Touch",
+      "Heaven and Earth Made Manifest",
+      "Tri-Sphere Eminence"
+    ]
   }
 }
