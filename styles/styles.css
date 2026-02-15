@@ -132,22 +132,22 @@ small {
 
 .bg-fst {
   background-color: var(--first-light-color);
-  transition: all 0.5s ease-in;
+  transition: background-color 0.5s ease-in;
 }
 
 .bg-snd {
   background-color: var(--second-light-color);
-  transition: all 0.5s ease-in;
+  transition: background-color 0.5s ease-in;
 }
 
 .bg-trd {
   background-color: var(--third-light-color);
-  transition: all 0.5s ease-in;
+  transition: background-color 0.5s ease-in;
 }
 
 .bg-snd-dark {
   background-color: var(--first-dark-color);
-  transition: all 0.5s ease-in;
+  transition: background-color 0.5s ease-in;
 }
 
 .frst-text {
@@ -405,6 +405,7 @@ small {
 
   &:hover {
     cursor: pointer;
+    box-shadow: 0rem 0rem 0.25rem var(--first-light-color);
   }
 }
 
@@ -495,9 +496,18 @@ small {
     height: auto;
     border-radius: 0.25rem 0.25rem 1rem 0;
   }
+}
 
-  &:hover {
-    cursor: pointer;
+.card:hover {
+  cursor: pointer;
+
+  & .card-bg {
+    overflow: hidden;
+  }
+
+  & .card-img {
+    transform: scale(1.025);
+    filter: drop-shadow(0rem 0rem 0.5rem var(--first-light-color));
   }
 }
 
@@ -1464,6 +1474,11 @@ small {
   width: 100%;
   height: 100%;
   cursor: pointer;
+}
+
+.btn:hover,
+.btn-bordered:hover {
+  box-shadow: 0rem 0rem 0.25rem var(--first-light-color);
 }
 
 /* Setting section */

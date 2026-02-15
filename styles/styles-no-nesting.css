@@ -128,6 +128,7 @@
 
 .filter-label:hover {
   cursor: pointer;
+  box-shadow: 0rem 0rem 0.25rem var(--first-light-color);
 }
 
 /* ********** Section items ********** */
@@ -186,6 +187,15 @@
 
 .card:hover {
   cursor: pointer;
+}
+
+.card:hover .card-bg {
+  overflow: hidden;
+}
+
+.card:hover .card-img {
+  transform: scale(1.025);
+  filter: drop-shadow(0rem 0rem 0.5rem var(--first-light-color));
 }
 
 .items-card .card-name {
