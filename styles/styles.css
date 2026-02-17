@@ -132,32 +132,38 @@ small {
 
 .bg-fst {
   background-color: var(--first-light-color);
-  transition: background-color 0.5s ease-in;
+  transition: background-color 0.25s ease-in;
 }
 
 .bg-snd {
   background-color: var(--second-light-color);
-  transition: background-color 0.5s ease-in;
+  transition: background-color 0.25s ease-in;
 }
 
 .bg-trd {
   background-color: var(--third-light-color);
-  transition: background-color 0.5s ease-in;
+  transition: background-color 0.25s ease-in;
 }
 
 .bg-snd-dark {
   background-color: var(--first-dark-color);
-  transition: background-color 0.5s ease-in;
+  transition: background-color 0.25s ease-in;
 }
 
 .frst-text {
   color: var(--first-text-dark-color);
-  transition: all 0.5s ease-in;
+  transition:
+    color 0.25s ease-in,
+    background-color 0.25s ease-in,
+    fill 0.25s ease-in;
 }
 
 .scnd-text {
   color: var(--second-text-dark-color);
-  transition: all 0.5s ease-in;
+  transition:
+    color 0.25s ease-in,
+    background-color 0.25s ease-in,
+    fill 0.25s ease-in;
 }
 
 /* ********** Header ********** */
@@ -291,8 +297,6 @@ small {
     padding: 2rem 0;
     min-height: calc(100dvh - 4rem - 2rem);
   }
-
-  transition: all 0.5s ease-in;
 }
 
 /* ***** Content parameters & Content info ***** */
@@ -464,7 +468,7 @@ small {
     grid-template-columns: repeat(5, 5rem);
   }
 
-  transition: gap 0.5s ease-in;
+  transition: gap 0.25s ease-in;
 }
 
 /* ***** Card ***** */
@@ -991,7 +995,9 @@ small {
 
   visibility: hidden;
   opacity: 0;
-  transition: all 0.25s ease-in;
+  transition:
+    opacity 0.25s ease-in,
+    visibility 0.25s ease-in;
 }
 
 .modal-weapon,
@@ -1321,7 +1327,10 @@ small {
   width: 60dvw;
   left: 20dvw;
   bottom: calc(var(--header-height) + 1rem);
-  transition: all 0.25s ease-in;
+  transition:
+    opacity 0.25s ease-in,
+    visibility 0.25s ease-in,
+    transform 0.25s ease-in;
 
   @media screen and (min-width: 624px) {
     width: 30dvw;
@@ -1517,7 +1526,10 @@ small {
   display: flex;
   justify-content: center;
 
-  transition: all 0.25s ease-in;
+  transition:
+    opacity 0.25s ease-in,
+    visibility 0.25s ease-in,
+    transform 0.25s ease-in;
 
   @media screen and (min-width: 624px) {
     bottom: calc(var(--header-height) + 1.5rem);
@@ -1565,6 +1577,7 @@ small {
   top: calc(50dvh - 1.5625rem);
   left: calc(50dvw - 1.5625rem);
   transform: scale(1.5);
+  transition: opacity 0.25s ease-out;
 }
 
 .loader-container img {
@@ -1573,11 +1586,6 @@ small {
   right: 0.55rem;
   width: 2rem;
   height: auto;
-}
-
-.btn-plus-container,
-.add-item-figure {
-  visibility: hidden;
 }
 
 /* Thanks for the loader, css-loaders.com */
