@@ -4,7 +4,7 @@
   color: inherit;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 64em) {
   .header {
     position: sticky;
     top: 0;
@@ -30,7 +30,7 @@
   width: auto;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 64em) {
   .menu-btn .menu-btn-img {
     display: flex;
     justify-content: center;
@@ -52,7 +52,7 @@
   filter: drop-shadow(0 0 0.75rem var(--first-light-color));
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 64em) {
   .menu-btn {
     flex-direction: row;
     padding: 0 0.5rem;
@@ -62,7 +62,7 @@
 }
 
 /* ********** Container ********** */
-@media screen and (min-width: 624px) {
+@media screen and (min-width: 39em) {
   .container {
     flex-direction: row;
     padding-top: 2rem;
@@ -70,14 +70,14 @@
   }
 }
 
-@media screen and (min-width: 704px) {
+@media screen and (min-width: 44em) {
   .container {
     gap: 2rem;
     padding: 2rem;
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 64em) {
   .container {
     padding: 2rem 0;
     height: calc(100dvh - 4rem - 4rem - 2rem);
@@ -85,7 +85,7 @@
 }
 
 /* ***** Content parameters & Content info ***** */
-@media screen and (min-width: 624px) {
+@media screen and (min-width: 39em) {
   .content-parameters,
   .content-parameters-user,
   .content-info {
@@ -97,7 +97,7 @@
   }
 }
 
-@media screen and (min-width: 704px) {
+@media screen and (min-width: 44em) {
   .content-parameters,
   .content-parameters-user,
   .content-info {
@@ -105,7 +105,7 @@
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 64em) {
   .content-parameters,
   .content-parameters-user,
   .content-info {
@@ -113,7 +113,7 @@
   }
 }
 
-@media screen and (min-width: 624px) {
+@media screen and (min-width: 39em) {
   .items-container {
     overflow-y: scroll;
     scrollbar-width: none;
@@ -132,7 +132,7 @@
 }
 
 /* ********** Section items ********** */
-@media screen and (min-width: 624px) {
+@media screen and (min-width: 39em) {
   .section-items {
     overflow-y: scroll;
     scrollbar-width: none;
@@ -140,7 +140,7 @@
 }
 
 /* ********** Cards ********** */
-@media screen and (min-width: 624px) {
+@media screen and (min-width: 39em) {
   .cards-container {
     position: static;
     justify-content: center;
@@ -153,13 +153,13 @@
   }
 }
 
-@media screen and (min-width: 704px) {
+@media screen and (min-width: 44em) {
   .cards-container {
     gap: 1rem;
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 64em) {
   .cards-container {
     grid-template-columns: repeat(5, 5rem);
   }
@@ -224,7 +224,7 @@
 }
 
 /* ***** Gradiant ***** */
-@media screen and (min-width: 624px) {
+@media screen and (min-width: 39em) {
   .gradiant-right,
   .gradiant-left {
     display: none;
@@ -235,14 +235,14 @@
 
 /* ********** Card Total & Individual********** */
 
-@media screen and (min-width: 624px) {
+@media screen and (min-width: 39em) {
   .user-materials-container .btn-expand-container,
   .user-materials-container .btn-collapse-container {
     display: none;
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 64em) {
   .elements-container,
   .extra-container,
   .calcs-container,
@@ -275,7 +275,7 @@
 }
 
 /* ********** Footer ********* */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 64em) {
   .footer {
     margin: 0;
     border-bottom: none;
@@ -283,7 +283,7 @@
 }
 
 /* ********** Modal ********** */
-@media screen and (min-width: 704px) {
+@media screen and (min-width: 44em) {
   .modal-weapon {
     width: auto;
     flex-direction: unset;
@@ -324,7 +324,7 @@
 }
 
 /* Modal talents */
-@media screen and (min-width: 624px) {
+@media screen and (min-width: 39em) {
   .modal-character {
     width: 22rem;
   }
@@ -334,7 +334,7 @@
   }
 }
 
-@media screen and (min-width: 704px) {
+@media screen and (min-width: 44em) {
   .modal-character {
     width: auto;
     flex-direction: unset;
@@ -382,7 +382,7 @@
 }
 
 /* Tooltip */
-@media screen and (min-width: 624px) {
+@media screen and (min-width: 39em) {
   .tooltip {
     width: 30dvw;
     left: 35dvw;
@@ -394,7 +394,7 @@
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 64em) {
   .tooltip {
     width: 20dvw;
     left: 40dvw;
@@ -418,13 +418,13 @@
 
 /* *********** Notification *********** */
 
-@media screen and (min-width: 624px) {
+@media screen and (min-width: 39em) {
   .notification-container {
     bottom: calc(var(--header-height) + 1.5rem);
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 64em) {
   .notification-container {
     bottom: auto;
     top: var(--header-height);

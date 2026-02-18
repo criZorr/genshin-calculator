@@ -48,7 +48,7 @@
 
   --font: "Raleway", sans-serif;
 
-  --max-width: 1024px;
+  --max-width: 64em;
   --header-height: 3.75rem;
 }
 
@@ -178,7 +178,7 @@ small {
   background-color: var(--first-dark-color);
   color: var(--second-text-light-color);
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 64em) {
     position: sticky;
     top: 0;
     height: 4rem;
@@ -199,7 +199,7 @@ small {
   height: 100%;
   max-width: var(--max-width);
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 64em) {
     justify-content: space-evenly;
 
     padding: 0;
@@ -229,7 +229,7 @@ small {
       width: auto;
     }
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 64em) {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -250,7 +250,7 @@ small {
     filter: drop-shadow(0 0 0.75rem var(--first-light-color));
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 64em) {
     flex-direction: row;
 
     padding: 0 0.5rem;
@@ -282,18 +282,18 @@ small {
 
   min-height: calc(100dvh - var(--header-height) - 2rem);
 
-  @media screen and (min-width: 624px) {
+  @media screen and (min-width: 39em) {
     flex-direction: row;
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
 
-  @media screen and (min-width: 704px) {
+  @media screen and (min-width: 44em) {
     gap: 2rem;
     padding: 2rem;
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 64em) {
     padding: 2rem 0;
     min-height: calc(100dvh - 4rem - 2rem);
   }
@@ -311,16 +311,16 @@ small {
   border-radius: 0.5rem;
   padding: 1rem;
 
-  @media screen and (min-width: 624px) {
+  @media screen and (min-width: 39em) {
     width: calc(50% - 0.5rem);
     height: calc(100dvh - var(--header-height) - 4rem - 2rem);
   }
 
-  @media screen and (min-width: 704px) {
+  @media screen and (min-width: 44em) {
     width: calc(50% - 1rem);
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 64em) {
     height: calc(100dvh - 4rem - 4rem - 2rem);
   }
 }
@@ -335,7 +335,7 @@ small {
   width: 100%;
   height: fit-content;
 
-  @media screen and (min-width: 624px) {
+  @media screen and (min-width: 39em) {
     flex-direction: row;
   }
 }
@@ -353,13 +353,13 @@ small {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  @media screen and (min-width: 624px) {
+  @media screen and (min-width: 39em) {
     overflow-y: scroll;
     scrollbar-width: none;
   }
 }
 
-@media screen and (min-width: 624px) {
+@media screen and (min-width: 39em) {
   .user-materials-container {
     overflow-y: scroll;
     scrollbar-width: none;
@@ -426,7 +426,7 @@ small {
 /* ********** Section items ********** */
 .section-items {
   position: relative;
-  @media screen and (min-width: 624px) {
+  @media screen and (min-width: 39em) {
     overflow-y: scroll;
     scrollbar-width: none;
   }
@@ -449,7 +449,7 @@ small {
   padding-right: 1rem;
   padding-left: 1rem;
 
-  @media screen and (min-width: 624px) {
+  @media screen and (min-width: 39em) {
     position: static;
     justify-content: center;
     flex-wrap: wrap;
@@ -460,11 +460,11 @@ small {
     overflow-x: hidden;
   }
 
-  @media screen and (min-width: 704px) {
+  @media screen and (min-width: 44em) {
     gap: 1rem;
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 64em) {
     grid-template-columns: repeat(5, 5rem);
   }
 
@@ -615,7 +615,7 @@ small {
   right: -1rem;
   top: 0;
 
-  @media screen and (min-width: 624px) {
+  @media screen and (min-width: 39em) {
     display: none;
   }
 }
@@ -647,13 +647,13 @@ small {
   gap: 1rem;
 }
 
-@media screen and (min-width: 624px) {
+@media screen and (min-width: 39em) {
   .card-simple {
     width: calc(50% - 0.5rem);
   }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 56.25em) {
   .card-simple {
     width: calc(33.3333333333% - 0.6666666666rem);
   }
@@ -678,7 +678,7 @@ small {
   max-height: 16rem;
 }
 
-@media screen and (min-width: 624px) {
+@media screen and (min-width: 39em) {
   .user-materials-container {
     max-height: none !important;
 
@@ -701,7 +701,7 @@ small {
   column-gap: 1.5rem;
 }
 
-@media screen and (min-width: 624px) {
+@media screen and (min-width: 39em) {
   .content-info > .total-container,
   .content-info > .excess-container {
     overflow-y: hidden;
@@ -738,7 +738,7 @@ small {
   overflow-y: scroll;
   scrollbar-width: none;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 64em) {
     padding-right: 1rem;
     width: calc(100% + 1rem);
     overflow-y: scroll;
@@ -968,7 +968,7 @@ small {
 
   border-bottom: 0.03125rem solid var(--second-light-color);
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 64em) {
     margin: 0;
     border-bottom: none;
   }
@@ -1016,7 +1016,7 @@ small {
 .modal-weapon {
   flex-direction: column;
 
-  @media screen and (min-width: 704px) {
+  @media screen and (min-width: 44em) {
     width: auto;
     flex-direction: unset;
     gap: 2rem;
@@ -1086,7 +1086,7 @@ small {
   gap: 2rem;
 }
 
-@media screen and (min-width: 704px) {
+@media screen and (min-width: 44em) {
   .level-form,
   .weapon-form {
     flex-direction: column;
@@ -1109,11 +1109,11 @@ small {
 }
 
 .modal-character {
-  @media screen and (min-width: 624px) {
+  @media screen and (min-width: 39em) {
     width: 22rem;
   }
 
-  @media screen and (min-width: 704px) {
+  @media screen and (min-width: 44em) {
     width: auto;
     flex-direction: unset;
     gap: 2rem;
@@ -1124,7 +1124,7 @@ small {
   display: flex;
   gap: 0.5rem;
   flex-direction: column;
-  @media screen and (min-width: 704px) {
+  @media screen and (min-width: 44em) {
     width: 20rem;
   }
 }
@@ -1159,7 +1159,7 @@ small {
     overflow: hidden;
   }
 
-  @media screen and (min-width: 624px) {
+  @media screen and (min-width: 39em) {
     max-width: 60%;
   }
 }
@@ -1332,13 +1332,13 @@ small {
     visibility 0.25s ease-in,
     transform 0.25s ease-in;
 
-  @media screen and (min-width: 624px) {
+  @media screen and (min-width: 39em) {
     width: 30dvw;
     left: 35dvw;
     bottom: calc(var(--header-height) + 1.5rem);
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 64em) {
     width: 20dvw;
     left: 40dvw;
     bottom: auto;
@@ -1351,7 +1351,7 @@ small {
   opacity: 1;
   transform: translateY(-1rem);
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 64em) {
     transform: translateY(1rem);
   }
 }
@@ -1531,11 +1531,11 @@ small {
     visibility 0.25s ease-in,
     transform 0.25s ease-in;
 
-  @media screen and (min-width: 624px) {
+  @media screen and (min-width: 39em) {
     bottom: calc(var(--header-height) + 1.5rem);
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 64em) {
     bottom: auto;
     top: var(--header-height);
   }
@@ -1565,7 +1565,7 @@ small {
   opacity: 1;
   transform: translateY(-1rem);
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 64em) {
     transform: translateY(1rem);
   }
 }
