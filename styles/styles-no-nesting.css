@@ -291,6 +291,12 @@
   }
 }
 
+/* Modal weapons */
+.another-container p {
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+
 /* Modal levels */
 .nmb-list-container input[type="checkbox"] {
   display: none;

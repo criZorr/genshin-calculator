@@ -131,6 +131,7 @@ const getLevels = (weaponId) => {
   let $levelContainer = d.querySelector(".level-content"),
     $saveBtn = d.getElementById("save-btn"),
     $addBtn = d.querySelector(".add-btn"),
+    $addBtnShape = d.querySelector(".btn-plus"),
     secondId = weaponId;
 
   if (weaponId.includes("_")) {
@@ -139,6 +140,7 @@ const getLevels = (weaponId) => {
 
   $saveBtn.setAttribute("modal-id", weaponId);
   $addBtn.setAttribute("current_id", weaponId);
+  $addBtnShape.setAttribute("current_id", weaponId);
 
   if (
     weaponsData[secondId].quality == "2-stars" ||
@@ -270,10 +272,10 @@ const drawModal = () => {
       <div class="level-info">
         <div class="level-content bg-snd"></div>
       </div>
-      <section class="another-container">
-        <p>Add another</p>
+      <section class="another-container bg-snd">
+        <p class="frst-text">Add another</p>
         <button class="add-btn">
-          <img class="btn-plus" src="./assets/plus.svg" alt="">
+          <img class="btn-plus" src="./assets/plus-snd.svg" alt="">
         </button>
       </section>
       <div class="weapon-form">
@@ -383,7 +385,7 @@ d.addEventListener("click", (e) => {
     saveFlag = false;
   }
 
-  if (eventClass === "add-btn") {
+  if (eventClass === "add-btn" || eventClass === "btn-plus") {
     let id = e.target.attributes.current_id.value;
 
     if (id.includes("_")) {
