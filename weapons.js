@@ -129,13 +129,20 @@ const getLevels = (weaponId) => {
   $modal.style.opacity = "1";
 
   let $levelContainer = d.querySelector(".level-content"),
-    $saveBtn = d.getElementById("save-btn");
+    $saveBtn = d.getElementById("save-btn"),
+    $addBtn = d.querySelector(".add-btn"),
+    secondId = weaponId;
+
+  if (weaponId.includes("_")) {
+    secondId = weaponId.slice(0, weaponId.indexOf("_"));
+  }
 
   $saveBtn.setAttribute("modal-id", weaponId);
+  $addBtn.setAttribute("current_id", weaponId);
 
   if (
-    weaponsData[weaponId].quality == "2-stars" ||
-    weaponsData[weaponId].quality == "1-stars"
+    weaponsData[secondId].quality == "2-stars" ||
+    weaponsData[secondId].quality == "1-stars"
   ) {
     $levelContainer.innerHTML = `
       <section class="nmb-list-container bg-snd">
@@ -148,8 +155,7 @@ const getLevels = (weaponId) => {
           <option value="4">50</option>
           <option value="5">60</option>
         </select>
-      </section>
-      
+      </section>   
       <div class="scnd-text">→</div>
       <section class="nmb-list-container bg-snd">
         <select class="nmb-list frst-text" id="second-selection">
@@ -177,9 +183,7 @@ const getLevels = (weaponId) => {
           <option value="7">80</option>
         </select>
       </section>
-
       <div class="scnd-text">→</div>
-
       <section class="nmb-list-container bg-snd">
         <select class="nmb-list frst-text" id="second-selection">
           <option value="2">20</option>
@@ -225,7 +229,7 @@ const getLevels = (weaponId) => {
   saveFlag = true;
 
   $saveBtn.addEventListener("click", () => {
-    let numId = Number(weaponId);
+    let numId = Number(secondId);
 
     let fstLevelValue = Number(d.querySelector("#first-selection").value),
       sndLevelValue = Number(d.querySelector("#second-selection").value);
@@ -250,7 +254,7 @@ const getLevels = (weaponId) => {
     let savedData = [...levelValues, ascensionFst, ascensionSnd],
       weaponObject = createObject(calculatedData, numId, savedData);
 
-    createLocal("weaponData", numId, weaponObject);
+    createLocal("weaponData", weaponId, weaponObject);
     getItems();
     createTotalLocal("weaponTotal", "weaponData");
     getTotal();
@@ -266,6 +270,12 @@ const drawModal = () => {
       <div class="level-info">
         <div class="level-content bg-snd"></div>
       </div>
+      <section class="another-container">
+        <p>Add another</p>
+        <button class="add-btn">
+          <img class="btn-plus" src="./assets/plus.svg" alt="">
+        </button>
+      </section>
       <div class="weapon-form">
         <div class="btn-modal">
           <button class="btn-bordered" id="cancel-btn">Cancel</button>
@@ -324,6 +334,12 @@ d.addEventListener("change", (e) => {
   if (eventClass.includes("selected-items")) location.hash = e.target.value;
 });
 
+const exists = (id) => {
+  let data = JSON.parse(localStorage.getItem("weaponData"));
+  if (data[id]) return true;
+  else return false;
+};
+
 d.addEventListener("click", (e) => {
   let eventClass = e.target.className,
     eventId = e.target.id;
@@ -352,16 +368,54 @@ d.addEventListener("click", (e) => {
     eventClass === "btn-delete" ||
     eventClass.includes("btn-delete-container")
   ) {
-    deleteConfirmation(
-      e.target.attributes._id.value,
-      weaponsData[e.target.attributes._id.value].name,
-    );
+    let id = e.target.attributes._id.value,
+      ogId = id;
+
+    if (id.includes("_")) {
+      ogId = id.slice(0, id.indexOf("_"));
+    }
+    deleteConfirmation(id, weaponsData[ogId].name);
   }
 
   if (eventClass === "modal-container" || eventId === "cancel-btn") {
     $modal.style.visibility = "hidden";
     $modal.style.opacity = "0";
     saveFlag = false;
+  }
+
+  if (eventClass === "add-btn") {
+    let id = e.target.attributes.current_id.value;
+
+    if (id.includes("_")) {
+      let position = id.indexOf("_"),
+        ogId = id.slice(0, position),
+        copy = Number(id.slice(position + 1));
+
+      if (exists(id)) {
+        let handleId = ogId + "_" + (copy + 1);
+
+        for (let index = copy; exists(handleId); index++) {
+          copy += 1;
+          handleId = ogId + "_" + (copy + 1);
+        }
+
+        drawModal();
+        getLevels(handleId);
+      } else {
+        window.alert("Add the current one before adding another");
+      }
+    } else {
+      if (exists(id)) {
+        let handleId = id + "_" + "1";
+        for (let index = 1; exists(handleId); index++) {
+          handleId = id + "_" + String(index + 1);
+        }
+        drawModal();
+        getLevels(handleId);
+      } else {
+        window.alert("Add the current one before adding a copy");
+      }
+    }
   }
 
   toggleSize(eventClass, e.target);
