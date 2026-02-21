@@ -1,11 +1,12 @@
 export default function getNumbList(e) {
   let fstValue = Number(e.value);
 
-  const $sndOptions = e.parentElement.querySelectorAll(
-    "#second-selection option"
+  const $sndOptions = e.parentElement.parentElement.querySelectorAll(
+    "#second-selection option",
   );
 
-  let $sndSelection = e.parentElement.querySelector("#second-selection"),
+  let $sndSelection =
+      e.parentElement.parentElement.querySelector("#second-selection"),
     sndValue = Number($sndSelection.value);
 
   for (let i = 0; i < Object.keys($sndOptions).length; i++) {

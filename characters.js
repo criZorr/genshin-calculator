@@ -1,7 +1,7 @@
 import getData from "./helpers/getData.js";
 import getCards from "./components/getCards.js";
 import getNumbList from "./helpers/getNumbList.js";
-import handleAscension from "./helpers/handleAscension.js";
+import handleAscensions from "./helpers/handleAscensions.js";
 import calculateCharacter from "./components/calculateCharacter.js";
 import createLocal from "./helpers/createLocal.js";
 import drawItems from "./components/drawItems.js";
@@ -59,7 +59,7 @@ const filterAction = (filters, data) => {
 
 const getCheckNames = (className) => {
   let $checkbox = document.querySelectorAll(
-    `.${className} input[type=checkbox]:checked`
+    `.${className} input[type=checkbox]:checked`,
   );
   return [...$checkbox].map((e) => e.id);
 };
@@ -210,7 +210,7 @@ const getItems = () => {
     "characterData",
     charactersData,
     ".card-individual-container",
-    ".selected-items"
+    ".selected-items",
   );
 };
 
@@ -346,7 +346,7 @@ const getTalents = (characterId) => {
 
   for (let i = 0; i < Object.keys($checkBoxes).length; i++) {
     $checkBoxes[i].addEventListener("change", (e) =>
-      isChecked(e.target, e.target.parentNode.parentNode.lastElementChild)
+      isChecked(e.target, e.target.parentNode.parentNode.lastElementChild),
     );
   }
 
@@ -391,7 +391,8 @@ const getTalents = (characterId) => {
     let fstTalentValues = [],
       sndTalentValues = [],
       levelValues = [],
-      ascension = false,
+      ascensionFst = false,
+      ascensionSnd = false,
       fstStorageTalent = [],
       sndStorageTalent = [],
       levelVisible = true,
@@ -399,19 +400,19 @@ const getTalents = (characterId) => {
 
     for (let i = 1; i <= 3; i++) {
       fstStorageTalent.push(
-        Number(d.querySelector(`#talent-${i} #first-selection`).value)
+        Number(d.querySelector(`#talent-${i} #first-selection`).value),
       );
       sndStorageTalent.push(
-        Number(d.querySelector(`#talent-${i} #second-selection`).value)
+        Number(d.querySelector(`#talent-${i} #second-selection`).value),
       );
 
       if (!(d.getElementById(`talent-${i}`).style.opacity === "0.5")) {
         talentVisible.push(true);
         fstTalentValues.push(
-          Number(d.querySelector(`#talent-${i} #first-selection`).value)
+          Number(d.querySelector(`#talent-${i} #first-selection`).value),
         );
         sndTalentValues.push(
-          Number(d.querySelector(`#talent-${i} #second-selection`).value)
+          Number(d.querySelector(`#talent-${i} #second-selection`).value),
         );
       } else {
         talentVisible.push(false);
@@ -421,10 +422,10 @@ const getTalents = (characterId) => {
     }
 
     let fstLevelValue = Number(
-        d.querySelector("#level-data #first-selection").value
+        d.querySelector("#level-data #first-selection").value,
       ),
       sndLevelValue = Number(
-        d.querySelector("#level-data #second-selection").value
+        d.querySelector("#level-data #second-selection").value,
       ),
       sndLevelOg = sndLevelValue;
 
@@ -437,12 +438,9 @@ const getTalents = (characterId) => {
       levelValues.push(0);
     }
 
-    if (sndLevelValue === 8) sndLevelValue = 7;
+    if (d.querySelector("#asc-fst").checked) ascensionFst = true;
 
-    if (
-      d.querySelectorAll(".ascension-selector input")[sndLevelValue - 2].checked
-    )
-      ascension = true;
+    if (d.querySelector("#asc-snd").checked) ascensionSnd = true;
 
     if (
       !(
@@ -453,12 +451,13 @@ const getTalents = (characterId) => {
         fstTalentValues,
         sndTalentValues,
         levelValues,
-        ascension,
-        name
+        ascensionFst,
+        ascensionSnd,
+        name,
       );
 
       let savedData = [
-          [levelVisible, fstLevelValue, sndLevelOg, ascension],
+          [levelVisible, fstLevelValue, sndLevelOg, ascensionFst, ascensionSnd],
           talentVisible,
           fstStorageTalent,
           sndStorageTalent,
@@ -488,40 +487,34 @@ const drawModal = (id) => {
           </span>
         </div>
         <div class="level-info" id="level-data">
-          <div class="ascension-selector">
-            <input type="checkbox" name="ascension-selected" id="ascension-1" />
-            <label for="ascension-1">✦</label>
-            <input type="checkbox" name="ascension-selected" id="ascension-2" />
-            <label for="ascension-2">✦</label>
-            <input type="checkbox" name="ascension-selected" id="ascension-3" />
-            <label for="ascension-3">✦</label>
-            <input type="checkbox" name="ascension-selected" id="ascension-4" />
-            <label for="ascension-4">✦</label>
-            <input type="checkbox" name="ascension-selected" id="ascension-5" />
-            <label for="ascension-5">✦</label>
-            <input type="checkbox" name="ascension-selected" id="ascension-6" />
-            <label for="ascension-6">✦</label>
-          </div>
           <div class="level-content bg-snd">
-            <select class="nmb-list frst-text" id="first-selection">
-              <option value="1">1</option>
-              <option value="2">20</option>
-              <option value="3">40</option>
-              <option value="4">50</option>
-              <option value="5">60</option>
-              <option value="6">70</option>
-              <option value="7">80</option>
-            </select>
+            <section class="nmb-list-container bg-snd frst-text">
+              <input type="checkbox" name="ascension-selected" id="asc-fst" />
+              <label for="asc-fst">✦</label>
+              <select class="nmb-list frst-text" id="first-selection">
+                <option value="1">1</option>
+                <option value="2">20</option>
+                <option value="3">40</option>
+                <option value="4">50</option>
+                <option value="5">60</option>
+                <option value="6">70</option>
+                <option value="7">80</option>
+              </select>
+            </section>
             <div class="scnd-text">→</div>
-            <select class="nmb-list frst-text" id="second-selection">
-              <option value="2">20</option>
-              <option value="3">40</option>
-              <option value="4">50</option>
-              <option value="5">60</option>
-              <option value="6">70</option>
-              <option value="7">80</option>
-              <option value="8">90</option>
-            </select>
+            <section class="nmb-list-container bg-snd frst-text">
+              <select class="nmb-list frst-text" id="second-selection">
+                <option value="2">20</option>
+                <option value="3">40</option>
+                <option value="4">50</option>
+                <option value="5">60</option>
+                <option value="6">70</option>
+                <option value="7">80</option>
+                <option value="8">90</option>
+              </select>
+              <input type="checkbox" name="ascension-selected" id="asc-snd" />
+              <label for="asc-snd">✦</label>
+            </section>
           </div>
         </div>
       </div>
@@ -549,22 +542,19 @@ const drawModal = (id) => {
   }
 
   if (data) {
+    let labels = d.querySelectorAll(".level-content label");
+
     if (!data[0][0]) d.getElementById("checkbox-level").click();
-    let star = data[0][2];
-    if (data[0][2] === 8) star = 7;
-
-    d.querySelectorAll(".ascension-selector label")[star - 2].click();
-
-    if (!data[0][3])
-      d.querySelectorAll(".ascension-selector label")[star - 2].click();
+    if (data[0][3]) labels[0].click();
+    if (data[0][4]) labels[1].click();
 
     d.querySelectorAll("#first-selection option")[data[0][1] - 1].setAttribute(
       "selected",
-      "selected"
+      "selected",
     );
     d.querySelectorAll("#second-selection option")[data[0][2] - 2].setAttribute(
       "selected",
-      "selected"
+      "selected",
     );
   }
 };
@@ -593,7 +583,7 @@ const deleteConfirmation = (id, name) => {
     deleteLocal(
       "characterData",
       e.target.attributes._id.value,
-      "userMaterials"
+      "userMaterials",
     );
     getItems();
     createTotalLocal("characterTotal", "characterData");
@@ -610,48 +600,16 @@ d.addEventListener("change", (e) => {
 
   if (eventId === "first-selection") {
     getNumbList(e.target);
-    if (
-      e.target.parentElement.parentElement.firstElementChild.className ==
-      "ascension-selector"
-    ) {
-      const $selectors = d.querySelectorAll(".ascension-selector input");
-      let selected =
-        Number(
-          e.target.parentElement.querySelector("#second-selection").value
-        ) - 1;
 
-      handleAscension(selected, $selectors);
+    if (e.target.parentElement.className.includes("nmb-list-container")) {
+      handleAscensions();
     }
   }
 
   if (eventId === "second-selection") {
-    if (
-      e.target.parentElement.parentElement.firstElementChild.className ==
-      "ascension-selector"
-    ) {
-      const $selectors = d.querySelectorAll(".ascension-selector input");
-      let selected = Number(e.target.value) - 1;
-
-      handleAscension(selected, $selectors);
+    if (e.target.parentElement.className.includes("nmb-list-container")) {
+      handleAscensions();
     }
-  }
-
-  if (eventId.includes("ascension-")) {
-    const $selectors = d.querySelectorAll(".ascension-selector input"),
-      $fstOption =
-        $selectors[0].parentNode.parentNode.querySelector("#first-selection"),
-      $sndOption =
-        $selectors[0].parentNode.parentNode.querySelector("#second-selection");
-    let numberId = eventId.replaceAll("ascension-", "");
-
-    handleAscension(numberId, $selectors, 1);
-
-    $sndOption.value = Number(numberId) + 1;
-
-    if ($fstOption.value >= $sndOption.value)
-      $fstOption.value = $sndOption.value - 1;
-
-    getNumbList($fstOption);
   }
 
   if (eventClass.includes("selected-items")) location.hash = e.target.value;
@@ -678,6 +636,7 @@ d.addEventListener("click", (e) => {
   ) {
     drawModal(e.target.attributes._id.value);
     getTalents(e.target.attributes._id.value);
+    handleAscensions();
   }
 
   if (
@@ -686,7 +645,7 @@ d.addEventListener("click", (e) => {
   ) {
     deleteConfirmation(
       e.target.attributes._id.value,
-      charactersData[e.target.attributes._id.value].name
+      charactersData[e.target.attributes._id.value].name,
     );
   }
 
@@ -723,7 +682,7 @@ let charactersData = await getData("./db/characters.json");
 if (!localStorage.getItem("userInfo"))
   localStorage.setItem(
     "userInfo",
-    '{"World":9,"crafting":1,"levelDomains":3,"resin":1,"RNG":1,"Mora":1000}'
+    '{"World":9,"crafting":1,"levelDomains":3,"resin":1,"RNG":1,"Mora":1000}',
   );
 
 let erraser = true,
@@ -740,15 +699,15 @@ if (erraser) {
   localStorage.removeItem("userInfo");
   localStorage.setItem(
     "userInfo",
-    `{"World":9,"crafting":1,"levelDomains":3,"resin":1,"RNG":1,"Mora":${mora}}`
+    `{"World":9,"crafting":1,"levelDomains":3,"resin":1,"RNG":1,"Mora":${mora}}`,
   );
 }
 
 !localStorage.getItem("characterTotal")
   ? localStorage.setItem("characterTotal", "{}")
   : Object.keys(JSON.parse(localStorage.getItem("characterTotal"))).length == 0
-  ? undefined
-  : getTotal();
+    ? undefined
+    : getTotal();
 
 if (!localStorage.getItem("userMaterials"))
   localStorage.setItem("userMaterials", "{}");

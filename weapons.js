@@ -1,7 +1,7 @@
 import getData from "./helpers/getData.js";
 import getCards from "./components/getCards.js";
 import getNumbList from "./helpers/getNumbList.js";
-import handleAscension from "./helpers/handleAscension.js";
+import handleAscensions from "./helpers/handleAscensions.js";
 import calculateWeapon from "./components/calculateWeapon.js";
 import createLocal from "./helpers/createLocal.js";
 import drawItems from "./components/drawItems.js";
@@ -56,7 +56,7 @@ const filterAction = (filters, data) => {
 
 const getCheckNames = (className) => {
   let $checkbox = document.querySelectorAll(
-    `.${className} input[type=checkbox]:checked`
+    `.${className} input[type=checkbox]:checked`,
   );
   return [...$checkbox].map((e) => e.id);
 };
@@ -114,7 +114,7 @@ const getItems = () => {
     "weaponData",
     weaponsData,
     ".card-individual-container",
-    ".selected-items"
+    ".selected-items",
   );
 };
 
@@ -128,8 +128,7 @@ const getLevels = (weaponId) => {
   $modal.style.visibility = "visible";
   $modal.style.opacity = "1";
 
-  let $labels = d.querySelectorAll(".ascension-selector label"),
-    $levelContainer = d.querySelector(".level-content"),
+  let $levelContainer = d.querySelector(".level-content"),
     $saveBtn = d.getElementById("save-btn");
 
   $saveBtn.setAttribute("modal-id", weaponId);
@@ -138,55 +137,62 @@ const getLevels = (weaponId) => {
     weaponsData[weaponId].quality == "2-stars" ||
     weaponsData[weaponId].quality == "1-stars"
   ) {
-    $labels[5].style.display = "none";
-    $labels[4].style.display = "none";
-
-    $labels[0].parentNode.style.justifyContent = "center";
-    $labels[0].parentNode.style.gap = "1rem";
-
     $levelContainer.innerHTML = `
-      <select class="nmb-list frst-text" id="first-selection">
-        <option value="1">1</option>
-        <option value="2">20</option>
-        <option value="3">40</option>
-        <option value="4">50</option>
-        <option value="5">60</option>
-      </select>
+      <section class="nmb-list-container bg-snd">
+        <input type="checkbox" name="ascension-selected" id="asc-fst" />
+        <label for="asc-fst">✦</label>
+        <select class="nmb-list frst-text" id="first-selection">
+          <option value="1">1</option>
+          <option value="2">20</option>
+          <option value="3">40</option>
+          <option value="4">50</option>
+          <option value="5">60</option>
+        </select>
+      </section>
+      
       <div class="scnd-text">→</div>
-      <select class="nmb-list frst-text" id="second-selection">
-        <option value="2">20</option>
-        <option value="3">40</option>
-        <option value="4">50</option>
-        <option value="5">60</option>
-        <option value="6">70</option>
-      </select>`;
+      <section class="nmb-list-container bg-snd">
+        <select class="nmb-list frst-text" id="second-selection">
+          <option value="2">20</option>
+          <option value="3">40</option>
+          <option value="4">50</option>
+          <option value="5">60</option>
+          <option value="6">70</option>
+        </select>
+        <input type="checkbox" name="ascension-selected" id="asc-snd" />
+        <label for="asc-snd">✦</label>
+      </section>`;
   } else {
-    $labels[5].style.display = "block";
-    $labels[4].style.display = "block";
-
-    $labels[0].parentNode.style.justifyContent = "space-between";
-    $labels[0].parentNode.style.gap = "0";
-
     $levelContainer.innerHTML = `
-      <select class="nmb-list frst-text" id="first-selection">
-        <option value="1">1</option>
-        <option value="2">20</option>
-        <option value="3">40</option>
-        <option value="4">50</option>
-        <option value="5">60</option>
-        <option value="6">70</option>
-        <option value="7">80</option>
-      </select>
+      <section class="nmb-list-container bg-snd">
+        <input type="checkbox" name="ascension-selected" id="asc-fst" />
+        <label for="asc-fst">✦</label>
+        <select class="nmb-list frst-text" id="first-selection">
+          <option value="1">1</option>
+          <option value="2">20</option>
+          <option value="3">40</option>
+          <option value="4">50</option>
+          <option value="5">60</option>
+          <option value="6">70</option>
+          <option value="7">80</option>
+        </select>
+      </section>
+
       <div class="scnd-text">→</div>
-      <select class="nmb-list frst-text" id="second-selection">
-        <option value="2">20</option>
-        <option value="3">40</option>
-        <option value="4">50</option>
-        <option value="5">60</option>
-        <option value="6">70</option>
-        <option value="7">80</option>
-        <option value="8">90</option>
-      </select>`;
+
+      <section class="nmb-list-container bg-snd">
+        <select class="nmb-list frst-text" id="second-selection">
+          <option value="2">20</option>
+          <option value="3">40</option>
+          <option value="4">50</option>
+          <option value="5">60</option>
+          <option value="6">70</option>
+          <option value="7">80</option>
+          <option value="8">90</option>
+        </select>
+        <input type="checkbox" name="ascension-selected" id="asc-snd" />
+        <label for="asc-snd">✦</label>
+      </section>`;
   }
 
   let data = "";
@@ -200,14 +206,11 @@ const getLevels = (weaponId) => {
 
   if (data) {
     let fstList = d.getElementById("first-selection"),
-      sndList = d.getElementById("second-selection");
+      sndList = d.getElementById("second-selection"),
+      labels = d.querySelectorAll(".level-content label");
 
-    let star = data[1];
-
-    if (data[1] === 8) star = 7;
-    d.querySelectorAll(".ascension-selector label")[star - 2].click();
-    if (!data[2])
-      d.querySelectorAll(".ascension-selector label")[star - 2].click();
+    if (data[2]) labels[0].click();
+    if (data[3]) labels[1].click();
 
     fstList
       .querySelectorAll("option")
@@ -228,24 +231,23 @@ const getLevels = (weaponId) => {
       sndLevelValue = Number(d.querySelector("#second-selection").value);
 
     let levelValues = [fstLevelValue, sndLevelValue],
-      ascension = false;
+      ascensionFst = false,
+      ascensionSnd = false;
 
     let quality = weaponsData[numId].quality;
 
-    if (quality === "2-stars" || quality === "1-stars") {
-      if (sndLevelValue === 6) sndLevelValue = 5;
-    }
+    if (d.querySelector("#asc-fst").checked) ascensionFst = true;
 
-    if (sndLevelValue === 8) sndLevelValue = 7;
+    if (d.querySelector("#asc-snd").checked) ascensionSnd = true;
 
-    if (
-      d.querySelectorAll(".ascension-selector input")[sndLevelValue - 2].checked
-    )
-      ascension = true;
+    let calculatedData = calculateWeapon(
+      levelValues,
+      ascensionFst,
+      ascensionSnd,
+      quality,
+    );
 
-    let calculatedData = calculateWeapon(levelValues, ascension, quality);
-
-    let savedData = [...levelValues, ascension],
+    let savedData = [...levelValues, ascensionFst, ascensionSnd],
       weaponObject = createObject(calculatedData, numId, savedData);
 
     createLocal("weaponData", numId, weaponObject);
@@ -262,20 +264,6 @@ const drawModal = () => {
   $modal.innerHTML = `
     <div class="modal-weapon bg-trd">
       <div class="level-info">
-        <div class="ascension-selector">
-          <input type="checkbox" name="ascension-selected" id="ascension-1" />
-          <label for="ascension-1">✦</label>
-          <input type="checkbox" name="ascension-selected" id="ascension-2" />
-          <label for="ascension-2">✦</label>
-          <input type="checkbox" name="ascension-selected" id="ascension-3" />
-          <label for="ascension-3">✦</label>
-          <input type="checkbox" name="ascension-selected" id="ascension-4" />
-          <label for="ascension-4">✦</label>
-          <input type="checkbox" name="ascension-selected" id="ascension-5" />
-          <label for="ascension-5">✦</label>
-          <input type="checkbox" name="ascension-selected" id="ascension-6" />
-          <label for="ascension-6">✦</label>
-        </div>
         <div class="level-content bg-snd"></div>
       </div>
       <div class="weapon-form">
@@ -326,38 +314,11 @@ d.addEventListener("change", (e) => {
   if (eventId === "first-selection") {
     getNumbList(e.target);
 
-    const $selectors = d.querySelectorAll(".ascension-selector input");
-    let selected =
-      Number(e.target.parentElement.querySelector("#second-selection").value) -
-      1;
-
-    handleAscension(selected, $selectors);
+    handleAscensions();
   }
 
   if (eventId === "second-selection") {
-    const $selectors = d.querySelectorAll(".ascension-selector input");
-    let selected = Number(e.target.value) - 1;
-
-    handleAscension(selected, $selectors);
-  }
-
-  if (eventId.includes("ascension-")) {
-    const $selectors = d.querySelectorAll(".ascension-selector input"),
-      $fstOption =
-        $selectors[0].parentNode.parentNode.querySelector("#first-selection"),
-      $sndOption =
-        $selectors[0].parentNode.parentNode.querySelector("#second-selection");
-    let numberId = eventId.replaceAll("ascension-", "");
-
-    handleAscension(numberId, $selectors, 1);
-
-    let val = Number(numberId) + 1;
-    $sndOption.value = val;
-
-    if ($fstOption.value >= $sndOption.value)
-      $fstOption.value = $sndOption.value - 1;
-
-    getNumbList($fstOption);
+    handleAscensions();
   }
 
   if (eventClass.includes("selected-items")) location.hash = e.target.value;
@@ -384,6 +345,7 @@ d.addEventListener("click", (e) => {
   ) {
     drawModal();
     getLevels(e.target.attributes._id.value);
+    handleAscensions();
   }
 
   if (
@@ -392,7 +354,7 @@ d.addEventListener("click", (e) => {
   ) {
     deleteConfirmation(
       e.target.attributes._id.value,
-      weaponsData[e.target.attributes._id.value].name
+      weaponsData[e.target.attributes._id.value].name,
     );
   }
 
@@ -429,7 +391,7 @@ let weaponsData = await getData("./db/weapons.json");
 if (!localStorage.getItem("userInfo"))
   localStorage.setItem(
     "userInfo",
-    '{"World":9,"crafting":1,"levelDomains":3,"resin":1,"RNG":1,"Mora":1000}'
+    '{"World":9,"crafting":1,"levelDomains":3,"resin":1,"RNG":1,"Mora":1000}',
   );
 
 let erraser = true,
@@ -446,15 +408,15 @@ if (erraser) {
   localStorage.removeItem("userInfo");
   localStorage.setItem(
     "userInfo",
-    `{"World":9,"crafting":1,"levelDomains":3,"resin":1,"RNG":1,"Mora":${mora}}`
+    `{"World":9,"crafting":1,"levelDomains":3,"resin":1,"RNG":1,"Mora":${mora}}`,
   );
 }
 
 !localStorage.getItem("weaponTotal")
   ? localStorage.setItem("weaponTotal", "{}")
   : Object.keys(JSON.parse(localStorage.getItem("weaponTotal"))).length == 0
-  ? undefined
-  : getTotal();
+    ? undefined
+    : getTotal();
 
 if (!localStorage.getItem("userMaterials"))
   localStorage.setItem("userMaterials", "{}");

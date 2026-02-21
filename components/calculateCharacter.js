@@ -123,8 +123,9 @@ export default function calculateCharacter(
   fstTalentValues,
   sndTalentValues,
   levelValues,
-  ascensionBool,
-  name
+  ascensionFst,
+  ascensionSnd,
+  name,
 ) {
   let talentMora = 0,
     fstTalentEnemy = 0,
@@ -261,11 +262,11 @@ export default function calculateCharacter(
     ascensionBoss = 0,
     ascensionHandler = 0;
 
-  if (sndLevelValue === 8) sndLevelValue = 7;
-
-  ascensionBool
+  ascensionSnd
     ? (ascensionHandler = sndLevelValue - 1)
     : (ascensionHandler = sndLevelValue - 2);
+
+  if (!ascensionFst && fstLevelValue != 1) fstLevelValue = fstLevelValue - 1;
 
   if (!(fstLevelValue === 0)) {
     for (let i = fstLevelValue; i <= ascensionHandler; i++) {

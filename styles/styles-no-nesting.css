@@ -292,11 +292,11 @@
 }
 
 /* Modal levels */
-.ascension-selector input[type="checkbox"] {
+.nmb-list-container input[type="checkbox"] {
   display: none;
 }
 
-.ascension-selector label {
+.nmb-list-container label {
   height: 1rem;
   font-size: 1.3rem;
   text-align: center;

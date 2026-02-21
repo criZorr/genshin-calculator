@@ -215,7 +215,12 @@ const levelOne = {
   6: [26000, 26, 0, 0],
 };
 
-export default function calculateWeapon(levelValues, ascensionBool, quality) {
+export default function calculateWeapon(
+  levelValues,
+  ascensionFst,
+  ascensionSnd,
+  quality,
+) {
   let levelMora = 0,
     fstLevelCrystal = 0,
     sndLevelCrystal = 0,
@@ -267,13 +272,11 @@ export default function calculateWeapon(levelValues, ascensionBool, quality) {
     fthAscensionMaterial = 0,
     ascensionHandler = 0;
 
-  if (quality === "2-stars" || quality === "1-stars") {
-    if (sndLevelValue === 6) sndLevelValue = 5;
-  }
+  ascensionSnd
+    ? (ascensionHandler = sndLevelValue - 1)
+    : (ascensionHandler = sndLevelValue - 2);
 
-  if (sndLevelValue === 8) sndLevelValue = 7;
-
-  ascensionBool ? (ascensionHandler = sndLevelValue - 1) : (ascensionHandler = sndLevelValue - 2);
+  if (!ascensionFst && fstLevelValue != 1) fstLevelValue = fstLevelValue - 1;
 
   for (let i = fstLevelValue; i <= ascensionHandler; i++) {
     ascensionMora += ascensionInfo[i].mora;
@@ -301,7 +304,11 @@ export default function calculateWeapon(levelValues, ascensionBool, quality) {
 
   let totalMora = levelMora + ascensionMora,
     totalEnemy = [fstAscensionEnemy, sndAscensionEnemy, trdAscensionEnemy],
-    totalSpecialEnemy = [fstAscensionSpecial, sndAscensionSpecial, trdAscensionSpecial],
+    totalSpecialEnemy = [
+      fstAscensionSpecial,
+      sndAscensionSpecial,
+      trdAscensionSpecial,
+    ],
     totalMaterial = [
       fstAscensionMaterial,
       sndAscensionMaterial,
@@ -310,5 +317,11 @@ export default function calculateWeapon(levelValues, ascensionBool, quality) {
     ],
     totalCrystal = [fstLevelCrystal, sndLevelCrystal, trdLevelCrystal];
 
-  return [totalMora, totalCrystal, totalEnemy, totalSpecialEnemy, totalMaterial];
+  return [
+    totalMora,
+    totalCrystal,
+    totalEnemy,
+    totalSpecialEnemy,
+    totalMaterial,
+  ];
 }
