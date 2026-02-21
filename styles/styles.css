@@ -1040,7 +1040,7 @@ small {
 .another-container {
   display: flex;
   justify-content: space-between;
-  margin-inline: 2rem;
+  width: 14rem;
   padding-block: 0.5rem;
   padding-inline: 1rem;
   border-radius: 0.5rem;
@@ -1109,7 +1109,7 @@ small {
 
 .level-content {
   width: 12rem;
-  height: 5rem;
+  height: 3rem;
   border-radius: 0.5rem;
 
   display: flex;
@@ -1119,10 +1119,15 @@ small {
 }
 
 .talent-container,
-.level-container {
+.level-container,
+.level-info-container {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+
+.level-info-container {
+  align-items: center;
 }
 
 /* level form */

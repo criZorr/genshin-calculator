@@ -269,15 +269,17 @@ const getLevels = (weaponId) => {
 const drawModal = () => {
   $modal.innerHTML = `
     <div class="modal-weapon bg-trd">
-      <div class="level-info">
-        <div class="level-content bg-snd"></div>
-      </div>
-      <section class="another-container bg-snd">
+      <article class="level-info-container">
+        <div class="level-info">
+          <div class="level-content bg-snd"></div>
+        </div>
+        <section class="another-container bg-snd">
         <p class="frst-text">Add another</p>
         <button class="add-btn">
-          <img class="btn-plus" src="./assets/plus-snd.svg" alt="">
+        <img class="btn-plus" src="./assets/plus-snd.svg" alt="">
         </button>
-      </section>
+        </section>
+      </article>
       <div class="weapon-form">
         <div class="btn-modal">
           <button class="btn-bordered" id="cancel-btn">Cancel</button>
