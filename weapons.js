@@ -266,9 +266,47 @@ const getLevels = (weaponId) => {
   });
 };
 
-const drawModal = () => {
+const drawModal = (ogId) => {
+  let id = ogId,
+    quality = "";
+
+  if (ogId.includes("_")) id = ogId.slice(0, ogId.indexOf("_"));
+
+  switch (weaponsData[id].quality) {
+    case "5-stars":
+      quality = "five";
+      break;
+    case "4-stars":
+      quality = "four";
+      break;
+    case "3-stars":
+      quality = "three";
+      break;
+    case "2-stars":
+      quality = "two";
+      break;
+    case "1-stars":
+      quality = "one";
+      break;
+  }
+
   $modal.innerHTML = `
     <div class="modal-weapon bg-trd">
+      <section class="modal-img">
+        <div class="card-bg ${quality}">
+          <img class="card-img" src="./assets/weapons/${weaponsData[id].name}.webp" alt="${weaponsData[id].name}">
+        </div>
+        <article class="character-properties">
+          <p class="scnd-text"><b>${weaponsData[id].name}</b></p>
+          <p class="frst-text">
+            ${weaponsData[id].weapon.slice(0, 1).toUpperCase() + weaponsData[id].weapon.slice(1)}
+            -
+            ${weaponsData[id].quality.replaceAll("-", " ")}
+          </p>
+        </article>
+      </section>
+
+      <section class="modal-interaction">
       <article class="level-info-container">
         <div class="level-info">
           <div class="level-content bg-snd"></div>
@@ -288,6 +326,8 @@ const drawModal = () => {
           <button class="btn bg-snd-dark" id="save-btn">Save</button>
         </div>
       </div>
+      </section>
+
     </div>`;
 };
 
@@ -363,7 +403,7 @@ d.addEventListener("click", (e) => {
     eventClass === "btn-edit" ||
     eventClass.includes("btn-edit-container")
   ) {
-    drawModal();
+    drawModal(e.target.attributes._id.value);
     getLevels(e.target.attributes._id.value);
     handleAscensions();
   }
@@ -403,7 +443,7 @@ d.addEventListener("click", (e) => {
           handleId = ogId + "_" + (copy + 1);
         }
 
-        drawModal();
+        drawModal(handleId);
         getLevels(handleId);
       } else {
         window.alert("Add the current one before adding another");
@@ -414,7 +454,7 @@ d.addEventListener("click", (e) => {
         for (let index = 1; exists(handleId); index++) {
           handleId = id + "_" + String(index + 1);
         }
-        drawModal();
+        drawModal(handleId);
         getLevels(handleId);
       } else {
         window.alert("Add the current one before adding a copy");

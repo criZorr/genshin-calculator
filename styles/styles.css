@@ -1015,16 +1015,6 @@ small {
   border-radius: 0.5rem;
 }
 
-.modal-weapon {
-  flex-direction: column;
-
-  @media screen and (min-width: 44em) {
-    width: auto;
-    flex-direction: unset;
-    gap: 2rem;
-  }
-}
-
 /* Modal weapons */
 .level-info {
   display: flex;
@@ -1161,12 +1151,62 @@ small {
   flex-direction: column;
 }
 
+.modal-img {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.modal-img .card-bg {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 0.25rem;
+}
+
+.modal-img img {
+  width: 5rem;
+  height: auto;
+  border-radius: 0.25rem;
+}
+
+.character-properties {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.modal-interaction {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 .modal-character {
+  display: block;
   @media screen and (min-width: 39em) {
     width: 22rem;
   }
+}
 
-  @media screen and (min-width: 44em) {
+.modal-weapon {
+  display: block;
+  @media screen and (min-width: 39em) {
+    width: 22rem;
+  }
+}
+
+@media screen and (min-width: 44em) {
+  .modal-character {
+    width: auto;
+  }
+  .modal-weapon {
+    width: 23.25rem;
+  }
+  .modal-img {
+    margin-bottom: 2rem;
+  }
+  .modal-interaction {
     width: auto;
     flex-direction: unset;
     gap: 2rem;

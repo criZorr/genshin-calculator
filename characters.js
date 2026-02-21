@@ -476,8 +476,56 @@ const getTalents = (characterId) => {
 };
 
 const drawModal = (id) => {
+  const date = new Date();
+  let today = String(date.getDate()).padStart(2, "0");
+  today += "-";
+  today += String(date.getMonth() + 1).padStart(2, "0");
+
+  let quality = "",
+    birthday = charactersData[id].birthday,
+    content = "";
+
+  if (birthday === "29-02") birthday = "28-02";
+
+  if (today === birthday) {
+    content = `
+      <div class="card-bg birth" style="position: relative">
+        <img class="confeti" src="./assets/birthday.gif"/>
+        <img class="card-img" style="position: absolute" src="./assets/characters/${charactersData[id].name}.webp" alt="${charactersData[id].name}">
+      </div>`;
+  } else {
+    switch (charactersData[id].quality) {
+      case "5-stars":
+        quality = "five";
+        break;
+      case "4-stars":
+        quality = "four";
+        break;
+      case "5-stars-colab":
+        quality = "colab";
+        break;
+    }
+    content = `
+      <div class="card-bg ${quality}">
+        <img class="card-img" src="./assets/characters/${charactersData[id].name}.webp" alt="${charactersData[id].name}">
+      </div>`;
+  }
+
   $modal.innerHTML = `
     <div class="modal-character bg-trd">
+      <section class="modal-img">
+        ${content}
+        <article class="character-properties">
+          <p class="scnd-text"><b>${charactersData[id].name}</b></p>
+          <p class="frst-text">
+            ${charactersData[id].element.slice(0, 1).toUpperCase() + charactersData[id].element.slice(1)}
+            -
+            ${charactersData[id].weapon.slice(0, 1).toUpperCase() + charactersData[id].weapon.slice(1)}
+          </p>
+        </article>
+      </section>
+
+      <section class="modal-interaction">
       <div class="level-container">
         <div class="custom-checkbox">
           <label class="scnd-text" for="checkbox-level">Calculate levels</label>
@@ -532,6 +580,8 @@ const drawModal = (id) => {
           </div>
         </div>
       </div>
+      </section>
+
     </div>`;
 
   let data = "";

@@ -110,13 +110,19 @@ export default function drawItems(
   let names = keys.map((e) => data[e].name);
   names = names.sort();
 
-  let ogKeysSorted = [];
+  let keysSorted = [],
+    keysSeen = [];
 
-  for (let i = 0; i < names.length; i++) {
-    if (names[i] === data[keys[i]].name) {
-      ogKeysSorted.push(ogKeys[i]);
+  names.forEach((e) => {
+    for (let i = 0; i < names.length; i++) {
+      if (!keysSeen.includes(ogKeys[i])) {
+        if (e === data[keys[i]].name) {
+          keysSorted.push(ogKeys[i]);
+          keysSeen.push(ogKeys[i]);
+        }
+      }
     }
-  }
+  });
 
   let optionTotal = d.createElement("option");
   optionTotal.setAttribute("value", "Total");
@@ -125,24 +131,23 @@ export default function drawItems(
 
   for (let i = 0; i < keys.length; i++) {
     let name = names[i],
-      ogId = ogKeysSorted[i];
+      id = keysSorted[i];
 
     let HeaderContent = `
-            <div class="element-header">
-              <h3 class="frst-text">${name}</h3>
-              <section class="buttons-element">
-              <button class="btn-element btn-expand-container">
-                  <img class="btn-expand" src="./assets/expand.svg" alt="expand ${name} card"/>
-                </button>
-                <button class="btn-element btn-edit-container" _id="${ogId}">
-                  <img class="btn-edit" _id="${ogId}" src="./assets/edit.svg" alt="edit" />
-                </button>
-                <button class="btn-element btn-delete-container" _id="${ogId}">
-                  <img class="btn-delete" _id="${ogId}" src="./assets/delete.svg" alt="delete" />
-                </button>
-              </section>
-            </div>
-        `;
+      <div class="element-header">
+        <h3 class="frst-text">${name}</h3>
+        <section class="buttons-element">
+          <button class="btn-element btn-expand-container">
+              <img class="btn-expand" src="./assets/expand.svg" alt="expand ${name} card"/>
+          </button>
+          <button class="btn-element btn-edit-container" _id="${id}">
+            <img class="btn-edit" _id="${id}" src="./assets/edit.svg" alt="edit" />
+          </button>
+          <button class="btn-element btn-delete-container" _id="${id}">
+            <img class="btn-delete" _id="${id}" src="./assets/delete.svg" alt="delete" />
+          </button>
+        </section>
+      </div>`;
 
     let itemsContainer = d.createElement("div");
     itemsContainer.classList.add("calcs-container");
@@ -150,8 +155,8 @@ export default function drawItems(
     let itemsContent = "";
 
     all.forEach((el) => {
-      if ($localData[ogId][el]) {
-        let number = $localData[ogId][el];
+      if ($localData[id][el]) {
+        let number = $localData[id][el];
         number = number.toLocaleString("ru-RU");
 
         let tempName = el;
@@ -190,7 +195,7 @@ export default function drawItems(
         }
 
         if (el === "Mora") {
-          avgFarming = $localData[ogId][el] / leyMora;
+          avgFarming = $localData[id][el] / leyMora;
           let a = Math.ceil(avgFarming);
           avgFarming = `${Math.ceil(a / 9)} (${a})`;
           label = "Approx. days doing Ley Lines (times)";
