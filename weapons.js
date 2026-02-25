@@ -305,7 +305,6 @@ const drawModal = (ogId) => {
           </p>
         </article>
       </section>
-
       <section class="modal-interaction">
       <article class="level-info-container">
         <div class="level-info">
@@ -327,7 +326,6 @@ const drawModal = (ogId) => {
         </div>
       </div>
       </section>
-
     </div>`;
 };
 

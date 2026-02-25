@@ -4500,5 +4500,26 @@
       "Bit of Aerosiderite",
       "Chunk of Aerosiderite"
     ]
+  },
+  "230": {
+    "name": "Gest of the Mighty Wolf",
+    "quality": "5-stars",
+    "weapon": "claymore",
+    "enemy-material": [
+      "Recruit's Insignia",
+      "Sergeant's Insignia",
+      "Lieutenant's Insignia"
+    ],
+    "special-enemy-material": [
+      "Fractured Eye of the Deep Shadow",
+      "Aberrant Core of the Deep Shadow",
+      "Hooked Beak of the Deep Shadow"
+    ],
+    "domain-material": [
+      "Boreal Wolf's Milk Tooth",
+      "Boreal Wolf's Cracked Tooth",
+      "Boreal Wolf's Broken Fang",
+      "Boreal Wolf's Nostalgia"
+    ]
   }
 }

@@ -2391,5 +2391,28 @@
       "Heaven and Earth Made Manifest",
       "Tri-Sphere Eminence"
     ]
+  },
+  "117": {
+    "name": "Varka",
+    "birthday": "17-02",
+    "region": "Mondstadt",
+    "quality": "5-stars",
+    "element": "anemo",
+    "stone": "Vayuda Turquoise",
+    "weapon": "claymore",
+    "specialty-material": "Wolfhook",
+    "enemy-material": [
+      "Broken Drive Shaft",
+      "Reinforced Drive Shaft",
+      "Precision Drive Shaft"
+    ],
+    "boss-material": "Prismatic Severed Tail",
+    "weekly-boss": "Ascended Sample: Rook",
+    "domain-material": "Freedom",
+    "talents": [
+      "Favonius Bladework: Dancing Radiance",
+      "Windbound Execution",
+      "Northwind Avatar"
+    ]
   }
 }

@@ -430,6 +430,7 @@ export default function calculateData(parameter) {
     "Radiant Antler",
     "Cyclic Military Kuuvahki Core",
     "Remnant of the Dreadwing",
+    "Prismatic Severed Tail",
   ];
 
   const weekBoss = [
