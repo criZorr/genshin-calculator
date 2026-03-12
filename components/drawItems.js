@@ -151,6 +151,7 @@ export default function drawItems(
 
     let itemsContainer = d.createElement("div");
     itemsContainer.classList.add("calcs-container");
+    itemsContainer.classList.add("scroll-active");
 
     let itemsContent = "";
 

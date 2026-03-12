@@ -1,6 +1,12 @@
 (() => {
   const d = document,
-    $stylesheet = document.styleSheets;
+    $stylesheet = document.styleSheets,
+    mobile =
+      !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+        navigator.userAgent,
+      ),
+    $characters = d.querySelector(".section-items"),
+    $scrolls = d.querySelectorAll(".scroll-active");
 
   if (!localStorage.getItem("theme")) localStorage.setItem("theme", "auto");
 
@@ -25,6 +31,20 @@
     $supportNoNesting.rel = "stylesheet";
 
     d.head.appendChild($supportNoNesting);
+  }
+
+  if (mobile) {
+    if (navigator.userAgent.includes("Firefox")) {
+      $scrolls.forEach((e) => e.classList.add("scroll-active-mz"));
+      if ($characters) {
+        $characters.classList.add("section-items-mz");
+      }
+    } else {
+      $scrolls.forEach((e) => e.classList.add("scroll-active-dsk"));
+      if ($characters) {
+        $characters.classList.add("section-items-dsk");
+      }
+    }
   }
 
   window.addEventListener("load", () => {

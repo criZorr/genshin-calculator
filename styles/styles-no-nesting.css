@@ -135,7 +135,11 @@
 @media screen and (min-width: 39em) {
   .section-items {
     overflow-y: scroll;
+    overlay: auto;
     scrollbar-width: none;
+    width: calc(100% + 1rem);
+    padding-right: 1rem;
+    scrollbar-width: thin;
   }
 }
 
@@ -143,8 +147,9 @@
 @media screen and (min-width: 39em) {
   .cards-container {
     position: static;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(auto-fit, 5rem);
     justify-content: center;
-    flex-wrap: wrap;
     row-gap: 1rem;
     width: 100%;
     padding-right: 0;
@@ -155,13 +160,7 @@
 
 @media screen and (min-width: 44em) {
   .cards-container {
-    gap: 1rem;
-  }
-}
-
-@media screen and (min-width: 64em) {
-  .cards-container {
-    grid-template-columns: repeat(5, 5rem);
+    column-gap: 1rem;
   }
 }
 
