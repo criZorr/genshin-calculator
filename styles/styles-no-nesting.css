@@ -224,8 +224,7 @@
 
 /* ***** Gradiant ***** */
 @media screen and (min-width: 39em) {
-  .gradiant-right,
-  .gradiant-left {
+  .gradiant {
     display: none;
   }
 }

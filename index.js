@@ -6,24 +6,21 @@
         navigator.userAgent,
       ),
     $characters = d.querySelector(".section-items"),
-    $scrolls = d.querySelectorAll(".scroll-active");
+    $scrolls = d.querySelectorAll(".scroll-active"),
+    $page = d.querySelector("html");
 
   if (!localStorage.getItem("theme")) localStorage.setItem("theme", "auto");
 
-  let theme = localStorage.getItem("theme"),
-    $autoTag = d.querySelector(".auto-theme");
+  let theme = localStorage.getItem("theme");
 
   if (theme === "dark") {
-    let theme = d.createElement("link");
-    theme.href = "./styles/dark-theme.css";
-    theme.classList.add("dark-theme");
-    theme.rel = "stylesheet";
-
-    $autoTag.remove();
-
-    d.head.appendChild(theme);
+    $page.classList.add("color-dark");
+    $page.classList.remove("color-os");
   }
-  if (theme === "light") $autoTag.remove();
+  if (theme === "light") {
+    $page.classList.add("color-light");
+    $page.classList.remove("color-os");
+  }
 
   if (!$stylesheet[1].cssRules[0].cssText.includes("& .nesting")) {
     let $supportNoNesting = d.createElement("link");
@@ -54,6 +51,6 @@
       d.querySelector(".loader-container").style.visibility = "hidden";
       d.querySelector(".loader-container").style.display = "none";
       d.querySelector("main").style.visibility = "visible";
-    }, 250);
+    }, 150);
   });
 })();

@@ -66,7 +66,6 @@ html {
   scrollbar-width: none;
   scrollbar-color: var(--first-light-color) rgba(0, 0, 0, 0);
   -webkit-tap-highlight-color: transparent;
-  background-color: var(--second-dark-color);
 }
 
 *,
@@ -132,27 +131,42 @@ small {
 
 /* *************** Background and Font Color *************** */
 
-.bg-fst {
+.color-os {
+  background-color: var(--second-dark-color);
+}
+
+.color-light {
+  background-color: var(--third-light-color);
+}
+
+/* ***** Light & default mode ***** */
+
+.color-os .bg-fst,
+.color-light .bg-fst {
   background-color: var(--first-light-color);
   transition: background-color 0.25s ease-in;
 }
 
-.bg-snd {
+.color-os .bg-snd,
+.color-light .bg-snd {
   background-color: var(--second-light-color);
   transition: background-color 0.25s ease-in;
 }
 
-.bg-trd {
+.color-os .bg-trd,
+.color-light .bg-trd {
   background-color: var(--third-light-color);
   transition: background-color 0.25s ease-in;
 }
 
-.bg-snd-dark {
+.color-os .bg-snd-dark,
+.color-light .bg-snd-dark {
   background-color: var(--first-dark-color);
   transition: background-color 0.25s ease-in;
 }
 
-.frst-text {
+.color-os .frst-text,
+.color-light .frst-text {
   color: var(--first-text-dark-color);
   transition:
     color 0.25s ease-in,
@@ -160,12 +174,67 @@ small {
     fill 0.25s ease-in;
 }
 
-.scnd-text {
+.color-os .scnd-text,
+.color-light .scnd-text {
   color: var(--second-text-dark-color);
   transition:
     color 0.25s ease-in,
     background-color 0.25s ease-in,
     fill 0.25s ease-in;
+}
+
+/* ***** Dark mode ***** */
+
+.color-dark {
+  background-color: var(--second-dark-color);
+  transition: background-color 0.25s ease-in;
+}
+
+.color-dark .bg-fst {
+  background-color: var(--first-light-color);
+  transition: background-color 0.25s ease-in;
+}
+
+.color-dark .bg-snd {
+  background-color: var(--first-dark-color);
+  transition: background-color 0.25s ease-in;
+}
+
+.color-dark .bg-trd {
+  background-color: var(--second-dark-color);
+  transition: background-color 0.25s ease-in;
+}
+
+.color-dark .bg-snd-dark {
+  background-color: var(--third-light-color);
+  transition: background-color 0.25s ease-in;
+}
+
+.color-dark .frst-text {
+  color: var(--first-text-light-color);
+  transition:
+    color 0.25s ease-in,
+    background-color 0.25s ease-in,
+    fill 0.25s ease-in;
+}
+
+.color-dark .scnd-text {
+  color: var(--second-text-light-color);
+  transition:
+    color 0.25s ease-in,
+    background-color 0.25s ease-in,
+    fill 0.25s ease-in;
+}
+
+.color-dark .gradiant {
+  box-shadow:
+    1rem 0rem 0.5rem -0.5rem var(--first-dark-color) inset,
+    -1rem 0rem 0.5rem -0.5rem var(--first-dark-color) inset;
+  transition: box-shadow 0.25s ease-in;
+}
+
+.color-dark .faq {
+  fill: var(--first-text-light-color);
 }
 
 /* ********** Header ********** */
@@ -612,32 +681,24 @@ small {
 }
 
 /* ***** Gradiant ***** */
-.gradiant-right,
-.gradiant-left {
+.gradiant {
   position: absolute;
-  background-image: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 0) 0%,
-    var(--second-light-color) 100%
-  );
-  width: 1rem;
-  height: 6rem;
-  right: -1rem;
   top: 0;
+  left: -1rem;
+  width: calc(100% + 2rem);
+  height: 6rem;
+
+  pointer-events: none;
+
+  box-shadow:
+    1rem 0rem 0.5rem -0.5rem var(--second-light-color) inset,
+    -1rem 0rem 0.5rem -0.5rem var(--second-light-color) inset;
+
+  transition: box-shadow 0.25s ease-in;
 
   @media screen and (min-width: 39em) {
     display: none;
   }
-}
-
-.gradiant-left {
-  background-image: linear-gradient(
-    -90deg,
-    rgba(0, 0, 0, 0) 0%,
-    var(--second-light-color) 100%
-  );
-
-  left: -1rem;
 }
 
 /* ********** Content results ********** */
@@ -1675,7 +1736,7 @@ small {
   top: calc(50dvh - 1.5625rem);
   left: calc(50dvw - 1.5625rem);
   transform: scale(1.5);
-  transition: opacity 0.25s ease-out;
+  transition: opacity 0.15s ease-out;
 }
 
 .loader-container img {
@@ -1715,5 +1776,42 @@ small {
 @keyframes l11 {
   100% {
     transform: rotate(360deg);
+  }
+}
+/* ********** Dark auto mode ********** */
+
+@media screen and (prefers-color-scheme: dark) {
+  .color-os .bg-fst {
+    background-color: var(--first-light-color);
+  }
+
+  .color-os .bg-snd {
+    background-color: var(--first-dark-color);
+  }
+
+  .color-os .bg-trd {
+    background-color: var(--second-dark-color);
+  }
+
+  .color-os .bg-snd-dark {
+    background-color: var(--third-light-color);
+  }
+
+  .color-os .frst-text {
+    color: var(--first-text-light-color);
+  }
+
+  .color-os .scnd-text {
+    color: var(--second-text-light-color);
+  }
+
+  .color-os .gradiant {
+    box-shadow:
+      1rem 0rem 0.5rem -0.5rem var(--first-dark-color) inset,
+      -1rem 0rem 0.5rem -0.5rem var(--first-dark-color) inset;
+  }
+
+  .color-os .faq {
+    fill: var(--first-text-light-color);
   }
 }
