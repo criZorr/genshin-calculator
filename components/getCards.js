@@ -13,6 +13,7 @@ export default function getCards(data, $container, path) {
 
     let p = d.createElement("h5");
     p.classList.add("card-name");
+    p.classList.add("dark-text");
     p.innerHTML = name;
     p.setAttribute("_id", i);
 
@@ -59,7 +60,7 @@ export default function getCards(data, $container, path) {
       }
       cardBg.innerHTML = `<img class="card-img" _id="${i}" src="${path}/${name.replaceAll(
         '"',
-        ""
+        "",
       )}.webp" alt="${name}" />`;
     }
 

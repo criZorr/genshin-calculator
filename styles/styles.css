@@ -131,6 +131,10 @@ small {
 
 /* *************** Background and Font Color *************** */
 
+.dark-text {
+  color: var(--black-color);
+}
+
 .color-os {
   background-color: var(--second-dark-color);
 }

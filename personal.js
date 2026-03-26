@@ -127,7 +127,7 @@ const filterAction = (filters) => {
 
 const getChecked = (filterNames) => {
   let $checkbox = document.querySelectorAll(
-      `.${filterNames} input[type=checkbox]:checked`
+      `.${filterNames} input[type=checkbox]:checked`,
     ),
     filters = [...$checkbox].map((e) => e.id),
     res = [];
@@ -382,7 +382,7 @@ const drawUserMaterial = () => {
           <div class="item-bg ${rarity}">
             <img src="./assets/materials/${imgName}.webp" alt="${all[i]}" />
           </div>
-          <h5 class="card-name">${number}</h5>
+          <h5 class="card-name dark-text">${number}</h5>
           <button class="btn-element-owned" _id="${fixedName}">
             <img class="btn-edit-owned" src="./assets/edit.svg" alt="edit" _id="${fixedName}"/>
           </button>
@@ -485,7 +485,7 @@ const drawModalElement = (id) => {
     ) {
       if (Number(d.querySelector("#number-picker").value) >= 0) {
         $userMaterials[ogName] = Number(
-          d.querySelector("#number-picker").value
+          d.querySelector("#number-picker").value,
         );
         localStorage.setItem("userMaterials", JSON.stringify($userMaterials));
         $modal.style.visibility = "hidden";
@@ -573,7 +573,7 @@ const drawModalInfo = (id, name) => {
 
   d.querySelectorAll(".info-options option")[$userInfo[id]].setAttribute(
     "selected",
-    "selected"
+    "selected",
   );
 
   const $saveBtn = d.getElementById("confirm-btn");
@@ -604,7 +604,7 @@ const drawModalPossible = () => {
     number = number.toLocaleString("ru-RU");
 
     let label = d.querySelector(
-      `[_name="${el.replaceAll('"', "").replaceAll(":", "_")}"]`
+      `[_name="${el.replaceAll('"', "").replaceAll(":", "_")}"]`,
     );
     label.innerHTML = number;
   });
@@ -623,7 +623,7 @@ const getListElements = () => {
       <div class="item-bg ${rarity}">
         <img src="./assets/materials/${tempName}.webp" alt="${all[i]}" />
       </div>
-      <h5 _name="${tempName}" class="card-name"></h5>
+      <h5 _name="${tempName}" class="card-name dark-text"></h5>
       <button class="btn-element-owned" _id="${fixedName}">
         <img class="btn-edit-owned" src="./assets/edit.svg" alt="edit" _id="${fixedName}"/>
       </button>
@@ -642,7 +642,7 @@ if (!localStorage.getItem("userMaterials"))
 if (!localStorage.getItem("userInfo"))
   localStorage.setItem(
     "userInfo",
-    '{"World":9,"crafting":1,"levelDomains":3,"resin":1,"RNG":1,"Mora":1000}'
+    '{"World":9,"crafting":1,"levelDomains":3,"resin":1,"RNG":1,"Mora":1000}',
   );
 
 let erraser = true,
@@ -659,27 +659,27 @@ if (erraser) {
   localStorage.removeItem("userInfo");
   localStorage.setItem(
     "userInfo",
-    `{"World":9,"crafting":1,"levelDomains":3,"resin":1,"RNG":1,"Mora":${mora}}`
+    `{"World":9,"crafting":1,"levelDomains":3,"resin":1,"RNG":1,"Mora":${mora}}`,
   );
 }
 
 !localStorage.getItem("total")
   ? localStorage.setItem("total", "{}")
   : Object.keys(JSON.parse(localStorage.getItem("total"))).length == 0
-  ? undefined
-  : getTotal();
+    ? undefined
+    : getTotal();
 
 !localStorage.getItem("weaponTotal")
   ? localStorage.setItem("weaponTotal", "{}")
   : Object.keys(JSON.parse(localStorage.getItem("weaponTotal"))).length == 0
-  ? undefined
-  : getTotal();
+    ? undefined
+    : getTotal();
 
 !localStorage.getItem("characterTotal")
   ? localStorage.setItem("characterTotal", "{}")
   : Object.keys(JSON.parse(localStorage.getItem("characterTotal"))).length == 0
-  ? undefined
-  : getTotal();
+    ? undefined
+    : getTotal();
 
 drawUserMaterial();
 drawUserData();
@@ -713,7 +713,7 @@ d.addEventListener("click", (e) => {
   if (eventClass === "btn-element-info" || eventClass === "btn-edit-info") {
     drawModalInfo(
       e.target.attributes["_id"].value,
-      e.target.attributes["_name"].value
+      e.target.attributes["_name"].value,
     );
     $modal.style.visibility = "visible";
     $modal.style.opacity = "1";
