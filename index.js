@@ -12,9 +12,11 @@ import getData from "./helpers/getData.js";
       $url = window.location.pathname;
 
     let dataLan = await getData(`./db/texts-${language}.json`),
-      pageName = $url.replaceAll("/", "").slice(0, -5),
+      pageName = $url.replaceAll("/", ""),
       list = Array.from($items),
       text = [...dataLan["header"]];
+
+    if (pageName === "") pageName = "index";
 
     for (const el of dataLan[`static-${pageName}`]) {
       text.push(...el);
