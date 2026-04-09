@@ -4521,5 +4521,26 @@
       "Boreal Wolf's Broken Fang",
       "Boreal Wolf's Nostalgia"
     ]
+  },
+  "231": {
+    "name": "Golden Frostbound Oath",
+    "quality": "5-stars",
+    "weapon": "bow",
+    "enemy-material": [
+      "Tattered Warrant",
+      "Immaculate Warrant",
+      "Frost-Etched Warrant"
+    ],
+    "special-enemy-material": [
+      "Faded Flaming Hilt",
+      "Fractured Flaming Hilt",
+      "Jeweled Flaming Hilt"
+    ],
+    "domain-material": [
+      "Ember of Long Night Flint",
+      "Afterglow of Long Night Flint",
+      "Flare of Long Night Flint",
+      "Blaze of Long Night Flint"
+    ]
   }
 }

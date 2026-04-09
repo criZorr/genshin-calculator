@@ -325,6 +325,9 @@ export default function calculateData(parameter) {
     "Fractured Eye of the Deep Shadow",
     "Aberrant Core of the Deep Shadow",
     "Hooked Beak of the Deep Shadow",
+    "Faded Flaming Hilt",
+    "Fractured Flaming Hilt",
+    "Jeweled Flaming Hilt",
   ];
 
   const specialty = {
@@ -384,6 +387,7 @@ export default function calculateData(parameter) {
     "Moonfall Silver": 71,
     "Winter Icelea": 69,
     "Pine Amber": 72,
+    "Etherwing Moth": 80,
   };
 
   const boss = [
@@ -431,6 +435,7 @@ export default function calculateData(parameter) {
     "Cyclic Military Kuuvahki Core",
     "Remnant of the Dreadwing",
     "Prismatic Severed Tail",
+    "Plume of the Fallen Watcher",
   ];
 
   const weekBoss = [
@@ -838,6 +843,13 @@ export default function calculateData(parameter) {
         "Aberrant Core of the Deep Shadow",
         "Hooked Beak of the Deep Shadow",
       ],
+      [
+        2.6854, 2.8623, 3.1282, 6.2671, 6.9053, 10.0566, 11.1191, 11.7559,
+        11.9687, 12.3939, 31,
+      ],
+    ],
+    29: [
+      ["Faded Flaming Hilt", "Fractured Flaming Hilt", "Jeweled Flaming Hilt"],
       [
         2.6854, 2.8623, 3.1282, 6.2671, 6.9053, 10.0566, 11.1191, 11.7559,
         11.9687, 12.3939, 31,
