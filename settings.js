@@ -5,12 +5,16 @@ const d = document,
   $exportBtn = d.getElementById("export-btn"),
   $importBtn = d.getElementById("import-btn"),
   $notification = d.querySelector(".notification-container"),
-  $page = d.querySelector("html");
+  $page = d.querySelector("html"),
+  $select = d.querySelector("#language");
 
-let theme = localStorage.getItem("theme");
+let theme = localStorage.getItem("theme"),
+  language = localStorage.getItem("language");
 
 let stickersData = await getData("./db/stickers.json"),
   stickersLength = Object.keys(stickersData).length;
+
+let dataLan = "";
 
 const showNoti = (text) => {
   let n = Math.floor(Math.random() * stickersLength) + 1,
@@ -62,7 +66,9 @@ const exportFile = () => {
   a.click();
   a.remove();
 
-  showNoti("Exported!");
+  let text = "Exported!";
+  if (language !== "en") text = dataLan["dynamic-settings"][0];
+  showNoti(text);
 };
 
 const writeData = (data) => {
@@ -128,7 +134,9 @@ const writeData = (data) => {
       JSON.stringify(dataObject["rawMaterials"]),
     );
 
-  showNoti("Imported!");
+  let text = "Imported!";
+  if (language !== "en") text = dataLan["dynamic-settings"][1];
+  showNoti(text);
 };
 
 const handleFile = (input) => {
@@ -143,6 +151,23 @@ const handleFile = (input) => {
   }
 };
 
+const translate = async (language) => {
+  dataLan = await getData(`./db/texts-${language}.json`);
+  const $items = d.querySelectorAll(".txt-item");
+  let list = Array.from($items),
+    text = [...dataLan["header"]];
+
+  for (const el of dataLan["static-settings"]) {
+    text.push(...el);
+  }
+
+  text.push(...dataLan["footer"]);
+
+  list.forEach((el, index) => {
+    el.innerHTML = text[index];
+  });
+};
+
 $importFile.addEventListener("change", () => handleFile($importFile));
 $exportBtn.addEventListener("click", exportFile);
 $importBtn.addEventListener("click", () => $importFile.click());
@@ -150,6 +175,9 @@ $importBtn.addEventListener("click", () => $importFile.click());
 if (theme === "auto") d.querySelector("#radio-auto").checked = "true";
 if (theme === "light") d.querySelector("#radio-light").checked = "true";
 if (theme === "dark") d.querySelector("#radio-dark").checked = "true";
+$select.querySelector(`option[value="${language}"]`).selected = true;
+
+if (language !== "en") dataLan = await getData(`./db/texts-${language}.json`);
 
 d.addEventListener("change", (e) => {
   let $id = e.target.id;
@@ -173,5 +201,11 @@ d.addEventListener("change", (e) => {
     $page.classList.remove("color-os");
     $page.classList.remove("color-light");
     localStorage.setItem("theme", "dark");
+  }
+
+  if ($id === "language") {
+    localStorage.setItem("language", `${e.target.value}`);
+    language = e.target.value;
+    translate(e.target.value);
   }
 });

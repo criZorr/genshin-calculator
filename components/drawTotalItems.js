@@ -186,7 +186,12 @@ const getCalculations = () => {
   }
 };
 
-export default function drawTotalItems(localVariable, classContainer) {
+export default function drawTotalItems(
+  localVariable,
+  classContainer,
+  staticData,
+  materialsData,
+) {
   getCalculations();
   const $container = d.querySelector(classContainer);
   $container.innerHTML = "";
@@ -210,43 +215,73 @@ export default function drawTotalItems(localVariable, classContainer) {
       if (specialtyKeys.includes(el)) {
         avgFarming = number / specialty[el];
         avgFarming = Math.ceil(avgFarming);
-        label = "Avg. days collecting local specialty";
-        faq = `In the game there are ${specialty[el]} of this specialty.`;
+        if (staticData) {
+          label = staticData["label"][0][1];
+          faq = `${staticData["faq"][0][1][0]} ${specialty[el]} ${staticData["faq"][0][1][1]}`;
+        } else {
+          label = "Avg. days collecting local specialty";
+          faq = `In the game there are ${specialty[el]} of this specialty.`;
+        }
       }
 
       if (boss.includes(el)) {
         avgFarming = number / dropBoss;
         avgFarming = Math.ceil(avgFarming);
-        label = "Approx. times to defeat boss";
-        faq = `This calculation depends of your World Level. (You can change it in "personal" section).`;
+        if (staticData) {
+          label = staticData["label"][0][2];
+          faq = staticData["faq"][0][2];
+        } else {
+          label = "Approx. times to defeat boss";
+          faq = `This calculation depends of your World Level. (You can change it in "personal" section).`;
+        }
       }
 
       if (weekBoss.includes(el)) {
         avgFarming = number / dropWeeklyBoss;
         avgFarming = Math.ceil(avgFarming);
-        label = "Approx. times to defeat weekly boss";
-        faq = `This calculation depends on the domain level you choose. (You can change it in "personal" section).`;
+        if (staticData) {
+          label = staticData["label"][0][3];
+          faq = staticData["faq"][0][3];
+        } else {
+          label = "Approx. times to defeat weekly boss";
+          faq = `This calculation depends on the domain level you choose. (You can change it in "personal" section).`;
+        }
       }
 
       if (special.includes(el)) {
         avgFarming = number;
         avgFarming = Math.ceil(avgFarming);
-        label = "Approx. times to complete Natlan quests";
-        faq = `Natlan Quests give you this material when you complete them.`;
+        if (staticData) {
+          label = staticData["label"][0][4];
+          faq = staticData["faq"][0][4];
+        } else {
+          label = "Approx. times to complete Natlan quests";
+          faq = `Natlan Quests give you this material when you complete them.`;
+        }
       }
 
       if (el === "Mora") {
         avgFarming = number / leyMora;
         let a = Math.ceil(avgFarming);
         avgFarming = `${a} (${Math.ceil(a / 9)})`;
-        label = "Approx. times to do Ley Lines (days)";
-        faq = "Only spending all your 180 daily resin in Ley Lines";
+        if (staticData) {
+          label = staticData["label"][0][5];
+          faq = staticData["faq"][0][5];
+        } else {
+          label = "Approx. days doing Ley Lines (times)";
+          faq = "Only spending all your 180 daily resin in Ley Lines";
+        }
       }
 
       if (el === "Crown of Insight") {
         avgFarming = number;
-        label = "Approx. times to purchase it in the shop (1 per month)";
-        faq = "You can purchase one Crown of Insight every month";
+        if (staticData) {
+          label = staticData["label"][0][6];
+          faq = staticData["faq"][0][6];
+        } else {
+          label = "Approx. times to purchase it in the shop (1 per month)";
+          faq = "You can purchase one Crown of Insight every month";
+        }
       }
 
       if (
@@ -258,8 +293,13 @@ export default function drawTotalItems(localVariable, classContainer) {
         avgFarming = $rawInfo[el] / leyBook;
         let a = Math.ceil(avgFarming);
         avgFarming = `${a} (${Math.ceil(a / 9)})`;
-        label = "Approx. times to do Ley Lines (days)";
-        faq = "Only spending all your 180 daily resin in Ley Lines";
+        if (staticData) {
+          label = staticData["label"][0][5];
+          faq = staticData["faq"][0][5];
+        } else {
+          label = "Approx. days doing Ley Lines (times)";
+          faq = "Only spending all your 180 daily resin in Ley Lines";
+        }
       }
 
       if (
@@ -269,9 +309,14 @@ export default function drawTotalItems(localVariable, classContainer) {
       ) {
         let $rawInfo = JSON.parse(localStorage.getItem("rawMaterials"));
         avgFarming = Math.ceil($rawInfo[el] / 3);
-        label = "Approx. 3 star weapons to delete";
-        faq =
-          "You can obtain 3 Enhancement Ore when you delete a 3 star weapon";
+        if (staticData) {
+          label = staticData["label"][2][0];
+          faq = staticData["faq"][2][0];
+        } else {
+          label = "Approx. 3 star weapons to delete";
+          faq =
+            "You can obtain 3 Enhancement Ore when you delete a 3 star weapon";
+        }
       }
 
       if (enemiesKeys.includes(el)) {
@@ -284,10 +329,15 @@ export default function drawTotalItems(localVariable, classContainer) {
 
         avgFarming = $rawInfo[el][crafting] / data[worldLevel];
         avgFarming = `${Math.ceil(avgFarming)} (${Math.ceil(
-          avgFarming / data[10]
+          avgFarming / data[10],
         )})`;
-        label = "Approx. times to defeat the enemies (days)";
-        faq = `This calculation depends on your World Level and the talent bonus to craft materials. (You can change them in "personal" section).`;
+        if (staticData) {
+          label = staticData["label"][2][1];
+          faq = staticData["faq"][2][1];
+        } else {
+          label = "Approx. times to defeat the enemies (days)";
+          faq = `This calculation depends on your World Level and the talent bonus to craft materials. (You can change them in "personal" section).`;
+        }
       }
 
       if (eliteEnemiesKeys.includes(el)) {
@@ -300,88 +350,106 @@ export default function drawTotalItems(localVariable, classContainer) {
 
         avgFarming = $rawInfo[el][crafting] / data[worldLevel];
         avgFarming = `${Math.ceil(avgFarming)} (${Math.ceil(
-          avgFarming / data[10]
+          avgFarming / data[10],
         )})`;
-        label = "Approx. times to defeat the enemies (days)";
-        faq = `This calculation depends on your World Level and the talent bonus to craft materials. (You can change them in "personal" section).`;
+        if (staticData) {
+          label = staticData["label"][2][1];
+          faq = staticData["faq"][2][1];
+        } else {
+          label = "Approx. times to defeat the enemies (days)";
+          faq = `This calculation depends on your World Level and the talent bonus to craft materials. (You can change them in "personal" section).`;
+        }
       }
 
       if (stones.includes(el)) {
         let $rawInfo = JSON.parse(localStorage.getItem("rawMaterials"));
         avgFarming = $rawInfo[el][0] / stoneDrop;
         avgFarming = Math.ceil(avgFarming);
-        label = "Approx. times to defeat a boss";
-        faq = `This calculation depends on your World Level . (You can change it in "personal" section).`;
+        if (staticData) {
+          label = staticData["label"][0][2];
+          faq = staticData["faq"][0][2];
+        } else {
+          label = "Approx. times to defeat boss";
+          faq = `This calculation depends of your World Level. (You can change it in "personal" section).`;
+        }
       }
 
       if (talents.includes(el)) {
         let $rawInfo = JSON.parse(localStorage.getItem("rawMaterials"));
         avgFarming = $rawInfo[el][crafting] / talentDrop[$userInfo["RNG"]];
         avgFarming = Math.ceil(avgFarming);
-        label = "Approx. times to do the domain";
-        faq = `This calculation depends on the domain level you choose and the talent bonus to craft talent materials. (You can change them in "personal" section).`;
+        if (staticData) {
+          label = staticData["label"][2][2];
+          faq = staticData["faq"][2][2];
+        } else {
+          label = "Approx. times to do the domain";
+          faq = `This calculation depends on the domain level you choose and the talent bonus to craft talent materials. (You can change them in "personal" section).`;
+        }
       }
 
       if (weaponMaterial.includes(el)) {
         let $rawInfo = JSON.parse(localStorage.getItem("rawMaterials"));
         avgFarming = $rawInfo[el][crafting] / weaponDrop[$userInfo["RNG"]];
         avgFarming = Math.ceil(avgFarming);
-        label = "Approx. times to do the domain";
-        faq = `This calculation depends on the domain level you choose and the talent bonus to craft weapon materials. (You can change them in "personal" section).`;
+        if (staticData) {
+          label = staticData["label"][2][2];
+          faq = staticData["faq"][2][2];
+        } else {
+          label = "Approx. times to do the domain";
+          faq = `This calculation depends on the domain level you choose and the talent bonus to craft talent materials. (You can change them in "personal" section).`;
+        }
       }
 
       let itemContent = `
-    <div class="element-info">
-              <section class="element-data">
-                <figure class="element-img">
-                  <img src="./assets/materials/${tempName}.webp" alt="item" />
-                </figure>
-                <section class="element-props">
-                  <h5 class="frst-text">${el}</h5>
-                  <div class="element-days">
-                    <small class="frst-text description-txt">${label}</small>
-                    <div class="faq-container">
-                    ${svg}
-                    <span class="tooltip">${faq}</span>
-                    </div>
-                  </div>
-                </section>
-              </section>
-              <section class="element-count">
-                <h5 class="frst-text">${stringNumber}</h5>
-                <small class="frst-text">${avgFarming}</small>
-              </section>
-            </div>
-    `;
+        <div class="element-info">
+          <section class="element-data">
+            <figure class="element-img">
+              <img src="./assets/materials/${tempName}.webp" alt="item" />
+            </figure>
+            <section class="element-props">
+              <h5 class="frst-text">${materialsData ? materialsData[el] || el : el}</h5>
+              <div class="element-days">
+                <small class="frst-text description-txt">${label}</small>
+                <div class="faq-container">
+                  ${svg}
+                  <span class="tooltip">${faq}</span>
+                </div>
+              </div>
+            </section>
+          </section>
+          <section class="element-count">
+            <h5 class="frst-text">${stringNumber}</h5>
+            <small class="frst-text">${avgFarming}</small>
+            </section>
+        </div>
+      `;
 
       itemsContent += itemContent;
 
       if (el === "Mora") {
         itemContent = `
-    <div class="element-info">
-              <section class="element-data">
-                <figure class="element-img">
-                  <img src="./assets/materials/${tempName}.webp" alt="item" />
-                </figure>
-                <section class="element-props">
-                  <h5 class="frst-text">${el}</h5>
-                  <div class="element-days">
-                    <small class="frst-text description-txt">Approx. days earning mora while spending resin</small>
-                    <div class="faq-container">
-                    ${svg}
-                    <span class="tooltip">As you spend resin you earn Mora. E.g., doing domains, killing a boss</span>
-                    </div>
+          <div class="element-info">
+            <section class="element-data">
+              <figure class="element-img">
+                <img src="./assets/materials/${tempName}.webp" alt="item" />
+              </figure>
+              <section class="element-props">
+                <h5 class="frst-text">${materialsData ? materialsData[el] || el : el}</h5>
+                <div class="element-days">
+                  <small class="frst-text description-txt">${staticData ? staticData["label"][2][3] : "Approx. days earning Mora while spending resin"}</small>
+                  <div class="faq-container">
+                        ${svg}
+                    <span class="tooltip">${staticData ? staticData["dynamic-personal"][4][5] : "As you spend resin you earn Mora. E.g., doing domains, killing a boss"}</span>
                   </div>
-                </section>
+                </div>
               </section>
-              <section class="element-count">
-                <h5 class="frst-text">${stringNumber}</h5>
-                <small class="frst-text">${Math.ceil(
-                  number / dailyMora
-                )}</small>
-              </section>
-            </div>
-    `;
+            </section>
+            <section class="element-count">
+              <h5 class="frst-text">${stringNumber}</h5>
+              <small class="frst-text">${Math.ceil(number / dailyMora)}</small>
+            </section>
+          </div>
+        `;
         itemsContent += itemContent;
       }
     }

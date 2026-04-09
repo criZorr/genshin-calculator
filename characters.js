@@ -15,18 +15,20 @@ import drawTotalExcess from "./components/drawTotalExcess.js";
 const d = document;
 
 const $cardsContainer = d.querySelector(".cards-container"),
-  $modal = d.querySelector(".modal-container");
+  $modal = d.querySelector(".modal-container"),
+  language = localStorage.getItem("language");
 
 let filtered = [],
   filterClasses = ["filter-element", "filter-weapon", "filter-quality"],
   elements = ["anemo", "cryo", "dendro", "electro", "geo", "hydro", "pyro"],
   weapons = ["bow", "catalyst", "claymore", "polearm", "sword"],
-  qualities = ["5-stars", "4-stars"];
-
-let $filters = "filter-checkbox";
-
-let saveFlag = false;
-let confirmFlag = false;
+  qualities = ["5-stars", "4-stars"],
+  $filters = "filter-checkbox",
+  saveFlag = false,
+  confirmFlag = false,
+  langData = "",
+  langTalents = "",
+  langMaterials = "";
 
 const filterAction = (filters, data) => {
   let charactersId = [];
@@ -211,13 +213,26 @@ const getItems = () => {
     charactersData,
     ".card-individual-container",
     ".selected-items",
+    language,
+    langData ? langData : "",
+    langMaterials ? langMaterials : "",
   );
 };
 
 const getTotal = () => {
   calculateNeeded("userMaterials", "characterTotal");
-  drawTotalItems("neededCharacter", ".elements-container");
-  drawTotalExcess("characterTotal", ".extra-container");
+  drawTotalItems(
+    "neededCharacter",
+    ".elements-container",
+    langData ? langData : "",
+    langMaterials ? langMaterials : "",
+  );
+  drawTotalExcess(
+    "characterTotal",
+    ".extra-container",
+    langData ? langData : "",
+    langMaterials ? langMaterials : "",
+  );
 };
 
 const getTalents = (characterId) => {
@@ -261,7 +276,7 @@ const getTalents = (characterId) => {
                 alt="${name} talent ${i + 1}: ${talents[i]}"
               />
             </figure>
-            <p class="frst-text compact">${talents[i]}</p>
+            <p class="frst-text compact">${langTalents ? langTalents[talents[i]] || talents[i] : talents[i]}</p>
           </section>
           <div class="talent-lvl bg-snd">
             <select class="nmb-list frst-text" id="first-selection">
@@ -309,7 +324,7 @@ const getTalents = (characterId) => {
                 talent ${i + 1}: ${talents[i]}"
               />
             </figure>
-            <p class="frst-text compact">${talents[i]}</p>
+            <p class="frst-text compact">${langTalents ? langTalents[talents[i]] || talents[i] : talents[i]}</p>
           </section>
           <div class="talent-lvl bg-snd">
             <select class="nmb-list frst-text" id="first-selection">
@@ -483,7 +498,10 @@ const drawModal = (id) => {
 
   let quality = "",
     birthday = charactersData[id].birthday,
-    content = "";
+    content = "",
+    weapon =
+      charactersData[id].weapon.slice(0, 1).toUpperCase() +
+      charactersData[id].weapon.slice(1);
 
   if (birthday === "29-02") birthday = "28-02";
 
@@ -511,16 +529,36 @@ const drawModal = (id) => {
       </div>`;
   }
 
+  if (langData) {
+    switch (weapon) {
+      case "Bow":
+        weapon = langData["static-index"][3][0];
+        break;
+      case "Catalyst":
+        weapon = langData["static-index"][3][1];
+        break;
+      case "Claymore":
+        weapon = langData["static-index"][3][2];
+        break;
+      case "Polearm":
+        weapon = langData["static-index"][3][3];
+        break;
+      case "Sword":
+        weapon = langData["static-index"][3][4];
+        break;
+    }
+  }
+
   $modal.innerHTML = `
     <div class="modal-character bg-trd">
       <section class="modal-img">
         ${content}
         <article class="character-properties">
-          <p class="scnd-text"><b>${charactersData[id].name}</b></p>
+          <p class="scnd-text"><b>${charactersData[id][`name-${language}`] || charactersData[id].name}</b></p>
           <p class="frst-text">
             ${charactersData[id].element.slice(0, 1).toUpperCase() + charactersData[id].element.slice(1)}
             -
-            ${charactersData[id].weapon.slice(0, 1).toUpperCase() + charactersData[id].weapon.slice(1)}
+            ${weapon}
           </p>
         </article>
       </section>
@@ -528,7 +566,7 @@ const drawModal = (id) => {
       <section class="modal-interaction">
       <div class="level-container">
         <div class="custom-checkbox">
-          <label class="scnd-text" for="checkbox-level">Calculate levels</label>
+          <label class="scnd-text" for="checkbox-level">${langData ? langData["dynamic-index"][0] : "Calculate levels"}</label>
           <input type="checkbox" name="checkbox-level" id="checkbox-level" checked="true" />
           <span class="custom-checkbox-btn bg-snd">
             <div></div>
@@ -567,16 +605,16 @@ const drawModal = (id) => {
         </div>
       </div>
       <div class="talent-container">
-        <h5 class="scnd-text">Calculate talents</h5>
+        <h5 class="scnd-text">${langData ? langData["dynamic-index"][1] : "Calculate talents"}</h5>
         <div class="talent-info"></div>
       </div>
       <div class="character-form">
         <div class="level-form">
           <div class="btn-modal">
-            <button class="btn-bordered" id="cancel-btn">Cancel</button>
+            <button class="btn-bordered" id="cancel-btn">${langData ? langData["dynamic-index"][2][0] : "Cancel"}</button>
           </div>
           <div class="btn-modal">
-            <button class="btn bg-snd-dark" id="save-btn">Save</button>
+            <button class="btn bg-snd-dark" id="save-btn">${langData ? langData["dynamic-index"][2][1] : "Save"}</button>
           </div>
         </div>
       </div>
@@ -612,13 +650,13 @@ const drawModal = (id) => {
 const deleteConfirmation = (id, name) => {
   $modal.innerHTML = `
     <div class="modal-info bg-trd">
-      <p class="info-title scnd-text">Do you want to delete ${name}?</p>
+      <p class="info-title scnd-text">${langData ? langData["dynamic-index"][3] : "Do you want to delete"} ${name}?</p>
       <div class="info-form">
         <div class="btn-modal">
-          <button class="btn-bordered" id="cancel-btn">Cancel</button>
+          <button class="btn-bordered" id="cancel-btn">${langData ? langData["dynamic-index"][2][0] : "Cancel"}</button>
         </div>
         <div class="btn-modal">
-          <button class="btn bg-snd-dark" id="confirm-btn" _id="${id}">Delete</button>
+          <button class="btn bg-snd-dark" id="confirm-btn" _id="${id}">${langData ? langData["dynamic-index"][2][2] : "Delete"}</button>
         </div>
       </div>
     </div>
@@ -695,7 +733,8 @@ d.addEventListener("click", (e) => {
   ) {
     deleteConfirmation(
       e.target.attributes._id.value,
-      charactersData[e.target.attributes._id.value].name,
+      charactersData[e.target.attributes._id.value][`name-${language}`] ||
+        charactersData[e.target.attributes._id.value].name,
     );
   }
 
@@ -724,6 +763,11 @@ d.addEventListener("keydown", (e) => {
 });
 
 let charactersData = await getData("./db/characters.json");
+if (language !== "en") {
+  langData = await getData(`./db/texts-${language}.json`);
+  langTalents = await getData(`./db/talents-${language}.json`);
+  langMaterials = await getData(`./db/materials-${language}.json`);
+}
 
 !localStorage.getItem("characterData")
   ? localStorage.setItem("characterData", "{}")
@@ -762,5 +806,5 @@ if (erraser) {
 if (!localStorage.getItem("userMaterials"))
   localStorage.setItem("userMaterials", "{}");
 
-getCards(charactersData, $cardsContainer, "./assets/characters");
+getCards(charactersData, $cardsContainer, "./assets/characters", language);
 getChecked(filterClasses);

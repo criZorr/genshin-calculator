@@ -1,0 +1,125 @@
+{
+  "header": ["Personajes", "Armas", "Personal", "Ajustes"],
+  "footer": [
+    "Hecho por <a href=\"https://crizorr.com\" target=\"_blank\" rel=\"noopener\">@criZorr</a>. Todos los recursos del juego son propiedad de miHoYo.</small>"
+  ],
+  "static-settings": [
+    ["Lenguaje"],
+    ["Exportar e importar datos", "Importar", "Exportar"],
+    ["Tema", "Claro", "Auto", "Oscuro"]
+  ],
+  "dynamic-settings": ["¡Exportado!", "¡Importado!"],
+  "static-index": [
+    ["Elige un personaje"],
+    ["Elemento"],
+    ["Arma"],
+    ["Arco", "Catalizador", "Mandoble", "Lanza", "Espada"],
+    ["Calidad"],
+    ["5 estrellas", "4 estrellas"],
+    ["Personajes seleccionados"],
+    ["Total"],
+    ["Cálculos"],
+    ["Materiales necesarios y sobrantes"],
+    ["Materiales necesarios individuales"]
+  ],
+  "dynamic-index": [
+    ["Calcular niveles"],
+    ["Calcular talentos"],
+    ["Cancelar", "Guardar", "Borrar"],
+    ["¿Quieres borrar a"]
+  ],
+  "static-weapons": [
+    ["Elige un arma"],
+    ["Arma"],
+    ["Arco", "Catalizador", "Mandoble", "Lanza", "Espada"],
+    ["Calidad"],
+    ["5 estrellas", "4 estrellas", "3 estrellas", "2 estrellas", "1 estrella"],
+    ["Armas seleccionadas"],
+    ["Cálculos"],
+    ["Materiales necesarios y sobrantes"],
+    ["Materiales necesarios individuales"]
+  ],
+  "dynamic-weapons": [
+    ["5 estrellas", "4 estrellas", "3 estrellas", "2 estrellas", "1 estrella"],
+    ["Añadir otro"],
+    ["Guarda el actual antes de agregar otro"],
+    ["Guarda el actual antes de agregar una copia"],
+    ["¿Quieres borrar"]
+  ],
+  "static-personal": [
+    ["Información personal"],
+    ["Materiales obtenidos"],
+    ["Cálculos"],
+    ["Materiales necesarios y sobrantes"],
+    [
+      "Material de exp.",
+      "Enemigos de élite",
+      "Enemigos comunes",
+      "Jefes semanales",
+      "Jefes de mundo",
+      "Piedras",
+      "Materiales de talentos",
+      "Materiales de armas",
+      "Especialidades"
+    ]
+  ],
+  "dynamic-personal": [
+    [
+      "Nivel de mundo",
+      "Bonus de creación",
+      "Nivel de dominios",
+      "Cantidad de resina",
+      "Cálculos",
+      "Mora diaria"
+    ],
+    ["No", "Talento del 10%", "Talento del 25%"],
+    ["20 de resina", "40 de resina", "60 de resina"],
+    ["Sin RNG", "Con RNG"],
+    [
+      "Este valor cambia los objetos conseguidos de jefes, enemigos y Líneas ley",
+      "Hay algunos talentos que incrementan los materiales que se pueden crear",
+      "Este valor cambia los objetos obtenidos en dominios",
+      "Esto cambiará las veces que tienes que hacer un dominio",
+      "Los dominios tienen RNG (Número Generado Aleatoriamente). Esta opción cambia el número aproximado de veces que debes hacer un dominio",
+      "El Mora que obtienes de forma diaria solo gastando resina. Ej. haciendo dominios, matando a un jefe"
+    ],
+    ["Mora diaria"]
+  ],
+  "label": [
+    [
+      "Mira en la sección de Cálculos",
+      "Días promedios para recolectar la especialidad local",
+      "Veces aprox. para derrotar al jefe",
+      "Veces aprox. para derrotar al jefe semanal",
+      "Veces aprox. para completar misiones de Natlan",
+      "Días aprox. haciendo líneas ley (veces)",
+      "Veces aprox. para comprar una Corona de la sabiduría cada mes"
+    ],
+    ["Cantidad de excedente", "(se pueden crear)"],
+    [
+      "Armas de 3 estrellas aproximadas a eliminar",
+      "Veces aprox. para derrotar al enemigo (días)",
+      "Veces aprox. para hacer el dominio",
+      "Días aprox. ganando Mora mientras gastas resina"
+    ]
+  ],
+  "faq": [
+    [
+      "Mira en la sección de Cálculos para ver los cálculos totales",
+      ["En el juego hay", "de esta especialidad"],
+      "Este cálculo depende de tu nivel de mundo. (Puedes cambiarlo en la sección \"Personal\")",
+      "Este cálculo depende del nivel de dominios que elejiste. (Puedes cambiarlo en la sección \"Personal\")",
+      "Las misiones de Natlan te dan este material al completarlas",
+      "Usando tus 180 de resina diaria solo en Líneas ley",
+      "Puedes comprar una Corona de la sabiduría cada mes en la tienda del juego"
+    ],
+    [
+      "El excedente son los materiales que puedes usar para crear material de un calidad superior <b>(cantidad de materiales de calidad superior)</b>"
+    ],
+    [
+      "Puedes obtener 3 Minerales de refinamiento cuando eliminas un arma de 3 estrellas",
+      "Este cálculo depende del nivel de mundo y el bono de creación que elegiste. (Puedes cambiarlos en la sección \"Personal\")",
+      "Este cálculo depende del nivel de dominio y el bono de creación que elegiste. (Puedes cambiarlos en la sección \"Personal\")"
+    ]
+  ]
+}

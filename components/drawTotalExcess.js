@@ -39,7 +39,12 @@ const svg = `
   </svg>
 `;
 
-export default function drawTotalExcess(localVariable, classContainer) {
+export default function drawTotalExcess(
+  localVariable,
+  classContainer,
+  staticData,
+  materialsData,
+) {
   for (let i = 3; i <= craftMaterialsFour.length; i += 4) {
     noCrafteable.push(craftMaterialsFour[i]);
   }
@@ -82,24 +87,29 @@ export default function drawTotalExcess(localVariable, classContainer) {
               <img src="./assets/materials/${tempName}.webp" alt="item" />
             </figure>
             <section class="element-props">
-              <h5 class="frst-text">${el}</h5>
+              <h5 class="frst-text">${materialsData ? materialsData[el] || el : el}</h5>
               <div class="element-days">
-                <small class="frst-text description-txt">Excess amount${
-                  tocraft > 0 ? " (to craft)" : ""
+                <small class="frst-text description-txt">${staticData ? staticData["label"][1][0] : "Excess amount"}
+                ${
+                  staticData
+                    ? tocraft > 0
+                      ? staticData["label"][1][1]
+                      : ""
+                    : tocraft > 0
+                      ? " (to craft)"
+                      : ""
                 }
                 </small>
                 <div class="faq-container">
                   ${svg}
-                  <span class="tooltip">The excess is the materials you can use to craft tier-up materials <b>(tier-up quantity)</b></span>
+                  <span class="tooltip">${staticData ? staticData["faq"][1][0] : "The excess is the materials you can use to craft tier-up materials <b>(tier-up quantity)</b>"}</span>
                 </div>
               </div>
             </section>
           </section>
           <section class="element-count">
             <h5 class="frst-text">${stringNumber}</h5>
-            <small class="frst-text">${excess}${
-        tocraft > 0 ? " (" + craftable + ")" : ""
-      }</small>
+            <small class="frst-text">${excess}${tocraft > 0 ? " (" + craftable + ")" : ""}</small>
           </section>
         </div>`;
 

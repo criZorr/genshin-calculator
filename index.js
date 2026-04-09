@@ -1,16 +1,35 @@
+import getData from "./helpers/getData.js";
 (() => {
-  const d = document,
-    $stylesheet = document.styleSheets,
-    mobile =
-      !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-        navigator.userAgent,
-      ),
-    $characters = d.querySelector(".section-items"),
-    $scrolls = d.querySelectorAll(".scroll-active"),
-    $page = d.querySelector("html");
-
   if (!localStorage.getItem("theme")) localStorage.setItem("theme", "auto");
+  if (!localStorage.getItem("language")) localStorage.setItem("language", "en");
+})();
 
+(async (d) => {
+  let language = localStorage.getItem("language");
+
+  if (language !== "en") {
+    const $items = d.querySelectorAll(".txt-item"),
+      $url = window.location.pathname;
+
+    let dataLan = await getData(`./db/texts-${language}.json`),
+      pageName = $url.replaceAll("/", "").slice(0, -5),
+      list = Array.from($items),
+      text = [...dataLan["header"]];
+
+    for (const el of dataLan[`static-${pageName}`]) {
+      text.push(...el);
+    }
+
+    text.push(...dataLan["footer"]);
+
+    list.forEach((el, index) => {
+      el.innerHTML = text[index];
+    });
+  }
+})(document);
+
+((d) => {
+  const $page = d.querySelector("html");
   let theme = localStorage.getItem("theme");
 
   if (theme === "dark") {
@@ -21,14 +40,26 @@
     $page.classList.add("color-light");
     $page.classList.remove("color-os");
   }
+})(document);
+
+((d) => {
+  const $stylesheet = d.styleSheets;
 
   if (!$stylesheet[1].cssRules[0].cssText.includes("& .nesting")) {
     let $supportNoNesting = d.createElement("link");
     $supportNoNesting.href = "./styles/styles-no-nesting.css";
     $supportNoNesting.rel = "stylesheet";
-
     d.head.appendChild($supportNoNesting);
   }
+})(document);
+
+((d) => {
+  const mobile =
+      !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+        navigator.userAgent,
+      ),
+    $characters = d.querySelector(".section-items"),
+    $scrolls = d.querySelectorAll(".scroll-active");
 
   if (mobile) {
     if (navigator.userAgent.includes("Firefox")) {
@@ -43,8 +74,10 @@
       }
     }
   }
+})(document);
 
-  window.addEventListener("load", () => {
+((d, w) => {
+  w.addEventListener("load", () => {
     d.querySelector("body").classList.add("bg-trd");
     d.querySelector(".loader-container").style.opacity = "0";
     setTimeout(() => {
@@ -53,4 +86,4 @@
       d.querySelector("main").style.visibility = "visible";
     }, 150);
   });
-})();
+})(document, window);

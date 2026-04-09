@@ -90,6 +90,11 @@ export default function drawItems(
   data,
   classContainer,
   classOptions,
+  lang,
+  staticData,
+  materialsData,
+  langData = "",
+  flag = false,
 ) {
   getCalculations();
   const $container = d.querySelector(classContainer),
@@ -126,19 +131,26 @@ export default function drawItems(
 
   let optionTotal = d.createElement("option");
   optionTotal.setAttribute("value", "Total");
-  optionTotal.innerHTML = "Total";
+  optionTotal.innerHTML = staticData ? staticData["static-index"][7] : "Total";
   $optionsContainer.appendChild(optionTotal);
 
   for (let i = 0; i < keys.length; i++) {
     let name = names[i],
-      id = keysSorted[i];
+      id = keysSorted[i],
+      nameLan = name;
+
+    if (lang !== "en" && flag) {
+      if (langData) nameLan = langData[name] || name;
+    } else {
+      if (lang !== "en") nameLan = data[[id]][`name-${lang}`] || name;
+    }
 
     let HeaderContent = `
       <div class="element-header">
-        <h3 class="frst-text">${name}</h3>
+        <h3 class="frst-text">${nameLan}</h3>
         <section class="buttons-element">
           <button class="btn-element btn-expand-container">
-              <img class="btn-expand" src="./assets/expand.svg" alt="expand ${name} card"/>
+              <img class="btn-expand" src="./assets/expand.svg" alt="expand ${nameLan} card"/>
           </button>
           <button class="btn-element btn-edit-container" _id="${id}">
             <img class="btn-edit" _id="${id}" src="./assets/edit.svg" alt="edit" />
@@ -167,71 +179,106 @@ export default function drawItems(
           label = "Look at Total section",
           faq = "Go to Total section to see full calculation";
 
+        if (staticData) {
+          label = staticData["label"][0][0];
+          faq = staticData["faq"][0][0];
+        }
+
         if (specialtyKeys.includes(el)) {
           avgFarming = number / specialty[el];
           avgFarming = Math.ceil(avgFarming);
-          label = "Avg. days collecting local specialty";
-          faq = `In the game there are ${specialty[el]} of this specialty.`;
+          if (staticData) {
+            label = staticData["label"][0][1];
+            faq = `${staticData["faq"][0][1][0]} ${specialty[el]} ${staticData["faq"][0][1][1]}`;
+          } else {
+            label = "Avg. days collecting local specialty";
+            faq = `In the game there are ${specialty[el]} of this specialty.`;
+          }
         }
 
         if (boss.includes(el)) {
           avgFarming = number / dropBoss;
           avgFarming = Math.ceil(avgFarming);
-          label = "Approx. times to defeat boss";
-          faq = `This calculation depends of your World Level. (You can change it in "personal" section).`;
+          if (staticData) {
+            label = staticData["label"][0][2];
+            faq = staticData["faq"][0][2];
+          } else {
+            label = "Approx. times to defeat boss";
+            faq = `This calculation depends of your World Level. (You can change it in "personal" section).`;
+          }
         }
 
         if (weekBoss.includes(el)) {
           avgFarming = number / dropWeeklyBoss;
           avgFarming = Math.ceil(avgFarming);
-          label = "Approx. times to defeat weekly boss";
-          faq = `This calculation depends on the domain level you choose. (You can change it in "personal" section).`;
+          if (staticData) {
+            label = staticData["label"][0][3];
+            faq = staticData["faq"][0][3];
+          } else {
+            label = "Approx. times to defeat weekly boss";
+            faq = `This calculation depends on the domain level you choose. (You can change it in "personal" section).`;
+          }
         }
 
         if (special.includes(el)) {
           avgFarming = number;
           avgFarming = Math.ceil(avgFarming);
-          label = "Approx. times to complete Natlan quests";
-          faq = `Natlan Quests give you this material when you complete them.`;
+          if (staticData) {
+            label = staticData["label"][0][4];
+            faq = staticData["faq"][0][4];
+          } else {
+            label = "Approx. times to complete Natlan quests";
+            faq = `Natlan Quests give you this material when you complete them.`;
+          }
         }
 
         if (el === "Mora") {
           avgFarming = $localData[id][el] / leyMora;
           let a = Math.ceil(avgFarming);
           avgFarming = `${Math.ceil(a / 9)} (${a})`;
-          label = "Approx. days doing Ley Lines (times)";
-          faq = "Only spending all your 180 daily resin in Ley Lines";
+          if (staticData) {
+            label = staticData["label"][0][5];
+            faq = staticData["faq"][0][5];
+          } else {
+            label = "Approx. days doing Ley Lines (times)";
+            faq = "Only spending all your 180 daily resin in Ley Lines";
+          }
         }
 
         if (el === "Crown of Insight") {
           avgFarming = number;
-          label = "Approx. times to purchase it in the shop (1 per month)";
-          faq = "You can purchase one Crown of Insight every month";
+          if (staticData) {
+            label = staticData["label"][0][6];
+            faq = staticData["faq"][0][6];
+          } else {
+            label = "Approx. times to purchase it in the shop (1 per month)";
+            faq = "You can purchase one Crown of Insight every month";
+          }
         }
 
         let itemContent = `
-    <div class="element-info">
-              <section class="element-data">
-                <figure class="element-img">
-                  <img src="./assets/materials/${tempName}.webp" alt="item" />
-                </figure>
-                <section class="element-props">
-                  <h5 class="frst-text">${el}</h5>
-                  <div class="element-days">
-                    <small class="frst-text description-txt">${label}</small>
-                    <div class="faq-container">
+          <div class="element-info">
+            <section class="element-data">
+              <figure class="element-img">
+                <img src="./assets/materials/${tempName}.webp" alt="item" />
+              </figure>
+              <section class="element-props">
+                <h5 class="frst-text">${materialsData ? materialsData[el] || el : el}</h5>
+                <div class="element-days">
+                  <small class="frst-text description-txt">${label}</small>
+                  <div class="faq-container">
                     ${svg}
                     <span class="tooltip">${faq}</span>
-                    </div>
                   </div>
-                </section>
+                </div>
               </section>
-              <section class="element-count">
-                <h5 class="frst-text">${number}</h5>
-                <small class="frst-text">${avgFarming}</small>
-              </section>
-            </div>
-    `;
+            </section>
+            <section class="element-count">
+              <h5 class="frst-text">${number}</h5>
+              <small class="frst-text">${avgFarming}</small>
+            </section>
+          </div>
+        `;
         itemsContent += itemContent;
       }
     });
@@ -247,7 +294,7 @@ export default function drawItems(
 
     let option = d.createElement("option");
     option.setAttribute("value", name);
-    option.innerHTML = name;
+    option.innerHTML = nameLan;
     $optionsContainer.appendChild(option);
   }
 }

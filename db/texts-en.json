@@ -1,0 +1,11 @@
+{
+  "header": ["Characters", "Weapons", "Personal", "Settings"],
+  "footer": [
+    "By <a href=\"https://crizorr.com\" target=\"_blank\" rel=\"noopener\">@criZorr</a>. All game resources are miHoYo property.</small>"
+  ],
+  "static-settings": [
+    ["Language"],
+    ["Import & Export Data", "Import", "Export"],
+    ["Theme", "Light", "Auto", "Dark"]
+  ]
+}

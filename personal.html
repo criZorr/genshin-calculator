@@ -33,24 +33,24 @@
           <div class="menu-btn-img">
             <img src="./assets/characters.svg" alt="Characters section" />
           </div>
-          <p>Characters</p>
+          <p class="txt-item">Characters</p>
         </a>
         <a class="menu-btn btn-weapons" href="./weapons.html">
           <div class="menu-btn-img">
             <img src="./assets/weapons.svg" alt="Weapons section" />
           </div>
-          <p>Weapons</p>
+          <p class="txt-item">Weapons</p>
         </a>
         <a class="menu-btn btn-personal active-page" href="./personal.html">
           <div class="menu-btn-img">
             <img src="./assets/personal.svg" alt="Personal section" />
           </div>
-          <p>Personal</p> </a
+          <p class="txt-item">Personal</p> </a
         ><a class="menu-btn btn-personal" href="./settings.html">
           <div class="menu-btn-img">
             <img src="./assets/settings.svg" alt="Settings section" />
           </div>
-          <p>Settings</p>
+          <p class="txt-item">Settings</p>
         </a>
       </nav>
     </header>
@@ -58,13 +58,13 @@
       <div class="content-parameters-user">
         <section class="card-user-info bg-snd">
           <div class="element-header">
-            <h3 class="frst-text">Personal Information</h3>
+            <h3 class="frst-text txt-item">Personal Information</h3>
           </div>
           <div class="user-info frst-text"></div>
         </section>
         <div class="user-materials-container bg-snd">
           <div class="element-header">
-            <h3 class="frst-text">Owned Materials</h3>
+            <h3 class="frst-text txt-item">Owned Materials</h3>
             <section class="buttons-element">
               <button class="btn-element btn-expand-container">
                 <img
@@ -89,7 +89,7 @@
         <div class="total-container">
           <section class="card-total-personal bg-snd" id="Total">
             <div class="element-header">
-              <h3 class="frst-text">Remaining and Calcs</h3>
+              <h3 class="frst-text txt-item">Remaining and Calcs</h3>
               <section class="buttons-element">
                 <button class="btn-element btn-expand-container">
                   <img
@@ -112,7 +112,7 @@
         <div class="excess-container">
           <section class="card-total-personal bg-snd" id="Excess">
             <div class="element-header">
-              <h3 class="frst-text">Nedeed and Excess</h3>
+              <h3 class="frst-text txt-item">Nedeed and Excess</h3>
               <section class="buttons-element">
                 <button class="btn-element btn-expand-container">
                   <img
@@ -134,13 +134,6 @@
         </div>
       </div>
     </main>
-    <footer class="footer bg-snd">
-      <small class="frst-text">
-        By
-        <a href="https://crizorr.com" target="_blank" rel="noopener">@criZorr</a
-        >. All game resources are miHoYo property.</small
-      >
-    </footer>
     <article class="modal-container-materials">
       <div class="modal-item-container">
         <div class="modal-item-holder bg-snd">
@@ -151,14 +144,16 @@
               name="exp"
               id="exp"
             />
-            <label class="filter-label bg-trd" for="exp"> Exp material </label>
+            <label class="filter-label bg-trd txt-item" for="exp">
+              Exp material
+            </label>
             <input
               class="filter-checkbox"
               type="checkbox"
               name="elite"
               id="elite"
             />
-            <label class="filter-label bg-trd" for="elite">
+            <label class="filter-label bg-trd txt-item" for="elite">
               Elite enemies
             </label>
             <input
@@ -167,7 +162,7 @@
               name="common"
               id="common"
             />
-            <label class="filter-label bg-trd" for="common">
+            <label class="filter-label bg-trd txt-item" for="common">
               Common enemies
             </label>
             <input
@@ -176,7 +171,7 @@
               name="weekly"
               id="weekly"
             />
-            <label class="filter-label bg-trd" for="weekly">
+            <label class="filter-label bg-trd txt-item" for="weekly">
               Weekly bosses
             </label>
             <input
@@ -185,7 +180,7 @@
               name="world"
               id="world"
             />
-            <label class="filter-label bg-trd" for="world">
+            <label class="filter-label bg-trd txt-item" for="world">
               World bosses
             </label>
             <input
@@ -194,14 +189,16 @@
               name="stones"
               id="stones"
             />
-            <label class="filter-label bg-trd" for="stones"> Stones </label>
+            <label class="filter-label bg-trd txt-item" for="stones">
+              Stones
+            </label>
             <input
               class="filter-checkbox"
               type="checkbox"
               name="talent"
               id="talent"
             />
-            <label class="filter-label bg-trd" for="talent">
+            <label class="filter-label bg-trd txt-item" for="talent">
               Talent materials
             </label>
             <input
@@ -210,7 +207,7 @@
               name="weapon"
               id="weapon"
             />
-            <label class="filter-label bg-trd" for="weapon">
+            <label class="filter-label bg-trd txt-item" for="weapon">
               Weapon Materials
             </label>
             <input
@@ -219,16 +216,23 @@
               name="speciality"
               id="speciality"
             />
-            <label class="filter-label bg-trd" for="speciality">
-              Specialities
+            <label class="filter-label bg-trd txt-item" for="speciality">
+              Specialties
             </label>
           </div>
           <div class="items-container-user scroll-active"></div>
         </div>
       </div>
     </article>
+    <footer class="footer bg-snd">
+      <small class="frst-text txt-item">
+        By
+        <a href="https://crizorr.com" target="_blank" rel="noopener">@criZorr</a
+        >. All game resources are miHoYo property.</small
+      >
+    </footer>
     <article class="modal-container"></article>
     <script src="./personal.js" type="module"></script>
-    <script src="./index.js"></script>
+    <script src="./index.js" type="module"></script>
   </body>
 </html>

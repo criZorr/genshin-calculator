@@ -1,7 +1,21 @@
 const d = document;
-export default function getCards(data, $container, path) {
+export default function getCards(
+  data,
+  $container,
+  path,
+  lang,
+  langData = "",
+  flag = false,
+) {
   for (let i = Object.keys(data).length; i >= 1; i--) {
-    let name = data[i].name;
+    let name = data[i]["name"],
+      nameLan = name;
+
+    if (lang !== "en" && flag) {
+      if (langData) nameLan = langData[name] || name;
+    } else {
+      nameLan = data[i][`name-${lang}`] || name;
+    }
 
     let card = d.createElement("div");
     card.classList.add("card");
@@ -14,7 +28,7 @@ export default function getCards(data, $container, path) {
     let p = d.createElement("h5");
     p.classList.add("card-name");
     p.classList.add("dark-text");
-    p.innerHTML = name;
+    p.innerHTML = nameLan;
     p.setAttribute("_id", i);
 
     const date = new Date();
@@ -34,7 +48,7 @@ export default function getCards(data, $container, path) {
         <img
           class="card-img"
           _id="${i}" src="${path}/${name.replaceAll('"', "")}.webp"
-          alt="${name}"
+          alt="${nameLan}"
           style="position: absolute"
         />`;
     } else {
@@ -61,7 +75,7 @@ export default function getCards(data, $container, path) {
       cardBg.innerHTML = `<img class="card-img" _id="${i}" src="${path}/${name.replaceAll(
         '"',
         "",
-      )}.webp" alt="${name}" />`;
+      )}.webp" alt="${nameLan}" />`;
     }
 
     card.appendChild(cardBg);

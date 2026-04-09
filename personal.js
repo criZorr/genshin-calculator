@@ -2,12 +2,14 @@ import drawTotalItems from "./components/drawTotalItems.js";
 import calculateNeeded from "./components/calculateNeeded.js";
 import toggleSize from "./components/toggleSize.js";
 import calculateData from "./db/data.js";
+import getData from "./helpers/getData.js";
 import drawTotalExcess from "./components/drawTotalExcess.js";
 
 const d = document;
 
 const $modal = d.querySelector(".modal-container"),
-  $modalMaterials = d.querySelector(".modal-container-materials");
+  $modalMaterials = d.querySelector(".modal-container-materials"),
+  language = localStorage.getItem("language");
 
 const svg = `
 <svg class="frst-text faq" alt="faq" width="11" height="11" viewBox="0 0 11 11" xmlns="http://www.w3.org/2000/svg">
@@ -29,7 +31,9 @@ let saveFlag = false,
     "weapon",
     "speciality",
   ],
-  $filters = "filter-checkbox";
+  $filters = "filter-checkbox",
+  langData = "",
+  langMaterials = "";
 
 const all = calculateData("all"),
   eliteEnemies = calculateData("eliteEnemies").length,
@@ -139,8 +143,18 @@ const getChecked = (filterNames) => {
 
 const getTotal = () => {
   calculateNeeded("userMaterials", "total");
-  drawTotalItems("neededTotal", ".elements-container");
-  drawTotalExcess("total", ".extra-container");
+  drawTotalItems(
+    "neededTotal",
+    ".elements-container",
+    langData ? langData : "",
+    langMaterials ? langMaterials : "",
+  );
+  drawTotalExcess(
+    "total",
+    ".extra-container",
+    langData ? langData : "",
+    langMaterials ? langMaterials : "",
+  );
 };
 
 const calculateTotal = (...objects) => {
@@ -184,10 +198,16 @@ const drawUserData = () => {
     resinType = ["20 resin", "40 resin", "60 resin"],
     rng = ["Without RNG", "With RNG"];
 
+  if (langData) {
+    optionsBonus = langData["dynamic-personal"][1];
+    resinType = langData["dynamic-personal"][2];
+    rng = langData["dynamic-personal"][3];
+  }
+
   $container.innerHTML = `
     <div class="user-data">
       <div class="user-parameter-header">
-        <h5>World Level</h5>
+        <h5>${langData ? langData["dynamic-personal"][0][0] : "World Level"}</h5>
         <button class="btn-element-info" _id="World" _name="World Level">
           <img class="btn-edit-info" src="./assets/edit.svg" alt="edit"  _id="World" _name="World Level"/>
         </button>
@@ -195,14 +215,14 @@ const drawUserData = () => {
       <p class="h5-regular">${userInfo["World"]}
         <div class="faq-container">
           ${svg}          
-          <span class="tooltip">This changes the Boss, Enemies and Ley Lines drops</span>
+          <span class="tooltip">${langData ? langData["dynamic-personal"][4][0] : "This changes the Boss, Enemies and Ley Lines drops"}</span>
         </div>
       </p>
     </div>
 
     <div class="user-data">
       <div class="user-parameter-header">
-        <h5>Bonus Crafting</h5>
+        <h5>${langData ? langData["dynamic-personal"][0][1] : "Bonus Crafting"}</h5>
         <button class="btn-element-info" _id="crafting" _name="Bonus Crafting">
           <img class="btn-edit-info" src="./assets/edit.svg" alt="edit"  _id="crafting" _name="Bonus Crafting"/>
         </button>
@@ -210,14 +230,14 @@ const drawUserData = () => {
       <p class="h5-regular">${optionsBonus[userInfo["crafting"]]}
         <div class="faq-container">
           ${svg}          
-          <span class="tooltip">There are some talents which increase the chance to get more talent materials</span>
+          <span class="tooltip">${langData ? langData["dynamic-personal"][4][1] : "There are some talents which increase the chance to get more talent materials"}</span>
         </div>
       </p>
     </div>
 
     <div class="user-data">
       <div class="user-parameter-header">
-        <h5>Level Domains</h5>
+        <h5>${langData ? langData["dynamic-personal"][0][2] : "Level Domains"}</h5>
         <button class="btn-element-info" _id="levelDomains" _name="Level Domains">
           <img class="btn-edit-info" src="./assets/edit.svg" alt="edit"  _id="levelDomains" _name="Level Domains"/>
         </button>
@@ -225,14 +245,14 @@ const drawUserData = () => {
       <p class="h5-regular">${optionsDomains[userInfo["levelDomains"]]}
         <div class="faq-container">
           ${svg}          
-          <span class="tooltip">This changes domains drops</span>
+          <span class="tooltip">${langData ? langData["dynamic-personal"][4][2] : "This changes domains drops"}</span>
         </div>
       </p>
     </div>
 
     <div class="user-data">
       <div class="user-parameter-header">
-        <h5>Resin Amount to Use</h5>
+        <h5>${langData ? langData["dynamic-personal"][0][3] : "Resin Amount to Use"}</h5>
         <button class="btn-element-info" _id="resin" _name="Resin Amount to Use">
           <img class="btn-edit-info" src="./assets/edit.svg" alt="edit"  _id="resin" _name="Resin Amount to Use"/>
         </button>
@@ -240,14 +260,14 @@ const drawUserData = () => {
       <p class="h5-regular">${resinType[userInfo["resin"]]}
         <div class="faq-container">
           ${svg}          
-          <span class="tooltip">This will change how many times you should do a Domain</span>
+          <span class="tooltip">${langData ? langData["dynamic-personal"][4][3] : "This will change how many times you should do a Domain"}</span>
         </div>
       </p>
     </div>
 
     <div class="user-data">
       <div class="user-parameter-header">
-        <h5>Calculations</h5>
+        <h5>${langData ? langData["dynamic-personal"][0][4] : "Calculations"}</h5>
         <button class="btn-element-info" _id="RNG" _name="Calculations">
           <img class="btn-edit-info" src="./assets/edit.svg" alt="edit"  _id="RNG" _name="Calculations"/>
         </button>
@@ -255,14 +275,14 @@ const drawUserData = () => {
       <p class="h5-regular">${rng[userInfo["RNG"]]}
         <div class="faq-container">
           ${svg}          
-          <span class="tooltip">Materials Domains drops has RNG. This will change the approximation of how many times you should do the domain</span>
+          <span class="tooltip">${langData ? langData["dynamic-personal"][4][4] : "Materials Domains drops has RNG. This will change the approximation of how many times you should do the domain"}</span>
         </div>
       </p>
     </div>
 
     <div class="user-data">
       <div class="user-parameter-header">
-        <h5>Mora Daily Profit</h5>
+        <h5>${langData ? langData["dynamic-personal"][0][5] : "Mora Daily Profit"}</h5>
         <button class="btn-element-profit" _id="Mora" _name="Mora Daily Profit">
           <img class="btn-edit-profit" src="./assets/edit.svg" alt="edit"  _id="Mora" _name="Mora Daily Profit"/>
         </button>
@@ -270,7 +290,7 @@ const drawUserData = () => {
       <p class="h5-regular">${userInfo["Mora"]} 
         <div class="faq-container">
           ${svg}          
-          <span class="tooltip">As you spend resin you earn Mora. E.g., doing domains, killing a boss</span>
+          <span class="tooltip">${langData ? langData["dynamic-personal"][4][5] : "As you spend resin you earn Mora. E.g., doing domains, killing a boss"}</span>
         </div>
       </p>
     </div>`;
@@ -406,7 +426,7 @@ const drawModalProfit = (id) => {
         <figure>
           <img src="./assets/materials/${id}.webp" alt="${id}" />
         </figure>
-        <p class="info-title scnd-text">${id}</p>
+        <p class="info-title scnd-text">${langData ? langData["dynamic-personal"][5][0] : "Daily Mora"}</p>
       </div>
       <div class="number-pick-container">
         <input type="number" id="number-picker" name="number-picker" min="0" class="number-picker frst-text" step="1" pattern="\d*" value="${number}">
@@ -449,17 +469,20 @@ const drawModalElement = (id) => {
   const $userMaterials = JSON.parse(localStorage.getItem("userMaterials"));
 
   let ogName = id.replaceAll("ç", '"'),
-    fixedName = id.replaceAll("ç", "").replaceAll(":", "_");
+    fixedName = id.replaceAll("ç", "").replaceAll(":", "_"),
+    newName = ogName;
 
   let number = $userMaterials[ogName];
+
+  if (langMaterials) newName = langMaterials[ogName] || ogName;
 
   $modal.innerHTML = `
     <div class="modal-info bg-trd">
       <div class="edit-owned-header">
         <figure>
-          <img src="./assets/materials/${fixedName}.webp" alt="${ogName}" />
+          <img src="./assets/materials/${fixedName}.webp" alt="${newName}" />
         </figure>
-        <p class="info-title scnd-text">${ogName}</p>
+        <p class="info-title scnd-text">${newName}</p>
       </div>
       <div class="number-pick-container">
         <input type="number" id="number-picker" name="number-picker" min="0" class="number-picker frst-text" step="1" pattern="\d*" value="${number}">
@@ -507,7 +530,8 @@ const drawModalElement = (id) => {
 const drawModalInfo = (id, name) => {
   const $userInfo = JSON.parse(localStorage.getItem("userInfo"));
 
-  let options = ``;
+  let options = ``,
+    nameNew = name;
 
   if (id === "World")
     options = `
@@ -531,30 +555,50 @@ const drawModalInfo = (id, name) => {
 
   if (id === "crafting")
     options = `
-      <option value="0">No</option>
-      <option value="1">10% talent</option>
-      <option value="2">25% talent</option>`;
+      <option value="0">${langData ? langData["dynamic-personal"][1][0] : "No"}</option>
+      <option value="1">${langData ? langData["dynamic-personal"][1][1] : "10% talent"}</option>
+      <option value="2">${langData ? langData["dynamic-personal"][1][2] : "25% talent"}</option>`;
 
   if (id === "resin") {
     options = `
-      <option value="0">20 resin</option>
-      <option value="1">40 resin</option>
-      <option value="2">60 resin</option>`;
+      <option value="0">${langData ? langData["dynamic-personal"][2][0] : "20 resin"}</option>
+      <option value="1">${langData ? langData["dynamic-personal"][2][1] : "40 resin"}</option>
+      <option value="2">${langData ? langData["dynamic-personal"][2][2] : "60 resin"}</option>`;
   }
 
   if (id === "RNG") {
     options = `
-      <option value="0">Without RNG</option>
-      <option value="1">With RNG</option>`;
+      <option value="0">${langData ? langData["dynamic-personal"][3][0] : "Without RNG"}</option>
+      <option value="1">${langData ? langData["dynamic-personal"][3][1] : "With RNG"}</option>`;
+  }
+
+  if (langData) {
+    switch (name) {
+      case "World Level":
+        nameNew = langData["dynamic-personal"][0][0];
+        break;
+      case "Bonus Crafting":
+        nameNew = langData["dynamic-personal"][0][1];
+        break;
+      case "Level Domains":
+        nameNew = langData["dynamic-personal"][0][2];
+        break;
+      case "Resin Amount to Use":
+        nameNew = langData["dynamic-personal"][0][3];
+        break;
+      case "Calculations":
+        nameNew = langData["dynamic-personal"][0][4];
+        break;
+    }
   }
 
   $modal.innerHTML = `
     <div class="modal-info bg-trd">
       <div class="edit-owned-header">
         <figure>
-          <img src="./assets/materials/${name}.webp" alt="${name}" />
+          <img src="./assets/materials/${name}.webp" alt="${nameNew}" />
         </figure>
-        <p class="info-title scnd-text">${name}</p>
+        <p class="info-title scnd-text">${nameNew}</p>
       </div>
       <div class="number-pick-container">
         <select class="info-options frst-text bg-trd">
@@ -630,10 +674,6 @@ const getListElements = () => {
     `;
     $itemsContainer.appendChild(fragment);
   }
-
-  setTimeout(() => {
-    d.querySelector(".btn-plus-container").style.visibility = "visible";
-  }, 500);
 };
 
 if (!localStorage.getItem("userMaterials"))
@@ -681,10 +721,15 @@ if (erraser) {
     ? undefined
     : getTotal();
 
+if (language !== "en") {
+  langData = await getData(`./db/texts-${language}.json`);
+  langMaterials = await getData(`./db/materials-${language}.json`);
+}
+
 drawUserMaterial();
 drawUserData();
 
-window.addEventListener("load", getListElements);
+document.addEventListener("load", getListElements());
 
 d.addEventListener("click", (e) => {
   let eventId = e.target.id,

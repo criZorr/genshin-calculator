@@ -15,16 +15,19 @@ import drawTotalExcess from "./components/drawTotalExcess.js";
 const d = document;
 
 const $cardsContainer = d.querySelector(".cards-container"),
-  $modal = d.querySelector(".modal-container");
+  $modal = d.querySelector(".modal-container"),
+  language = localStorage.getItem("language");
 
 let filtered = [],
   filterClasses = ["filter-weapon", "filter-quality"],
   weapons = ["bow", "catalyst", "claymore", "polearm", "sword"],
   qualities = ["5-stars", "4-stars", "3-stars", "2-stars", "1-stars"],
-  $filters = "filter-checkbox";
-
-let saveFlag = false;
-let confirmFlag = false;
+  $filters = "filter-checkbox",
+  saveFlag = false,
+  confirmFlag = false,
+  langData = "",
+  weaponsLanguage = "",
+  langMaterials = "";
 
 const filterAction = (filters, data) => {
   let charactersId = [];
@@ -115,13 +118,28 @@ const getItems = () => {
     weaponsData,
     ".card-individual-container",
     ".selected-items",
+    language,
+    langData ? langData : "",
+    langMaterials ? langMaterials : "",
+    weaponsLanguage,
+    true,
   );
 };
 
 const getTotal = () => {
   calculateNeeded("userMaterials", "weaponTotal");
-  drawTotalItems("neededWeapon", ".elements-container");
-  drawTotalExcess("weaponTotal", ".extra-container");
+  drawTotalItems(
+    "neededWeapon",
+    ".elements-container",
+    langData ? langData : "",
+    langMaterials ? langMaterials : "",
+  );
+  drawTotalExcess(
+    "weaponTotal",
+    ".extra-container",
+    langData ? langData : "",
+    langMaterials ? langMaterials : "",
+  );
 };
 
 const getLevels = (weaponId) => {
@@ -268,9 +286,16 @@ const getLevels = (weaponId) => {
 
 const drawModal = (ogId) => {
   let id = ogId,
-    quality = "";
+    quality = "",
+    qualityText = "",
+    type = "";
 
   if (ogId.includes("_")) id = ogId.slice(0, ogId.indexOf("_"));
+
+  qualityText = weaponsData[id].quality;
+  type =
+    weaponsData[id].weapon.slice(0, 1).toUpperCase() +
+    weaponsData[id].weapon.slice(1);
 
   switch (weaponsData[id].quality) {
     case "5-stars":
@@ -290,18 +315,56 @@ const drawModal = (ogId) => {
       break;
   }
 
+  if (langData) {
+    switch (type) {
+      case "Bow":
+        type = langData["static-index"][3][0];
+        break;
+      case "Catalyst":
+        type = langData["static-index"][3][1];
+        break;
+      case "Claymore":
+        type = langData["static-index"][3][2];
+        break;
+      case "Polearm":
+        type = langData["static-index"][3][3];
+        break;
+      case "Sword":
+        type = langData["static-index"][3][4];
+        break;
+    }
+
+    switch (qualityText) {
+      case "5-stars":
+        qualityText = langData["dynamic-weapons"][0][0];
+        break;
+      case "4-stars":
+        qualityText = langData["dynamic-weapons"][0][1];
+        break;
+      case "3-stars":
+        qualityText = langData["dynamic-weapons"][0][2];
+        break;
+      case "2-stars":
+        qualityText = langData["dynamic-weapons"][0][3];
+        break;
+      case "1-stars":
+        qualityText = langData["dynamic-weapons"][0][4];
+        break;
+    }
+  }
+
   $modal.innerHTML = `
     <div class="modal-weapon bg-trd">
       <section class="modal-img">
         <div class="card-bg ${quality}">
-          <img class="card-img" src="./assets/weapons/${weaponsData[id].name}.webp" alt="${weaponsData[id].name}">
+          <img class="card-img" src="./assets/weapons/${weaponsData[id].name.replaceAll('"', "")}.webp" alt="${weaponsData[id].name}">
         </div>
         <article class="character-properties">
-          <p class="scnd-text"><b>${weaponsData[id].name}</b></p>
+          <p class="scnd-text"><b>${weaponsLanguage ? weaponsLanguage[weaponsData[id].name] : weaponsData[id].name}</b></p>
           <p class="frst-text">
-            ${weaponsData[id].weapon.slice(0, 1).toUpperCase() + weaponsData[id].weapon.slice(1)}
+            ${type}
             -
-            ${weaponsData[id].quality.replaceAll("-", " ")}
+            ${qualityText.replaceAll("-", " ")}
           </p>
         </article>
       </section>
@@ -311,7 +374,7 @@ const drawModal = (ogId) => {
           <div class="level-content bg-snd"></div>
         </div>
         <section class="another-container bg-snd">
-        <p class="frst-text">Add another</p>
+        <p class="frst-text">${langData ? langData["dynamic-weapons"][1] : "Add another"}</p>
         <button class="add-btn">
         <img class="btn-plus" src="./assets/plus-snd.svg" alt="">
         </button>
@@ -319,10 +382,10 @@ const drawModal = (ogId) => {
       </article>
       <div class="weapon-form">
         <div class="btn-modal">
-          <button class="btn-bordered" id="cancel-btn">Cancel</button>
+          <button class="btn-bordered" id="cancel-btn">${langData ? langData["dynamic-index"][2][0] : "Cancel"}</button>
         </div>
         <div class="btn-modal">
-          <button class="btn bg-snd-dark" id="save-btn">Save</button>
+          <button class="btn bg-snd-dark" id="save-btn">${langData ? langData["dynamic-index"][2][1] : "Save"}</button>
         </div>
       </div>
       </section>
@@ -332,13 +395,13 @@ const drawModal = (ogId) => {
 const deleteConfirmation = (id, name) => {
   $modal.innerHTML = `
     <div class="modal-info bg-trd">
-      <p class="info-title scnd-text">Do you want to delete ${name}?</p>
+      <p class="info-title scnd-text">${langData ? langData["dynamic-weapons"][4] : "Do you want to delete"} ${name}?</p>
       <div class="info-form">
         <div class="btn-modal">
-          <button class="btn-bordered" id="cancel-btn">Cancel</button>
+          <button class="btn-bordered" id="cancel-btn">${langData ? langData["dynamic-index"][2][0] : "Cancel"}</button>
         </div>
         <div class="btn-modal">
-          <button class="btn bg-snd-dark" id="confirm-btn" _id="${id}">Delete</button>
+          <button class="btn bg-snd-dark" id="confirm-btn" _id="${id}">${langData ? langData["dynamic-index"][2][2] : "Delete"}</button>
         </div>
       </div>
     </div>`;
@@ -416,7 +479,12 @@ d.addEventListener("click", (e) => {
     if (id.includes("_")) {
       ogId = id.slice(0, id.indexOf("_"));
     }
-    deleteConfirmation(id, weaponsData[ogId].name);
+    deleteConfirmation(
+      id,
+      weaponsLanguage
+        ? weaponsLanguage[weaponsData[ogId].name]
+        : weaponsData[ogId].name,
+    );
   }
 
   if (eventClass === "modal-container" || eventId === "cancel-btn") {
@@ -444,7 +512,11 @@ d.addEventListener("click", (e) => {
         drawModal(handleId);
         getLevels(handleId);
       } else {
-        window.alert("Add the current one before adding another");
+        window.alert(
+          langData
+            ? langData["dynamic-weapons"][2]
+            : "Add the current one before adding another",
+        );
       }
     } else {
       if (exists(id)) {
@@ -455,7 +527,11 @@ d.addEventListener("click", (e) => {
         drawModal(handleId);
         getLevels(handleId);
       } else {
-        window.alert("Add the current one before adding a copy");
+        window.alert(
+          langData
+            ? langData["dynamic-weapons"][3]
+            : "Add the current one before adding a copy",
+        );
       }
     }
   }
@@ -479,6 +555,12 @@ d.addEventListener("keydown", (e) => {
 });
 
 let weaponsData = await getData("./db/weapons.json");
+
+if (language !== "en") {
+  langData = await getData(`./db/texts-${language}.json`);
+  weaponsLanguage = await getData(`./db/weapons-${language}.json`);
+  langMaterials = await getData(`./db/materials-${language}.json`);
+}
 
 !localStorage.getItem("weaponData")
   ? localStorage.setItem("weaponData", "{}")
@@ -517,5 +599,12 @@ if (erraser) {
 if (!localStorage.getItem("userMaterials"))
   localStorage.setItem("userMaterials", "{}");
 
-getCards(weaponsData, $cardsContainer, "./assets/weapons");
+getCards(
+  weaponsData,
+  $cardsContainer,
+  "./assets/weapons",
+  language,
+  weaponsLanguage,
+  true,
+);
 getChecked(filterClasses);
