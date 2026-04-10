@@ -471,13 +471,8 @@ small {
 }
 
 .filter-label {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-
   height: 1rem;
-  width: auto;
-  padding-inline: 1rem;
+  padding-inline: 0.5rem;
 
   border-radius: 0.5rem;
   font-size: 0.75rem;
@@ -486,6 +481,18 @@ small {
     cursor: pointer;
     box-shadow: 0rem 0rem 0.25rem var(--first-light-color);
   }
+}
+
+.label-img-container {
+  height: 1.73rem;
+  height: clamp(1.6875rem, 1.3868rem + 1.5723vw, 2rem);
+  padding: 0.25rem;
+  border-radius: 50%;
+}
+
+.label-img {
+  height: 100%;
+  width: auto;
 }
 
 /* ********** Section items ********** */
