@@ -1,6 +1,7 @@
 export default function toggleSize(clase, target) {
   if (clase === "btn-expand") {
-    let container = target.parentElement.parentElement.parentElement.parentElement,
+    let container =
+        target.parentElement.parentElement.parentElement.parentElement,
       firstContainer = target.parentElement,
       elements = container.children[1];
 
@@ -38,7 +39,8 @@ export default function toggleSize(clase, target) {
   }
 
   if (clase === "btn-collapse") {
-    let container = target.parentElement.parentElement.parentElement.parentElement,
+    let container =
+        target.parentElement.parentElement.parentElement.parentElement,
       firstContainer = target.parentElement,
       elements = container.children[1];
 

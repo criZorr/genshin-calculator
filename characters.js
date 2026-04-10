@@ -31,11 +31,9 @@ let filtered = [],
   langMaterials = "";
 
 const filterAction = (filters, data) => {
-  let charactersId = [];
-
-  let filtersStr = filters.map((e) => e.toString());
-
-  let [elementFilter, weaponFilter, qualityFilter] = filtersStr;
+  let charactersId = [],
+    filtersStr = filters.map((e) => e.toString()),
+    [elementFilter, weaponFilter, qualityFilter] = filtersStr;
 
   for (let i = Object.keys(data).length; i >= 1; i--) {
     charactersId.push(i);
@@ -54,7 +52,6 @@ const filterAction = (filters, data) => {
   charactersId.forEach((e) => {
     let $card = d.getElementById(e);
     $card.style.display = "none";
-
     filtered.push(e);
   });
 };
@@ -773,38 +770,10 @@ if (language !== "en") {
   ? localStorage.setItem("characterData", "{}")
   : getItems();
 
-if (!localStorage.getItem("userInfo"))
-  localStorage.setItem(
-    "userInfo",
-    '{"World":9,"crafting":1,"levelDomains":3,"resin":1,"RNG":1,"Mora":1000}',
-  );
-
-let erraser = true,
-  mora = 0;
-
-try {
-  erraser = localStorage.getItem("userInfo")["talentRNG"];
-} catch (error) {
-  erraser = false;
-}
-
-if (erraser) {
-  mora = JSON.parse(localStorage.getItem("userInfo"))["Mora"];
-  localStorage.removeItem("userInfo");
-  localStorage.setItem(
-    "userInfo",
-    `{"World":9,"crafting":1,"levelDomains":3,"resin":1,"RNG":1,"Mora":${mora}}`,
-  );
-}
-
-!localStorage.getItem("characterTotal")
-  ? localStorage.setItem("characterTotal", "{}")
-  : Object.keys(JSON.parse(localStorage.getItem("characterTotal"))).length == 0
-    ? undefined
-    : getTotal();
-
-if (!localStorage.getItem("userMaterials"))
-  localStorage.setItem("userMaterials", "{}");
+if (
+  Object.keys(JSON.parse(localStorage.getItem("characterTotal"))).length !== 0
+)
+  getTotal();
 
 getCards(charactersData, $cardsContainer, "./assets/characters", language);
 getChecked(filterClasses);

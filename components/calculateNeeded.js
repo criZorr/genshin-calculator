@@ -231,23 +231,23 @@ export default function calculateNeeded(userLocal, variable) {
 
     if (raw > 0) {
       let gold10 = Math.ceil(
-          (neededRaw[craftMaterialsThree[i + 2]] || 0) * (9 / 1.21)
+          (neededRaw[craftMaterialsThree[i + 2]] || 0) * (9 / 1.21),
         ),
         purple10 = Math.ceil(
-          (neededRaw[craftMaterialsThree[i + 1]] || 0) * (3 / 1.1)
+          (neededRaw[craftMaterialsThree[i + 1]] || 0) * (3 / 1.1),
         ),
         gold25 = Math.ceil(
-          (neededRaw[craftMaterialsThree[i + 2]] || 0) * (9 / (16 / 9))
+          (neededRaw[craftMaterialsThree[i + 2]] || 0) * (9 / (16 / 9)),
         ),
         purple25 = Math.ceil(
-          (neededRaw[craftMaterialsThree[i + 1]] || 0) * (3 / (4 / 3))
+          (neededRaw[craftMaterialsThree[i + 1]] || 0) * (3 / (4 / 3)),
         );
 
       raw10 = Math.ceil(
-        (neededRaw[craftMaterialsThree[i]] || 0) + gold10 + purple10
+        (neededRaw[craftMaterialsThree[i]] || 0) + gold10 + purple10,
       );
       raw25 = Math.ceil(
-        (neededRaw[craftMaterialsThree[i]] || 0) + gold25 + purple25
+        (neededRaw[craftMaterialsThree[i]] || 0) + gold25 + purple25,
       );
 
       object[craftMaterialsThree[i]] = [raw, raw10, raw25];
@@ -275,29 +275,29 @@ export default function calculateNeeded(userLocal, variable) {
 
     if (raw > 0) {
       let gold10 = Math.ceil(
-          (neededRaw[craftMaterialsFour[i + 3]] || 0) * (27 / 1.331)
+          (neededRaw[craftMaterialsFour[i + 3]] || 0) * (27 / 1.331),
         ),
         purple10 = Math.ceil(
-          (neededRaw[craftMaterialsFour[i + 2]] || 0) * (9 / 1.21)
+          (neededRaw[craftMaterialsFour[i + 2]] || 0) * (9 / 1.21),
         ),
         blue10 = Math.ceil(
-          (neededRaw[craftMaterialsFour[i + 1]] || 0) * (3 / 1.1)
+          (neededRaw[craftMaterialsFour[i + 1]] || 0) * (3 / 1.1),
         ),
         gold25 = Math.ceil(
-          (neededRaw[craftMaterialsFour[i + 3]] || 0) * (27 / (64 / 27))
+          (neededRaw[craftMaterialsFour[i + 3]] || 0) * (27 / (64 / 27)),
         ),
         purple25 = Math.ceil(
-          (neededRaw[craftMaterialsFour[i + 2]] || 0) * (9 / (16 / 9))
+          (neededRaw[craftMaterialsFour[i + 2]] || 0) * (9 / (16 / 9)),
         ),
         blue25 = Math.ceil(
-          (neededRaw[craftMaterialsFour[i + 1]] || 0) * (3 / (4 / 3))
+          (neededRaw[craftMaterialsFour[i + 1]] || 0) * (3 / (4 / 3)),
         );
 
       raw10 = Math.ceil(
-        (neededRaw[craftMaterialsFour[i]] || 0) + gold10 + purple10 + blue10
+        (neededRaw[craftMaterialsFour[i]] || 0) + gold10 + purple10 + blue10,
       );
       raw25 = Math.ceil(
-        (neededRaw[craftMaterialsFour[i]] || 0) + gold25 + purple25 + blue25
+        (neededRaw[craftMaterialsFour[i]] || 0) + gold25 + purple25 + blue25,
       );
 
       object[craftMaterialsFour[i]] = [raw, raw10, raw25];

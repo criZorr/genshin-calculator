@@ -676,51 +676,6 @@ const getListElements = () => {
   }
 };
 
-if (!localStorage.getItem("userMaterials"))
-  localStorage.setItem("userMaterials", "{}");
-
-if (!localStorage.getItem("userInfo"))
-  localStorage.setItem(
-    "userInfo",
-    '{"World":9,"crafting":1,"levelDomains":3,"resin":1,"RNG":1,"Mora":1000}',
-  );
-
-let erraser = true,
-  mora = 0;
-
-try {
-  erraser = localStorage.getItem("userInfo")["talentRNG"];
-} catch (error) {
-  erraser = false;
-}
-
-if (erraser) {
-  mora = JSON.parse(localStorage.getItem("userInfo"))["Mora"];
-  localStorage.removeItem("userInfo");
-  localStorage.setItem(
-    "userInfo",
-    `{"World":9,"crafting":1,"levelDomains":3,"resin":1,"RNG":1,"Mora":${mora}}`,
-  );
-}
-
-!localStorage.getItem("total")
-  ? localStorage.setItem("total", "{}")
-  : Object.keys(JSON.parse(localStorage.getItem("total"))).length == 0
-    ? undefined
-    : getTotal();
-
-!localStorage.getItem("weaponTotal")
-  ? localStorage.setItem("weaponTotal", "{}")
-  : Object.keys(JSON.parse(localStorage.getItem("weaponTotal"))).length == 0
-    ? undefined
-    : getTotal();
-
-!localStorage.getItem("characterTotal")
-  ? localStorage.setItem("characterTotal", "{}")
-  : Object.keys(JSON.parse(localStorage.getItem("characterTotal"))).length == 0
-    ? undefined
-    : getTotal();
-
 if (language !== "en") {
   langData = await getData(`./db/texts-${language}.json`);
   langMaterials = await getData(`./db/materials-${language}.json`);
@@ -729,7 +684,7 @@ if (language !== "en") {
 drawUserMaterial();
 drawUserData();
 
-document.addEventListener("load", getListElements());
+window.addEventListener("load", getListElements());
 
 d.addEventListener("click", (e) => {
   let eventId = e.target.id,

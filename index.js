@@ -2,6 +2,36 @@ import getData from "./helpers/getData.js";
 (() => {
   if (!localStorage.getItem("theme")) localStorage.setItem("theme", "auto");
   if (!localStorage.getItem("language")) localStorage.setItem("language", "en");
+  if (!localStorage.getItem("userMaterials"))
+    localStorage.setItem("userMaterials", "{}");
+
+  if (!localStorage.getItem("userInfo"))
+    localStorage.setItem(
+      "userInfo",
+      '{"World":9,"crafting":1,"levelDomains":3,"resin":1,"RNG":1,"Mora":1000}',
+    );
+
+  if (!localStorage.getItem("total")) localStorage.setItem("total", "{}");
+  if (!localStorage.getItem("weaponTotal"))
+    localStorage.setItem("weaponTotal", "{}");
+  if (!localStorage.getItem("characterTotal"))
+    localStorage.setItem("characterTotal", "{}");
+
+  let erraser = true,
+    mora = 0;
+  try {
+    erraser = localStorage.getItem("userInfo")["talentRNG"];
+  } catch (error) {
+    erraser = false;
+  }
+  if (erraser) {
+    mora = JSON.parse(localStorage.getItem("userInfo"))["Mora"];
+    localStorage.removeItem("userInfo");
+    localStorage.setItem(
+      "userInfo",
+      `{"World":9,"crafting":1,"levelDomains":3,"resin":1,"RNG":1,"Mora":${mora}}`,
+    );
+  }
 })();
 
 (async (d) => {
