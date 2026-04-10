@@ -1064,6 +1064,10 @@ small {
     visibility 0.25s ease-in;
 }
 
+.modal-container-materials {
+  align-items: start;
+}
+
 .modal-weapon,
 .modal-character,
 .modal-info,
@@ -1075,6 +1079,14 @@ small {
   padding: 1rem;
   width: 18rem;
   border-radius: 0.5rem;
+}
+
+.modal-item-holder {
+  margin-top: 10dvh;
+}
+
+.modal-character {
+  width: calc(100dvw - 2rem);
 }
 
 /* Modal weapons */
@@ -1207,7 +1219,6 @@ small {
 }
 
 /* Modal talents */
-.modal-character,
 .modal-info,
 .modal-item-holder {
   flex-direction: column;
@@ -1247,7 +1258,7 @@ small {
 .modal-character {
   display: block;
   @media screen and (min-width: 39em) {
-    width: 22rem;
+    width: 25rem;
   }
 }
 
@@ -1280,7 +1291,7 @@ small {
   gap: 0.5rem;
   flex-direction: column;
   @media screen and (min-width: 44em) {
-    width: 20rem;
+    width: clamp(16rem, 7.2rem + 20vw, 20rem);
   }
 }
 
@@ -1306,16 +1317,23 @@ small {
   align-items: center;
   gap: 0.5rem;
 
-  max-width: 50%;
+  overflow: hidden;
+  margin-right: 0.5rem;
 
   & p {
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-  }
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
 
-  @media screen and (min-width: 39em) {
-    max-width: 60%;
+    text-overflow: ellipsis ellipsis;
+    overflow: hidden;
+
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
   }
 }
 
@@ -1410,7 +1428,7 @@ small {
 }
 
 .modal-item-holder {
-  max-height: 75dvh;
+  max-height: 80dvh;
 }
 
 .items-container-user,

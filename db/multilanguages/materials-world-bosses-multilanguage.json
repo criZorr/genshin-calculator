@@ -359,7 +359,7 @@
     "vi": "Phán Quyết Của Đế Vương",
     "zh": "帝皇的决断"
   },
-  "Artificed Spare Clockwork Component – Coppelia": {
+  "Artificed Spare Clockwork Component — Coppelia": {
     "de": "Neuartiges Uhrwerk-Ersatzteil – Coppelia",
     "es": "Recambio mecánico de Coppélia",
     "fr": "Engrenage artificié de rechange : Coppelia",
@@ -374,7 +374,7 @@
     "vi": "Linh Kiện Dây Cót – Coppelia",
     "zh": "奇械发条备件・歌裴莉娅"
   },
-  "Artificed Spare Clockwork Component – Coppelius": {
+  "Artificed Spare Clockwork Component — Coppelius": {
     "de": "Neuartiges Uhrwerk-Ersatzteil – Coppelius",
     "es": "Recambio mecánico de Coppélius",
     "fr": "Engrenage artificié de rechange : Coppelius",
@@ -660,18 +660,18 @@
     "zh": "棱光的断尾"
   },
   "Plume of the Fallen Watcher": {
-    "de": "Plume of the Fallen Watcher",
+    "de": "Feder des gefallenen Wächters",
     "es": "Pluma celestecaída",
-    "fr": "Plume of the Fallen Watcher",
+    "fr": "Plume de veilleur déchu",
     "id": "Plume of the Fallen Watcher",
-    "it": "Plume of the Fallen Watcher",
-    "ja": "Plume of the Fallen Watcher",
-    "ko": "Plume of the Fallen Watcher",
-    "pt": "Plume of the Fallen Watcher",
-    "ru": "Plume of the Fallen Watcher",
+    "it": "Piuma dell'Osservatore caduto",
+    "ja": "堕天の羽",
+    "ko": "타락한 깃털",
+    "pt": "Pluma do Guardião Caído",
+    "ru": "Перо падшего созерцателя",
     "th": "Plume of the Fallen Watcher",
-    "tr": "Plume of the Fallen Watcher",
-    "vi": "Plume of the Fallen Watcher",
-    "zh": "Plume of the Fallen Watcher"
+    "tr": "Düşmüş Gözcünün Tüyü",
+    "vi": "Lông Vũ Sa Ngã",
+    "zh": "堕天的落羽"
   }
 }

@@ -330,11 +330,7 @@
 /* Modal talents */
 @media screen and (min-width: 39em) {
   .modal-character {
-    width: 22rem;
-  }
-
-  .talent-data {
-    max-width: 60%;
+    width: 25rem;
   }
 }
 
@@ -346,14 +342,24 @@
   }
 
   .talent-info {
-    width: 20rem;
+    width: clamp(16rem, 7.2rem + 20vw, 20rem);
   }
 }
 
 .talent-data p {
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+
+  text-overflow: ellipsis ellipsis;
   overflow: hidden;
+
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
 
 .talent-img img {
