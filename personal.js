@@ -433,10 +433,10 @@ const drawModalProfit = (id) => {
       </div>
       <div class="info-form">
         <div class="btn-modal">
-          <button class="btn-bordered" id="cancel-btn">Cancel</button>
+          <button class="btn-bordered" id="cancel-btn">${langData ? langData["dynamic-index"][2][0] : "Cancel"}</button>
         </div>
         <div class="btn-modal">
-          <button class="btn bg-snd-dark" id="confirm-btn" _id="">Save</button>
+          <button class="btn bg-snd-dark" id="confirm-btn" _id="">${langData ? langData["dynamic-index"][2][1] : "Save"}</button>
         </div>
       </div>
     </div>`;
@@ -489,10 +489,10 @@ const drawModalElement = (id) => {
       </div>
       <div class="info-form">
         <div class="btn-modal">
-          <button class="btn-bordered" id="cancel-btn">Cancel</button>
+          <button class="btn-bordered" id="cancel-btn">${langData ? langData["dynamic-index"][2][0] : "Cancel"}</button>
         </div>
         <div class="btn-modal">
-          <button class="btn bg-snd-dark" id="confirm-btn" _id="">Save</button>
+          <button class="btn bg-snd-dark" id="confirm-btn" _id="">${langData ? langData["dynamic-index"][2][1] : "Save"}</button>
         </div>
       </div>
     </div>`;
@@ -607,10 +607,10 @@ const drawModalInfo = (id, name) => {
       </div>
       <div class="info-form">
         <div class="btn-modal">
-          <button class="btn-bordered" id="cancel-btn">Cancel</button>
+          <button class="btn-bordered" id="cancel-btn">${langData ? langData["dynamic-index"][2][0] : "Cancel"}</button>
         </div>
         <div class="btn-modal">
-          <button class="btn bg-snd-dark" id="confirm-btn" _id="">Save</button>
+          <button class="btn bg-snd-dark" id="confirm-btn" _id="">${langData ? langData["dynamic-index"][2][1] : "Save"}</button>
         </div>
       </div>
     </div>`;
