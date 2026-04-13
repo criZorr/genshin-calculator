@@ -152,14 +152,16 @@ const handleFile = (input) => {
 };
 
 const translate = async (language) => {
+  d.documentElement.lang = language;
   dataLan = await getData(`./db/texts-${language}.json`);
-  const $items = d.querySelectorAll(".txt-item");
+  const $items = d.querySelectorAll(".txt-item"),
+    $title = d.querySelector("title");
+
+  $title.innerHTML = dataLan["html"][0];
   let list = Array.from($items),
     text = [...dataLan["header"]];
 
-  for (const el of dataLan["static-settings"]) {
-    text.push(...el);
-  }
+  for (const el of dataLan["static-settings"]) text.push(...el);
 
   text.push(...dataLan["footer"]);
 

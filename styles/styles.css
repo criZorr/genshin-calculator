@@ -243,6 +243,7 @@ small {
 
 /* ********** Header ********** */
 .header {
+  visibility: hidden;
   position: fixed;
   left: 0;
   bottom: 0;
@@ -1026,6 +1027,8 @@ small {
 /* ********** Footer ********* */
 
 .footer {
+  visibility: hidden;
+
   display: flex;
 
   align-items: center;

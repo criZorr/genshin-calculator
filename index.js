@@ -41,16 +41,19 @@ import getData from "./helpers/getData.js";
     const $items = d.querySelectorAll(".txt-item"),
       $url = window.location.pathname;
 
+    d.documentElement.lang = language;
+
     let dataLan = await getData(`./db/texts-${language}.json`),
       pageName = $url.replaceAll("/", ""),
       list = Array.from($items),
-      text = [...dataLan["header"]];
+      text = [...dataLan["header"]],
+      $title = d.querySelector("title");
+
+    $title.innerHTML = dataLan["html"][0];
 
     if (pageName === "") pageName = "index";
 
-    for (const el of dataLan[`static-${pageName}`]) {
-      text.push(...el);
-    }
+    for (const el of dataLan[`static-${pageName}`]) text.push(...el);
 
     text.push(...dataLan["footer"]);
 
@@ -110,12 +113,15 @@ import getData from "./helpers/getData.js";
 
 ((d, w) => {
   w.addEventListener("load", () => {
+    const $loader = d.querySelector(".loader-container");
     d.querySelector("body").classList.add("bg-trd");
-    d.querySelector(".loader-container").style.opacity = "0";
+    $loader.style.opacity = "0";
     setTimeout(() => {
-      d.querySelector(".loader-container").style.visibility = "hidden";
-      d.querySelector(".loader-container").style.display = "none";
+      $loader.style.visibility = "hidden";
+      $loader.style.display = "none";
       d.querySelector("main").style.visibility = "visible";
+      d.querySelector(".header").style.visibility = "visible";
+      d.querySelector(".footer").style.visibility = "visible";
     }, 150);
   });
 })(document, window);

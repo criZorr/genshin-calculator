@@ -1,4 +1,5 @@
 {
+  "html": ["GI: Calculadora de niveles"],
   "header": ["Personajes", "Armas", "Personal", "Ajustes"],
   "footer": [
     "Hecho por <a href=\"https://crizorr.com\" target=\"_blank\" rel=\"noopener\">@criZorr</a>. Todos los recursos del juego son propiedad de miHoYo.</small>"
