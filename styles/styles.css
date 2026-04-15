@@ -773,7 +773,9 @@ small {
 
 .user-info {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns:
+    minmax(calc(50% - 0.75rem), 1fr)
+    minmax(calc(50% - 0.75rem), 1fr);
   row-gap: 0.5rem;
   column-gap: 1.5rem;
 }
@@ -954,6 +956,7 @@ small {
 .btn-element-info,
 .btn-element-profit {
   width: 1rem;
+  min-width: 1rem;
   height: 1rem;
   border-radius: 0.25rem;
 }
@@ -1468,6 +1471,9 @@ small {
 
   & h5 {
     max-width: 85%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
   }
 }
 
