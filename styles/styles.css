@@ -1748,8 +1748,10 @@ select#language {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  height: 4rem;
-  padding: 0 1rem;
+  min-height: 4rem;
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+  margin-inline: 1rem;
 
   background-color: var(--third-dark-color);
   border-radius: 0.5rem;
@@ -1757,8 +1759,14 @@ select#language {
   color: var(--first-light-color);
 
   & img {
-    height: 90%;
+    max-height: 3.6rem;
     width: auto;
+  }
+}
+
+@media screen and (min-width: 39em) {
+  .notification {
+    max-width: 50%;
   }
 }
 

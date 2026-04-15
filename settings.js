@@ -16,7 +16,7 @@ let stickersData = await getData("./db/stickers.json"),
 
 let dataLan = "";
 
-const showNoti = (text) => {
+const showNoti = (text, time = 2000) => {
   let n = Math.floor(Math.random() * stickersLength) + 1,
     file = stickersData[n];
 
@@ -27,7 +27,7 @@ const showNoti = (text) => {
 
   setTimeout(() => {
     $notification.classList.remove("transition");
-  }, 2000);
+  }, time);
 };
 
 const exportFile = () => {
@@ -156,6 +156,9 @@ const translate = async (language) => {
   dataLan = await getData(`./db/texts-${language}.json`);
   const $items = d.querySelectorAll(".txt-item"),
     $title = d.querySelector("title");
+
+  if (!(language === "en" || language === "es"))
+    showNoti(dataLan["apolocheese"], 5000);
 
   $title.innerHTML = dataLan["html"][0];
   let list = Array.from($items),
