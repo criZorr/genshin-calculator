@@ -325,6 +325,10 @@
   cursor: pointer;
   font-weight: bold;
   font-size: 0.8125rem;
+  max-width: calc(100% - 1rem);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: normal;
 }
 
 /* Modal talents */
@@ -422,8 +426,16 @@
 .simple-form .custom-checkbox {
   width: calc(33.3333333333%);
 }
+
 .simple-form label {
   font-size: 1rem;
+  position: absolute;
+  left: 1.25rem;
+}
+
+.simple-form input,
+.simple-form .custom-radio-btn {
+  left: 0;
 }
 
 /* *********** Notification *********** */
