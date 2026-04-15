@@ -240,8 +240,8 @@ export default function drawItems(
             label = staticData["label"][0][5];
             faq = staticData["faq"][0][5];
           } else {
-            label = "Approx. days doing Ley Lines (times)";
-            faq = "Only spending all your 180 daily resin in Ley Lines";
+            label = "Approx. days doing Ley Line Outcrops (times)";
+            faq = "Only spending all your 180 daily resin in Ley Line Outcrops";
           }
         }
 

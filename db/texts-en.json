@@ -2,7 +2,7 @@
   "html": ["GI: Level Calculator"],
   "header": ["Characters", "Weapons", "Personal", "Settings"],
   "footer": [
-    "By <a href=\"https://crizorr.com\" target=\"_blank\" rel=\"noopener\">@criZorr</a>. All game resources are miHoYo property.</small>"
+    "By <a href=\"https://crizorr.com\" target=\"_blank\" rel=\"noopener\">@criZorr</a>. All game resources are miHoYo property."
   ],
   "static-settings": [
     ["Language"],

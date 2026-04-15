@@ -1,0 +1,126 @@
+{
+  "html": ["GI: Level-Rechner"],
+  "header": ["Charaktere", "Waffen", "Eigene", "Einstellungen"],
+  "footer": [
+    "Erstellt von <a href=\"https://crizorr.com\" target=\"_blank\" rel=\"noopener\">@criZorr</a>. Alle Spielressourcen sind Eigentum von miHoYo."
+  ],
+  "static-settings": [
+    ["Sprache"],
+    ["Daten exportieren und importieren", "Importieren", "Exportieren"],
+    ["Design", "Hell", "Automatisch", "Dunkel"]
+  ],
+  "dynamic-settings": ["Exportiert!", "Importiert!"],
+  "static-index": [
+    ["Wähle einen Charakter"],
+    ["Element"],
+    ["Waffe"],
+    ["Bogen", "Katalysator", "Zweihänder", "Stangenwaffe", "Einhänder"],
+    ["Qualität"],
+    ["5 Sterne", "4 Sterne"],
+    ["Ausgewählte Charaktere"],
+    ["Gesamt"],
+    ["Berechnungen"],
+    ["Benötigte und überschüssige Materialien"],
+    ["Individuelle benötigte Materialien"]
+  ],
+  "dynamic-index": [
+    ["Stufen berechnen"],
+    ["Talente berechnen"],
+    ["Abbrechen", "Speichern", "Löschen"],
+    ["Möchtest du", "löschen?"]
+  ],
+  "static-weapons": [
+    ["Wähle eine Waffe"],
+    ["Waffe"],
+    ["Bogen", "Katalysator", "Zweihänder", "Stangenwaffe", "Einhänder"],
+    ["Qualität"],
+    ["5 Sterne", "4 Sterne", "3 Sterne", "2 Sterne", "1 Stern"],
+    ["Ausgewählte Waffen"],
+    ["Berechnungen"],
+    ["Benötigte und überschüssige Materialien"],
+    ["Individuelle benötigte Materialien"]
+  ],
+  "dynamic-weapons": [
+    ["5 Sterne", "4 Sterne", "3 Sterne", "2 Sterne", "1 Stern"],
+    ["Einen weiteren hinzufügen"],
+    ["Speichere den aktuellen, bevor du einen weiteren hinzufügst"],
+    ["Speichere den aktuellen, bevor du eine Kopie hinzufügst"],
+    ["Möchtest du", "löschen?"]
+  ],
+  "static-personal": [
+    ["Persönliche Infos"],
+    ["Erhaltene Materialien"],
+    ["Berechnungen"],
+    ["Benötigte und überschüssige Materialien"],
+    [
+      "EP-Material",
+      "Elite-Gegner",
+      "Häufige Gegner",
+      "Wöchentliche Bosse",
+      "Weltbosse",
+      "Edelsteine",
+      "Talentmaterialien",
+      "Waffenmaterialien",
+      "Spezialitäten"
+    ]
+  ],
+  "dynamic-personal": [
+    [
+      "Weltstufe",
+      "Herstellungsbonus",
+      "Sphären-Stufe",
+      "Harzmenge",
+      "Berechnungen",
+      "Tägliches Mora"
+    ],
+    ["Nein", "10 % Talent", "25 % Talent"],
+    ["20 Harz", "40 Harz", "60 Harz"],
+    ["Ohne RNG", "Mit RNG"],
+    [
+      "Dieser Wert beeinflusst die Beute von Bossen, Gegnern und Gedeih der Elemente.",
+      "Einige Talente erhöhen die Ausbeute bei der Herstellung von Materialien.",
+      "Dieser Wert ändert die Anzahl der in Sphären erhaltenen Objekte.",
+      "Sphären unterliegen dem RNG. Diese Option passt die geschätzte Anzahl der Durchläufe an.",
+      "Sphären unterliegen dem RNG. Diese Option passt die geschätzte Anzahl der Durchläufe an.",
+      "Tägliches Mora durch Harzverbrauch (z. B. Sphären oder Bosse)."
+    ],
+    ["Tägliches Mora"]
+  ],
+  "label": [
+    [
+      "Siehe Bereich „Berechnungen“",
+      "Durchschn. Tage für lokale Spezialitäten",
+      "Boss-Siege (ca.)",
+      "Wöchentliche Boss-Siege (ca.)",
+      "Natlan-Aufträge (ca.)",
+      "Tage für Gedeih der Elemente (Anzahl)",
+      "Monatliche Käufe: Krone der Weisheit"
+    ],
+    ["Überschüssige Menge", "(herstellbar)"],
+    [
+      "Zu entfernende 3-Sterne-Waffen (ca.)",
+      "Gegner-Siege (ca.) (Tage)",
+      "Sphären-Durchläufe (ca.)",
+      "Tage für Mora-Gewinn durch Harz"
+    ]
+  ],
+  "faq": [
+    [
+      "Siehe Bereich „Berechnungen“ für die Gesamtkalkulation",
+      ["Im Spiel gibt es", "dieser Spezialität"],
+      "Diese Berechnung hängt von deiner Weltstufe ab. (Kann unter „Persönliche Infos“ geändert werden)",
+      "Diese Berechnung hängt von der gewählten Sphären-Stufe ab. (Kann unter „Persönliche Infos“ geändert werden)",
+      "Natlan-Aufträge gewähren dieses Material beim Abschluss",
+      "Bei Nutzung deiner täglichen 180 Harz nur für das Gedeih der Elemente",
+      "Du kannst jeden Monat eine Krone der Weisheit im In-Game-Shop kaufen"
+    ],
+    [
+      "Der Überschuss sind Materialien zur Herstellung höherwertiger Materialien <b>(Anzahl der höherwertigen Materialien)</b>"
+    ],
+    [
+      "Du erhältst 3 Minderwertiges Verstärkungserze, wenn du eine 3-Sterne-Waffe entfernst",
+      "Diese Berechnung hängt von der Weltstufe und dem gewählten Herstellungsbonus ab. (Kann unter „Persönliche Infos“ geändert werden)",
+      "Diese Berechnung hängt von der Sphären-Stufe und dem gewählten Herstellungsbonus ab. (Kann unter „Persönliche Infos“ geändert werden)"
+    ]
+  ]
+}

@@ -2,7 +2,7 @@
   "html": ["GI: Calculadora de niveles"],
   "header": ["Personajes", "Armas", "Personal", "Ajustes"],
   "footer": [
-    "Hecho por <a href=\"https://crizorr.com\" target=\"_blank\" rel=\"noopener\">@criZorr</a>. Todos los recursos del juego son propiedad de miHoYo.</small>"
+    "Hecho por <a href=\"https://crizorr.com\" target=\"_blank\" rel=\"noopener\">@criZorr</a>. Todos los recursos del juego son propiedad de miHoYo."
   ],
   "static-settings": [
     ["Lenguaje"],
@@ -27,7 +27,7 @@
     ["Calcular niveles"],
     ["Calcular talentos"],
     ["Cancelar", "Guardar", "Borrar"],
-    ["¿Quieres borrar a"]
+    ["¿Quieres borrar a", "?"]
   ],
   "static-weapons": [
     ["Elige un arma"],
@@ -45,7 +45,7 @@
     ["Añadir otro"],
     ["Guarda el actual antes de agregar otro"],
     ["Guarda el actual antes de agregar una copia"],
-    ["¿Quieres borrar"]
+    ["¿Quieres borrar", "?"]
   ],
   "static-personal": [
     ["Información personal"],
@@ -77,7 +77,7 @@
     ["20 de resina", "40 de resina", "60 de resina"],
     ["Sin RNG", "Con RNG"],
     [
-      "Este valor cambia los objetos conseguidos de jefes, enemigos y Líneas ley",
+      "Este valor cambia los objetos conseguidos de jefes, enemigos y brotes de Líneas ley",
       "Hay algunos talentos que incrementan los materiales que se pueden crear",
       "Este valor cambia los objetos obtenidos en dominios",
       "Esto cambiará las veces que tienes que hacer un dominio",
@@ -93,7 +93,7 @@
       "Veces aprox. para derrotar al jefe",
       "Veces aprox. para derrotar al jefe semanal",
       "Veces aprox. para completar misiones de Natlan",
-      "Días aprox. haciendo líneas ley (veces)",
+      "Días aprox. haciendo brotes de líneas ley (veces)",
       "Veces aprox. para comprar una Corona de la sabiduría cada mes"
     ],
     ["Cantidad de excedente", "(se pueden crear)"],
@@ -111,7 +111,7 @@
       "Este cálculo depende de tu nivel de mundo. (Puedes cambiarlo en la sección \"Personal\")",
       "Este cálculo depende del nivel de dominios que elejiste. (Puedes cambiarlo en la sección \"Personal\")",
       "Las misiones de Natlan te dan este material al completarlas",
-      "Usando tus 180 de resina diaria solo en Líneas ley",
+      "Usando tus 180 de resina diaria solo en brotes de Líneas ley",
       "Puedes comprar una Corona de la sabiduría cada mes en la tienda del juego"
     ],
     [

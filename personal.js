@@ -215,7 +215,7 @@ const drawUserData = () => {
       <p class="h5-regular">${userInfo["World"]}
         <div class="faq-container">
           ${svg}          
-          <span class="tooltip">${langData ? langData["dynamic-personal"][4][0] : "This changes the Boss, Enemies and Ley Lines drops"}</span>
+          <span class="tooltip">${langData ? langData["dynamic-personal"][4][0] : "This changes the Boss, Enemies and Ley Line Outcrops drops"}</span>
         </div>
       </p>
     </div>
