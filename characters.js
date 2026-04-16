@@ -553,7 +553,14 @@ const drawModal = (id) => {
         <article class="character-properties">
           <p class="scnd-text"><b>${charactersData[id][`name-${language}`] || charactersData[id].name}</b></p>
           <p class="frst-text">
-            ${charactersData[id].element.slice(0, 1).toUpperCase() + charactersData[id].element.slice(1)}
+            ${
+              langData
+                ? langData[charactersData[id].element] ||
+                  charactersData[id].element.slice(0, 1).toUpperCase() +
+                    charactersData[id].element.slice(1)
+                : charactersData[id].element.slice(0, 1).toUpperCase() +
+                  charactersData[id].element.slice(1)
+            }
             -
             ${weapon}
           </p>

@@ -1,0 +1,142 @@
+{
+  "html": ["GI : Calculateur de niveaux"],
+  "header": ["Personnages", "Armes", "Profil", "Paramètres"],
+  "footer": [
+    "Réalisé par <a href=\"https://crizorr.com\" target=\"_blank\" rel=\"noopener\">@criZorr</a>. Toutes les ressources du jeu sont la propriété de miHoYo."
+  ],
+  "static-settings": [
+    ["Langue"],
+    ["Exporter et importer des données", "Importer", "Exporter"],
+    ["Thème", "Clair", "Auto", "Sombre"]
+  ],
+  "dynamic-settings": ["Exporté !", "Importé !"],
+  "static-index": [
+    ["Choisir un personnage"],
+    ["Élément"],
+    ["Arme"],
+    [
+      "Arc",
+      "Catalyseur",
+      "Épée à deux mains",
+      "Arme d'hast",
+      "Épée à une main"
+    ],
+    ["Qualité"],
+    ["5 étoiles", "4 étoiles"],
+    ["Personnages sélectionnés"],
+    ["Total"],
+    ["Calculs"],
+    ["Matériaux requis et restants"],
+    ["Matériaux requis individuels"]
+  ],
+  "dynamic-index": [
+    ["Calculer les niveaux"],
+    ["Calculer les aptitudes"],
+    ["Annuler", "Enregistrer", "Supprimer"],
+    ["Voulez-vous supprimer", "?"]
+  ],
+  "static-weapons": [
+    ["Choisir une arme"],
+    ["Arme"],
+    [
+      "Arc",
+      "Catalyseur",
+      "Épée à deux mains",
+      "Arme d'hast",
+      "Épée à une main"
+    ],
+    ["Qualité"],
+    ["5 étoiles", "4 étoiles", "3 étoiles", "2 étoiles", "1 étoile"],
+    ["Armes sélectionnées"],
+    ["Calculs"],
+    ["Matériaux requis et restants"],
+    ["Matériaux requis individuels"]
+  ],
+  "dynamic-weapons": [
+    ["5 étoiles", "4 étoiles", "3 étoiles", "2 étoiles", "1 étoile"],
+    ["Ajouter un autre"],
+    ["Enregistrez l'actuel avant d'en ajouter un autre"],
+    ["Enregistrez l'actuel avant d'en ajouter une copie"],
+    ["Voulez-vous supprimer", "?"]
+  ],
+  "static-personal": [
+    ["Informations personnelles"],
+    ["Matériaux obtenus"],
+    ["Calculs"],
+    ["Matériaux requis et restants"],
+    [
+      "Matériaux d'EXP",
+      "Ennemis d'élite",
+      "Ennemis communs",
+      "Boss hebdomadaires",
+      "Boss del monde",
+      "Pierres",
+      "Matériaux d'aptitudes",
+      "Matériaux d'arme",
+      "Produits"
+    ]
+  ],
+  "dynamic-personal": [
+    [
+      "Niveau de monde",
+      "Bonus de synthèse",
+      "Niveau de donjon",
+      "Quantité de résine",
+      "Calculs",
+      "Gain de Moras quotidien"
+    ],
+    ["Non", "Aptitude de 10 %", "Aptitude de 25 %"],
+    ["20 Résines", "40 Résines", "60 Résines"],
+    ["Sans RNG", "Avec RNG"],
+    [
+      "Cette valeur modifie les objets obtenus sur les boss, les ennemis y les Fleurs de la ligne énergétique",
+      "Certaines aptitudes augmentent la quantité de matériaux pouvant être synthétisés",
+      "Cette valeur modifie les objets obtenus dans les donjons",
+      "Cela modifiera le nombre de fois où vous devrez effectuer un donjon",
+      "Les donjons sont soumis au RNG (génération aléatoire). Cette option modifie le nombre approximatif de fois où vous devrez effectuer un donjon",
+      "Les moras que vous obtenez quotidiennement en dépensant uniquement de la résine. Ex : en effectuant des donjons ou en battant un boss."
+    ],
+    ["Moras quotidiennes"]
+  ],
+  "label": [
+    [
+      "Consultez la section Calculs",
+      "Nombre moyen de jours pour collecter les produits locaux",
+      "Nb approx. de combats de boss",
+      "Nb approx. de combats de boss hebdomadaire",
+      "Nb approx. de missions de Natlan à terminer",
+      "Jours approx. de Fleurs de la ligne énergétique (fois)",
+      "Nb approx. d'achats de Couronne de la sagesse par mois"
+    ],
+    ["Quantité excédentaire", "(peuvent être synthétisés)"],
+    [
+      "Armes 3 étoiles approx. à éliminer",
+      "Nombre approx. de fois pour vaincre l'ennemi (jours)",
+      "Nombre approx. de passages en donjon",
+      "Jours approx. de gain de Moras via la résine"
+    ]
+  ],
+  "faq": [
+    [
+      "Consultez la section « Calculs » pour voir les résultats totaux",
+      ["Il y a", "unités de ce produit local en jeu"],
+      "Ce calcul dépend de votre niveau de monde. (Vous pouvez le modifier dans la sección « Personnel »)",
+      "Ce calcul dépend du niveau de donjon sélectionné. (Vous pouvez le modifier dans la section « Personnel »)",
+      "Les quêtes de Natlan permettent d'obtenir ce matériau une fois terminées",
+      "En utilisant vos 180 Résines quotidiennes uniquement pour les Fleurs de la ligne énergétique",
+      "Vous pouvez acheter une Couronne de la sagesse chaque mois dans la boutique du jeu"
+    ],
+    [
+      "L'excédent correspond aux matériaux que vous pouvez utiliser pour synthétiser des matériaux de qualité supérieure <b>(quantité de matériaux de qualité supérieure obtenus)</b>"
+    ],
+    [
+      "Vous pouvez obtenir 3 minerais de renforcement en supprimant une arme 3 étoiles",
+      "Ce calcul dépend de votre niveau de monde et du bonus de synthèse sélectionné. (Vous pouvez les modifier dans la section « Personnel »)",
+      "Ce calcul dépend du niveau de donjon et du bonus de synthèse sélectionnés. (Vous pouvez les modifier dans la section « Personnel »)"
+    ]
+  ],
+  "anemo": "Anémo",
+  "electro": "Électro",
+  "geo": "Géo",
+  "apolocheese": "Je ne maîtrise pas encore parfaitement cette langue, je vous prie de m'excuser pour les éventuelles erreurs. Vous pouvez envoyer vos corrections à contacto@crizorr.com. Merci d'utiliser cette page."
+}
