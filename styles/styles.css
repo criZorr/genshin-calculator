@@ -879,8 +879,6 @@ small {
 .element-img {
   width: 2.5rem;
   height: 2.5rem;
-
-  background-color: var(--first-light-color);
   border-radius: 2.5rem;
 
   & img {
@@ -937,7 +935,6 @@ small {
 }
 
 .btn-element,
-.btn-element-owned,
 .btn-element-info,
 .btn-element-profit {
   display: inline-flex;
@@ -955,7 +952,6 @@ small {
   cursor: pointer;
 }
 
-.btn-element-owned,
 .btn-element-info,
 .btn-element-profit {
   width: 1rem;
@@ -968,7 +964,6 @@ small {
   width: 0.75rem;
 }
 
-.btn-edit-owned,
 .btn-edit-info,
 .btn-edit-profit {
   width: 0.5rem;

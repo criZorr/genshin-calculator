@@ -1,4 +1,5 @@
 import calculateData from "../db/data.js";
+import getRarity from "./getRarity.js";
 
 const d = document;
 
@@ -43,7 +44,9 @@ const specialty = calculateData("specialty"),
   stones = calculateData("stones"),
   talents = calculateData("talentMaterials"),
   weaponMaterial = calculateData("weaponMaterials"),
-  all = calculateData("all");
+  all = calculateData("all"),
+  eliteEnemiesL = calculateData("eliteEnemies").length,
+  commonEnemiesL = calculateData("commonEnemies").length;
 
 let specialtyKeys = Object.keys(specialty);
 let enemiesKeys = [];
@@ -200,7 +203,7 @@ export default function drawTotalItems(
 
   let itemsContent = "";
 
-  all.forEach((el) => {
+  all.forEach((el, index) => {
     if ($localData[el]) {
       let number = $localData[el];
       let stringNumber = number.toLocaleString("ru-RU");
@@ -211,6 +214,17 @@ export default function drawTotalItems(
       let avgFarming = "",
         label = "",
         faq = "";
+
+      let rarity = getRarity(
+        index,
+        eliteEnemiesL,
+        commonEnemiesL,
+        weekBoss.length + 1,
+        boss.length,
+        stones.length,
+        talents.length,
+        weaponMaterial.length,
+      );
 
       if (specialtyKeys.includes(el)) {
         avgFarming = number / specialty[el];
@@ -403,7 +417,7 @@ export default function drawTotalItems(
       let itemContent = `
         <div class="element-info">
           <section class="element-data">
-            <figure class="element-img">
+            <figure class="element-img ${rarity}">
               <img src="./assets/materials/${tempName}.webp" alt="item" />
             </figure>
             <section class="element-props">
@@ -430,7 +444,7 @@ export default function drawTotalItems(
         itemContent = `
           <div class="element-info">
             <section class="element-data">
-              <figure class="element-img">
+              <figure class="element-img ${rarity} ">
                 <img src="./assets/materials/${tempName}.webp" alt="item" />
               </figure>
               <section class="element-props">

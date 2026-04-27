@@ -1,4 +1,5 @@
 import calculateData from "../db/data.js";
+import getRarity from "./getRarity.js";
 
 const d = document;
 const all = calculateData("all");
@@ -9,12 +10,11 @@ const weaponMaterials = calculateData("weaponMaterials"),
   weekBoss = calculateData("weekBoss"),
   specialty = calculateData("specialty"),
   boss = calculateData("boss"),
-  enemiesMaterials = [
-    ...calculateData("commonEnemies"),
-    ...calculateData("eliteEnemies"),
-  ];
+  eliteEnemies = calculateData("eliteEnemies"),
+  commonEnemies = calculateData("commonEnemies");
+
 let craftMaterialsFour = [...stoneMaterials, ...weaponMaterials],
-  craftMaterialsThree = [...talentMaterials, ...enemiesMaterials],
+  craftMaterialsThree = [...talentMaterials, ...commonEnemies, ...eliteEnemies],
   specialtyKeys = Object.keys(specialty);
 
 const noCrafteable = [
@@ -60,7 +60,7 @@ export default function drawTotalExcess(
 
   let itemsContent = "";
 
-  all.forEach((el) => {
+  all.forEach((el, index) => {
     if ($localData[el]) {
       let operation = $localData[el] - $userData[el],
         tocraft = 0;
@@ -77,13 +77,24 @@ export default function drawTotalExcess(
         operation = 0;
       }
 
+      let rarity = getRarity(
+        index,
+        eliteEnemies.length,
+        commonEnemies.length,
+        weekBoss.length + 1,
+        boss.length,
+        stoneMaterials.length,
+        talentMaterials.length,
+        weaponMaterials.length,
+      );
+
       let excess = operation.toLocaleString("ru-RU"),
         craftable = tocraft.toLocaleString("ru-RU");
 
       let itemContent = `
         <div class="element-info">
           <section class="element-data">
-            <figure class="element-img">
+            <figure class="element-img ${rarity}">
               <img src="./assets/materials/${tempName}.webp" alt="item" />
             </figure>
             <section class="element-props">
