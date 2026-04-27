@@ -583,17 +583,20 @@ small {
   }
 }
 
-.card:hover {
+.card:hover,
+.items-card:hover {
   cursor: pointer;
+}
 
-  & .card-bg {
-    overflow: hidden;
-  }
+.card:hover .card-bg,
+.items-card:hover .item-bg {
+  overflow: hidden;
+}
 
-  & .card-img {
-    transform: scale(1.025);
-    filter: drop-shadow(0rem 0rem 0.5rem var(--first-light-color));
-  }
+.card:hover .card-img,
+.items-card:hover img {
+  transform: scale(1.025);
+  filter: drop-shadow(0rem 0rem 0.5rem var(--first-light-color));
 }
 
 .card-bg,

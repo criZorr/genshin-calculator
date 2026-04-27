@@ -720,11 +720,10 @@ d.addEventListener("click", (e) => {
   if (eventClass === $filters) getChecked(filterClasses);
 
   if (
-    eventClass === "card" ||
-    eventClass === "card-img" ||
-    eventClass === "card-name" ||
-    eventClass === "btn-edit" ||
-    eventClass.includes("btn-edit-container")
+    e.target.matches(".card") ||
+    e.target.matches(".card *") ||
+    e.target.matches(".btn-edit-container") ||
+    e.target.matches(".btn-edit-container *")
   ) {
     drawModal(e.target.attributes._id.value);
     getTalents(e.target.attributes._id.value);
@@ -732,8 +731,8 @@ d.addEventListener("click", (e) => {
   }
 
   if (
-    eventClass === "btn-delete" ||
-    eventClass.includes("btn-delete-container")
+    e.target.matches(".btn-delete-container") ||
+    e.target.matches(".btn-delete-container *")
   ) {
     deleteConfirmation(
       e.target.attributes._id.value,

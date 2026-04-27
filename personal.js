@@ -395,17 +395,15 @@ const drawUserMaterial = () => {
           fixedName = all[i].replaceAll('"', "ç"),
           imgName = all[i].replaceAll('"', "").replaceAll(":", "_");
         fragment.classList.add("items-card");
+        fragment.setAttribute("_id", fixedName);
 
         let rarity = getRarity(i);
 
         fragment.innerHTML = `
-          <div class="item-bg ${rarity}">
-            <img src="./assets/materials/${imgName}.webp" alt="${all[i]}" />
+          <div class="item-bg ${rarity}" _id="${fixedName}">
+            <img src="./assets/materials/${imgName}.webp" alt="${all[i]}" _id="${fixedName}"/>
           </div>
-          <h5 class="card-name dark-text">${number}</h5>
-          <button class="btn-element-owned" _id="${fixedName}">
-            <img class="btn-edit-owned" src="./assets/edit.svg" alt="edit" _id="${fixedName}"/>
-          </button>
+          <h5 class="card-name dark-text" _id="${fixedName}">${number}</h5>
         `;
 
         $container.appendChild(fragment);
@@ -661,16 +659,15 @@ const getListElements = () => {
       fixedName = all[i].replaceAll('"', "ç");
     fragment.classList.add("items-card");
     fragment.id = i;
+    fragment.setAttribute("_id", fixedName);
+
     let rarity = getRarity(i);
 
     fragment.innerHTML = `
-      <div class="item-bg ${rarity}">
-        <img src="./assets/materials/${tempName}.webp" alt="${all[i]}" />
+      <div class="item-bg ${rarity}" _id="${fixedName}">
+        <img src="./assets/materials/${tempName}.webp" alt="${all[i]}" _id="${fixedName}"/>
       </div>
-      <h5 _name="${tempName}" class="card-name dark-text"></h5>
-      <button class="btn-element-owned" _id="${fixedName}">
-        <img class="btn-edit-owned" src="./assets/edit.svg" alt="edit" _id="${fixedName}"/>
-      </button>
+      <h5 _name="${tempName}" class="card-name dark-text" _id="${fixedName}"></h5>
     `;
     $itemsContainer.appendChild(fragment);
   }
@@ -698,7 +695,7 @@ d.addEventListener("click", (e) => {
 
   if (eventClass === $filters) getChecked(filterClasses);
 
-  if (eventClass === "btn-element-owned" || eventClass === "btn-edit-owned") {
+  if (e.target.matches(".items-card") || e.target.matches(".items-card *")) {
     drawModalElement(e.target.attributes["_id"].value);
     $modal.style.visibility = "visible";
     $modal.style.opacity = "1";

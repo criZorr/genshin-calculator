@@ -184,19 +184,6 @@
   border-radius: 0.25rem 0.25rem 1rem 0;
 }
 
-.card:hover {
-  cursor: pointer;
-}
-
-.card:hover .card-bg {
-  overflow: hidden;
-}
-
-.card:hover .card-img {
-  transform: scale(1.025);
-  filter: drop-shadow(0rem 0rem 0.5rem var(--first-light-color));
-}
-
 .items-card .card-name {
   max-width: 95%;
   text-overflow: ellipsis;
