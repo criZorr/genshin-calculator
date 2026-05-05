@@ -1,0 +1,127 @@
+{
+  "html": ["GI: Calcolatore livelli"],
+  "header": ["Personaggi", "Armi", "Personalizzato", "Impostazioni"],
+  "footer": [
+    "Creato da <a href=\"https://crizorr.com\" target=\"_blank\" rel=\"noopener\">@criZorr</a>. Tutti i contenuti del gioco sono di proprietà di miHoYo."
+  ],
+  "static-settings": [
+    ["Lingua"],
+    ["Esporta e importa dati", "Importa", "Esporta"],
+    ["Tema", "Chiaro", "Auto", "Scuro"]
+  ],
+  "dynamic-settings": ["Esportato!", "Importato!"],
+  "static-index": [
+    ["Scegli un personaggio"],
+    ["Elemento"],
+    ["Arma"],
+    ["Arco", "Catalizzatore", "Claymore", "Lancia", "Spada"],
+    ["Rarità"],
+    ["5 stelle", "4 stelle"],
+    ["Personaggi selezionati"],
+    ["Totale"],
+    ["Calcoli"],
+    ["Materiali necessari e rimanenti"],
+    ["Materiali necessari individuali"]
+  ],
+  "dynamic-index": [
+    ["Calcola livelli"],
+    ["Calcola talenti"],
+    ["Annulla", "Salva", "Elimina"],
+    ["Vuoi eliminare", "?"]
+  ],
+  "static-weapons": [
+    ["Scegli un'arma"],
+    ["Arma"],
+    ["Arco", "Catalizzatore", "Claymore", "Lancia", "Spada"],
+    ["Rarità"],
+    ["5 stelle", "4 stelle", "3 stelle", "2 stelle", "1 stella"],
+    ["Armi selezionate"],
+    ["Calcoli"],
+    ["Materiali necessari e rimanenti"],
+    ["Materiali necessari individuali"]
+  ],
+  "dynamic-weapons": [
+    ["5 stelle", "4 stelle", "3 stelle", "2 stelle", "1 stella"],
+    ["Aggiungi un altro"],
+    ["Salva quello attuale prima di aggiungerne un altro"],
+    ["Salva quello attuale prima di aggiungerne una copia"],
+    ["Vuoi eliminare", "?"]
+  ],
+  "static-personal": [
+    ["Informazioni personali"],
+    ["Materiali ottenuti"],
+    ["Calcoli"],
+    ["Materiali necessari e rimanenti"],
+    [
+      "Materiali ESP",
+      "Nemici d'élite",
+      "Nemici comuni",
+      "Boss settimanali",
+      "Boss regionali",
+      "Gemme",
+      "Materiali per i talenti",
+      "Materiali per i talenti",
+      "Locali"
+    ]
+  ],
+  "dynamic-personal": [
+    [
+      "Livello del mondo",
+      "Bonus di creazione",
+      "Livello dei domini",
+      "Quantità di Resina",
+      "Calcoli",
+      "Mora giornalieri ottenuti"
+    ],
+    ["No", "Talento del 10%", "Talento del 25%"],
+    ["20 Resina", "40 Resina", "60 Resina"],
+    ["Senza RNG", "Con RNG"],
+    [
+      "Questo valore modifica gli oggetti ottenuti da boss, nemici e fioriture geomantiche",
+      "Alcuni talenti aumentano la quantità di materiali che è possibile creare",
+      "Questo valore modifica gli oggetti ottenuti nei domini",
+      "Questo modificherà il numero di volte in cui dovrai completare un dominio",
+      "I domini sono soggetti al RNG (generazione casuale). Questa opzione modifica il numero approssimativo di volte in cui è necessario completare un dominio",
+      "I Mora ottenuti giornalmente spendendo solo Resina. Es: completando domini o sconfiggendo boss"
+    ],
+    ["Mora giornalieri"]
+  ],
+  "label": [
+    [
+      "Controlla la sezione Calcoli",
+      "Giorni medi per raccogliere le specialità locali",
+      "N. approx. di sfide contro il boss",
+      "N. approx. di sfide contro il boss settimanale",
+      "N. approx. di incarichi di Natlan da completare",
+      "Giorni approx. con fioriture geomantiche (n. sfide)",
+      "N. approx. per acquistare una Corona della saggezza ogni mese"
+    ],
+    ["Quantità in eccesso", "(si possono creare)"],
+    [
+      "Armi a 3 stelle approx. da eliminare",
+      "N. approx. di nemici da sconfiggere (giorni)",
+      "N. approx. di sfide del dominio",
+      "Giorni approx. per ottenere Mora spendendo Resina"
+    ]
+  ],
+  "faq": [
+    [
+      "Controlla la sezione Calcoli per visualizzare i totali",
+      ["Nel gioco sono presenti", "unità di questa specialità"],
+      "Questo calcolo dipende dal tuo Livello del mondo (puoi modificarlo nella sezione 'Personalizzato')",
+      "Questo calcolo dipende dal livello dei domini selezionato (puoi modificarlo nella sezione 'Personalizzato')",
+      "Gli incarichi di Natlan forniscono questo materiale al completamento",
+      "Utilizzando le tue 180 unità di Resina giornaliere solo per le fioriture geomantiche",
+      "Puoi acquistare una Corona della saggezza ogni mese nel negozio del gioco"
+    ],
+    [
+      "L'eccedenza indica i materiali che puoi usare per creare risorse di rarità superiore <b>(quantità di materiali di rarità superiore)</b>"
+    ],
+    [
+      "Puoi ottenere 3 Minerali di potenziamento mistici eliminando un'arma a 3 stelle",
+      "Questo calcolo dipende dal Livello del mondo y dal bonus di creazione selezionati (puoi modificarli nella sezione 'Personalizzato')",
+      "Questo calcolo dipende dal livello del dominio e dal bonus di creazione selezionati (puoi modificarli nella sezione 'Personalizzato')"
+    ]
+  ],
+  "apolocheese": "Non parlo ancora perfettamente questa lingua, mi scuso per eventuali errori. Potete inviare le vostre correzioni a contacto@crizorr.com. Grazie per aver scelto di utilizzare questo sito."
+}
