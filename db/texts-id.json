@@ -1,0 +1,127 @@
+{
+  "html": ["GI: Kalkulator Level"],
+  "header": ["Karakter", "Senjata", "Kustom", "Pengaturan"],
+  "footer": [
+    "Dibuat oleh <a href=\"https://crizorr.com\" target=\"_blank\" rel=\"noopener\">@criZorr</a>. Semua aset game adalah milik miHoYo."
+  ],
+  "static-settings": [
+    ["Bahasa"],
+    ["Ekspor & Impor Data", "Impor", "Ekspor"],
+    ["Tema", "Terang", "Otomatis", "Gelap"]
+  ],
+  "dynamic-settings": ["Berhasil Diekspor!", "Berhasil Diimpor!"],
+  "static-index": [
+    ["Pilih Karakter"],
+    ["Elemen"],
+    ["Senjata"],
+    ["Bow", "Catalyst", "Claymore", "Polearm", "Sword"],
+    ["Kualitas"],
+    ["Bintang 5", "Bintang 4"],
+    ["Karakter Terpilih"],
+    ["Total"],
+    ["Kalkulasi"],
+    ["Bahan yang Dibutuhkan & Sisa"],
+    ["Kebutuhan Bahan Individu"]
+  ],
+  "dynamic-index": [
+    ["Hitung Level"],
+    ["Hitung Talenta"],
+    ["Batal", "Simpan", "Hapus"],
+    ["Apakah Anda yakin ingin menghapus", "?"]
+  ],
+  "static-weapons": [
+    ["Pilih Senjata"],
+    ["Senjata"],
+    ["Bow", "Catalyst", "Claymore", "Polearm", "Sword"],
+    ["Kualitas"],
+    ["Bintang 5", "Bintang 4", "Bintang 3", "Bintang 2", "Bintang 1"],
+    ["Senjata Terpilih"],
+    ["Kalkulasi"],
+    ["Bahan yang Dibutuhkan & Sisa"],
+    ["Kebutuhan Bahan Individu"]
+  ],
+  "dynamic-weapons": [
+    ["Bintang 5", "Bintang 4", "Bintang 3", "Bintang 2", "Bintang 1"],
+    ["Tambah lagi"],
+    ["Simpan yang ada sekarang sebelum menambah yang baru"],
+    ["Simpan yang ada sekarang sebelum menyalin"],
+    ["Apakah Anda yakin ingin menghapus", "?"]
+  ],
+  "static-personal": [
+    ["Informasi Pribadi"],
+    ["Bahan yang Didapat"],
+    ["Kalkulasi"],
+    ["Bahan yang Dibutuhkan & Sisa"],
+    [
+      "Bahan EXP",
+      "Musuh Elit",
+      "Musuh Biasa",
+      "Boss Mingguan",
+      "Boss Dunia",
+      "Stones",
+      "Bahan Talenta",
+      "Bahan Senjata",
+      "Spesialisasi Lokal"
+    ]
+  ],
+  "dynamic-personal": [
+    [
+      "World Level",
+      "Bonus Crafting",
+      "Level Domain",
+      "Jumlah Resin",
+      "Kalkulasi",
+      "Pendapatan Mora Harian"
+    ],
+    ["Tidak", "Talenta 10%", "Talenta 25%"],
+    ["20 Resin", "40 Resin", "60 Resin"],
+    ["Tanpa RNG", "Dengan RNG"],
+    [
+      "Nilai ini mengubah item yang didapat dari boss, musuh, y Ley Line Outcrop",
+      "Beberapa talenta dapat meningkatkan jumlah bahan yang dibuat (crafting)",
+      "Nilai ini mengubah item yang didapat dari domain",
+      "Ini akan mengubah jumlah percobaan domain yang diperlukan",
+      "Domain memiliki RNG. Opsi ini mengubah perkiraan jumlah percobaan domain yang diperlukan",
+      "Mora yang didapat setiap hari hanya dengan memakai Resin. Contoh: menyelesaikan domain o mengalahkan boss"
+    ],
+    ["Mora Harian"]
+  ],
+  "label": [
+    [
+      "Lihat di bagian Kalkulasi",
+      "Rata-rata hari untuk mengumpulkan Spesialisasi Lokal",
+      "Estimasi jumlah mengalahkan Boss",
+      "Estimasi jumlah mengalahkan Boss Mingguan",
+      "Estimasi jumlah menyelesaikan Misi Natlan",
+      "Estimasi hari menyelesaikan Ley Line Outcrop (kali)",
+      "Estimasi jumlah untuk membeli Crown of Insight setiap bulan"
+    ],
+    ["Jumlah Sisa", "(bisa dibuat/craft)"],
+    [
+      "Estimasi senjata bintang 3 yang perlu dihancurkan",
+      "Estimasi jumlah mengalahkan musuh (hari)",
+      "Estimasi jumlah percobaan Domain",
+      "Estimasi hari mendapatkan Mora sambil memakai Resin"
+    ]
+  ],
+  "faq": [
+    [
+      "Lihat bagian Kalkulasi para melihat total kalkulasi",
+      ["Di dalam game terdapat", "spesialisasi ini"],
+      "Kalkulasi ini tergantung pada World Level Anda. (Dapat diubah di bagian \"Kustom\")",
+      "Kalkulasi ini tergantung pada Level Domain yang dipilih. (Dapat diubah di bagian \"Kustom\")",
+      "Misi Natlan memberikan bahan ini setelah diselesaikan",
+      "Menggunakan 180 Resin harian hanya untuk Ley Line Outcrop",
+      "Anda dapat membeli Crown of Insight setiap bulan di Toko (Shop)"
+    ],
+    [
+      "Sisa adalah bahan yang dapat digunakan untuk membuat (craft) bahan kualitas lebih tinggi <b>(jumlah bahan kualitas lebih tinggi)</b>"
+    ],
+    [
+      "Anda bisa mendapatkan 3 Enhancement Ore saat menghancurkan senjata bintang 3",
+      "Kalkulasi ini tergantung pada World Level dan Bonus Crafting yang dipilih. (Dapat diubah di bagian \"Kustom\")",
+      "Kalkulasi ini tergantung pada Level Domain dan Bonus Crafting yang dipilih. (Dapat diubah di bagian \"Kustom\")"
+    ]
+  ],
+  "apolocheese": "Saya belum sepenuhnya menguasai bahasa ini, mohon maaf jika ada kesalahan. Silakan kirimkan koreksi ke contacto@crizorr.com. Terima kasih telah menggunakan situs ini."
+}
