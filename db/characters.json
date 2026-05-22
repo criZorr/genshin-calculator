@@ -3000,5 +3000,86 @@
       "Countermeasure: Lumi's Battle Cry!",
       "Memo: Survival Guide in Extreme Conditions"
     ]
+  },
+  "119": {
+    "name": "Nicole",
+    "name-ja": "ニコ",
+    "name-ko": "니콜",
+    "name-ru": "Николь",
+    "name-zh": "尼可",
+    "birthday": "29-09",
+    "region": "Nod-Krai",
+    "quality": "5-stars",
+    "element": "pyro",
+    "stone": "Agnidus Agate",
+    "weapon": "catalyst",
+    "specialty-material": "Pine Amber",
+    "enemy-material": [
+      "Tattered Warrant",
+      "Immaculate Warrant",
+      "Frost-Etched Warrant"
+    ],
+    "boss-material": "Remnant of the Dreadwing",
+    "weekly-boss": "Counterfeit Resin",
+    "domain-material": "Elysium",
+    "talents": [
+      "Allegoria",
+      "Revelation: Uncreated Light",
+      "Revelation: Ladder of Divine Ascent"
+    ]
+  },
+  "120": {
+    "name": "Prune",
+    "name-ja": "プルーネ",
+    "name-ko": "프루네",
+    "name-ru": "Прюн",
+    "name-zh": "布伦妮",
+    "birthday": "20-11",
+    "region": "Mondstadt",
+    "quality": "4-stars",
+    "element": "anemo",
+    "stone": "Vayuda Turquoise",
+    "weapon": "catalyst",
+    "specialty-material": "Winter Icelea",
+    "enemy-material": [
+      "Treasure Hoarder Insignia",
+      "Silver Raven Insignia",
+      "Golden Raven Insignia"
+    ],
+    "boss-material": "Radiant Antler",
+    "weekly-boss": "Mask of the Virtuous Doctor",
+    "domain-material": "Resistance",
+    "talents": [
+      "Badaboom! Hexbuster Hammer",
+      "Ring-A-Ding-Ding! Hexhunter Chime",
+      "The Bell Tolls! The Hunt Is On!"
+    ]
+  },
+  "121": {
+    "name": "Lohen",
+    "name-ja": "ローエン",
+    "name-ko": "로엔",
+    "name-ru": "Лоэн",
+    "name-zh": "洛恩",
+    "birthday": "03-04",
+    "region": "Mondstadt",
+    "quality": "5-stars",
+    "element": "cryo",
+    "stone": "Shivada Jade",
+    "weapon": "polearm",
+    "specialty-material": "Etherwing Moth",
+    "enemy-material": [
+      "Firm Arrowhead",
+      "Sharp Arrowhead",
+      "Weathered Arrowhead"
+    ],
+    "boss-material": "Prismatic Severed Tail",
+    "weekly-boss": "Ascended Sample: Knight",
+    "domain-material": "Resistance",
+    "talents": [
+      "Spear of Favonius — Broken Oath",
+      "Unforeseen Strike",
+      "Manifest Judgment"
+    ]
   }
 }

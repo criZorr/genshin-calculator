@@ -478,6 +478,9 @@ export default function calculateData(parameter) {
     "Mask of the Virtuous Doctor",
     "Madman's Restraint",
     "Elixir of the Heretic",
+    "Counterfeit Resin",
+    "Twisted Withered Branch",
+    "Profaned Sprout",
   ];
 
   const special = ["The Cornerstone of Stars and Flames"];

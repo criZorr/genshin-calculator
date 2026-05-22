@@ -4542,5 +4542,47 @@
       "Flare of Long Night Flint",
       "Blaze of Long Night Flint"
     ]
+  },
+  "232": {
+    "name": "Angelos' Heptades",
+    "quality": "5-stars",
+    "weapon": "catalyst",
+    "enemy-material": [
+      "Broken Drive Shaft",
+      "Reinforced Drive Shaft",
+      "Precision Drive Shaft"
+    ],
+    "special-enemy-material": [
+      "Faded Flaming Hilt",
+      "Fractured Flaming Hilt",
+      "Jeweled Flaming Hilt"
+    ],
+    "domain-material": [
+      "Artful Device Fragment",
+      "Artful Device Replica",
+      "Artful Device Inheritance",
+      "Artful Device Wish"
+    ]
+  },
+  "233": {
+    "name": "Disaster and Remorse",
+    "quality": "5-stars",
+    "weapon": "polearm",
+    "enemy-material": [
+      "Whopperflower Nectar",
+      "Shimmering Nectar",
+      "Energy Nectar"
+    ],
+    "special-enemy-material": [
+      "Lightless Bone",
+      "Glowing Remains",
+      "Radiant Exoskeleton"
+    ],
+    "domain-material": [
+      "Tile of Decarabian's Tower",
+      "Debris of Decarabian's City",
+      "Fragment of Decarabian's Epic",
+      "Scattered Piece of Decarabian's Dream"
+    ]
   }
 }

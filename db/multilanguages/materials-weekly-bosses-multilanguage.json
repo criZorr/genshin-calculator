@@ -598,5 +598,50 @@
     "tr": "Sapkının İksiri",
     "vi": "Lọ Thuốc Của Dị Đoan",
     "zh": "异端的瓶剂"
+  },
+  "Counterfeit Resin": {
+    "de": "Gefälschtes Harz",
+    "es": "Resina falsa",
+    "fr": "Résine contrefaite",
+    "id": "Counterfeit Resin",
+    "it": "Resina contraffatta",
+    "ja": "偽りの樹脂",
+    "ko": "거짓된 레진",
+    "pt": "Resina Falsificada",
+    "ru": "Поддельная смола",
+    "th": "Counterfeit Resin",
+    "tr": "Sahte Reçine",
+    "vi": "Nhựa Cây Giả Tạo",
+    "zh": "赝作的树脂"
+  },
+  "Twisted Withered Branch": {
+    "de": "Verdrehter verdorrter Ast",
+    "es": "Rama marchita retorcida",
+    "fr": "Branche flétrie et tordue",
+    "id": "Twisted Withered Branch",
+    "it": "Ramo avvizzito contorto",
+    "ja": "歪曲した枯れ枝",
+    "ko": "뒤틀린 가지",
+    "pt": "Galho Seco Retorcido",
+    "ru": "Искажённая сухая ветка",
+    "th": "Twisted Withered Branch",
+    "tr": "Kurumuş Çarpık Dal",
+    "vi": "Cành Khô Vặn Xoắn",
+    "zh": "扭曲的枯枝"
+  },
+  "Profaned Sprout": {
+    "de": "Entweihter Spross",
+    "es": "Brote blasfemo",
+    "fr": "Pousse profane",
+    "id": "Profaned Sprout",
+    "it": "Germoglio profanato",
+    "ja": "冒涜の新芽",
+    "ko": "모독의 새싹",
+    "pt": "Broto Profano",
+    "ru": "Осквернённый росток",
+    "th": "Profaned Sprout",
+    "tr": "Kirlenmiş Filiz",
+    "vi": "Chồi Non Báng Bổ",
+    "zh": "亵渎的新芽"
   }
 }
