@@ -360,7 +360,7 @@ const drawModal = (ogId) => {
           <img class="card-img" src="./assets/weapons/${weaponsData[id].name.replaceAll('"', "")}.webp" alt="${weaponsData[id].name}">
         </div>
         <article class="character-properties">
-          <p class="scnd-text"><b>${weaponsLanguage ? weaponsLanguage[weaponsData[id].name] : weaponsData[id].name}</b></p>
+          <p class="scnd-text"><b>${weaponsLanguage ? weaponsLanguage[weaponsData[id].name] || weaponsData[id].name : weaponsData[id].name}</b></p>
           <p class="frst-text">
             ${type}
             -
