@@ -251,12 +251,12 @@ export default function drawItems(
         if (el === "Mora") {
           avgFarming = $localData[id][el] / leyMora;
           let a = Math.ceil(avgFarming);
-          avgFarming = `${Math.ceil(a / 9)} (${a})`;
+          avgFarming = `${a} (${Math.ceil(a / 9)})`;
           if (staticData) {
             label = staticData["label"][0][5];
             faq = staticData["faq"][0][5];
           } else {
-            label = "Approx. days doing Ley Line Outcrops (times)";
+            label = "Approx. times doing Ley Line Outcrops (days)";
             faq = "Only spending all your 180 daily resin in Ley Line Outcrops";
           }
         }

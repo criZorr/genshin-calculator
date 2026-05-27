@@ -282,7 +282,7 @@ export default function drawTotalItems(
           label = staticData["label"][0][5];
           faq = staticData["faq"][0][5];
         } else {
-          label = "Approx. days doing Ley Line Outcrops (times)";
+          label = "Approx. times doing Ley Line Outcrops (days)";
           faq = "Only spending all your 180 daily resin in Ley Line Outcrops";
         }
       }
@@ -311,7 +311,7 @@ export default function drawTotalItems(
           label = staticData["label"][0][5];
           faq = staticData["faq"][0][5];
         } else {
-          label = "Approx. days doing Ley Line Outcrops (times)";
+          label = "Approx. times doing Ley Line Outcrops (days)";
           faq = "Only spending all your 180 daily resin in Ley Line Outcrops";
         }
       }
