@@ -209,7 +209,7 @@ const drawUserData = () => {
   $container.innerHTML = `
     <div class="user-data">
       <div class="user-parameter-header">
-        <h5>${langData ? langData["dynamic-personal"][0][0] : "World Level"}</h5>
+        <h5>${langData ? langData["dynamic-personal"][0][0] : "World Rank"}</h5>
         <button class="btn-element-info" _id="World" _name="World Level">
           <img class="btn-edit-info" src="./assets/edit.svg" alt="edit"  _id="World" _name="World Level"/>
         </button>

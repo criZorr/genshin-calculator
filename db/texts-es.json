@@ -71,7 +71,7 @@
       "Nivel de dominios",
       "Cantidad de resina",
       "Cálculos",
-      "Ganancia de Mora diaria"
+      "Ganancia diaria de Mora"
     ],
     ["No", "Talento del 10%", "Talento del 25%"],
     ["20 de resina", "40 de resina", "60 de resina"],
@@ -109,7 +109,7 @@
       "Mira en la sección de Cálculos para ver los cálculos totales",
       ["En el juego hay", "de esta especialidad"],
       "Este cálculo depende de tu nivel de mundo. (Puedes cambiarlo en la sección \"Personal\")",
-      "Este cálculo depende del nivel de dominios que elejiste. (Puedes cambiarlo en la sección \"Personal\")",
+      "Este cálculo depende del nivel de dominios que elegiste. (Puedes cambiarlo en la sección \"Personal\")",
       "Las misiones de Natlan te dan este material al completarlas",
       "Usando tus 180 de resina diaria solo en brotes de Líneas ley",
       "Puedes comprar una Corona de la sabiduría cada mes en la tienda del juego"
