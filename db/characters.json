@@ -3081,5 +3081,28 @@
       "Unforeseen Strike",
       "Manifest Judgment"
     ]
+  },
+  "122": {
+    "name": "Sandrone",
+    "birthday": "",
+    "region": "Fontaine",
+    "quality": "5-stars",
+    "element": "cryo",
+    "stone": "Shivada Jade",
+    "weapon": "claymore",
+    "specialty-material": "Subdetection Unit",
+    "enemy-material": [
+      "Broken Drive Shaft",
+      "Reinforced Drive Shaft",
+      "Precision Drive Shaft"
+    ],
+    "boss-material": "Plume of the Fallen Watcher",
+    "weekly-boss": "Madman's Restraint",
+    "domain-material": "Vagrancy",
+    "talents": [
+      "Formule Phenomenale: Self-Evident Proposition",
+      "Formule Phenomenale: Differential Analysis",
+      "Formule Phenomenale: Q.E.D."
+    ]
   }
 }

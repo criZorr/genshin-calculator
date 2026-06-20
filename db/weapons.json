@@ -4584,5 +4584,26 @@
       "Fragment of Decarabian's Epic",
       "Scattered Piece of Decarabian's Dream"
     ]
+  },
+  "234": {
+    "name": "A Teaspoon of Transcendence",
+    "quality": "5-stars",
+    "weapon": "claymore",
+    "enemy-material": [
+      "Tattered Warrant",
+      "Immaculate Warrant",
+      "Frost-Etched Warrant"
+    ],
+    "special-enemy-material": [
+      "Fractured Lunar Iron",
+      "Depleted  Lunar Iron",
+      "Unblemished Lunar Iron"
+    ],
+    "domain-material": [
+      "Sundered Glory of the Far-North Scions",
+      "Unyielding Delusion of the Far-North Scions",
+      "Oblation of the Far-North Scions",
+      "Aureate Radiance of the Far-North Scions"
+    ]
   }
 }
