@@ -611,7 +611,7 @@ const getListElements = () => {
 
 if (language !== "en") {
   langData = await getData(`./db/texts-${language}.json`);
-  langMaterials = await getData(`./db/materials-${language}.json`);
+  langMaterials = await getData(`./db/materials/materials-${language}.json`);
 }
 
 drawUserMaterial();

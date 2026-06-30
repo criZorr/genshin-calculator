@@ -103,36 +103,22 @@ export default function drawItems(
 ) {
   getCalculations();
   const $container = d.querySelector(classContainer),
-    $optionsContainer = d.querySelector(classOptions);
+    $optionsContainer = d.querySelector(classOptions),
+    $fragmentOptions = d.createDocumentFragment(),
+    $fragmentCards = d.createDocumentFragment();
   $container.innerHTML = "";
   $optionsContainer.innerHTML = "";
 
   let $localData = JSON.parse(localStorage.getItem(localVariable)),
-    ogKeys = Object.keys($localData);
+    ogKeys = Object.keys($localData),
+    optionsObj = {};
 
   let keys = ogKeys.map((e) => {
-    if (e.includes("_")) {
-      e = e.slice(0, e.indexOf("_"));
-    }
+    if (e.includes("_")) e = e.slice(0, e.indexOf("_"));
     return e;
   });
 
   let names = keys.map((e) => data[e].name);
-  names = names.sort();
-
-  let keysSorted = [],
-    keysSeen = [];
-
-  names.forEach((e) => {
-    for (let i = 0; i < names.length; i++) {
-      if (!keysSeen.includes(ogKeys[i])) {
-        if (e === data[keys[i]].name) {
-          keysSorted.push(ogKeys[i]);
-          keysSeen.push(ogKeys[i]);
-        }
-      }
-    }
-  });
 
   let optionTotal = d.createElement("option");
   optionTotal.setAttribute("value", "Total");
@@ -141,7 +127,7 @@ export default function drawItems(
 
   for (let i = 0; i < keys.length; i++) {
     let name = names[i],
-      id = keysSorted[i],
+      id = ogKeys[i],
       nameLan = name;
 
     if (lang !== "en" && flag) {
@@ -301,16 +287,27 @@ export default function drawItems(
 
     itemsContainer.innerHTML = itemsContent;
 
+    optionsObj[`${nameLan}${id}`] = [name, HeaderContent, itemsContainer, id];
+  }
+
+  let sortedKeys = Object.keys(optionsObj).sort();
+
+  sortedKeys.forEach((key) => {
+    let option = d.createElement("option"),
+      name = key.replace(optionsObj[key][3], "");
+
+    option.setAttribute("value", optionsObj[key][0]);
+    option.innerHTML = name;
+    $fragmentOptions.appendChild(option);
+
     let card = d.createElement("section");
     card.classList.add("card-individual", "bg-snd");
-    card.id = name;
-    card.innerHTML = HeaderContent;
-    card.appendChild(itemsContainer);
-    $container.appendChild(card);
+    card.id = optionsObj[key][0];
+    card.innerHTML = optionsObj[key][1];
+    card.appendChild(optionsObj[key][2]);
+    $fragmentCards.appendChild(card);
+  });
 
-    let option = d.createElement("option");
-    option.setAttribute("value", name);
-    option.innerHTML = nameLan;
-    $optionsContainer.appendChild(option);
-  }
+  $optionsContainer.appendChild($fragmentOptions);
+  $container.appendChild($fragmentCards);
 }

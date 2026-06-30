@@ -768,8 +768,8 @@ d.addEventListener("keydown", (e) => {
 let charactersData = await getData("./db/characters.json");
 if (language !== "en") {
   langData = await getData(`./db/texts-${language}.json`);
-  langTalents = await getData(`./db/talents-${language}.json`);
-  langMaterials = await getData(`./db/materials-${language}.json`);
+  langTalents = await getData(`./db/talents/talents-${language}.json`);
+  langMaterials = await getData(`./db/materials/materials-${language}.json`);
 }
 
 !localStorage.getItem("characterData")

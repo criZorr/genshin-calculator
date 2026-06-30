@@ -557,8 +557,8 @@ let weaponsData = await getData("./db/weapons.json");
 
 if (language !== "en") {
   langData = await getData(`./db/texts-${language}.json`);
-  weaponsLanguage = await getData(`./db/weapons-${language}.json`);
-  langMaterials = await getData(`./db/materials-${language}.json`);
+  weaponsLanguage = await getData(`./db/weapons/weapons-${language}.json`);
+  langMaterials = await getData(`./db/materials/materials-${language}.json`);
 }
 
 !localStorage.getItem("weaponData")
