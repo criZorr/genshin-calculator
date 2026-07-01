@@ -1348,5 +1348,50 @@
     "tr": "Sönük Alevli Kabza",
     "vi": "Kiếm Lửa Phai Màu",
     "zh": "失色的焰剑"
+  },
+  "Fractured Lunar Iron": {
+    "de": "Zerbrochenes Mond-Eisen",
+    "es": "Hierro lunar fracturado",
+    "fr": "Fer de lune endommagé",
+    "id": "Fractured Lunar Iron",
+    "it": "Ferro lunare frammentato",
+    "ja": "欠損した月の鉄",
+    "ko": "부서진 달의 철",
+    "pt": "Ferro Lunar Fraturado",
+    "ru": "Повреждённое лунное железо",
+    "th": "Fractured Lunar Iron",
+    "tr": "Kırık Ay Demiri",
+    "vi": "Sắt Mặt Trăng Hư Tổn",
+    "zh": "残损的月铁"
+  },
+  "Depleted Lunar Iron": {
+    "de": "Erschöpftes Mond-Eisen",
+    "es": "Hierro lunar mermado",
+    "fr": "Fer de lune vide",
+    "id": "Depleted Lunar Iron",
+    "it": "Ferro lunare consumato",
+    "ja": "劣化した月の鉄",
+    "ko": "소진된 달의 철",
+    "pt": "Ferro Lunar Esgotado",
+    "ru": "Угасшее лунное железо",
+    "th": "Depleted Lunar Iron",
+    "tr": "Sönmüş Ay Demiri",
+    "vi": "Sắt Mặt Trăng Cạn Kiệt",
+    "zh": "空竭的月铁"
+  },
+  "Unblemished Lunar Iron": {
+    "de": "Makelloses Mond-Eisen",
+    "es": "Hierro lunar inmaculado",
+    "fr": "Fer de lune immaculé",
+    "id": "Unblemished Lunar Iron",
+    "it": "Ferro lunare immacolato",
+    "ja": "穢れなき月の鉄",
+    "ko": "순수한 달의 철",
+    "pt": "Ferro Lunar Imaculado",
+    "ru": "Безупречное лунное железо",
+    "th": "Unblemished Lunar Iron",
+    "tr": "Kusursuz Ay Demiri",
+    "vi": "Sắt Mặt Trăng Thuần Khiết",
+    "zh": "无秽的月铁"
   }
 }

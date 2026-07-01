@@ -328,6 +328,9 @@ export default function calculateData(parameter) {
     "Faded Flaming Hilt",
     "Fractured Flaming Hilt",
     "Jeweled Flaming Hilt",
+    "Fractured Lunar Iron",
+    "Depleted Lunar Iron",
+    "Unblemished Lunar Iron",
   ];
 
   const specialty = {
@@ -388,6 +391,7 @@ export default function calculateData(parameter) {
     "Winter Icelea": 69,
     "Pine Amber": 72,
     "Etherwing Moth": 80,
+    "Teardrop of the Moon": 74,
   };
 
   const boss = [
@@ -856,6 +860,13 @@ export default function calculateData(parameter) {
       [
         2.6854, 2.8623, 3.1282, 6.2671, 6.9053, 10.0566, 11.1191, 11.7559,
         11.9687, 12.3939, 31,
+      ],
+    ],
+    30: [
+      ["Fractured Lunar Iron", "Depleted Lunar Iron", "Unblemished Lunar Iron"],
+      [
+        2.6854, 2.8623, 3.1282, 6.2671, 6.9053, 10.0566, 11.1191, 11.7559,
+        11.9687, 12.3939, 37,
       ],
     ],
   };

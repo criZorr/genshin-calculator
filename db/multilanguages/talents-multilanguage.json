@@ -5444,5 +5444,50 @@
     "tr": "Yargının Tecellisi",
     "vi": "Hình Phạt Toại Nguyện",
     "zh": "裁罚遂成"
+  },
+  "Formule Phenomenale: Self-Evident Proposition": {
+    "de": "Ereignisformel – Selbstverständlicher Beweis",
+    "es": "Ecuación fenomenológica: Deducción autoevidente",
+    "fr": "Formule phénoménale : Proposition auto-évidente",
+    "id": "Formule Phenomenale: Self-Evident Proposition",
+    "it": "Formula fenomenale: Proposizione autoevidente",
+    "ja": "事象式：自明の演繹",
+    "ko": "현상 계산식・명확한 추론",
+    "pt": "Fórmula Matemática: Prova Evidente",
+    "ru": "Формула явлений: Очевидное заключение",
+    "th": "Formule Phenomenale: Self-Evident Proposition",
+    "tr": "Olağanüstü Formül: Tartışmasız Önerme",
+    "vi": "Công Thức Hiện Tượng - Mệnh Đề Hiển Nhiên",
+    "zh": "事象数式・自明演绎"
+  },
+  "Formule Phenomenale: Differential Analysis": {
+    "de": "Ereignisformel – Gleitende Analyse",
+    "es": "Ecuación fenomenológica: Análisis diferencial",
+    "fr": "Formule phénoménale : Analyse différentielle",
+    "id": "Formule Phenomenale: Differential Analysis",
+    "it": "Formula fenomenale: Analisi differenziale",
+    "ja": "事象式：自在な解析",
+    "ko": "현상 계산식・자유로운 해석",
+    "pt": "Fórmula Matemática: Análise Abrangente",
+    "ru": "Формула явлений: Дифференциальный анализ",
+    "th": "Formule Phenomenale: Differential Analysis",
+    "tr": "Olağanüstü Formül: Farklılık Analizi",
+    "vi": "Công Thức Hiện Tượng - Phân Tích Vi Sai",
+    "zh": "事象数式・游衍解析"
+  },
+  "Formule Phenomenale: Q.E.D.": {
+    "de": "Ereignisformel – Beweis aller Prinzipien",
+    "es": "Ecuación fenomenológica: Quod erat demonstrandum",
+    "fr": "Formule phénoménale : ‍CQFD‍",
+    "id": "Formule Phenomenale: Q.E.D.",
+    "it": "Formula fenomenale: Quod erat demonstrandum",
+    "ja": "事象式：Q.E.D",
+    "ko": "현상 계산식・Q.E.D",
+    "pt": "Fórmula Matemática: Prova Lógica Completa",
+    "ru": "Формула явлений: Ч. Т. Д.",
+    "th": "Formule Phenomenale: Q.E.D.",
+    "tr": "Olağanüstü Formül: İspatlandı",
+    "vi": "Công Thức Hiện Tượng - Chứng Minh Mọi Nguyên Lý",
+    "zh": "事象数式・万理证毕"
   }
 }
