@@ -107,7 +107,7 @@
   "faq": [
     [
       "Controlla la sezione Calcoli per visualizzare i totali",
-      ["Nel gioco sono presenti", "unità di questa specialità"],
+      ["Nel gioco sono presenti", " unità di questa specialità"],
       "Questo calcolo dipende dal tuo Livello del mondo (puoi modificarlo nella sezione 'Personalizzato')",
       "Questo calcolo dipende dal livello dei domini selezionato (puoi modificarlo nella sezione 'Personalizzato')",
       "Gli incarichi di Natlan forniscono questo materiale al completamento",
@@ -123,5 +123,5 @@
       "Questo calcolo dipende dal livello del dominio e dal bonus di creazione selezionati (puoi modificarli nella sezione 'Personalizzato')"
     ]
   ],
-  "apolocheese": "Non parlo ancora perfettamente questa lingua, mi scuso per eventuali errori. Potete inviare le vostre correzioni a contacto@crizorr.com. Grazie per aver scelto di utilizzare questo sito."
+  "apolocheese": "Non conoscendo bene questa lingua, mi scuso per eventuali errori presenti in questa pagina. Puoi inviare le tue correzioni o suggerimenti a contacto@crizorr.com. Grazie per aver visitato il sito!"
 }

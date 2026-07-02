@@ -107,7 +107,7 @@
   "faq": [
     [
       "Siehe Bereich „Berechnungen“ für die Gesamtkalkulation",
-      ["Im Spiel gibt es", "dieser Spezialität"],
+      ["Im Spiel gibt es", " dieser Spezialität"],
       "Diese Berechnung hängt von deiner Weltstufe ab. (Kann unter „Persönliche Infos“ geändert werden)",
       "Diese Berechnung hängt von der gewählten Sphären-Stufe ab. (Kann unter „Persönliche Infos“ geändert werden)",
       "Natlan-Aufträge gewähren dieses Material beim Abschluss",
@@ -125,5 +125,5 @@
   ],
   "electro": "Elektro",
   "cryo": "Kryo",
-  "apolocheese": "Ich beherrsche diese Sprache noch nicht perfekt, bitte entschuldigen Sie eventuelle Fehler. Korrekturen können Sie gerne an contacto@crizorr.com senden. Vielen Dank, dass Sie diese Seite nutzen."
+  "apolocheese": "Da ich diese Sprache nicht perfekt beherrsche, bitte ich für eventuelle Fehler auf dieser Seite um Entschuldigung. Du kannst deine Korrekturen oder Vorschläge gerne an contacto@crizorr.com senden. Vielen Dank, dass du diese Seite nutzt!"
 }

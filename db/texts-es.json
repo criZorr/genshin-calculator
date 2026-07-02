@@ -67,7 +67,7 @@
   "dynamic-personal": [
     [
       "Nivel de mundo",
-      "Bonus de creación",
+      "Bonus de sintetización",
       "Nivel de dominios",
       "Cantidad de resina",
       "Cálculos",
@@ -107,7 +107,7 @@
   "faq": [
     [
       "Mira en la sección de Cálculos para ver los cálculos totales",
-      ["En el juego hay", "de esta especialidad"],
+      ["En el juego hay", " de esta especialidad"],
       "Este cálculo depende de tu nivel de mundo. (Puedes cambiarlo en la sección \"Personal\")",
       "Este cálculo depende del nivel de dominios que elegiste. (Puedes cambiarlo en la sección \"Personal\")",
       "Las misiones de Natlan te dan este material al completarlas",

@@ -119,7 +119,7 @@
   "faq": [
     [
       "Consultez la section « Calculs » pour voir les résultats totaux",
-      ["Il y a", "unités de ce produit local en jeu"],
+      ["Il y a", " unités de ce produit local en jeu"],
       "Ce calcul dépend de votre niveau de monde. (Vous pouvez le modifier dans la sección « Personnel »)",
       "Ce calcul dépend du niveau de donjon sélectionné. (Vous pouvez le modifier dans la section « Personnel »)",
       "Les quêtes de Natlan permettent d'obtenir ce matériau une fois terminées",
@@ -138,5 +138,5 @@
   "anemo": "Anémo",
   "electro": "Électro",
   "geo": "Géo",
-  "apolocheese": "Je ne maîtrise pas encore parfaitement cette langue, je vous prie de m'excuser pour les éventuelles erreurs. Vous pouvez envoyer vos corrections à contacto@crizorr.com. Merci d'utiliser cette page."
+  "apolocheese": "Ne maîtrisant pas cette langue, je m'excuse pour les éventuelles erreurs que vous pourriez trouver sur cette page. Vous pouvez envoyer vos corrections ou suggestions à contacto@crizorr.com. Merci d'utiliser ce site !"
 }

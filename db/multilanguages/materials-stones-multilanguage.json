@@ -11,7 +11,7 @@
     "ru": "Драгоценный агат Агнидус",
     "th": "Agnidus Agate Gemstone",
     "tr": "Agnidus Akiği Külçesi",
-    "vi": "‍Mã Não‍ Cháy",
+    "vi": "Mã Não Cháy",
     "zh": "燃愿玛瑙"
   },
   "Agnidus Agate Chunk": {
@@ -26,7 +26,7 @@
     "ru": "Кусок агата Агнидус",
     "th": "Agnidus Agate Chunk",
     "tr": "Agnidus Akiği Parçası",
-    "vi": "Miếng ‍Mã Não‍ Cháy",
+    "vi": "Miếng Mã Não Cháy",
     "zh": "燃愿玛瑙块"
   },
   "Agnidus Agate Fragment": {
@@ -41,7 +41,7 @@
     "ru": "Фрагмент агата Агнидус",
     "th": "Agnidus Agate Fragment",
     "tr": "Agnidus Akiği Kırıntısı",
-    "vi": "Mảnh ‍Mã Não‍ Cháy",
+    "vi": "Mảnh Mã Não Cháy",
     "zh": "燃愿玛瑙断片"
   },
   "Agnidus Agate Sliver": {
@@ -56,7 +56,7 @@
     "ru": "Осколок агата Агнидус",
     "th": "Agnidus Agate Sliver",
     "tr": "Agnidus Akiği Tozu",
-    "vi": "Vụn ‍Mã Não‍ Cháy",
+    "vi": "Vụn Mã Não Cháy",
     "zh": "燃愿玛瑙碎屑"
   },
   "Varunada Lazurite Gemstone": {
@@ -71,7 +71,7 @@
     "ru": "Драгоценный лазурит Варунада",
     "th": "Varunada Lazurite Gemstone",
     "tr": "Varunada Lazuriti Külçesi",
-    "vi": "‍Thanh Kim‍ Sạch",
+    "vi": "Thanh Kim Sạch",
     "zh": "涤净青金"
   },
   "Varunada Lazurite Chunk": {
@@ -86,7 +86,7 @@
     "ru": "Кусок лазурита Варунада",
     "th": "Varunada Lazurite Chunk",
     "tr": "Varunada Lazuriti Parçası",
-    "vi": "Miếng ‍Thanh Kim‍ Sạch",
+    "vi": "Miếng Thanh Kim Sạch",
     "zh": "涤净青金块"
   },
   "Varunada Lazurite Fragment": {
@@ -101,7 +101,7 @@
     "ru": "Фрагмент лазурита Варунада",
     "th": "Varunada Lazurite Fragment",
     "tr": "Varunada Lazuriti Kırıntısı",
-    "vi": "Mảnh ‍Thanh Kim‍ Sạch",
+    "vi": "Mảnh Thanh Kim Sạch",
     "zh": "涤净青金断片"
   },
   "Varunada Lazurite Sliver": {
@@ -116,7 +116,7 @@
     "ru": "Осколок лазурита Варунада",
     "th": "Varunada Lazurite Sliver",
     "tr": "Varunada Lazuriti Tozu",
-    "vi": "Vụn ‍Thanh Kim‍ Sạch",
+    "vi": "Vụn Thanh Kim Sạch",
     "zh": "涤净青金碎屑"
   },
   "Nagadus Emerald Gemstone": {
@@ -131,7 +131,7 @@
     "ru": "Драгоценный изумруд Нагадус",
     "th": "Nagadus Emerald Gemstone",
     "tr": "Nagadus Zümrüdü Külçesi",
-    "vi": "‍Ngọc‍ ‍Bích‍ ‍Sinh Trưởng‍",
+    "vi": "Ngọc Bích Sinh Trưởng",
     "zh": "生长碧翡"
   },
   "Nagadus Emerald Chunk": {
@@ -171,7 +171,7 @@
     "id": "Nagadus Emerald Sliver",
     "it": "Scheggia di smeraldo Nagadus",
     "ja": "成長のエメラルド・砕屑",
-    "ko": "자라나는 ‍비취‍ 가루",
+    "ko": "자라나는 비취 가루",
     "pt": "Lasca de Esmeralda Nagadus",
     "ru": "Осколок изумруда Нагадус",
     "th": "Nagadus Emerald Sliver",
@@ -251,7 +251,7 @@
     "ru": "Драгоценная бирюза Вайюда",
     "th": "Vayuda Turquoise Gemstone",
     "tr": "Vayuda Turkuazı Külçesi",
-    "vi": "‍Tùng Thạch‍ ‍Tự Tại‍",
+    "vi": "Tùng Thạch Tự Tại",
     "zh": "自在松石"
   },
   "Vayuda Turquoise Chunk": {
@@ -266,7 +266,7 @@
     "ru": "Кусок бирюзы Вайюда",
     "th": "Vayuda Turquoise Chunk",
     "tr": "Vayuda Turkuazı Parçası",
-    "vi": "Miếng ‍Tùng Thạch‍ ‍Tự Tại‍",
+    "vi": "Miếng Tùng Thạch Tự Tại",
     "zh": "自在松石块"
   },
   "Vayuda Turquoise Fragment": {
@@ -281,7 +281,7 @@
     "ru": "Фрагмент бирюзы Вайюда",
     "th": "Vayuda Turquoise Fragment",
     "tr": "Vayuda Turkuazı Kırıntısı",
-    "vi": "Mảnh ‍Tùng Thạch‍ ‍Tự Tại‍",
+    "vi": "Mảnh Tùng Thạch Tự Tại",
     "zh": "自在松石断片"
   },
   "Vayuda Turquoise Sliver": {
@@ -296,7 +296,7 @@
     "ru": "Осколок бирюзы Вайюда",
     "th": "Vayuda Turquoise Sliver",
     "tr": "Vayuda Turkuazı Tozu",
-    "vi": "Vụn ‍Tùng Thạch‍ ‍Tự Tại‍",
+    "vi": "Vụn Tùng Thạch Tự Tại",
     "zh": "自在松石碎屑"
   },
   "Shivada Jade Gemstone": {
@@ -311,7 +311,7 @@
     "ru": "Драгоценный нефрит Шивада",
     "th": "Shivada Jade Gemstone",
     "tr": "Shivada Yeşimi Külçesi",
-    "vi": "‍Ngọc Băng‍",
+    "vi": "Ngọc Băng",
     "zh": "哀叙冰玉"
   },
   "Shivada Jade Chunk": {
@@ -326,7 +326,7 @@
     "ru": "Кусок нефрита Шивада",
     "th": "Shivada Jade Chunk",
     "tr": "Shivada Yeşimi Parçası",
-    "vi": "Miếng ‍Ngọc Băng‍",
+    "vi": "Miếng Ngọc Băng",
     "zh": "哀叙冰玉块"
   },
   "Shivada Jade Fragment": {
@@ -341,7 +341,7 @@
     "ru": "Фрагмент нефрита Шивада",
     "th": "Shivada Jade Fragment",
     "tr": "Shivada Yeşimi Kırıntısı",
-    "vi": "Mảnh ‍Ngọc Băng‍ Vỡ",
+    "vi": "Mảnh Ngọc Băng Vỡ",
     "zh": "哀叙冰玉断片"
   },
   "Shivada Jade Sliver": {
@@ -356,7 +356,7 @@
     "ru": "Осколок нефрита Шивада",
     "th": "Shivada Jade Sliver",
     "tr": "Shivada Yeşimi Tozu",
-    "vi": "Mảnh ‍Ngọc Băng‍ Vụn",
+    "vi": "Mảnh Ngọc Băng Vụn",
     "zh": "哀叙冰玉碎屑"
   },
   "Prithiva Topaz Gemstone": {
