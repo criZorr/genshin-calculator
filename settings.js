@@ -157,8 +157,7 @@ const translate = async (language) => {
   const $items = d.querySelectorAll(".txt-item"),
     $title = d.querySelector("title");
 
-  if (!(language === "en" || language === "es"))
-    showNoti(dataLan["apolocheese"], 5000);
+  if (!(language === "es")) showNoti(dataLan["apolocheese"], 5000);
 
   $title.innerHTML = dataLan["html"][0];
   let list = Array.from($items),
