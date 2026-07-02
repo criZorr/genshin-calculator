@@ -231,7 +231,7 @@ export default function drawTotalItems(
         avgFarming = Math.ceil(avgFarming);
         if (staticData) {
           label = staticData["label"][0][1];
-          faq = `${staticData["faq"][0][1][0]} ${specialty[el]} ${staticData["faq"][0][1][1]}`;
+          faq = `${staticData["faq"][0][1][0]} ${specialty[el]}${staticData["faq"][0][1][1]}`;
         } else {
           label = "Avg. days collecting local specialty";
           faq = `In the game there are ${specialty[el]} of this specialty.`;
