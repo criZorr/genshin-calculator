@@ -393,9 +393,21 @@ const drawModal = (ogId) => {
 };
 
 const deleteConfirmation = (id, name) => {
+  let add = "";
+
+  if (language === "ko") {
+    const lastChar = name.charCodeAt(name.length - 1);
+    if (lastChar >= 0xac00 && lastChar <= 0xd7a3) {
+      const hasBatchim = (lastChar - 0xac00) % 28 !== 0;
+      hasBatchim ? (add = "을") : (add = "를");
+    } else {
+      add = "을(를)";
+    }
+  }
+
   $modal.innerHTML = `
     <div class="modal-info bg-trd">
-      <p class="info-title scnd-text">${langData ? langData["dynamic-weapons"][4][0] : "Do you want to delete"} ${name} ${langData ? langData["dynamic-weapons"][4][1] : "?"}</p>
+      <p class="info-title scnd-text">${langData ? langData["dynamic-weapons"][4][0] : "Do you want to delete"} ${name}${add} ${langData ? langData["dynamic-weapons"][4][1] : "?"}</p>
       <div class="info-form">
         <div class="btn-modal">
           <button class="btn-bordered" id="cancel-btn">${langData ? langData["dynamic-index"][2][0] : "Cancel"}</button>
