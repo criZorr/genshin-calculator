@@ -1,0 +1,127 @@
+{
+  "html": ["GI: Calculadora de Nível"],
+  "header": ["Personagens", "Armas", "Personalizado", "Configurações"],
+  "footer": [
+    "Feito por <a href=\"https://crizorr.com\" target=\"_blank\" rel=\"noopener\">@criZorr</a>. Todos os recursos do jogo são propriedade da miHoYo."
+  ],
+  "static-settings": [
+    ["Idioma"],
+    ["Exportar e importar dados", "Importar", "Exportar"],
+    ["Tema", "Claro", "Auto", "Escuro"]
+  ],
+  "dynamic-settings": ["Exportado!", "Importado!"],
+  "static-index": [
+    ["Escolha um personagem"],
+    ["Elemento"],
+    ["Arma"],
+    ["Arco", "Catalisador", "Espadão", "Lança", "Espada"],
+    ["Raridade"],
+    ["5 estrelas", "4 estrelas"],
+    ["Personagens selecionados"],
+    ["Total"],
+    ["Cálculos"],
+    ["Materiais necessários e restantes"],
+    ["Materiais necessários individuais"]
+  ],
+  "dynamic-index": [
+    ["Calcular níveis"],
+    ["Calcular talentos"],
+    ["Cancelar", "Salvar", "Excluir"],
+    ["Tem certeza que deseja excluir", "?"]
+  ],
+  "static-weapons": [
+    ["Escolha uma arma"],
+    ["Arma"],
+    ["Arco", "Catalisador", "Espadão", "Lança", "Espada"],
+    ["Raridade"],
+    ["5 estrelas", "4 estrelas", "3 estrelas", "2 estrelas", "1 estrela"],
+    ["Armas selecionadas"],
+    ["Cálculos"],
+    ["Materiais necessários e restantes"],
+    ["Materiais necessários individuais"]
+  ],
+  "dynamic-weapons": [
+    ["5 estrelas", "4 estrelas", "3 estrelas", "2 estrelas", "1 estrela"],
+    ["Adicionar outro"],
+    ["Salve o atual antes de adicionar outro"],
+    ["Salve o atual antes de adicionar uma cópia"],
+    ["Deseja excluir", "?"]
+  ],
+  "static-personal": [
+    ["Informações Pessoais"],
+    ["Materiais Obtidos"],
+    ["Cálculos"],
+    ["Materiais necessários e restantes"],
+    [
+      "Material de EXP",
+      "Inimigos de Elite",
+      "Inimigos Comuns",
+      "Chefes Semanais",
+      "Chefes de Mundo",
+      "Pedras",
+      "Materiais de Talento",
+      "Materiais de Arma",
+      "Especialidades"
+    ]
+  ],
+  "dynamic-personal": [
+    [
+      "Nível do Mundo",
+      "Bônus de Síntese",
+      "Nível de Domínio",
+      "Quantidade de Resina",
+      "Cálculos",
+      "Ganho Diário de Mora"
+    ],
+    ["Não", "Talento de 10%", "Talento de 25%"],
+    ["20 de Resina", "40 de Resina", "60 de Resina"],
+    ["Sem RNG", "Com RNG"],
+    [
+      "Este valor altera os itens obtidos de chefes, inimigos e Afloramentos da Linha Ley",
+      "Existem alguns talentos que aumentam os materiais que podem ser criados",
+      "Este valor altera os itens obtidos em domínios",
+      "Isso mudará a quantidade de vezes que você precisa fazer um domínio",
+      "Os domínios possuem RNG (Geração de Números Aleatórios). Esta opção altera a quantidade aproximada de vezes que você deve fazer um domínio",
+      "A Mora que você obtém diariamente apenas gastando resina. Ex: fazendo domínios, derrotando um chefe"
+    ],
+    ["Mora Diária"]
+  ],
+  "label": [
+    [
+      "Confira a seção de Cálculos",
+      "Média de dias para coletar a especialidade local",
+      "Vezes aprox. para derrotar o chefe",
+      "Vezes aprox. para derrotar o chefe semanal",
+      "Vezes aprox. para concluir missões de Natlan",
+      "Vezes aprox. em Afloramentos da Linha Ley (dias)",
+      "Vezes aprox. para comprar uma Coroa da Sabedoria por mês"
+    ],
+    ["Quantidade excedente", "(podem ser criados)"],
+    [
+      "Armas de 3 estrelas aprox. para descartar",
+      "Vezes aprox. para derrotar o inimigo (dias)",
+      "Vezes aprox. para concluir o domínio",
+      "Dias aprox. obtendo Mora ao gastar resina"
+    ]
+  ],
+  "faq": [
+    [
+      "Confira a seção de Cálculos para ver os cálculos totais",
+      ["Existem", " desta especialidade no jogo"],
+      "Este cálculo depende do seu Nível do Mundo. (Você pode alterá-lo na seção \"Personalizado\")",
+      "Este cálculo depende do nível de domínio que você escolheu. (Você pode alterá-lo na seção \"Personalizado\")",
+      "As missões de Natlan concedem este material ao serem concluídas",
+      "Usando suas 180 Resinas diárias apenas em Afloramentos da Linha Ley",
+      "Você pode comprar uma Coroa da Sabedoria por mês na loja do jogo"
+    ],
+    [
+      "O excedente são os materiais que você pode usar para criar um material de qualidade superior <b>(quantidade de materiais de qualidade superior)</b>"
+    ],
+    [
+      "Você pode obter 3 Minérios de Refinamento ao descartar uma arma de 3 estrelas",
+      "Este cálculo depende do Nível do Mundo e do bônus de síntese que você escolheu. (Você pode alterá-los na seção \"Personalizado\")",
+      "Este cálculo depende do nível de domínio e do bônus de síntese que você escolheu. (Você pode alterá-los na seção \"Personalizado\")"
+    ]
+  ],
+  "apolocheese": "Não sou fluente neste idioma, por isso peço desculpas por qualquer erro que encontrar nesta página. Você pode enviar suas correções ou sugestões para contacto@crizorr.com. Obrigado por usar este site!"
+}

@@ -15,7 +15,7 @@
     ["Elemento"],
     ["Arma"],
     ["Arco", "Catalizador", "Mandoble", "Lanza", "Espada"],
-    ["Calidad"],
+    ["Rareza"],
     ["5 estrellas", "4 estrellas"],
     ["Personajes seleccionados"],
     ["Total"],
@@ -33,7 +33,7 @@
     ["Elige un arma"],
     ["Arma"],
     ["Arco", "Catalizador", "Mandoble", "Lanza", "Espada"],
-    ["Calidad"],
+    ["Rareza"],
     ["5 estrellas", "4 estrellas", "3 estrellas", "2 estrellas", "1 estrella"],
     ["Armas seleccionadas"],
     ["Cálculos"],
@@ -115,7 +115,7 @@
       "Puedes comprar una Corona de la sabiduría cada mes en la tienda del juego"
     ],
     [
-      "El excedente son los materiales que puedes usar para crear material de un calidad superior <b>(cantidad de materiales de calidad superior)</b>"
+      "El excedente son los materiales que puedes usar para crear material de un rereza superior <b>(cantidad de materiales de rereza superior)</b>"
     ],
     [
       "Puedes obtener 3 Minerales de refinamiento cuando eliminas un arma de 3 estrellas",
