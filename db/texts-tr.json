@@ -1,0 +1,127 @@
+{
+  "html": ["GI: Seviye Hesaplayıcı"],
+  "header": ["Karakterler", "Silahlar", "Özel", "Ayarlar"],
+  "footer": [
+    "<a href=\"https://crizorr.com\" target=\"_blank\" rel=\"noopener\">@criZorr</a> tarafından yapılmıştır. Tüm oyun içi varlıklar miHoYo'ya aittir."
+  ],
+  "static-settings": [
+    ["Dil"],
+    ["Verileri Dışa/İçe Aktar", "İçe Aktar", "Dışa Aktar"],
+    ["Tema", "Açık", "Oto", "Koyu"]
+  ],
+  "dynamic-settings": ["Dışa aktarıldı!", "İçe aktarıldı!"],
+  "static-index": [
+    ["Bir karakter seç"],
+    ["Element"],
+    ["Silah"],
+    ["Yay", "Katalizör", "Çift Elli Kılıç", "Mızrak", "Tek Elli Kılıç"],
+    ["Yıldız Derecesi"],
+    ["5 Yıldızlı", "4 Yıldızlı"],
+    ["Seçilen Karakterler"],
+    ["Toplam"],
+    ["Hesaplamalar"],
+    ["Gerekli ve Kalan Materyaller"],
+    ["Bireysel Gerekli Materyaller"]
+  ],
+  "dynamic-index": [
+    ["Seviyeleri Hesapla"],
+    ["Yetenekleri Hesapla"],
+    ["İptal", "Kaydet", "Sil"],
+    ["", "adlı karakteri silmek istiyor musun?"]
+  ],
+  "static-weapons": [
+    ["Bir silah seç"],
+    ["Silah"],
+    ["Yay", "Katalizör", "Çift Elli Kılıç", "Mızrak", "Tek Elli Kılıç"],
+    ["Yıldız Derecesi"],
+    ["5 Yıldızlı", "4 Yıldızlı", "3 Yıldızlı", "2 Yıldızlı", "1 Yıldızlı"],
+    ["Seçilen Silahlar"],
+    ["Hesaplamalar"],
+    ["Gerekli ve Kalan Materyaller"],
+    ["Bireysel Gerekli Materyaller"]
+  ],
+  "dynamic-weapons": [
+    ["5 Yıldızlı", "4 Yıldızlı", "3 Yıldızlı", "2 Yıldızlı", "1 Yıldızlı"],
+    ["Başka bir tane ekle"],
+    ["Yenisini eklemeden önce mevcut olanı kaydet"],
+    ["Bir kopyasını eklemeden önce mevcut olanı kaydet"],
+    ["", "adlı silahı silmek istiyor musun?"]
+  ],
+  "static-personal": [
+    ["Kişisel Bilgiler"],
+    ["Elde Edilen Materyaller"],
+    ["Hesaplamalar"],
+    ["Gerekli ve Kalan Materyaller"],
+    [
+      "TP Materyali",
+      "Seçkin Düşmanlar",
+      "Sıradan Düşmanlar",
+      "Haftalık Patronlar",
+      "Normal Düşmanlar",
+      "Element Taşları",
+      "Yetenek Materyalleri",
+      "Silah Materyalleri",
+      "Bölgesel Ürünler"
+    ]
+  ],
+  "dynamic-personal": [
+    [
+      "Dünya Seviyesi",
+      "Sentez Bonusu",
+      "Zindan Seviyesi",
+      "Reçine Miktarı",
+      "Hesaplamalar",
+      "Günlük Mora Kazancı"
+    ],
+    ["Hayır", "%10 Yetenek", "%25 Yetenek"],
+    ["20 Reçine", "40 Reçine", "60 Reçine"],
+    ["RNG'siz", "RNG'li"],
+    [
+      "Bu değer; patronlardan, düşmanlardan ve Ley Hattı Çıkıntılarından elde edilen ganimetleri değiştirir",
+      "Bazı karakter yetenekleri, sentezlenebilen materyal miktarını artırır",
+      "Bu değer, zindanlardan elde edilen ganimetleri değiştirir",
+      "Bu seçenek, bir zindanı kaç kez tamamlamanız gerektiğini değiştirir",
+      "Zindan ödülleri RNG'ye (Rastgele Sayı Üreticisi) bağlıdır. Bu seçenek, bir zindanı tamamlamanız gereken yaklaşık sefer sayısını değiştirir",
+      "Sadece reçine harcayarak (örn. zindanları tamamlayarak, bir patronu yenerek) günlük olarak elde ettiğiniz Mora miktarı"
+    ],
+    ["Günlük Mora"]
+  ],
+  "label": [
+    [
+      "Hesaplamalar bölümüne göz atın",
+      "Bölgesel ürünleri toplamak için gereken ortalama gün sayısı",
+      "Patronu yenmek için gereken yakl. sefer sayısı",
+      "Haftalık patronu yenmek için gereken yakl. sefer sayısı",
+      "Natlan görevlerini tamamlamak için gereken yakl. sefer sayısı",
+      "Ley Hattı Çıkıntılarını tamamlamak için yakl. sefer sayısı (gün)",
+      "Her ay bir Bilgelik Tacı satın almak için gereken yakl. sefer sayısı"
+    ],
+    ["Fazlalık miktarı", "(üretilebilir)"],
+    [
+      "Uzaklaştırılması (imha edilmesi) gereken yakl. 3 Yıldızlı silah sayısı",
+      "Düşmanı yenmek için gereken yakl. sefer sayısı (gün)",
+      "Zindanı tamamlamak için gereken yakl. sefer sayısı",
+      "Reçine harcayarak Mora kazanılan yakl. gün sayısı"
+    ]
+  ],
+  "faq": [
+    [
+      "Toplam hesaplamaları görmek için Hesaplamalar bölümüne göz atın",
+      ["Oyunda bu bölgesel üründen", " adet bulunuyor"],
+      "Bu hesaplama Dünya Seviyene bağlıdır. (Bunu \"Özel\" bölümünden değiştirebilirsin.)",
+      "Bu hesaplama seçtiğin zindan seviyesine bağlıdır. (Bunu \"Özel\" bölümünden değiştirebilirsin.)",
+      "Natlan görevleri tamamlandığında bu materyali verir",
+      "Günlük 180 reçineni sadece Ley Hattı Çıkıntıları için kullanarak",
+      "Oyun içi mağazadan her ay bir Bilgelik Tacı satın alabilirsin"
+    ],
+    [
+      "Fazlalık materyaller, daha yüksek nadirlikte materyal üretmek için kullanabileceğin parçalardır <b>(daha yüksek nadirlikteki materyal miktarı)</b>"
+    ],
+    [
+      "Bir 3 Yıldızlı silahı imha ettiğinde 3 adet Silah TP Cevheri elde edebilirsin",
+      "Bu hesaplama Dünya Seviyene ve seçtiğin üretim bonusuna bağlıdır. (Bunları \"Özel\" bölümünden değiştirebilirsin.)",
+      "Bu hesaplama zindan seviyene ve seçtiğin üretim bonusuna bağlıdır. (Bunları \"Özel\" bölümünden değiştirebilirsin.)"
+    ]
+  ],
+  "apolocheese": "Bu dile tam olarak hâkim değilim, bu yüzden sayfada karşılaşabileceğiniz her türlü hata için özür dilerim. Düzeltmelerinizi veya önerilerinizi contacto@crizorr.com adresine gönderebilirsiniz. Bu siteyi kullandığınız için teşekkür ederim!"
+}
