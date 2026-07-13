@@ -666,7 +666,7 @@ const deleteConfirmation = (id, name) => {
 
   $modal.innerHTML = `
     <div class="modal-info bg-trd">
-      <p class="info-title scnd-text">${langData ? langData["dynamic-index"][3][0] : "Do you want to delete"} ${name}${add} ${langData ? langData["dynamic-index"][3][1] : "?"}</p>
+      <p class="info-title scnd-text">${langData ? langData["dynamic-index"][3][0] : "Do you want to delete"} ${name}${add}${langData ? langData["dynamic-index"][3][1] : "?"}</p>
       <div class="info-form">
         <div class="btn-modal">
           <button class="btn-bordered" id="cancel-btn">${langData ? langData["dynamic-index"][2][0] : "Cancel"}</button>
