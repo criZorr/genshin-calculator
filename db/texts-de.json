@@ -27,7 +27,7 @@
     ["Stufen berechnen"],
     ["Talente berechnen"],
     ["Abbrechen", "Speichern", "Löschen"],
-    ["Möchtest du", "löschen?"]
+    ["Möchtest du", " löschen?"]
   ],
   "static-weapons": [
     ["Wähle eine Waffe"],
@@ -45,7 +45,7 @@
     ["Einen weiteren hinzufügen"],
     ["Speichere den aktuellen, bevor du einen weiteren hinzufügst"],
     ["Speichere den aktuellen, bevor du eine Kopie hinzufügst"],
-    ["Möchtest du", "löschen?"]
+    ["Möchtest du", " löschen?"]
   ],
   "static-personal": [
     ["Persönliche Infos"],

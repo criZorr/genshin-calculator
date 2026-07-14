@@ -27,7 +27,7 @@
     ["Seviyeleri Hesapla"],
     ["Yetenekleri Hesapla"],
     ["İptal", "Kaydet", "Sil"],
-    ["", "adlı karakteri silmek istiyor musun?"]
+    ["", " adlı karakteri silmek istiyor musun?"]
   ],
   "static-weapons": [
     ["Bir silah seç"],
@@ -45,7 +45,7 @@
     ["Başka bir tane ekle"],
     ["Yenisini eklemeden önce mevcut olanı kaydet"],
     ["Bir kopyasını eklemeden önce mevcut olanı kaydet"],
-    ["", "adlı silahı silmek istiyor musun?"]
+    ["", " adlı silahı silmek istiyor musun?"]
   ],
   "static-personal": [
     ["Kişisel Bilgiler"],
@@ -123,5 +123,12 @@
       "Bu hesaplama zindan seviyene ve seçtiğin üretim bonusuna bağlıdır. (Bunları \"Özel\" bölümünden değiştirebilirsin.)"
     ]
   ],
+  "anemo": "Rüzgar",
+  "cryo": "Buz",
+  "dendro": "Doğa",
+  "electro": "Elektrik",
+  "geo": "Toprak",
+  "hydro": "Su",
+  "pyro": "Ateş",
   "apolocheese": "Bu dile tam olarak hâkim değilim, bu yüzden sayfada karşılaşabileceğiniz her türlü hata için özür dilerim. Düzeltmelerinizi veya önerilerinizi contacto@crizorr.com adresine gönderebilirsiniz. Bu siteyi kullandığınız için teşekkür ederim!"
 }
