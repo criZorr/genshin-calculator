@@ -1,0 +1,134 @@
+{
+  "html": ["GI: Máy Tính Cấp Độ"],
+  "header": ["Nhân Vật", "Vũ Khí", "Cá Nhân", "Cài Đặt"],
+  "footer": [
+    "Được thực hiện bởi <a href=\"https://crizorr.com\" target=\"_blank\" rel=\"noopener\">@criZorr</a>. Mọi tài nguyên trong trò chơi thuộc sở hữu của miHoYo."
+  ],
+  "static-settings": [
+    ["Ngôn Ngữ"],
+    ["Xuất và nhập dữ liệu", "Nhập", "Xuất"],
+    ["Giao diện", "Sáng", "Tự động", "Tối"]
+  ],
+  "dynamic-settings": ["Đã xuất!", "Đã nhập!"],
+  "static-index": [
+    ["Chọn nhân vật"],
+    ["Nguyên tố"],
+    ["Vũ khí"],
+    ["Cung", "Pháp Khí", "Trọng Kiếm", "Vũ Khí Cán Dài", "Kiếm Đơn"],
+    ["Độ hiếm"],
+    ["5 sao", "4 sao"],
+    ["Nhân vật đã chọn"],
+    ["Tổng"],
+    ["Tính toán"],
+    ["Nguyên liệu cần và dư"],
+    ["Nguyên liệu cần thiết của từng nhân vật"]
+  ],
+  "dynamic-index": [
+    ["Tính cấp độ"],
+    ["Tính thiên phú"],
+    ["Hủy", "Lưu", "Xóa"],
+    ["Bạn có muốn xóa", " không?"]
+  ],
+  "static-weapons": [
+    ["Chọn vũ khí"],
+    ["Vũ khí"],
+    ["Cung", "Pháp Khí", "Trọng Kiếm", "Vũ Khí Cán Dài", "Kiếm Đơn"],
+    ["Độ hiếm"],
+    ["5 sao", "4 sao", "3 sao", "2 sao", "1 sao"],
+    ["Vũ khí đã chọn"],
+    ["Tính toán"],
+    ["Nguyên liệu cần và dư"],
+    ["Nguyên liệu cần thiết của từng nhân vật"]
+  ],
+  "dynamic-weapons": [
+    ["5 sao", "4 sao", "3 sao", "2 sao", "1 sao"],
+    ["Thêm khác"],
+    ["Hãy lưu cái hiện tại trước khi thêm cái khác"],
+    ["Hãy lưu cái hiện tại trước khi thêm bản sao"],
+    ["Bạn có muốn xóa", " không?"]
+  ],
+  "static-personal": [
+    ["Thông tin cá nhân"],
+    ["Nguyên liệu đã có"],
+    ["Tính toán"],
+    ["Nguyên liệu cần và dư"],
+    [
+      "Nguyên liệu EXP",
+      "Quái vật tinh anh",
+      "Quái vật thường",
+      "Boss tuần",
+      "Boss thế giới",
+      "Đá nguyên tố",
+      "Nguyên liệu thiên phú",
+      "Nguyên liệu vũ khí",
+      "Đặc sản"
+    ]
+  ],
+  "dynamic-personal": [
+    [
+      "Cấp Thế Giới",
+      "Bonus ghép",
+      "Cấp Bí Cảnh",
+      "Số lượng Nhựa",
+      "Tính toán",
+      "Lượng Mora nhận mỗi ngày"
+    ],
+    ["Không", "Thiên phú 10%", "Thiên phú 25%"],
+    ["20 Nhựa", "40 Nhựa", "60 Nhựa"],
+    ["Không tính RNG", "Có tính RNG"],
+    [
+      "Giá trị này sẽ thay đổi các vật phẩm nhận được từ Boss, quái vật và Địa Mạch Sinh Thành",
+      "Có một số thiên phú giúp tăng lượng nguyên liệu nhận được khi ghép",
+      "Giá trị này sẽ thay đổi các vật phẩm nhận được trong Bí Cảnh",
+      "Điều này sẽ thay đổi số lần bạn cần khiêu chiến Bí Cảnh",
+      "Phần thưởng Bí Cảnh phụ thuộc vào RNG (tỷ lệ ngẫu nhiên). Tùy chọn này sẽ thay đổi số lần ước tính mà bạn cần khiêu chiến Bí Cảnh",
+      "Lượng Mora nhận được hàng ngày chỉ bằng cách tiêu hao Nhựa. Ví dụ: khiêu chiến Bí Cảnh, đánh bại Boss"
+    ],
+    ["Mora hàng ngày"]
+  ],
+  "label": [
+    [
+      "Xem trong phần Tính toán",
+      "Số ngày trung bình để thu thập đặc sản",
+      "Số lần ước tính để đánh bại Boss",
+      "Số lần ước tính để đánh bại Boss tuần",
+      "Số lần ước tính để hoàn thành nhiệm vụ Natlan",
+      "Số lần ước tính vượt Địa Mạch Sinh Thành (ngày)",
+      "Số lần ước tính để mua Vương Miện Trí Thức mỗi tháng"
+    ],
+    ["Số lượng dư thừa", "(có thể ghép)"],
+    [
+      "Số vũ khí 3 sao ước tính cần tiêu hủy",
+      "Số lần ước tính để đánh bại quái vật (ngày)",
+      "Số lần ước tính vượt Bí Cảnh",
+      "Số ngày ước tính để kiếm Mora khi tiêu hao Nhựa"
+    ]
+  ],
+  "faq": [
+    [
+      "Xem trong phần Tính toán để biết tổng số liệu tính toán",
+      ["Trong trò chơi có", " đặc sản này"],
+      "Phép tính này phụ thuộc vào Cấp Thế Giới của bạn. (Bạn có thể thay đổi trong phần \"Cá Nhân\")",
+      "Phép tính này phụ thuộc vào cấp Bí Cảnh bạn đã chọn. (Bạn có thể thay đổi trong phần \"Cá Nhân\")",
+      "Nhiệm vụ Natlan sẽ cung cấp nguyên liệu này sau khi hoàn thành",
+      "Sử dụng 180 Nhựa hàng ngày của bạn chỉ cho Địa Mạch Sinh Thành",
+      "Bạn có thể mua một Vương Miện Trí Thức mỗi tháng trong cửa hàng trò chơi"
+    ],
+    [
+      "Lượng dư thừa là những nguyên liệu bạn có thể dùng để ghép thành nguyên liệu có độ hiếm cao hơn <b>(số lượng nguyên liệu có độ hiếm cao hơn)</b>"
+    ],
+    [
+      "Bạn có thể nhận được 3 Ma Khoáng Tinh Luyện khi tiêu hủy một vũ khí 3 sao",
+      "Phép tính này phụ thuộc vào Cấp Thế Giới và bonus ghép bạn đã chọn. (Bạn có thể thay đổi trong phần \"Cá Nhân\")",
+      "Phép tính này phụ thuộc vào cấp Bí Cảnh và bonus ghép bạn đã chọn. (Bạn có thể thay đổi trong phần \"Cá Nhân\")"
+    ]
+  ],
+  "anemo": "Phong",
+  "cryo": "Băng",
+  "dendro": "Thảo",
+  "electro": "Lôi",
+  "geo": "Nham",
+  "hydro": "Thủy",
+  "pyro": "Hỏa",
+  "apolocheese": "Tôi không thông thạo ngôn ngữ này, rất mong bạn thông cảm cho bất kỳ sai sót nào trên trang web. Bạn có thể gửi đóng góp ý kiến hoặc phản hồi về địa chỉ contacto@crizorr.com. Cảm ơn bạn đã sử dụng trang web này."
+}
