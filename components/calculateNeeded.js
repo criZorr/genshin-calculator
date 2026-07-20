@@ -71,7 +71,7 @@ export default function calculateNeeded(userLocal, variable) {
 
             if (crafting === 0) calc = Math.floor(calc / 3);
             if (crafting === 1) calc = Math.floor(1.1 * (calc / 3));
-            if (crafting === 2) calc = Math.floor((4 / 3) * (calc / 3));
+            if (crafting === 2) calc = Math.floor(1.0909 * (calc / 3));
 
             let position = craftMaterials.indexOf(e);
             if (position >= 0) tempObj[craftMaterials[position + 1]] = calc;
@@ -87,7 +87,7 @@ export default function calculateNeeded(userLocal, variable) {
 
             if (crafting === 0) calc = Math.floor(calc / 3);
             if (crafting === 1) calc = Math.floor(1.1 * (calc / 3));
-            if (crafting === 2) calc = Math.floor((4 / 3) * (calc / 3));
+            if (crafting === 2) calc = Math.floor(1.0909 * (calc / 3));
 
             let position = craftMaterials.indexOf(e);
             if (position >= 0) tempObj[craftMaterials[position + 1]] = calc;
@@ -104,7 +104,7 @@ export default function calculateNeeded(userLocal, variable) {
 
             if (crafting === 0) calcRaw = calcRaw / 3;
             if (crafting === 1) calcRaw = 1.1 * (calcRaw / 3);
-            if (crafting === 2) calcRaw = (4 / 3) * (calcRaw / 3);
+            if (crafting === 2) calcRaw = 1.0909 * (calcRaw / 3);
 
             let position = craftMaterials.indexOf(e);
             if (position >= 0) tempRaw[craftMaterials[position + 1]] = calcRaw;
@@ -120,7 +120,7 @@ export default function calculateNeeded(userLocal, variable) {
 
             if (crafting === 0) calc = Math.floor(calc / 3);
             if (crafting === 1) calc = Math.floor(1.1 * (calc / 3));
-            if (crafting === 2) calc = Math.floor((4 / 3) * (calc / 3));
+            if (crafting === 2) calc = Math.floor(1.0909 * (calc / 3));
 
             let position = craftMaterials.indexOf(e);
             if (position >= 0) tempObj[craftMaterials[position + 1]] = calc;
@@ -137,7 +137,7 @@ export default function calculateNeeded(userLocal, variable) {
 
             if (crafting === 0) calcRaw = calcRaw / 3;
             if (crafting === 1) calcRaw = 1.1 * (calcRaw / 3);
-            if (crafting === 2) calcRaw = (4 / 3) * (calcRaw / 3);
+            if (crafting === 2) calcRaw = 1.0909 * (calcRaw / 3);
 
             let position = craftMaterials.indexOf(e);
             if (position >= 0) tempRaw[craftMaterials[position + 1]] = calcRaw;
@@ -237,10 +237,10 @@ export default function calculateNeeded(userLocal, variable) {
           (neededRaw[craftMaterialsThree[i + 1]] || 0) * (3 / 1.1),
         ),
         gold25 = Math.ceil(
-          (neededRaw[craftMaterialsThree[i + 2]] || 0) * (9 / (16 / 9)),
+          (neededRaw[craftMaterialsThree[i + 2]] || 0) * (9 / 1.19),
         ),
         purple25 = Math.ceil(
-          (neededRaw[craftMaterialsThree[i + 1]] || 0) * (3 / (4 / 3)),
+          (neededRaw[craftMaterialsThree[i + 1]] || 0) * (3 / 1.0909),
         );
 
       raw10 = Math.ceil(
@@ -284,13 +284,13 @@ export default function calculateNeeded(userLocal, variable) {
           (neededRaw[craftMaterialsFour[i + 1]] || 0) * (3 / 1.1),
         ),
         gold25 = Math.ceil(
-          (neededRaw[craftMaterialsFour[i + 3]] || 0) * (27 / (64 / 27)),
+          (neededRaw[craftMaterialsFour[i + 3]] || 0) * (27 / 1.29825),
         ),
         purple25 = Math.ceil(
-          (neededRaw[craftMaterialsFour[i + 2]] || 0) * (9 / (16 / 9)),
+          (neededRaw[craftMaterialsFour[i + 2]] || 0) * (9 / 1.19),
         ),
         blue25 = Math.ceil(
-          (neededRaw[craftMaterialsFour[i + 1]] || 0) * (3 / (4 / 3)),
+          (neededRaw[craftMaterialsFour[i + 1]] || 0) * (3 / 1.0909),
         );
 
       raw10 = Math.ceil(
