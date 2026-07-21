@@ -35,7 +35,9 @@ let saveFlag = false,
   ],
   $filters = "filter-checkbox",
   langData = "",
-  langMaterials = "";
+  langMaterials = "",
+  prev = "",
+  next = "";
 
 const all = calculateData("all"),
   eliteEnemies = calculateData("eliteEnemies").length,
@@ -631,9 +633,44 @@ d.addEventListener("click", (e) => {
 
   if (eventClass === $filters) getChecked(filterClasses);
 
-  if (e.target.matches(".items-card") || e.target.matches(".items-card *")) {
-    drawModalElement(e.target.attributes["_id"].value, e.target.dataset.rarity);
+  if (
+    e.target.matches(".items-container-user .items-card") ||
+    e.target.matches(".items-container-user .items-card *")
+  ) {
+    let $item = d.querySelector(
+        `.items-container-user .items-card[_id="${e.target.attributes["_id"].value}"]`,
+      ),
+      $prev = $item.previousSibling,
+      $next = $item.nextSibling;
 
+    next = [
+      "items-container-user",
+      $next ? $next.attributes["_id"].value : null,
+    ];
+    prev = [
+      "items-container-user",
+      $prev ? $prev.attributes["_id"].value : null,
+    ];
+
+    drawModalElement(e.target.attributes["_id"].value, e.target.dataset.rarity);
+    $modal.style.visibility = "visible";
+    $modal.style.opacity = "1";
+  }
+
+  if (
+    e.target.matches(".card-user-amount .items-card") ||
+    e.target.matches(".card-user-amount .items-card *")
+  ) {
+    let $item = d.querySelector(
+        `.card-user-amount .items-card[_id="${e.target.attributes["_id"].value}"]`,
+      ),
+      $prev = $item.previousSibling,
+      $next = $item.nextSibling;
+
+    next = ["card-user-amount", $next ? $next.attributes["_id"].value : null];
+    prev = ["card-user-amount", $prev ? $prev.attributes["_id"].value : null];
+
+    drawModalElement(e.target.attributes["_id"].value, e.target.dataset.rarity);
     $modal.style.visibility = "visible";
     $modal.style.opacity = "1";
   }
@@ -682,13 +719,33 @@ d.addEventListener("change", (e) => {
 });
 
 d.addEventListener("keydown", (e) => {
-  if (e.key == "Enter" && saveFlag) {
-    d.getElementById("confirm-btn").click();
-  }
-  if (e.key == "Escape" && saveFlag) {
+  if (e.key == "Enter" && saveFlag) d.getElementById("confirm-btn").click();
+
+  if (e.key == "Escape" && saveFlag)
     d.querySelector(".modal-container").click();
-  }
-  if (e.key == "Escape" && containerFlag) {
+
+  if (e.key == "Escape" && containerFlag)
     d.querySelector(".modal-container-materials").click();
+
+  if (e.key == "Tab" && saveFlag) {
+    e.preventDefault();
+
+    if (e.shiftKey) {
+      if (prev[1]) {
+        d.getElementById("confirm-btn").click();
+        let action = d.querySelector(
+          `.${prev[0]} .items-card[_id="${prev[1]}"]`,
+        );
+        action.click();
+      }
+    } else {
+      if (next[1]) {
+        d.getElementById("confirm-btn").click();
+        let action = d.querySelector(
+          `.${next[0]} .items-card[_id="${next[1]}"]`,
+        );
+        action.click();
+      }
+    }
   }
 });
