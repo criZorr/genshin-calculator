@@ -719,32 +719,35 @@ d.addEventListener("change", (e) => {
 });
 
 d.addEventListener("keydown", (e) => {
-  if (e.key == "Enter" && saveFlag) d.getElementById("confirm-btn").click();
-
-  if (e.key == "Escape" && saveFlag)
-    d.querySelector(".modal-container").click();
-
-  if (e.key == "Escape" && containerFlag)
+  if (e.key == "Escape" && containerFlag && !saveFlag)
     d.querySelector(".modal-container-materials").click();
 
-  if (e.key == "Tab" && saveFlag) {
-    e.preventDefault();
+  if (saveFlag) {
+    let $confirmBtn = d.getElementById("confirm-btn");
+    d.getElementById("number-picker").focus();
 
-    if (e.shiftKey) {
-      if (prev[1]) {
-        d.getElementById("confirm-btn").click();
-        let action = d.querySelector(
-          `.${prev[0]} .items-card[_id="${prev[1]}"]`,
-        );
-        action.click();
-      }
-    } else {
-      if (next[1]) {
-        d.getElementById("confirm-btn").click();
-        let action = d.querySelector(
-          `.${next[0]} .items-card[_id="${next[1]}"]`,
-        );
-        action.click();
+    if (e.key == "Enter") $confirmBtn.click();
+    if (e.key == "Escape") d.querySelector(".modal-container").click();
+
+    if (e.key == "Tab") {
+      e.preventDefault();
+
+      if (e.shiftKey) {
+        if (prev[1]) {
+          $confirmBtn.click();
+          let action = d.querySelector(
+            `.${prev[0]} .items-card[_id="${prev[1]}"]`,
+          );
+          action.click();
+        }
+      } else {
+        if (next[1]) {
+          $confirmBtn.click();
+          let action = d.querySelector(
+            `.${next[0]} .items-card[_id="${next[1]}"]`,
+          );
+          action.click();
+        }
       }
     }
   }
