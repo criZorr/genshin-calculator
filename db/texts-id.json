@@ -51,18 +51,18 @@
     ["Informasi Pribadi"],
     ["Bahan yang Didapat"],
     ["Kalkulasi"],
-    ["Bahan yang Dibutuhkan & Sisa"],
-    [
-      "Bahan EXP",
-      "Musuh Elit",
-      "Musuh Biasa",
-      "Boss Mingguan",
-      "Boss Dunia",
-      "Stones",
-      "Bahan Talenta",
-      "Bahan Senjata",
-      "Spesialisasi Lokal"
-    ]
+    ["Bahan yang Dibutuhkan & Sisa"]
+  ],
+  "filters": [
+    "Bahan EXP",
+    "Musuh Elit",
+    "Musuh Biasa",
+    "Boss Mingguan",
+    "Boss Dunia",
+    "Stones",
+    "Bahan Talenta",
+    "Bahan Senjata",
+    "Spesialisasi Lokal"
   ],
   "dynamic-personal": [
     [

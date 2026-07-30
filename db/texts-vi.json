@@ -51,18 +51,18 @@
     ["Thông tin cá nhân"],
     ["Nguyên liệu đã có"],
     ["Tính toán"],
-    ["Nguyên liệu cần và dư"],
-    [
-      "Nguyên liệu EXP",
-      "Quái vật tinh anh",
-      "Quái vật thường",
-      "Boss tuần",
-      "Boss thế giới",
-      "Đá nguyên tố",
-      "Nguyên liệu thiên phú",
-      "Nguyên liệu vũ khí",
-      "Đặc sản"
-    ]
+    ["Nguyên liệu cần và dư"]
+  ],
+  "filters": [
+    "Nguyên liệu EXP",
+    "Quái vật tinh anh",
+    "Quái vật thường",
+    "Boss tuần",
+    "Boss thế giới",
+    "Đá nguyên tố",
+    "Nguyên liệu thiên phú",
+    "Nguyên liệu vũ khí",
+    "Đặc sản"
   ],
   "dynamic-personal": [
     [

@@ -51,18 +51,18 @@
     ["Información personal"],
     ["Materiales obtenidos"],
     ["Cálculos"],
-    ["Materiales necesarios y sobrantes"],
-    [
-      "Material de exp.",
-      "Enemigos de élite",
-      "Enemigos comunes",
-      "Jefes semanales",
-      "Jefes de mundo",
-      "Piedras",
-      "Materiales de talentos",
-      "Materiales de armas",
-      "Especialidades"
-    ]
+    ["Materiales necesarios y sobrantes"]
+  ],
+  "filters": [
+    "Material de exp.",
+    "Enemigos de élite",
+    "Enemigos comunes",
+    "Jefes semanales",
+    "Jefes de mundo",
+    "Piedras",
+    "Materiales de talentos",
+    "Materiales de armas",
+    "Especialidades"
   ],
   "dynamic-personal": [
     [

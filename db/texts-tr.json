@@ -51,18 +51,18 @@
     ["Kişisel Bilgiler"],
     ["Elde Edilen Materyaller"],
     ["Hesaplamalar"],
-    ["Gerekli ve Kalan Materyaller"],
-    [
-      "TP Materyali",
-      "Seçkin Düşmanlar",
-      "Sıradan Düşmanlar",
-      "Haftalık Patronlar",
-      "Normal Düşmanlar",
-      "Element Taşları",
-      "Yetenek Materyalleri",
-      "Silah Materyalleri",
-      "Bölgesel Ürünler"
-    ]
+    ["Gerekli ve Kalan Materyaller"]
+  ],
+  "filters": [
+    "TP Materyali",
+    "Seçkin Düşmanlar",
+    "Sıradan Düşmanlar",
+    "Haftalık Patronlar",
+    "Normal Düşmanlar",
+    "Element Taşları",
+    "Yetenek Materyalleri",
+    "Silah Materyalleri",
+    "Bölgesel Ürünler"
   ],
   "dynamic-personal": [
     [

@@ -63,18 +63,18 @@
     ["Informations personnelles"],
     ["Matériaux obtenus"],
     ["Calculs"],
-    ["Matériaux requis et restants"],
-    [
-      "Matériaux d'EXP",
-      "Ennemis d'élite",
-      "Ennemis communs",
-      "Boss hebdomadaires",
-      "Boss del monde",
-      "Pierres",
-      "Matériaux d'aptitudes",
-      "Matériaux d'arme",
-      "Produits"
-    ]
+    ["Matériaux requis et restants"]
+  ],
+  "filters": [
+    "Matériaux d'EXP",
+    "Ennemis d'élite",
+    "Ennemis communs",
+    "Boss hebdomadaires",
+    "Boss del monde",
+    "Pierres",
+    "Matériaux d'aptitudes",
+    "Matériaux d'arme",
+    "Produits"
   ],
   "dynamic-personal": [
     [

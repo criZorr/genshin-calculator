@@ -51,18 +51,18 @@
     ["Informazioni personali"],
     ["Materiali ottenuti"],
     ["Calcoli"],
-    ["Materiali necessari e rimanenti"],
-    [
-      "Materiali ESP",
-      "Nemici d'élite",
-      "Nemici comuni",
-      "Boss settimanali",
-      "Boss regionali",
-      "Gemme",
-      "Materiali per i talenti",
-      "Materiali per i talenti",
-      "Locali"
-    ]
+    ["Materiali necessari e rimanenti"]
+  ],
+  "filters": [
+    "Materiali ESP",
+    "Nemici d'élite",
+    "Nemici comuni",
+    "Boss settimanali",
+    "Boss regionali",
+    "Gemme",
+    "Materiali per i talenti",
+    "Materiali per i talenti",
+    "Locali"
   ],
   "dynamic-personal": [
     [

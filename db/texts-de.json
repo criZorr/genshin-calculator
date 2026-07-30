@@ -51,18 +51,18 @@
     ["Persönliche Infos"],
     ["Erhaltene Materialien"],
     ["Berechnungen"],
-    ["Benötigte und überschüssige Materialien"],
-    [
-      "EP-Material",
-      "Elite-Gegner",
-      "Häufige Gegner",
-      "Wöchentliche Bosse",
-      "Weltbosse",
-      "Edelsteine",
-      "Talentmaterialien",
-      "Waffenmaterialien",
-      "Spezialitäten"
-    ]
+    ["Benötigte und überschüssige Materialien"]
+  ],
+  "filters": [
+    "EP-Material",
+    "Elite-Gegner",
+    "Häufige Gegner",
+    "Wöchentliche Bosse",
+    "Weltbosse",
+    "Edelsteine",
+    "Talentmaterialien",
+    "Waffenmaterialien",
+    "Spezialitäten"
   ],
   "dynamic-personal": [
     [
