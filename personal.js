@@ -10,6 +10,8 @@ const d = document;
 
 const $modal = d.querySelector(".modal-container"),
   $modalMaterials = d.querySelector(".modal-container-materials"),
+  $filters = d.querySelectorAll(".filter-items"),
+  $itemsContainer = d.querySelector(".items-container-user"),
   language = localStorage.getItem("language");
 
 const svg = `
@@ -20,8 +22,7 @@ const svg = `
 
 let saveFlag = false,
   containerFlag = false,
-  filtered = [],
-  filterClasses = ["filter-items"],
+  filtered = {},
   items = [
     "exp",
     "elite",
@@ -33,11 +34,11 @@ let saveFlag = false,
     "weapon",
     "speciality",
   ],
-  $filters = "filter-checkbox",
   langData = "",
   langMaterials = "",
   prev = "",
-  next = "";
+  next = "",
+  filteredElements = Array.from($filters);
 
 const all = calculateData("all"),
   eliteEnemies = calculateData("eliteEnemies").length,
@@ -49,100 +50,99 @@ const all = calculateData("all"),
   weaponMaterials = calculateData("weaponMaterials").length,
   specialty = Object.keys(calculateData("specialty")).length;
 
-let $itemsContainer = d.querySelector(".items-container-user");
-
-const filterAction = (filters) => {
+const filterAction = (filters, container, index) => {
   let itemsId = [];
 
-  for (let i = 0; i < all.length; i++) {
-    itemsId.push(i);
-  }
+  for (let i = 0; i < all.length; i++) itemsId.push(i);
 
   let sum = 8;
 
   if (filters.includes("exp")) {
-    for (let i = 0; i < 8; i++) {
-      itemsId = itemsId.filter((e) => e !== i);
-    }
+    for (let i = 0; i < 8; i++) itemsId = itemsId.filter((e) => e !== i);
   }
 
   if (filters.includes("elite")) {
-    for (let i = 0; i < eliteEnemies; i++) {
+    for (let i = 0; i < eliteEnemies; i++)
       itemsId = itemsId.filter((e) => e !== i + sum);
-    }
   }
   sum += eliteEnemies;
 
   if (filters.includes("common")) {
-    for (let i = 0; i < commonEnemies; i++) {
+    for (let i = 0; i < commonEnemies; i++)
       itemsId = itemsId.filter((e) => e !== i + sum);
-    }
   }
   sum += commonEnemies;
 
   if (filters.includes("weekly")) {
-    for (let i = 0; i < weekBoss; i++) {
+    for (let i = 0; i < weekBoss; i++)
       itemsId = itemsId.filter((e) => e !== i + sum);
-    }
   }
   sum += weekBoss;
 
   if (filters.includes("world")) {
-    for (let i = 0; i < boss; i++) {
+    for (let i = 0; i < boss; i++)
       itemsId = itemsId.filter((e) => e !== i + sum);
-    }
   }
   sum += boss;
 
   if (filters.includes("stones")) {
-    for (let i = 0; i < stones; i++) {
+    for (let i = 0; i < stones; i++)
       itemsId = itemsId.filter((e) => e !== i + sum);
-    }
   }
   sum += stones;
 
   if (filters.includes("talent")) {
-    for (let i = 0; i < talentMaterials; i++) {
+    for (let i = 0; i < talentMaterials; i++)
       itemsId = itemsId.filter((e) => e !== i + sum);
-    }
   }
   sum += talentMaterials;
 
   if (filters.includes("weapon")) {
-    for (let i = 0; i < weaponMaterials; i++) {
+    for (let i = 0; i < weaponMaterials; i++)
       itemsId = itemsId.filter((e) => e !== i + sum);
-    }
   }
   sum += weaponMaterials;
 
   if (filters.includes("speciality")) {
-    for (let i = 0; i < specialty; i++) {
+    for (let i = 0; i < specialty; i++)
       itemsId = itemsId.filter((e) => e !== i + sum);
-    }
   }
 
-  filtered.forEach((e) => (d.getElementById(e).style.display = "inline-flex"));
+  filtered[index].forEach((e) => {
+    let $cards = container.querySelectorAll(`*[data-id="${e}"]`);
+    if ($cards) {
+      Array.from($cards).forEach((el) => (el.style.display = "inline-flex"));
+    }
+  });
 
-  filtered = [];
+  filtered[index] = [];
 
   itemsId.forEach((e) => {
-    let $card = d.getElementById(e);
-    $card.style.display = "none";
-
-    filtered.push(e);
+    let $cards = container.querySelectorAll(`*[data-id="${e}"]`);
+    if ($cards) {
+      Array.from($cards).forEach((el) => {
+        el.style.display = "none";
+        filtered[index].push(e);
+      });
+    }
   });
 };
 
-const getChecked = (filterNames) => {
-  let $checkbox = document.querySelectorAll(
-      `.${filterNames} input[type=checkbox]:checked`,
-    ),
-    filters = [...$checkbox].map((e) => e.id),
-    res = [];
+const getChecked = (el) => {
+  let $checkboxes = el.querySelectorAll("input[type=checkbox]:checked"),
+    filters = [...$checkboxes].map((e) => e.dataset.filterId),
+    res = [],
+    index = filteredElements.indexOf(el);
 
   filters.length == 0 ? (res = items) : (res = filters);
+  filterAction(res, el.nextElementSibling, index);
+};
 
-  filterAction(res);
+const filtersOnLoad = () => {
+  filteredElements.forEach((el, i) => {
+    filtered[i] = [];
+    getChecked(el);
+  });
 };
 
 const getTotal = () => {
@@ -326,6 +326,7 @@ const drawUserMaterial = () => {
           );
         fragment.classList.add("items-card");
         fragment.setAttribute("_id", fixedName);
+        fragment.setAttribute("data-id", i);
         fragment.dataset.rarity = rarity;
 
         fragment.innerHTML = `
@@ -597,8 +598,8 @@ const getListElements = () => {
         weaponMaterials,
       );
     fragment.classList.add("items-card");
-    fragment.id = i;
     fragment.setAttribute("_id", fixedName);
+    fragment.setAttribute("data-id", i);
     fragment.dataset.rarity = rarity;
 
     fragment.innerHTML = `
@@ -620,6 +621,7 @@ drawUserMaterial();
 drawUserData();
 
 window.addEventListener("load", getListElements());
+filtersOnLoad();
 
 d.addEventListener("click", (e) => {
   let eventId = e.target.id,
@@ -630,8 +632,6 @@ d.addEventListener("click", (e) => {
   } catch (err) {
     eventClass = "none";
   }
-
-  if (eventClass === $filters) getChecked(filterClasses);
 
   if (
     e.target.matches(".items-container-user .items-card") ||
@@ -703,7 +703,6 @@ d.addEventListener("click", (e) => {
   }
 
   if (eventClass === "btn-plus" || eventClass.includes("btn-plus-container")) {
-    getChecked(filterClasses);
     drawModalPossible();
     $modalMaterials.style.visibility = "visible";
     $modalMaterials.style.opacity = "1";
@@ -716,6 +715,9 @@ d.addEventListener("click", (e) => {
 d.addEventListener("change", (e) => {
   if (e.target.className.includes("selected-items"))
     location.hash = e.target.value;
+
+  if (e.target.className === "filter-checkbox")
+    getChecked(e.target.parentElement);
 });
 
 d.addEventListener("keydown", (e) => {

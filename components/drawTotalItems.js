@@ -415,7 +415,7 @@ export default function drawTotalItems(
       }
 
       let itemContent = `
-        <div class="element-info">
+        <div class="element-info" data-id="${index}">
           <section class="element-data">
             <figure class="element-img ${rarity}">
               <img src="./assets/materials/${tempName}.webp" alt="item" />
@@ -442,7 +442,7 @@ export default function drawTotalItems(
 
       if (el === "Mora") {
         itemContent = `
-          <div class="element-info">
+          <div class="element-info" data-id="${index}">
             <section class="element-data">
               <figure class="element-img ${rarity} ">
                 <img src="./assets/materials/${tempName}.webp" alt="item" />

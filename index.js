@@ -39,14 +39,18 @@ import getData from "./helpers/getData.js";
 
   if (language !== "en") {
     const $items = d.querySelectorAll(".txt-item"),
+      $itemsFilter = d.querySelectorAll(".txt-item-filter"),
       $url = window.location.pathname;
 
     d.documentElement.lang = language;
 
     let dataLan = await getData(`./db/texts-${language}.json`),
-      pageName = $url.replaceAll("/", ""),
+      pageName = $url.replaceAll("/", "").replaceAll(".html", ""),
       list = Array.from($items),
+      listFilter = Array.from($itemsFilter),
+      totalFilter = 0,
       text = [...dataLan["header"]],
+      textFilter = [],
       $title = d.querySelector("title");
 
     $title.innerHTML = dataLan["html"][0];
@@ -57,9 +61,14 @@ import getData from "./helpers/getData.js";
 
     text.push(...dataLan["footer"]);
 
-    list.forEach((el, index) => {
-      el.innerHTML = text[index];
-    });
+    list.forEach((el, index) => (el.innerHTML = text[index]));
+
+    if (listFilter.length > 0) {
+      totalFilter = listFilter.length / dataLan["filters"].length;
+      for (let i = 0; i < totalFilter; i++)
+        textFilter.push(...dataLan["filters"]);
+      listFilter.forEach((el, index) => (el.innerHTML = textFilter[index]));
+    }
   }
 })(document);
 

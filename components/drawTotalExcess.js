@@ -92,7 +92,7 @@ export default function drawTotalExcess(
         craftable = tocraft.toLocaleString("ru-RU");
 
       let itemContent = `
-        <div class="element-info">
+        <div class="element-info" data-id="${index}">
           <section class="element-data">
             <figure class="element-img ${rarity}">
               <img src="./assets/materials/${tempName}.webp" alt="item" />
