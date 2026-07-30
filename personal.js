@@ -387,6 +387,7 @@ const drawModalProfit = (id) => {
       drawUserMaterial();
       drawUserData();
       drawModalPossible();
+      filtersOnLoad();
     } else {
       alert("Set a number");
     }
@@ -446,6 +447,7 @@ const drawModalElement = (id, rarity) => {
         drawUserMaterial();
         drawUserData();
         drawModalPossible();
+        filtersOnLoad();
       } else {
         alert("Set a positive number");
       }
@@ -563,6 +565,7 @@ const drawModalInfo = (id, name) => {
     drawUserMaterial();
     drawUserData();
     drawModalPossible();
+    filtersOnLoad();
   });
 };
 
@@ -643,6 +646,9 @@ d.addEventListener("click", (e) => {
       $prev = $item.previousSibling,
       $next = $item.nextSibling;
 
+    if (!$prev || $prev.style.display === "none") $prev = null;
+    if (!$next || $prev.style.display === "none") $next = null;
+
     next = [
       "items-container-user",
       $next ? $next.attributes["_id"].value : null,
@@ -666,6 +672,9 @@ d.addEventListener("click", (e) => {
       ),
       $prev = $item.previousSibling,
       $next = $item.nextSibling;
+
+    if (!$prev || $prev.style.display === "none") $prev = null;
+    if (!$next || $next.style.display === "none") $next = null;
 
     next = ["card-user-amount", $next ? $next.attributes["_id"].value : null];
     prev = ["card-user-amount", $prev ? $prev.attributes["_id"].value : null];
