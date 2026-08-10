@@ -3108,5 +3108,89 @@
       "Formule Phenomenale: Differential Analysis",
       "Formule Phenomenale: Q.E.D."
     ]
+  },
+  "123": {
+    "name": "Traveler (Cryo)",
+    "name-de": "Reisender (Kryo)",
+    "name-es": "Viajero (Cryo)",
+    "name-fr": "Voyageur (Cryo)",
+    "name-id": "Pengembara (Cryo)",
+    "name-it": "Viaggiatore (Cryo)",
+    "name-ja": "旅人 (氷)",
+    "name-ko": "여행자 (얼음)",
+    "name-pt": "Viajante (Cryo)",
+    "name-ru": "Путешественник (Крио)",
+    "name-th": "นักเดินทาง (น้ำแข็ง)",
+    "name-tr": "Gezgin (Buz)",
+    "name-vi": "Nhà Lữ Hành (Băng)",
+    "name-zh": "旅行者 (冰)",
+    "birthday": "",
+    "region": "Snezhnaya",
+    "quality": "5-stars",
+    "element": "cryo",
+    "stone": "Brilliant Diamond",
+    "weapon": "sword",
+    "specialty-material": "Windwheel Aster",
+    "enemy-material": ["Damaged Mask", "Stained Mask", "Ominous Mask"],
+    "second-enemy": [
+      "Chimeric Core",
+      "Symbiotic Chimeric Nucleus",
+      "Prime Chimeric Nexus"
+    ],
+    "boss-material": "",
+    "weekly-boss": "Ascended Sample: Queen",
+    "domain-material": ["Charity", "Fortitude", "Glory"],
+    "talents": ["Foreign Frostglint", "Ice Fog Piercer", "Frostbound Javelin"]
+  },
+  "124": {
+    "name": "Alyosha",
+    "name-es": "Aliosha",
+    "name-ja": "アリョーシャ",
+    "name-ko": "알료샤",
+    "name-ru": "Алёша",
+    "name-zh": "阿罗夏",
+    "birthday": "09-02",
+    "region": "Snezhnaya",
+    "quality": "4-stars",
+    "element": "electro",
+    "stone": "Vajrada Amethyst",
+    "weapon": "polearm",
+    "specialty-material": "Flockingweed",
+    "enemy-material": [
+      "Chimeric Core",
+      "Symbiotic Chimeric Nucleus",
+      "Prime Chimeric Nexus"
+    ],
+    "boss-material": "Severed Tail of the Sky-Roamer",
+    "weekly-boss": "Elixir of the Heretic",
+    "domain-material": "Fortitude",
+    "talents": ["Skirmishing Spear", "Thunderbolt Strike", "Hunter's Advance"]
+  },
+  "125": {
+    "name": "Odette",
+    "name-ja": "オデット",
+    "name-ko": "오데트",
+    "name-ru": "Одетта",
+    "name-zh": "奧黛塔",
+    "birthday": "20-02",
+    "region": "Snezhnaya",
+    "quality": "5-stars",
+    "element": "cryo",
+    "stone": "Shivada Jade",
+    "weapon": "sword",
+    "specialty-material": "Frostfairy Flower",
+    "enemy-material": [
+      "Ethereal Glimmershard",
+      "Ethereal Crystal",
+      "Ethereal Crystalscale Stone"
+    ],
+    "boss-material": "Unscorched Blossom Branch",
+    "weekly-boss": "Twisted Withered Branch",
+    "domain-material": "Charity",
+    "talents": [
+      "Snow Swan Variation",
+      "Adagio: Phantom Night Dancers",
+      "Presto: Bluebird Finale"
+    ]
   }
 }

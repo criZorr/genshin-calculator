@@ -4605,5 +4605,257 @@
       "Oblation of the Far-North Scions",
       "Aureate Radiance of the Far-North Scions"
     ]
+  },
+  "235": {
+    "name": "Heretic's Molten Blade",
+    "quality": "4-stars",
+    "weapon": "sword",
+    "enemy-material": [
+      "Sentry's Wooden Whistle",
+      "Warrior's Metal Whistle",
+      "Saurian-Crowned Warrior's Golden Whistle"
+    ],
+    "special-enemy-material": [
+      "Cold-Cracked Shellshard",
+      "Warm Back-Shell",
+      "Blazing Prismshell"
+    ],
+    "domain-material": [
+      "Blazing Sacrificial Heart's Terror",
+      "Blazing Sacrificial Heart's Hesitance",
+      "Blazing Sacrificial Heart's Resolve",
+      "Blazing Sacrificial Heart's Splendor"
+    ]
+  },
+  "236": {
+    "name": "Frostbreath",
+    "quality": "4-stars",
+    "weapon": "polearm",
+    "enemy-material": [
+      "Chimeric Core",
+      "Symbiotic Chimeric Nucleus",
+      "Prime Chimeric Nexus"
+    ],
+    "special-enemy-material": [
+      "Accreted Fragment",
+      "Accreted Mass",
+      "Accreted Growth"
+    ],
+    "domain-material": [
+      "Measured Pour of the Cellared Spiritual Nectar",
+      "Intoxication of the Cellared Spiritual Nectar",
+      "Exhilaration of the Cellared Spiritual Nectar",
+      "Revelry of the Cellared Spiritual Nectar"
+    ]
+  },
+  "237": {
+    "name": "Forged by the Golden Melody",
+    "quality": "4-stars",
+    "weapon": "claymore",
+    "enemy-material": [
+      "Transoceanic Pearl",
+      "Transoceanic Chunk",
+      "Xenochromatic Crystal"
+    ],
+    "special-enemy-material": [
+      "Ruined Hilt",
+      "Splintered Hilt",
+      "Still-Smoldering Hilt"
+    ],
+    "domain-material": [
+      "Dross of Pure Sacred Dewdrop",
+      "Sublimation of Pure Sacred Dewdrop",
+      "Spring of Pure Sacred Dewdrop",
+      "Essence of Pure Sacred Dewdrop"
+    ]
+  },
+  "238": {
+    "name": "Clash of Kings",
+    "quality": "4-stars",
+    "weapon": "catalyst",
+    "enemy-material": [
+      "Faded Red Satin",
+      "Trimmed Red Silk",
+      "Rich Red Brocade"
+    ],
+    "special-enemy-material": [
+      "Damaged Prism",
+      "Turbid Prism",
+      "Radiant Prism"
+    ],
+    "domain-material": [
+      "Copper Talisman of the Forest Dew",
+      "Iron Talisman of the Forest Dew",
+      "Silver Talisman of the Forest Dew",
+      "Golden Talisman of the Forest Dew"
+    ]
+  },
+  "239": {
+    "name": "Jade Vista",
+    "quality": "4-stars",
+    "weapon": "bow",
+    "enemy-material": [
+      "Recruit's Insignia",
+      "Sergeant's Insignia",
+      "Lieutenant's Insignia"
+    ],
+    "special-enemy-material": [
+      "Fragile Bone Shard",
+      "Sturdy Bone Shard",
+      "Fossilized Bone Shard"
+    ],
+    "domain-material": [
+      "Grain of Aerosiderite",
+      "Piece of Aerosiderite",
+      "Bit of Aerosiderite",
+      "Chunk of Aerosiderite"
+    ]
+  },
+  "240": {
+    "name": "Emberwell",
+    "quality": "4-stars",
+    "weapon": "sword",
+    "enemy-material": [
+      "Ethereal Glimmershard",
+      "Ethereal Crystal",
+      "Ethereal Crystalscale Stone"
+    ],
+    "special-enemy-material": [
+      "Accreted Fragment",
+      "Accreted Mass",
+      "Accreted Growth"
+    ],
+    "domain-material": [
+      "Rise of the Pale Star Army",
+      "Muster of the Pale Star Army",
+      "Clarion of the Pale Star Army",
+      "Triumph of the Pale Star Army"
+    ]
+  },
+  "241": {
+    "name": "Song of the Vigil",
+    "quality": "4-stars",
+    "weapon": "polearm",
+    "enemy-material": [
+      "Ethereal Glimmershard",
+      "Ethereal Crystal",
+      "Ethereal Crystalscale Stone"
+    ],
+    "special-enemy-material": [
+      "Hollow Root of Life",
+      "Sprout Node of Life",
+      "Coiled Core of Life"
+    ],
+    "domain-material": [
+      "The Frost Emperor's Revival",
+      "The Frost Emperor's Ceremony",
+      "The Frost Emperor's Lament",
+      "The Frost Emperor's Farewell"
+    ]
+  },
+  "242": {
+    "name": "Blade of Atonement",
+    "quality": "4-stars",
+    "weapon": "claymore",
+    "enemy-material": [
+      "Chimeric Core",
+      "Symbiotic Chimeric Nucleus",
+      "Prime Chimeric Nexus"
+    ],
+    "special-enemy-material": [
+      "Hollow Root of Life",
+      "Sprout Node of Life",
+      "Coiled Core of Life"
+    ],
+    "domain-material": [
+      "Rise of the Pale Star Army",
+      "Muster of the Pale Star Army",
+      "Clarion of the Pale Star Army",
+      "Triumph of the Pale Star Army"
+    ]
+  },
+  "243": {
+    "name": "Echoes of the Heart",
+    "quality": "4-stars",
+    "weapon": "catalyst",
+    "enemy-material": [
+      "Ethereal Glimmershard",
+      "Ethereal Crystal",
+      "Ethereal Crystalscale Stone"
+    ],
+    "special-enemy-material": [
+      "Accreted Fragment",
+      "Accreted Mass",
+      "Accreted Growth"
+    ],
+    "domain-material": [
+      "Rise of the Pale Star Army",
+      "Muster of the Pale Star Army",
+      "Clarion of the Pale Star Army",
+      "Triumph of the Pale Star Army"
+    ]
+  },
+  "244": {
+    "name": "Covenant of Frost and Snow",
+    "quality": "4-stars",
+    "weapon": "bow",
+    "enemy-material": [
+      "Chimeric Core",
+      "Symbiotic Chimeric Nucleus",
+      "Prime Chimeric Nexus"
+    ],
+    "special-enemy-material": [
+      "Hollow Root of Life",
+      "Sprout Node of Life",
+      "Coiled Core of Life"
+    ],
+    "domain-material": [
+      "Rise of the Pale Star Army",
+      "Muster of the Pale Star Army",
+      "Clarion of the Pale Star Army",
+      "Triumph of the Pale Star Army"
+    ]
+  },
+  "245": {
+    "name": "Exaiphanes Blade",
+    "quality": "5-stars",
+    "weapon": "sword",
+    "enemy-material": [
+      "Ethereal Glimmershard",
+      "Ethereal Crystal",
+      "Ethereal Crystalscale Stone"
+    ],
+    "special-enemy-material": [
+      "Accreted Fragment",
+      "Accreted Mass",
+      "Accreted Growth"
+    ],
+    "domain-material": [
+      "The Frost Emperor's Revival",
+      "The Frost Emperor's Revival",
+      "The Frost Emperor's Lament",
+      "The Frost Emperor's Farewell"
+    ]
+  },
+  "246": {
+    "name": "Whitelake Frostfeather",
+    "quality": "5-stars",
+    "weapon": "sword",
+    "enemy-material": [
+      "Chimeric Core",
+      "Symbiotic Chimeric Nucleus",
+      "Prime Chimeric Nexus"
+    ],
+    "special-enemy-material": [
+      "Hollow Root of Life",
+      "Sprout Node of Life",
+      "Coiled Core of Life"
+    ],
+    "domain-material": [
+      "Measured Pour of the Cellared Spiritual Nectar",
+      "Intoxication of the Cellared Spiritual Nectar",
+      "Exhilaration of the Cellared Spiritual Nectar",
+      "Revelry of the Cellared Spiritual Nectar"
+    ]
   }
 }

@@ -115,6 +115,18 @@ export default function calculateData(parameter) {
     "Unyielding Delusion of the Far-North Scions",
     "Oblation of the Far-North Scions",
     "Aureate Radiance of the Far-North Scions",
+    "Rise of the Pale Star Army",
+    "Muster of the Pale Star Army",
+    "Clarion of the Pale Star Army",
+    "Triumph of the Pale Star Army",
+    "Measured Pour of the Cellared Spiritual Nectar",
+    "Intoxication of the Cellared Spiritual Nectar",
+    "Exhilaration of the Cellared Spiritual Nectar",
+    "Revelry of the Cellared Spiritual Nectar",
+    "The Frost Emperor's Revival",
+    "The Frost Emperor's Ceremony",
+    "The Frost Emperor's Lament",
+    "The Frost Emperor's Farewell",
   ];
 
   const talentMaterials = [
@@ -181,6 +193,15 @@ export default function calculateData(parameter) {
     "Teachings of Vagrancy",
     "Guide to Vagrancy",
     "Philosophies of Vagrancy",
+    "Teachings of Charity",
+    "Guide to Charity",
+    "Philosophies of Charity",
+    "Teachings of Fortitude",
+    "Guide to Fortitude",
+    "Philosophies of Fortitude",
+    "Teachings of Glory",
+    "Guide to Glory",
+    "Philosophies of Glory",
   ];
 
   const commonEnemies = [
@@ -235,6 +256,12 @@ export default function calculateData(parameter) {
     "Tattered Warrant",
     "Immaculate Warrant",
     "Frost-Etched Warrant",
+    "Ethereal Glimmershard",
+    "Ethereal Crystal",
+    "Ethereal Crystalscale Stone",
+    "Chimeric Core",
+    "Symbiotic Chimeric Nucleus",
+    "Prime Chimeric Nexus",
   ];
 
   const eliteEnemies = [
@@ -331,6 +358,12 @@ export default function calculateData(parameter) {
     "Fractured Lunar Iron",
     "Depleted Lunar Iron",
     "Unblemished Lunar Iron",
+    "Accreted Fragment",
+    "Accreted Mass",
+    "Accreted Growth",
+    "Hollow Root of Life",
+    "Sprout Node of Life",
+    "Coiled Core of Life",
   ];
 
   const specialty = {
@@ -392,6 +425,9 @@ export default function calculateData(parameter) {
     "Winter Icelea": 69,
     "Pine Amber": 72,
     "Teardrop of the Moon": 74,
+    Flockingweed: 50,
+    "Frostfairy Flower": 50,
+    Glaciafruit: 50,
   };
 
   const boss = [
@@ -440,6 +476,8 @@ export default function calculateData(parameter) {
     "Remnant of the Dreadwing",
     "Prismatic Severed Tail",
     "Plume of the Fallen Watcher",
+    "Severed Tail of the Sky-Roamer",
+    "Unscorched Blossom Branch",
   ];
 
   const weekBoss = [
@@ -615,6 +653,24 @@ export default function calculateData(parameter) {
       [
         1.1432, 1.1789, 1.3294, 2.7241, 4.0021, 4.3183, 4.6344, 4.9957, 5.0859,
         5.2665, 122,
+      ],
+    ],
+    17: [
+      [
+        "Ethereal Glimmershard",
+        "Ethereal Crystal",
+        "Ethereal Crystalscale Stone",
+      ],
+      [
+        0.6456, 0.6657, 0.7507, 1.5384, 2.2603, 2.4389, 2.6172, 2.8213, 2.8722,
+        2.9745, 50,
+      ],
+    ],
+    18: [
+      ["Chimeric Core", "Symbiotic Chimeric Nucleus", "Prime Chimeric Nexus"],
+      [
+        0.6456, 0.6657, 0.7507, 1.5384, 2.2603, 2.4389, 2.6172, 2.8213, 2.8722,
+        2.9745, 50,
       ],
     ],
   };
@@ -865,8 +921,22 @@ export default function calculateData(parameter) {
     30: [
       ["Fractured Lunar Iron", "Depleted Lunar Iron", "Unblemished Lunar Iron"],
       [
-        2.6854, 2.8623, 3.1282, 6.2671, 6.9053, 10.0566, 11.1191, 11.7559,
+        2.6898, 2.7739, 3.1279, 6.4094, 9.4195, 10.1632, 10.9066, 11.7563,
         11.9687, 12.3939, 35,
+      ],
+    ],
+    31: [
+      ["Accreted Fragment", "Accreted Mass", "Accreted Growth"],
+      [
+        2.0173, 2.0804, 2.3459, 4.8072, 7.0643, 7.6222, 8.1796, 8.817, 8.9763,
+        9.2953, 50,
+      ],
+    ],
+    32: [
+      ["Hollow Root of Life", "Sprout Node of Life", "Coiled Core of Life"],
+      [
+        2.0173, 2.0804, 2.3459, 4.8072, 7.0643, 7.6222, 8.1796, 8.817, 8.9763,
+        9.2953, 50,
       ],
     ],
   };
