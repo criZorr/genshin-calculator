@@ -673,5 +673,35 @@
     "tr": "Düşmüş Gözcünün Tüyü",
     "vi": "Lông Vũ Sa Ngã",
     "zh": "堕天的落羽"
+  },
+  "Unscorched Blossom Branch": {
+    "de": "Unvergänglicher Blütenzweig in Flammen",
+    "es": "Rama florida inmortal no chamuscada",
+    "fr": "Branche fleurie imbrûlable",
+    "id": "Unscorched Blossom Branch",
+    "it": "Ramo fiorito incombusto",
+    "ja": "炎中不滅の枝",
+    "ko": "불멸의 꽃가지",
+    "pt": "Galho de Flor Intocado",
+    "ru": "Неопалённая цветущая ветвь",
+    "th": "Unscorched Blossom Branch",
+    "tr": "Yanmamış Çiçek Dalı",
+    "vi": "Cành Hoa Bất Diệt Trong Lửa",
+    "zh": "焰中不灭花枝"
+  },
+  "Severed Tail of the Sky-Roamer": {
+    "de": "Abgetrennter Schweif des Himmelswanderers",
+    "es": "Cola cercenada del surcacielos",
+    "fr": "Queue coupée du rôdeur céleste",
+    "id": "Severed Tail of the Sky-Roamer",
+    "it": "Coda recisa dell'errante celeste",
+    "ja": "空を泳ぐものの尾",
+    "ko": "키메라의 꽁지깃",
+    "pt": "Cauda Partida do Viajante dos Céus",
+    "ru": "Отсечённый хвост небесного скитальца",
+    "th": "Severed Tail of the Sky-Roamer",
+    "tr": "Gökgezenin Kopmuş Kuyruğu",
+    "vi": "Đuôi Đứt Của Sinh Vật Bay",
+    "zh": "游空之物的断尾"
   }
 }

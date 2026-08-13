@@ -868,5 +868,50 @@
     "tr": "Ayın Gözyaşı",
     "vi": "Lệ Trăng Ngưng Đọng",
     "zh": "凝月泪滴"
+  },
+  "Frostfairy Flower": {
+    "de": "Frostspringkraut",
+    "es": "Flor frigifeérica",
+    "fr": "Fleur de féegivre",
+    "id": "Frostfairy Flower",
+    "it": "Fiore Brina di Fata",
+    "ja": "フロストフラワー",
+    "ko": "눈서리꽃",
+    "pt": "Flor Imortal Gélida",
+    "ru": "Морозник",
+    "th": "Frostfairy Flower",
+    "tr": "Buz Perisi Çiçeği",
+    "vi": "Hoa Sương Tiên",
+    "zh": "霜仙花"
+  },
+  "Flockingweed": {
+    "de": "Wollgras",
+    "es": "Hierbalana",
+    "fr": "Floc-d'herbe",
+    "id": "Flockingweed",
+    "it": "Ciufferba",
+    "ja": "フロック草",
+    "ko": "복슬풀",
+    "pt": "Ervaglomerada",
+    "ru": "Флоковая трава",
+    "th": "Flockingweed",
+    "tr": "Kadife Otu",
+    "vi": "Cỏ Nhung",
+    "zh": "植绒草"
+  },
+  "Golden Fern": {
+    "de": "Goldfarn",
+    "es": "Helecho áureo",
+    "fr": "Fougère dorée",
+    "id": "Golden Fern",
+    "it": "Felce dorata",
+    "ja": "ザラトイアリャーク",
+    "ko": "황금 고사리",
+    "pt": "Samambaia Dourada",
+    "ru": "Золотой папоротник",
+    "th": "Golden Fern",
+    "tr": "Altın Eğrelti Otu",
+    "vi": "Dương Xỉ Vàng",
+    "zh": "金蕨"
   }
 }

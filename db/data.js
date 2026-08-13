@@ -425,9 +425,9 @@ export default function calculateData(parameter) {
     "Winter Icelea": 69,
     "Pine Amber": 72,
     "Teardrop of the Moon": 74,
-    Flockingweed: 50,
-    "Frostfairy Flower": 50,
-    Glaciafruit: 50,
+    "Frostfairy Flower": 74,
+    Flockingweed: 74,
+    "Golden Fern": 80,
   };
 
   const boss = [
@@ -476,8 +476,8 @@ export default function calculateData(parameter) {
     "Remnant of the Dreadwing",
     "Prismatic Severed Tail",
     "Plume of the Fallen Watcher",
-    "Severed Tail of the Sky-Roamer",
     "Unscorched Blossom Branch",
+    "Severed Tail of the Sky-Roamer",
   ];
 
   const weekBoss = [
@@ -663,14 +663,14 @@ export default function calculateData(parameter) {
       ],
       [
         0.6456, 0.6657, 0.7507, 1.5384, 2.2603, 2.4389, 2.6172, 2.8213, 2.8722,
-        2.9745, 50,
+        2.9745, 70,
       ],
     ],
     18: [
       ["Chimeric Core", "Symbiotic Chimeric Nucleus", "Prime Chimeric Nexus"],
       [
         0.6456, 0.6657, 0.7507, 1.5384, 2.2603, 2.4389, 2.6172, 2.8213, 2.8722,
-        2.9745, 50,
+        2.9745, 63,
       ],
     ],
   };
@@ -928,15 +928,15 @@ export default function calculateData(parameter) {
     31: [
       ["Accreted Fragment", "Accreted Mass", "Accreted Growth"],
       [
-        2.0173, 2.0804, 2.3459, 4.8072, 7.0643, 7.6222, 8.1796, 8.817, 8.9763,
-        9.2953, 50,
+        1.1432, 1.1789, 1.3294, 2.7241, 4.0021, 4.3183, 4.6344, 4.9957, 5.0859,
+        5.2665, 165,
       ],
     ],
     32: [
       ["Hollow Root of Life", "Sprout Node of Life", "Coiled Core of Life"],
       [
         2.0173, 2.0804, 2.3459, 4.8072, 7.0643, 7.6222, 8.1796, 8.817, 8.9763,
-        9.2953, 50,
+        9.2953, 24,
       ],
     ],
   };
