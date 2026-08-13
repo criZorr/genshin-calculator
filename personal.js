@@ -455,6 +455,9 @@ const drawModalElement = (id, rarity) => {
       alert("Set a number");
     }
   });
+
+  $modal.style.visibility = "visible";
+  $modal.style.opacity = "1";
 };
 
 const drawModalInfo = (id, name) => {
@@ -615,6 +618,18 @@ const getListElements = () => {
   }
 };
 
+const manageTabItems = (parentClass, id) => {
+  let $item = d.querySelector(`.${parentClass} .items-card[_id="${id}"]`),
+    $prev = $item.previousSibling,
+    $next = $item.nextSibling;
+
+  if (!$prev || $prev.style.display === "none") $prev = null;
+  if (!$next || $next.style.display === "none") $next = null;
+
+  next = [parentClass, $next ? $next.attributes["_id"].value : null];
+  prev = [parentClass, $prev ? $prev.attributes["_id"].value : null];
+};
+
 if (language !== "en") {
   langData = await getData(`./db/texts-${language}.json`);
   langMaterials = await getData(`./db/materials/materials-${language}.json`);
@@ -640,48 +655,18 @@ d.addEventListener("click", (e) => {
     e.target.matches(".items-container-user .items-card") ||
     e.target.matches(".items-container-user .items-card *")
   ) {
-    let $item = d.querySelector(
-        `.items-container-user .items-card[_id="${e.target.attributes["_id"].value}"]`,
-      ),
-      $prev = $item.previousSibling,
-      $next = $item.nextSibling;
-
-    if (!$prev || $prev.style.display === "none") $prev = null;
-    if (!$next || $prev.style.display === "none") $next = null;
-
-    next = [
-      "items-container-user",
-      $next ? $next.attributes["_id"].value : null,
-    ];
-    prev = [
-      "items-container-user",
-      $prev ? $prev.attributes["_id"].value : null,
-    ];
-
-    drawModalElement(e.target.attributes["_id"].value, e.target.dataset.rarity);
-    $modal.style.visibility = "visible";
-    $modal.style.opacity = "1";
+    let id = e.target.attributes["_id"].value;
+    manageTabItems("items-container-user", id);
+    drawModalElement(id, e.target.dataset.rarity);
   }
 
   if (
     e.target.matches(".card-user-amount .items-card") ||
     e.target.matches(".card-user-amount .items-card *")
   ) {
-    let $item = d.querySelector(
-        `.card-user-amount .items-card[_id="${e.target.attributes["_id"].value}"]`,
-      ),
-      $prev = $item.previousSibling,
-      $next = $item.nextSibling;
-
-    if (!$prev || $prev.style.display === "none") $prev = null;
-    if (!$next || $next.style.display === "none") $next = null;
-
-    next = ["card-user-amount", $next ? $next.attributes["_id"].value : null];
-    prev = ["card-user-amount", $prev ? $prev.attributes["_id"].value : null];
-
-    drawModalElement(e.target.attributes["_id"].value, e.target.dataset.rarity);
-    $modal.style.visibility = "visible";
-    $modal.style.opacity = "1";
+    let id = e.target.attributes["_id"].value;
+    manageTabItems("card-user-amount", id);
+    drawModalElement(id, e.target.dataset.rarity);
   }
 
   if (eventClass === "btn-element-profit" || eventClass === "btn-edit-profit") {
