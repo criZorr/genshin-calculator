@@ -4817,27 +4817,6 @@
     ]
   },
   "245": {
-    "name": "Exaiphanes Blade",
-    "quality": "5-stars",
-    "weapon": "sword",
-    "enemy-material": [
-      "Ethereal Glimmershard",
-      "Ethereal Crystal",
-      "Ethereal Crystalscale Stone"
-    ],
-    "special-enemy-material": [
-      "Accreted Fragment",
-      "Accreted Mass",
-      "Accreted Growth"
-    ],
-    "domain-material": [
-      "The Frost Emperor's Revival",
-      "The Frost Emperor's Ceremony",
-      "The Frost Emperor's Lament",
-      "The Frost Emperor's Farewell"
-    ]
-  },
-  "246": {
     "name": "Whitelake Frostfeather",
     "quality": "5-stars",
     "weapon": "sword",
