@@ -3192,5 +3192,55 @@
       "Adagio: Phantom Night Dancers",
       "Presto: Bluebird Finale"
     ]
+  },
+  "126": {
+    "name": "Vodyanitsa",
+    "name-zh": "沃雅妮莎",
+    "name-ja": "ヴォジャニーツァ",
+    "name-ko": "보댜니차",
+    "name-ru": "Водяница",
+    "birthday": "29-03",
+    "region": "Snezhnaya",
+    "quality": "5-stars",
+    "element": "hydro",
+    "stone": "Varunada Lazurite",
+    "weapon": "catalyst",
+    "specialty-material": "Frostfairy Flower",
+    "enemy-material": [
+      "Chimeric Core",
+      "Symbiotic Chimeric Nucleus",
+      "Prime Chimeric Nexus"
+    ],
+    "boss-material": "Unscorched Blossom Branch",
+    "weekly-boss": "Madman's Restraint",
+    "domain-material": "Fortitude",
+    "talents": [
+      "Psyshkhwe Arietta",
+      "Rechitativ: Sonorous Dawn",
+      "Koda: Sink With Thee"
+    ]
+  },
+  "127": {
+    "name": "Vesna",
+    "name-zh": "薇斯纳",
+    "name-ja": "ヴェスナ",
+    "name-ko": "베스나",
+    "name-ru": "Весна",
+    "birthday": "04-02",
+    "region": "Snezhnaya",
+    "quality": "5-stars",
+    "element": "anemo",
+    "stone": "Vayuda Turquoise",
+    "weapon": "sword",
+    "specialty-material": "Golden Fern",
+    "enemy-material": [
+      "Ethereal Glimmershard",
+      "Ethereal Crystal",
+      "Ethereal Crystalscale Stone"
+    ],
+    "boss-material": "Vagabond's Cracked Armor",
+    "weekly-boss": "Profaned Sprout",
+    "domain-material": "Glory",
+    "talents": ["Vila Blade Dance", "The Art of Victory", "For the Tsaritsa!"]
   }
 }

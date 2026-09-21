@@ -4836,5 +4836,131 @@
       "Exhilaration of the Cellared Spiritual Nectar",
       "Revelry of the Cellared Spiritual Nectar"
     ]
+  },
+  "246": {
+    "name": "New Bough",
+    "quality": "4-stars",
+    "weapon": "sword",
+    "enemy-material": [
+      "Chimeric Core",
+      "Symbiotic Chimeric Nucleus",
+      "Prime Chimeric Nexus"
+    ],
+    "special-enemy-material": [
+      "Hollow Root of Life",
+      "Sprout Node of Life",
+      "Coiled Core of Life"
+    ],
+    "domain-material": [
+      "Measured Pour of the Cellared Spiritual Nectar",
+      "Intoxication of the Cellared Spiritual Nectar",
+      "Exhilaration of the Cellared Spiritual Nectar",
+      "Revelry of the Cellared Spiritual Nectar"
+    ]
+  },
+  "247": {
+    "name": "Winter's Heavy Heart",
+    "quality": "4-stars",
+    "weapon": "catalyst",
+    "enemy-material": [
+      "Ethereal Glimmershard",
+      "Ethereal Crystal",
+      "Ethereal Crystalscale Stone"
+    ],
+    "special-enemy-material": [
+      "Hollow Root of Life",
+      "Sprout Node of Life",
+      "Coiled Core of Life"
+    ],
+    "domain-material": [
+      "The Frost Emperor's Revival",
+      "The Frost Emperor's Ceremony",
+      "The Frost Emperor's Lament",
+      "The Frost Emperor's Farewell"
+    ]
+  },
+  "248": {
+    "name": "Breezeborne Refrain",
+    "quality": "4-stars",
+    "weapon": "bow",
+    "enemy-material": [
+      "Chimeric Core",
+      "Symbiotic Chimeric Nucleus",
+      "Prime Chimeric Nexus"
+    ],
+    "special-enemy-material": [
+      "Accreted Fragment",
+      "Accreted Mass",
+      "Accreted Growth"
+    ],
+    "domain-material": [
+      "The Frost Emperor's Revival",
+      "The Frost Emperor's Ceremony",
+      "The Frost Emperor's Lament",
+      "The Frost Emperor's Farewell"
+    ]
+  },
+  "249": {
+    "name": "Silver Light",
+    "quality": "4-stars",
+    "weapon": "sword",
+    "enemy-material": [
+      "Recruit's Insignia",
+      "Sergeant's Insignia",
+      "Lieutenant's Insignia"
+    ],
+    "special-enemy-material": [
+      "Fragile Bone Shard",
+      "Sturdy Bone Shard",
+      "Fossilized Bone Shard"
+    ],
+    "domain-material": [
+      "Grain of Aerosiderite",
+      "Piece of Aerosiderite",
+      "Bit of Aerosiderite",
+      "Chunk of Aerosiderite"
+    ]
+  },
+  "250": {
+    "name": "Hymn of the Maelstrom",
+    "quality": "5-stars",
+    "weapon": "catalyst",
+    "enemy-material": [
+      "Ethereal Glimmershard",
+      "Ethereal Crystal",
+      "Ethereal Crystalscale Stone"
+    ],
+    "special-enemy-material": [
+      "Accreted Fragment",
+      "Accreted Mass",
+      "Accreted Growth"
+    ],
+    "domain-material": [
+      "Measured Pour of the Cellared Spiritual Nectar",
+      "Intoxication of the Cellared Spiritual Nectar",
+      "Exhilaration of the Cellared Spiritual Nectar",
+      "Revelry of the Cellared Spiritual Nectar"
+    ]
+  },
+  "251": {
+    "name": "Beyond the Chrysalis",
+    "quality": "5-stars",
+    "weapon": "sword",
+    "enemy-material": [
+      "Chimeric Core",
+      "Symbiotic Chimeric Nucleus",
+      "Prime Chimeric Nexus"
+    ],
+    "special-enemy-material": [
+      "Hollow Root of Life",
+      "Sprout Node of Life",
+      "Coiled Core of Life"
+    ],
+    "domain-material": [
+      "Rise of the Pale Star Army",
+      "Muster of the Pale Star Army",
+      "Clarion of the Pale Star Army",
+      "Triumph of the Pale Star Army"
+    ]
   }
 }

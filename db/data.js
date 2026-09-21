@@ -478,6 +478,7 @@ export default function calculateData(parameter) {
     "Plume of the Fallen Watcher",
     "Unscorched Blossom Branch",
     "Severed Tail of the Sky-Roamer",
+    "Vagabond's Cracked Armor",
   ];
 
   const weekBoss = [
