@@ -705,18 +705,18 @@
     "zh": "游空之物的断尾"
   },
   "Vagabond's Cracked Armor": {
-    "de": "",
-    "es": "",
-    "fr": "",
-    "id": "",
-    "it": "",
-    "ja": "",
-    "ko": "",
-    "pt": "",
-    "ru": "",
-    "th": "",
-    "tr": "",
-    "vi": "",
-    "zh": ""
+    "de": "Zerschlagene Rüstung des Vagabunden",
+    "es": "Hombrera agrietada de la errabunda",
+    "fr": "Armure fissurée de vagabond",
+    "id": "Vagabond's Cracked Armor",
+    "it": "Armatura incrinata dell'errante",
+    "ja": "さすらう者のひび割れた鎧",
+    "ko": "수호자의 견갑",
+    "pt": "Armadura Rachada do Andarilho",
+    "ru": "Треснувшие доспехи скитальца",
+    "th": "Vagabond's Cracked Armor",
+    "tr": "Avarenin Çatlak Zırhı",
+    "vi": "Giáp Nứt Của Kẻ Lang Thang",
+    "zh": "游离者的裂甲"
   }
 }
