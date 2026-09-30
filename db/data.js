@@ -929,8 +929,8 @@ export default function calculateData(parameter) {
     31: [
       ["Accreted Fragment", "Accreted Mass", "Accreted Growth"],
       [
-        1.1432, 1.1789, 1.3294, 2.7241, 4.0021, 4.3183, 4.6344, 4.9957, 5.0859,
-        5.2665, 165,
+        1.3449, 1.387, 1.564, 3.2047, 4.7098, 5.0816, 5.4533, 5.8782, 5.9845,
+        6.197, 165,
       ],
     ],
     32: [
