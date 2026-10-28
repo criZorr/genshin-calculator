@@ -431,6 +431,8 @@ export default function calculateData(parameter) {
     "Frostfairy Flower": 74,
     Flockingweed: 74,
     "Golden Fern": 80,
+    "Fairy Wormwood": 0,
+    Crystalfold: 0,
   };
 
   const boss = [
