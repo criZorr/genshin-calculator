@@ -3242,5 +3242,51 @@
     "weekly-boss": "Profaned Sprout",
     "domain-material": "Glory",
     "talents": ["Vila Blade Dance", "The Art of Victory", "For the Tsaritsa!"]
+  },
+  "128": {
+    "name": "Mitya",
+    "birthday": "",
+    "region": "Snezhnaya",
+    "quality": "5-stars",
+    "element": "electro",
+    "stone": "Vajrada Amethyst",
+    "weapon": "catalyst",
+    "specialty-material": "Crystalfold",
+    "enemy-material": [
+      "Chimeric Core",
+      "Symbiotic Chimeric Nucleus",
+      "Prime Chimeric Nexus"
+    ],
+    "boss-material": "Shattered Stability Anchor",
+    "weekly-boss": "Mask of the Virtuous Doctor",
+    "domain-material": "Charity",
+    "talents": [
+      "Chain Reaction",
+      "Principle: Variable Detection",
+      "Analysis: Gradient Theory"
+    ]
+  },
+  "129": {
+    "name": "Valeriy",
+    "birthday": "",
+    "region": "Snezhnaya",
+    "quality": "4-stars",
+    "element": "electro",
+    "stone": "Vajrada Amethyst",
+    "weapon": "sword",
+    "specialty-material": "Fairy Wormwood",
+    "enemy-material": [
+      "Ethereal Glimmershard",
+      "Ethereal Crystal",
+      "Ethereal Crystalscale Stone"
+    ],
+    "boss-material": "Severed Tail of the Sky-Roamer",
+    "weekly-boss": "Counterfeit Resin",
+    "domain-material": "Glory",
+    "talents": [
+      "Guard Tactics: Sword and Shield",
+      "Active Defense: Bastion Charge",
+      "Focused Fire: Lightning Salvo"
+    ]
   }
 }

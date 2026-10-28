@@ -364,6 +364,9 @@ export default function calculateData(parameter) {
     "Hollow Root of Life",
     "Sprout Node of Life",
     "Coiled Core of Life",
+    "Snowborn Heartshard",
+    "Snowborn Mirrorheart",
+    "Snowborn Heart of Ignorance",
   ];
 
   const specialty = {
@@ -479,6 +482,7 @@ export default function calculateData(parameter) {
     "Unscorched Blossom Branch",
     "Severed Tail of the Sky-Roamer",
     "Vagabond's Cracked Armor",
+    "Shattered Stability Anchor",
   ];
 
   const weekBoss = [
@@ -938,6 +942,17 @@ export default function calculateData(parameter) {
       [
         2.0173, 2.0804, 2.3459, 4.8072, 7.0643, 7.6222, 8.1796, 8.817, 8.9763,
         9.2953, 24,
+      ],
+    ],
+    33: [
+      [
+        "Snowborn Heartshard",
+        "Snowborn Mirrorheart",
+        "Snowborn Heart of Ignorance",
+      ],
+      [
+        2.0173, 2.0804, 2.3459, 4.8072, 7.0643, 7.6222, 8.1796, 8.817, 8.9763,
+        9.2953, 0,
       ],
     ],
   };

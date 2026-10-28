@@ -4962,5 +4962,26 @@
       "Clarion of the Pale Star Army",
       "Triumph of the Pale Star Army"
     ]
+  },
+  "252": {
+    "name": "Starsealed Edict ",
+    "quality": "5-stars",
+    "weapon": "catalyst",
+    "enemy-material": [
+      "Ethereal Glimmershard",
+      "Ethereal Crystal",
+      "Ethereal Crystalscale Stone"
+    ],
+    "special-enemy-material": [
+      "Snowborn Heartshard",
+      "Snowborn Mirrorheart",
+      "Snowborn Heart of Ignorance"
+    ],
+    "domain-material": [
+      "The Frost Emperor's Revival",
+      "The Frost Emperor's Ceremony",
+      "The Frost Emperor's Lament",
+      "The Frost Emperor's Farewell"
+    ]
   }
 }

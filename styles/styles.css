@@ -1393,6 +1393,7 @@ small {
   background-color: var(--first-complementary-color);
   border-radius: 50%;
   min-width: 2.5rem;
+  max-width: 2.5rem;
   height: 2.5rem;
   & img {
     width: 100%;
